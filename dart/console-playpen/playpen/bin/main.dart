@@ -11,7 +11,7 @@ main() {
   
 
   var list = playpen.giveMeAList();
-  list.forEach((row) => print(row)); 
+  list.where((val) => val>3).forEach((row) => print(row)); 
   playpen.processNumbers(print,list[0],list[1],list[2]);
   
   var customfunc = print;
@@ -20,4 +20,6 @@ main() {
   playpen.processNumbers(customfunc2,list[0],list[1],list[2]);
   
   assert(playpen.returnNumbers(1,2,3) == 'The numbers are 1 ,2 ,3.');
+
+  playpen.testSwitch();
 }
