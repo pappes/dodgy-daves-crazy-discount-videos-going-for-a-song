@@ -6,6 +6,8 @@ library playpenUtility;
 
 
 class PlaypenUtility extends Object {
+  //implimented as a singleton as all instances would behave the same anyway
+  
   // Testing lazy initialisation of final variable
   static int hhgttg;
 
@@ -15,10 +17,15 @@ class PlaypenUtility extends Object {
     }
     return hhgttg;
   }
+
+
+  factory PlaypenUtility() {
+    //constructor as invoked by external instanciations
+    return _singleton;
+  }
+  void _initialise() {
+    //constructor as invoked by internal first creation    
+  }
+  
+  static final _singleton = new PlaypenUtility()._initialise;
 }
-/*
-void useVMConfiguration() {
-  unittestConfiguration = _singleton;
-}*/
-/*
-final _singleton = new PlaypenUtility();*/

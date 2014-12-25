@@ -32,6 +32,10 @@ testSwitch(){
       print('Closed');
       continue nowClosed; // Continues executing at the nowClosed label.
 
+      //switch statements are expected to finish with a break statement
+      //but can finish with a continue statement (or return or raise)
+      //DH I don't understand why this continue statement executes into the next case instad of skipping over it 
+      //but that is the way it is designed to work
   nowClosed:
     case 'NOW_CLOSED':
       // Runs for both CLOSED and NOW_CLOSED.
