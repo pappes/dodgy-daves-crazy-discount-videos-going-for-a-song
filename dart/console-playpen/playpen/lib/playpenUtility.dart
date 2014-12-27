@@ -10,6 +10,8 @@ class PlaypenUtility extends Object {
   static final _singleton = new PlaypenUtility._initialise();
 
   // Testing lazy initialisation of final variable
+  //note in DART all final variables are lazy loaded 
+  //hence I could not declare this one as final
   static int hhgttg;
 
   static int calculate() {
@@ -29,3 +31,8 @@ class PlaypenUtility extends Object {
   }
 
 }
+
+//todo turn this into a RamCache memory factory 
+//with remember, recall and forget methods 
+//that can store arbitary data in memory
+//and can opionally segment the memory per session for server instances
