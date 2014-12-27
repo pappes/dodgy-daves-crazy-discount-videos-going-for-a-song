@@ -7,7 +7,8 @@ library playpenUtility;
 
 class PlaypenUtility extends Object {
   //implimented as a singleton as all instances would behave the same anyway
-  
+  static final _singleton = new PlaypenUtility._initialise();
+
   // Testing lazy initialisation of final variable
   static int hhgttg;
 
@@ -23,9 +24,8 @@ class PlaypenUtility extends Object {
     //constructor as invoked by external instanciations
     return _singleton;
   }
-  void _initialise() {
-    //constructor as invoked by internal first creation    
+  PlaypenUtility._initialise() {
+    //constructor as invoked by internal first creation
   }
-  
-  static final _singleton = new PlaypenUtility()._initialise;
+
 }
