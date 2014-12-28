@@ -5,8 +5,10 @@ library all_tests;
 
 import 'playpen_test.dart' as playpen_test;
 import 'playpenUtility_test.dart' as playpenUtility_test;
+import 'pappesUtility_test.dart' as pappesUtility_test;
 
 void main() {
   playpen_test.defineTests();
   playpenUtility_test.defineTests();
+  pappesUtility_test.defineTests();
 }
