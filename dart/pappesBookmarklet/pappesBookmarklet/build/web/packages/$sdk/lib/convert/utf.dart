@@ -134,11 +134,10 @@ class _Utf8Encoder {
   _Utf8Encoder.withBufferSize(int bufferSize)
       : _buffer = _createBuffer(bufferSize);
 
-  // TODO(11971): Always use Uint8List.
   /**
    * Allow an implementation to pick the most efficient way of storing bytes.
    */
-  external static List<int> _createBuffer(int size);
+  static List<int> _createBuffer(int size) => new Uint8List(size);
 
   /**
    * Tries to combine the given [leadingSurrogate] with the [nextCodeUnit] and
@@ -343,6 +342,8 @@ class Utf8Decoder extends Converter<List<int>, String> {
 
   // Override the base-classes bind, to provide a better type.
   Stream<String> bind(Stream<List<int>> stream) => super.bind(stream);
+
+  external Converter<List<int>,dynamic> fuse(Converter<String, dynamic> next);
 }
 
 // UTF-8 constants.
@@ -437,12 +438,7 @@ class _Utf8Decoder {
     void addSingleBytes(int from, int to) {
       assert(from >= startIndex && from <= endIndex);
       assert(to >= startIndex && to <= endIndex);
-      if (from == 0 && to == codeUnits.length) {
-        _stringSink.write(new String.fromCharCodes(codeUnits));
-      } else {
-        _stringSink.write(
-            new String.fromCharCodes(codeUnits.sublist(from, to)));
-      }
+      _stringSink.write(new String.fromCharCodes(codeUnits, from, to));
     }
 
     int i = startIndex;

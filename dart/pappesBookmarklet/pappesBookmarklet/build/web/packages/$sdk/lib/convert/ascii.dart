@@ -75,8 +75,7 @@ class _UnicodeSubsetEncoder extends Converter<String, List<int>> {
   const _UnicodeSubsetEncoder(this._subsetMask);
 
   List<int> convert(String string) {
-    // TODO(11971): Use Uint8List when possible.
-    List result = new List<int>(string.length);
+    List result = new Uint8List(string.length);
     for (int i = 0; i < string.length; i++) {
       var codeUnit = string.codeUnitAt(i);
       if ((codeUnit & ~_subsetMask) != 0) {
@@ -293,10 +292,10 @@ class _SimpleAsciiDecoderSink extends ByteConversionSinkBase {
   void addSlice(List<int> source, int start, int end, bool isLast) {
     final int length = source.length;
     if (start < 0 || start > length) {
-      throw new RangeError.range(start, 0, length - 1);
+      throw new RangeError.range(start, 0, length);
     }
     if (end < start || end > length) {
-      throw new RangeError.range(end, start, length - 1);
+      throw new RangeError.range(end, start, length);
     }
     if (start < end) {
       if (start != 0 || end != length) {

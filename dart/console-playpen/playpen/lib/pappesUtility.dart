@@ -28,8 +28,8 @@ library pappesUtility;
 ///     
 /// ##Incorrect Examples
 ///  
-///     var myCache = New RamCache(); //this is no need to use new
-///     myCache.remember('MyKey', value); //this will use the shared node cache
+///     var myCache = New RamCache(); //there is no need to use new
+///     myCache.remember('MyKey', value); //this will not spawn a new cache, it will use the common node cache
 ///     
 class RamCache {
   /// Store all the individual session cahces in a Map for later retrieval 

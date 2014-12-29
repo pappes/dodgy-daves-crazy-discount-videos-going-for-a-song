@@ -124,19 +124,25 @@ final htmlBlinkMap = {
   'JsFunction': () => js.JsFunction,
   'JsArray': () => js.JsArray,
   'AbstractWorker': () => AbstractWorker,
-  'Algorithm': () => Algorithm,
   'Animation': () => Animation,
+  'AnimationEffect': () => AnimationEffect,
+  'AnimationNode': () => AnimationNode,
+  'AnimationPlayer': () => AnimationPlayer,
+  'AnimationPlayerEvent': () => AnimationPlayerEvent,
+  'AnimationTimeline': () => AnimationTimeline,
   'ApplicationCache': () => ApplicationCache,
+  'ApplicationCacheErrorEvent': () => ApplicationCacheErrorEvent,
   'Attr': () => _Attr,
+  'AudioTrack': () => AudioTrack,
+  'AudioTrackList': () => AudioTrackList,
   'AutocompleteErrorEvent': () => AutocompleteErrorEvent,
   'BarProp': () => BarProp,
-  'BeforeLoadEvent': () => BeforeLoadEvent,
+  'BatteryManager': () => BatteryManager,
   'BeforeUnloadEvent': () => BeforeUnloadEvent,
   'Blob': () => Blob,
   'CDATASection': () => CDataSection,
   'CSS': () => Css,
   'CSSCharsetRule': () => CssCharsetRule,
-  'CSSFontFaceLoadEvent': () => CssFontFaceLoadEvent,
   'CSSFontFaceRule': () => CssFontFaceRule,
   'CSSImportRule': () => CssImportRule,
   'CSSKeyframeRule': () => CssKeyframeRule,
@@ -154,16 +160,18 @@ final htmlBlinkMap = {
   'CSSValue': () => _CSSValue,
   'CSSValueList': () => _CssValueList,
   'CSSViewportRule': () => CssViewportRule,
+  'Cache': () => _Cache,
+  'CacheStorage': () => CacheStorage,
   'Canvas2DContextAttributes': () => Canvas2DContextAttributes,
   'CanvasGradient': () => CanvasGradient,
+  'CanvasPathMethods': () => _CanvasPathMethods,
   'CanvasPattern': () => CanvasPattern,
-  'CanvasRenderingContext': () => CanvasRenderingContext,
   'CanvasRenderingContext2D': () => CanvasRenderingContext2D,
   'CharacterData': () => CharacterData,
   'ChildNode': () => ChildNode,
+  'CircularRegion': () => CircularRegion,
   'ClientRect': () => _ClientRect,
   'ClientRectList': () => _ClientRectList,
-  'Clipboard': () => DataTransfer,
   'CloseEvent': () => CloseEvent,
   'Comment': () => Comment,
   'CompositionEvent': () => CompositionEvent,
@@ -171,18 +179,28 @@ final htmlBlinkMap = {
   'ConsoleBase': () => ConsoleBase,
   'Coordinates': () => Coordinates,
   'Counter': () => _Counter,
+  'Credential': () => Credential,
+  'CredentialsContainer': () => CredentialsContainer,
   'Crypto': () => Crypto,
+  'CryptoKey': () => CryptoKey,
   'CustomEvent': () => CustomEvent,
   'DOMError': () => DomError,
   'DOMException': () => DomException,
   'DOMFileSystem': () => FileSystem,
   'DOMFileSystemSync': () => _DOMFileSystemSync,
   'DOMImplementation': () => DomImplementation,
+  'DOMMatrix': () => DomMatrix,
+  'DOMMatrixReadOnly': () => DomMatrixReadOnly,
   'DOMParser': () => DomParser,
+  'DOMPoint': () => DomPoint,
+  'DOMPointReadOnly': () => DomPointReadOnly,
+  'DOMRect': () => _DomRect,
+  'DOMRectReadOnly': () => DomRectReadOnly,
   'DOMSettableTokenList': () => DomSettableTokenList,
   'DOMStringList': () => DomStringList,
   'DOMStringMap': () => DomStringMap,
   'DOMTokenList': () => DomTokenList,
+  'DataTransfer': () => DataTransfer,
   'DataTransferItem': () => DataTransferItem,
   'DataTransferItemList': () => DataTransferItemList,
   'DatabaseSync': () => _DatabaseSync,
@@ -190,6 +208,7 @@ final htmlBlinkMap = {
   'DeprecatedStorageInfo': () => DeprecatedStorageInfo,
   'DeprecatedStorageQuota': () => DeprecatedStorageQuota,
   'DeviceAcceleration': () => DeviceAcceleration,
+  'DeviceLightEvent': () => DeviceLightEvent,
   'DeviceMotionEvent': () => DeviceMotionEvent,
   'DeviceOrientationEvent': () => DeviceOrientationEvent,
   'DeviceRotationRate': () => DeviceRotationRate,
@@ -207,6 +226,9 @@ final htmlBlinkMap = {
   'Event': () => Event,
   'EventSource': () => EventSource,
   'EventTarget': () => EventTarget,
+  'FederatedCredential': () => FederatedCredential,
+  'FetchBodyStream': () => FetchBodyStream,
+  'FetchEvent': () => FetchEvent,
   'File': () => File,
   'FileEntry': () => FileEntry,
   'FileEntrySync': () => _FileEntrySync,
@@ -219,9 +241,14 @@ final htmlBlinkMap = {
   'FocusEvent': () => FocusEvent,
   'FontFace': () => FontFace,
   'FontFaceSet': () => FontFaceSet,
+  'FontFaceSetLoadEvent': () => FontFaceSetLoadEvent,
   'FormData': () => FormData,
   'Gamepad': () => Gamepad,
+  'GamepadButton': () => GamepadButton,
+  'GamepadEvent': () => GamepadEvent,
   'GamepadList': () => _GamepadList,
+  'Geofencing': () => Geofencing,
+  'GeofencingRegion': () => GeofencingRegion,
   'Geolocation': () => Geolocation,
   'Geoposition': () => Geoposition,
   'GlobalEventHandlers': () => GlobalEventHandlers,
@@ -268,6 +295,7 @@ final htmlBlinkMap = {
   'HTMLMarqueeElement': () => _HTMLMarqueeElement,
   'HTMLMediaElement': () => MediaElement,
   'HTMLMenuElement': () => MenuElement,
+  'HTMLMenuItemElement': () => MenuItemElement,
   'HTMLMetaElement': () => MetaElement,
   'HTMLMeterElement': () => MeterElement,
   'HTMLModElement': () => ModElement,
@@ -279,6 +307,7 @@ final htmlBlinkMap = {
   'HTMLOutputElement': () => OutputElement,
   'HTMLParagraphElement': () => ParagraphElement,
   'HTMLParamElement': () => ParamElement,
+  'HTMLPictureElement': () => PictureElement,
   'HTMLPreElement': () => PreElement,
   'HTMLProgressElement': () => ProgressElement,
   'HTMLQuoteElement': () => QuoteElement,
@@ -302,6 +331,7 @@ final htmlBlinkMap = {
   'HTMLUnknownElement': () => UnknownElement,
   'HTMLVideoElement': () => VideoElement,
   'HashChangeEvent': () => HashChangeEvent,
+  'Headers': () => Headers,
   'History': () => History,
   'ImageBitmap': () => ImageBitmap,
   'ImageData': () => ImageData,
@@ -309,18 +339,17 @@ final htmlBlinkMap = {
   'InputMethodContext': () => InputMethodContext,
   'InstallEvent': () => InstallEvent,
   'InstallPhaseEvent': () => InstallPhaseEvent,
-  'Key': () => CryptoKey,
-  'KeyPair': () => KeyPair,
   'KeyboardEvent': () => KeyboardEvent,
+  'LocalCredential': () => LocalCredential,
   'Location': () => Location,
   'MIDIAccess': () => MidiAccess,
-  'MIDIAccessPromise': () => MidiAccessPromise,
   'MIDIConnectionEvent': () => MidiConnectionEvent,
   'MIDIInput': () => MidiInput,
   'MIDIMessageEvent': () => MidiMessageEvent,
   'MIDIOutput': () => MidiOutput,
   'MIDIPort': () => MidiPort,
   'MediaController': () => MediaController,
+  'MediaDeviceInfo': () => MediaDeviceInfo,
   'MediaError': () => MediaError,
   'MediaKeyError': () => MediaKeyError,
   'MediaKeyEvent': () => MediaKeyEvent,
@@ -348,21 +377,23 @@ final htmlBlinkMap = {
   'MutationRecord': () => MutationRecord,
   'NamedNodeMap': () => _NamedNodeMap,
   'Navigator': () => Navigator,
+  'NavigatorCPU': () => NavigatorCpu,
   'NavigatorID': () => NavigatorID,
+  'NavigatorLanguage': () => NavigatorLanguage,
   'NavigatorOnLine': () => NavigatorOnLine,
   'NavigatorUserMediaError': () => NavigatorUserMediaError,
+  'NetworkInformation': () => NetworkInformation,
   'Node': () => Node,
   'NodeFilter': () => NodeFilter,
   'NodeIterator': () => NodeIterator,
   'NodeList': () => NodeList,
   'Notation': () => _Notation,
   'Notification': () => Notification,
-  'NotificationCenter': () => _NotificationCenter,
   'OverflowEvent': () => OverflowEvent,
   'PagePopupController': () => _PagePopupController,
   'PageTransitionEvent': () => PageTransitionEvent,
   'ParentNode': () => ParentNode,
-  'Path': () => Path,
+  'Path2D': () => Path2D,
   'Performance': () => Performance,
   'PerformanceEntry': () => PerformanceEntry,
   'PerformanceMark': () => PerformanceMark,
@@ -370,13 +401,15 @@ final htmlBlinkMap = {
   'PerformanceNavigation': () => PerformanceNavigation,
   'PerformanceResourceTiming': () => PerformanceResourceTiming,
   'PerformanceTiming': () => PerformanceTiming,
-  'Player': () => Player,
   'Plugin': () => Plugin,
   'PluginArray': () => PluginArray,
   'PopStateEvent': () => PopStateEvent,
   'PositionError': () => PositionError,
   'ProcessingInstruction': () => ProcessingInstruction,
   'ProgressEvent': () => ProgressEvent,
+  'PushEvent': () => PushEvent,
+  'PushManager': () => PushManager,
+  'PushRegistration': () => PushRegistration,
   'RGBColor': () => _RGBColor,
   'RTCDTMFSender': () => RtcDtmfSender,
   'RTCDTMFToneChangeEvent': () => RtcDtmfToneChangeEvent,
@@ -390,14 +423,22 @@ final htmlBlinkMap = {
   'RTCStatsResponse': () => RtcStatsResponse,
   'RadioNodeList': () => _RadioNodeList,
   'Range': () => Range,
+  'ReadableStream': () => ReadableStream,
   'Rect': () => _Rect,
+  'RelatedEvent': () => RelatedEvent,
+  'Request': () => _Request,
   'ResourceProgressEvent': () => ResourceProgressEvent,
+  'Response': () => _Response,
   'Screen': () => Screen,
+  'ScreenOrientation': () => ScreenOrientation,
   'SecurityPolicyViolationEvent': () => SecurityPolicyViolationEvent,
   'Selection': () => Selection,
   'ServiceWorker': () => _ServiceWorker,
+  'ServiceWorkerClient': () => ServiceWorkerClient,
+  'ServiceWorkerClients': () => ServiceWorkerClients,
   'ServiceWorkerContainer': () => ServiceWorkerContainer,
   'ServiceWorkerGlobalScope': () => ServiceWorkerGlobalScope,
+  'ServiceWorkerRegistration': () => ServiceWorkerRegistration,
   'ShadowRoot': () => ShadowRoot,
   'SharedWorker': () => SharedWorker,
   'SharedWorkerGlobalScope': () => SharedWorkerGlobalScope,
@@ -406,9 +447,6 @@ final htmlBlinkMap = {
   'SourceInfo': () => SourceInfo,
   'SpeechGrammar': () => SpeechGrammar,
   'SpeechGrammarList': () => SpeechGrammarList,
-  'SpeechInputEvent': () => SpeechInputEvent,
-  'SpeechInputResult': () => SpeechInputResult,
-  'SpeechInputResultList': () => _SpeechInputResultList,
   'SpeechRecognition': () => SpeechRecognition,
   'SpeechRecognitionAlternative': () => SpeechRecognitionAlternative,
   'SpeechRecognitionError': () => SpeechRecognitionError,
@@ -436,8 +474,6 @@ final htmlBlinkMap = {
   'TextTrackCueList': () => TextTrackCueList,
   'TextTrackList': () => TextTrackList,
   'TimeRanges': () => TimeRanges,
-  'TimedItem': () => TimedItem,
-  'Timeline': () => Timeline,
   'Timing': () => Timing,
   'Touch': () => Touch,
   'TouchEvent': () => TouchEvent,
@@ -454,16 +490,14 @@ final htmlBlinkMap = {
   'VTTRegionList': () => VttRegionList,
   'ValidityState': () => ValidityState,
   'VideoPlaybackQuality': () => VideoPlaybackQuality,
+  'VideoTrack': () => VideoTrack,
+  'VideoTrackList': () => VideoTrackList,
   'WebKitAnimationEvent': () => AnimationEvent,
   'WebKitCSSFilterRule': () => CssFilterRule,
   'WebKitCSSFilterValue': () => _WebKitCSSFilterValue,
   'WebKitCSSMatrix': () => _WebKitCSSMatrix,
   'WebKitCSSTransformValue': () => _WebKitCSSTransformValue,
-  'WebKitMediaSource': () => _WebKitMediaSource,
-  'WebKitNotification': () => _WebKitNotification,
   'WebKitPoint': () => _DomPoint,
-  'WebKitSourceBuffer': () => _WebKitSourceBuffer,
-  'WebKitSourceBufferList': () => _WebKitSourceBufferList,
   'WebSocket': () => WebSocket,
   'WheelEvent': () => WheelEvent,
   'Window': () => Window,
@@ -472,7 +506,6 @@ final htmlBlinkMap = {
   'WindowTimers': () => _WindowTimers,
   'Worker': () => Worker,
   'WorkerConsole': () => WorkerConsole,
-  'WorkerCrypto': () => WorkerCrypto,
   'WorkerGlobalScope': () => WorkerGlobalScope,
   'WorkerLocation': () => _WorkerLocation,
   'WorkerNavigator': () => _WorkerNavigator,
@@ -489,9 +522,6 @@ final htmlBlinkMap = {
   'XPathResult': () => XPathResult,
   'XSLTProcessor': () => XsltProcessor,
 
-  // FIXME: Temporary workaround.  The Blink name matches the Dart name
-  // post Chrome 35.  We still generate the old mapping from 'Clipboard'.
-  'DataTransfer': () => DataTransfer,
 };
 
 // TODO(leafp): We may want to move this elsewhere if html becomes
@@ -615,26 +645,6 @@ abstract class AbstractWorker extends NativeFieldWrapperClass2 implements EventT
 
 
 @DocsEditable()
-@DomName('Algorithm')
-@Experimental() // untriaged
-class Algorithm extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory Algorithm._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('Algorithm.name')
-  @DocsEditable()
-  @Experimental() // untriaged
-  String get name => _blink.BlinkAlgorithm.$name_Getter(this);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
 @DomName('HTMLAnchorElement')
 class AnchorElement extends HtmlElement implements UrlUtils {
   // To suppress missing implicit constructor warnings.
@@ -656,137 +666,147 @@ class AnchorElement extends HtmlElement implements UrlUtils {
 
   @DomName('HTMLAnchorElement.download')
   @DocsEditable()
-  String get download => _blink.BlinkHTMLAnchorElement.$download_Getter(this);
+  String get download => _blink.BlinkHTMLAnchorElement.instance.download_Getter_(this);
 
   @DomName('HTMLAnchorElement.download')
   @DocsEditable()
-  void set download(String value) => _blink.BlinkHTMLAnchorElement.$download_Setter(this, value);
+  void set download(String value) => _blink.BlinkHTMLAnchorElement.instance.download_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.hreflang')
   @DocsEditable()
-  String get hreflang => _blink.BlinkHTMLAnchorElement.$hreflang_Getter(this);
+  String get hreflang => _blink.BlinkHTMLAnchorElement.instance.hreflang_Getter_(this);
 
   @DomName('HTMLAnchorElement.hreflang')
   @DocsEditable()
-  void set hreflang(String value) => _blink.BlinkHTMLAnchorElement.$hreflang_Setter(this, value);
+  void set hreflang(String value) => _blink.BlinkHTMLAnchorElement.instance.hreflang_Setter_(this, value);
+
+  @DomName('HTMLAnchorElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLAnchorElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLAnchorElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLAnchorElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.rel')
   @DocsEditable()
-  String get rel => _blink.BlinkHTMLAnchorElement.$rel_Getter(this);
+  String get rel => _blink.BlinkHTMLAnchorElement.instance.rel_Getter_(this);
 
   @DomName('HTMLAnchorElement.rel')
   @DocsEditable()
-  void set rel(String value) => _blink.BlinkHTMLAnchorElement.$rel_Setter(this, value);
+  void set rel(String value) => _blink.BlinkHTMLAnchorElement.instance.rel_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.target')
   @DocsEditable()
-  String get target => _blink.BlinkHTMLAnchorElement.$target_Getter(this);
+  String get target => _blink.BlinkHTMLAnchorElement.instance.target_Getter_(this);
 
   @DomName('HTMLAnchorElement.target')
   @DocsEditable()
-  void set target(String value) => _blink.BlinkHTMLAnchorElement.$target_Setter(this, value);
+  void set target(String value) => _blink.BlinkHTMLAnchorElement.instance.target_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLAnchorElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLAnchorElement.instance.type_Getter_(this);
 
   @DomName('HTMLAnchorElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLAnchorElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLAnchorElement.instance.type_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.hash')
   @DocsEditable()
-  String get hash => _blink.BlinkHTMLAnchorElement.$hash_Getter(this);
+  String get hash => _blink.BlinkHTMLAnchorElement.instance.hash_Getter_(this);
 
   @DomName('HTMLAnchorElement.hash')
   @DocsEditable()
-  void set hash(String value) => _blink.BlinkHTMLAnchorElement.$hash_Setter(this, value);
+  void set hash(String value) => _blink.BlinkHTMLAnchorElement.instance.hash_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.host')
   @DocsEditable()
-  String get host => _blink.BlinkHTMLAnchorElement.$host_Getter(this);
+  String get host => _blink.BlinkHTMLAnchorElement.instance.host_Getter_(this);
 
   @DomName('HTMLAnchorElement.host')
   @DocsEditable()
-  void set host(String value) => _blink.BlinkHTMLAnchorElement.$host_Setter(this, value);
+  void set host(String value) => _blink.BlinkHTMLAnchorElement.instance.host_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.hostname')
   @DocsEditable()
-  String get hostname => _blink.BlinkHTMLAnchorElement.$hostname_Getter(this);
+  String get hostname => _blink.BlinkHTMLAnchorElement.instance.hostname_Getter_(this);
 
   @DomName('HTMLAnchorElement.hostname')
   @DocsEditable()
-  void set hostname(String value) => _blink.BlinkHTMLAnchorElement.$hostname_Setter(this, value);
+  void set hostname(String value) => _blink.BlinkHTMLAnchorElement.instance.hostname_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.href')
   @DocsEditable()
-  String get href => _blink.BlinkHTMLAnchorElement.$href_Getter(this);
+  String get href => _blink.BlinkHTMLAnchorElement.instance.href_Getter_(this);
 
   @DomName('HTMLAnchorElement.href')
   @DocsEditable()
-  void set href(String value) => _blink.BlinkHTMLAnchorElement.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkHTMLAnchorElement.instance.href_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.origin')
   @DocsEditable()
   // WebKit only
   @Experimental() // non-standard
-  String get origin => _blink.BlinkHTMLAnchorElement.$origin_Getter(this);
+  String get origin => _blink.BlinkHTMLAnchorElement.instance.origin_Getter_(this);
 
   @DomName('HTMLAnchorElement.password')
   @DocsEditable()
   @Experimental() // untriaged
-  String get password => _blink.BlinkHTMLAnchorElement.$password_Getter(this);
+  String get password => _blink.BlinkHTMLAnchorElement.instance.password_Getter_(this);
 
   @DomName('HTMLAnchorElement.password')
   @DocsEditable()
   @Experimental() // untriaged
-  void set password(String value) => _blink.BlinkHTMLAnchorElement.$password_Setter(this, value);
+  void set password(String value) => _blink.BlinkHTMLAnchorElement.instance.password_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.pathname')
   @DocsEditable()
-  String get pathname => _blink.BlinkHTMLAnchorElement.$pathname_Getter(this);
+  String get pathname => _blink.BlinkHTMLAnchorElement.instance.pathname_Getter_(this);
 
   @DomName('HTMLAnchorElement.pathname')
   @DocsEditable()
-  void set pathname(String value) => _blink.BlinkHTMLAnchorElement.$pathname_Setter(this, value);
+  void set pathname(String value) => _blink.BlinkHTMLAnchorElement.instance.pathname_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.port')
   @DocsEditable()
-  String get port => _blink.BlinkHTMLAnchorElement.$port_Getter(this);
+  String get port => _blink.BlinkHTMLAnchorElement.instance.port_Getter_(this);
 
   @DomName('HTMLAnchorElement.port')
   @DocsEditable()
-  void set port(String value) => _blink.BlinkHTMLAnchorElement.$port_Setter(this, value);
+  void set port(String value) => _blink.BlinkHTMLAnchorElement.instance.port_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.protocol')
   @DocsEditable()
-  String get protocol => _blink.BlinkHTMLAnchorElement.$protocol_Getter(this);
+  String get protocol => _blink.BlinkHTMLAnchorElement.instance.protocol_Getter_(this);
 
   @DomName('HTMLAnchorElement.protocol')
   @DocsEditable()
-  void set protocol(String value) => _blink.BlinkHTMLAnchorElement.$protocol_Setter(this, value);
+  void set protocol(String value) => _blink.BlinkHTMLAnchorElement.instance.protocol_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.search')
   @DocsEditable()
-  String get search => _blink.BlinkHTMLAnchorElement.$search_Getter(this);
+  String get search => _blink.BlinkHTMLAnchorElement.instance.search_Getter_(this);
 
   @DomName('HTMLAnchorElement.search')
   @DocsEditable()
-  void set search(String value) => _blink.BlinkHTMLAnchorElement.$search_Setter(this, value);
+  void set search(String value) => _blink.BlinkHTMLAnchorElement.instance.search_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.username')
   @DocsEditable()
   @Experimental() // untriaged
-  String get username => _blink.BlinkHTMLAnchorElement.$username_Getter(this);
+  String get username => _blink.BlinkHTMLAnchorElement.instance.username_Getter_(this);
 
   @DomName('HTMLAnchorElement.username')
   @DocsEditable()
   @Experimental() // untriaged
-  void set username(String value) => _blink.BlinkHTMLAnchorElement.$username_Setter(this, value);
+  void set username(String value) => _blink.BlinkHTMLAnchorElement.instance.username_Setter_(this, value);
 
   @DomName('HTMLAnchorElement.toString')
   @DocsEditable()
-  String toString() => _blink.BlinkHTMLAnchorElement.$toString_Callback(this);
+  String toString() => _blink.BlinkHTMLAnchorElement.instance.toString_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -799,24 +819,39 @@ class AnchorElement extends HtmlElement implements UrlUtils {
 @DocsEditable()
 @DomName('Animation')
 @Experimental() // untriaged
-class Animation extends TimedItem {
+class Animation extends AnimationNode {
   // To suppress missing implicit constructor warnings.
   factory Animation._() { throw new UnsupportedError("Not supported"); }
 
   @DomName('Animation.Animation')
   @DocsEditable()
   factory Animation(Element target, List<Map> keyframes, [timingInput]) {
-    if ((timingInput is Map || timingInput == null) && (keyframes is List<Map> || keyframes == null) && (target is Element || target == null)) {
-      return _blink.BlinkAnimation.$_create_1constructorCallback(target, keyframes, timingInput);
+    if ((keyframes is List<Map> || keyframes == null) && (target is Element || target == null) && timingInput == null) {
+      return _blink.BlinkAnimation.instance.constructorCallback_2_(target, keyframes);
     }
     if ((timingInput is num || timingInput == null) && (keyframes is List<Map> || keyframes == null) && (target is Element || target == null)) {
-      return _blink.BlinkAnimation.$_create_2constructorCallback(target, keyframes, timingInput);
+      return _blink.BlinkAnimation.instance.constructorCallback_3_(target, keyframes, timingInput);
     }
-    if ((keyframes is List<Map> || keyframes == null) && (target is Element || target == null) && timingInput == null) {
-      return _blink.BlinkAnimation.$_create_3constructorCallback(target, keyframes);
+    if ((timingInput is Map || timingInput == null) && (keyframes is List<Map> || keyframes == null) && (target is Element || target == null)) {
+      return _blink.BlinkAnimation.instance.constructorCallback_3_(target, keyframes, timingInput);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AnimationEffect')
+@Experimental() // untriaged
+class AnimationEffect extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory AnimationEffect._() { throw new UnsupportedError("Not supported"); }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -837,11 +872,211 @@ class AnimationEvent extends Event {
 
   @DomName('WebKitAnimationEvent.animationName')
   @DocsEditable()
-  String get animationName => _blink.BlinkWebKitAnimationEvent.$animationName_Getter(this);
+  String get animationName => _blink.BlinkWebKitAnimationEvent.instance.animationName_Getter_(this);
 
   @DomName('WebKitAnimationEvent.elapsedTime')
   @DocsEditable()
-  double get elapsedTime => _blink.BlinkWebKitAnimationEvent.$elapsedTime_Getter(this);
+  double get elapsedTime => _blink.BlinkWebKitAnimationEvent.instance.elapsedTime_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AnimationNode')
+@Experimental() // untriaged
+class AnimationNode extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory AnimationNode._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AnimationNode.activeDuration')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get activeDuration => _blink.BlinkAnimationNode.instance.activeDuration_Getter_(this);
+
+  @DomName('AnimationNode.currentIteration')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get currentIteration => _blink.BlinkAnimationNode.instance.currentIteration_Getter_(this);
+
+  @DomName('AnimationNode.duration')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get duration => _blink.BlinkAnimationNode.instance.duration_Getter_(this);
+
+  @DomName('AnimationNode.endTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get endTime => _blink.BlinkAnimationNode.instance.endTime_Getter_(this);
+
+  @DomName('AnimationNode.localTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get localTime => _blink.BlinkAnimationNode.instance.localTime_Getter_(this);
+
+  @DomName('AnimationNode.player')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AnimationPlayer get player => _blink.BlinkAnimationNode.instance.player_Getter_(this);
+
+  @DomName('AnimationNode.startTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get startTime => _blink.BlinkAnimationNode.instance.startTime_Getter_(this);
+
+  @DomName('AnimationNode.timing')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Timing get timing => _blink.BlinkAnimationNode.instance.timing_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AnimationPlayer')
+@Experimental() // untriaged
+class AnimationPlayer extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory AnimationPlayer._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AnimationPlayer.currentTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get currentTime => _blink.BlinkAnimationPlayer.instance.currentTime_Getter_(this);
+
+  @DomName('AnimationPlayer.currentTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set currentTime(num value) => _blink.BlinkAnimationPlayer.instance.currentTime_Setter_(this, value);
+
+  @DomName('AnimationPlayer.finished')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get finished => _blink.BlinkAnimationPlayer.instance.finished_Getter_(this);
+
+  @DomName('AnimationPlayer.paused')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get paused => _blink.BlinkAnimationPlayer.instance.paused_Getter_(this);
+
+  @DomName('AnimationPlayer.playbackRate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get playbackRate => _blink.BlinkAnimationPlayer.instance.playbackRate_Getter_(this);
+
+  @DomName('AnimationPlayer.playbackRate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set playbackRate(num value) => _blink.BlinkAnimationPlayer.instance.playbackRate_Setter_(this, value);
+
+  @DomName('AnimationPlayer.source')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AnimationNode get source => _blink.BlinkAnimationPlayer.instance.source_Getter_(this);
+
+  @DomName('AnimationPlayer.source')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set source(AnimationNode value) => _blink.BlinkAnimationPlayer.instance.source_Setter_(this, value);
+
+  @DomName('AnimationPlayer.startTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get startTime => _blink.BlinkAnimationPlayer.instance.startTime_Getter_(this);
+
+  @DomName('AnimationPlayer.startTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set startTime(num value) => _blink.BlinkAnimationPlayer.instance.startTime_Setter_(this, value);
+
+  @DomName('AnimationPlayer.cancel')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void cancel() => _blink.BlinkAnimationPlayer.instance.cancel_Callback_0_(this);
+
+  @DomName('AnimationPlayer.finish')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void finish() => _blink.BlinkAnimationPlayer.instance.finish_Callback_0_(this);
+
+  @DomName('AnimationPlayer.pause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void pause() => _blink.BlinkAnimationPlayer.instance.pause_Callback_0_(this);
+
+  @DomName('AnimationPlayer.play')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void play() => _blink.BlinkAnimationPlayer.instance.play_Callback_0_(this);
+
+  @DomName('AnimationPlayer.reverse')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void reverse() => _blink.BlinkAnimationPlayer.instance.reverse_Callback_0_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AnimationPlayerEvent')
+@Experimental() // untriaged
+class AnimationPlayerEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory AnimationPlayerEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AnimationPlayerEvent.currentTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get currentTime => _blink.BlinkAnimationPlayerEvent.instance.currentTime_Getter_(this);
+
+  @DomName('AnimationPlayerEvent.timelineTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get timelineTime => _blink.BlinkAnimationPlayerEvent.instance.timelineTime_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AnimationTimeline')
+@Experimental() // untriaged
+class AnimationTimeline extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory AnimationTimeline._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AnimationTimeline.currentTime')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get currentTime => _blink.BlinkAnimationTimeline.instance.currentTime_Getter_(this);
+
+  @DomName('AnimationTimeline.getAnimationPlayers')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<AnimationPlayer> getAnimationPlayers() => _blink.BlinkAnimationTimeline.instance.getAnimationPlayers_Callback_0_(this);
+
+  @DomName('AnimationTimeline.play')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AnimationPlayer play(AnimationNode source) => _blink.BlinkAnimationTimeline.instance.play_Callback_1_(this, source);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -975,19 +1210,19 @@ class ApplicationCache extends EventTarget {
 
   @DomName('ApplicationCache.status')
   @DocsEditable()
-  int get status => _blink.BlinkApplicationCache.$status_Getter(this);
+  int get status => _blink.BlinkApplicationCache.instance.status_Getter_(this);
 
   @DomName('ApplicationCache.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkApplicationCache.$abort_Callback(this);
+  void abort() => _blink.BlinkApplicationCache.instance.abort_Callback_0_(this);
 
   @DomName('ApplicationCache.swapCache')
   @DocsEditable()
-  void swapCache() => _blink.BlinkApplicationCache.$swapCache_Callback(this);
+  void swapCache() => _blink.BlinkApplicationCache.instance.swapCache_Callback_0_(this);
 
   @DomName('ApplicationCache.update')
   @DocsEditable()
-  void update() => _blink.BlinkApplicationCache.$update_Callback(this);
+  void update() => _blink.BlinkApplicationCache.instance.update_Callback_0_(this);
 
   /// Stream of `cached` events handled by this [ApplicationCache].
   @DomName('ApplicationCache.oncached')
@@ -1038,6 +1273,41 @@ class ApplicationCache extends EventTarget {
 
 
 @DocsEditable()
+@DomName('ApplicationCacheErrorEvent')
+@Experimental() // untriaged
+class ApplicationCacheErrorEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory ApplicationCacheErrorEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ApplicationCacheErrorEvent.message')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get message => _blink.BlinkApplicationCacheErrorEvent.instance.message_Getter_(this);
+
+  @DomName('ApplicationCacheErrorEvent.reason')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get reason => _blink.BlinkApplicationCacheErrorEvent.instance.reason_Getter_(this);
+
+  @DomName('ApplicationCacheErrorEvent.status')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get status => _blink.BlinkApplicationCacheErrorEvent.instance.status_Getter_(this);
+
+  @DomName('ApplicationCacheErrorEvent.url')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get url => _blink.BlinkApplicationCacheErrorEvent.instance.url_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
 /**
  * DOM Area Element, which links regions of an image map with a hyperlink.
  *
@@ -1065,129 +1335,129 @@ class AreaElement extends HtmlElement implements UrlUtils {
 
   @DomName('HTMLAreaElement.alt')
   @DocsEditable()
-  String get alt => _blink.BlinkHTMLAreaElement.$alt_Getter(this);
+  String get alt => _blink.BlinkHTMLAreaElement.instance.alt_Getter_(this);
 
   @DomName('HTMLAreaElement.alt')
   @DocsEditable()
-  void set alt(String value) => _blink.BlinkHTMLAreaElement.$alt_Setter(this, value);
+  void set alt(String value) => _blink.BlinkHTMLAreaElement.instance.alt_Setter_(this, value);
 
   @DomName('HTMLAreaElement.coords')
   @DocsEditable()
-  String get coords => _blink.BlinkHTMLAreaElement.$coords_Getter(this);
+  String get coords => _blink.BlinkHTMLAreaElement.instance.coords_Getter_(this);
 
   @DomName('HTMLAreaElement.coords')
   @DocsEditable()
-  void set coords(String value) => _blink.BlinkHTMLAreaElement.$coords_Setter(this, value);
+  void set coords(String value) => _blink.BlinkHTMLAreaElement.instance.coords_Setter_(this, value);
 
   @DomName('HTMLAreaElement.shape')
   @DocsEditable()
-  String get shape => _blink.BlinkHTMLAreaElement.$shape_Getter(this);
+  String get shape => _blink.BlinkHTMLAreaElement.instance.shape_Getter_(this);
 
   @DomName('HTMLAreaElement.shape')
   @DocsEditable()
-  void set shape(String value) => _blink.BlinkHTMLAreaElement.$shape_Setter(this, value);
+  void set shape(String value) => _blink.BlinkHTMLAreaElement.instance.shape_Setter_(this, value);
 
   @DomName('HTMLAreaElement.target')
   @DocsEditable()
-  String get target => _blink.BlinkHTMLAreaElement.$target_Getter(this);
+  String get target => _blink.BlinkHTMLAreaElement.instance.target_Getter_(this);
 
   @DomName('HTMLAreaElement.target')
   @DocsEditable()
-  void set target(String value) => _blink.BlinkHTMLAreaElement.$target_Setter(this, value);
+  void set target(String value) => _blink.BlinkHTMLAreaElement.instance.target_Setter_(this, value);
 
   @DomName('HTMLAreaElement.hash')
   @DocsEditable()
-  String get hash => _blink.BlinkHTMLAreaElement.$hash_Getter(this);
+  String get hash => _blink.BlinkHTMLAreaElement.instance.hash_Getter_(this);
 
   @DomName('HTMLAreaElement.hash')
   @DocsEditable()
-  void set hash(String value) => _blink.BlinkHTMLAreaElement.$hash_Setter(this, value);
+  void set hash(String value) => _blink.BlinkHTMLAreaElement.instance.hash_Setter_(this, value);
 
   @DomName('HTMLAreaElement.host')
   @DocsEditable()
-  String get host => _blink.BlinkHTMLAreaElement.$host_Getter(this);
+  String get host => _blink.BlinkHTMLAreaElement.instance.host_Getter_(this);
 
   @DomName('HTMLAreaElement.host')
   @DocsEditable()
-  void set host(String value) => _blink.BlinkHTMLAreaElement.$host_Setter(this, value);
+  void set host(String value) => _blink.BlinkHTMLAreaElement.instance.host_Setter_(this, value);
 
   @DomName('HTMLAreaElement.hostname')
   @DocsEditable()
-  String get hostname => _blink.BlinkHTMLAreaElement.$hostname_Getter(this);
+  String get hostname => _blink.BlinkHTMLAreaElement.instance.hostname_Getter_(this);
 
   @DomName('HTMLAreaElement.hostname')
   @DocsEditable()
-  void set hostname(String value) => _blink.BlinkHTMLAreaElement.$hostname_Setter(this, value);
+  void set hostname(String value) => _blink.BlinkHTMLAreaElement.instance.hostname_Setter_(this, value);
 
   @DomName('HTMLAreaElement.href')
   @DocsEditable()
-  String get href => _blink.BlinkHTMLAreaElement.$href_Getter(this);
+  String get href => _blink.BlinkHTMLAreaElement.instance.href_Getter_(this);
 
   @DomName('HTMLAreaElement.href')
   @DocsEditable()
-  void set href(String value) => _blink.BlinkHTMLAreaElement.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkHTMLAreaElement.instance.href_Setter_(this, value);
 
   @DomName('HTMLAreaElement.origin')
   @DocsEditable()
   @Experimental() // untriaged
-  String get origin => _blink.BlinkHTMLAreaElement.$origin_Getter(this);
+  String get origin => _blink.BlinkHTMLAreaElement.instance.origin_Getter_(this);
 
   @DomName('HTMLAreaElement.password')
   @DocsEditable()
   @Experimental() // untriaged
-  String get password => _blink.BlinkHTMLAreaElement.$password_Getter(this);
+  String get password => _blink.BlinkHTMLAreaElement.instance.password_Getter_(this);
 
   @DomName('HTMLAreaElement.password')
   @DocsEditable()
   @Experimental() // untriaged
-  void set password(String value) => _blink.BlinkHTMLAreaElement.$password_Setter(this, value);
+  void set password(String value) => _blink.BlinkHTMLAreaElement.instance.password_Setter_(this, value);
 
   @DomName('HTMLAreaElement.pathname')
   @DocsEditable()
-  String get pathname => _blink.BlinkHTMLAreaElement.$pathname_Getter(this);
+  String get pathname => _blink.BlinkHTMLAreaElement.instance.pathname_Getter_(this);
 
   @DomName('HTMLAreaElement.pathname')
   @DocsEditable()
-  void set pathname(String value) => _blink.BlinkHTMLAreaElement.$pathname_Setter(this, value);
+  void set pathname(String value) => _blink.BlinkHTMLAreaElement.instance.pathname_Setter_(this, value);
 
   @DomName('HTMLAreaElement.port')
   @DocsEditable()
-  String get port => _blink.BlinkHTMLAreaElement.$port_Getter(this);
+  String get port => _blink.BlinkHTMLAreaElement.instance.port_Getter_(this);
 
   @DomName('HTMLAreaElement.port')
   @DocsEditable()
-  void set port(String value) => _blink.BlinkHTMLAreaElement.$port_Setter(this, value);
+  void set port(String value) => _blink.BlinkHTMLAreaElement.instance.port_Setter_(this, value);
 
   @DomName('HTMLAreaElement.protocol')
   @DocsEditable()
-  String get protocol => _blink.BlinkHTMLAreaElement.$protocol_Getter(this);
+  String get protocol => _blink.BlinkHTMLAreaElement.instance.protocol_Getter_(this);
 
   @DomName('HTMLAreaElement.protocol')
   @DocsEditable()
-  void set protocol(String value) => _blink.BlinkHTMLAreaElement.$protocol_Setter(this, value);
+  void set protocol(String value) => _blink.BlinkHTMLAreaElement.instance.protocol_Setter_(this, value);
 
   @DomName('HTMLAreaElement.search')
   @DocsEditable()
-  String get search => _blink.BlinkHTMLAreaElement.$search_Getter(this);
+  String get search => _blink.BlinkHTMLAreaElement.instance.search_Getter_(this);
 
   @DomName('HTMLAreaElement.search')
   @DocsEditable()
-  void set search(String value) => _blink.BlinkHTMLAreaElement.$search_Setter(this, value);
+  void set search(String value) => _blink.BlinkHTMLAreaElement.instance.search_Setter_(this, value);
 
   @DomName('HTMLAreaElement.username')
   @DocsEditable()
   @Experimental() // untriaged
-  String get username => _blink.BlinkHTMLAreaElement.$username_Getter(this);
+  String get username => _blink.BlinkHTMLAreaElement.instance.username_Getter_(this);
 
   @DomName('HTMLAreaElement.username')
   @DocsEditable()
   @Experimental() // untriaged
-  void set username(String value) => _blink.BlinkHTMLAreaElement.$username_Setter(this, value);
+  void set username(String value) => _blink.BlinkHTMLAreaElement.instance.username_Setter_(this, value);
 
   @DomName('HTMLAreaElement.toString')
   @DocsEditable()
   @Experimental() // untriaged
-  String toString() => _blink.BlinkHTMLAreaElement.$toString_Callback(this);
+  String toString() => _blink.BlinkHTMLAreaElement.instance.toString_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1206,7 +1476,7 @@ class AudioElement extends MediaElement {
   @DomName('HTMLAudioElement.HTMLAudioElement')
   @DocsEditable()
   factory AudioElement([String src]) {
-    return _blink.BlinkHTMLAudioElement.$_create_1constructorCallback(src);
+    return _blink.BlinkHTMLAudioElement.instance.constructorCallback_1_(src);
   }
   /**
    * Constructor instantiated by the DOM when a custom element has been created.
@@ -1214,6 +1484,91 @@ class AudioElement extends MediaElement {
    * This can only be called by subclasses from their created constructor.
    */
   AudioElement.created() : super.created();
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AudioTrack')
+@Experimental() // untriaged
+class AudioTrack extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory AudioTrack._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AudioTrack.enabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get enabled => _blink.BlinkAudioTrack.instance.enabled_Getter_(this);
+
+  @DomName('AudioTrack.enabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set enabled(bool value) => _blink.BlinkAudioTrack.instance.enabled_Setter_(this, value);
+
+  @DomName('AudioTrack.id')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get id => _blink.BlinkAudioTrack.instance.id_Getter_(this);
+
+  @DomName('AudioTrack.kind')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get kind => _blink.BlinkAudioTrack.instance.kind_Getter_(this);
+
+  @DomName('AudioTrack.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get label => _blink.BlinkAudioTrack.instance.label_Getter_(this);
+
+  @DomName('AudioTrack.language')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get language => _blink.BlinkAudioTrack.instance.language_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('AudioTrackList')
+@Experimental() // untriaged
+class AudioTrackList extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory AudioTrackList._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('AudioTrackList.changeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> changeEvent = const EventStreamProvider<Event>('change');
+
+  @DomName('AudioTrackList.length')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get length => _blink.BlinkAudioTrackList.instance.length_Getter_(this);
+
+  @DomName('AudioTrackList.__getter__')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AudioTrack __getter__(int index) => _blink.BlinkAudioTrackList.instance.$__getter___Callback_1_(this, index);
+
+  @DomName('AudioTrackList.getTrackById')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AudioTrack getTrackById(String id) => _blink.BlinkAudioTrackList.instance.getTrackById_Callback_1_(this, id);
+
+  @DomName('AudioTrackList.onchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onChange => changeEvent.forTarget(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1233,7 +1588,7 @@ class AutocompleteErrorEvent extends Event {
 
   @DomName('AutocompleteErrorEvent.reason')
   @DocsEditable()
-  String get reason => _blink.BlinkAutocompleteErrorEvent.$reason_Getter(this);
+  String get reason => _blink.BlinkAutocompleteErrorEvent.instance.reason_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1277,7 +1632,7 @@ class BarProp extends NativeFieldWrapperClass2 {
 
   @DomName('BarProp.visible')
   @DocsEditable()
-  bool get visible => _blink.BlinkBarProp.$visible_Getter(this);
+  bool get visible => _blink.BlinkBarProp.instance.visible_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1305,19 +1660,19 @@ class BaseElement extends HtmlElement {
 
   @DomName('HTMLBaseElement.href')
   @DocsEditable()
-  String get href => _blink.BlinkHTMLBaseElement.$href_Getter(this);
+  String get href => _blink.BlinkHTMLBaseElement.instance.href_Getter_(this);
 
   @DomName('HTMLBaseElement.href')
   @DocsEditable()
-  void set href(String value) => _blink.BlinkHTMLBaseElement.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkHTMLBaseElement.instance.href_Setter_(this, value);
 
   @DomName('HTMLBaseElement.target')
   @DocsEditable()
-  String get target => _blink.BlinkHTMLBaseElement.$target_Getter(this);
+  String get target => _blink.BlinkHTMLBaseElement.instance.target_Getter_(this);
 
   @DomName('HTMLBaseElement.target')
   @DocsEditable()
-  void set target(String value) => _blink.BlinkHTMLBaseElement.$target_Setter(this, value);
+  void set target(String value) => _blink.BlinkHTMLBaseElement.instance.target_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1328,11 +1683,28 @@ class BaseElement extends HtmlElement {
 
 
 @DocsEditable()
-@DomName('BeforeLoadEvent')
-@Experimental()
-class BeforeLoadEvent extends Event {
+@DomName('BatteryManager')
+// https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html#batterymanager-interface
+@Experimental() // stable
+class BatteryManager extends EventTarget {
   // To suppress missing implicit constructor warnings.
-  factory BeforeLoadEvent._() { throw new UnsupportedError("Not supported"); }
+  factory BatteryManager._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('BatteryManager.charging')
+  @DocsEditable()
+  bool get charging => _blink.BlinkBatteryManager.instance.charging_Getter_(this);
+
+  @DomName('BatteryManager.chargingTime')
+  @DocsEditable()
+  double get chargingTime => _blink.BlinkBatteryManager.instance.chargingTime_Getter_(this);
+
+  @DomName('BatteryManager.dischargingTime')
+  @DocsEditable()
+  double get dischargingTime => _blink.BlinkBatteryManager.instance.dischargingTime_Getter_(this);
+
+  @DomName('BatteryManager.level')
+  @DocsEditable()
+  double get level => _blink.BlinkBatteryManager.instance.level_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1350,11 +1722,11 @@ class BeforeUnloadEvent extends Event {
 
   @DomName('BeforeUnloadEvent.returnValue')
   @DocsEditable()
-  String get returnValue => _blink.BlinkBeforeUnloadEvent.$returnValue_Getter(this);
+  String get returnValue => _blink.BlinkBeforeUnloadEvent.instance.returnValue_Getter_(this);
 
   @DomName('BeforeUnloadEvent.returnValue')
   @DocsEditable()
-  void set returnValue(String value) => _blink.BlinkBeforeUnloadEvent.$returnValue_Setter(this, value);
+  void set returnValue(String value) => _blink.BlinkBeforeUnloadEvent.instance.returnValue_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1372,27 +1744,32 @@ class Blob extends NativeFieldWrapperClass2 {
   factory Blob(List blobParts, [String type, String endings]) => _create(blobParts, type, endings);
 
   @DocsEditable()
-  static Blob _create(blobParts, type, endings) => _blink.BlinkBlob.$constructorCallback(blobParts, type, endings);
+  static Blob _create(blobParts, type, endings) => _blink.BlinkBlob.instance.constructorCallback_3_(blobParts, type, endings);
 
   @DomName('Blob.size')
   @DocsEditable()
-  int get size => _blink.BlinkBlob.$size_Getter(this);
+  int get size => _blink.BlinkBlob.instance.size_Getter_(this);
 
   @DomName('Blob.type')
   @DocsEditable()
-  String get type => _blink.BlinkBlob.$type_Getter(this);
+  String get type => _blink.BlinkBlob.instance.type_Getter_(this);
+
+  @DomName('Blob.close')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void close() => _blink.BlinkBlob.instance.close_Callback_0_(this);
 
   Blob slice([int start, int end, String contentType]) {
     if (contentType != null) {
-      return _blink.BlinkBlob.$_slice_1_Callback(this, start, end, contentType);
+      return _blink.BlinkBlob.instance.slice_Callback_3_(this, start, end, contentType);
     }
     if (end != null) {
-      return _blink.BlinkBlob.$_slice_2_Callback(this, start, end);
+      return _blink.BlinkBlob.instance.slice_Callback_2_(this, start, end);
     }
     if (start != null) {
-      return _blink.BlinkBlob.$_slice_3_Callback(this, start);
+      return _blink.BlinkBlob.instance.slice_Callback_1_(this, start);
     }
-    return _blink.BlinkBlob.$_slice_4_Callback(this);
+    return _blink.BlinkBlob.instance.slice_Callback_0_(this);
   }
 
 }
@@ -1635,112 +2012,112 @@ class ButtonElement extends HtmlElement {
 
   @DomName('HTMLButtonElement.autofocus')
   @DocsEditable()
-  bool get autofocus => _blink.BlinkHTMLButtonElement.$autofocus_Getter(this);
+  bool get autofocus => _blink.BlinkHTMLButtonElement.instance.autofocus_Getter_(this);
 
   @DomName('HTMLButtonElement.autofocus')
   @DocsEditable()
-  void set autofocus(bool value) => _blink.BlinkHTMLButtonElement.$autofocus_Setter(this, value);
+  void set autofocus(bool value) => _blink.BlinkHTMLButtonElement.instance.autofocus_Setter_(this, value);
 
   @DomName('HTMLButtonElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLButtonElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLButtonElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLButtonElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLButtonElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLButtonElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLButtonElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLButtonElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLButtonElement.instance.form_Getter_(this);
 
   @DomName('HTMLButtonElement.formAction')
   @DocsEditable()
-  String get formAction => _blink.BlinkHTMLButtonElement.$formAction_Getter(this);
+  String get formAction => _blink.BlinkHTMLButtonElement.instance.formAction_Getter_(this);
 
   @DomName('HTMLButtonElement.formAction')
   @DocsEditable()
-  void set formAction(String value) => _blink.BlinkHTMLButtonElement.$formAction_Setter(this, value);
+  void set formAction(String value) => _blink.BlinkHTMLButtonElement.instance.formAction_Setter_(this, value);
 
   @DomName('HTMLButtonElement.formEnctype')
   @DocsEditable()
-  String get formEnctype => _blink.BlinkHTMLButtonElement.$formEnctype_Getter(this);
+  String get formEnctype => _blink.BlinkHTMLButtonElement.instance.formEnctype_Getter_(this);
 
   @DomName('HTMLButtonElement.formEnctype')
   @DocsEditable()
-  void set formEnctype(String value) => _blink.BlinkHTMLButtonElement.$formEnctype_Setter(this, value);
+  void set formEnctype(String value) => _blink.BlinkHTMLButtonElement.instance.formEnctype_Setter_(this, value);
 
   @DomName('HTMLButtonElement.formMethod')
   @DocsEditable()
-  String get formMethod => _blink.BlinkHTMLButtonElement.$formMethod_Getter(this);
+  String get formMethod => _blink.BlinkHTMLButtonElement.instance.formMethod_Getter_(this);
 
   @DomName('HTMLButtonElement.formMethod')
   @DocsEditable()
-  void set formMethod(String value) => _blink.BlinkHTMLButtonElement.$formMethod_Setter(this, value);
+  void set formMethod(String value) => _blink.BlinkHTMLButtonElement.instance.formMethod_Setter_(this, value);
 
   @DomName('HTMLButtonElement.formNoValidate')
   @DocsEditable()
-  bool get formNoValidate => _blink.BlinkHTMLButtonElement.$formNoValidate_Getter(this);
+  bool get formNoValidate => _blink.BlinkHTMLButtonElement.instance.formNoValidate_Getter_(this);
 
   @DomName('HTMLButtonElement.formNoValidate')
   @DocsEditable()
-  void set formNoValidate(bool value) => _blink.BlinkHTMLButtonElement.$formNoValidate_Setter(this, value);
+  void set formNoValidate(bool value) => _blink.BlinkHTMLButtonElement.instance.formNoValidate_Setter_(this, value);
 
   @DomName('HTMLButtonElement.formTarget')
   @DocsEditable()
-  String get formTarget => _blink.BlinkHTMLButtonElement.$formTarget_Getter(this);
+  String get formTarget => _blink.BlinkHTMLButtonElement.instance.formTarget_Getter_(this);
 
   @DomName('HTMLButtonElement.formTarget')
   @DocsEditable()
-  void set formTarget(String value) => _blink.BlinkHTMLButtonElement.$formTarget_Setter(this, value);
+  void set formTarget(String value) => _blink.BlinkHTMLButtonElement.instance.formTarget_Setter_(this, value);
 
   @DomName('HTMLButtonElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLButtonElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLButtonElement.instance.labels_Getter_(this);
 
   @DomName('HTMLButtonElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLButtonElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLButtonElement.instance.name_Getter_(this);
 
   @DomName('HTMLButtonElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLButtonElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLButtonElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLButtonElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLButtonElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLButtonElement.instance.type_Getter_(this);
 
   @DomName('HTMLButtonElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLButtonElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLButtonElement.instance.type_Setter_(this, value);
 
   @DomName('HTMLButtonElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLButtonElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLButtonElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLButtonElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLButtonElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLButtonElement.instance.validity_Getter_(this);
 
   @DomName('HTMLButtonElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLButtonElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLButtonElement.instance.value_Getter_(this);
 
   @DomName('HTMLButtonElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLButtonElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLButtonElement.instance.value_Setter_(this, value);
 
   @DomName('HTMLButtonElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLButtonElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLButtonElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLButtonElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLButtonElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLButtonElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLButtonElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLButtonElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLButtonElement.instance.setCustomValidity_Callback_1_(this, error);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1767,6 +2144,46 @@ class CDataSection extends Text {
 
 
 @DocsEditable()
+@DomName('CacheStorage')
+@Experimental() // untriaged
+class CacheStorage extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory CacheStorage._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('CacheStorage.create')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future create(String cacheName) => _blink.BlinkCacheStorage.instance.create_Callback_1_(this, cacheName);
+
+  @DomName('CacheStorage.delete')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future delete(String cacheName) => _blink.BlinkCacheStorage.instance.delete_Callback_1_(this, cacheName);
+
+  @DomName('CacheStorage.get')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future get(String cacheName) => _blink.BlinkCacheStorage.instance.get_Callback_1_(this, cacheName);
+
+  @DomName('CacheStorage.has')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future has(String cacheName) => _blink.BlinkCacheStorage.instance.has_Callback_1_(this, cacheName);
+
+  @DomName('CacheStorage.keys')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future keys() => _blink.BlinkCacheStorage.instance.keys_Callback_0_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
 @DomName('Canvas2DContextAttributes')
 // http://wiki.whatwg.org/wiki/CanvasOpaque#Suggested_IDL
 @Experimental()
@@ -1776,11 +2193,21 @@ class Canvas2DContextAttributes extends NativeFieldWrapperClass2 {
 
   @DomName('Canvas2DContextAttributes.alpha')
   @DocsEditable()
-  bool get alpha => _blink.BlinkCanvas2DContextAttributes.$alpha_Getter(this);
+  bool get alpha => _blink.BlinkCanvas2DContextAttributes.instance.alpha_Getter_(this);
 
   @DomName('Canvas2DContextAttributes.alpha')
   @DocsEditable()
-  void set alpha(bool value) => _blink.BlinkCanvas2DContextAttributes.$alpha_Setter(this, value);
+  void set alpha(bool value) => _blink.BlinkCanvas2DContextAttributes.instance.alpha_Setter_(this, value);
+
+  @DomName('Canvas2DContextAttributes.storage')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get storage => _blink.BlinkCanvas2DContextAttributes.instance.storage_Getter_(this);
+
+  @DomName('Canvas2DContextAttributes.storage')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set storage(String value) => _blink.BlinkCanvas2DContextAttributes.instance.storage_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -1831,30 +2258,30 @@ class CanvasElement extends HtmlElement implements CanvasImageSource {
   /// The height of this canvas element in CSS pixels.
   @DomName('HTMLCanvasElement.height')
   @DocsEditable()
-  int get height => _blink.BlinkHTMLCanvasElement.$height_Getter(this);
+  int get height => _blink.BlinkHTMLCanvasElement.instance.height_Getter_(this);
 
   /// The height of this canvas element in CSS pixels.
   @DomName('HTMLCanvasElement.height')
   @DocsEditable()
-  void set height(int value) => _blink.BlinkHTMLCanvasElement.$height_Setter(this, value);
+  void set height(int value) => _blink.BlinkHTMLCanvasElement.instance.height_Setter_(this, value);
 
   /// The width of this canvas element in CSS pixels.
   @DomName('HTMLCanvasElement.width')
   @DocsEditable()
-  int get width => _blink.BlinkHTMLCanvasElement.$width_Getter(this);
+  int get width => _blink.BlinkHTMLCanvasElement.instance.width_Getter_(this);
 
   /// The width of this canvas element in CSS pixels.
   @DomName('HTMLCanvasElement.width')
   @DocsEditable()
-  void set width(int value) => _blink.BlinkHTMLCanvasElement.$width_Setter(this, value);
+  void set width(int value) => _blink.BlinkHTMLCanvasElement.instance.width_Setter_(this, value);
 
   @DomName('HTMLCanvasElement.getContext')
   @DocsEditable()
-  CanvasRenderingContext getContext(String contextId, [Map attrs]) => _blink.BlinkHTMLCanvasElement.$getContext_Callback(this, contextId, attrs);
+  Object getContext(String contextId, [Map attrs]) => _blink.BlinkHTMLCanvasElement.instance.getContext_Callback_2_(this, contextId, attrs);
 
   @DomName('HTMLCanvasElement.toDataURL')
   @DocsEditable()
-  String _toDataUrl(String type, [num quality]) => _blink.BlinkHTMLCanvasElement.$toDataURL_Callback(this, type, quality);
+  String _toDataUrl(String type, [num quality]) => _blink.BlinkHTMLCanvasElement.instance.toDataURL_Callback_2_(this, type, quality);
 
   /// Stream of `webglcontextlost` events handled by this [CanvasElement].
   @DomName('HTMLCanvasElement.onwebglcontextlost')
@@ -1997,7 +2424,7 @@ class CanvasGradient extends NativeFieldWrapperClass2 {
    */
   @DomName('CanvasGradient.addColorStop')
   @DocsEditable()
-  void addColorStop(num offset, String color) => _blink.BlinkCanvasGradient.$addColorStop_Callback(this, offset, color);
+  void addColorStop(num offset, String color) => _blink.BlinkCanvasGradient.instance.addColorStop_Callback_2_(this, offset, color);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2045,78 +2472,62 @@ class CanvasPattern extends NativeFieldWrapperClass2 {
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-// WARNING: Do not edit - generated code.
 
-
-@DocsEditable()
-/**
- * A rendering context for a canvas element.
- *
- * This context is extended by [CanvasRenderingContext2D] and
- * [WebGLRenderingContext].
- */
-@DomName('CanvasRenderingContext')
-class CanvasRenderingContext extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory CanvasRenderingContext._() { throw new UnsupportedError("Not supported"); }
-
-  /// Reference to the canvas element to which this context belongs.
-  @DomName('CanvasRenderingContext.canvas')
-  @DocsEditable()
-  CanvasElement get canvas => _blink.BlinkCanvasRenderingContext.$canvas_Getter(this);
-
+abstract class CanvasRenderingContext {
+  CanvasElement get canvas;
 }
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
 
 @DomName('CanvasRenderingContext2D')
-class CanvasRenderingContext2D extends CanvasRenderingContext {
+class CanvasRenderingContext2D extends NativeFieldWrapperClass2 implements CanvasRenderingContext {
   // To suppress missing implicit constructor warnings.
   factory CanvasRenderingContext2D._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('CanvasRenderingContext2D.canvas')
+  @DocsEditable()
+  @Experimental() // untriaged
+  CanvasElement get canvas => _blink.BlinkCanvasRenderingContext2D.instance.canvas_Getter_(this);
+
   @DomName('CanvasRenderingContext2D.currentTransform')
   @DocsEditable()
   @Experimental() // untriaged
-  Matrix get currentTransform => _blink.BlinkCanvasRenderingContext2D.$currentTransform_Getter(this);
+  Matrix get currentTransform => _blink.BlinkCanvasRenderingContext2D.instance.currentTransform_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.currentTransform')
   @DocsEditable()
   @Experimental() // untriaged
-  void set currentTransform(Matrix value) => _blink.BlinkCanvasRenderingContext2D.$currentTransform_Setter(this, value);
+  void set currentTransform(Matrix value) => _blink.BlinkCanvasRenderingContext2D.instance.currentTransform_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.fillStyle')
   @DocsEditable()
-  Object get fillStyle => _blink.BlinkCanvasRenderingContext2D.$fillStyle_Getter(this);
+  Object get fillStyle => _blink.BlinkCanvasRenderingContext2D.instance.fillStyle_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.fillStyle')
   @DocsEditable()
-  void set fillStyle(Object value) => _blink.BlinkCanvasRenderingContext2D.$fillStyle_Setter(this, value);
+  void set fillStyle(Object value) => _blink.BlinkCanvasRenderingContext2D.instance.fillStyle_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.font')
   @DocsEditable()
-  String get font => _blink.BlinkCanvasRenderingContext2D.$font_Getter(this);
+  String get font => _blink.BlinkCanvasRenderingContext2D.instance.font_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.font')
   @DocsEditable()
-  void set font(String value) => _blink.BlinkCanvasRenderingContext2D.$font_Setter(this, value);
+  void set font(String value) => _blink.BlinkCanvasRenderingContext2D.instance.font_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.globalAlpha')
   @DocsEditable()
-  num get globalAlpha => _blink.BlinkCanvasRenderingContext2D.$globalAlpha_Getter(this);
+  num get globalAlpha => _blink.BlinkCanvasRenderingContext2D.instance.globalAlpha_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.globalAlpha')
   @DocsEditable()
-  void set globalAlpha(num value) => _blink.BlinkCanvasRenderingContext2D.$globalAlpha_Setter(this, value);
+  void set globalAlpha(num value) => _blink.BlinkCanvasRenderingContext2D.instance.globalAlpha_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.globalCompositeOperation')
   @DocsEditable()
-  String get globalCompositeOperation => _blink.BlinkCanvasRenderingContext2D.$globalCompositeOperation_Getter(this);
+  String get globalCompositeOperation => _blink.BlinkCanvasRenderingContext2D.instance.globalCompositeOperation_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.globalCompositeOperation')
   @DocsEditable()
-  void set globalCompositeOperation(String value) => _blink.BlinkCanvasRenderingContext2D.$globalCompositeOperation_Setter(this, value);
+  void set globalCompositeOperation(String value) => _blink.BlinkCanvasRenderingContext2D.instance.globalCompositeOperation_Setter_(this, value);
 
   /**
    * Whether images and patterns on this canvas will be smoothed when this
@@ -2131,7 +2542,7 @@ class CanvasRenderingContext2D extends CanvasRenderingContext {
   @DomName('CanvasRenderingContext2D.imageSmoothingEnabled')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get imageSmoothingEnabled => _blink.BlinkCanvasRenderingContext2D.$imageSmoothingEnabled_Getter(this);
+  bool get imageSmoothingEnabled => _blink.BlinkCanvasRenderingContext2D.instance.imageSmoothingEnabled_Getter_(this);
 
   /**
    * Whether images and patterns on this canvas will be smoothed when this
@@ -2146,242 +2557,270 @@ class CanvasRenderingContext2D extends CanvasRenderingContext {
   @DomName('CanvasRenderingContext2D.imageSmoothingEnabled')
   @DocsEditable()
   @Experimental() // untriaged
-  void set imageSmoothingEnabled(bool value) => _blink.BlinkCanvasRenderingContext2D.$imageSmoothingEnabled_Setter(this, value);
+  void set imageSmoothingEnabled(bool value) => _blink.BlinkCanvasRenderingContext2D.instance.imageSmoothingEnabled_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.lineCap')
   @DocsEditable()
-  String get lineCap => _blink.BlinkCanvasRenderingContext2D.$lineCap_Getter(this);
+  String get lineCap => _blink.BlinkCanvasRenderingContext2D.instance.lineCap_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.lineCap')
   @DocsEditable()
-  void set lineCap(String value) => _blink.BlinkCanvasRenderingContext2D.$lineCap_Setter(this, value);
+  void set lineCap(String value) => _blink.BlinkCanvasRenderingContext2D.instance.lineCap_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.lineDashOffset')
   @DocsEditable()
-  num get lineDashOffset => _blink.BlinkCanvasRenderingContext2D.$lineDashOffset_Getter(this);
+  num get lineDashOffset => _blink.BlinkCanvasRenderingContext2D.instance.lineDashOffset_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.lineDashOffset')
   @DocsEditable()
-  void set lineDashOffset(num value) => _blink.BlinkCanvasRenderingContext2D.$lineDashOffset_Setter(this, value);
+  void set lineDashOffset(num value) => _blink.BlinkCanvasRenderingContext2D.instance.lineDashOffset_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.lineJoin')
   @DocsEditable()
-  String get lineJoin => _blink.BlinkCanvasRenderingContext2D.$lineJoin_Getter(this);
+  String get lineJoin => _blink.BlinkCanvasRenderingContext2D.instance.lineJoin_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.lineJoin')
   @DocsEditable()
-  void set lineJoin(String value) => _blink.BlinkCanvasRenderingContext2D.$lineJoin_Setter(this, value);
+  void set lineJoin(String value) => _blink.BlinkCanvasRenderingContext2D.instance.lineJoin_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.lineWidth')
   @DocsEditable()
-  num get lineWidth => _blink.BlinkCanvasRenderingContext2D.$lineWidth_Getter(this);
+  num get lineWidth => _blink.BlinkCanvasRenderingContext2D.instance.lineWidth_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.lineWidth')
   @DocsEditable()
-  void set lineWidth(num value) => _blink.BlinkCanvasRenderingContext2D.$lineWidth_Setter(this, value);
+  void set lineWidth(num value) => _blink.BlinkCanvasRenderingContext2D.instance.lineWidth_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.miterLimit')
   @DocsEditable()
-  num get miterLimit => _blink.BlinkCanvasRenderingContext2D.$miterLimit_Getter(this);
+  num get miterLimit => _blink.BlinkCanvasRenderingContext2D.instance.miterLimit_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.miterLimit')
   @DocsEditable()
-  void set miterLimit(num value) => _blink.BlinkCanvasRenderingContext2D.$miterLimit_Setter(this, value);
+  void set miterLimit(num value) => _blink.BlinkCanvasRenderingContext2D.instance.miterLimit_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.shadowBlur')
   @DocsEditable()
-  num get shadowBlur => _blink.BlinkCanvasRenderingContext2D.$shadowBlur_Getter(this);
+  num get shadowBlur => _blink.BlinkCanvasRenderingContext2D.instance.shadowBlur_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.shadowBlur')
   @DocsEditable()
-  void set shadowBlur(num value) => _blink.BlinkCanvasRenderingContext2D.$shadowBlur_Setter(this, value);
+  void set shadowBlur(num value) => _blink.BlinkCanvasRenderingContext2D.instance.shadowBlur_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.shadowColor')
   @DocsEditable()
-  String get shadowColor => _blink.BlinkCanvasRenderingContext2D.$shadowColor_Getter(this);
+  String get shadowColor => _blink.BlinkCanvasRenderingContext2D.instance.shadowColor_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.shadowColor')
   @DocsEditable()
-  void set shadowColor(String value) => _blink.BlinkCanvasRenderingContext2D.$shadowColor_Setter(this, value);
+  void set shadowColor(String value) => _blink.BlinkCanvasRenderingContext2D.instance.shadowColor_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.shadowOffsetX')
   @DocsEditable()
-  num get shadowOffsetX => _blink.BlinkCanvasRenderingContext2D.$shadowOffsetX_Getter(this);
+  num get shadowOffsetX => _blink.BlinkCanvasRenderingContext2D.instance.shadowOffsetX_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.shadowOffsetX')
   @DocsEditable()
-  void set shadowOffsetX(num value) => _blink.BlinkCanvasRenderingContext2D.$shadowOffsetX_Setter(this, value);
+  void set shadowOffsetX(num value) => _blink.BlinkCanvasRenderingContext2D.instance.shadowOffsetX_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.shadowOffsetY')
   @DocsEditable()
-  num get shadowOffsetY => _blink.BlinkCanvasRenderingContext2D.$shadowOffsetY_Getter(this);
+  num get shadowOffsetY => _blink.BlinkCanvasRenderingContext2D.instance.shadowOffsetY_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.shadowOffsetY')
   @DocsEditable()
-  void set shadowOffsetY(num value) => _blink.BlinkCanvasRenderingContext2D.$shadowOffsetY_Setter(this, value);
+  void set shadowOffsetY(num value) => _blink.BlinkCanvasRenderingContext2D.instance.shadowOffsetY_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.strokeStyle')
   @DocsEditable()
-  Object get strokeStyle => _blink.BlinkCanvasRenderingContext2D.$strokeStyle_Getter(this);
+  Object get strokeStyle => _blink.BlinkCanvasRenderingContext2D.instance.strokeStyle_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.strokeStyle')
   @DocsEditable()
-  void set strokeStyle(Object value) => _blink.BlinkCanvasRenderingContext2D.$strokeStyle_Setter(this, value);
+  void set strokeStyle(Object value) => _blink.BlinkCanvasRenderingContext2D.instance.strokeStyle_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.textAlign')
   @DocsEditable()
-  String get textAlign => _blink.BlinkCanvasRenderingContext2D.$textAlign_Getter(this);
+  String get textAlign => _blink.BlinkCanvasRenderingContext2D.instance.textAlign_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.textAlign')
   @DocsEditable()
-  void set textAlign(String value) => _blink.BlinkCanvasRenderingContext2D.$textAlign_Setter(this, value);
+  void set textAlign(String value) => _blink.BlinkCanvasRenderingContext2D.instance.textAlign_Setter_(this, value);
 
   @DomName('CanvasRenderingContext2D.textBaseline')
   @DocsEditable()
-  String get textBaseline => _blink.BlinkCanvasRenderingContext2D.$textBaseline_Getter(this);
+  String get textBaseline => _blink.BlinkCanvasRenderingContext2D.instance.textBaseline_Getter_(this);
 
   @DomName('CanvasRenderingContext2D.textBaseline')
   @DocsEditable()
-  void set textBaseline(String value) => _blink.BlinkCanvasRenderingContext2D.$textBaseline_Setter(this, value);
+  void set textBaseline(String value) => _blink.BlinkCanvasRenderingContext2D.instance.textBaseline_Setter_(this, value);
 
-  @DomName('CanvasRenderingContext2D.arc')
-  @DocsEditable()
-  void _arc(num x, num y, num radius, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkCanvasRenderingContext2D.$arc_Callback(this, x, y, radius, startAngle, endAngle, anticlockwise);
-
-  @DomName('CanvasRenderingContext2D.arcTo')
-  @DocsEditable()
-  void arcTo(num x1, num y1, num x2, num y2, num radius) => _blink.BlinkCanvasRenderingContext2D.$arcTo_Callback(this, x1, y1, x2, y2, radius);
-
-  @DomName('CanvasRenderingContext2D.beginPath')
-  @DocsEditable()
-  void beginPath() => _blink.BlinkCanvasRenderingContext2D.$beginPath_Callback(this);
-
-  @DomName('CanvasRenderingContext2D.bezierCurveTo')
-  @DocsEditable()
-  void bezierCurveTo(num cp1x, num cp1y, num cp2x, num cp2y, num x, num y) => _blink.BlinkCanvasRenderingContext2D.$bezierCurveTo_Callback(this, cp1x, cp1y, cp2x, cp2y, x, y);
-
-  @DomName('CanvasRenderingContext2D.clearRect')
-  @DocsEditable()
-  void clearRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.$clearRect_Callback(this, x, y, width, height);
-
-  void clip([String winding]) {
-    if (winding != null) {
-      _blink.BlinkCanvasRenderingContext2D.$_clip_1_Callback(this, winding);
+  void addHitRegion([Map options]) {
+    if (options != null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.addHitRegion_Callback_1_(this, options);
       return;
     }
-    _blink.BlinkCanvasRenderingContext2D.$_clip_2_Callback(this);
+    _blink.BlinkCanvasRenderingContext2D.instance.addHitRegion_Callback_0_(this);
     return;
   }
 
-  @DomName('CanvasRenderingContext2D.closePath')
+  @DomName('CanvasRenderingContext2D.beginPath')
   @DocsEditable()
-  void closePath() => _blink.BlinkCanvasRenderingContext2D.$closePath_Callback(this);
+  void beginPath() => _blink.BlinkCanvasRenderingContext2D.instance.beginPath_Callback_0_(this);
 
-  @DomName('CanvasRenderingContext2D.createImageData')
-  @DocsEditable()
-  ImageData createImageData(num sw, num sh) => _blink.BlinkCanvasRenderingContext2D.$createImageData_Callback(this, sw, sh);
-
-  @DomName('CanvasRenderingContext2D.createImageDataFromImageData')
-  @DocsEditable()
-  ImageData createImageDataFromImageData(ImageData imagedata) => _blink.BlinkCanvasRenderingContext2D.$createImageDataFromImageData_Callback(this, imagedata);
-
-  @DomName('CanvasRenderingContext2D.createLinearGradient')
-  @DocsEditable()
-  CanvasGradient createLinearGradient(num x0, num y0, num x1, num y1) => _blink.BlinkCanvasRenderingContext2D.$createLinearGradient_Callback(this, x0, y0, x1, y1);
-
-  @DomName('CanvasRenderingContext2D.createPattern')
-  @DocsEditable()
-  CanvasPattern createPattern(CanvasElement canvas, String repetitionType) => _blink.BlinkCanvasRenderingContext2D.$createPattern_Callback(this, canvas, repetitionType);
-
-  @DomName('CanvasRenderingContext2D.createPatternFromImage')
-  @DocsEditable()
-  CanvasPattern createPatternFromImage(ImageElement image, String repetitionType) => _blink.BlinkCanvasRenderingContext2D.$createPatternFromImage_Callback(this, image, repetitionType);
-
-  @DomName('CanvasRenderingContext2D.createRadialGradient')
-  @DocsEditable()
-  CanvasGradient createRadialGradient(num x0, num y0, num r0, num x1, num y1, num r1) => _blink.BlinkCanvasRenderingContext2D.$createRadialGradient_Callback(this, x0, y0, r0, x1, y1, r1);
-
-  @DomName('CanvasRenderingContext2D.drawCustomFocusRing')
+  @DomName('CanvasRenderingContext2D.clearHitRegions')
   @DocsEditable()
   @Experimental() // untriaged
-  bool drawCustomFocusRing(Element element) => _blink.BlinkCanvasRenderingContext2D.$drawCustomFocusRing_Callback(this, element);
+  void clearHitRegions() => _blink.BlinkCanvasRenderingContext2D.instance.clearHitRegions_Callback_0_(this);
 
-  void _drawImage(canvas_OR_image_OR_imageBitmap_OR_video, num sx_OR_x, num sy_OR_y, [num sw_OR_width, num height_OR_sh, num dx, num dy, num dw, num dh]) {
-    if ((sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_1_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
+  @DomName('CanvasRenderingContext2D.clearRect')
+  @DocsEditable()
+  void clearRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.instance.clearRect_Callback_4_(this, x, y, width, height);
+
+  void clip([path_OR_winding, String winding]) {
+    if (path_OR_winding == null && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.clip_Callback_0_(this);
       return;
     }
-    if ((height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_2_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
+    if ((path_OR_winding is String) && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.clip_Callback_1_(this, path_OR_winding);
       return;
     }
-    if ((dh is num || dh == null) && (dw is num || dw == null) && (dy is num || dy == null) && (dx is num || dx == null) && (height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement || canvas_OR_image_OR_imageBitmap_OR_video == null)) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_3_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+    if ((path_OR_winding is Path2D) && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.clip_Callback_1_(this, path_OR_winding);
       return;
     }
-    if ((sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_4_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
-      return;
-    }
-    if ((height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_5_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
-      return;
-    }
-    if ((dh is num || dh == null) && (dw is num || dw == null) && (dy is num || dy == null) && (dx is num || dx == null) && (height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement || canvas_OR_image_OR_imageBitmap_OR_video == null)) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_6_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
-      return;
-    }
-    if ((sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_7_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
-      return;
-    }
-    if ((height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement || canvas_OR_image_OR_imageBitmap_OR_video == null) && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_8_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
-      return;
-    }
-    if ((dh is num || dh == null) && (dw is num || dw == null) && (dy is num || dy == null) && (dx is num || dx == null) && (height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement || canvas_OR_image_OR_imageBitmap_OR_video == null)) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_9_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
-      return;
-    }
-    if ((sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap || canvas_OR_image_OR_imageBitmap_OR_video == null) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_10_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
-      return;
-    }
-    if ((height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap || canvas_OR_image_OR_imageBitmap_OR_video == null) && dx == null && dy == null && dw == null && dh == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_11_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
-      return;
-    }
-    if ((dh is num || dh == null) && (dw is num || dw == null) && (dy is num || dy == null) && (dx is num || dx == null) && (height_OR_sh is num || height_OR_sh == null) && (sw_OR_width is num || sw_OR_width == null) && (sy_OR_y is num || sy_OR_y == null) && (sx_OR_x is num || sx_OR_x == null) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap || canvas_OR_image_OR_imageBitmap_OR_video == null)) {
-      _blink.BlinkCanvasRenderingContext2D.$_drawImage_12_Callback(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+    if ((winding is String) && (path_OR_winding is Path2D)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.clip_Callback_2_(this, path_OR_winding, winding);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  @DomName('CanvasRenderingContext2D.ellipse')
+  @DomName('CanvasRenderingContext2D.createImageData')
   @DocsEditable()
-  @Experimental() // untriaged
-  void ellipse(num x, num y, num radiusX, num radiusY, num rotation, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkCanvasRenderingContext2D.$ellipse_Callback(this, x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+  ImageData createImageData(num sw, num sh) => _blink.BlinkCanvasRenderingContext2D.instance.createImageData_Callback_2_(this, sw, sh);
 
-  void fill([String winding]) {
-    if (winding != null) {
-      _blink.BlinkCanvasRenderingContext2D.$_fill_1_Callback(this, winding);
+  @DomName('CanvasRenderingContext2D.createImageDataFromImageData')
+  @DocsEditable()
+  ImageData createImageDataFromImageData(ImageData imagedata) => _blink.BlinkCanvasRenderingContext2D.instance.createImageData_Callback_1_(this, imagedata);
+
+  @DomName('CanvasRenderingContext2D.createLinearGradient')
+  @DocsEditable()
+  CanvasGradient createLinearGradient(num x0, num y0, num x1, num y1) => _blink.BlinkCanvasRenderingContext2D.instance.createLinearGradient_Callback_4_(this, x0, y0, x1, y1);
+
+  CanvasPattern createPattern(canvas_OR_image, String repetitionType) {
+    if ((repetitionType is String || repetitionType == null) && (canvas_OR_image is CanvasElement)) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.createPattern_Callback_2_(this, canvas_OR_image, repetitionType);
+    }
+    if ((repetitionType is String || repetitionType == null) && (canvas_OR_image is VideoElement)) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.createPattern_Callback_2_(this, canvas_OR_image, repetitionType);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('CanvasRenderingContext2D.createPatternFromImage')
+  @DocsEditable()
+  CanvasPattern createPatternFromImage(ImageElement image, String repetitionType) => _blink.BlinkCanvasRenderingContext2D.instance.createPattern_Callback_2_(this, image, repetitionType);
+
+  @DomName('CanvasRenderingContext2D.createRadialGradient')
+  @DocsEditable()
+  CanvasGradient createRadialGradient(num x0, num y0, num r0, num x1, num y1, num r1) => _blink.BlinkCanvasRenderingContext2D.instance.createRadialGradient_Callback_6_(this, x0, y0, r0, x1, y1, r1);
+
+  void drawFocusIfNeeded(element_OR_path, [Element element]) {
+    if ((element_OR_path is Element) && element == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawFocusIfNeeded_Callback_1_(this, element_OR_path);
       return;
     }
-    _blink.BlinkCanvasRenderingContext2D.$_fill_2_Callback(this);
-    return;
+    if ((element is Element) && (element_OR_path is Path2D)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawFocusIfNeeded_Callback_2_(this, element_OR_path, element);
+      return;
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  void _drawImage(canvas_OR_image_OR_imageBitmap_OR_video, num sx_OR_x, num sy_OR_y, [num sw_OR_width, num height_OR_sh, num dx, num dy, num dw, num dh]) {
+    if ((sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_3_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
+      return;
+    }
+    if ((height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement) && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_5_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
+      return;
+    }
+    if ((dh is num) && (dw is num) && (dy is num) && (dx is num) && (height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageElement)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_9_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+      return;
+    }
+    if ((sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_3_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
+      return;
+    }
+    if ((height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement) && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_5_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
+      return;
+    }
+    if ((dh is num) && (dw is num) && (dy is num) && (dx is num) && (height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is CanvasElement)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_9_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+      return;
+    }
+    if ((sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_3_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
+      return;
+    }
+    if ((height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement) && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_5_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
+      return;
+    }
+    if ((dh is num) && (dw is num) && (dy is num) && (dx is num) && (height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is VideoElement)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_9_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+      return;
+    }
+    if ((sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap) && sw_OR_width == null && height_OR_sh == null && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_3_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y);
+      return;
+    }
+    if ((height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap) && dx == null && dy == null && dw == null && dh == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_5_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh);
+      return;
+    }
+    if ((dh is num) && (dw is num) && (dy is num) && (dx is num) && (height_OR_sh is num) && (sw_OR_width is num) && (sy_OR_y is num) && (sx_OR_x is num) && (canvas_OR_image_OR_imageBitmap_OR_video is ImageBitmap)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.drawImage_Callback_9_(this, canvas_OR_image_OR_imageBitmap_OR_video, sx_OR_x, sy_OR_y, sw_OR_width, height_OR_sh, dx, dy, dw, dh);
+      return;
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  void fill([path_OR_winding, String winding]) {
+    if (path_OR_winding == null && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.fill_Callback_0_(this);
+      return;
+    }
+    if ((path_OR_winding is String) && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.fill_Callback_1_(this, path_OR_winding);
+      return;
+    }
+    if ((path_OR_winding is Path2D) && winding == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.fill_Callback_1_(this, path_OR_winding);
+      return;
+    }
+    if ((winding is String) && (path_OR_winding is Path2D)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.fill_Callback_2_(this, path_OR_winding, winding);
+      return;
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   @DomName('CanvasRenderingContext2D.fillRect')
   @DocsEditable()
-  void fillRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.$fillRect_Callback(this, x, y, width, height);
+  void fillRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.instance.fillRect_Callback_4_(this, x, y, width, height);
 
   void fillText(String text, num x, num y, [num maxWidth]) {
     if (maxWidth != null) {
-      _blink.BlinkCanvasRenderingContext2D.$_fillText_1_Callback(this, text, x, y, maxWidth);
+      _blink.BlinkCanvasRenderingContext2D.instance.fillText_Callback_4_(this, text, x, y, maxWidth);
       return;
     }
-    _blink.BlinkCanvasRenderingContext2D.$_fillText_2_Callback(this, text, x, y);
+    _blink.BlinkCanvasRenderingContext2D.instance.fillText_Callback_3_(this, text, x, y);
     return;
   }
 
@@ -2389,112 +2828,175 @@ class CanvasRenderingContext2D extends CanvasRenderingContext {
   @DocsEditable()
   // http://wiki.whatwg.org/wiki/CanvasOpaque#Suggested_IDL
   @Experimental()
-  Canvas2DContextAttributes getContextAttributes() => _blink.BlinkCanvasRenderingContext2D.$getContextAttributes_Callback(this);
+  Canvas2DContextAttributes getContextAttributes() => _blink.BlinkCanvasRenderingContext2D.instance.getContextAttributes_Callback_0_(this);
 
   @DomName('CanvasRenderingContext2D.getImageData')
   @DocsEditable()
-  ImageData getImageData(num sx, num sy, num sw, num sh) => _blink.BlinkCanvasRenderingContext2D.$getImageData_Callback(this, sx, sy, sw, sh);
+  ImageData getImageData(num sx, num sy, num sw, num sh) => _blink.BlinkCanvasRenderingContext2D.instance.getImageData_Callback_4_(this, sx, sy, sw, sh);
 
   @DomName('CanvasRenderingContext2D.getLineDash')
   @DocsEditable()
-  List<num> _getLineDash() => _blink.BlinkCanvasRenderingContext2D.$getLineDash_Callback(this);
+  List<num> _getLineDash() => _blink.BlinkCanvasRenderingContext2D.instance.getLineDash_Callback_0_(this);
 
-  bool isPointInPath(num x, num y, [String winding]) {
-    if (winding != null) {
-      return _blink.BlinkCanvasRenderingContext2D.$_isPointInPath_1_Callback(this, x, y, winding);
+  @DomName('CanvasRenderingContext2D.isContextLost')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool isContextLost() => _blink.BlinkCanvasRenderingContext2D.instance.isContextLost_Callback_0_(this);
+
+  bool isPointInPath(path_OR_x, num x_OR_y, [winding_OR_y, String winding]) {
+    if ((x_OR_y is num) && (path_OR_x is num) && winding_OR_y == null && winding == null) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInPath_Callback_2_(this, path_OR_x, x_OR_y);
     }
-    return _blink.BlinkCanvasRenderingContext2D.$_isPointInPath_2_Callback(this, x, y);
+    if ((winding_OR_y is String) && (x_OR_y is num) && (path_OR_x is num) && winding == null) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInPath_Callback_3_(this, path_OR_x, x_OR_y, winding_OR_y);
+    }
+    if ((winding_OR_y is num) && (x_OR_y is num) && (path_OR_x is Path2D) && winding == null) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInPath_Callback_3_(this, path_OR_x, x_OR_y, winding_OR_y);
+    }
+    if ((winding is String) && (winding_OR_y is num) && (x_OR_y is num) && (path_OR_x is Path2D)) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInPath_Callback_4_(this, path_OR_x, x_OR_y, winding_OR_y, winding);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  @DomName('CanvasRenderingContext2D.isPointInStroke')
-  @DocsEditable()
-  bool isPointInStroke(num x, num y) => _blink.BlinkCanvasRenderingContext2D.$isPointInStroke_Callback(this, x, y);
-
-  @DomName('CanvasRenderingContext2D.lineTo')
-  @DocsEditable()
-  void lineTo(num x, num y) => _blink.BlinkCanvasRenderingContext2D.$lineTo_Callback(this, x, y);
+  bool isPointInStroke(path_OR_x, num x_OR_y, [num y]) {
+    if ((x_OR_y is num) && (path_OR_x is num) && y == null) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInStroke_Callback_2_(this, path_OR_x, x_OR_y);
+    }
+    if ((y is num) && (x_OR_y is num) && (path_OR_x is Path2D)) {
+      return _blink.BlinkCanvasRenderingContext2D.instance.isPointInStroke_Callback_3_(this, path_OR_x, x_OR_y, y);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
 
   @DomName('CanvasRenderingContext2D.measureText')
   @DocsEditable()
-  TextMetrics measureText(String text) => _blink.BlinkCanvasRenderingContext2D.$measureText_Callback(this, text);
-
-  @DomName('CanvasRenderingContext2D.moveTo')
-  @DocsEditable()
-  void moveTo(num x, num y) => _blink.BlinkCanvasRenderingContext2D.$moveTo_Callback(this, x, y);
+  TextMetrics measureText(String text) => _blink.BlinkCanvasRenderingContext2D.instance.measureText_Callback_1_(this, text);
 
   void putImageData(ImageData imagedata, num dx, num dy, [num dirtyX, num dirtyY, num dirtyWidth, num dirtyHeight]) {
-    if ((dy is num || dy == null) && (dx is num || dx == null) && (imagedata is ImageData || imagedata == null) && dirtyX == null && dirtyY == null && dirtyWidth == null && dirtyHeight == null) {
-      _blink.BlinkCanvasRenderingContext2D.$_putImageData_1_Callback(this, imagedata, dx, dy);
+    if ((dy is num) && (dx is num) && (imagedata is ImageData) && dirtyX == null && dirtyY == null && dirtyWidth == null && dirtyHeight == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.putImageData_Callback_3_(this, imagedata, dx, dy);
       return;
     }
-    if ((dirtyHeight is num || dirtyHeight == null) && (dirtyWidth is num || dirtyWidth == null) && (dirtyY is num || dirtyY == null) && (dirtyX is num || dirtyX == null) && (dy is num || dy == null) && (dx is num || dx == null) && (imagedata is ImageData || imagedata == null)) {
-      _blink.BlinkCanvasRenderingContext2D.$_putImageData_2_Callback(this, imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight);
+    if ((dirtyHeight is num) && (dirtyWidth is num) && (dirtyY is num) && (dirtyX is num) && (dy is num) && (dx is num) && (imagedata is ImageData)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.putImageData_Callback_7_(this, imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  @DomName('CanvasRenderingContext2D.quadraticCurveTo')
+  @DomName('CanvasRenderingContext2D.removeHitRegion')
   @DocsEditable()
-  void quadraticCurveTo(num cpx, num cpy, num x, num y) => _blink.BlinkCanvasRenderingContext2D.$quadraticCurveTo_Callback(this, cpx, cpy, x, y);
-
-  @DomName('CanvasRenderingContext2D.rect')
-  @DocsEditable()
-  void rect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.$rect_Callback(this, x, y, width, height);
+  @Experimental() // untriaged
+  void removeHitRegion(String id) => _blink.BlinkCanvasRenderingContext2D.instance.removeHitRegion_Callback_1_(this, id);
 
   @DomName('CanvasRenderingContext2D.resetTransform')
   @DocsEditable()
   @Experimental() // untriaged
-  void resetTransform() => _blink.BlinkCanvasRenderingContext2D.$resetTransform_Callback(this);
+  void resetTransform() => _blink.BlinkCanvasRenderingContext2D.instance.resetTransform_Callback_0_(this);
 
   @DomName('CanvasRenderingContext2D.restore')
   @DocsEditable()
-  void restore() => _blink.BlinkCanvasRenderingContext2D.$restore_Callback(this);
+  void restore() => _blink.BlinkCanvasRenderingContext2D.instance.restore_Callback_0_(this);
 
   @DomName('CanvasRenderingContext2D.rotate')
   @DocsEditable()
-  void rotate(num angle) => _blink.BlinkCanvasRenderingContext2D.$rotate_Callback(this, angle);
+  void rotate(num angle) => _blink.BlinkCanvasRenderingContext2D.instance.rotate_Callback_1_(this, angle);
 
   @DomName('CanvasRenderingContext2D.save')
   @DocsEditable()
-  void save() => _blink.BlinkCanvasRenderingContext2D.$save_Callback(this);
+  void save() => _blink.BlinkCanvasRenderingContext2D.instance.save_Callback_0_(this);
 
   @DomName('CanvasRenderingContext2D.scale')
   @DocsEditable()
-  void scale(num sx, num sy) => _blink.BlinkCanvasRenderingContext2D.$scale_Callback(this, sx, sy);
+  void scale(num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.scale_Callback_2_(this, x, y);
+
+  void scrollPathIntoView([Path2D path]) {
+    if (path != null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.scrollPathIntoView_Callback_1_(this, path);
+      return;
+    }
+    _blink.BlinkCanvasRenderingContext2D.instance.scrollPathIntoView_Callback_0_(this);
+    return;
+  }
 
   @DomName('CanvasRenderingContext2D.setLineDash')
   @DocsEditable()
-  void setLineDash(List<num> dash) => _blink.BlinkCanvasRenderingContext2D.$setLineDash_Callback(this, dash);
+  void setLineDash(List<num> dash) => _blink.BlinkCanvasRenderingContext2D.instance.setLineDash_Callback_1_(this, dash);
 
   @DomName('CanvasRenderingContext2D.setTransform')
   @DocsEditable()
-  void setTransform(num m11, num m12, num m21, num m22, num dx, num dy) => _blink.BlinkCanvasRenderingContext2D.$setTransform_Callback(this, m11, m12, m21, m22, dx, dy);
+  void setTransform(num a, num b, num c, num d, num e, num f) => _blink.BlinkCanvasRenderingContext2D.instance.setTransform_Callback_6_(this, a, b, c, d, e, f);
 
-  @DomName('CanvasRenderingContext2D.stroke')
-  @DocsEditable()
-  void stroke() => _blink.BlinkCanvasRenderingContext2D.$stroke_Callback(this);
+  void stroke([Path2D path]) {
+    if (path == null) {
+      _blink.BlinkCanvasRenderingContext2D.instance.stroke_Callback_0_(this);
+      return;
+    }
+    if ((path is Path2D)) {
+      _blink.BlinkCanvasRenderingContext2D.instance.stroke_Callback_1_(this, path);
+      return;
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
 
   @DomName('CanvasRenderingContext2D.strokeRect')
   @DocsEditable()
-  void strokeRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.$strokeRect_Callback(this, x, y, width, height);
+  void strokeRect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.instance.strokeRect_Callback_4_(this, x, y, width, height);
 
   void strokeText(String text, num x, num y, [num maxWidth]) {
     if (maxWidth != null) {
-      _blink.BlinkCanvasRenderingContext2D.$_strokeText_1_Callback(this, text, x, y, maxWidth);
+      _blink.BlinkCanvasRenderingContext2D.instance.strokeText_Callback_4_(this, text, x, y, maxWidth);
       return;
     }
-    _blink.BlinkCanvasRenderingContext2D.$_strokeText_2_Callback(this, text, x, y);
+    _blink.BlinkCanvasRenderingContext2D.instance.strokeText_Callback_3_(this, text, x, y);
     return;
   }
 
   @DomName('CanvasRenderingContext2D.transform')
   @DocsEditable()
-  void transform(num m11, num m12, num m21, num m22, num dx, num dy) => _blink.BlinkCanvasRenderingContext2D.$transform_Callback(this, m11, m12, m21, m22, dx, dy);
+  void transform(num a, num b, num c, num d, num e, num f) => _blink.BlinkCanvasRenderingContext2D.instance.transform_Callback_6_(this, a, b, c, d, e, f);
 
   @DomName('CanvasRenderingContext2D.translate')
   @DocsEditable()
-  void translate(num tx, num ty) => _blink.BlinkCanvasRenderingContext2D.$translate_Callback(this, tx, ty);
+  void translate(num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.translate_Callback_2_(this, x, y);
+
+  @DomName('CanvasRenderingContext2D.arc')
+  @DocsEditable()
+  void _arc(num x, num y, num radius, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkCanvasRenderingContext2D.instance.arc_Callback_6_(this, x, y, radius, startAngle, endAngle, anticlockwise);
+
+  @DomName('CanvasRenderingContext2D.arcTo')
+  @DocsEditable()
+  void arcTo(num x1, num y1, num x2, num y2, num radius) => _blink.BlinkCanvasRenderingContext2D.instance.arcTo_Callback_5_(this, x1, y1, x2, y2, radius);
+
+  @DomName('CanvasRenderingContext2D.bezierCurveTo')
+  @DocsEditable()
+  void bezierCurveTo(num cp1x, num cp1y, num cp2x, num cp2y, num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.bezierCurveTo_Callback_6_(this, cp1x, cp1y, cp2x, cp2y, x, y);
+
+  @DomName('CanvasRenderingContext2D.closePath')
+  @DocsEditable()
+  void closePath() => _blink.BlinkCanvasRenderingContext2D.instance.closePath_Callback_0_(this);
+
+  @DomName('CanvasRenderingContext2D.ellipse')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void ellipse(num x, num y, num radiusX, num radiusY, num rotation, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkCanvasRenderingContext2D.instance.ellipse_Callback_8_(this, x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
+
+  @DomName('CanvasRenderingContext2D.lineTo')
+  @DocsEditable()
+  void lineTo(num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.lineTo_Callback_2_(this, x, y);
+
+  @DomName('CanvasRenderingContext2D.moveTo')
+  @DocsEditable()
+  void moveTo(num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.moveTo_Callback_2_(this, x, y);
+
+  @DomName('CanvasRenderingContext2D.quadraticCurveTo')
+  @DocsEditable()
+  void quadraticCurveTo(num cpx, num cpy, num x, num y) => _blink.BlinkCanvasRenderingContext2D.instance.quadraticCurveTo_Callback_4_(this, cpx, cpy, x, y);
+
+  @DomName('CanvasRenderingContext2D.rect')
+  @DocsEditable()
+  void rect(num x, num y, num width, num height) => _blink.BlinkCanvasRenderingContext2D.instance.rect_Callback_4_(this, x, y, width, height);
 
 
   /**
@@ -2536,6 +3038,7 @@ class CanvasRenderingContext2D extends CanvasRenderingContext {
   @DomName('CanvasRenderingContext2D.arc')
   void arc(num x,  num y,  num radius,  num startAngle, num endAngle,
       [bool anticlockwise = false]) {
+    // TODO(terry): This should not be needed: dartbug.com/20939.
     _arc(x, y, radius, startAngle, endAngle, anticlockwise);
   }
 
@@ -2745,43 +3248,43 @@ class CharacterData extends Node implements ChildNode {
 
   @DomName('CharacterData.data')
   @DocsEditable()
-  String get data => _blink.BlinkCharacterData.$data_Getter(this);
+  String get data => _blink.BlinkCharacterData.instance.data_Getter_(this);
 
   @DomName('CharacterData.data')
   @DocsEditable()
-  void set data(String value) => _blink.BlinkCharacterData.$data_Setter(this, value);
+  void set data(String value) => _blink.BlinkCharacterData.instance.data_Setter_(this, value);
 
   @DomName('CharacterData.length')
   @DocsEditable()
-  int get length => _blink.BlinkCharacterData.$length_Getter(this);
+  int get length => _blink.BlinkCharacterData.instance.length_Getter_(this);
 
   @DomName('CharacterData.appendData')
   @DocsEditable()
-  void appendData(String data) => _blink.BlinkCharacterData.$appendData_Callback(this, data);
+  void appendData(String data) => _blink.BlinkCharacterData.instance.appendData_Callback_1_(this, data);
 
   @DomName('CharacterData.deleteData')
   @DocsEditable()
-  void deleteData(int offset, int length) => _blink.BlinkCharacterData.$deleteData_Callback(this, offset, length);
+  void deleteData(int offset, int length) => _blink.BlinkCharacterData.instance.deleteData_Callback_2_(this, offset, length);
 
   @DomName('CharacterData.insertData')
   @DocsEditable()
-  void insertData(int offset, String data) => _blink.BlinkCharacterData.$insertData_Callback(this, offset, data);
+  void insertData(int offset, String data) => _blink.BlinkCharacterData.instance.insertData_Callback_2_(this, offset, data);
 
   @DomName('CharacterData.replaceData')
   @DocsEditable()
-  void replaceData(int offset, int length, String data) => _blink.BlinkCharacterData.$replaceData_Callback(this, offset, length, data);
+  void replaceData(int offset, int length, String data) => _blink.BlinkCharacterData.instance.replaceData_Callback_3_(this, offset, length, data);
 
   @DomName('CharacterData.substringData')
   @DocsEditable()
-  String substringData(int offset, int length) => _blink.BlinkCharacterData.$substringData_Callback(this, offset, length);
+  String substringData(int offset, int length) => _blink.BlinkCharacterData.instance.substringData_Callback_2_(this, offset, length);
 
   @DomName('CharacterData.nextElementSibling')
   @DocsEditable()
-  Element get nextElementSibling => _blink.BlinkCharacterData.$nextElementSibling_Getter(this);
+  Element get nextElementSibling => _blink.BlinkCharacterData.instance.nextElementSibling_Getter_(this);
 
   @DomName('CharacterData.previousElementSibling')
   @DocsEditable()
-  Element get previousElementSibling => _blink.BlinkCharacterData.$previousElementSibling_Getter(this);
+  Element get previousElementSibling => _blink.BlinkCharacterData.instance.previousElementSibling_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2801,17 +3304,63 @@ abstract class ChildNode extends NativeFieldWrapperClass2 {
   @DomName('ChildNode.nextElementSibling')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get nextElementSibling => _blink.BlinkChildNode.$nextElementSibling_Getter(this);
+  Element get nextElementSibling;
 
   @DomName('ChildNode.previousElementSibling')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get previousElementSibling => _blink.BlinkChildNode.$previousElementSibling_Getter(this);
+  Element get previousElementSibling;
 
   @DomName('ChildNode.remove')
   @DocsEditable()
   @Experimental() // untriaged
-  void remove() => _blink.BlinkChildNode.$remove_Callback(this);
+  void remove();
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('CircularRegion')
+@Experimental() // untriaged
+class CircularRegion extends GeofencingRegion {
+  // To suppress missing implicit constructor warnings.
+  factory CircularRegion._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('CircularRegion.CircularRegion')
+  @DocsEditable()
+  factory CircularRegion(Map init) {
+    return _blink.BlinkCircularRegion.instance.constructorCallback_1_(init);
+  }
+
+  @DomName('CircularRegion.MAX_RADIUS')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const num MAX_RADIUS = 100.0;
+
+  @DomName('CircularRegion.MIN_RADIUS')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const num MIN_RADIUS = 1.0;
+
+  @DomName('CircularRegion.latitude')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get latitude => _blink.BlinkCircularRegion.instance.latitude_Getter_(this);
+
+  @DomName('CircularRegion.longitude')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get longitude => _blink.BlinkCircularRegion.instance.longitude_Getter_(this);
+
+  @DomName('CircularRegion.radius')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get radius => _blink.BlinkCircularRegion.instance.radius_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2829,15 +3378,15 @@ class CloseEvent extends Event {
 
   @DomName('CloseEvent.code')
   @DocsEditable()
-  int get code => _blink.BlinkCloseEvent.$code_Getter(this);
+  int get code => _blink.BlinkCloseEvent.instance.code_Getter_(this);
 
   @DomName('CloseEvent.reason')
   @DocsEditable()
-  String get reason => _blink.BlinkCloseEvent.$reason_Getter(this);
+  String get reason => _blink.BlinkCloseEvent.instance.reason_Getter_(this);
 
   @DomName('CloseEvent.wasClean')
   @DocsEditable()
-  bool get wasClean => _blink.BlinkCloseEvent.$wasClean_Getter(this);
+  bool get wasClean => _blink.BlinkCloseEvent.instance.wasClean_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2854,7 +3403,10 @@ class Comment extends CharacterData {
   @DomName('Comment.Comment')
   @DocsEditable()
   factory Comment([String data]) {
-    return _blink.BlinkComment.$_create_1constructorCallback(data);
+    if (data != null) {
+      return _blink.BlinkComment.instance.constructorCallback_1_(data);
+    }
+    return _blink.BlinkComment.instance.constructorCallback_0_();
   }
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -2882,20 +3434,25 @@ class CompositionEvent extends UIEvent {
   @DomName('CompositionEvent.activeSegmentEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  int get activeSegmentEnd => _blink.BlinkCompositionEvent.$activeSegmentEnd_Getter(this);
+  int get activeSegmentEnd => _blink.BlinkCompositionEvent.instance.activeSegmentEnd_Getter_(this);
 
   @DomName('CompositionEvent.activeSegmentStart')
   @DocsEditable()
   @Experimental() // untriaged
-  int get activeSegmentStart => _blink.BlinkCompositionEvent.$activeSegmentStart_Getter(this);
+  int get activeSegmentStart => _blink.BlinkCompositionEvent.instance.activeSegmentStart_Getter_(this);
 
   @DomName('CompositionEvent.data')
   @DocsEditable()
-  String get data => _blink.BlinkCompositionEvent.$data_Getter(this);
+  String get data => _blink.BlinkCompositionEvent.instance.data_Getter_(this);
+
+  @DomName('CompositionEvent.getSegments')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<int> getSegments() => _blink.BlinkCompositionEvent.instance.getSegments_Callback_0_(this);
 
   @DomName('CompositionEvent.initCompositionEvent')
   @DocsEditable()
-  void _initCompositionEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Window viewArg, String dataArg) => _blink.BlinkCompositionEvent.$initCompositionEvent_Callback(this, typeArg, canBubbleArg, cancelableArg, viewArg, dataArg);
+  void _initCompositionEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Window viewArg, String dataArg) => _blink.BlinkCompositionEvent.instance.initCompositionEvent_Callback_5_(this, typeArg, canBubbleArg, cancelableArg, viewArg, dataArg);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2914,7 +3471,7 @@ class Console extends ConsoleBase {
   @DomName('Console.memory')
   @DocsEditable()
   @Experimental()
-  MemoryInfo get memory => _blink.BlinkConsole.$memory_Getter(this);
+  MemoryInfo get memory => _blink.BlinkConsole.instance.memory_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -2934,117 +3491,117 @@ class ConsoleBase extends NativeFieldWrapperClass2 {
   @DomName('ConsoleBase.assertCondition')
   @DocsEditable()
   @Experimental() // untriaged
-  void assertCondition(bool condition, Object arg) => _blink.BlinkConsoleBase.$assertCondition_Callback(this, condition, arg);
+  void assertCondition(bool condition, Object arg) => _blink.BlinkConsoleBase.instance.assert_Callback_2_(this, condition, arg);
 
   @DomName('ConsoleBase.clear')
   @DocsEditable()
   @Experimental() // untriaged
-  void clear(Object arg) => _blink.BlinkConsoleBase.$clear_Callback(this, arg);
+  void clear(Object arg) => _blink.BlinkConsoleBase.instance.clear_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.count')
   @DocsEditable()
   @Experimental() // untriaged
-  void count(Object arg) => _blink.BlinkConsoleBase.$count_Callback(this, arg);
+  void count(Object arg) => _blink.BlinkConsoleBase.instance.count_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.debug')
   @DocsEditable()
   @Experimental() // untriaged
-  void debug(Object arg) => _blink.BlinkConsoleBase.$debug_Callback(this, arg);
+  void debug(Object arg) => _blink.BlinkConsoleBase.instance.debug_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.dir')
   @DocsEditable()
   @Experimental() // untriaged
-  void dir(Object arg) => _blink.BlinkConsoleBase.$dir_Callback(this, arg);
+  void dir(Object arg) => _blink.BlinkConsoleBase.instance.dir_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.dirxml')
   @DocsEditable()
   @Experimental() // untriaged
-  void dirxml(Object arg) => _blink.BlinkConsoleBase.$dirxml_Callback(this, arg);
+  void dirxml(Object arg) => _blink.BlinkConsoleBase.instance.dirxml_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.error')
   @DocsEditable()
   @Experimental() // untriaged
-  void error(Object arg) => _blink.BlinkConsoleBase.$error_Callback(this, arg);
+  void error(Object arg) => _blink.BlinkConsoleBase.instance.error_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.group')
   @DocsEditable()
   @Experimental() // untriaged
-  void group(Object arg) => _blink.BlinkConsoleBase.$group_Callback(this, arg);
+  void group(Object arg) => _blink.BlinkConsoleBase.instance.group_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.groupCollapsed')
   @DocsEditable()
   @Experimental() // untriaged
-  void groupCollapsed(Object arg) => _blink.BlinkConsoleBase.$groupCollapsed_Callback(this, arg);
+  void groupCollapsed(Object arg) => _blink.BlinkConsoleBase.instance.groupCollapsed_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.groupEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  void groupEnd() => _blink.BlinkConsoleBase.$groupEnd_Callback(this);
+  void groupEnd() => _blink.BlinkConsoleBase.instance.groupEnd_Callback_0_(this);
 
   @DomName('ConsoleBase.info')
   @DocsEditable()
   @Experimental() // untriaged
-  void info(Object arg) => _blink.BlinkConsoleBase.$info_Callback(this, arg);
+  void info(Object arg) => _blink.BlinkConsoleBase.instance.info_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.log')
   @DocsEditable()
   @Experimental() // untriaged
-  void log(Object arg) => _blink.BlinkConsoleBase.$log_Callback(this, arg);
+  void log(Object arg) => _blink.BlinkConsoleBase.instance.log_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.markTimeline')
   @DocsEditable()
   @Experimental() // untriaged
-  void markTimeline(String title) => _blink.BlinkConsoleBase.$markTimeline_Callback(this, title);
+  void markTimeline(String title) => _blink.BlinkConsoleBase.instance.markTimeline_Callback_1_(this, title);
 
   @DomName('ConsoleBase.profile')
   @DocsEditable()
   @Experimental() // untriaged
-  void profile(String title) => _blink.BlinkConsoleBase.$profile_Callback(this, title);
+  void profile(String title) => _blink.BlinkConsoleBase.instance.profile_Callback_1_(this, title);
 
   @DomName('ConsoleBase.profileEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  void profileEnd(String title) => _blink.BlinkConsoleBase.$profileEnd_Callback(this, title);
+  void profileEnd(String title) => _blink.BlinkConsoleBase.instance.profileEnd_Callback_1_(this, title);
 
   @DomName('ConsoleBase.table')
   @DocsEditable()
   @Experimental() // untriaged
-  void table(Object arg) => _blink.BlinkConsoleBase.$table_Callback(this, arg);
+  void table(Object arg) => _blink.BlinkConsoleBase.instance.table_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.time')
   @DocsEditable()
   @Experimental() // untriaged
-  void time(String title) => _blink.BlinkConsoleBase.$time_Callback(this, title);
+  void time(String title) => _blink.BlinkConsoleBase.instance.time_Callback_1_(this, title);
 
   @DomName('ConsoleBase.timeEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  void timeEnd(String title) => _blink.BlinkConsoleBase.$timeEnd_Callback(this, title);
+  void timeEnd(String title) => _blink.BlinkConsoleBase.instance.timeEnd_Callback_1_(this, title);
 
   @DomName('ConsoleBase.timeStamp')
   @DocsEditable()
   @Experimental() // untriaged
-  void timeStamp(String title) => _blink.BlinkConsoleBase.$timeStamp_Callback(this, title);
+  void timeStamp(String title) => _blink.BlinkConsoleBase.instance.timeStamp_Callback_1_(this, title);
 
   @DomName('ConsoleBase.timeline')
   @DocsEditable()
   @Experimental() // untriaged
-  void timeline(String title) => _blink.BlinkConsoleBase.$timeline_Callback(this, title);
+  void timeline(String title) => _blink.BlinkConsoleBase.instance.timeline_Callback_1_(this, title);
 
   @DomName('ConsoleBase.timelineEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  void timelineEnd(String title) => _blink.BlinkConsoleBase.$timelineEnd_Callback(this, title);
+  void timelineEnd(String title) => _blink.BlinkConsoleBase.instance.timelineEnd_Callback_1_(this, title);
 
   @DomName('ConsoleBase.trace')
   @DocsEditable()
   @Experimental() // untriaged
-  void trace(Object arg) => _blink.BlinkConsoleBase.$trace_Callback(this, arg);
+  void trace(Object arg) => _blink.BlinkConsoleBase.instance.trace_Callback_1_(this, arg);
 
   @DomName('ConsoleBase.warn')
   @DocsEditable()
   @Experimental() // untriaged
-  void warn(Object arg) => _blink.BlinkConsoleBase.$warn_Callback(this, arg);
+  void warn(Object arg) => _blink.BlinkConsoleBase.instance.warn_Callback_1_(this, arg);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3076,25 +3633,17 @@ class ContentElement extends HtmlElement {
   /// Checks if this type is supported on the current platform.
   static bool get supported => true;
 
-  @DomName('HTMLContentElement.resetStyleInheritance')
+  @DomName('HTMLContentElement.select')
   @DocsEditable()
-  bool get resetStyleInheritance => _blink.BlinkHTMLContentElement.$resetStyleInheritance_Getter(this);
-
-  @DomName('HTMLContentElement.resetStyleInheritance')
-  @DocsEditable()
-  void set resetStyleInheritance(bool value) => _blink.BlinkHTMLContentElement.$resetStyleInheritance_Setter(this, value);
+  String get select => _blink.BlinkHTMLContentElement.instance.select_Getter_(this);
 
   @DomName('HTMLContentElement.select')
   @DocsEditable()
-  String get select => _blink.BlinkHTMLContentElement.$select_Getter(this);
-
-  @DomName('HTMLContentElement.select')
-  @DocsEditable()
-  void set select(String value) => _blink.BlinkHTMLContentElement.$select_Setter(this, value);
+  void set select(String value) => _blink.BlinkHTMLContentElement.instance.select_Setter_(this, value);
 
   @DomName('HTMLContentElement.getDistributedNodes')
   @DocsEditable()
-  List<Node> getDistributedNodes() => _blink.BlinkHTMLContentElement.$getDistributedNodes_Callback(this);
+  List<Node> getDistributedNodes() => _blink.BlinkHTMLContentElement.instance.getDistributedNodes_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3112,31 +3661,102 @@ class Coordinates extends NativeFieldWrapperClass2 {
 
   @DomName('Coordinates.accuracy')
   @DocsEditable()
-  double get accuracy => _blink.BlinkCoordinates.$accuracy_Getter(this);
+  double get accuracy => _blink.BlinkCoordinates.instance.accuracy_Getter_(this);
 
   @DomName('Coordinates.altitude')
   @DocsEditable()
-  double get altitude => _blink.BlinkCoordinates.$altitude_Getter(this);
+  double get altitude => _blink.BlinkCoordinates.instance.altitude_Getter_(this);
 
   @DomName('Coordinates.altitudeAccuracy')
   @DocsEditable()
-  double get altitudeAccuracy => _blink.BlinkCoordinates.$altitudeAccuracy_Getter(this);
+  double get altitudeAccuracy => _blink.BlinkCoordinates.instance.altitudeAccuracy_Getter_(this);
 
   @DomName('Coordinates.heading')
   @DocsEditable()
-  double get heading => _blink.BlinkCoordinates.$heading_Getter(this);
+  double get heading => _blink.BlinkCoordinates.instance.heading_Getter_(this);
 
   @DomName('Coordinates.latitude')
   @DocsEditable()
-  double get latitude => _blink.BlinkCoordinates.$latitude_Getter(this);
+  double get latitude => _blink.BlinkCoordinates.instance.latitude_Getter_(this);
 
   @DomName('Coordinates.longitude')
   @DocsEditable()
-  double get longitude => _blink.BlinkCoordinates.$longitude_Getter(this);
+  double get longitude => _blink.BlinkCoordinates.instance.longitude_Getter_(this);
 
   @DomName('Coordinates.speed')
   @DocsEditable()
-  double get speed => _blink.BlinkCoordinates.$speed_Getter(this);
+  double get speed => _blink.BlinkCoordinates.instance.speed_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('Credential')
+@Experimental() // untriaged
+class Credential extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory Credential._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('Credential.avatarURL')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get avatarUrl => _blink.BlinkCredential.instance.avatarURL_Getter_(this);
+
+  @DomName('Credential.id')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get id => _blink.BlinkCredential.instance.id_Getter_(this);
+
+  @DomName('Credential.name')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get name => _blink.BlinkCredential.instance.name_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('CredentialsContainer')
+@Experimental() // untriaged
+class CredentialsContainer extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory CredentialsContainer._() { throw new UnsupportedError("Not supported"); }
+
+  Future notifyFailedSignIn([Credential credential]) {
+    if (credential != null) {
+      return _blink.BlinkCredentialsContainer.instance.notifyFailedSignIn_Callback_1_(this, credential);
+    }
+    return _blink.BlinkCredentialsContainer.instance.notifyFailedSignIn_Callback_0_(this);
+  }
+
+  Future notifySignedIn([Credential credential]) {
+    if (credential != null) {
+      return _blink.BlinkCredentialsContainer.instance.notifySignedIn_Callback_1_(this, credential);
+    }
+    return _blink.BlinkCredentialsContainer.instance.notifySignedIn_Callback_0_(this);
+  }
+
+  @DomName('CredentialsContainer.notifySignedOut')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future notifySignedOut() => _blink.BlinkCredentialsContainer.instance.notifySignedOut_Callback_0_(this);
+
+  Future request([Map options]) {
+    if (options != null) {
+      return _blink.BlinkCredentialsContainer.instance.request_Callback_1_(this, options);
+    }
+    return _blink.BlinkCredentialsContainer.instance.request_Callback_0_(this);
+  }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3162,11 +3782,11 @@ class Crypto extends NativeFieldWrapperClass2 {
   @DomName('Crypto.subtle')
   @DocsEditable()
   @Experimental() // untriaged
-  _SubtleCrypto get subtle => _blink.BlinkCrypto.$subtle_Getter(this);
+  _SubtleCrypto get subtle => _blink.BlinkCrypto.instance.subtle_Getter_(this);
 
   @DomName('Crypto.getRandomValues')
   @DocsEditable()
-  TypedData getRandomValues(TypedData array) => _blink.BlinkCrypto.$getRandomValues_Callback(this, array);
+  TypedData getRandomValues(TypedData array) => _blink.BlinkCrypto.instance.getRandomValues_Callback_1_(this, array);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3177,31 +3797,31 @@ class Crypto extends NativeFieldWrapperClass2 {
 
 
 @DocsEditable()
-@DomName('Key')
+@DomName('CryptoKey')
 @Experimental() // untriaged
 class CryptoKey extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory CryptoKey._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('Key.algorithm')
+  @DomName('CryptoKey.algorithm')
   @DocsEditable()
   @Experimental() // untriaged
-  Algorithm get algorithm => _blink.BlinkKey.$algorithm_Getter(this);
+  Object get algorithm => _blink.BlinkCryptoKey.instance.algorithm_Getter_(this);
 
-  @DomName('Key.extractable')
+  @DomName('CryptoKey.extractable')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get extractable => _blink.BlinkKey.$extractable_Getter(this);
+  bool get extractable => _blink.BlinkCryptoKey.instance.extractable_Getter_(this);
 
-  @DomName('Key.type')
+  @DomName('CryptoKey.type')
   @DocsEditable()
   @Experimental() // untriaged
-  String get type => _blink.BlinkKey.$type_Getter(this);
+  String get type => _blink.BlinkCryptoKey.instance.type_Getter_(this);
 
-  @DomName('Key.usages')
+  @DomName('CryptoKey.usages')
   @DocsEditable()
   @Experimental() // untriaged
-  List<String> get usages => _blink.BlinkKey.$usages_Getter(this);
+  List<String> get usages => _blink.BlinkCryptoKey.instance.usages_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3221,11 +3841,11 @@ class Css extends NativeFieldWrapperClass2 {
 
   @DomName('CSS.supports')
   @DocsEditable()
-  bool supports(String property, String value) => _blink.BlinkCSS.$supports_Callback(this, property, value);
+  bool supports(String property, String value) => _blink.BlinkCSS.instance.supports_Callback_2_(this, property, value);
 
   @DomName('CSS.supportsCondition')
   @DocsEditable()
-  bool supportsCondition(String conditionText) => _blink.BlinkCSS.$supportsCondition_Callback(this, conditionText);
+  bool supportsCondition(String conditionText) => _blink.BlinkCSS.instance.supports_Callback_1_(this, conditionText);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3245,11 +3865,11 @@ class CssCharsetRule extends CssRule {
 
   @DomName('CSSCharsetRule.encoding')
   @DocsEditable()
-  String get encoding => _blink.BlinkCSSCharsetRule.$encoding_Getter(this);
+  String get encoding => _blink.BlinkCSSCharsetRule.instance.encoding_Getter_(this);
 
   @DomName('CSSCharsetRule.encoding')
   @DocsEditable()
-  void set encoding(String value) => _blink.BlinkCSSCharsetRule.$encoding_Setter(this, value);
+  void set encoding(String value) => _blink.BlinkCSSCharsetRule.instance.encoding_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3271,28 +3891,7 @@ class CssFilterRule extends CssRule {
 
   @DomName('WebKitCSSFilterRule.style')
   @DocsEditable()
-  CssStyleDeclaration get style => _blink.BlinkWebKitCSSFilterRule.$style_Getter(this);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('CSSFontFaceLoadEvent')
-// http://www.w3.org/TR/css3-fonts/
-@Experimental()
-class CssFontFaceLoadEvent extends Event {
-  // To suppress missing implicit constructor warnings.
-  factory CssFontFaceLoadEvent._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('CSSFontFaceLoadEvent.fontfaces')
-  @DocsEditable()
-  @Experimental() // untriaged
-  List<FontFace> get fontfaces => _blink.BlinkCSSFontFaceLoadEvent.$fontfaces_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkWebKitCSSFilterRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3310,7 +3909,7 @@ class CssFontFaceRule extends CssRule {
 
   @DomName('CSSFontFaceRule.style')
   @DocsEditable()
-  CssStyleDeclaration get style => _blink.BlinkCSSFontFaceRule.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkCSSFontFaceRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3328,15 +3927,15 @@ class CssImportRule extends CssRule {
 
   @DomName('CSSImportRule.href')
   @DocsEditable()
-  String get href => _blink.BlinkCSSImportRule.$href_Getter(this);
+  String get href => _blink.BlinkCSSImportRule.instance.href_Getter_(this);
 
   @DomName('CSSImportRule.media')
   @DocsEditable()
-  MediaList get media => _blink.BlinkCSSImportRule.$media_Getter(this);
+  MediaList get media => _blink.BlinkCSSImportRule.instance.media_Getter_(this);
 
   @DomName('CSSImportRule.styleSheet')
   @DocsEditable()
-  CssStyleSheet get styleSheet => _blink.BlinkCSSImportRule.$styleSheet_Getter(this);
+  CssStyleSheet get styleSheet => _blink.BlinkCSSImportRule.instance.styleSheet_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3356,17 +3955,17 @@ class CssKeyframeRule extends CssRule {
   @DomName('CSSKeyframeRule.keyText')
   @DocsEditable()
   @Experimental() // untriaged
-  String get keyText => _blink.BlinkCSSKeyframeRule.$keyText_Getter(this);
+  String get keyText => _blink.BlinkCSSKeyframeRule.instance.keyText_Getter_(this);
 
   @DomName('CSSKeyframeRule.keyText')
   @DocsEditable()
   @Experimental() // untriaged
-  void set keyText(String value) => _blink.BlinkCSSKeyframeRule.$keyText_Setter(this, value);
+  void set keyText(String value) => _blink.BlinkCSSKeyframeRule.instance.keyText_Setter_(this, value);
 
   @DomName('CSSKeyframeRule.style')
   @DocsEditable()
   @Experimental() // untriaged
-  CssStyleDeclaration get style => _blink.BlinkCSSKeyframeRule.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkCSSKeyframeRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3386,37 +3985,37 @@ class CssKeyframesRule extends CssRule {
   @DomName('CSSKeyframesRule.cssRules')
   @DocsEditable()
   @Experimental() // untriaged
-  List<CssRule> get cssRules => _blink.BlinkCSSKeyframesRule.$cssRules_Getter(this);
+  List<CssRule> get cssRules => _blink.BlinkCSSKeyframesRule.instance.cssRules_Getter_(this);
 
   @DomName('CSSKeyframesRule.name')
   @DocsEditable()
   @Experimental() // untriaged
-  String get name => _blink.BlinkCSSKeyframesRule.$name_Getter(this);
+  String get name => _blink.BlinkCSSKeyframesRule.instance.name_Getter_(this);
 
   @DomName('CSSKeyframesRule.name')
   @DocsEditable()
   @Experimental() // untriaged
-  void set name(String value) => _blink.BlinkCSSKeyframesRule.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkCSSKeyframesRule.instance.name_Setter_(this, value);
 
   @DomName('CSSKeyframesRule.__getter__')
   @DocsEditable()
   @Experimental() // untriaged
-  CssKeyframeRule __getter__(int index) => _blink.BlinkCSSKeyframesRule.$__getter___Callback(this, index);
+  CssKeyframeRule __getter__(int index) => _blink.BlinkCSSKeyframesRule.instance.$__getter___Callback_1_(this, index);
 
   @DomName('CSSKeyframesRule.deleteRule')
   @DocsEditable()
   @Experimental() // untriaged
-  void deleteRule(String key) => _blink.BlinkCSSKeyframesRule.$deleteRule_Callback(this, key);
+  void deleteRule(String key) => _blink.BlinkCSSKeyframesRule.instance.deleteRule_Callback_1_(this, key);
 
   @DomName('CSSKeyframesRule.findRule')
   @DocsEditable()
   @Experimental() // untriaged
-  CssKeyframeRule findRule(String key) => _blink.BlinkCSSKeyframesRule.$findRule_Callback(this, key);
+  CssKeyframeRule findRule(String key) => _blink.BlinkCSSKeyframesRule.instance.findRule_Callback_1_(this, key);
 
   @DomName('CSSKeyframesRule.insertRule')
   @DocsEditable()
   @Experimental() // untriaged
-  void appendRule(String rule) => _blink.BlinkCSSKeyframesRule.$insertRule_Callback(this, rule);
+  void appendRule(String rule) => _blink.BlinkCSSKeyframesRule.instance.insertRule_Callback_1_(this, rule);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3434,19 +4033,19 @@ class CssMediaRule extends CssRule {
 
   @DomName('CSSMediaRule.cssRules')
   @DocsEditable()
-  List<CssRule> get cssRules => _blink.BlinkCSSMediaRule.$cssRules_Getter(this);
+  List<CssRule> get cssRules => _blink.BlinkCSSMediaRule.instance.cssRules_Getter_(this);
 
   @DomName('CSSMediaRule.media')
   @DocsEditable()
-  MediaList get media => _blink.BlinkCSSMediaRule.$media_Getter(this);
+  MediaList get media => _blink.BlinkCSSMediaRule.instance.media_Getter_(this);
 
   @DomName('CSSMediaRule.deleteRule')
   @DocsEditable()
-  void deleteRule(int index) => _blink.BlinkCSSMediaRule.$deleteRule_Callback(this, index);
+  void deleteRule(int index) => _blink.BlinkCSSMediaRule.instance.deleteRule_Callback_1_(this, index);
 
   @DomName('CSSMediaRule.insertRule')
   @DocsEditable()
-  int insertRule(String rule, int index) => _blink.BlinkCSSMediaRule.$insertRule_Callback(this, rule, index);
+  int insertRule(String rule, int index) => _blink.BlinkCSSMediaRule.instance.insertRule_Callback_2_(this, rule, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3464,15 +4063,15 @@ class CssPageRule extends CssRule {
 
   @DomName('CSSPageRule.selectorText')
   @DocsEditable()
-  String get selectorText => _blink.BlinkCSSPageRule.$selectorText_Getter(this);
+  String get selectorText => _blink.BlinkCSSPageRule.instance.selectorText_Getter_(this);
 
   @DomName('CSSPageRule.selectorText')
   @DocsEditable()
-  void set selectorText(String value) => _blink.BlinkCSSPageRule.$selectorText_Setter(this, value);
+  void set selectorText(String value) => _blink.BlinkCSSPageRule.instance.selectorText_Setter_(this, value);
 
   @DomName('CSSPageRule.style')
   @DocsEditable()
-  CssStyleDeclaration get style => _blink.BlinkCSSPageRule.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkCSSPageRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -3551,23 +4150,23 @@ class CssRule extends NativeFieldWrapperClass2 {
 
   @DomName('CSSRule.cssText')
   @DocsEditable()
-  String get cssText => _blink.BlinkCSSRule.$cssText_Getter(this);
+  String get cssText => _blink.BlinkCSSRule.instance.cssText_Getter_(this);
 
   @DomName('CSSRule.cssText')
   @DocsEditable()
-  void set cssText(String value) => _blink.BlinkCSSRule.$cssText_Setter(this, value);
+  void set cssText(String value) => _blink.BlinkCSSRule.instance.cssText_Setter_(this, value);
 
   @DomName('CSSRule.parentRule')
   @DocsEditable()
-  CssRule get parentRule => _blink.BlinkCSSRule.$parentRule_Getter(this);
+  CssRule get parentRule => _blink.BlinkCSSRule.instance.parentRule_Getter_(this);
 
   @DomName('CSSRule.parentStyleSheet')
   @DocsEditable()
-  CssStyleSheet get parentStyleSheet => _blink.BlinkCSSRule.$parentStyleSheet_Getter(this);
+  CssStyleSheet get parentStyleSheet => _blink.BlinkCSSRule.instance.parentStyleSheet_Getter_(this);
 
   @DomName('CSSRule.type')
   @DocsEditable()
-  int get type => _blink.BlinkCSSRule.$type_Getter(this);
+  int get type => _blink.BlinkCSSRule.instance.type_Getter_(this);
 
 }
 
@@ -3629,7 +4228,7 @@ class CssRule extends NativeFieldWrapperClass2 {
   }
 
   bool _hasProperty(String propertyName) =>
-      _blink.BlinkCSSStyleDeclaration.$__propertyQuery___Callback(this, propertyName);
+      _blink.BlinkCSSStyleDeclaration.$__propertyQuery___Callback_1(this, propertyName);
 
   @DomName('CSSStyleDeclaration.setProperty')
   void setProperty(String propertyName, String value, [String priority]) {
@@ -3664,48 +4263,53 @@ class CssRule extends NativeFieldWrapperClass2 {
 
   @DomName('CSSStyleDeclaration.cssText')
   @DocsEditable()
-  String get cssText => _blink.BlinkCSSStyleDeclaration.$cssText_Getter(this);
+  String get cssText => _blink.BlinkCSSStyleDeclaration.instance.cssText_Getter_(this);
 
   @DomName('CSSStyleDeclaration.cssText')
   @DocsEditable()
-  void set cssText(String value) => _blink.BlinkCSSStyleDeclaration.$cssText_Setter(this, value);
+  void set cssText(String value) => _blink.BlinkCSSStyleDeclaration.instance.cssText_Setter_(this, value);
 
   @DomName('CSSStyleDeclaration.length')
   @DocsEditable()
-  int get length => _blink.BlinkCSSStyleDeclaration.$length_Getter(this);
+  int get length => _blink.BlinkCSSStyleDeclaration.instance.length_Getter_(this);
 
   @DomName('CSSStyleDeclaration.parentRule')
   @DocsEditable()
-  CssRule get parentRule => _blink.BlinkCSSStyleDeclaration.$parentRule_Getter(this);
+  CssRule get parentRule => _blink.BlinkCSSStyleDeclaration.instance.parentRule_Getter_(this);
+
+  @DomName('CSSStyleDeclaration.__getter__')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Object __getter__(String name) => _blink.BlinkCSSStyleDeclaration.instance.$__getter___Callback_1_(this, name);
 
   @DomName('CSSStyleDeclaration.__propertyQuery__')
   @DocsEditable()
   @Experimental() // untriaged
-  bool __propertyQuery__(String name) => _blink.BlinkCSSStyleDeclaration.$__propertyQuery___Callback(this, name);
+  bool __propertyQuery__(String name) => _blink.BlinkCSSStyleDeclaration.instance.$__propertyQuery___Callback_1_(this, name);
 
   @DomName('CSSStyleDeclaration.__setter__')
   @DocsEditable()
-  void __setter__(String propertyName, String propertyValue) => _blink.BlinkCSSStyleDeclaration.$__setter___Callback(this, propertyName, propertyValue);
+  void __setter__(String propertyName, String propertyValue) => _blink.BlinkCSSStyleDeclaration.instance.$__setter___Callback_2_(this, propertyName, propertyValue);
 
   @DomName('CSSStyleDeclaration.getPropertyPriority')
   @DocsEditable()
-  String getPropertyPriority(String propertyName) => _blink.BlinkCSSStyleDeclaration.$getPropertyPriority_Callback(this, propertyName);
+  String getPropertyPriority(String propertyName) => _blink.BlinkCSSStyleDeclaration.instance.getPropertyPriority_Callback_1_(this, propertyName);
 
   @DomName('CSSStyleDeclaration.getPropertyValue')
   @DocsEditable()
-  String _getPropertyValue(String propertyName) => _blink.BlinkCSSStyleDeclaration.$getPropertyValue_Callback(this, propertyName);
+  String _getPropertyValue(String propertyName) => _blink.BlinkCSSStyleDeclaration.instance.getPropertyValue_Callback_1_(this, propertyName);
 
   @DomName('CSSStyleDeclaration.item')
   @DocsEditable()
-  String item(int index) => _blink.BlinkCSSStyleDeclaration.$item_Callback(this, index);
+  String item(int index) => _blink.BlinkCSSStyleDeclaration.instance.item_Callback_1_(this, index);
 
   @DomName('CSSStyleDeclaration.removeProperty')
   @DocsEditable()
-  String removeProperty(String propertyName) => _blink.BlinkCSSStyleDeclaration.$removeProperty_Callback(this, propertyName);
+  String removeProperty(String propertyName) => _blink.BlinkCSSStyleDeclaration.instance.removeProperty_Callback_1_(this, propertyName);
 
   @DomName('CSSStyleDeclaration.setProperty')
   @DocsEditable()
-  void _setProperty(String propertyName, String value, String priority) => _blink.BlinkCSSStyleDeclaration.$setProperty_Callback(this, propertyName, value, priority);
+  void _setProperty(String propertyName, String value, String priority) => _blink.BlinkCSSStyleDeclaration.instance.setProperty_Callback_3_(this, propertyName, value, priority);
 
 }
 
@@ -6836,15 +7440,15 @@ class CssStyleRule extends CssRule {
 
   @DomName('CSSStyleRule.selectorText')
   @DocsEditable()
-  String get selectorText => _blink.BlinkCSSStyleRule.$selectorText_Getter(this);
+  String get selectorText => _blink.BlinkCSSStyleRule.instance.selectorText_Getter_(this);
 
   @DomName('CSSStyleRule.selectorText')
   @DocsEditable()
-  void set selectorText(String value) => _blink.BlinkCSSStyleRule.$selectorText_Setter(this, value);
+  void set selectorText(String value) => _blink.BlinkCSSStyleRule.instance.selectorText_Setter_(this, value);
 
   @DomName('CSSStyleRule.style')
   @DocsEditable()
-  CssStyleDeclaration get style => _blink.BlinkCSSStyleRule.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkCSSStyleRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -6862,39 +7466,39 @@ class CssStyleSheet extends StyleSheet {
 
   @DomName('CSSStyleSheet.cssRules')
   @DocsEditable()
-  List<CssRule> get cssRules => _blink.BlinkCSSStyleSheet.$cssRules_Getter(this);
+  List<CssRule> get cssRules => _blink.BlinkCSSStyleSheet.instance.cssRules_Getter_(this);
 
   @DomName('CSSStyleSheet.ownerRule')
   @DocsEditable()
-  CssRule get ownerRule => _blink.BlinkCSSStyleSheet.$ownerRule_Getter(this);
+  CssRule get ownerRule => _blink.BlinkCSSStyleSheet.instance.ownerRule_Getter_(this);
 
   @DomName('CSSStyleSheet.rules')
   @DocsEditable()
   @Experimental() // non-standard
-  List<CssRule> get rules => _blink.BlinkCSSStyleSheet.$rules_Getter(this);
+  List<CssRule> get rules => _blink.BlinkCSSStyleSheet.instance.rules_Getter_(this);
 
   int addRule(String selector, String style, [int index]) {
     if (index != null) {
-      return _blink.BlinkCSSStyleSheet.$_addRule_1_Callback(this, selector, style, index);
+      return _blink.BlinkCSSStyleSheet.instance.addRule_Callback_3_(this, selector, style, index);
     }
-    return _blink.BlinkCSSStyleSheet.$_addRule_2_Callback(this, selector, style);
+    return _blink.BlinkCSSStyleSheet.instance.addRule_Callback_2_(this, selector, style);
   }
 
   @DomName('CSSStyleSheet.deleteRule')
   @DocsEditable()
-  void deleteRule(int index) => _blink.BlinkCSSStyleSheet.$deleteRule_Callback(this, index);
+  void deleteRule(int index) => _blink.BlinkCSSStyleSheet.instance.deleteRule_Callback_1_(this, index);
 
   int insertRule(String rule, [int index]) {
     if (index != null) {
-      return _blink.BlinkCSSStyleSheet.$_insertRule_1_Callback(this, rule, index);
+      return _blink.BlinkCSSStyleSheet.instance.insertRule_Callback_2_(this, rule, index);
     }
-    return _blink.BlinkCSSStyleSheet.$_insertRule_2_Callback(this, rule);
+    return _blink.BlinkCSSStyleSheet.instance.insertRule_Callback_1_(this, rule);
   }
 
   @DomName('CSSStyleSheet.removeRule')
   @DocsEditable()
   @Experimental() // non-standard
-  void removeRule(int index) => _blink.BlinkCSSStyleSheet.$removeRule_Callback(this, index);
+  void removeRule(int index) => _blink.BlinkCSSStyleSheet.instance.removeRule_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -6912,19 +7516,19 @@ class CssSupportsRule extends CssRule {
 
   @DomName('CSSSupportsRule.conditionText')
   @DocsEditable()
-  String get conditionText => _blink.BlinkCSSSupportsRule.$conditionText_Getter(this);
+  String get conditionText => _blink.BlinkCSSSupportsRule.instance.conditionText_Getter_(this);
 
   @DomName('CSSSupportsRule.cssRules')
   @DocsEditable()
-  List<CssRule> get cssRules => _blink.BlinkCSSSupportsRule.$cssRules_Getter(this);
+  List<CssRule> get cssRules => _blink.BlinkCSSSupportsRule.instance.cssRules_Getter_(this);
 
   @DomName('CSSSupportsRule.deleteRule')
   @DocsEditable()
-  void deleteRule(int index) => _blink.BlinkCSSSupportsRule.$deleteRule_Callback(this, index);
+  void deleteRule(int index) => _blink.BlinkCSSSupportsRule.instance.deleteRule_Callback_1_(this, index);
 
   @DomName('CSSSupportsRule.insertRule')
   @DocsEditable()
-  int insertRule(String rule, int index) => _blink.BlinkCSSSupportsRule.$insertRule_Callback(this, rule, index);
+  int insertRule(String rule, int index) => _blink.BlinkCSSSupportsRule.instance.insertRule_Callback_2_(this, rule, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -6944,7 +7548,7 @@ class CssViewportRule extends CssRule {
   @DomName('CSSViewportRule.style')
   @DocsEditable()
   @Experimental() // untriaged
-  CssStyleDeclaration get style => _blink.BlinkCSSViewportRule.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkCSSViewportRule.instance.style_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -6992,11 +7596,11 @@ class CustomEvent extends Event {
 
   @DomName('CustomEvent.detail')
   @DocsEditable()
-  Object get _detail => _blink.BlinkCustomEvent.$detail_Getter(this);
+  Object get _detail => _blink.BlinkCustomEvent.instance.detail_Getter_(this);
 
   @DomName('CustomEvent.initCustomEvent')
   @DocsEditable()
-  void _initCustomEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Object detailArg) => _blink.BlinkCustomEvent.$initCustomEvent_Callback(this, typeArg, canBubbleArg, cancelableArg, detailArg);
+  void _initCustomEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Object detailArg) => _blink.BlinkCustomEvent.instance.initCustomEvent_Callback_4_(this, typeArg, canBubbleArg, cancelableArg, detailArg);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7055,7 +7659,7 @@ class DataListElement extends HtmlElement {
 
   @DomName('HTMLDataListElement.options')
   @DocsEditable()
-  List<Node> get options => _blink.BlinkHTMLDataListElement.$options_Getter(this);
+  List<Node> get options => _blink.BlinkHTMLDataListElement.instance.options_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7066,75 +7670,70 @@ class DataListElement extends HtmlElement {
 
 
 @DocsEditable()
-@DomName('Clipboard')
+@DomName('DataTransfer')
+@Experimental() // untriaged
 class DataTransfer extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory DataTransfer._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('Clipboard.dropEffect')
+  @DomName('DataTransfer.dropEffect')
   @DocsEditable()
-  String get dropEffect => _blink.BlinkClipboard.$dropEffect_Getter(this);
+  @Experimental() // untriaged
+  String get dropEffect => _blink.BlinkDataTransfer.instance.dropEffect_Getter_(this);
 
-  @DomName('Clipboard.dropEffect')
+  @DomName('DataTransfer.dropEffect')
   @DocsEditable()
-  void set dropEffect(String value) => _blink.BlinkClipboard.$dropEffect_Setter(this, value);
+  @Experimental() // untriaged
+  void set dropEffect(String value) => _blink.BlinkDataTransfer.instance.dropEffect_Setter_(this, value);
 
-  @DomName('Clipboard.effectAllowed')
+  @DomName('DataTransfer.effectAllowed')
   @DocsEditable()
-  String get effectAllowed => _blink.BlinkClipboard.$effectAllowed_Getter(this);
+  @Experimental() // untriaged
+  String get effectAllowed => _blink.BlinkDataTransfer.instance.effectAllowed_Getter_(this);
 
-  @DomName('Clipboard.effectAllowed')
+  @DomName('DataTransfer.effectAllowed')
   @DocsEditable()
-  void set effectAllowed(String value) => _blink.BlinkClipboard.$effectAllowed_Setter(this, value);
+  @Experimental() // untriaged
+  void set effectAllowed(String value) => _blink.BlinkDataTransfer.instance.effectAllowed_Setter_(this, value);
 
-  @DomName('Clipboard.files')
+  @DomName('DataTransfer.files')
   @DocsEditable()
-  List<File> get files => _blink.BlinkClipboard.$files_Getter(this);
+  @Experimental() // untriaged
+  List<File> get files => _blink.BlinkDataTransfer.instance.files_Getter_(this);
 
-  @DomName('Clipboard.items')
+  @DomName('DataTransfer.items')
   @DocsEditable()
-  DataTransferItemList get items => _blink.BlinkClipboard.$items_Getter(this);
+  @Experimental() // untriaged
+  DataTransferItemList get items => _blink.BlinkDataTransfer.instance.items_Getter_(this);
 
-  @DomName('Clipboard.types')
+  @DomName('DataTransfer.types')
   @DocsEditable()
-  List<String> get types => _blink.BlinkClipboard.$types_Getter(this);
+  @Experimental() // untriaged
+  List<String> get types => _blink.BlinkDataTransfer.instance.types_Getter_(this);
 
   void clearData([String type]) {
     if (type != null) {
-      _blink.BlinkClipboard.$_clearData_1_Callback(this, type);
+      _blink.BlinkDataTransfer.instance.clearData_Callback_1_(this, type);
       return;
     }
-    _blink.BlinkClipboard.$_clearData_2_Callback(this);
+    _blink.BlinkDataTransfer.instance.clearData_Callback_0_(this);
     return;
   }
 
-  /**
-   * Gets the data for the specified type.
-   *
-   * The data is only available from within a drop operation (such as an
-   * [Element.onDrop] event) and will return null before the event is
-   * triggered.
-   *
-   * Data transfer is prohibited across domains. If a drag originates
-   * from content from another domain or protocol (HTTP vs HTTPS) then the
-   * data cannot be accessed.
-   *
-   * The [type] can have values such as:
-   *
-   * * `'Text'`
-   * * `'URL'`
-   */
-  @DomName('Clipboard.getData')
+  @DomName('DataTransfer.getData')
   @DocsEditable()
-  String getData(String type) => _blink.BlinkClipboard.$getData_Callback(this, type);
+  @Experimental() // untriaged
+  String getData(String type) => _blink.BlinkDataTransfer.instance.getData_Callback_1_(this, type);
 
-  @DomName('Clipboard.setData')
+  @DomName('DataTransfer.setData')
   @DocsEditable()
-  bool setData(String type, String data) => _blink.BlinkClipboard.$setData_Callback(this, type, data);
+  @Experimental() // untriaged
+  void setData(String type, String data) => _blink.BlinkDataTransfer.instance.setData_Callback_2_(this, type, data);
 
-  @DomName('Clipboard.setDragImage')
+  @DomName('DataTransfer.setDragImage')
   @DocsEditable()
-  void setDragImage(Element image, int x, int y) => _blink.BlinkClipboard.$setDragImage_Callback(this, image, x, y);
+  @Experimental() // untriaged
+  void setDragImage(Element image, int x, int y) => _blink.BlinkDataTransfer.instance.setDragImage_Callback_3_(this, image, x, y);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7154,19 +7753,19 @@ class DataTransferItem extends NativeFieldWrapperClass2 {
 
   @DomName('DataTransferItem.kind')
   @DocsEditable()
-  String get kind => _blink.BlinkDataTransferItem.$kind_Getter(this);
+  String get kind => _blink.BlinkDataTransferItem.instance.kind_Getter_(this);
 
   @DomName('DataTransferItem.type')
   @DocsEditable()
-  String get type => _blink.BlinkDataTransferItem.$type_Getter(this);
+  String get type => _blink.BlinkDataTransferItem.instance.type_Getter_(this);
 
   @DomName('DataTransferItem.getAsFile')
   @DocsEditable()
-  Blob getAsFile() => _blink.BlinkDataTransferItem.$getAsFile_Callback(this);
+  Blob getAsFile() => _blink.BlinkDataTransferItem.instance.getAsFile_Callback_0_(this);
 
   @DomName('DataTransferItem.getAsString')
   @DocsEditable()
-  void _getAsString(_StringCallback callback) => _blink.BlinkDataTransferItem.$getAsString_Callback(this, callback);
+  void _getAsString(_StringCallback callback) => _blink.BlinkDataTransferItem.instance.getAsString_Callback_1_(this, callback);
 
   Future<String> getAsString() {
     var completer = new Completer<String>();
@@ -7180,7 +7779,7 @@ class DataTransferItem extends NativeFieldWrapperClass2 {
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  Entry getAsEntry() => _blink.BlinkDataTransferItem.$webkitGetAsEntry_Callback(this);
+  Entry getAsEntry() => _blink.BlinkDataTransferItem.instance.webkitGetAsEntry_Callback_0_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -7198,39 +7797,39 @@ class DataTransferItemList extends NativeFieldWrapperClass2 {
 
   @DomName('DataTransferItemList.length')
   @DocsEditable()
-  int get length => _blink.BlinkDataTransferItemList.$length_Getter(this);
+  int get length => _blink.BlinkDataTransferItemList.instance.length_Getter_(this);
 
   @DomName('DataTransferItemList.__getter__')
   @DocsEditable()
   @Experimental() // untriaged
-  DataTransferItem __getter__(int index) => _blink.BlinkDataTransferItemList.$__getter___Callback(this, index);
+  DataTransferItem __getter__(int index) => _blink.BlinkDataTransferItemList.instance.$__getter___Callback_1_(this, index);
 
   DataTransferItem add(data_OR_file, [String type]) {
-    if ((data_OR_file is File || data_OR_file == null) && type == null) {
-      return _blink.BlinkDataTransferItemList.$_add_1_Callback(this, data_OR_file);
+    if ((type is String) && (data_OR_file is String)) {
+      return _blink.BlinkDataTransferItemList.instance.add_Callback_2_(this, data_OR_file, type);
     }
-    if ((type is String || type == null) && (data_OR_file is String || data_OR_file == null)) {
-      return _blink.BlinkDataTransferItemList.$_add_2_Callback(this, data_OR_file, type);
+    if ((data_OR_file is File || data_OR_file == null) && type == null) {
+      return _blink.BlinkDataTransferItemList.instance.add_Callback_1_(this, data_OR_file);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   @DomName('DataTransferItemList.addData')
   @DocsEditable()
-  DataTransferItem addData(String data, String type) => _blink.BlinkDataTransferItemList.$addData_Callback(this, data, type);
+  DataTransferItem addData(String data, String type) => _blink.BlinkDataTransferItemList.instance.add_Callback_2_(this, data, type);
 
   @DomName('DataTransferItemList.addFile')
   @DocsEditable()
-  DataTransferItem addFile(File file) => _blink.BlinkDataTransferItemList.$addFile_Callback(this, file);
+  DataTransferItem addFile(File file) => _blink.BlinkDataTransferItemList.instance.add_Callback_1_(this, file);
 
   @DomName('DataTransferItemList.clear')
   @DocsEditable()
-  void clear() => _blink.BlinkDataTransferItemList.$clear_Callback(this);
+  void clear() => _blink.BlinkDataTransferItemList.instance.clear_Callback_0_(this);
 
   @DomName('DataTransferItemList.remove')
   @DocsEditable()
   @Experimental() // untriaged
-  void remove(int index) => _blink.BlinkDataTransferItemList.$remove_Callback(this, index);
+  void remove(int index) => _blink.BlinkDataTransferItemList.instance.remove_Callback_1_(this, index);
 
 
   DataTransferItem operator[] (int index) {
@@ -7277,7 +7876,7 @@ class DedicatedWorkerGlobalScope extends WorkerGlobalScope {
   @DomName('DedicatedWorkerGlobalScope.postMessage')
   @DocsEditable()
   @Experimental() // untriaged
-  void postMessage(Object message, [List<MessagePort> messagePorts]) => _blink.BlinkDedicatedWorkerGlobalScope.$postMessage_Callback(this, message, messagePorts);
+  void postMessage(Object message, [List<MessagePort> transfer]) => _blink.BlinkDedicatedWorkerGlobalScope.instance.postMessage_Callback_2_(this, message, transfer);
 
   /// Stream of `message` events handled by this [DedicatedWorkerGlobalScope].
   @DomName('DedicatedWorkerGlobalScope.onmessage')
@@ -7310,15 +7909,31 @@ class DeprecatedStorageInfo extends NativeFieldWrapperClass2 {
   @Experimental() // untriaged
   static const int TEMPORARY = 0;
 
-  @DomName('DeprecatedStorageInfo.queryUsageAndQuota')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void queryUsageAndQuota(int storageType, [StorageUsageCallback usageCallback, StorageErrorCallback errorCallback]) => _blink.BlinkDeprecatedStorageInfo.$queryUsageAndQuota_Callback(this, storageType, usageCallback, errorCallback);
+  void queryUsageAndQuota(int storageType, [StorageUsageCallback usageCallback, StorageErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDeprecatedStorageInfo.instance.queryUsageAndQuota_Callback_3_(this, storageType, usageCallback, errorCallback);
+      return;
+    }
+    if (usageCallback != null) {
+      _blink.BlinkDeprecatedStorageInfo.instance.queryUsageAndQuota_Callback_2_(this, storageType, usageCallback);
+      return;
+    }
+    _blink.BlinkDeprecatedStorageInfo.instance.queryUsageAndQuota_Callback_1_(this, storageType);
+    return;
+  }
 
-  @DomName('DeprecatedStorageInfo.requestQuota')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void requestQuota(int storageType, int newQuotaInBytes, [StorageQuotaCallback quotaCallback, StorageErrorCallback errorCallback]) => _blink.BlinkDeprecatedStorageInfo.$requestQuota_Callback(this, storageType, newQuotaInBytes, quotaCallback, errorCallback);
+  void requestQuota(int storageType, int newQuotaInBytes, [StorageQuotaCallback quotaCallback, StorageErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDeprecatedStorageInfo.instance.requestQuota_Callback_4_(this, storageType, newQuotaInBytes, quotaCallback, errorCallback);
+      return;
+    }
+    if (quotaCallback != null) {
+      _blink.BlinkDeprecatedStorageInfo.instance.requestQuota_Callback_3_(this, storageType, newQuotaInBytes, quotaCallback);
+      return;
+    }
+    _blink.BlinkDeprecatedStorageInfo.instance.requestQuota_Callback_2_(this, storageType, newQuotaInBytes);
+    return;
+  }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7335,15 +7950,27 @@ class DeprecatedStorageQuota extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory DeprecatedStorageQuota._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('DeprecatedStorageQuota.queryUsageAndQuota')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void queryUsageAndQuota(StorageUsageCallback usageCallback, [StorageErrorCallback errorCallback]) => _blink.BlinkDeprecatedStorageQuota.$queryUsageAndQuota_Callback(this, usageCallback, errorCallback);
+  void queryUsageAndQuota(StorageUsageCallback usageCallback, [StorageErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDeprecatedStorageQuota.instance.queryUsageAndQuota_Callback_2_(this, usageCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkDeprecatedStorageQuota.instance.queryUsageAndQuota_Callback_1_(this, usageCallback);
+    return;
+  }
 
-  @DomName('DeprecatedStorageQuota.requestQuota')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void requestQuota(int newQuotaInBytes, [StorageQuotaCallback quotaCallback, StorageErrorCallback errorCallback]) => _blink.BlinkDeprecatedStorageQuota.$requestQuota_Callback(this, newQuotaInBytes, quotaCallback, errorCallback);
+  void requestQuota(int newQuotaInBytes, [StorageQuotaCallback quotaCallback, StorageErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDeprecatedStorageQuota.instance.requestQuota_Callback_3_(this, newQuotaInBytes, quotaCallback, errorCallback);
+      return;
+    }
+    if (quotaCallback != null) {
+      _blink.BlinkDeprecatedStorageQuota.instance.requestQuota_Callback_2_(this, newQuotaInBytes, quotaCallback);
+      return;
+    }
+    _blink.BlinkDeprecatedStorageQuota.instance.requestQuota_Callback_1_(this, newQuotaInBytes);
+    return;
+  }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7377,11 +8004,11 @@ class DetailsElement extends HtmlElement {
 
   @DomName('HTMLDetailsElement.open')
   @DocsEditable()
-  bool get open => _blink.BlinkHTMLDetailsElement.$open_Getter(this);
+  bool get open => _blink.BlinkHTMLDetailsElement.instance.open_Getter_(this);
 
   @DomName('HTMLDetailsElement.open')
   @DocsEditable()
-  void set open(bool value) => _blink.BlinkHTMLDetailsElement.$open_Setter(this, value);
+  void set open(bool value) => _blink.BlinkHTMLDetailsElement.instance.open_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7401,15 +8028,35 @@ class DeviceAcceleration extends NativeFieldWrapperClass2 {
 
   @DomName('DeviceAcceleration.x')
   @DocsEditable()
-  double get x => _blink.BlinkDeviceAcceleration.$x_Getter(this);
+  double get x => _blink.BlinkDeviceAcceleration.instance.x_Getter_(this);
 
   @DomName('DeviceAcceleration.y')
   @DocsEditable()
-  double get y => _blink.BlinkDeviceAcceleration.$y_Getter(this);
+  double get y => _blink.BlinkDeviceAcceleration.instance.y_Getter_(this);
 
   @DomName('DeviceAcceleration.z')
   @DocsEditable()
-  double get z => _blink.BlinkDeviceAcceleration.$z_Getter(this);
+  double get z => _blink.BlinkDeviceAcceleration.instance.z_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DeviceLightEvent')
+@Experimental() // untriaged
+class DeviceLightEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory DeviceLightEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DeviceLightEvent.value')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get value => _blink.BlinkDeviceLightEvent.instance.value_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7429,24 +8076,24 @@ class DeviceMotionEvent extends Event {
 
   @DomName('DeviceMotionEvent.acceleration')
   @DocsEditable()
-  DeviceAcceleration get acceleration => _blink.BlinkDeviceMotionEvent.$acceleration_Getter(this);
+  DeviceAcceleration get acceleration => _blink.BlinkDeviceMotionEvent.instance.acceleration_Getter_(this);
 
   @DomName('DeviceMotionEvent.accelerationIncludingGravity')
   @DocsEditable()
-  DeviceAcceleration get accelerationIncludingGravity => _blink.BlinkDeviceMotionEvent.$accelerationIncludingGravity_Getter(this);
+  DeviceAcceleration get accelerationIncludingGravity => _blink.BlinkDeviceMotionEvent.instance.accelerationIncludingGravity_Getter_(this);
 
   @DomName('DeviceMotionEvent.interval')
   @DocsEditable()
-  double get interval => _blink.BlinkDeviceMotionEvent.$interval_Getter(this);
+  double get interval => _blink.BlinkDeviceMotionEvent.instance.interval_Getter_(this);
 
   @DomName('DeviceMotionEvent.rotationRate')
   @DocsEditable()
-  DeviceRotationRate get rotationRate => _blink.BlinkDeviceMotionEvent.$rotationRate_Getter(this);
+  DeviceRotationRate get rotationRate => _blink.BlinkDeviceMotionEvent.instance.rotationRate_Getter_(this);
 
   @DomName('DeviceMotionEvent.initDeviceMotionEvent')
   @DocsEditable()
   @Experimental() // untriaged
-  void initDeviceMotionEvent(String type, bool bubbles, bool cancelable, DeviceAcceleration acceleration, DeviceAcceleration accelerationIncludingGravity, DeviceRotationRate rotationRate, num interval) => _blink.BlinkDeviceMotionEvent.$initDeviceMotionEvent_Callback(this, type, bubbles, cancelable, acceleration, accelerationIncludingGravity, rotationRate, interval);
+  void initDeviceMotionEvent(String type, bool bubbles, bool cancelable, DeviceAcceleration acceleration, DeviceAcceleration accelerationIncludingGravity, DeviceRotationRate rotationRate, num interval) => _blink.BlinkDeviceMotionEvent.instance.initDeviceMotionEvent_Callback_7_(this, type, bubbles, cancelable, acceleration, accelerationIncludingGravity, rotationRate, interval);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -7472,23 +8119,23 @@ class DeviceOrientationEvent extends Event {
 
   @DomName('DeviceOrientationEvent.absolute')
   @DocsEditable()
-  bool get absolute => _blink.BlinkDeviceOrientationEvent.$absolute_Getter(this);
+  bool get absolute => _blink.BlinkDeviceOrientationEvent.instance.absolute_Getter_(this);
 
   @DomName('DeviceOrientationEvent.alpha')
   @DocsEditable()
-  double get alpha => _blink.BlinkDeviceOrientationEvent.$alpha_Getter(this);
+  double get alpha => _blink.BlinkDeviceOrientationEvent.instance.alpha_Getter_(this);
 
   @DomName('DeviceOrientationEvent.beta')
   @DocsEditable()
-  double get beta => _blink.BlinkDeviceOrientationEvent.$beta_Getter(this);
+  double get beta => _blink.BlinkDeviceOrientationEvent.instance.beta_Getter_(this);
 
   @DomName('DeviceOrientationEvent.gamma')
   @DocsEditable()
-  double get gamma => _blink.BlinkDeviceOrientationEvent.$gamma_Getter(this);
+  double get gamma => _blink.BlinkDeviceOrientationEvent.instance.gamma_Getter_(this);
 
   @DomName('DeviceOrientationEvent.initDeviceOrientationEvent')
   @DocsEditable()
-  void _initDeviceOrientationEvent(String type, bool bubbles, bool cancelable, num alpha, num beta, num gamma, bool absolute) => _blink.BlinkDeviceOrientationEvent.$initDeviceOrientationEvent_Callback(this, type, bubbles, cancelable, alpha, beta, gamma, absolute);
+  void _initDeviceOrientationEvent(String type, bool bubbles, bool cancelable, num alpha, num beta, num gamma, bool absolute) => _blink.BlinkDeviceOrientationEvent.instance.initDeviceOrientationEvent_Callback_7_(this, type, bubbles, cancelable, alpha, beta, gamma, absolute);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7508,15 +8155,15 @@ class DeviceRotationRate extends NativeFieldWrapperClass2 {
 
   @DomName('DeviceRotationRate.alpha')
   @DocsEditable()
-  double get alpha => _blink.BlinkDeviceRotationRate.$alpha_Getter(this);
+  double get alpha => _blink.BlinkDeviceRotationRate.instance.alpha_Getter_(this);
 
   @DomName('DeviceRotationRate.beta')
   @DocsEditable()
-  double get beta => _blink.BlinkDeviceRotationRate.$beta_Getter(this);
+  double get beta => _blink.BlinkDeviceRotationRate.instance.beta_Getter_(this);
 
   @DomName('DeviceRotationRate.gamma')
   @DocsEditable()
-  double get gamma => _blink.BlinkDeviceRotationRate.$gamma_Getter(this);
+  double get gamma => _blink.BlinkDeviceRotationRate.instance.gamma_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -7541,33 +8188,33 @@ class DialogElement extends HtmlElement {
 
   @DomName('HTMLDialogElement.open')
   @DocsEditable()
-  bool get open => _blink.BlinkHTMLDialogElement.$open_Getter(this);
+  bool get open => _blink.BlinkHTMLDialogElement.instance.open_Getter_(this);
 
   @DomName('HTMLDialogElement.open')
   @DocsEditable()
-  void set open(bool value) => _blink.BlinkHTMLDialogElement.$open_Setter(this, value);
+  void set open(bool value) => _blink.BlinkHTMLDialogElement.instance.open_Setter_(this, value);
 
   @DomName('HTMLDialogElement.returnValue')
   @DocsEditable()
   @Experimental() // untriaged
-  String get returnValue => _blink.BlinkHTMLDialogElement.$returnValue_Getter(this);
+  String get returnValue => _blink.BlinkHTMLDialogElement.instance.returnValue_Getter_(this);
 
   @DomName('HTMLDialogElement.returnValue')
   @DocsEditable()
   @Experimental() // untriaged
-  void set returnValue(String value) => _blink.BlinkHTMLDialogElement.$returnValue_Setter(this, value);
+  void set returnValue(String value) => _blink.BlinkHTMLDialogElement.instance.returnValue_Setter_(this, value);
 
   @DomName('HTMLDialogElement.close')
   @DocsEditable()
-  void close(String returnValue) => _blink.BlinkHTMLDialogElement.$close_Callback(this, returnValue);
+  void close(String returnValue) => _blink.BlinkHTMLDialogElement.instance.close_Callback_1_(this, returnValue);
 
   @DomName('HTMLDialogElement.show')
   @DocsEditable()
-  void show() => _blink.BlinkHTMLDialogElement.$show_Callback(this);
+  void show() => _blink.BlinkHTMLDialogElement.instance.show_Callback_0_(this);
 
   @DomName('HTMLDialogElement.showModal')
   @DocsEditable()
-  void showModal() => _blink.BlinkHTMLDialogElement.$showModal_Callback(this);
+  void showModal() => _blink.BlinkHTMLDialogElement.instance.showModal_Callback_0_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -7621,11 +8268,24 @@ class DirectoryEntry extends Entry {
 
   @DomName('DirectoryEntry.createReader')
   @DocsEditable()
-  DirectoryReader createReader() => _blink.BlinkDirectoryEntry.$createReader_Callback(this);
+  DirectoryReader createReader() => _blink.BlinkDirectoryEntry.instance.createReader_Callback_0_(this);
 
-  @DomName('DirectoryEntry.getDirectory')
-  @DocsEditable()
-  void __getDirectory(String path, {Map options, _EntryCallback successCallback, _ErrorCallback errorCallback}) => _blink.BlinkDirectoryEntry.$getDirectory_Callback(this, path, options, successCallback, errorCallback);
+  void __getDirectory(String path, {Map options, _EntryCallback successCallback, _ErrorCallback errorCallback}) {
+    if (errorCallback != null) {
+      _blink.BlinkDirectoryEntry.instance.getDirectory_Callback_4_(this, path, options, successCallback, errorCallback);
+      return;
+    }
+    if (successCallback != null) {
+      _blink.BlinkDirectoryEntry.instance.getDirectory_Callback_3_(this, path, options, successCallback);
+      return;
+    }
+    if (options != null) {
+      _blink.BlinkDirectoryEntry.instance.getDirectory_Callback_2_(this, path, options);
+      return;
+    }
+    _blink.BlinkDirectoryEntry.instance.getDirectory_Callback_1_(this, path);
+    return;
+  }
 
   Future<Entry> _getDirectory(String path, {Map options}) {
     var completer = new Completer<Entry>();
@@ -7635,9 +8295,22 @@ class DirectoryEntry extends Entry {
     return completer.future;
   }
 
-  @DomName('DirectoryEntry.getFile')
-  @DocsEditable()
-  void __getFile(String path, {Map options, _EntryCallback successCallback, _ErrorCallback errorCallback}) => _blink.BlinkDirectoryEntry.$getFile_Callback(this, path, options, successCallback, errorCallback);
+  void __getFile(String path, {Map options, _EntryCallback successCallback, _ErrorCallback errorCallback}) {
+    if (errorCallback != null) {
+      _blink.BlinkDirectoryEntry.instance.getFile_Callback_4_(this, path, options, successCallback, errorCallback);
+      return;
+    }
+    if (successCallback != null) {
+      _blink.BlinkDirectoryEntry.instance.getFile_Callback_3_(this, path, options, successCallback);
+      return;
+    }
+    if (options != null) {
+      _blink.BlinkDirectoryEntry.instance.getFile_Callback_2_(this, path, options);
+      return;
+    }
+    _blink.BlinkDirectoryEntry.instance.getFile_Callback_1_(this, path);
+    return;
+  }
 
   Future<Entry> _getFile(String path, {Map options}) {
     var completer = new Completer<Entry>();
@@ -7647,9 +8320,14 @@ class DirectoryEntry extends Entry {
     return completer.future;
   }
 
-  @DomName('DirectoryEntry.removeRecursively')
-  @DocsEditable()
-  void _removeRecursively(VoidCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkDirectoryEntry.$removeRecursively_Callback(this, successCallback, errorCallback);
+  void _removeRecursively(VoidCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDirectoryEntry.instance.removeRecursively_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkDirectoryEntry.instance.removeRecursively_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future removeRecursively() {
     var completer = new Completer();
@@ -7675,9 +8353,14 @@ class DirectoryReader extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory DirectoryReader._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('DirectoryReader.readEntries')
-  @DocsEditable()
-  void _readEntries(_EntriesCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkDirectoryReader.$readEntries_Callback(this, successCallback, errorCallback);
+  void _readEntries(_EntriesCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkDirectoryReader.instance.readEntries_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkDirectoryReader.instance.readEntries_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future<List<Entry>> readEntries() {
     var completer = new Completer<List<Entry>>();
@@ -7756,6 +8439,16 @@ class Document extends Node
   // To suppress missing implicit constructor warnings.
   factory Document._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('Document.pointerlockchangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> pointerLockChangeEvent = const EventStreamProvider<Event>('pointerlockchange');
+
+  @DomName('Document.pointerlockerrorEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> pointerLockErrorEvent = const EventStreamProvider<Event>('pointerlockerror');
+
   /**
    * Static factory designed to expose `readystatechange` events to event
    * handlers that are not necessarily instances of [Document].
@@ -7788,140 +8481,132 @@ class Document extends Node
   @DocsEditable()
   static const EventStreamProvider<Event> selectionChangeEvent = const EventStreamProvider<Event>('selectionchange');
 
-  /**
-   * Static factory designed to expose `pointerlockchange` events to event
-   * handlers that are not necessarily instances of [Document].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('Document.webkitpointerlockchangeEvent')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-onpointerlockchange
-  static const EventStreamProvider<Event> pointerLockChangeEvent = const EventStreamProvider<Event>('webkitpointerlockchange');
-
-  /**
-   * Static factory designed to expose `pointerlockerror` events to event
-   * handlers that are not necessarily instances of [Document].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('Document.webkitpointerlockerrorEvent')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-onpointerlockerror
-  static const EventStreamProvider<Event> pointerLockErrorEvent = const EventStreamProvider<Event>('webkitpointerlockerror');
-
   @DomName('Document.activeElement')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get activeElement => _blink.BlinkDocument.$activeElement_Getter(this);
+  Element get activeElement => _blink.BlinkDocument.instance.activeElement_Getter_(this);
 
   @DomName('Document.body')
   @DocsEditable()
-  HtmlElement get _body => _blink.BlinkDocument.$body_Getter(this);
+  HtmlElement get _body => _blink.BlinkDocument.instance.body_Getter_(this);
 
   @DomName('Document.body')
   @DocsEditable()
-  void set _body(HtmlElement value) => _blink.BlinkDocument.$body_Setter(this, value);
+  void set _body(HtmlElement value) => _blink.BlinkDocument.instance.body_Setter_(this, value);
+
+  @DomName('Document.contentType')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get contentType => _blink.BlinkDocument.instance.contentType_Getter_(this);
 
   @DomName('Document.cookie')
   @DocsEditable()
-  String get cookie => _blink.BlinkDocument.$cookie_Getter(this);
+  String get cookie => _blink.BlinkDocument.instance.cookie_Getter_(this);
 
   @DomName('Document.cookie')
   @DocsEditable()
-  void set cookie(String value) => _blink.BlinkDocument.$cookie_Setter(this, value);
+  void set cookie(String value) => _blink.BlinkDocument.instance.cookie_Setter_(this, value);
 
   @DomName('Document.currentScript')
   @DocsEditable()
   @Experimental() // untriaged
-  ScriptElement get currentScript => _blink.BlinkDocument.$currentScript_Getter(this);
+  ScriptElement get currentScript => _blink.BlinkDocument.instance.currentScript_Getter_(this);
 
   @DomName('Document.defaultView')
   @DocsEditable()
-  WindowBase get window => _blink.BlinkDocument.$defaultView_Getter(this);
+  WindowBase get window => _blink.BlinkDocument.instance.defaultView_Getter_(this);
 
   @DomName('Document.documentElement')
   @DocsEditable()
-  Element get documentElement => _blink.BlinkDocument.$documentElement_Getter(this);
+  Element get documentElement => _blink.BlinkDocument.instance.documentElement_Getter_(this);
 
   @DomName('Document.domain')
   @DocsEditable()
-  String get domain => _blink.BlinkDocument.$domain_Getter(this);
+  String get domain => _blink.BlinkDocument.instance.domain_Getter_(this);
 
   @DomName('Document.fonts')
   @DocsEditable()
   @Experimental() // untriaged
-  FontFaceSet get fonts => _blink.BlinkDocument.$fonts_Getter(this);
+  FontFaceSet get fonts => _blink.BlinkDocument.instance.fonts_Getter_(this);
+
+  @DomName('Document.fullscreenElement')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Element get fullscreenElement => _blink.BlinkDocument.instance.fullscreenElement_Getter_(this);
+
+  @DomName('Document.fullscreenEnabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get fullscreenEnabled => _blink.BlinkDocument.instance.fullscreenEnabled_Getter_(this);
 
   @DomName('Document.head')
   @DocsEditable()
-  HeadElement get _head => _blink.BlinkDocument.$head_Getter(this);
+  HeadElement get _head => _blink.BlinkDocument.instance.head_Getter_(this);
 
   @DomName('Document.hidden')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get hidden => _blink.BlinkDocument.$hidden_Getter(this);
+  bool get hidden => _blink.BlinkDocument.instance.hidden_Getter_(this);
 
   @DomName('Document.implementation')
   @DocsEditable()
-  DomImplementation get implementation => _blink.BlinkDocument.$implementation_Getter(this);
+  DomImplementation get implementation => _blink.BlinkDocument.instance.implementation_Getter_(this);
 
   @DomName('Document.lastModified')
   @DocsEditable()
-  String get _lastModified => _blink.BlinkDocument.$lastModified_Getter(this);
+  String get _lastModified => _blink.BlinkDocument.instance.lastModified_Getter_(this);
+
+  @DomName('Document.pointerLockElement')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Element get pointerLockElement => _blink.BlinkDocument.instance.pointerLockElement_Getter_(this);
 
   @DomName('Document.preferredStylesheetSet')
   @DocsEditable()
-  String get _preferredStylesheetSet => _blink.BlinkDocument.$preferredStylesheetSet_Getter(this);
+  String get _preferredStylesheetSet => _blink.BlinkDocument.instance.preferredStylesheetSet_Getter_(this);
 
   @DomName('Document.readyState')
   @DocsEditable()
-  String get readyState => _blink.BlinkDocument.$readyState_Getter(this);
+  String get readyState => _blink.BlinkDocument.instance.readyState_Getter_(this);
 
   @DomName('Document.referrer')
   @DocsEditable()
-  String get _referrer => _blink.BlinkDocument.$referrer_Getter(this);
+  String get _referrer => _blink.BlinkDocument.instance.referrer_Getter_(this);
 
   @DomName('Document.rootElement')
   @DocsEditable()
   @Experimental() // untriaged
-  SvgSvgElement get rootElement => _blink.BlinkDocument.$rootElement_Getter(this);
+  SvgSvgElement get rootElement => _blink.BlinkDocument.instance.rootElement_Getter_(this);
 
   @DomName('Document.selectedStylesheetSet')
   @DocsEditable()
-  String get _selectedStylesheetSet => _blink.BlinkDocument.$selectedStylesheetSet_Getter(this);
+  String get _selectedStylesheetSet => _blink.BlinkDocument.instance.selectedStylesheetSet_Getter_(this);
 
   @DomName('Document.selectedStylesheetSet')
   @DocsEditable()
-  void set _selectedStylesheetSet(String value) => _blink.BlinkDocument.$selectedStylesheetSet_Setter(this, value);
+  void set _selectedStylesheetSet(String value) => _blink.BlinkDocument.instance.selectedStylesheetSet_Setter_(this, value);
 
   @DomName('Document.styleSheets')
   @DocsEditable()
-  List<StyleSheet> get _styleSheets => _blink.BlinkDocument.$styleSheets_Getter(this);
+  List<StyleSheet> get _styleSheets => _blink.BlinkDocument.instance.styleSheets_Getter_(this);
 
   @DomName('Document.timeline')
   @DocsEditable()
   @Experimental() // untriaged
-  Timeline get timeline => _blink.BlinkDocument.$timeline_Getter(this);
+  AnimationTimeline get timeline => _blink.BlinkDocument.instance.timeline_Getter_(this);
 
   @DomName('Document.title')
   @DocsEditable()
-  String get _title => _blink.BlinkDocument.$title_Getter(this);
+  String get _title => _blink.BlinkDocument.instance.title_Getter_(this);
 
   @DomName('Document.title')
   @DocsEditable()
-  void set _title(String value) => _blink.BlinkDocument.$title_Setter(this, value);
+  void set _title(String value) => _blink.BlinkDocument.instance.title_Setter_(this, value);
 
   @DomName('Document.visibilityState')
   @DocsEditable()
   @Experimental() // untriaged
-  String get visibilityState => _blink.BlinkDocument.$visibilityState_Getter(this);
+  String get visibilityState => _blink.BlinkDocument.instance.visibilityState_Getter_(this);
 
   @DomName('Document.webkitFullscreenElement')
   @DocsEditable()
@@ -7929,7 +8614,7 @@ class Document extends Node
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-document-fullscreenelement
-  Element get _webkitFullscreenElement => _blink.BlinkDocument.$webkitFullscreenElement_Getter(this);
+  Element get _webkitFullscreenElement => _blink.BlinkDocument.instance.webkitFullscreenElement_Getter_(this);
 
   @DomName('Document.webkitFullscreenEnabled')
   @DocsEditable()
@@ -7937,7 +8622,7 @@ class Document extends Node
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-document-fullscreenenabled
-  bool get _webkitFullscreenEnabled => _blink.BlinkDocument.$webkitFullscreenEnabled_Getter(this);
+  bool get _webkitFullscreenEnabled => _blink.BlinkDocument.instance.webkitFullscreenEnabled_Getter_(this);
 
   @DomName('Document.webkitHidden')
   @DocsEditable()
@@ -7945,15 +8630,7 @@ class Document extends Node
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PageVisibility/Overview.html#document
-  bool get _webkitHidden => _blink.BlinkDocument.$webkitHidden_Getter(this);
-
-  @DomName('Document.webkitPointerLockElement')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-pointerLockElement
-  Element get _webkitPointerLockElement => _blink.BlinkDocument.$webkitPointerLockElement_Getter(this);
+  bool get _webkitHidden => _blink.BlinkDocument.instance.webkitHidden_Getter_(this);
 
   @DomName('Document.webkitVisibilityState')
   @DocsEditable()
@@ -7961,127 +8638,158 @@ class Document extends Node
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/PageVisibility/Overview.html#dom-document-visibilitystate
-  String get _webkitVisibilityState => _blink.BlinkDocument.$webkitVisibilityState_Getter(this);
+  String get _webkitVisibilityState => _blink.BlinkDocument.instance.webkitVisibilityState_Getter_(this);
 
   @DomName('Document.adoptNode')
   @DocsEditable()
-  Node adoptNode(Node node) => _blink.BlinkDocument.$adoptNode_Callback(this, node);
+  Node adoptNode(Node node) => _blink.BlinkDocument.instance.adoptNode_Callback_1_(this, node);
 
   @DomName('Document.caretRangeFromPoint')
   @DocsEditable()
   // http://www.w3.org/TR/2009/WD-cssom-view-20090804/#dom-documentview-caretrangefrompoint
   @Experimental()
-  Range _caretRangeFromPoint(int x, int y) => _blink.BlinkDocument.$caretRangeFromPoint_Callback(this, x, y);
+  Range _caretRangeFromPoint(int x, int y) => _blink.BlinkDocument.instance.caretRangeFromPoint_Callback_2_(this, x, y);
 
   @DomName('Document.createDocumentFragment')
   @DocsEditable()
-  DocumentFragment createDocumentFragment() => _blink.BlinkDocument.$createDocumentFragment_Callback(this);
+  DocumentFragment createDocumentFragment() => _blink.BlinkDocument.instance.createDocumentFragment_Callback_0_(this);
 
   @DomName('Document.createElement')
   @DocsEditable()
-  Element _createElement(String localName_OR_tagName, [String typeExtension]) => _blink.BlinkDocument.$createElement_Callback(this, localName_OR_tagName, typeExtension);
+  Element _createElement(String localName_OR_tagName, [String typeExtension]) => _blink.BlinkDocument.instance.createElement_Callback_2_(this, localName_OR_tagName, typeExtension);
 
   @DomName('Document.createElementNS')
   @DocsEditable()
-  Element createElementNS(String namespaceURI, String qualifiedName, [String typeExtension]) => _blink.BlinkDocument.$createElementNS_Callback(this, namespaceURI, qualifiedName, typeExtension);
+  Element createElementNS(String namespaceURI, String qualifiedName, [String typeExtension]) => _blink.BlinkDocument.instance.createElementNS_Callback_3_(this, namespaceURI, qualifiedName, typeExtension);
 
-  Event _createEvent([String eventType]) {
-    if (eventType != null) {
-      return _blink.BlinkDocument.$_createEvent_1_Callback(this, eventType);
-    }
-    return _blink.BlinkDocument.$_createEvent_2_Callback(this);
-  }
+  @DomName('Document.createEvent')
+  @DocsEditable()
+  Event _createEvent(String eventType) => _blink.BlinkDocument.instance.createEvent_Callback_1_(this, eventType);
 
   NodeIterator _createNodeIterator(Node root, [int whatToShow, NodeFilter filter]) {
-    if (filter != null) {
-      return _blink.BlinkDocument.$_createNodeIterator_1_Callback(this, root, whatToShow, filter);
-    }
     if (whatToShow != null) {
-      return _blink.BlinkDocument.$_createNodeIterator_2_Callback(this, root, whatToShow);
+      return _blink.BlinkDocument.instance.createNodeIterator_Callback_3_(this, root, whatToShow, filter);
     }
-    return _blink.BlinkDocument.$_createNodeIterator_3_Callback(this, root);
+    return _blink.BlinkDocument.instance.createNodeIterator_Callback_1_(this, root);
   }
 
   @DomName('Document.createRange')
   @DocsEditable()
-  Range createRange() => _blink.BlinkDocument.$createRange_Callback(this);
+  Range createRange() => _blink.BlinkDocument.instance.createRange_Callback_0_(this);
 
   @DomName('Document.createTextNode')
   @DocsEditable()
-  Text _createTextNode(String data) => _blink.BlinkDocument.$createTextNode_Callback(this, data);
+  Text _createTextNode(String data) => _blink.BlinkDocument.instance.createTextNode_Callback_1_(this, data);
 
   @DomName('Document.createTouch')
   @DocsEditable()
   // http://www.w3.org/TR/touch-events/, http://www.chromestatus.com/features
   @Experimental()
-  Touch _createTouch(Window window, EventTarget target, int identifier, int pageX, int pageY, int screenX, int screenY, int webkitRadiusX, int webkitRadiusY, num webkitRotationAngle, num webkitForce) => _blink.BlinkDocument.$createTouch_Callback(this, window, target, identifier, pageX, pageY, screenX, screenY, webkitRadiusX, webkitRadiusY, webkitRotationAngle, webkitForce);
+  Touch _createTouch(Window window, EventTarget target, int identifier, num pageX, num pageY, num screenX, num screenY, num webkitRadiusX, num webkitRadiusY, num webkitRotationAngle, num webkitForce) => _blink.BlinkDocument.instance.createTouch_Callback_11_(this, window, target, identifier, pageX, pageY, screenX, screenY, webkitRadiusX, webkitRadiusY, webkitRotationAngle, webkitForce);
+
+  @DomName('Document.createTouchList')
+  @DocsEditable()
+  // http://www.w3.org/TR/touch-events/, http://www.chromestatus.com/features
+  @Experimental()
+  TouchList _createTouchList(Touch touches) => _blink.BlinkDocument.instance.createTouchList_Callback_1_(this, touches);
 
   TreeWalker _createTreeWalker(Node root, [int whatToShow, NodeFilter filter]) {
-    if (filter != null) {
-      return _blink.BlinkDocument.$_createTreeWalker_1_Callback(this, root, whatToShow, filter);
-    }
     if (whatToShow != null) {
-      return _blink.BlinkDocument.$_createTreeWalker_2_Callback(this, root, whatToShow);
+      return _blink.BlinkDocument.instance.createTreeWalker_Callback_3_(this, root, whatToShow, filter);
     }
-    return _blink.BlinkDocument.$_createTreeWalker_3_Callback(this, root);
+    return _blink.BlinkDocument.instance.createTreeWalker_Callback_1_(this, root);
   }
 
   @DomName('Document.elementFromPoint')
   @DocsEditable()
-  Element _elementFromPoint(int x, int y) => _blink.BlinkDocument.$elementFromPoint_Callback(this, x, y);
+  Element _elementFromPoint(int x, int y) => _blink.BlinkDocument.instance.elementFromPoint_Callback_2_(this, x, y);
 
   @DomName('Document.execCommand')
   @DocsEditable()
-  bool execCommand(String command, bool userInterface, String value) => _blink.BlinkDocument.$execCommand_Callback(this, command, userInterface, value);
+  bool execCommand(String command, bool userInterface, String value) => _blink.BlinkDocument.instance.execCommand_Callback_3_(this, command, userInterface, value);
+
+  @DomName('Document.exitFullscreen')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void exitFullscreen() => _blink.BlinkDocument.instance.exitFullscreen_Callback_0_(this);
+
+  @DomName('Document.exitPointerLock')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void exitPointerLock() => _blink.BlinkDocument.instance.exitPointerLock_Callback_0_(this);
 
   @DomName('Document.getCSSCanvasContext')
   @DocsEditable()
   // https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariCSSRef/Articles/Functions.html
   @Experimental() // non-standard
-  CanvasRenderingContext _getCssCanvasContext(String contextId, String name, int width, int height) => _blink.BlinkDocument.$getCSSCanvasContext_Callback(this, contextId, name, width, height);
+  Object _getCssCanvasContext(String contextId, String name, int width, int height) => _blink.BlinkDocument.instance.getCSSCanvasContext_Callback_4_(this, contextId, name, width, height);
 
   @DomName('Document.getElementById')
   @DocsEditable()
-  Element getElementById(String elementId) => _blink.BlinkDocument.$getElementById_Callback(this, elementId);
+  Element getElementById(String elementId) => _blink.BlinkDocument.instance.getElementById_Callback_1_(this, elementId);
 
   @DomName('Document.getElementsByClassName')
   @DocsEditable()
-  List<Node> getElementsByClassName(String classNames) => _blink.BlinkDocument.$getElementsByClassName_Callback(this, classNames);
+  List<Node> getElementsByClassName(String classNames) => _blink.BlinkDocument.instance.getElementsByClassName_Callback_1_(this, classNames);
 
   @DomName('Document.getElementsByName')
   @DocsEditable()
-  List<Node> getElementsByName(String elementName) => _blink.BlinkDocument.$getElementsByName_Callback(this, elementName);
+  List<Node> getElementsByName(String elementName) => _blink.BlinkDocument.instance.getElementsByName_Callback_1_(this, elementName);
 
   @DomName('Document.getElementsByTagName')
   @DocsEditable()
-  List<Node> getElementsByTagName(String localName) => _blink.BlinkDocument.$getElementsByTagName_Callback(this, localName);
+  List<Node> getElementsByTagName(String localName) => _blink.BlinkDocument.instance.getElementsByTagName_Callback_1_(this, localName);
 
   Node importNode(Node node, [bool deep]) {
     if (deep != null) {
-      return _blink.BlinkDocument.$_importNode_1_Callback(this, node, deep);
+      return _blink.BlinkDocument.instance.importNode_Callback_2_(this, node, deep);
     }
-    return _blink.BlinkDocument.$_importNode_2_Callback(this, node);
+    return _blink.BlinkDocument.instance.importNode_Callback_1_(this, node);
   }
 
   @DomName('Document.queryCommandEnabled')
   @DocsEditable()
-  bool queryCommandEnabled(String command) => _blink.BlinkDocument.$queryCommandEnabled_Callback(this, command);
+  bool queryCommandEnabled(String command) => _blink.BlinkDocument.instance.queryCommandEnabled_Callback_1_(this, command);
 
   @DomName('Document.queryCommandIndeterm')
   @DocsEditable()
-  bool queryCommandIndeterm(String command) => _blink.BlinkDocument.$queryCommandIndeterm_Callback(this, command);
+  bool queryCommandIndeterm(String command) => _blink.BlinkDocument.instance.queryCommandIndeterm_Callback_1_(this, command);
 
   @DomName('Document.queryCommandState')
   @DocsEditable()
-  bool queryCommandState(String command) => _blink.BlinkDocument.$queryCommandState_Callback(this, command);
+  bool queryCommandState(String command) => _blink.BlinkDocument.instance.queryCommandState_Callback_1_(this, command);
 
   @DomName('Document.queryCommandSupported')
   @DocsEditable()
-  bool queryCommandSupported(String command) => _blink.BlinkDocument.$queryCommandSupported_Callback(this, command);
+  bool queryCommandSupported(String command) => _blink.BlinkDocument.instance.queryCommandSupported_Callback_1_(this, command);
 
   @DomName('Document.queryCommandValue')
   @DocsEditable()
-  String queryCommandValue(String command) => _blink.BlinkDocument.$queryCommandValue_Callback(this, command);
+  String queryCommandValue(String command) => _blink.BlinkDocument.instance.queryCommandValue_Callback_1_(this, command);
+
+  @DomName('Document.webkitExitFullscreen')
+  @DocsEditable()
+  @SupportedBrowser(SupportedBrowser.CHROME)
+  @SupportedBrowser(SupportedBrowser.SAFARI)
+  @Experimental()
+  // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-document-exitfullscreen
+  void _webkitExitFullscreen() => _blink.BlinkDocument.instance.webkitExitFullscreen_Callback_0_(this);
+
+  @DomName('Document.childElementCount')
+  @DocsEditable()
+  int get _childElementCount => _blink.BlinkDocument.instance.childElementCount_Getter_(this);
+
+  @DomName('Document.children')
+  @DocsEditable()
+  List<Node> get _children => _blink.BlinkDocument.instance.children_Getter_(this);
+
+  @DomName('Document.firstElementChild')
+  @DocsEditable()
+  Element get _firstElementChild => _blink.BlinkDocument.instance.firstElementChild_Getter_(this);
+
+  @DomName('Document.lastElementChild')
+  @DocsEditable()
+  Element get _lastElementChild => _blink.BlinkDocument.instance.lastElementChild_Getter_(this);
 
   /**
    * Finds the first descendant element of this document that matches the
@@ -8102,43 +8810,11 @@ class Document extends Node
    */
   @DomName('Document.querySelector')
   @DocsEditable()
-  Element querySelector(String selectors) => _blink.BlinkDocument.$querySelector_Callback(this, selectors);
+  Element querySelector(String selectors) => _blink.BlinkDocument.instance.querySelector_Callback_1_(this, selectors);
 
   @DomName('Document.querySelectorAll')
   @DocsEditable()
-  List<Node> _querySelectorAll(String selectors) => _blink.BlinkDocument.$querySelectorAll_Callback(this, selectors);
-
-  @DomName('Document.webkitExitFullscreen')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-document-exitfullscreen
-  void _webkitExitFullscreen() => _blink.BlinkDocument.$webkitExitFullscreen_Callback(this);
-
-  @DomName('Document.webkitExitPointerLock')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-exitPointerLock-void
-  void _webkitExitPointerLock() => _blink.BlinkDocument.$webkitExitPointerLock_Callback(this);
-
-  @DomName('Document.childElementCount')
-  @DocsEditable()
-  int get _childElementCount => _blink.BlinkDocument.$childElementCount_Getter(this);
-
-  @DomName('Document.children')
-  @DocsEditable()
-  List<Node> get _children => _blink.BlinkDocument.$children_Getter(this);
-
-  @DomName('Document.firstElementChild')
-  @DocsEditable()
-  Element get _firstElementChild => _blink.BlinkDocument.$firstElementChild_Getter(this);
-
-  @DomName('Document.lastElementChild')
-  @DocsEditable()
-  Element get _lastElementChild => _blink.BlinkDocument.$lastElementChild_Getter(this);
+  List<Node> _querySelectorAll(String selectors) => _blink.BlinkDocument.instance.querySelectorAll_Callback_1_(this, selectors);
 
   /// Stream of `abort` events handled by this [Document].
   @DomName('Document.onabort')
@@ -8164,6 +8840,16 @@ class Document extends Node
   @DomName('Document.onblur')
   @DocsEditable()
   Stream<Event> get onBlur => Element.blurEvent.forTarget(this);
+
+  @DomName('Document.oncanplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onCanPlay => Element.canPlayEvent.forTarget(this);
+
+  @DomName('Document.oncanplaythrough')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onCanPlayThrough => Element.canPlayThroughEvent.forTarget(this);
 
   /// Stream of `change` events handled by this [Document].
   @DomName('Document.onchange')
@@ -8230,6 +8916,21 @@ class Document extends Node
   @DocsEditable()
   Stream<MouseEvent> get onDrop => Element.dropEvent.forTarget(this);
 
+  @DomName('Document.ondurationchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onDurationChange => Element.durationChangeEvent.forTarget(this);
+
+  @DomName('Document.onemptied')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onEmptied => Element.emptiedEvent.forTarget(this);
+
+  @DomName('Document.onended')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onEnded => Element.endedEvent.forTarget(this);
+
   /// Stream of `error` events handled by this [Document].
   @DomName('Document.onerror')
   @DocsEditable()
@@ -8269,6 +8970,16 @@ class Document extends Node
   @DomName('Document.onload')
   @DocsEditable()
   Stream<Event> get onLoad => Element.loadEvent.forTarget(this);
+
+  @DomName('Document.onloadeddata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onLoadedData => Element.loadedDataEvent.forTarget(this);
+
+  @DomName('Document.onloadedmetadata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onLoadedMetadata => Element.loadedMetadataEvent.forTarget(this);
 
   /// Stream of `mousedown` events handled by this [Document].
   @DomName('Document.onmousedown')
@@ -8317,6 +9028,36 @@ class Document extends Node
   @DocsEditable()
   Stream<Event> get onPaste => Element.pasteEvent.forTarget(this);
 
+  @DomName('Document.onpause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPause => Element.pauseEvent.forTarget(this);
+
+  @DomName('Document.onplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPlay => Element.playEvent.forTarget(this);
+
+  @DomName('Document.onplaying')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPlaying => Element.playingEvent.forTarget(this);
+
+  @DomName('Document.onpointerlockchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPointerLockChange => pointerLockChangeEvent.forTarget(this);
+
+  @DomName('Document.onpointerlockerror')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPointerLockError => pointerLockErrorEvent.forTarget(this);
+
+  @DomName('Document.onratechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onRateChange => Element.rateChangeEvent.forTarget(this);
+
   /// Stream of `readystatechange` events handled by this [Document].
   @DomName('Document.onreadystatechange')
   @DocsEditable()
@@ -8351,6 +9092,16 @@ class Document extends Node
   @Experimental()
   Stream<SecurityPolicyViolationEvent> get onSecurityPolicyViolation => securityPolicyViolationEvent.forTarget(this);
 
+  @DomName('Document.onseeked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSeeked => Element.seekedEvent.forTarget(this);
+
+  @DomName('Document.onseeking')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSeeking => Element.seekingEvent.forTarget(this);
+
   /// Stream of `select` events handled by this [Document].
   @DomName('Document.onselect')
   @DocsEditable()
@@ -8366,10 +9117,25 @@ class Document extends Node
   @DocsEditable()
   Stream<Event> get onSelectStart => Element.selectStartEvent.forTarget(this);
 
+  @DomName('Document.onstalled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onStalled => Element.stalledEvent.forTarget(this);
+
   /// Stream of `submit` events handled by this [Document].
   @DomName('Document.onsubmit')
   @DocsEditable()
   Stream<Event> get onSubmit => Element.submitEvent.forTarget(this);
+
+  @DomName('Document.onsuspend')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSuspend => Element.suspendEvent.forTarget(this);
+
+  @DomName('Document.ontimeupdate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onTimeUpdate => Element.timeUpdateEvent.forTarget(this);
 
   /// Stream of `touchcancel` events handled by this [Document].
   @DomName('Document.ontouchcancel')
@@ -8399,6 +9165,16 @@ class Document extends Node
   @Experimental()
   Stream<TouchEvent> get onTouchStart => Element.touchStartEvent.forTarget(this);
 
+  @DomName('Document.onvolumechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onVolumeChange => Element.volumeChangeEvent.forTarget(this);
+
+  @DomName('Document.onwaiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onWaiting => Element.waitingEvent.forTarget(this);
+
   /// Stream of `fullscreenchange` events handled by this [Document].
   @DomName('Document.onwebkitfullscreenchange')
   @DocsEditable()
@@ -8412,20 +9188,6 @@ class Document extends Node
   // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html
   @Experimental()
   Stream<Event> get onFullscreenError => Element.fullscreenErrorEvent.forTarget(this);
-
-  /// Stream of `pointerlockchange` events handled by this [Document].
-  @DomName('Document.onwebkitpointerlockchange')
-  @DocsEditable()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-onpointerlockchange
-  @Experimental()
-  Stream<Event> get onPointerLockChange => pointerLockChangeEvent.forTarget(this);
-
-  /// Stream of `pointerlockerror` events handled by this [Document].
-  @DomName('Document.onwebkitpointerlockerror')
-  @DocsEditable()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Document-onpointerlockerror
-  @Experimental()
-  Stream<Event> get onPointerLockError => pointerLockErrorEvent.forTarget(this);
 
   /**
    * Finds all descendant elements of this document that match the specified
@@ -8604,6 +9366,23 @@ class DocumentFragment extends Node implements ParentNode {
   // To suppress missing implicit constructor warnings.
   factory DocumentFragment._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('DocumentFragment.getElementById')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Element getElementById(String elementId) => _blink.BlinkDocumentFragment.instance.getElementById_Callback_1_(this, elementId);
+
+  @DomName('DocumentFragment.childElementCount')
+  @DocsEditable()
+  int get _childElementCount => _blink.BlinkDocumentFragment.instance.childElementCount_Getter_(this);
+
+  @DomName('DocumentFragment.firstElementChild')
+  @DocsEditable()
+  Element get _firstElementChild => _blink.BlinkDocumentFragment.instance.firstElementChild_Getter_(this);
+
+  @DomName('DocumentFragment.lastElementChild')
+  @DocsEditable()
+  Element get _lastElementChild => _blink.BlinkDocumentFragment.instance.lastElementChild_Getter_(this);
+
   /**
    * Finds the first descendant element of this document fragment that matches
    * the specified group of selectors.
@@ -8618,23 +9397,11 @@ class DocumentFragment extends Node implements ParentNode {
    */
   @DomName('DocumentFragment.querySelector')
   @DocsEditable()
-  Element querySelector(String selectors) => _blink.BlinkDocumentFragment.$querySelector_Callback(this, selectors);
+  Element querySelector(String selectors) => _blink.BlinkDocumentFragment.instance.querySelector_Callback_1_(this, selectors);
 
   @DomName('DocumentFragment.querySelectorAll')
   @DocsEditable()
-  List<Node> _querySelectorAll(String selectors) => _blink.BlinkDocumentFragment.$querySelectorAll_Callback(this, selectors);
-
-  @DomName('DocumentFragment.childElementCount')
-  @DocsEditable()
-  int get _childElementCount => _blink.BlinkDocumentFragment.$childElementCount_Getter(this);
-
-  @DomName('DocumentFragment.firstElementChild')
-  @DocsEditable()
-  Element get _firstElementChild => _blink.BlinkDocumentFragment.$firstElementChild_Getter(this);
-
-  @DomName('DocumentFragment.lastElementChild')
-  @DocsEditable()
-  Element get _lastElementChild => _blink.BlinkDocumentFragment.$lastElementChild_Getter(this);
+  List<Node> _querySelectorAll(String selectors) => _blink.BlinkDocumentFragment.instance.querySelectorAll_Callback_1_(this, selectors);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -8650,14 +9417,20 @@ class DomError extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory DomError._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('DOMError.DOMError')
+  @DocsEditable()
+  factory DomError(String name, [String message]) {
+    return _blink.BlinkDOMError.instance.constructorCallback_2_(name, message);
+  }
+
   @DomName('DOMError.message')
   @DocsEditable()
   @Experimental() // untriaged
-  String get message => _blink.BlinkDOMError.$message_Getter(this);
+  String get message => _blink.BlinkDOMError.instance.message_Getter_(this);
 
   @DomName('DOMError.name')
   @DocsEditable()
-  String get name => _blink.BlinkDOMError.$name_Getter(this);
+  String get name => _blink.BlinkDOMError.instance.name_Getter_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -8696,15 +9469,15 @@ class DomException extends NativeFieldWrapperClass2 {
 
   @DomName('DOMException.message')
   @DocsEditable()
-  String get message => _blink.BlinkDOMException.$message_Getter(this);
+  String get message => _blink.BlinkDOMException.instance.message_Getter_(this);
 
   @DomName('DOMException.name')
   @DocsEditable()
-  String get name => _blink.BlinkDOMException.$name_Getter(this);
+  String get name => _blink.BlinkDOMException.instance.name_Getter_(this);
 
   @DomName('DOMException.toString')
   @DocsEditable()
-  String toString() => _blink.BlinkDOMException.$toString_Callback(this);
+  String toString() => _blink.BlinkDOMException.instance.toString_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -8722,19 +9495,401 @@ class DomImplementation extends NativeFieldWrapperClass2 {
 
   @DomName('DOMImplementation.createDocument')
   @DocsEditable()
-  XmlDocument createDocument(String namespaceURI, String qualifiedName, _DocumentType doctype) => _blink.BlinkDOMImplementation.$createDocument_Callback(this, namespaceURI, qualifiedName, doctype);
+  XmlDocument createDocument(String namespaceURI, String qualifiedName, _DocumentType doctype) => _blink.BlinkDOMImplementation.instance.createDocument_Callback_3_(this, namespaceURI, qualifiedName, doctype);
 
   @DomName('DOMImplementation.createDocumentType')
   @DocsEditable()
-  _DocumentType createDocumentType(String qualifiedName, String publicId, String systemId) => _blink.BlinkDOMImplementation.$createDocumentType_Callback(this, qualifiedName, publicId, systemId);
+  _DocumentType createDocumentType(String qualifiedName, String publicId, String systemId) => _blink.BlinkDOMImplementation.instance.createDocumentType_Callback_3_(this, qualifiedName, publicId, systemId);
 
   @DomName('DOMImplementation.createHTMLDocument')
   @DocsEditable()
-  HtmlDocument createHtmlDocument(String title) => _blink.BlinkDOMImplementation.$createHTMLDocument_Callback(this, title);
+  HtmlDocument createHtmlDocument(String title) => _blink.BlinkDOMImplementation.instance.createHTMLDocument_Callback_1_(this, title);
 
   @DomName('DOMImplementation.hasFeature')
   @DocsEditable()
-  bool hasFeature(String feature, String version) => _blink.BlinkDOMImplementation.$hasFeature_Callback(this, feature, version);
+  bool hasFeature(String feature, String version) => _blink.BlinkDOMImplementation.instance.hasFeature_Callback_2_(this, feature, version);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DOMMatrix')
+@Experimental() // untriaged
+class DomMatrix extends DomMatrixReadOnly {
+  // To suppress missing implicit constructor warnings.
+  factory DomMatrix._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMMatrix.DOMMatrix')
+  @DocsEditable()
+  factory DomMatrix([DomMatrixReadOnly other]) {
+    if (other == null) {
+      return _blink.BlinkDOMMatrix.instance.constructorCallback_0_();
+    }
+    if ((other is DomMatrixReadOnly || other == null)) {
+      return _blink.BlinkDOMMatrix.instance.constructorCallback_1_(other);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('DOMMatrix.a')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get a => _blink.BlinkDOMMatrix.instance.a_Getter_(this);
+
+  @DomName('DOMMatrix.a')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set a(num value) => _blink.BlinkDOMMatrix.instance.a_Setter_(this, value);
+
+  @DomName('DOMMatrix.b')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get b => _blink.BlinkDOMMatrix.instance.b_Getter_(this);
+
+  @DomName('DOMMatrix.b')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set b(num value) => _blink.BlinkDOMMatrix.instance.b_Setter_(this, value);
+
+  @DomName('DOMMatrix.c')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get c => _blink.BlinkDOMMatrix.instance.c_Getter_(this);
+
+  @DomName('DOMMatrix.c')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set c(num value) => _blink.BlinkDOMMatrix.instance.c_Setter_(this, value);
+
+  @DomName('DOMMatrix.d')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get d => _blink.BlinkDOMMatrix.instance.d_Getter_(this);
+
+  @DomName('DOMMatrix.d')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set d(num value) => _blink.BlinkDOMMatrix.instance.d_Setter_(this, value);
+
+  @DomName('DOMMatrix.e')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get e => _blink.BlinkDOMMatrix.instance.e_Getter_(this);
+
+  @DomName('DOMMatrix.e')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set e(num value) => _blink.BlinkDOMMatrix.instance.e_Setter_(this, value);
+
+  @DomName('DOMMatrix.f')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get f => _blink.BlinkDOMMatrix.instance.f_Getter_(this);
+
+  @DomName('DOMMatrix.f')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set f(num value) => _blink.BlinkDOMMatrix.instance.f_Setter_(this, value);
+
+  @DomName('DOMMatrix.m11')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m11 => _blink.BlinkDOMMatrix.instance.m11_Getter_(this);
+
+  @DomName('DOMMatrix.m11')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m11(num value) => _blink.BlinkDOMMatrix.instance.m11_Setter_(this, value);
+
+  @DomName('DOMMatrix.m12')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m12 => _blink.BlinkDOMMatrix.instance.m12_Getter_(this);
+
+  @DomName('DOMMatrix.m12')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m12(num value) => _blink.BlinkDOMMatrix.instance.m12_Setter_(this, value);
+
+  @DomName('DOMMatrix.m13')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m13 => _blink.BlinkDOMMatrix.instance.m13_Getter_(this);
+
+  @DomName('DOMMatrix.m13')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m13(num value) => _blink.BlinkDOMMatrix.instance.m13_Setter_(this, value);
+
+  @DomName('DOMMatrix.m14')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m14 => _blink.BlinkDOMMatrix.instance.m14_Getter_(this);
+
+  @DomName('DOMMatrix.m14')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m14(num value) => _blink.BlinkDOMMatrix.instance.m14_Setter_(this, value);
+
+  @DomName('DOMMatrix.m21')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m21 => _blink.BlinkDOMMatrix.instance.m21_Getter_(this);
+
+  @DomName('DOMMatrix.m21')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m21(num value) => _blink.BlinkDOMMatrix.instance.m21_Setter_(this, value);
+
+  @DomName('DOMMatrix.m22')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m22 => _blink.BlinkDOMMatrix.instance.m22_Getter_(this);
+
+  @DomName('DOMMatrix.m22')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m22(num value) => _blink.BlinkDOMMatrix.instance.m22_Setter_(this, value);
+
+  @DomName('DOMMatrix.m23')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m23 => _blink.BlinkDOMMatrix.instance.m23_Getter_(this);
+
+  @DomName('DOMMatrix.m23')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m23(num value) => _blink.BlinkDOMMatrix.instance.m23_Setter_(this, value);
+
+  @DomName('DOMMatrix.m24')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m24 => _blink.BlinkDOMMatrix.instance.m24_Getter_(this);
+
+  @DomName('DOMMatrix.m24')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m24(num value) => _blink.BlinkDOMMatrix.instance.m24_Setter_(this, value);
+
+  @DomName('DOMMatrix.m31')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m31 => _blink.BlinkDOMMatrix.instance.m31_Getter_(this);
+
+  @DomName('DOMMatrix.m31')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m31(num value) => _blink.BlinkDOMMatrix.instance.m31_Setter_(this, value);
+
+  @DomName('DOMMatrix.m32')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m32 => _blink.BlinkDOMMatrix.instance.m32_Getter_(this);
+
+  @DomName('DOMMatrix.m32')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m32(num value) => _blink.BlinkDOMMatrix.instance.m32_Setter_(this, value);
+
+  @DomName('DOMMatrix.m33')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m33 => _blink.BlinkDOMMatrix.instance.m33_Getter_(this);
+
+  @DomName('DOMMatrix.m33')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m33(num value) => _blink.BlinkDOMMatrix.instance.m33_Setter_(this, value);
+
+  @DomName('DOMMatrix.m34')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m34 => _blink.BlinkDOMMatrix.instance.m34_Getter_(this);
+
+  @DomName('DOMMatrix.m34')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m34(num value) => _blink.BlinkDOMMatrix.instance.m34_Setter_(this, value);
+
+  @DomName('DOMMatrix.m41')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m41 => _blink.BlinkDOMMatrix.instance.m41_Getter_(this);
+
+  @DomName('DOMMatrix.m41')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m41(num value) => _blink.BlinkDOMMatrix.instance.m41_Setter_(this, value);
+
+  @DomName('DOMMatrix.m42')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m42 => _blink.BlinkDOMMatrix.instance.m42_Getter_(this);
+
+  @DomName('DOMMatrix.m42')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m42(num value) => _blink.BlinkDOMMatrix.instance.m42_Setter_(this, value);
+
+  @DomName('DOMMatrix.m43')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m43 => _blink.BlinkDOMMatrix.instance.m43_Getter_(this);
+
+  @DomName('DOMMatrix.m43')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m43(num value) => _blink.BlinkDOMMatrix.instance.m43_Setter_(this, value);
+
+  @DomName('DOMMatrix.m44')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get m44 => _blink.BlinkDOMMatrix.instance.m44_Getter_(this);
+
+  @DomName('DOMMatrix.m44')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set m44(num value) => _blink.BlinkDOMMatrix.instance.m44_Setter_(this, value);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DOMMatrixReadOnly')
+@Experimental() // untriaged
+class DomMatrixReadOnly extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory DomMatrixReadOnly._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMMatrixReadOnly.a')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get a => _blink.BlinkDOMMatrixReadOnly.instance.a_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.b')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get b => _blink.BlinkDOMMatrixReadOnly.instance.b_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.c')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get c => _blink.BlinkDOMMatrixReadOnly.instance.c_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.d')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get d => _blink.BlinkDOMMatrixReadOnly.instance.d_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.e')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get e => _blink.BlinkDOMMatrixReadOnly.instance.e_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.f')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get f => _blink.BlinkDOMMatrixReadOnly.instance.f_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.is2D')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get is2D => _blink.BlinkDOMMatrixReadOnly.instance.is2D_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.isIdentity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get isIdentity => _blink.BlinkDOMMatrixReadOnly.instance.isIdentity_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m11')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m11 => _blink.BlinkDOMMatrixReadOnly.instance.m11_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m12')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m12 => _blink.BlinkDOMMatrixReadOnly.instance.m12_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m13')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m13 => _blink.BlinkDOMMatrixReadOnly.instance.m13_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m14')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m14 => _blink.BlinkDOMMatrixReadOnly.instance.m14_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m21')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m21 => _blink.BlinkDOMMatrixReadOnly.instance.m21_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m22')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m22 => _blink.BlinkDOMMatrixReadOnly.instance.m22_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m23')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m23 => _blink.BlinkDOMMatrixReadOnly.instance.m23_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m24')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m24 => _blink.BlinkDOMMatrixReadOnly.instance.m24_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m31')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m31 => _blink.BlinkDOMMatrixReadOnly.instance.m31_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m32')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m32 => _blink.BlinkDOMMatrixReadOnly.instance.m32_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m33')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m33 => _blink.BlinkDOMMatrixReadOnly.instance.m33_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m34')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m34 => _blink.BlinkDOMMatrixReadOnly.instance.m34_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m41')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m41 => _blink.BlinkDOMMatrixReadOnly.instance.m41_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m42')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m42 => _blink.BlinkDOMMatrixReadOnly.instance.m42_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m43')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m43 => _blink.BlinkDOMMatrixReadOnly.instance.m43_Getter_(this);
+
+  @DomName('DOMMatrixReadOnly.m44')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get m44 => _blink.BlinkDOMMatrixReadOnly.instance.m44_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -8753,14 +9908,280 @@ class DomParser extends NativeFieldWrapperClass2 {
   @DomName('DOMParser.DOMParser')
   @DocsEditable()
   factory DomParser() {
-    return _blink.BlinkDOMParser.$_create_1constructorCallback();
+    return _blink.BlinkDOMParser.instance.constructorCallback_0_();
   }
 
   @DomName('DOMParser.parseFromString')
   @DocsEditable()
-  Document parseFromString(String str, String contentType) => _blink.BlinkDOMParser.$parseFromString_Callback(this, str, contentType);
+  Document parseFromString(String str, String contentType) => _blink.BlinkDOMParser.instance.parseFromString_Callback_2_(this, str, contentType);
 
 }
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DOMPoint')
+@Experimental() // untriaged
+class DomPoint extends DomPointReadOnly {
+  // To suppress missing implicit constructor warnings.
+  factory DomPoint._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMPoint.DOMPoint')
+  @DocsEditable()
+  factory DomPoint([point_OR_x, num y, num z, num w]) {
+    if (point_OR_x == null && y == null && z == null && w == null) {
+      return _blink.BlinkDOMPoint.instance.constructorCallback_0_();
+    }
+    if ((point_OR_x is Map || point_OR_x == null) && y == null && z == null && w == null) {
+      return _blink.BlinkDOMPoint.instance.constructorCallback_1_(point_OR_x);
+    }
+    if ((y is num || y == null) && (point_OR_x is num || point_OR_x == null) && z == null && w == null) {
+      return _blink.BlinkDOMPoint.instance.constructorCallback_2_(point_OR_x, y);
+    }
+    if ((z is num || z == null) && (y is num || y == null) && (point_OR_x is num || point_OR_x == null) && w == null) {
+      return _blink.BlinkDOMPoint.instance.constructorCallback_3_(point_OR_x, y, z);
+    }
+    if ((w is num || w == null) && (z is num || z == null) && (y is num || y == null) && (point_OR_x is num || point_OR_x == null)) {
+      return _blink.BlinkDOMPoint.instance.constructorCallback_4_(point_OR_x, y, z, w);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('DOMPoint.w')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get w => _blink.BlinkDOMPoint.instance.w_Getter_(this);
+
+  @DomName('DOMPoint.w')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set w(num value) => _blink.BlinkDOMPoint.instance.w_Setter_(this, value);
+
+  @DomName('DOMPoint.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get x => _blink.BlinkDOMPoint.instance.x_Getter_(this);
+
+  @DomName('DOMPoint.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set x(num value) => _blink.BlinkDOMPoint.instance.x_Setter_(this, value);
+
+  @DomName('DOMPoint.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get y => _blink.BlinkDOMPoint.instance.y_Getter_(this);
+
+  @DomName('DOMPoint.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set y(num value) => _blink.BlinkDOMPoint.instance.y_Setter_(this, value);
+
+  @DomName('DOMPoint.z')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get z => _blink.BlinkDOMPoint.instance.z_Getter_(this);
+
+  @DomName('DOMPoint.z')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set z(num value) => _blink.BlinkDOMPoint.instance.z_Setter_(this, value);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DOMPointReadOnly')
+@Experimental() // untriaged
+class DomPointReadOnly extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory DomPointReadOnly._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMPointReadOnly.DOMPointReadOnly')
+  @DocsEditable()
+  factory DomPointReadOnly(num x, num y, num z, num w) {
+    return _blink.BlinkDOMPointReadOnly.instance.constructorCallback_4_(x, y, z, w);
+  }
+
+  @DomName('DOMPointReadOnly.w')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get w => _blink.BlinkDOMPointReadOnly.instance.w_Getter_(this);
+
+  @DomName('DOMPointReadOnly.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get x => _blink.BlinkDOMPointReadOnly.instance.x_Getter_(this);
+
+  @DomName('DOMPointReadOnly.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get y => _blink.BlinkDOMPointReadOnly.instance.y_Getter_(this);
+
+  @DomName('DOMPointReadOnly.z')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get z => _blink.BlinkDOMPointReadOnly.instance.z_Getter_(this);
+
+}
+// Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+
+@DocsEditable()
+@DomName('DOMRectReadOnly')
+@Experimental() // untriaged
+class DomRectReadOnly extends NativeFieldWrapperClass2 implements Rectangle {
+
+  // NOTE! All code below should be common with RectangleBase.
+   String toString() {
+    return 'Rectangle ($left, $top) $width x $height';
+  }
+
+  bool operator ==(other) {
+    if (other is !Rectangle) return false;
+    return left == other.left && top == other.top && width == other.width &&
+        height == other.height;
+  }
+
+  int get hashCode => _JenkinsSmiHash.hash4(left.hashCode, top.hashCode,
+      width.hashCode, height.hashCode);
+
+  /**
+   * Computes the intersection of `this` and [other].
+   *
+   * The intersection of two axis-aligned rectangles, if any, is always another
+   * axis-aligned rectangle.
+   *
+   * Returns the intersection of this and `other`, or null if they don't
+   * intersect.
+   */
+  Rectangle intersection(Rectangle other) {
+    var x0 = max(left, other.left);
+    var x1 = min(left + width, other.left + other.width);
+
+    if (x0 <= x1) {
+      var y0 = max(top, other.top);
+      var y1 = min(top + height, other.top + other.height);
+
+      if (y0 <= y1) {
+        return new Rectangle(x0, y0, x1 - x0, y1 - y0);
+      }
+    }
+    return null;
+  }
+
+
+  /**
+   * Returns true if `this` intersects [other].
+   */
+  bool intersects(Rectangle<num> other) {
+    return (left <= other.left + other.width &&
+        other.left <= left + width &&
+        top <= other.top + other.height &&
+        other.top <= top + height);
+  }
+
+  /**
+   * Returns a new rectangle which completely contains `this` and [other].
+   */
+  Rectangle boundingBox(Rectangle other) {
+    var right = max(this.left + this.width, other.left + other.width);
+    var bottom = max(this.top + this.height, other.top + other.height);
+
+    var left = min(this.left, other.left);
+    var top = min(this.top, other.top);
+
+    return new Rectangle(left, top, right - left, bottom - top);
+  }
+
+  /**
+   * Tests whether `this` entirely contains [another].
+   */
+  bool containsRectangle(Rectangle<num> another) {
+    return left <= another.left &&
+           left + width >= another.left + another.width &&
+           top <= another.top &&
+           top + height >= another.top + another.height;
+  }
+
+  /**
+   * Tests whether [another] is inside or along the edges of `this`.
+   */
+  bool containsPoint(Point<num> another) {
+    return another.x >= left &&
+           another.x <= left + width &&
+           another.y >= top &&
+           another.y <= top + height;
+  }
+
+  Point get topLeft => new Point(this.left, this.top);
+  Point get topRight => new Point(this.left + this.width, this.top);
+  Point get bottomRight => new Point(this.left + this.width,
+      this.top + this.height);
+  Point get bottomLeft => new Point(this.left,
+      this.top + this.height);
+
+    // To suppress missing implicit constructor warnings.
+  factory DomRectReadOnly._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMRectReadOnly.DOMRectReadOnly')
+  @DocsEditable()
+  factory DomRectReadOnly(num x, num y, num width, num height) {
+    return _blink.BlinkDOMRectReadOnly.instance.constructorCallback_4_(x, y, width, height);
+  }
+
+  @DomName('DOMRectReadOnly.bottom')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get bottom => _blink.BlinkDOMRectReadOnly.instance.bottom_Getter_(this);
+
+  @DomName('DOMRectReadOnly.height')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get height => _blink.BlinkDOMRectReadOnly.instance.height_Getter_(this);
+
+  @DomName('DOMRectReadOnly.left')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get left => _blink.BlinkDOMRectReadOnly.instance.left_Getter_(this);
+
+  @DomName('DOMRectReadOnly.right')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get right => _blink.BlinkDOMRectReadOnly.instance.right_Getter_(this);
+
+  @DomName('DOMRectReadOnly.top')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get top => _blink.BlinkDOMRectReadOnly.instance.top_Getter_(this);
+
+  @DomName('DOMRectReadOnly.width')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get width => _blink.BlinkDOMRectReadOnly.instance.width_Getter_(this);
+
+  @DomName('DOMRectReadOnly.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get x => _blink.BlinkDOMRectReadOnly.instance.x_Getter_(this);
+
+  @DomName('DOMRectReadOnly.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get y => _blink.BlinkDOMRectReadOnly.instance.y_Getter_(this);
+}
+
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -8776,15 +10197,15 @@ class DomSettableTokenList extends DomTokenList {
 
   @DomName('DOMSettableTokenList.value')
   @DocsEditable()
-  String get value => _blink.BlinkDOMSettableTokenList.$value_Getter(this);
+  String get value => _blink.BlinkDOMSettableTokenList.instance.value_Getter_(this);
 
   @DomName('DOMSettableTokenList.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkDOMSettableTokenList.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkDOMSettableTokenList.instance.value_Setter_(this, value);
 
   @DomName('DOMSettableTokenList.__getter__')
   @DocsEditable()
-  String __getter__(int index) => _blink.BlinkDOMSettableTokenList.$__getter___Callback(this, index);
+  String __getter__(int index) => _blink.BlinkDOMSettableTokenList.instance.$__getter___Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -8802,15 +10223,15 @@ class DomStringList extends NativeFieldWrapperClass2 with ListMixin<String>, Imm
 
   @DomName('DOMStringList.length')
   @DocsEditable()
-  int get length => _blink.BlinkDOMStringList.$length_Getter(this);
+  int get length => _blink.BlinkDOMStringList.instance.length_Getter_(this);
 
   String operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkDOMStringList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkDOMStringList.instance.item_Callback_1_(this, index);
   }
 
-  String _nativeIndexedGetter(int index) => _blink.BlinkDOMStringList.$NativeIndexed_Getter(this, index);
+  String _nativeIndexedGetter(int index) => _blink.BlinkDOMStringList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, String value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -8852,11 +10273,11 @@ class DomStringList extends NativeFieldWrapperClass2 with ListMixin<String>, Imm
 
   @DomName('DOMStringList.contains')
   @DocsEditable()
-  bool contains(String string) => _blink.BlinkDOMStringList.$contains_Callback(this, string);
+  bool contains(String string) => _blink.BlinkDOMStringList.instance.contains_Callback_1_(this, string);
 
   @DomName('DOMStringList.item')
   @DocsEditable()
-  String item(int index) => _blink.BlinkDOMStringList.$item_Callback(this, index);
+  String item(int index) => _blink.BlinkDOMStringList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -8874,31 +10295,31 @@ abstract class DomStringMap extends NativeFieldWrapperClass2 {
 
   bool __delete__(index_OR_name) {
     if ((index_OR_name is int || index_OR_name == null)) {
-      return _blink.BlinkDOMStringMap.$___delete___1_Callback(this, index_OR_name);
+      return _blink.BlinkDOMStringMap.instance.$__delete___Callback_1_(this, index_OR_name);
     }
     if ((index_OR_name is String || index_OR_name == null)) {
-      return _blink.BlinkDOMStringMap.$___delete___2_Callback(this, index_OR_name);
+      return _blink.BlinkDOMStringMap.instance.$__delete___Callback_1_(this, index_OR_name);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   String __getter__(index_OR_name) {
     if ((index_OR_name is int || index_OR_name == null)) {
-      return _blink.BlinkDOMStringMap.$___getter___1_Callback(this, index_OR_name);
+      return _blink.BlinkDOMStringMap.instance.$__getter___Callback_1_(this, index_OR_name);
     }
     if ((index_OR_name is String || index_OR_name == null)) {
-      return _blink.BlinkDOMStringMap.$___getter___2_Callback(this, index_OR_name);
+      return _blink.BlinkDOMStringMap.instance.$__getter___Callback_1_(this, index_OR_name);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   void __setter__(index_OR_name, String value) {
     if ((value is String || value == null) && (index_OR_name is int || index_OR_name == null)) {
-      _blink.BlinkDOMStringMap.$___setter___1_Callback(this, index_OR_name, value);
+      _blink.BlinkDOMStringMap.instance.$__setter___Callback_2_(this, index_OR_name, value);
       return;
     }
     if ((value is String || value == null) && (index_OR_name is String || index_OR_name == null)) {
-      _blink.BlinkDOMStringMap.$___setter___2_Callback(this, index_OR_name, value);
+      _blink.BlinkDOMStringMap.instance.$__setter___Callback_2_(this, index_OR_name, value);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -8920,25 +10341,31 @@ class DomTokenList extends NativeFieldWrapperClass2 {
 
   @DomName('DOMTokenList.length')
   @DocsEditable()
-  int get length => _blink.BlinkDOMTokenList.$length_Getter(this);
+  int get length => _blink.BlinkDOMTokenList.instance.length_Getter_(this);
+
+  @DomName('DOMTokenList.add')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void add(String tokens) => _blink.BlinkDOMTokenList.instance.add_Callback_1_(this, tokens);
 
   @DomName('DOMTokenList.contains')
   @DocsEditable()
-  bool contains(String token) => _blink.BlinkDOMTokenList.$contains_Callback(this, token);
+  bool contains(String token) => _blink.BlinkDOMTokenList.instance.contains_Callback_1_(this, token);
 
   @DomName('DOMTokenList.item')
   @DocsEditable()
-  String item(int index) => _blink.BlinkDOMTokenList.$item_Callback(this, index);
+  String item(int index) => _blink.BlinkDOMTokenList.instance.item_Callback_1_(this, index);
 
-  @DomName('DOMTokenList.toString')
+  @DomName('DOMTokenList.remove')
   @DocsEditable()
-  String toString() => _blink.BlinkDOMTokenList.$toString_Callback(this);
+  @Experimental() // untriaged
+  void remove(String tokens) => _blink.BlinkDOMTokenList.instance.remove_Callback_1_(this, tokens);
 
   bool toggle(String token, [bool force]) {
     if (force != null) {
-      return _blink.BlinkDOMTokenList.$_toggle_1_Callback(this, token, force);
+      return _blink.BlinkDOMTokenList.instance.toggle_Callback_2_(this, token, force);
     }
-    return _blink.BlinkDOMTokenList.$_toggle_2_Callback(this, token);
+    return _blink.BlinkDOMTokenList.instance.toggle_Callback_1_(this, token);
   }
 
 }
@@ -9219,6 +10646,16 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @DocsEditable()
   ElementStream<Event> get onBlur;
 
+  @DomName('Element.oncanplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlay;
+
+  @DomName('Element.oncanplaythrough')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlayThrough;
+
   /// Stream of `change` events handled by this [Element].
   @DomName('Element.onchange')
   @DocsEditable()
@@ -9378,6 +10815,21 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @DocsEditable()
   ElementStream<MouseEvent> get onDrop;
 
+  @DomName('Element.ondurationchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onDurationChange;
+
+  @DomName('Element.onemptied')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEmptied;
+
+  @DomName('Element.onended')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEnded;
+
   /// Stream of `error` events handled by this [Element].
   @DomName('Element.onerror')
   @DocsEditable()
@@ -9417,6 +10869,16 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @DomName('Element.onload')
   @DocsEditable()
   ElementStream<Event> get onLoad;
+
+  @DomName('Element.onloadeddata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedData;
+
+  @DomName('Element.onloadedmetadata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedMetadata;
 
   /// Stream of `mousedown` events handled by this [Element].
   @DomName('Element.onmousedown')
@@ -9467,6 +10929,26 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @DocsEditable()
   ElementStream<Event> get onPaste;
 
+  @DomName('Element.onpause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPause;
+
+  @DomName('Element.onplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlay;
+
+  @DomName('Element.onplaying')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlaying;
+
+  @DomName('Element.onratechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onRateChange;
+
   /// Stream of `reset` events handled by this [Element].
   @DomName('Element.onreset')
   @DocsEditable()
@@ -9489,6 +10971,16 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @Experimental()
   ElementStream<Event> get onSearch;
 
+  @DomName('Element.onseeked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeked;
+
+  @DomName('Element.onseeking')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeking;
+
   /// Stream of `select` events handled by this [Element].
   @DomName('Element.onselect')
   @DocsEditable()
@@ -9500,10 +10992,25 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @Experimental() // nonstandard
   ElementStream<Event> get onSelectStart;
 
+  @DomName('Element.onstalled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onStalled;
+
   /// Stream of `submit` events handled by this [Element].
   @DomName('Element.onsubmit')
   @DocsEditable()
   ElementStream<Event> get onSubmit;
+
+  @DomName('Element.onsuspend')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSuspend;
+
+  @DomName('Element.ontimeupdate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onTimeUpdate;
 
   /// Stream of `touchcancel` events handled by this [Element].
   @DomName('Element.ontouchcancel')
@@ -9555,6 +11062,16 @@ abstract class ElementList<T extends Element> extends ListBase<T> {
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
   ElementStream<TransitionEvent> get onTransitionEnd;
+
+  @DomName('Element.onvolumechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onVolumeChange;
+
+  @DomName('Element.onwaiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onWaiting;
 
   /// Stream of `fullscreenchange` events handled by this [Element].
   @DomName('Element.onwebkitfullscreenchange')
@@ -9656,6 +11173,16 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @DomName('Element.onblur')
   @DocsEditable()
   ElementStream<Event> get onBlur => Element.blurEvent._forElementList(this);
+
+  @DomName('Element.oncanplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlay => Element.canPlayEvent._forElementList(this);
+
+  @DomName('Element.oncanplaythrough')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlayThrough => Element.canPlayThroughEvent._forElementList(this);
 
   /// Stream of `change` events handled by this [Element].
   @DomName('Element.onchange')
@@ -9816,6 +11343,21 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @DocsEditable()
   ElementStream<MouseEvent> get onDrop => Element.dropEvent._forElementList(this);
 
+  @DomName('Element.ondurationchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onDurationChange => Element.durationChangeEvent._forElementList(this);
+
+  @DomName('Element.onemptied')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEmptied => Element.emptiedEvent._forElementList(this);
+
+  @DomName('Element.onended')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEnded => Element.endedEvent._forElementList(this);
+
   /// Stream of `error` events handled by this [Element].
   @DomName('Element.onerror')
   @DocsEditable()
@@ -9855,6 +11397,16 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @DomName('Element.onload')
   @DocsEditable()
   ElementStream<Event> get onLoad => Element.loadEvent._forElementList(this);
+
+  @DomName('Element.onloadeddata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedData => Element.loadedDataEvent._forElementList(this);
+
+  @DomName('Element.onloadedmetadata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedMetadata => Element.loadedMetadataEvent._forElementList(this);
 
   /// Stream of `mousedown` events handled by this [Element].
   @DomName('Element.onmousedown')
@@ -9905,6 +11457,26 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @DocsEditable()
   ElementStream<Event> get onPaste => Element.pasteEvent._forElementList(this);
 
+  @DomName('Element.onpause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPause => Element.pauseEvent._forElementList(this);
+
+  @DomName('Element.onplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlay => Element.playEvent._forElementList(this);
+
+  @DomName('Element.onplaying')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlaying => Element.playingEvent._forElementList(this);
+
+  @DomName('Element.onratechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onRateChange => Element.rateChangeEvent._forElementList(this);
+
   /// Stream of `reset` events handled by this [Element].
   @DomName('Element.onreset')
   @DocsEditable()
@@ -9927,6 +11499,16 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @Experimental()
   ElementStream<Event> get onSearch => Element.searchEvent._forElementList(this);
 
+  @DomName('Element.onseeked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeked => Element.seekedEvent._forElementList(this);
+
+  @DomName('Element.onseeking')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeking => Element.seekingEvent._forElementList(this);
+
   /// Stream of `select` events handled by this [Element].
   @DomName('Element.onselect')
   @DocsEditable()
@@ -9938,10 +11520,25 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @Experimental() // nonstandard
   ElementStream<Event> get onSelectStart => Element.selectStartEvent._forElementList(this);
 
+  @DomName('Element.onstalled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onStalled => Element.stalledEvent._forElementList(this);
+
   /// Stream of `submit` events handled by this [Element].
   @DomName('Element.onsubmit')
   @DocsEditable()
   ElementStream<Event> get onSubmit => Element.submitEvent._forElementList(this);
+
+  @DomName('Element.onsuspend')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSuspend => Element.suspendEvent._forElementList(this);
+
+  @DomName('Element.ontimeupdate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onTimeUpdate => Element.timeUpdateEvent._forElementList(this);
 
   /// Stream of `touchcancel` events handled by this [Element].
   @DomName('Element.ontouchcancel')
@@ -9993,6 +11590,16 @@ class _FrozenElementList<T extends Element> extends ListBase<T>
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
   ElementStream<TransitionEvent> get onTransitionEnd => Element.transitionEndEvent._forElementList(this);
+
+  @DomName('Element.onvolumechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onVolumeChange => Element.volumeChangeEvent._forElementList(this);
+
+  @DomName('Element.onwaiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onWaiting => Element.waitingEvent._forElementList(this);
 
   /// Stream of `fullscreenchange` events handled by this [Element].
   @DomName('Element.onwebkitfullscreenchange')
@@ -10413,7 +12020,7 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
    * Adds the specified text after the last child of this element.
    */
   void appendText(String text) {
-    this.insertAdjacentText('beforeend', text);
+    this.append(new Text(text));
   }
 
   /**
@@ -10819,59 +12426,59 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
 
   @DomName('Element.offsetHeight')
   @DocsEditable()
-  int get offsetHeight => _blink.BlinkElement.$offsetHeight_Getter(this).round();
+  int get offsetHeight => _blink.BlinkElement.offsetHeight_Getter(this).round();
 
   @DomName('Element.offsetLeft')
   @DocsEditable()
-  int get offsetLeft => _blink.BlinkElement.$offsetLeft_Getter(this).round();
+  int get offsetLeft => _blink.BlinkElement.offsetLeft_Getter(this).round();
 
   @DomName('Element.offsetTop')
   @DocsEditable()
-  int get offsetTop => _blink.BlinkElement.$offsetTop_Getter(this).round();
+  int get offsetTop => _blink.BlinkElement.offsetTop_Getter(this).round();
 
   @DomName('Element.offsetWidth')
   @DocsEditable()
-  int get offsetWidth => _blink.BlinkElement.$offsetWidth_Getter(this).round();
+  int get offsetWidth => _blink.BlinkElement.offsetWidth_Getter(this).round();
 
   @DomName('Element.clientHeight')
   @DocsEditable()
-  int get clientHeight => _blink.BlinkElement.$clientHeight_Getter(this).round();
+  int get clientHeight => _blink.BlinkElement.clientHeight_Getter(this).round();
 
   @DomName('Element.clientLeft')
   @DocsEditable()
-  int get clientLeft => _blink.BlinkElement.$clientLeft_Getter(this).round();
+  int get clientLeft => _blink.BlinkElement.clientLeft_Getter(this).round();
 
   @DomName('Element.clientTop')
   @DocsEditable()
-  int get clientTop => _blink.BlinkElement.$clientTop_Getter(this).round();
+  int get clientTop => _blink.BlinkElement.clientTop_Getter(this).round();
 
   @DomName('Element.clientWidth')
   @DocsEditable()
-  int get clientWidth => _blink.BlinkElement.$clientWidth_Getter(this).round();
+  int get clientWidth => _blink.BlinkElement.clientWidth_Getter(this).round();
 
   @DomName('Element.scrollHeight')
   @DocsEditable()
-  int get scrollHeight => _blink.BlinkElement.$scrollHeight_Getter(this).round();
+  int get scrollHeight => _blink.BlinkElement.scrollHeight_Getter(this).round();
 
   @DomName('Element.scrollLeft')
   @DocsEditable()
-  int get scrollLeft => _blink.BlinkElement.$scrollLeft_Getter(this).round();
+  int get scrollLeft => _blink.BlinkElement.scrollLeft_Getter(this).round();
 
   @DomName('Element.scrollLeft')
   @DocsEditable()
-  void set scrollLeft(int value) => _blink.BlinkElement.$scrollLeft_Setter(this, value.round());
+  void set scrollLeft(int value) => _blink.BlinkElement.scrollLeft_Setter(this, value.round());
 
   @DomName('Element.scrollTop')
   @DocsEditable()
-  int get scrollTop => _blink.BlinkElement.$scrollTop_Getter(this).round();
+  int get scrollTop => _blink.BlinkElement.scrollTop_Getter(this).round();
 
   @DomName('Element.scrollTop')
   @DocsEditable()
-  void set scrollTop(int value) => _blink.BlinkElement.$scrollTop_Setter(this, value.round());
+  void set scrollTop(int value) => _blink.BlinkElement.scrollTop_Setter(this, value.round());
 
   @DomName('Element.scrollWidth')
   @DocsEditable()
-  int get scrollWidth => _blink.BlinkElement.$scrollWidth_Getter(this).round();
+  int get scrollWidth => _blink.BlinkElement.scrollWidth_Getter(this).round();
 
   // To suppress missing implicit constructor warnings.
   factory Element._() { throw new UnsupportedError("Not supported"); }
@@ -10925,6 +12532,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.blurEvent')
   @DocsEditable()
   static const EventStreamProvider<Event> blurEvent = const EventStreamProvider<Event>('blur');
+
+  @DomName('Element.canplayEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> canPlayEvent = const EventStreamProvider<Event>('canplay');
+
+  @DomName('Element.canplaythroughEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> canPlayThroughEvent = const EventStreamProvider<Event>('canplaythrough');
 
   /**
    * Static factory designed to expose `change` events to event
@@ -11114,6 +12731,21 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DocsEditable()
   static const EventStreamProvider<MouseEvent> dropEvent = const EventStreamProvider<MouseEvent>('drop');
 
+  @DomName('Element.durationchangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> durationChangeEvent = const EventStreamProvider<Event>('durationchange');
+
+  @DomName('Element.emptiedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> emptiedEvent = const EventStreamProvider<Event>('emptied');
+
+  @DomName('Element.endedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> endedEvent = const EventStreamProvider<Event>('ended');
+
   /**
    * Static factory designed to expose `error` events to event
    * handlers that are not necessarily instances of [Element].
@@ -11193,6 +12825,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.loadEvent')
   @DocsEditable()
   static const EventStreamProvider<Event> loadEvent = const EventStreamProvider<Event>('load');
+
+  @DomName('Element.loadeddataEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> loadedDataEvent = const EventStreamProvider<Event>('loadeddata');
+
+  @DomName('Element.loadedmetadataEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> loadedMetadataEvent = const EventStreamProvider<Event>('loadedmetadata');
 
   /**
    * Static factory designed to expose `mousedown` events to event
@@ -11282,6 +12924,26 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DocsEditable()
   static const EventStreamProvider<Event> pasteEvent = const EventStreamProvider<Event>('paste');
 
+  @DomName('Element.pauseEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> pauseEvent = const EventStreamProvider<Event>('pause');
+
+  @DomName('Element.playEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> playEvent = const EventStreamProvider<Event>('play');
+
+  @DomName('Element.playingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> playingEvent = const EventStreamProvider<Event>('playing');
+
+  @DomName('Element.ratechangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> rateChangeEvent = const EventStreamProvider<Event>('ratechange');
+
   /**
    * Static factory designed to expose `reset` events to event
    * handlers that are not necessarily instances of [Element].
@@ -11319,6 +12981,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @Experimental()
   static const EventStreamProvider<Event> searchEvent = const EventStreamProvider<Event>('search');
 
+  @DomName('Element.seekedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> seekedEvent = const EventStreamProvider<Event>('seeked');
+
+  @DomName('Element.seekingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> seekingEvent = const EventStreamProvider<Event>('seeking');
+
   /**
    * Static factory designed to expose `select` events to event
    * handlers that are not necessarily instances of [Element].
@@ -11340,6 +13012,11 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @Experimental() // nonstandard
   static const EventStreamProvider<Event> selectStartEvent = const EventStreamProvider<Event>('selectstart');
 
+  @DomName('Element.stalledEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> stalledEvent = const EventStreamProvider<Event>('stalled');
+
   /**
    * Static factory designed to expose `submit` events to event
    * handlers that are not necessarily instances of [Element].
@@ -11349,6 +13026,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.submitEvent')
   @DocsEditable()
   static const EventStreamProvider<Event> submitEvent = const EventStreamProvider<Event>('submit');
+
+  @DomName('Element.suspendEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> suspendEvent = const EventStreamProvider<Event>('suspend');
+
+  @DomName('Element.timeupdateEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> timeUpdateEvent = const EventStreamProvider<Event>('timeupdate');
 
   /**
    * Static factory designed to expose `touchcancel` events to event
@@ -11426,6 +13113,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DocsEditable()
   static const EventStreamProvider<TransitionEvent> transitionEndEvent = const EventStreamProvider<TransitionEvent>('transitionend');
 
+  @DomName('Element.volumechangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> volumeChangeEvent = const EventStreamProvider<Event>('volumechange');
+
+  @DomName('Element.waitingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> waitingEvent = const EventStreamProvider<Event>('waiting');
+
   /**
    * Static factory designed to expose `fullscreenchange` events to event
    * handlers that are not necessarily instances of [Element].
@@ -11480,157 +13177,154 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
 
   @DomName('Element.attributes')
   @DocsEditable()
-  _NamedNodeMap get _attributes => _blink.BlinkElement.$attributes_Getter(this);
+  _NamedNodeMap get _attributes => _blink.BlinkElement.instance.attributes_Getter_(this);
 
   @DomName('Element.className')
   @DocsEditable()
-  String get className => _blink.BlinkElement.$className_Getter(this);
+  String get className => _blink.BlinkElement.instance.className_Getter_(this);
 
   @DomName('Element.className')
   @DocsEditable()
-  void set className(String value) => _blink.BlinkElement.$className_Setter(this, value);
+  void set className(String value) => _blink.BlinkElement.instance.className_Setter_(this, value);
 
   @DomName('Element.clientHeight')
   @DocsEditable()
-  int get _clientHeight => _blink.BlinkElement.$clientHeight_Getter(this);
+  int get _clientHeight => _blink.BlinkElement.instance.clientHeight_Getter_(this);
 
   @DomName('Element.clientLeft')
   @DocsEditable()
-  int get _clientLeft => _blink.BlinkElement.$clientLeft_Getter(this);
+  int get _clientLeft => _blink.BlinkElement.instance.clientLeft_Getter_(this);
 
   @DomName('Element.clientTop')
   @DocsEditable()
-  int get _clientTop => _blink.BlinkElement.$clientTop_Getter(this);
+  int get _clientTop => _blink.BlinkElement.instance.clientTop_Getter_(this);
 
   @DomName('Element.clientWidth')
   @DocsEditable()
-  int get _clientWidth => _blink.BlinkElement.$clientWidth_Getter(this);
+  int get _clientWidth => _blink.BlinkElement.instance.clientWidth_Getter_(this);
 
   @DomName('Element.id')
   @DocsEditable()
-  String get id => _blink.BlinkElement.$id_Getter(this);
+  String get id => _blink.BlinkElement.instance.id_Getter_(this);
 
   @DomName('Element.id')
   @DocsEditable()
-  void set id(String value) => _blink.BlinkElement.$id_Setter(this, value);
+  void set id(String value) => _blink.BlinkElement.instance.id_Setter_(this, value);
 
   @DomName('Element.innerHTML')
   @DocsEditable()
-  String get _innerHtml => _blink.BlinkElement.$innerHTML_Getter(this);
+  String get _innerHtml => _blink.BlinkElement.instance.innerHTML_Getter_(this);
 
   @DomName('Element.innerHTML')
   @DocsEditable()
-  void set _innerHtml(String value) => _blink.BlinkElement.$innerHTML_Setter(this, value);
+  void set _innerHtml(String value) => _blink.BlinkElement.instance.innerHTML_Setter_(this, value);
 
   @DomName('Element.localName')
   @DocsEditable()
   @Experimental() // untriaged
-  String get _localName => _blink.BlinkElement.$localName_Getter(this);
+  String get _localName => _blink.BlinkElement.instance.localName_Getter_(this);
 
   @DomName('Element.namespaceURI')
   @DocsEditable()
   @Experimental() // untriaged
-  String get _namespaceUri => _blink.BlinkElement.$namespaceURI_Getter(this);
+  String get _namespaceUri => _blink.BlinkElement.instance.namespaceURI_Getter_(this);
 
   @DomName('Element.offsetHeight')
   @DocsEditable()
-  int get _offsetHeight => _blink.BlinkElement.$offsetHeight_Getter(this);
+  int get _offsetHeight => _blink.BlinkElement.instance.offsetHeight_Getter_(this);
 
   @DomName('Element.offsetLeft')
   @DocsEditable()
-  int get _offsetLeft => _blink.BlinkElement.$offsetLeft_Getter(this);
+  int get _offsetLeft => _blink.BlinkElement.instance.offsetLeft_Getter_(this);
 
   @DomName('Element.offsetParent')
   @DocsEditable()
-  Element get offsetParent => _blink.BlinkElement.$offsetParent_Getter(this);
+  Element get offsetParent => _blink.BlinkElement.instance.offsetParent_Getter_(this);
 
   @DomName('Element.offsetTop')
   @DocsEditable()
-  int get _offsetTop => _blink.BlinkElement.$offsetTop_Getter(this);
+  int get _offsetTop => _blink.BlinkElement.instance.offsetTop_Getter_(this);
 
   @DomName('Element.offsetWidth')
   @DocsEditable()
-  int get _offsetWidth => _blink.BlinkElement.$offsetWidth_Getter(this);
+  int get _offsetWidth => _blink.BlinkElement.instance.offsetWidth_Getter_(this);
 
   @DomName('Element.outerHTML')
   @DocsEditable()
-  String get outerHtml => _blink.BlinkElement.$outerHTML_Getter(this);
+  String get outerHtml => _blink.BlinkElement.instance.outerHTML_Getter_(this);
 
   @DomName('Element.scrollHeight')
   @DocsEditable()
-  int get _scrollHeight => _blink.BlinkElement.$scrollHeight_Getter(this);
+  int get _scrollHeight => _blink.BlinkElement.instance.scrollHeight_Getter_(this);
 
   @DomName('Element.scrollLeft')
   @DocsEditable()
-  int get _scrollLeft => _blink.BlinkElement.$scrollLeft_Getter(this);
+  int get _scrollLeft => _blink.BlinkElement.instance.scrollLeft_Getter_(this);
 
   @DomName('Element.scrollLeft')
   @DocsEditable()
-  void set _scrollLeft(int value) => _blink.BlinkElement.$scrollLeft_Setter(this, value);
+  void set _scrollLeft(int value) => _blink.BlinkElement.instance.scrollLeft_Setter_(this, value);
 
   @DomName('Element.scrollTop')
   @DocsEditable()
-  int get _scrollTop => _blink.BlinkElement.$scrollTop_Getter(this);
+  int get _scrollTop => _blink.BlinkElement.instance.scrollTop_Getter_(this);
 
   @DomName('Element.scrollTop')
   @DocsEditable()
-  void set _scrollTop(int value) => _blink.BlinkElement.$scrollTop_Setter(this, value);
+  void set _scrollTop(int value) => _blink.BlinkElement.instance.scrollTop_Setter_(this, value);
 
   @DomName('Element.scrollWidth')
   @DocsEditable()
-  int get _scrollWidth => _blink.BlinkElement.$scrollWidth_Getter(this);
+  int get _scrollWidth => _blink.BlinkElement.instance.scrollWidth_Getter_(this);
 
   @DomName('Element.shadowRoot')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html#api-shadow-aware-create-shadow-root
   @Experimental()
-  ShadowRoot get shadowRoot => _blink.BlinkElement.$shadowRoot_Getter(this);
+  ShadowRoot get shadowRoot => _blink.BlinkElement.instance.shadowRoot_Getter_(this);
 
   @DomName('Element.style')
   @DocsEditable()
-  CssStyleDeclaration get style => _blink.BlinkElement.$style_Getter(this);
+  CssStyleDeclaration get style => _blink.BlinkElement.instance.style_Getter_(this);
 
   @DomName('Element.tagName')
   @DocsEditable()
-  String get tagName => _blink.BlinkElement.$tagName_Getter(this);
+  String get tagName => _blink.BlinkElement.instance.tagName_Getter_(this);
 
-  Animation animate(List<Map> keyframes, [timingInput]) {
-    if ((timingInput is Map || timingInput == null) && (keyframes is List<Map> || keyframes == null)) {
-      return _blink.BlinkElement.$_animate_1_Callback(this, keyframes, timingInput);
-    }
-    if ((timingInput is num || timingInput == null) && (keyframes is List<Map> || keyframes == null)) {
-      return _blink.BlinkElement.$_animate_2_Callback(this, keyframes, timingInput);
-    }
-    if ((keyframes is List<Map> || keyframes == null) && timingInput == null) {
-      return _blink.BlinkElement.$_animate_3_Callback(this, keyframes);
-    }
-    throw new ArgumentError("Incorrect number or type of arguments");
-  }
+  @DomName('Element.animate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  AnimationPlayer animate(Object effect, [Object timing]) => _blink.BlinkElement.instance.animate_Callback_2_(this, effect, timing);
 
   @DomName('Element.blur')
   @DocsEditable()
-  void blur() => _blink.BlinkElement.$blur_Callback(this);
+  void blur() => _blink.BlinkElement.instance.blur_Callback_0_(this);
 
   @DomName('Element.createShadowRoot')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME, '25')
   @Experimental()
   // https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html#api-shadow-aware-create-shadow-root
-  ShadowRoot createShadowRoot() => _blink.BlinkElement.$createShadowRoot_Callback(this);
+  ShadowRoot createShadowRoot() => _blink.BlinkElement.instance.createShadowRoot_Callback_0_(this);
 
   @DomName('Element.focus')
   @DocsEditable()
-  void focus() => _blink.BlinkElement.$focus_Callback(this);
+  void focus() => _blink.BlinkElement.instance.focus_Callback_0_(this);
+
+  @DomName('Element.getAnimationPlayers')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<AnimationPlayer> getAnimationPlayers() => _blink.BlinkElement.instance.getAnimationPlayers_Callback_0_(this);
 
   @DomName('Element.getAttribute')
   @DocsEditable()
   @Experimental() // untriaged
-  String getAttribute(String name) => _blink.BlinkElement.$getAttribute_Callback(this, name);
+  String getAttribute(String name) => _blink.BlinkElement.instance.getAttribute_Callback_1_(this, name);
 
   @DomName('Element.getAttributeNS')
   @DocsEditable()
   @Experimental() // untriaged
-  String getAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.$getAttributeNS_Callback(this, namespaceURI, localName);
+  String getAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.instance.getAttributeNS_Callback_2_(this, namespaceURI, localName);
 
   /**
    * Returns the smallest bounding rectangle that encompasses this element's
@@ -11647,7 +13341,7 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
    */
   @DomName('Element.getBoundingClientRect')
   @DocsEditable()
-  Rectangle getBoundingClientRect() => _blink.BlinkElement.$getBoundingClientRect_Callback(this);
+  Rectangle getBoundingClientRect() => _blink.BlinkElement.instance.getBoundingClientRect_Callback_0_(this);
 
   /**
    * Returns a list of bounding rectangles for each box associated with this
@@ -11664,7 +13358,7 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
    */
   @DomName('Element.getClientRects')
   @DocsEditable()
-  List<Rectangle> getClientRects() => _blink.BlinkElement.$getClientRects_Callback(this);
+  List<Rectangle> getClientRects() => _blink.BlinkElement.instance.getClientRects_Callback_0_(this);
 
   /**
    * Returns a list of shadow DOM insertion points to which this element is
@@ -11679,7 +13373,7 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.getDestinationInsertionPoints')
   @DocsEditable()
   @Experimental() // untriaged
-  List<Node> getDestinationInsertionPoints() => _blink.BlinkElement.$getDestinationInsertionPoints_Callback(this);
+  List<Node> getDestinationInsertionPoints() => _blink.BlinkElement.instance.getDestinationInsertionPoints_Callback_0_(this);
 
   /**
    * Returns a list of nodes with the given class name inside this element.
@@ -11694,39 +13388,111 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
    */
   @DomName('Element.getElementsByClassName')
   @DocsEditable()
-  List<Node> getElementsByClassName(String classNames) => _blink.BlinkElement.$getElementsByClassName_Callback(this, classNames);
+  List<Node> getElementsByClassName(String classNames) => _blink.BlinkElement.instance.getElementsByClassName_Callback_1_(this, classNames);
 
   @DomName('Element.getElementsByTagName')
   @DocsEditable()
-  List<Node> _getElementsByTagName(String name) => _blink.BlinkElement.$getElementsByTagName_Callback(this, name);
+  List<Node> _getElementsByTagName(String name) => _blink.BlinkElement.instance.getElementsByTagName_Callback_1_(this, name);
 
   @DomName('Element.hasAttribute')
   @DocsEditable()
-  bool _hasAttribute(String name) => _blink.BlinkElement.$hasAttribute_Callback(this, name);
+  bool _hasAttribute(String name) => _blink.BlinkElement.instance.hasAttribute_Callback_1_(this, name);
 
   @DomName('Element.hasAttributeNS')
   @DocsEditable()
-  bool _hasAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.$hasAttributeNS_Callback(this, namespaceURI, localName);
+  bool _hasAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.instance.hasAttributeNS_Callback_2_(this, namespaceURI, localName);
 
   @DomName('Element.insertAdjacentElement')
   @DocsEditable()
   @Experimental() // untriaged
-  Element insertAdjacentElement(String where, Element element) => _blink.BlinkElement.$insertAdjacentElement_Callback(this, where, element);
+  Element insertAdjacentElement(String where, Element element) => _blink.BlinkElement.instance.insertAdjacentElement_Callback_2_(this, where, element);
 
   @DomName('Element.insertAdjacentHTML')
   @DocsEditable()
   @Experimental() // untriaged
-  void insertAdjacentHtml(String where, String html) => _blink.BlinkElement.$insertAdjacentHTML_Callback(this, where, html);
+  void insertAdjacentHtml(String where, String html) => _blink.BlinkElement.instance.insertAdjacentHTML_Callback_2_(this, where, html);
 
   @DomName('Element.insertAdjacentText')
   @DocsEditable()
   @Experimental() // untriaged
-  void insertAdjacentText(String where, String text) => _blink.BlinkElement.$insertAdjacentText_Callback(this, where, text);
+  void insertAdjacentText(String where, String text) => _blink.BlinkElement.instance.insertAdjacentText_Callback_2_(this, where, text);
 
   @DomName('Element.matches')
   @DocsEditable()
   @Experimental() // untriaged
-  bool matches(String selectors) => _blink.BlinkElement.$matches_Callback(this, selectors);
+  bool matches(String selectors) => _blink.BlinkElement.instance.matches_Callback_1_(this, selectors);
+
+  @DomName('Element.removeAttribute')
+  @DocsEditable()
+  void _removeAttribute(String name) => _blink.BlinkElement.instance.removeAttribute_Callback_1_(this, name);
+
+  @DomName('Element.removeAttributeNS')
+  @DocsEditable()
+  void _removeAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.instance.removeAttributeNS_Callback_2_(this, namespaceURI, localName);
+
+  @DomName('Element.requestFullscreen')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void requestFullscreen() => _blink.BlinkElement.instance.requestFullscreen_Callback_0_(this);
+
+  @DomName('Element.requestPointerLock')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void requestPointerLock() => _blink.BlinkElement.instance.requestPointerLock_Callback_0_(this);
+
+  void _scrollIntoView([bool alignWithTop]) {
+    if (alignWithTop != null) {
+      _blink.BlinkElement.instance.scrollIntoView_Callback_1_(this, alignWithTop);
+      return;
+    }
+    _blink.BlinkElement.instance.scrollIntoView_Callback_0_(this);
+    return;
+  }
+
+  void _scrollIntoViewIfNeeded([bool centerIfNeeded]) {
+    if (centerIfNeeded != null) {
+      _blink.BlinkElement.instance.scrollIntoViewIfNeeded_Callback_1_(this, centerIfNeeded);
+      return;
+    }
+    _blink.BlinkElement.instance.scrollIntoViewIfNeeded_Callback_0_(this);
+    return;
+  }
+
+  @DomName('Element.setAttribute')
+  @DocsEditable()
+  void setAttribute(String name, String value) => _blink.BlinkElement.instance.setAttribute_Callback_2_(this, name, value);
+
+  @DomName('Element.setAttributeNS')
+  @DocsEditable()
+  void setAttributeNS(String namespaceURI, String qualifiedName, String value) => _blink.BlinkElement.instance.setAttributeNS_Callback_3_(this, namespaceURI, qualifiedName, value);
+
+  @DomName('Element.nextElementSibling')
+  @DocsEditable()
+  Element get nextElementSibling => _blink.BlinkElement.instance.nextElementSibling_Getter_(this);
+
+  @DomName('Element.previousElementSibling')
+  @DocsEditable()
+  Element get previousElementSibling => _blink.BlinkElement.instance.previousElementSibling_Getter_(this);
+
+  @DomName('Element.remove')
+  @DocsEditable()
+  void remove() => _blink.BlinkElement.instance.remove_Callback_0_(this);
+
+  @DomName('Element.childElementCount')
+  @DocsEditable()
+  int get _childElementCount => _blink.BlinkElement.instance.childElementCount_Getter_(this);
+
+  @DomName('Element.children')
+  @DocsEditable()
+  List<Node> get _children => _blink.BlinkElement.instance.children_Getter_(this);
+
+  @DomName('Element.firstElementChild')
+  @DocsEditable()
+  Element get _firstElementChild => _blink.BlinkElement.instance.firstElementChild_Getter_(this);
+
+  @DomName('Element.lastElementChild')
+  @DocsEditable()
+  Element get _lastElementChild => _blink.BlinkElement.instance.lastElementChild_Getter_(this);
 
   /**
    * Finds the first descendant element of this element that matches the
@@ -11746,136 +13512,11 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
    */
   @DomName('Element.querySelector')
   @DocsEditable()
-  Element querySelector(String selectors) => _blink.BlinkElement.$querySelector_Callback(this, selectors);
+  Element querySelector(String selectors) => _blink.BlinkElement.instance.querySelector_Callback_1_(this, selectors);
 
   @DomName('Element.querySelectorAll')
   @DocsEditable()
-  List<Node> _querySelectorAll(String selectors) => _blink.BlinkElement.$querySelectorAll_Callback(this, selectors);
-
-  @DomName('Element.removeAttribute')
-  @DocsEditable()
-  void _removeAttribute(String name) => _blink.BlinkElement.$removeAttribute_Callback(this, name);
-
-  @DomName('Element.removeAttributeNS')
-  @DocsEditable()
-  void _removeAttributeNS(String namespaceURI, String localName) => _blink.BlinkElement.$removeAttributeNS_Callback(this, namespaceURI, localName);
-
-  /**
-   * Scrolls the element by a number of lines.
-   *
-   * ## Other resources
-   *
-   * * [scrollByLines]
-   * (http://docs.webplatform.org/wiki/dom/methods/scrollByLines) from WebPlatform.org.
-   */
-  @DomName('Element.scrollByLines')
-  @DocsEditable()
-  void scrollByLines(int lines) => _blink.BlinkElement.$scrollByLines_Callback(this, lines);
-
-  /**
-   * Scrolls the element by a number of pages.
-   *
-   * ## Other resources
-   *
-   * * [scrollByPages]
-   * (http://docs.webplatform.org/wiki/dom/methods/scrollByPages) from WebPlatform.org.
-   */
-  @DomName('Element.scrollByPages')
-  @DocsEditable()
-  void scrollByPages(int pages) => _blink.BlinkElement.$scrollByPages_Callback(this, pages);
-
-  void _scrollIntoView([bool alignWithTop]) {
-    if (alignWithTop != null) {
-      _blink.BlinkElement.$_scrollIntoView_1_Callback(this, alignWithTop);
-      return;
-    }
-    _blink.BlinkElement.$_scrollIntoView_2_Callback(this);
-    return;
-  }
-
-  void _scrollIntoViewIfNeeded([bool centerIfNeeded]) {
-    if (centerIfNeeded != null) {
-      _blink.BlinkElement.$_scrollIntoViewIfNeeded_1_Callback(this, centerIfNeeded);
-      return;
-    }
-    _blink.BlinkElement.$_scrollIntoViewIfNeeded_2_Callback(this);
-    return;
-  }
-
-  @DomName('Element.setAttribute')
-  @DocsEditable()
-  void setAttribute(String name, String value) => _blink.BlinkElement.$setAttribute_Callback(this, name, value);
-
-  @DomName('Element.setAttributeNS')
-  @DocsEditable()
-  void setAttributeNS(String namespaceURI, String qualifiedName, String value) => _blink.BlinkElement.$setAttributeNS_Callback(this, namespaceURI, qualifiedName, value);
-
-  /**
-   * Displays this element fullscreen.
-   *
-   * ## Other resources
-   *
-   * * [Using the fullscreen API]
-   * (http://docs.webplatform.org/wiki/tutorials/using_the_full-screen_api)
-   * tutorial from WebPlatform.org.
-   * * [Fullscreen specification]
-   * (http://www.w3.org/TR/fullscreen/) from W3C.
-   */
-  @DomName('Element.webkitRequestFullscreen')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-element-requestfullscreen
-  void requestFullscreen() => _blink.BlinkElement.$webkitRequestFullscreen_Callback(this);
-
-  /**
-   * Locks the mouse pointer to this element.
-   *
-   * ## Other resources
-   *
-   * * [Pointer lock and first person shooter controls]
-   * (http://www.html5rocks.com/en/tutorials/pointerlock/intro/) tutorial from
-   * HTML5Rocks.
-   *
-   * * [Pointer lock specification]
-   * (http://www.w3.org/TR/pointerlock/) from W3C.
-   */
-  @DomName('Element.webkitRequestPointerLock')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/pointerlock/raw-file/default/index.html#widl-Element-requestPointerLock-void
-  void requestPointerLock() => _blink.BlinkElement.$webkitRequestPointerLock_Callback(this);
-
-  @DomName('Element.nextElementSibling')
-  @DocsEditable()
-  Element get nextElementSibling => _blink.BlinkElement.$nextElementSibling_Getter(this);
-
-  @DomName('Element.previousElementSibling')
-  @DocsEditable()
-  Element get previousElementSibling => _blink.BlinkElement.$previousElementSibling_Getter(this);
-
-  @DomName('Element.remove')
-  @DocsEditable()
-  void remove() => _blink.BlinkElement.$remove_Callback(this);
-
-  @DomName('Element.childElementCount')
-  @DocsEditable()
-  int get _childElementCount => _blink.BlinkElement.$childElementCount_Getter(this);
-
-  @DomName('Element.children')
-  @DocsEditable()
-  List<Node> get _children => _blink.BlinkElement.$children_Getter(this);
-
-  @DomName('Element.firstElementChild')
-  @DocsEditable()
-  Element get _firstElementChild => _blink.BlinkElement.$firstElementChild_Getter(this);
-
-  @DomName('Element.lastElementChild')
-  @DocsEditable()
-  Element get _lastElementChild => _blink.BlinkElement.$lastElementChild_Getter(this);
+  List<Node> _querySelectorAll(String selectors) => _blink.BlinkElement.instance.querySelectorAll_Callback_1_(this, selectors);
 
   /// Stream of `abort` events handled by this [Element].
   @DomName('Element.onabort')
@@ -11901,6 +13542,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.onblur')
   @DocsEditable()
   ElementStream<Event> get onBlur => blurEvent.forElement(this);
+
+  @DomName('Element.oncanplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlay => canPlayEvent.forElement(this);
+
+  @DomName('Element.oncanplaythrough')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onCanPlayThrough => canPlayThroughEvent.forElement(this);
 
   /// Stream of `change` events handled by this [Element].
   @DomName('Element.onchange')
@@ -12061,6 +13712,21 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DocsEditable()
   ElementStream<MouseEvent> get onDrop => dropEvent.forElement(this);
 
+  @DomName('Element.ondurationchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onDurationChange => durationChangeEvent.forElement(this);
+
+  @DomName('Element.onemptied')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEmptied => emptiedEvent.forElement(this);
+
+  @DomName('Element.onended')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onEnded => endedEvent.forElement(this);
+
   /// Stream of `error` events handled by this [Element].
   @DomName('Element.onerror')
   @DocsEditable()
@@ -12100,6 +13766,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DomName('Element.onload')
   @DocsEditable()
   ElementStream<Event> get onLoad => loadEvent.forElement(this);
+
+  @DomName('Element.onloadeddata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedData => loadedDataEvent.forElement(this);
+
+  @DomName('Element.onloadedmetadata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onLoadedMetadata => loadedMetadataEvent.forElement(this);
 
   /// Stream of `mousedown` events handled by this [Element].
   @DomName('Element.onmousedown')
@@ -12150,6 +13826,26 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @DocsEditable()
   ElementStream<Event> get onPaste => pasteEvent.forElement(this);
 
+  @DomName('Element.onpause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPause => pauseEvent.forElement(this);
+
+  @DomName('Element.onplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlay => playEvent.forElement(this);
+
+  @DomName('Element.onplaying')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onPlaying => playingEvent.forElement(this);
+
+  @DomName('Element.onratechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onRateChange => rateChangeEvent.forElement(this);
+
   /// Stream of `reset` events handled by this [Element].
   @DomName('Element.onreset')
   @DocsEditable()
@@ -12172,6 +13868,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @Experimental()
   ElementStream<Event> get onSearch => searchEvent.forElement(this);
 
+  @DomName('Element.onseeked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeked => seekedEvent.forElement(this);
+
+  @DomName('Element.onseeking')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSeeking => seekingEvent.forElement(this);
+
   /// Stream of `select` events handled by this [Element].
   @DomName('Element.onselect')
   @DocsEditable()
@@ -12183,10 +13889,25 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @Experimental() // nonstandard
   ElementStream<Event> get onSelectStart => selectStartEvent.forElement(this);
 
+  @DomName('Element.onstalled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onStalled => stalledEvent.forElement(this);
+
   /// Stream of `submit` events handled by this [Element].
   @DomName('Element.onsubmit')
   @DocsEditable()
   ElementStream<Event> get onSubmit => submitEvent.forElement(this);
+
+  @DomName('Element.onsuspend')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onSuspend => suspendEvent.forElement(this);
+
+  @DomName('Element.ontimeupdate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onTimeUpdate => timeUpdateEvent.forElement(this);
 
   /// Stream of `touchcancel` events handled by this [Element].
   @DomName('Element.ontouchcancel')
@@ -12238,6 +13959,16 @@ abstract class Element extends Node implements GlobalEventHandlers, ParentNode, 
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
   ElementStream<TransitionEvent> get onTransitionEnd => transitionEndEvent.forElement(this);
+
+  @DomName('Element.onvolumechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onVolumeChange => volumeChangeEvent.forElement(this);
+
+  @DomName('Element.onwaiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ElementStream<Event> get onWaiting => waitingEvent.forElement(this);
 
   /// Stream of `fullscreenchange` events handled by this [Element].
   @DomName('Element.onwebkitfullscreenchange')
@@ -12311,51 +14042,61 @@ class EmbedElement extends HtmlElement {
 
   @DomName('HTMLEmbedElement.height')
   @DocsEditable()
-  String get height => _blink.BlinkHTMLEmbedElement.$height_Getter(this);
+  String get height => _blink.BlinkHTMLEmbedElement.instance.height_Getter_(this);
 
   @DomName('HTMLEmbedElement.height')
   @DocsEditable()
-  void set height(String value) => _blink.BlinkHTMLEmbedElement.$height_Setter(this, value);
+  void set height(String value) => _blink.BlinkHTMLEmbedElement.instance.height_Setter_(this, value);
+
+  @DomName('HTMLEmbedElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLEmbedElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLEmbedElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLEmbedElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLEmbedElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLEmbedElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLEmbedElement.instance.name_Getter_(this);
 
   @DomName('HTMLEmbedElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLEmbedElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLEmbedElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLEmbedElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLEmbedElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLEmbedElement.instance.src_Getter_(this);
 
   @DomName('HTMLEmbedElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLEmbedElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLEmbedElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLEmbedElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLEmbedElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLEmbedElement.instance.type_Getter_(this);
 
   @DomName('HTMLEmbedElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLEmbedElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLEmbedElement.instance.type_Setter_(this, value);
 
   @DomName('HTMLEmbedElement.width')
   @DocsEditable()
-  String get width => _blink.BlinkHTMLEmbedElement.$width_Getter(this);
+  String get width => _blink.BlinkHTMLEmbedElement.instance.width_Getter_(this);
 
   @DomName('HTMLEmbedElement.width')
   @DocsEditable()
-  void set width(String value) => _blink.BlinkHTMLEmbedElement.$width_Setter(this, value);
+  void set width(String value) => _blink.BlinkHTMLEmbedElement.instance.width_Setter_(this, value);
 
   @DomName('HTMLEmbedElement.__getter__')
   @DocsEditable()
-  bool __getter__(index_OR_name) => _blink.BlinkHTMLEmbedElement.$__getter___Callback(this, index_OR_name);
+  bool __getter__(index_OR_name) => _blink.BlinkHTMLEmbedElement.instance.$__getter___Callback_1_(this, index_OR_name);
 
   @DomName('HTMLEmbedElement.__setter__')
   @DocsEditable()
-  void __setter__(index_OR_name, Node value) => _blink.BlinkHTMLEmbedElement.$__setter___Callback(this, index_OR_name, value);
+  void __setter__(index_OR_name, Node value) => _blink.BlinkHTMLEmbedElement.instance.$__setter___Callback_2_(this, index_OR_name, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -12386,30 +14127,38 @@ class Entry extends NativeFieldWrapperClass2 {
 
   @DomName('Entry.filesystem')
   @DocsEditable()
-  FileSystem get filesystem => _blink.BlinkEntry.$filesystem_Getter(this);
+  FileSystem get filesystem => _blink.BlinkEntry.instance.filesystem_Getter_(this);
 
   @DomName('Entry.fullPath')
   @DocsEditable()
-  String get fullPath => _blink.BlinkEntry.$fullPath_Getter(this);
+  String get fullPath => _blink.BlinkEntry.instance.fullPath_Getter_(this);
 
   @DomName('Entry.isDirectory')
   @DocsEditable()
-  bool get isDirectory => _blink.BlinkEntry.$isDirectory_Getter(this);
+  bool get isDirectory => _blink.BlinkEntry.instance.isDirectory_Getter_(this);
 
   @DomName('Entry.isFile')
   @DocsEditable()
-  bool get isFile => _blink.BlinkEntry.$isFile_Getter(this);
+  bool get isFile => _blink.BlinkEntry.instance.isFile_Getter_(this);
 
   @DomName('Entry.name')
   @DocsEditable()
-  String get name => _blink.BlinkEntry.$name_Getter(this);
+  String get name => _blink.BlinkEntry.instance.name_Getter_(this);
 
   void _copyTo(DirectoryEntry parent, {String name, _EntryCallback successCallback, _ErrorCallback errorCallback}) {
-    if (name != null) {
-      _blink.BlinkEntry.$_copyTo_1_Callback(this, parent, name, successCallback, errorCallback);
+    if (errorCallback != null) {
+      _blink.BlinkEntry.instance.copyTo_Callback_4_(this, parent, name, successCallback, errorCallback);
       return;
     }
-    _blink.BlinkEntry.$_copyTo_2_Callback(this, parent);
+    if (successCallback != null) {
+      _blink.BlinkEntry.instance.copyTo_Callback_3_(this, parent, name, successCallback);
+      return;
+    }
+    if (name != null) {
+      _blink.BlinkEntry.instance.copyTo_Callback_2_(this, parent, name);
+      return;
+    }
+    _blink.BlinkEntry.instance.copyTo_Callback_1_(this, parent);
     return;
   }
 
@@ -12421,9 +14170,14 @@ class Entry extends NativeFieldWrapperClass2 {
     return completer.future;
   }
 
-  @DomName('Entry.getMetadata')
-  @DocsEditable()
-  void _getMetadata(MetadataCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkEntry.$getMetadata_Callback(this, successCallback, errorCallback);
+  void _getMetadata(MetadataCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkEntry.instance.getMetadata_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkEntry.instance.getMetadata_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future<Metadata> getMetadata() {
     var completer = new Completer<Metadata>();
@@ -12433,9 +14187,18 @@ class Entry extends NativeFieldWrapperClass2 {
     return completer.future;
   }
 
-  @DomName('Entry.getParent')
-  @DocsEditable()
-  void _getParent([_EntryCallback successCallback, _ErrorCallback errorCallback]) => _blink.BlinkEntry.$getParent_Callback(this, successCallback, errorCallback);
+  void _getParent([_EntryCallback successCallback, _ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkEntry.instance.getParent_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    if (successCallback != null) {
+      _blink.BlinkEntry.instance.getParent_Callback_1_(this, successCallback);
+      return;
+    }
+    _blink.BlinkEntry.instance.getParent_Callback_0_(this);
+    return;
+  }
 
   Future<Entry> getParent() {
     var completer = new Completer<Entry>();
@@ -12446,11 +14209,19 @@ class Entry extends NativeFieldWrapperClass2 {
   }
 
   void _moveTo(DirectoryEntry parent, {String name, _EntryCallback successCallback, _ErrorCallback errorCallback}) {
-    if (name != null) {
-      _blink.BlinkEntry.$_moveTo_1_Callback(this, parent, name, successCallback, errorCallback);
+    if (errorCallback != null) {
+      _blink.BlinkEntry.instance.moveTo_Callback_4_(this, parent, name, successCallback, errorCallback);
       return;
     }
-    _blink.BlinkEntry.$_moveTo_2_Callback(this, parent);
+    if (successCallback != null) {
+      _blink.BlinkEntry.instance.moveTo_Callback_3_(this, parent, name, successCallback);
+      return;
+    }
+    if (name != null) {
+      _blink.BlinkEntry.instance.moveTo_Callback_2_(this, parent, name);
+      return;
+    }
+    _blink.BlinkEntry.instance.moveTo_Callback_1_(this, parent);
     return;
   }
 
@@ -12462,9 +14233,14 @@ class Entry extends NativeFieldWrapperClass2 {
     return completer.future;
   }
 
-  @DomName('Entry.remove')
-  @DocsEditable()
-  void _remove(VoidCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkEntry.$remove_Callback(this, successCallback, errorCallback);
+  void _remove(VoidCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkEntry.instance.remove_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkEntry.instance.remove_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future remove() {
     var completer = new Completer();
@@ -12476,7 +14252,7 @@ class Entry extends NativeFieldWrapperClass2 {
 
   @DomName('Entry.toURL')
   @DocsEditable()
-  String toUrl() => _blink.BlinkEntry.$toURL_Callback(this);
+  String toUrl() => _blink.BlinkEntry.instance.toURL_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -12518,24 +14294,24 @@ class ErrorEvent extends Event {
   @DomName('ErrorEvent.colno')
   @DocsEditable()
   @Experimental() // untriaged
-  int get colno => _blink.BlinkErrorEvent.$colno_Getter(this);
+  int get colno => _blink.BlinkErrorEvent.instance.colno_Getter_(this);
 
   @DomName('ErrorEvent.error')
   @DocsEditable()
   @Experimental() // untriaged
-  Object get error => _blink.BlinkErrorEvent.$error_Getter(this);
+  Object get error => _blink.BlinkErrorEvent.instance.error_Getter_(this);
 
   @DomName('ErrorEvent.filename')
   @DocsEditable()
-  String get filename => _blink.BlinkErrorEvent.$filename_Getter(this);
+  String get filename => _blink.BlinkErrorEvent.instance.filename_Getter_(this);
 
   @DomName('ErrorEvent.lineno')
   @DocsEditable()
-  int get lineno => _blink.BlinkErrorEvent.$lineno_Getter(this);
+  int get lineno => _blink.BlinkErrorEvent.instance.lineno_Getter_(this);
 
   @DomName('ErrorEvent.message')
   @DocsEditable()
-  String get message => _blink.BlinkErrorEvent.$message_Getter(this);
+  String get message => _blink.BlinkErrorEvent.instance.message_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -12638,11 +14414,11 @@ class Event extends NativeFieldWrapperClass2 {
 
   @DomName('Event.bubbles')
   @DocsEditable()
-  bool get bubbles => _blink.BlinkEvent.$bubbles_Getter(this);
+  bool get bubbles => _blink.BlinkEvent.instance.bubbles_Getter_(this);
 
   @DomName('Event.cancelable')
   @DocsEditable()
-  bool get cancelable => _blink.BlinkEvent.$cancelable_Getter(this);
+  bool get cancelable => _blink.BlinkEvent.instance.cancelable_Getter_(this);
 
   /**
    * Access to the system's clipboard data during copy, cut, and paste events.
@@ -12660,19 +14436,19 @@ class Event extends NativeFieldWrapperClass2 {
   @Experimental()
   // Part of copy/paste
   @Experimental() // nonstandard
-  DataTransfer get clipboardData => _blink.BlinkEvent.$clipboardData_Getter(this);
+  DataTransfer get clipboardData => _blink.BlinkEvent.instance.clipboardData_Getter_(this);
 
   @DomName('Event.currentTarget')
   @DocsEditable()
-  EventTarget get currentTarget => _blink.BlinkEvent.$currentTarget_Getter(this);
+  EventTarget get currentTarget => _blink.BlinkEvent.instance.currentTarget_Getter_(this);
 
   @DomName('Event.defaultPrevented')
   @DocsEditable()
-  bool get defaultPrevented => _blink.BlinkEvent.$defaultPrevented_Getter(this);
+  bool get defaultPrevented => _blink.BlinkEvent.instance.defaultPrevented_Getter_(this);
 
   @DomName('Event.eventPhase')
   @DocsEditable()
-  int get eventPhase => _blink.BlinkEvent.$eventPhase_Getter(this);
+  int get eventPhase => _blink.BlinkEvent.instance.eventPhase_Getter_(this);
 
   /**
    * This event's path, taking into account shadow DOM.
@@ -12687,35 +14463,35 @@ class Event extends NativeFieldWrapperClass2 {
   @DocsEditable()
   // https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html#extensions-to-event
   @Experimental()
-  List<Node> get path => _blink.BlinkEvent.$path_Getter(this);
+  List<Node> get path => _blink.BlinkEvent.instance.path_Getter_(this);
 
   @DomName('Event.target')
   @DocsEditable()
-  EventTarget get target => _blink.BlinkEvent.$target_Getter(this);
+  EventTarget get target => _blink.BlinkEvent.instance.target_Getter_(this);
 
   @DomName('Event.timeStamp')
   @DocsEditable()
-  int get timeStamp => _blink.BlinkEvent.$timeStamp_Getter(this);
+  int get timeStamp => _blink.BlinkEvent.instance.timeStamp_Getter_(this);
 
   @DomName('Event.type')
   @DocsEditable()
-  String get type => _blink.BlinkEvent.$type_Getter(this);
+  String get type => _blink.BlinkEvent.instance.type_Getter_(this);
 
   @DomName('Event.initEvent')
   @DocsEditable()
-  void _initEvent(String eventTypeArg, bool canBubbleArg, bool cancelableArg) => _blink.BlinkEvent.$initEvent_Callback(this, eventTypeArg, canBubbleArg, cancelableArg);
+  void _initEvent(String eventTypeArg, bool canBubbleArg, bool cancelableArg) => _blink.BlinkEvent.instance.initEvent_Callback_3_(this, eventTypeArg, canBubbleArg, cancelableArg);
 
   @DomName('Event.preventDefault')
   @DocsEditable()
-  void preventDefault() => _blink.BlinkEvent.$preventDefault_Callback(this);
+  void preventDefault() => _blink.BlinkEvent.instance.preventDefault_Callback_0_(this);
 
   @DomName('Event.stopImmediatePropagation')
   @DocsEditable()
-  void stopImmediatePropagation() => _blink.BlinkEvent.$stopImmediatePropagation_Callback(this);
+  void stopImmediatePropagation() => _blink.BlinkEvent.instance.stopImmediatePropagation_Callback_0_(this);
 
   @DomName('Event.stopPropagation')
   @DocsEditable()
-  void stopPropagation() => _blink.BlinkEvent.$stopPropagation_Callback(this);
+  void stopPropagation() => _blink.BlinkEvent.instance.stopPropagation_Callback_0_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -12769,7 +14545,10 @@ class EventSource extends EventTarget {
   @DomName('EventSource.EventSource')
   @DocsEditable()
   static EventSource _factoryEventSource(String url, [Map eventSourceInit]) {
-    return _blink.BlinkEventSource.$_create_1constructorCallback(url, eventSourceInit);
+    if (eventSourceInit != null) {
+      return _blink.BlinkEventSource.instance.constructorCallback_2_(url, eventSourceInit);
+    }
+    return _blink.BlinkEventSource.instance.constructorCallback_1_(url);
   }
 
   @DomName('EventSource.CLOSED')
@@ -12786,19 +14565,19 @@ class EventSource extends EventTarget {
 
   @DomName('EventSource.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkEventSource.$readyState_Getter(this);
+  int get readyState => _blink.BlinkEventSource.instance.readyState_Getter_(this);
 
   @DomName('EventSource.url')
   @DocsEditable()
-  String get url => _blink.BlinkEventSource.$url_Getter(this);
+  String get url => _blink.BlinkEventSource.instance.url_Getter_(this);
 
   @DomName('EventSource.withCredentials')
   @DocsEditable()
-  bool get withCredentials => _blink.BlinkEventSource.$withCredentials_Getter(this);
+  bool get withCredentials => _blink.BlinkEventSource.instance.withCredentials_Getter_(this);
 
   @DomName('EventSource.close')
   @DocsEditable()
-  void close() => _blink.BlinkEventSource.$close_Callback(this);
+  void close() => _blink.BlinkEventSource.instance.close_Callback_0_(this);
 
   /// Stream of `error` events handled by this [EventSource].
   @DomName('EventSource.onerror')
@@ -12918,20 +14697,156 @@ class EventTarget extends NativeFieldWrapperClass2 {
    * used when an explicit accessor is not available.
    */
   Events get on => new Events(this);
+
+  void addEventListener(String type, EventListener listener, [bool useCapture]) {
+    // TODO(leafp): This check is avoid a bug in our dispatch code when
+    // listener is null.  The browser treats this call as a no-op in this
+    // case, so it's fine to short-circuit it, but we should not have to.
+    if (listener != null) {
+      _addEventListener(type, listener, useCapture);
+    }
+  }
+
+  void removeEventListener(String type, EventListener listener, [bool useCapture]) {
+    // TODO(leafp): This check is avoid a bug in our dispatch code when
+    // listener is null.  The browser treats this call as a no-op in this
+    // case, so it's fine to short-circuit it, but we should not have to.
+    if (listener != null) {
+      _removeEventListener(type, listener, useCapture);
+    }
+  }
+
   // To suppress missing implicit constructor warnings.
   factory EventTarget._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('EventTarget.addEventListener')
-  @DocsEditable()
-  void addEventListener(String type, EventListener listener, [bool useCapture]) => _blink.BlinkEventTarget.$addEventListener_Callback(this, type, listener, useCapture);
+  void _addEventListener([String type, EventListener listener, bool useCapture]) {
+    if (useCapture != null) {
+      _blink.BlinkEventTarget.instance.addEventListener_Callback_3_(this, type, listener, useCapture);
+      return;
+    }
+    if (listener != null) {
+      _blink.BlinkEventTarget.instance.addEventListener_Callback_2_(this, type, listener);
+      return;
+    }
+    if (type != null) {
+      _blink.BlinkEventTarget.instance.addEventListener_Callback_1_(this, type);
+      return;
+    }
+    _blink.BlinkEventTarget.instance.addEventListener_Callback_0_(this);
+    return;
+  }
 
   @DomName('EventTarget.dispatchEvent')
   @DocsEditable()
-  bool dispatchEvent(Event event) => _blink.BlinkEventTarget.$dispatchEvent_Callback(this, event);
+  bool dispatchEvent(Event event) => _blink.BlinkEventTarget.instance.dispatchEvent_Callback_1_(this, event);
 
-  @DomName('EventTarget.removeEventListener')
+  void _removeEventListener([String type, EventListener listener, bool useCapture]) {
+    if (useCapture != null) {
+      _blink.BlinkEventTarget.instance.removeEventListener_Callback_3_(this, type, listener, useCapture);
+      return;
+    }
+    if (listener != null) {
+      _blink.BlinkEventTarget.instance.removeEventListener_Callback_2_(this, type, listener);
+      return;
+    }
+    if (type != null) {
+      _blink.BlinkEventTarget.instance.removeEventListener_Callback_1_(this, type);
+      return;
+    }
+    _blink.BlinkEventTarget.instance.removeEventListener_Callback_0_(this);
+    return;
+  }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('FederatedCredential')
+@Experimental() // untriaged
+class FederatedCredential extends Credential {
+  // To suppress missing implicit constructor warnings.
+  factory FederatedCredential._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('FederatedCredential.FederatedCredential')
   @DocsEditable()
-  void removeEventListener(String type, EventListener listener, [bool useCapture]) => _blink.BlinkEventTarget.$removeEventListener_Callback(this, type, listener, useCapture);
+  factory FederatedCredential(String id, String name, String avatarURL, String federation) {
+    return _blink.BlinkFederatedCredential.instance.constructorCallback_4_(id, name, avatarURL, federation);
+  }
+
+  @DomName('FederatedCredential.federation')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get federation => _blink.BlinkFederatedCredential.instance.federation_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('FetchBodyStream')
+@Experimental() // untriaged
+class FetchBodyStream extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory FetchBodyStream._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('FetchBodyStream.asArrayBuffer')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future asArrayBuffer() => _blink.BlinkFetchBodyStream.instance.asArrayBuffer_Callback_0_(this);
+
+  @DomName('FetchBodyStream.asBlob')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future asBlob() => _blink.BlinkFetchBodyStream.instance.asBlob_Callback_0_(this);
+
+  @DomName('FetchBodyStream.asJSON')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future asJson() => _blink.BlinkFetchBodyStream.instance.asJSON_Callback_0_(this);
+
+  @DomName('FetchBodyStream.asText')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future asText() => _blink.BlinkFetchBodyStream.instance.asText_Callback_0_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('FetchEvent')
+@Experimental() // untriaged
+class FetchEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory FetchEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('FetchEvent.isReload')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get isReload => _blink.BlinkFetchEvent.instance.isReload_Getter_(this);
+
+  @DomName('FetchEvent.request')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _Request get request => _blink.BlinkFetchEvent.instance.request_Getter_(this);
+
+  @DomName('FetchEvent.respondWith')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void respondWith(Object value) => _blink.BlinkFetchEvent.instance.respondWith_Callback_1_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -12960,51 +14875,51 @@ class FieldSetElement extends HtmlElement {
 
   @DomName('HTMLFieldSetElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLFieldSetElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLFieldSetElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLFieldSetElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLFieldSetElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLFieldSetElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLFieldSetElement.elements')
   @DocsEditable()
-  List<Node> get elements => _blink.BlinkHTMLFieldSetElement.$elements_Getter(this);
+  List<Node> get elements => _blink.BlinkHTMLFieldSetElement.instance.elements_Getter_(this);
 
   @DomName('HTMLFieldSetElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLFieldSetElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLFieldSetElement.instance.form_Getter_(this);
 
   @DomName('HTMLFieldSetElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLFieldSetElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLFieldSetElement.instance.name_Getter_(this);
 
   @DomName('HTMLFieldSetElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLFieldSetElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLFieldSetElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLFieldSetElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLFieldSetElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLFieldSetElement.instance.type_Getter_(this);
 
   @DomName('HTMLFieldSetElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLFieldSetElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLFieldSetElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLFieldSetElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLFieldSetElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLFieldSetElement.instance.validity_Getter_(this);
 
   @DomName('HTMLFieldSetElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLFieldSetElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLFieldSetElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLFieldSetElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLFieldSetElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLFieldSetElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLFieldSetElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLFieldSetElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLFieldSetElement.instance.setCustomValidity_Callback_1_(this, error);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13023,15 +14938,15 @@ class File extends Blob {
   @DomName('File.lastModified')
   @DocsEditable()
   @Experimental() // untriaged
-  int get lastModified => _blink.BlinkFile.$lastModified_Getter(this);
+  int get lastModified => _blink.BlinkFile.instance.lastModified_Getter_(this);
 
   @DomName('File.lastModifiedDate')
   @DocsEditable()
-  DateTime get lastModifiedDate => _blink.BlinkFile.$lastModifiedDate_Getter(this);
+  DateTime get lastModifiedDate => _blink.BlinkFile.instance.lastModifiedDate_Getter_(this);
 
   @DomName('File.name')
   @DocsEditable()
-  String get name => _blink.BlinkFile.$name_Getter(this);
+  String get name => _blink.BlinkFile.instance.name_Getter_(this);
 
   @DomName('File.webkitRelativePath')
   @DocsEditable()
@@ -13039,7 +14954,7 @@ class File extends Blob {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://plus.sandbox.google.com/+AddyOsmani/posts/Dk5UhZ6zfF3
-  String get relativePath => _blink.BlinkFile.$webkitRelativePath_Getter(this);
+  String get relativePath => _blink.BlinkFile.instance.webkitRelativePath_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13068,9 +14983,14 @@ class FileEntry extends Entry {
   // To suppress missing implicit constructor warnings.
   factory FileEntry._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('FileEntry.createWriter')
-  @DocsEditable()
-  void _createWriter(_FileWriterCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkFileEntry.$createWriter_Callback(this, successCallback, errorCallback);
+  void _createWriter(_FileWriterCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkFileEntry.instance.createWriter_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkFileEntry.instance.createWriter_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future<FileWriter> createWriter() {
     var completer = new Completer<FileWriter>();
@@ -13080,9 +15000,14 @@ class FileEntry extends Entry {
     return completer.future;
   }
 
-  @DomName('FileEntry.file')
-  @DocsEditable()
-  void _file(_FileCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkFileEntry.$file_Callback(this, successCallback, errorCallback);
+  void _file(_FileCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkFileEntry.instance.file_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkFileEntry.instance.file_Callback_1_(this, successCallback);
+    return;
+  }
 
   Future<File> file() {
     var completer = new Completer<File>();
@@ -13158,7 +15083,7 @@ class FileError extends DomError {
 
   @DomName('FileError.code')
   @DocsEditable()
-  int get code => _blink.BlinkFileError.$code_Getter(this);
+  int get code => _blink.BlinkFileError.instance.code_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13176,15 +15101,15 @@ class FileList extends NativeFieldWrapperClass2 with ListMixin<File>, ImmutableL
 
   @DomName('FileList.length')
   @DocsEditable()
-  int get length => _blink.BlinkFileList.$length_Getter(this);
+  int get length => _blink.BlinkFileList.instance.length_Getter_(this);
 
   File operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkFileList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkFileList.instance.item_Callback_1_(this, index);
   }
 
-  File _nativeIndexedGetter(int index) => _blink.BlinkFileList.$NativeIndexed_Getter(this, index);
+  File _nativeIndexedGetter(int index) => _blink.BlinkFileList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, File value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -13226,7 +15151,7 @@ class FileList extends NativeFieldWrapperClass2 with ListMixin<File>, ImmutableL
 
   @DomName('FileList.item')
   @DocsEditable()
-  File item(int index) => _blink.BlinkFileList.$item_Callback(this, index);
+  File item(int index) => _blink.BlinkFileList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2014, the Dart project authors.  Please see the AUTHORS file
@@ -13241,7 +15166,7 @@ class FileReader extends EventTarget {
   @DomName('FileReader.result')
   @DocsEditable()
   Object get result {
-    var res = _blink.BlinkFileReader.$result_Getter(this);
+    var res = _blink.BlinkFileReader.result_Getter(this);
     if (res is ByteBuffer) {
       return new Uint8List.view(res);
     }
@@ -13314,7 +15239,7 @@ class FileReader extends EventTarget {
   @DomName('FileReader.FileReader')
   @DocsEditable()
   factory FileReader() {
-    return _blink.BlinkFileReader.$_create_1constructorCallback();
+    return _blink.BlinkFileReader.instance.constructorCallback_0_();
   }
 
   @DomName('FileReader.DONE')
@@ -13331,34 +15256,34 @@ class FileReader extends EventTarget {
 
   @DomName('FileReader.error')
   @DocsEditable()
-  FileError get error => _blink.BlinkFileReader.$error_Getter(this);
+  FileError get error => _blink.BlinkFileReader.instance.error_Getter_(this);
 
   @DomName('FileReader.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkFileReader.$readyState_Getter(this);
+  int get readyState => _blink.BlinkFileReader.instance.readyState_Getter_(this);
 
   @DomName('FileReader.result')
   @DocsEditable()
-  Object get _result => _blink.BlinkFileReader.$result_Getter(this);
+  Object get _result => _blink.BlinkFileReader.instance.result_Getter_(this);
 
   @DomName('FileReader.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkFileReader.$abort_Callback(this);
+  void abort() => _blink.BlinkFileReader.instance.abort_Callback_0_(this);
 
   @DomName('FileReader.readAsArrayBuffer')
   @DocsEditable()
-  void readAsArrayBuffer(Blob blob) => _blink.BlinkFileReader.$readAsArrayBuffer_Callback(this, blob);
+  void readAsArrayBuffer(Blob blob) => _blink.BlinkFileReader.instance.readAsArrayBuffer_Callback_1_(this, blob);
 
   @DomName('FileReader.readAsDataURL')
   @DocsEditable()
-  void readAsDataUrl(Blob blob) => _blink.BlinkFileReader.$readAsDataURL_Callback(this, blob);
+  void readAsDataUrl(Blob blob) => _blink.BlinkFileReader.instance.readAsDataURL_Callback_1_(this, blob);
 
   void readAsText(Blob blob, [String encoding]) {
     if (encoding != null) {
-      _blink.BlinkFileReader.$_readAsText_1_Callback(this, blob, encoding);
+      _blink.BlinkFileReader.instance.readAsText_Callback_2_(this, blob, encoding);
       return;
     }
-    _blink.BlinkFileReader.$_readAsText_2_Callback(this, blob);
+    _blink.BlinkFileReader.instance.readAsText_Callback_1_(this, blob);
     return;
   }
 
@@ -13410,7 +15335,7 @@ class FileStream extends NativeFieldWrapperClass2 {
   @DomName('Stream.type')
   @DocsEditable()
   @Experimental() // untriaged
-  String get type => _blink.BlinkStream.$type_Getter(this);
+  String get type => _blink.BlinkStream.instance.type_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13434,11 +15359,11 @@ class FileSystem extends NativeFieldWrapperClass2 {
 
   @DomName('DOMFileSystem.name')
   @DocsEditable()
-  String get name => _blink.BlinkDOMFileSystem.$name_Getter(this);
+  String get name => _blink.BlinkDOMFileSystem.instance.name_Getter_(this);
 
   @DomName('DOMFileSystem.root')
   @DocsEditable()
-  DirectoryEntry get root => _blink.BlinkDOMFileSystem.$root_Getter(this);
+  DirectoryEntry get root => _blink.BlinkDOMFileSystem.instance.root_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13541,35 +15466,35 @@ class FileWriter extends EventTarget {
 
   @DomName('FileWriter.error')
   @DocsEditable()
-  FileError get error => _blink.BlinkFileWriter.$error_Getter(this);
+  FileError get error => _blink.BlinkFileWriter.instance.error_Getter_(this);
 
   @DomName('FileWriter.length')
   @DocsEditable()
-  int get length => _blink.BlinkFileWriter.$length_Getter(this);
+  int get length => _blink.BlinkFileWriter.instance.length_Getter_(this);
 
   @DomName('FileWriter.position')
   @DocsEditable()
-  int get position => _blink.BlinkFileWriter.$position_Getter(this);
+  int get position => _blink.BlinkFileWriter.instance.position_Getter_(this);
 
   @DomName('FileWriter.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkFileWriter.$readyState_Getter(this);
+  int get readyState => _blink.BlinkFileWriter.instance.readyState_Getter_(this);
 
   @DomName('FileWriter.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkFileWriter.$abort_Callback(this);
+  void abort() => _blink.BlinkFileWriter.instance.abort_Callback_0_(this);
 
   @DomName('FileWriter.seek')
   @DocsEditable()
-  void seek(int position) => _blink.BlinkFileWriter.$seek_Callback(this, position);
+  void seek(int position) => _blink.BlinkFileWriter.instance.seek_Callback_1_(this, position);
 
   @DomName('FileWriter.truncate')
   @DocsEditable()
-  void truncate(int size) => _blink.BlinkFileWriter.$truncate_Callback(this, size);
+  void truncate(int size) => _blink.BlinkFileWriter.instance.truncate_Callback_1_(this, size);
 
   @DomName('FileWriter.write')
   @DocsEditable()
-  void write(Blob data) => _blink.BlinkFileWriter.$write_Callback(this, data);
+  void write(Blob data) => _blink.BlinkFileWriter.instance.write_Callback_1_(this, data);
 
   /// Stream of `abort` events handled by this [FileWriter].
   @DomName('FileWriter.onabort')
@@ -13628,7 +15553,7 @@ class FocusEvent extends UIEvent {
 
   @DomName('FocusEvent.relatedTarget')
   @DocsEditable()
-  EventTarget get relatedTarget => _blink.BlinkFocusEvent.$relatedTarget_Getter(this);
+  EventTarget get relatedTarget => _blink.BlinkFocusEvent.instance.relatedTarget_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13647,89 +15572,112 @@ class FontFace extends NativeFieldWrapperClass2 {
 
   @DomName('FontFace.FontFace')
   @DocsEditable()
-  factory FontFace(String family, String source, Map descriptors) {
-    return _blink.BlinkFontFace.$_create_1constructorCallback(family, source, descriptors);
+  factory FontFace(String family, source, [Map descriptors]) {
+    if ((source is String || source == null) && (family is String || family == null) && descriptors == null) {
+      return _blink.BlinkFontFace.instance.constructorCallback_2_(family, source);
+    }
+    if ((descriptors is Map || descriptors == null) && (source is String || source == null) && (family is String || family == null)) {
+      return _blink.BlinkFontFace.instance.constructorCallback_3_(family, source, descriptors);
+    }
+    if ((source is TypedData || source == null) && (family is String || family == null) && descriptors == null) {
+      return _blink.BlinkFontFace.instance.constructorCallback_2_(family, source);
+    }
+    if ((descriptors is Map || descriptors == null) && (source is TypedData || source == null) && (family is String || family == null)) {
+      return _blink.BlinkFontFace.instance.constructorCallback_3_(family, source, descriptors);
+    }
+    if ((source is ByteBuffer || source == null) && (family is String || family == null) && descriptors == null) {
+      return _blink.BlinkFontFace.instance.constructorCallback_2_(family, source);
+    }
+    if ((descriptors is Map || descriptors == null) && (source is ByteBuffer || source == null) && (family is String || family == null)) {
+      return _blink.BlinkFontFace.instance.constructorCallback_3_(family, source, descriptors);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   @DomName('FontFace.family')
   @DocsEditable()
   @Experimental() // untriaged
-  String get family => _blink.BlinkFontFace.$family_Getter(this);
+  String get family => _blink.BlinkFontFace.instance.family_Getter_(this);
 
   @DomName('FontFace.family')
   @DocsEditable()
   @Experimental() // untriaged
-  void set family(String value) => _blink.BlinkFontFace.$family_Setter(this, value);
+  void set family(String value) => _blink.BlinkFontFace.instance.family_Setter_(this, value);
 
   @DomName('FontFace.featureSettings')
   @DocsEditable()
   @Experimental() // untriaged
-  String get featureSettings => _blink.BlinkFontFace.$featureSettings_Getter(this);
+  String get featureSettings => _blink.BlinkFontFace.instance.featureSettings_Getter_(this);
 
   @DomName('FontFace.featureSettings')
   @DocsEditable()
   @Experimental() // untriaged
-  void set featureSettings(String value) => _blink.BlinkFontFace.$featureSettings_Setter(this, value);
+  void set featureSettings(String value) => _blink.BlinkFontFace.instance.featureSettings_Setter_(this, value);
+
+  @DomName('FontFace.loaded')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future get loaded => _blink.BlinkFontFace.instance.loaded_Getter_(this);
 
   @DomName('FontFace.status')
   @DocsEditable()
   @Experimental() // untriaged
-  String get status => _blink.BlinkFontFace.$status_Getter(this);
+  String get status => _blink.BlinkFontFace.instance.status_Getter_(this);
 
   @DomName('FontFace.stretch')
   @DocsEditable()
   @Experimental() // untriaged
-  String get stretch => _blink.BlinkFontFace.$stretch_Getter(this);
+  String get stretch => _blink.BlinkFontFace.instance.stretch_Getter_(this);
 
   @DomName('FontFace.stretch')
   @DocsEditable()
   @Experimental() // untriaged
-  void set stretch(String value) => _blink.BlinkFontFace.$stretch_Setter(this, value);
+  void set stretch(String value) => _blink.BlinkFontFace.instance.stretch_Setter_(this, value);
 
   @DomName('FontFace.style')
   @DocsEditable()
   @Experimental() // untriaged
-  String get style => _blink.BlinkFontFace.$style_Getter(this);
+  String get style => _blink.BlinkFontFace.instance.style_Getter_(this);
 
   @DomName('FontFace.style')
   @DocsEditable()
   @Experimental() // untriaged
-  void set style(String value) => _blink.BlinkFontFace.$style_Setter(this, value);
+  void set style(String value) => _blink.BlinkFontFace.instance.style_Setter_(this, value);
 
   @DomName('FontFace.unicodeRange')
   @DocsEditable()
   @Experimental() // untriaged
-  String get unicodeRange => _blink.BlinkFontFace.$unicodeRange_Getter(this);
+  String get unicodeRange => _blink.BlinkFontFace.instance.unicodeRange_Getter_(this);
 
   @DomName('FontFace.unicodeRange')
   @DocsEditable()
   @Experimental() // untriaged
-  void set unicodeRange(String value) => _blink.BlinkFontFace.$unicodeRange_Setter(this, value);
+  void set unicodeRange(String value) => _blink.BlinkFontFace.instance.unicodeRange_Setter_(this, value);
 
   @DomName('FontFace.variant')
   @DocsEditable()
   @Experimental() // untriaged
-  String get variant => _blink.BlinkFontFace.$variant_Getter(this);
+  String get variant => _blink.BlinkFontFace.instance.variant_Getter_(this);
 
   @DomName('FontFace.variant')
   @DocsEditable()
   @Experimental() // untriaged
-  void set variant(String value) => _blink.BlinkFontFace.$variant_Setter(this, value);
+  void set variant(String value) => _blink.BlinkFontFace.instance.variant_Setter_(this, value);
 
   @DomName('FontFace.weight')
   @DocsEditable()
   @Experimental() // untriaged
-  String get weight => _blink.BlinkFontFace.$weight_Getter(this);
+  String get weight => _blink.BlinkFontFace.instance.weight_Getter_(this);
 
   @DomName('FontFace.weight')
   @DocsEditable()
   @Experimental() // untriaged
-  void set weight(String value) => _blink.BlinkFontFace.$weight_Setter(this, value);
+  void set weight(String value) => _blink.BlinkFontFace.instance.weight_Setter_(this, value);
 
   @DomName('FontFace.load')
   @DocsEditable()
   @Experimental() // untriaged
-  void load() => _blink.BlinkFontFace.$load_Callback(this);
+  Future load() => _blink.BlinkFontFace.instance.load_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13749,46 +15697,46 @@ class FontFaceSet extends EventTarget {
   @DomName('FontFaceSet.size')
   @DocsEditable()
   @Experimental() // untriaged
-  int get size => _blink.BlinkFontFaceSet.$size_Getter(this);
+  int get size => _blink.BlinkFontFaceSet.instance.size_Getter_(this);
 
   @DomName('FontFaceSet.status')
   @DocsEditable()
   @Experimental() // untriaged
-  String get status => _blink.BlinkFontFaceSet.$status_Getter(this);
+  String get status => _blink.BlinkFontFaceSet.instance.status_Getter_(this);
 
   @DomName('FontFaceSet.add')
   @DocsEditable()
   @Experimental() // untriaged
-  void add(FontFace fontFace) => _blink.BlinkFontFaceSet.$add_Callback(this, fontFace);
+  void add(FontFace fontFace) => _blink.BlinkFontFaceSet.instance.add_Callback_1_(this, fontFace);
 
   @DomName('FontFaceSet.check')
   @DocsEditable()
   @Experimental() // untriaged
-  bool check(String font, String text) => _blink.BlinkFontFaceSet.$check_Callback(this, font, text);
+  bool check(String font, String text) => _blink.BlinkFontFaceSet.instance.check_Callback_2_(this, font, text);
 
   @DomName('FontFaceSet.clear')
   @DocsEditable()
   @Experimental() // untriaged
-  void clear() => _blink.BlinkFontFaceSet.$clear_Callback(this);
+  void clear() => _blink.BlinkFontFaceSet.instance.clear_Callback_0_(this);
 
   @DomName('FontFaceSet.delete')
   @DocsEditable()
   @Experimental() // untriaged
-  bool delete(FontFace fontFace) => _blink.BlinkFontFaceSet.$delete_Callback(this, fontFace);
+  bool delete(FontFace fontFace) => _blink.BlinkFontFaceSet.instance.delete_Callback_1_(this, fontFace);
 
   void forEach(FontFaceSetForEachCallback callback, [Object thisArg]) {
     if (thisArg != null) {
-      _blink.BlinkFontFaceSet.$_forEach_1_Callback(this, callback, thisArg);
+      _blink.BlinkFontFaceSet.instance.forEach_Callback_2_(this, callback, thisArg);
       return;
     }
-    _blink.BlinkFontFaceSet.$_forEach_2_Callback(this, callback);
+    _blink.BlinkFontFaceSet.instance.forEach_Callback_1_(this, callback);
     return;
   }
 
   @DomName('FontFaceSet.has')
   @DocsEditable()
   @Experimental() // untriaged
-  bool has(FontFace fontFace) => _blink.BlinkFontFaceSet.$has_Callback(this, fontFace);
+  bool has(FontFace fontFace) => _blink.BlinkFontFaceSet.instance.has_Callback_1_(this, fontFace);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13801,6 +15749,26 @@ class FontFaceSet extends EventTarget {
 @DomName('FontFaceSetForEachCallback')
 @Experimental() // untriaged
 typedef void FontFaceSetForEachCallback(FontFace fontFace, FontFace fontFaceAgain, FontFaceSet set);
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('FontFaceSetLoadEvent')
+@Experimental() // untriaged
+class FontFaceSetLoadEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory FontFaceSetLoadEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('FontFaceSetLoadEvent.fontfaces')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<FontFace> get fontfaces => _blink.BlinkFontFaceSetLoadEvent.instance.fontfaces_Getter_(this);
+
+}
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -13823,18 +15791,18 @@ class FormData extends NativeFieldWrapperClass2 {
   factory FormData([FormElement form]) => _create(form);
 
   @DocsEditable()
-  static FormData _create(form) => _blink.BlinkFormData.$constructorCallback(form);
+  static FormData _create(form) => _blink.BlinkFormData.instance.constructorCallback_1_(form);
 
   /// Checks if this type is supported on the current platform.
   static bool get supported => true;
 
   @DomName('FormData.append')
   @DocsEditable()
-  void append(String name, String value) => _blink.BlinkFormData.$append_Callback(this, name, value);
+  void append(String name, String value) => _blink.BlinkFormData.instance.append_Callback_2_(this, name, value);
 
   @DomName('FormData.appendBlob')
   @DocsEditable()
-  void appendBlob(String name, Blob value, [String filename]) => _blink.BlinkFormData.$appendBlob_Callback(this, name, value, filename);
+  void appendBlob(String name, Blob value, [String filename]) => _blink.BlinkFormData.instance.append_Callback_3_(this, name, value, filename);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -13850,30 +15818,6 @@ class FormElement extends HtmlElement {
   // To suppress missing implicit constructor warnings.
   factory FormElement._() { throw new UnsupportedError("Not supported"); }
 
-  /**
-   * Static factory designed to expose `autocomplete` events to event
-   * handlers that are not necessarily instances of [FormElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLFormElement.autocompleteEvent')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
-  @Experimental()
-  static const EventStreamProvider<Event> autocompleteEvent = const EventStreamProvider<Event>('autocomplete');
-
-  /**
-   * Static factory designed to expose `autocompleteerror` events to event
-   * handlers that are not necessarily instances of [FormElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLFormElement.autocompleteerrorEvent')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
-  @Experimental()
-  static const EventStreamProvider<AutocompleteErrorEvent> autocompleteErrorEvent = const EventStreamProvider<AutocompleteErrorEvent>('autocompleteerror');
-
   @DomName('HTMLFormElement.HTMLFormElement')
   @DocsEditable()
   factory FormElement() => document.createElement("form");
@@ -13886,119 +15830,111 @@ class FormElement extends HtmlElement {
 
   @DomName('HTMLFormElement.acceptCharset')
   @DocsEditable()
-  String get acceptCharset => _blink.BlinkHTMLFormElement.$acceptCharset_Getter(this);
+  String get acceptCharset => _blink.BlinkHTMLFormElement.instance.acceptCharset_Getter_(this);
 
   @DomName('HTMLFormElement.acceptCharset')
   @DocsEditable()
-  void set acceptCharset(String value) => _blink.BlinkHTMLFormElement.$acceptCharset_Setter(this, value);
+  void set acceptCharset(String value) => _blink.BlinkHTMLFormElement.instance.acceptCharset_Setter_(this, value);
 
   @DomName('HTMLFormElement.action')
   @DocsEditable()
-  String get action => _blink.BlinkHTMLFormElement.$action_Getter(this);
+  String get action => _blink.BlinkHTMLFormElement.instance.action_Getter_(this);
 
   @DomName('HTMLFormElement.action')
   @DocsEditable()
-  void set action(String value) => _blink.BlinkHTMLFormElement.$action_Setter(this, value);
+  void set action(String value) => _blink.BlinkHTMLFormElement.instance.action_Setter_(this, value);
 
   @DomName('HTMLFormElement.autocomplete')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
   @Experimental()
-  String get autocomplete => _blink.BlinkHTMLFormElement.$autocomplete_Getter(this);
+  String get autocomplete => _blink.BlinkHTMLFormElement.instance.autocomplete_Getter_(this);
 
   @DomName('HTMLFormElement.autocomplete')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
   @Experimental()
-  void set autocomplete(String value) => _blink.BlinkHTMLFormElement.$autocomplete_Setter(this, value);
+  void set autocomplete(String value) => _blink.BlinkHTMLFormElement.instance.autocomplete_Setter_(this, value);
 
   @DomName('HTMLFormElement.encoding')
   @DocsEditable()
-  String get encoding => _blink.BlinkHTMLFormElement.$encoding_Getter(this);
+  String get encoding => _blink.BlinkHTMLFormElement.instance.encoding_Getter_(this);
 
   @DomName('HTMLFormElement.encoding')
   @DocsEditable()
-  void set encoding(String value) => _blink.BlinkHTMLFormElement.$encoding_Setter(this, value);
+  void set encoding(String value) => _blink.BlinkHTMLFormElement.instance.encoding_Setter_(this, value);
 
   @DomName('HTMLFormElement.enctype')
   @DocsEditable()
-  String get enctype => _blink.BlinkHTMLFormElement.$enctype_Getter(this);
+  String get enctype => _blink.BlinkHTMLFormElement.instance.enctype_Getter_(this);
 
   @DomName('HTMLFormElement.enctype')
   @DocsEditable()
-  void set enctype(String value) => _blink.BlinkHTMLFormElement.$enctype_Setter(this, value);
+  void set enctype(String value) => _blink.BlinkHTMLFormElement.instance.enctype_Setter_(this, value);
 
   @DomName('HTMLFormElement.length')
   @DocsEditable()
-  int get length => _blink.BlinkHTMLFormElement.$length_Getter(this);
+  int get length => _blink.BlinkHTMLFormElement.instance.length_Getter_(this);
 
   @DomName('HTMLFormElement.method')
   @DocsEditable()
-  String get method => _blink.BlinkHTMLFormElement.$method_Getter(this);
+  String get method => _blink.BlinkHTMLFormElement.instance.method_Getter_(this);
 
   @DomName('HTMLFormElement.method')
   @DocsEditable()
-  void set method(String value) => _blink.BlinkHTMLFormElement.$method_Setter(this, value);
+  void set method(String value) => _blink.BlinkHTMLFormElement.instance.method_Setter_(this, value);
 
   @DomName('HTMLFormElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLFormElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLFormElement.instance.name_Getter_(this);
 
   @DomName('HTMLFormElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLFormElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLFormElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLFormElement.noValidate')
   @DocsEditable()
-  bool get noValidate => _blink.BlinkHTMLFormElement.$noValidate_Getter(this);
+  bool get noValidate => _blink.BlinkHTMLFormElement.instance.noValidate_Getter_(this);
 
   @DomName('HTMLFormElement.noValidate')
   @DocsEditable()
-  void set noValidate(bool value) => _blink.BlinkHTMLFormElement.$noValidate_Setter(this, value);
+  void set noValidate(bool value) => _blink.BlinkHTMLFormElement.instance.noValidate_Setter_(this, value);
 
   @DomName('HTMLFormElement.target')
   @DocsEditable()
-  String get target => _blink.BlinkHTMLFormElement.$target_Getter(this);
+  String get target => _blink.BlinkHTMLFormElement.instance.target_Getter_(this);
 
   @DomName('HTMLFormElement.target')
   @DocsEditable()
-  void set target(String value) => _blink.BlinkHTMLFormElement.$target_Setter(this, value);
+  void set target(String value) => _blink.BlinkHTMLFormElement.instance.target_Setter_(this, value);
 
-  @DomName('HTMLFormElement.__getter__')
-  @DocsEditable()
-  Element __getter__(int index) => _blink.BlinkHTMLFormElement.$__getter___Callback(this, index);
+  Element __getter__(index_OR_name) {
+    if ((index_OR_name is int || index_OR_name == null)) {
+      return _blink.BlinkHTMLFormElement.instance.$__getter___Callback_1_(this, index_OR_name);
+    }
+    if ((index_OR_name is String || index_OR_name == null)) {
+      return _blink.BlinkHTMLFormElement.instance.$__getter___Callback_1_(this, index_OR_name);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
 
   @DomName('HTMLFormElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLFormElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLFormElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLFormElement.requestAutocomplete')
   @DocsEditable()
   // http://lists.whatwg.org/htdig.cgi/whatwg-whatwg.org/2012-October/037711.html
   @Experimental()
-  void requestAutocomplete(Map details) => _blink.BlinkHTMLFormElement.$requestAutocomplete_Callback(this, details);
+  void requestAutocomplete(Map details) => _blink.BlinkHTMLFormElement.instance.requestAutocomplete_Callback_1_(this, details);
 
   @DomName('HTMLFormElement.reset')
   @DocsEditable()
-  void reset() => _blink.BlinkHTMLFormElement.$reset_Callback(this);
+  void reset() => _blink.BlinkHTMLFormElement.instance.reset_Callback_0_(this);
 
   @DomName('HTMLFormElement.submit')
   @DocsEditable()
-  void submit() => _blink.BlinkHTMLFormElement.$submit_Callback(this);
-
-  /// Stream of `autocomplete` events handled by this [FormElement].
-  @DomName('HTMLFormElement.onautocomplete')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
-  @Experimental()
-  ElementStream<Event> get onAutocomplete => autocompleteEvent.forElement(this);
-
-  /// Stream of `autocompleteerror` events handled by this [FormElement].
-  @DomName('HTMLFormElement.onautocompleteerror')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofilling-form-controls:-the-autocomplete-attribute
-  @Experimental()
-  ElementStream<AutocompleteErrorEvent> get onAutocompleteError => autocompleteErrorEvent.forElement(this);
+  void submit() => _blink.BlinkHTMLFormElement.instance.submit_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14018,23 +15954,124 @@ class Gamepad extends NativeFieldWrapperClass2 {
 
   @DomName('Gamepad.axes')
   @DocsEditable()
-  List<num> get axes => _blink.BlinkGamepad.$axes_Getter(this);
+  List<num> get axes => _blink.BlinkGamepad.instance.axes_Getter_(this);
 
-  @DomName('Gamepad.buttons')
+  @DomName('Gamepad.connected')
   @DocsEditable()
-  List<num> get buttons => _blink.BlinkGamepad.$buttons_Getter(this);
+  @Experimental() // untriaged
+  bool get connected => _blink.BlinkGamepad.instance.connected_Getter_(this);
 
   @DomName('Gamepad.id')
   @DocsEditable()
-  String get id => _blink.BlinkGamepad.$id_Getter(this);
+  String get id => _blink.BlinkGamepad.instance.id_Getter_(this);
 
   @DomName('Gamepad.index')
   @DocsEditable()
-  int get index => _blink.BlinkGamepad.$index_Getter(this);
+  int get index => _blink.BlinkGamepad.instance.index_Getter_(this);
+
+  @DomName('Gamepad.mapping')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get mapping => _blink.BlinkGamepad.instance.mapping_Getter_(this);
 
   @DomName('Gamepad.timestamp')
   @DocsEditable()
-  int get timestamp => _blink.BlinkGamepad.$timestamp_Getter(this);
+  int get timestamp => _blink.BlinkGamepad.instance.timestamp_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('GamepadButton')
+@Experimental() // untriaged
+class GamepadButton extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory GamepadButton._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('GamepadButton.pressed')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get pressed => _blink.BlinkGamepadButton.instance.pressed_Getter_(this);
+
+  @DomName('GamepadButton.value')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get value => _blink.BlinkGamepadButton.instance.value_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('GamepadEvent')
+@Experimental() // untriaged
+class GamepadEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory GamepadEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('GamepadEvent.gamepad')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Gamepad get gamepad => _blink.BlinkGamepadEvent.instance.gamepad_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('Geofencing')
+@Experimental() // untriaged
+class Geofencing extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory Geofencing._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('Geofencing.getRegisteredRegions')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future getRegisteredRegions() => _blink.BlinkGeofencing.instance.getRegisteredRegions_Callback_0_(this);
+
+  @DomName('Geofencing.registerRegion')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future registerRegion(GeofencingRegion region) => _blink.BlinkGeofencing.instance.registerRegion_Callback_1_(this, region);
+
+  @DomName('Geofencing.unregisterRegion')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future unregisterRegion(String regionId) => _blink.BlinkGeofencing.instance.unregisterRegion_Callback_1_(this, regionId);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('GeofencingRegion')
+@Experimental() // untriaged
+class GeofencingRegion extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory GeofencingRegion._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('GeofencingRegion.id')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get id => _blink.BlinkGeofencingRegion.instance.id_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14122,15 +16159,30 @@ class Geolocation extends NativeFieldWrapperClass2 {
 
   @DomName('Geolocation.clearWatch')
   @DocsEditable()
-  void _clearWatch(int watchID) => _blink.BlinkGeolocation.$clearWatch_Callback(this, watchID);
+  void _clearWatch(int watchID) => _blink.BlinkGeolocation.instance.clearWatch_Callback_1_(this, watchID);
 
-  @DomName('Geolocation.getCurrentPosition')
-  @DocsEditable()
-  void _getCurrentPosition(_PositionCallback successCallback, [_PositionErrorCallback errorCallback, Object options]) => _blink.BlinkGeolocation.$getCurrentPosition_Callback(this, successCallback, errorCallback, options);
+  void _getCurrentPosition(_PositionCallback successCallback, [_PositionErrorCallback errorCallback, Map options]) {
+    if (options != null) {
+      _blink.BlinkGeolocation.instance.getCurrentPosition_Callback_3_(this, successCallback, errorCallback, options);
+      return;
+    }
+    if (errorCallback != null) {
+      _blink.BlinkGeolocation.instance.getCurrentPosition_Callback_2_(this, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkGeolocation.instance.getCurrentPosition_Callback_1_(this, successCallback);
+    return;
+  }
 
-  @DomName('Geolocation.watchPosition')
-  @DocsEditable()
-  int _watchPosition(_PositionCallback successCallback, [_PositionErrorCallback errorCallback, Object options]) => _blink.BlinkGeolocation.$watchPosition_Callback(this, successCallback, errorCallback, options);
+  int _watchPosition(_PositionCallback successCallback, [_PositionErrorCallback errorCallback, Map options]) {
+    if (options != null) {
+      return _blink.BlinkGeolocation.instance.watchPosition_Callback_3_(this, successCallback, errorCallback, options);
+    }
+    if (errorCallback != null) {
+      return _blink.BlinkGeolocation.instance.watchPosition_Callback_2_(this, successCallback, errorCallback);
+    }
+    return _blink.BlinkGeolocation.instance.watchPosition_Callback_1_(this, successCallback);
+  }
 }
 
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14149,11 +16201,11 @@ class Geoposition extends NativeFieldWrapperClass2 {
 
   @DomName('Geoposition.coords')
   @DocsEditable()
-  Coordinates get coords => _blink.BlinkGeoposition.$coords_Getter(this);
+  Coordinates get coords => _blink.BlinkGeoposition.instance.coords_Getter_(this);
 
   @DomName('Geoposition.timestamp')
   @DocsEditable()
-  int get timestamp => _blink.BlinkGeoposition.$timestamp_Getter(this);
+  int get timestamp => _blink.BlinkGeoposition.instance.timestamp_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14177,6 +16229,16 @@ abstract class GlobalEventHandlers extends EventTarget {
   @DocsEditable()
   @Experimental() // untriaged
   static const EventStreamProvider<Event> blurEvent = const EventStreamProvider<Event>('blur');
+
+  @DomName('GlobalEventHandlers.canplayEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> canPlayEvent = const EventStreamProvider<Event>('canplay');
+
+  @DomName('GlobalEventHandlers.canplaythroughEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> canPlayThroughEvent = const EventStreamProvider<Event>('canplaythrough');
 
   @DomName('GlobalEventHandlers.changeEvent')
   @DocsEditable()
@@ -14233,6 +16295,21 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   static const EventStreamProvider<MouseEvent> dropEvent = const EventStreamProvider<MouseEvent>('drop');
 
+  @DomName('GlobalEventHandlers.durationchangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> durationChangeEvent = const EventStreamProvider<Event>('durationchange');
+
+  @DomName('GlobalEventHandlers.emptiedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> emptiedEvent = const EventStreamProvider<Event>('emptied');
+
+  @DomName('GlobalEventHandlers.endedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> endedEvent = const EventStreamProvider<Event>('ended');
+
   @DomName('GlobalEventHandlers.errorEvent')
   @DocsEditable()
   @Experimental() // untriaged
@@ -14272,6 +16349,16 @@ abstract class GlobalEventHandlers extends EventTarget {
   @DocsEditable()
   @Experimental() // untriaged
   static const EventStreamProvider<Event> loadEvent = const EventStreamProvider<Event>('load');
+
+  @DomName('GlobalEventHandlers.loadeddataEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> loadedDataEvent = const EventStreamProvider<Event>('loadeddata');
+
+  @DomName('GlobalEventHandlers.loadedmetadataEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> loadedMetadataEvent = const EventStreamProvider<Event>('loadedmetadata');
 
   @DomName('GlobalEventHandlers.mousedownEvent')
   @DocsEditable()
@@ -14313,6 +16400,26 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   static const EventStreamProvider<WheelEvent> mouseWheelEvent = const EventStreamProvider<WheelEvent>('mousewheel');
 
+  @DomName('GlobalEventHandlers.pauseEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> pauseEvent = const EventStreamProvider<Event>('pause');
+
+  @DomName('GlobalEventHandlers.playEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> playEvent = const EventStreamProvider<Event>('play');
+
+  @DomName('GlobalEventHandlers.playingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> playingEvent = const EventStreamProvider<Event>('playing');
+
+  @DomName('GlobalEventHandlers.ratechangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> rateChangeEvent = const EventStreamProvider<Event>('ratechange');
+
   @DomName('GlobalEventHandlers.resetEvent')
   @DocsEditable()
   @Experimental() // untriaged
@@ -14328,15 +16435,50 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   static const EventStreamProvider<Event> scrollEvent = const EventStreamProvider<Event>('scroll');
 
+  @DomName('GlobalEventHandlers.seekedEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> seekedEvent = const EventStreamProvider<Event>('seeked');
+
+  @DomName('GlobalEventHandlers.seekingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> seekingEvent = const EventStreamProvider<Event>('seeking');
+
   @DomName('GlobalEventHandlers.selectEvent')
   @DocsEditable()
   @Experimental() // untriaged
   static const EventStreamProvider<Event> selectEvent = const EventStreamProvider<Event>('select');
 
+  @DomName('GlobalEventHandlers.stalledEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> stalledEvent = const EventStreamProvider<Event>('stalled');
+
   @DomName('GlobalEventHandlers.submitEvent')
   @DocsEditable()
   @Experimental() // untriaged
   static const EventStreamProvider<Event> submitEvent = const EventStreamProvider<Event>('submit');
+
+  @DomName('GlobalEventHandlers.suspendEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> suspendEvent = const EventStreamProvider<Event>('suspend');
+
+  @DomName('GlobalEventHandlers.timeupdateEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> timeUpdateEvent = const EventStreamProvider<Event>('timeupdate');
+
+  @DomName('GlobalEventHandlers.volumechangeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> volumeChangeEvent = const EventStreamProvider<Event>('volumechange');
+
+  @DomName('GlobalEventHandlers.waitingEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> waitingEvent = const EventStreamProvider<Event>('waiting');
 
   @DomName('GlobalEventHandlers.onabort')
   @DocsEditable()
@@ -14347,6 +16489,16 @@ abstract class GlobalEventHandlers extends EventTarget {
   @DocsEditable()
   @Experimental() // untriaged
   Stream<Event> get onBlur => blurEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.oncanplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onCanPlay => canPlayEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.oncanplaythrough')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onCanPlayThrough => canPlayThroughEvent.forTarget(this);
 
   @DomName('GlobalEventHandlers.onchange')
   @DocsEditable()
@@ -14403,6 +16555,21 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   Stream<MouseEvent> get onDrop => dropEvent.forTarget(this);
 
+  @DomName('GlobalEventHandlers.ondurationchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onDurationChange => durationChangeEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onemptied')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onEmptied => emptiedEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onended')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onEnded => endedEvent.forTarget(this);
+
   @DomName('GlobalEventHandlers.onerror')
   @DocsEditable()
   @Experimental() // untriaged
@@ -14442,6 +16609,16 @@ abstract class GlobalEventHandlers extends EventTarget {
   @DocsEditable()
   @Experimental() // untriaged
   Stream<Event> get onLoad => loadEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onloadeddata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onLoadedData => loadedDataEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onloadedmetadata')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onLoadedMetadata => loadedMetadataEvent.forTarget(this);
 
   @DomName('GlobalEventHandlers.onmousedown')
   @DocsEditable()
@@ -14483,6 +16660,26 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   Stream<WheelEvent> get onMouseWheel => mouseWheelEvent.forTarget(this);
 
+  @DomName('GlobalEventHandlers.onpause')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPause => pauseEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onplay')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPlay => playEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onplaying')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onPlaying => playingEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onratechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onRateChange => rateChangeEvent.forTarget(this);
+
   @DomName('GlobalEventHandlers.onreset')
   @DocsEditable()
   @Experimental() // untriaged
@@ -14498,15 +16695,50 @@ abstract class GlobalEventHandlers extends EventTarget {
   @Experimental() // untriaged
   Stream<Event> get onScroll => scrollEvent.forTarget(this);
 
+  @DomName('GlobalEventHandlers.onseeked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSeeked => seekedEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onseeking')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSeeking => seekingEvent.forTarget(this);
+
   @DomName('GlobalEventHandlers.onselect')
   @DocsEditable()
   @Experimental() // untriaged
   Stream<Event> get onSelect => selectEvent.forTarget(this);
 
+  @DomName('GlobalEventHandlers.onstalled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onStalled => stalledEvent.forTarget(this);
+
   @DomName('GlobalEventHandlers.onsubmit')
   @DocsEditable()
   @Experimental() // untriaged
   Stream<Event> get onSubmit => submitEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onsuspend')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onSuspend => suspendEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.ontimeupdate')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onTimeUpdate => timeUpdateEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onvolumechange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onVolumeChange => volumeChangeEvent.forTarget(this);
+
+  @DomName('GlobalEventHandlers.onwaiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onWaiting => waitingEvent.forTarget(this);
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -14537,12 +16769,12 @@ class HRElement extends HtmlElement {
   @DomName('HTMLHRElement.color')
   @DocsEditable()
   @Experimental() // untriaged
-  String get color => _blink.BlinkHTMLHRElement.$color_Getter(this);
+  String get color => _blink.BlinkHTMLHRElement.instance.color_Getter_(this);
 
   @DomName('HTMLHRElement.color')
   @DocsEditable()
   @Experimental() // untriaged
-  void set color(String value) => _blink.BlinkHTMLHRElement.$color_Setter(this, value);
+  void set color(String value) => _blink.BlinkHTMLHRElement.instance.color_Setter_(this, value);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -14572,15 +16804,15 @@ class HashChangeEvent extends Event {
 
   @DomName('HashChangeEvent.newURL')
   @DocsEditable()
-  String get newUrl => _blink.BlinkHashChangeEvent.$newURL_Getter(this);
+  String get newUrl => _blink.BlinkHashChangeEvent.instance.newURL_Getter_(this);
 
   @DomName('HashChangeEvent.oldURL')
   @DocsEditable()
-  String get oldUrl => _blink.BlinkHashChangeEvent.$oldURL_Getter(this);
+  String get oldUrl => _blink.BlinkHashChangeEvent.instance.oldURL_Getter_(this);
 
   @DomName('HashChangeEvent.initHashChangeEvent')
   @DocsEditable()
-  void _initHashChangeEvent(String type, bool canBubble, bool cancelable, String oldURL, String newURL) => _blink.BlinkHashChangeEvent.$initHashChangeEvent_Callback(this, type, canBubble, cancelable, oldURL, newURL);
+  void _initHashChangeEvent(String type, bool canBubble, bool cancelable, String oldURL, String newURL) => _blink.BlinkHashChangeEvent.instance.initHashChangeEvent_Callback_5_(this, type, canBubble, cancelable, oldURL, newURL);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14607,6 +16839,60 @@ class HeadElement extends HtmlElement {
   HeadElement.created() : super.created();
 
 }
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('Headers')
+@Experimental() // untriaged
+class Headers extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory Headers._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('Headers.Headers')
+  @DocsEditable()
+  factory Headers([input]) {
+    if (input == null) {
+      return _blink.BlinkHeaders.instance.constructorCallback_0_();
+    }
+    if ((input is Headers || input == null)) {
+      return _blink.BlinkHeaders.instance.constructorCallback_1_(input);
+    }
+    if ((input is Map || input == null)) {
+      return _blink.BlinkHeaders.instance.constructorCallback_1_(input);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('Headers.size')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get size => _blink.BlinkHeaders.instance.size_Getter_(this);
+
+  void forEach(HeadersForEachCallback callback, [Object thisArg]) {
+    if (thisArg != null) {
+      _blink.BlinkHeaders.instance.forEach_Callback_2_(this, callback, thisArg);
+      return;
+    }
+    _blink.BlinkHeaders.instance.forEach_Callback_1_(this, callback);
+    return;
+  }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DomName('HeadersForEachCallback')
+@Experimental() // untriaged
+typedef void HeadersForEachCallback(String value, String key, Headers map);
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -14674,23 +16960,23 @@ class History extends NativeFieldWrapperClass2 implements HistoryBase {
 
   @DomName('History.length')
   @DocsEditable()
-  int get length => _blink.BlinkHistory.$length_Getter(this);
+  int get length => _blink.BlinkHistory.instance.length_Getter_(this);
 
   @DomName('History.state')
   @DocsEditable()
-  dynamic get state => _blink.BlinkHistory.$state_Getter(this);
+  dynamic get state => _blink.BlinkHistory.instance.state_Getter_(this);
 
   @DomName('History.back')
   @DocsEditable()
-  void back() => _blink.BlinkHistory.$back_Callback(this);
+  void back() => _blink.BlinkHistory.instance.back_Callback_0_(this);
 
   @DomName('History.forward')
   @DocsEditable()
-  void forward() => _blink.BlinkHistory.$forward_Callback(this);
+  void forward() => _blink.BlinkHistory.instance.forward_Callback_0_(this);
 
   @DomName('History.go')
   @DocsEditable()
-  void go(int distance) => _blink.BlinkHistory.$go_Callback(this, distance);
+  void go(int distance) => _blink.BlinkHistory.instance.go_Callback_1_(this, distance);
 
   @DomName('History.pushState')
   @DocsEditable()
@@ -14698,7 +16984,7 @@ class History extends NativeFieldWrapperClass2 implements HistoryBase {
   @SupportedBrowser(SupportedBrowser.FIREFOX)
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
-  void pushState(Object data, String title, [String url]) => _blink.BlinkHistory.$pushState_Callback(this, data, title, url);
+  void pushState(Object data, String title, [String url]) => _blink.BlinkHistory.instance.pushState_Callback_3_(this, data, title, url);
 
   @DomName('History.replaceState')
   @DocsEditable()
@@ -14706,7 +16992,7 @@ class History extends NativeFieldWrapperClass2 implements HistoryBase {
   @SupportedBrowser(SupportedBrowser.FIREFOX)
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
-  void replaceState(Object data, String title, [String url]) => _blink.BlinkHistory.$replaceState_Callback(this, data, title, url);
+  void replaceState(Object data, String title, [String url]) => _blink.BlinkHistory.instance.replaceState_Callback_3_(this, data, title, url);
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -14723,15 +17009,15 @@ class HtmlCollection extends NativeFieldWrapperClass2 with ListMixin<Node>, Immu
 
   @DomName('HTMLCollection.length')
   @DocsEditable()
-  int get length => _blink.BlinkHTMLCollection.$length_Getter(this);
+  int get length => _blink.BlinkHTMLCollection.instance.length_Getter_(this);
 
   Node operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkHTMLCollection.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkHTMLCollection.instance.item_Callback_1_(this, index);
   }
 
-  Node _nativeIndexedGetter(int index) => _blink.BlinkHTMLCollection.$NativeIndexed_Getter(this, index);
+  Node _nativeIndexedGetter(int index) => _blink.BlinkHTMLCollection.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Node value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -14773,11 +17059,11 @@ class HtmlCollection extends NativeFieldWrapperClass2 with ListMixin<Node>, Immu
 
   @DomName('HTMLCollection.item')
   @DocsEditable()
-  Element item(int index) => _blink.BlinkHTMLCollection.$item_Callback(this, index);
+  Element item(int index) => _blink.BlinkHTMLCollection.instance.item_Callback_1_(this, index);
 
   @DomName('HTMLCollection.namedItem')
   @DocsEditable()
-  Element namedItem(String name) => _blink.BlinkHTMLCollection.$namedItem_Callback(this, name);
+  Element namedItem(String name) => _blink.BlinkHTMLCollection.instance.namedItem_Callback_1_(this, name);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -14900,14 +17186,6 @@ class HtmlDocument extends Document {
     _webkitExitFullscreen();
   }
 
-  @DomName('Document.webkitExitPointerLock')
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  void exitPointerLock() {
-    _webkitExitPointerLock();
-  }
-
   /**
    * Returns the element, if any, that is currently displayed in fullscreen.
    *
@@ -14956,13 +17234,6 @@ class HtmlDocument extends Document {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   bool get hidden => _webkitHidden;
-
-  @DomName('Document.webkitPointerLockElement')
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  Element get pointerLockElement =>
-      _webkitPointerLockElement;
 
   @DomName('Document.visibilityState')
   @SupportedBrowser(SupportedBrowser.CHROME)
@@ -15345,88 +17616,88 @@ class HtmlElement extends Element implements GlobalEventHandlers {
 
   @DomName('HTMLElement.contentEditable')
   @DocsEditable()
-  String get contentEditable => _blink.BlinkHTMLElement.$contentEditable_Getter(this);
+  String get contentEditable => _blink.BlinkHTMLElement.instance.contentEditable_Getter_(this);
 
   @DomName('HTMLElement.contentEditable')
   @DocsEditable()
-  void set contentEditable(String value) => _blink.BlinkHTMLElement.$contentEditable_Setter(this, value);
+  void set contentEditable(String value) => _blink.BlinkHTMLElement.instance.contentEditable_Setter_(this, value);
 
   @DomName('HTMLElement.dir')
   @DocsEditable()
-  String get dir => _blink.BlinkHTMLElement.$dir_Getter(this);
+  String get dir => _blink.BlinkHTMLElement.instance.dir_Getter_(this);
 
   @DomName('HTMLElement.dir')
   @DocsEditable()
-  void set dir(String value) => _blink.BlinkHTMLElement.$dir_Setter(this, value);
+  void set dir(String value) => _blink.BlinkHTMLElement.instance.dir_Setter_(this, value);
 
   @DomName('HTMLElement.draggable')
   @DocsEditable()
-  bool get draggable => _blink.BlinkHTMLElement.$draggable_Getter(this);
+  bool get draggable => _blink.BlinkHTMLElement.instance.draggable_Getter_(this);
 
   @DomName('HTMLElement.draggable')
   @DocsEditable()
-  void set draggable(bool value) => _blink.BlinkHTMLElement.$draggable_Setter(this, value);
+  void set draggable(bool value) => _blink.BlinkHTMLElement.instance.draggable_Setter_(this, value);
 
   @DomName('HTMLElement.hidden')
   @DocsEditable()
-  bool get hidden => _blink.BlinkHTMLElement.$hidden_Getter(this);
+  bool get hidden => _blink.BlinkHTMLElement.instance.hidden_Getter_(this);
 
   @DomName('HTMLElement.hidden')
   @DocsEditable()
-  void set hidden(bool value) => _blink.BlinkHTMLElement.$hidden_Setter(this, value);
+  void set hidden(bool value) => _blink.BlinkHTMLElement.instance.hidden_Setter_(this, value);
 
   @DomName('HTMLElement.inputMethodContext')
   @DocsEditable()
   @Experimental() // untriaged
-  InputMethodContext get inputMethodContext => _blink.BlinkHTMLElement.$inputMethodContext_Getter(this);
+  InputMethodContext get inputMethodContext => _blink.BlinkHTMLElement.instance.inputMethodContext_Getter_(this);
 
   @DomName('HTMLElement.isContentEditable')
   @DocsEditable()
-  bool get isContentEditable => _blink.BlinkHTMLElement.$isContentEditable_Getter(this);
+  bool get isContentEditable => _blink.BlinkHTMLElement.instance.isContentEditable_Getter_(this);
 
   @DomName('HTMLElement.lang')
   @DocsEditable()
-  String get lang => _blink.BlinkHTMLElement.$lang_Getter(this);
+  String get lang => _blink.BlinkHTMLElement.instance.lang_Getter_(this);
 
   @DomName('HTMLElement.lang')
   @DocsEditable()
-  void set lang(String value) => _blink.BlinkHTMLElement.$lang_Setter(this, value);
+  void set lang(String value) => _blink.BlinkHTMLElement.instance.lang_Setter_(this, value);
 
   @DomName('HTMLElement.spellcheck')
   @DocsEditable()
   // http://blog.whatwg.org/the-road-to-html-5-spellchecking
   @Experimental() // nonstandard
-  bool get spellcheck => _blink.BlinkHTMLElement.$spellcheck_Getter(this);
+  bool get spellcheck => _blink.BlinkHTMLElement.instance.spellcheck_Getter_(this);
 
   @DomName('HTMLElement.spellcheck')
   @DocsEditable()
   // http://blog.whatwg.org/the-road-to-html-5-spellchecking
   @Experimental() // nonstandard
-  void set spellcheck(bool value) => _blink.BlinkHTMLElement.$spellcheck_Setter(this, value);
+  void set spellcheck(bool value) => _blink.BlinkHTMLElement.instance.spellcheck_Setter_(this, value);
 
   @DomName('HTMLElement.tabIndex')
   @DocsEditable()
-  int get tabIndex => _blink.BlinkHTMLElement.$tabIndex_Getter(this);
+  int get tabIndex => _blink.BlinkHTMLElement.instance.tabIndex_Getter_(this);
 
   @DomName('HTMLElement.tabIndex')
   @DocsEditable()
-  void set tabIndex(int value) => _blink.BlinkHTMLElement.$tabIndex_Setter(this, value);
+  void set tabIndex(int value) => _blink.BlinkHTMLElement.instance.tabIndex_Setter_(this, value);
 
   @DomName('HTMLElement.title')
   @DocsEditable()
-  String get title => _blink.BlinkHTMLElement.$title_Getter(this);
+  String get title => _blink.BlinkHTMLElement.instance.title_Getter_(this);
 
   @DomName('HTMLElement.title')
   @DocsEditable()
-  void set title(String value) => _blink.BlinkHTMLElement.$title_Setter(this, value);
+  void set title(String value) => _blink.BlinkHTMLElement.instance.title_Setter_(this, value);
 
   @DomName('HTMLElement.translate')
   @DocsEditable()
-  bool get translate => _blink.BlinkHTMLElement.$translate_Getter(this);
+  bool get translate => _blink.BlinkHTMLElement.instance.translate_Getter_(this);
 
   @DomName('HTMLElement.translate')
   @DocsEditable()
-  void set translate(bool value) => _blink.BlinkHTMLElement.$translate_Setter(this, value);
+  void set translate(bool value) => _blink.BlinkHTMLElement.instance.translate_Setter_(this, value);
 
   @DomName('HTMLElement.webkitdropzone')
   @DocsEditable()
@@ -15434,7 +17705,7 @@ class HtmlElement extends Element implements GlobalEventHandlers {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html#the-dropzone-attribute
-  String get dropzone => _blink.BlinkHTMLElement.$webkitdropzone_Getter(this);
+  String get dropzone => _blink.BlinkHTMLElement.instance.webkitdropzone_Getter_(this);
 
   @DomName('HTMLElement.webkitdropzone')
   @DocsEditable()
@@ -15442,11 +17713,11 @@ class HtmlElement extends Element implements GlobalEventHandlers {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/dnd.html#the-dropzone-attribute
-  void set dropzone(String value) => _blink.BlinkHTMLElement.$webkitdropzone_Setter(this, value);
+  void set dropzone(String value) => _blink.BlinkHTMLElement.instance.webkitdropzone_Setter_(this, value);
 
   @DomName('HTMLElement.click')
   @DocsEditable()
-  void click() => _blink.BlinkHTMLElement.$click_Callback(this);
+  void click() => _blink.BlinkHTMLElement.instance.click_Callback_0_(this);
 
   @DomName('HTMLElement.onabort')
   @DocsEditable()
@@ -15721,6 +17992,10 @@ class HtmlElement extends Element implements GlobalEventHandlers {
 class HtmlFormControlsCollection extends HtmlCollection {
   // To suppress missing implicit constructor warnings.
   factory HtmlFormControlsCollection._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('HTMLFormControlsCollection.namedItem')
+  @DocsEditable()
+  Object namedItem(String name) => _blink.BlinkHTMLFormControlsCollection.instance.namedItem_Callback_1_(this, name);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -16123,7 +18398,7 @@ class HttpRequest extends HttpRequestEventTarget {
   factory HttpRequest() => _create();
 
   @DocsEditable()
-  static HttpRequest _create() => _blink.BlinkXMLHttpRequest.$constructorCallback();
+  static HttpRequest _create() => _blink.BlinkXMLHttpRequest.instance.constructorCallback_0_();
 
   @DomName('XMLHttpRequest.DONE')
   @DocsEditable()
@@ -16179,7 +18454,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkXMLHttpRequest.$readyState_Getter(this);
+  int get readyState => _blink.BlinkXMLHttpRequest.instance.readyState_Getter_(this);
 
   /**
    * The data received as a reponse from the request.
@@ -16194,14 +18469,14 @@ class HttpRequest extends HttpRequestEventTarget {
   @SupportedBrowser(SupportedBrowser.FIREFOX)
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @SupportedBrowser(SupportedBrowser.SAFARI)
-  Object get response => _blink.BlinkXMLHttpRequest.$response_Getter(this);
+  Object get response => _blink.BlinkXMLHttpRequest.instance.response_Getter_(this);
 
   /**
    * The response in String form or empty String on failure.
    */
   @DomName('XMLHttpRequest.responseText')
   @DocsEditable()
-  String get responseText => _blink.BlinkXMLHttpRequest.$responseText_Getter(this);
+  String get responseText => _blink.BlinkXMLHttpRequest.instance.responseText_Getter_(this);
 
   /**
    * [String] telling the server the desired response format.
@@ -16215,7 +18490,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.responseType')
   @DocsEditable()
-  String get responseType => _blink.BlinkXMLHttpRequest.$responseType_Getter(this);
+  String get responseType => _blink.BlinkXMLHttpRequest.instance.responseType_Getter_(this);
 
   /**
    * [String] telling the server the desired response format.
@@ -16229,7 +18504,12 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.responseType')
   @DocsEditable()
-  void set responseType(String value) => _blink.BlinkXMLHttpRequest.$responseType_Setter(this, value);
+  void set responseType(String value) => _blink.BlinkXMLHttpRequest.instance.responseType_Setter_(this, value);
+
+  @DomName('XMLHttpRequest.responseURL')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get responseUrl => _blink.BlinkXMLHttpRequest.instance.responseURL_Getter_(this);
 
   /**
    * The request response, or null on failure.
@@ -16240,7 +18520,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.responseXML')
   @DocsEditable()
-  Document get responseXml => _blink.BlinkXMLHttpRequest.$responseXML_Getter(this);
+  Document get responseXml => _blink.BlinkXMLHttpRequest.instance.responseXML_Getter_(this);
 
   /**
    * The http result code from the request (200, 404, etc).
@@ -16248,7 +18528,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.status')
   @DocsEditable()
-  int get status => _blink.BlinkXMLHttpRequest.$status_Getter(this);
+  int get status => _blink.BlinkXMLHttpRequest.instance.status_Getter_(this);
 
   /**
    * The request response string (such as \"200 OK\").
@@ -16256,7 +18536,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.statusText')
   @DocsEditable()
-  String get statusText => _blink.BlinkXMLHttpRequest.$statusText_Getter(this);
+  String get statusText => _blink.BlinkXMLHttpRequest.instance.statusText_Getter_(this);
 
   /**
    * Length of time before a request is automatically terminated.
@@ -16277,7 +18557,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @DomName('XMLHttpRequest.timeout')
   @DocsEditable()
   @Experimental() // untriaged
-  int get timeout => _blink.BlinkXMLHttpRequest.$timeout_Getter(this);
+  int get timeout => _blink.BlinkXMLHttpRequest.instance.timeout_Getter_(this);
 
   /**
    * Length of time before a request is automatically terminated.
@@ -16298,7 +18578,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @DomName('XMLHttpRequest.timeout')
   @DocsEditable()
   @Experimental() // untriaged
-  void set timeout(int value) => _blink.BlinkXMLHttpRequest.$timeout_Setter(this, value);
+  void set timeout(int value) => _blink.BlinkXMLHttpRequest.instance.timeout_Setter_(this, value);
 
   /**
    * [EventTarget] that can hold listeners to track the progress of the request.
@@ -16307,7 +18587,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @DomName('XMLHttpRequest.upload')
   @DocsEditable()
   @Unstable()
-  HttpRequestUpload get upload => _blink.BlinkXMLHttpRequest.$upload_Getter(this);
+  HttpRequestUpload get upload => _blink.BlinkXMLHttpRequest.instance.upload_Getter_(this);
 
   /**
    * True if cross-site requests should use credentials such as cookies
@@ -16317,7 +18597,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.withCredentials')
   @DocsEditable()
-  bool get withCredentials => _blink.BlinkXMLHttpRequest.$withCredentials_Getter(this);
+  bool get withCredentials => _blink.BlinkXMLHttpRequest.instance.withCredentials_Getter_(this);
 
   /**
    * True if cross-site requests should use credentials such as cookies
@@ -16327,7 +18607,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.withCredentials')
   @DocsEditable()
-  void set withCredentials(bool value) => _blink.BlinkXMLHttpRequest.$withCredentials_Setter(this, value);
+  void set withCredentials(bool value) => _blink.BlinkXMLHttpRequest.instance.withCredentials_Setter_(this, value);
 
   /**
    * Stop the current request.
@@ -16338,7 +18618,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkXMLHttpRequest.$abort_Callback(this);
+  void abort() => _blink.BlinkXMLHttpRequest.instance.abort_Callback_0_(this);
 
   /**
    * Retrieve all the response headers from a request.
@@ -16353,7 +18633,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @DomName('XMLHttpRequest.getAllResponseHeaders')
   @DocsEditable()
   @Unstable()
-  String getAllResponseHeaders() => _blink.BlinkXMLHttpRequest.$getAllResponseHeaders_Callback(this);
+  String getAllResponseHeaders() => _blink.BlinkXMLHttpRequest.instance.getAllResponseHeaders_Callback_0_(this);
 
   /**
    * Return the response header named `header`, or null if not found.
@@ -16364,7 +18644,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @DomName('XMLHttpRequest.getResponseHeader')
   @DocsEditable()
   @Unstable()
-  String getResponseHeader(String header) => _blink.BlinkXMLHttpRequest.$getResponseHeader_Callback(this, header);
+  String getResponseHeader(String header) => _blink.BlinkXMLHttpRequest.instance.getResponseHeader_Callback_1_(this, header);
 
   /**
    * Specify the desired `url`, and `method` to use in making the request.
@@ -16383,7 +18663,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.open')
   @DocsEditable()
-  void open(String method, String url, {bool async, String user, String password}) => _blink.BlinkXMLHttpRequest.$open_Callback(this, method, url, async, user, password);
+  void open(String method, String url, {bool async, String user, String password}) => _blink.BlinkXMLHttpRequest.instance.open_Callback_5_(this, method, url, async, user, password);
 
   /**
    * Specify a particular MIME type (such as `text/xml`) desired for the
@@ -16397,7 +18677,7 @@ class HttpRequest extends HttpRequestEventTarget {
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.FIREFOX)
   @SupportedBrowser(SupportedBrowser.SAFARI)
-  void overrideMimeType(String override) => _blink.BlinkXMLHttpRequest.$overrideMimeType_Callback(this, override);
+  void overrideMimeType(String override) => _blink.BlinkXMLHttpRequest.instance.overrideMimeType_Callback_1_(this, override);
 
   /**
    * Send the request with any given `data`.
@@ -16415,7 +18695,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.send')
   @DocsEditable()
-  void send([data]) => _blink.BlinkXMLHttpRequest.$send_Callback(this, data);
+  void send([data]) => _blink.BlinkXMLHttpRequest.instance.send_Callback_1_(this, data);
 
   /**
    * Sets the value of an HTTP requst header.
@@ -16437,7 +18717,7 @@ class HttpRequest extends HttpRequestEventTarget {
    */
   @DomName('XMLHttpRequest.setRequestHeader')
   @DocsEditable()
-  void setRequestHeader(String header, String value) => _blink.BlinkXMLHttpRequest.$setRequestHeader_Callback(this, header, value);
+  void setRequestHeader(String header, String value) => _blink.BlinkXMLHttpRequest.instance.setRequestHeader_Callback_2_(this, header, value);
 
   /// Stream of `readystatechange` events handled by this [HttpRequest].
 /**
@@ -16630,57 +18910,77 @@ class IFrameElement extends HtmlElement {
    */
   IFrameElement.created() : super.created();
 
+  @DomName('HTMLIFrameElement.allowFullscreen')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get allowFullscreen => _blink.BlinkHTMLIFrameElement.instance.allowFullscreen_Getter_(this);
+
+  @DomName('HTMLIFrameElement.allowFullscreen')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set allowFullscreen(bool value) => _blink.BlinkHTMLIFrameElement.instance.allowFullscreen_Setter_(this, value);
+
   @DomName('HTMLIFrameElement.contentWindow')
   @DocsEditable()
-  WindowBase get contentWindow => _blink.BlinkHTMLIFrameElement.$contentWindow_Getter(this);
+  WindowBase get contentWindow => _blink.BlinkHTMLIFrameElement.instance.contentWindow_Getter_(this);
 
   @DomName('HTMLIFrameElement.height')
   @DocsEditable()
-  String get height => _blink.BlinkHTMLIFrameElement.$height_Getter(this);
+  String get height => _blink.BlinkHTMLIFrameElement.instance.height_Getter_(this);
 
   @DomName('HTMLIFrameElement.height')
   @DocsEditable()
-  void set height(String value) => _blink.BlinkHTMLIFrameElement.$height_Setter(this, value);
+  void set height(String value) => _blink.BlinkHTMLIFrameElement.instance.height_Setter_(this, value);
+
+  @DomName('HTMLIFrameElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLIFrameElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLIFrameElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLIFrameElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLIFrameElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLIFrameElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLIFrameElement.instance.name_Getter_(this);
 
   @DomName('HTMLIFrameElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLIFrameElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLIFrameElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLIFrameElement.sandbox')
   @DocsEditable()
-  String get sandbox => _blink.BlinkHTMLIFrameElement.$sandbox_Getter(this);
+  String get sandbox => _blink.BlinkHTMLIFrameElement.instance.sandbox_Getter_(this);
 
   @DomName('HTMLIFrameElement.sandbox')
   @DocsEditable()
-  void set sandbox(String value) => _blink.BlinkHTMLIFrameElement.$sandbox_Setter(this, value);
+  void set sandbox(String value) => _blink.BlinkHTMLIFrameElement.instance.sandbox_Setter_(this, value);
 
   @DomName('HTMLIFrameElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLIFrameElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLIFrameElement.instance.src_Getter_(this);
 
   @DomName('HTMLIFrameElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLIFrameElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLIFrameElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLIFrameElement.srcdoc')
   @DocsEditable()
-  String get srcdoc => _blink.BlinkHTMLIFrameElement.$srcdoc_Getter(this);
+  String get srcdoc => _blink.BlinkHTMLIFrameElement.instance.srcdoc_Getter_(this);
 
   @DomName('HTMLIFrameElement.srcdoc')
   @DocsEditable()
-  void set srcdoc(String value) => _blink.BlinkHTMLIFrameElement.$srcdoc_Setter(this, value);
+  void set srcdoc(String value) => _blink.BlinkHTMLIFrameElement.instance.srcdoc_Setter_(this, value);
 
   @DomName('HTMLIFrameElement.width')
   @DocsEditable()
-  String get width => _blink.BlinkHTMLIFrameElement.$width_Getter(this);
+  String get width => _blink.BlinkHTMLIFrameElement.instance.width_Getter_(this);
 
   @DomName('HTMLIFrameElement.width')
   @DocsEditable()
-  void set width(String value) => _blink.BlinkHTMLIFrameElement.$width_Setter(this, value);
+  void set width(String value) => _blink.BlinkHTMLIFrameElement.instance.width_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -16700,12 +19000,12 @@ class ImageBitmap extends NativeFieldWrapperClass2 {
   @DomName('ImageBitmap.height')
   @DocsEditable()
   @Experimental() // untriaged
-  int get height => _blink.BlinkImageBitmap.$height_Getter(this);
+  int get height => _blink.BlinkImageBitmap.instance.height_Getter_(this);
 
   @DomName('ImageBitmap.width')
   @DocsEditable()
   @Experimental() // untriaged
-  int get width => _blink.BlinkImageBitmap.$width_Getter(this);
+  int get width => _blink.BlinkImageBitmap.instance.width_Getter_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -16726,17 +19026,29 @@ class ImageData extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory ImageData._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('ImageData.ImageData')
+  @DocsEditable()
+  factory ImageData(data_OR_width, int height_OR_width, [int height]) {
+    if ((height_OR_width is int || height_OR_width == null) && (data_OR_width is int || data_OR_width == null) && height == null) {
+      return _blink.BlinkImageData.instance.constructorCallback_2_(data_OR_width, height_OR_width);
+    }
+    if ((height is int || height == null) && (height_OR_width is int || height_OR_width == null) && (data_OR_width is Uint8ClampedList || data_OR_width == null)) {
+      return _blink.BlinkImageData.instance.constructorCallback_3_(data_OR_width, height_OR_width, height);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
   @DomName('ImageData.data')
   @DocsEditable()
-  List<int> get _data => _blink.BlinkImageData.$data_Getter(this);
+  Uint8ClampedList get _data => _blink.BlinkImageData.instance.data_Getter_(this);
 
   @DomName('ImageData.height')
   @DocsEditable()
-  int get height => _blink.BlinkImageData.$height_Getter(this);
+  int get height => _blink.BlinkImageData.instance.height_Getter_(this);
 
   @DomName('ImageData.width')
   @DocsEditable()
-  int get width => _blink.BlinkImageData.$width_Getter(this);
+  int get width => _blink.BlinkImageData.instance.width_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -16767,81 +19079,106 @@ class ImageElement extends HtmlElement implements CanvasImageSource {
 
   @DomName('HTMLImageElement.alt')
   @DocsEditable()
-  String get alt => _blink.BlinkHTMLImageElement.$alt_Getter(this);
+  String get alt => _blink.BlinkHTMLImageElement.instance.alt_Getter_(this);
 
   @DomName('HTMLImageElement.alt')
   @DocsEditable()
-  void set alt(String value) => _blink.BlinkHTMLImageElement.$alt_Setter(this, value);
+  void set alt(String value) => _blink.BlinkHTMLImageElement.instance.alt_Setter_(this, value);
 
   @DomName('HTMLImageElement.complete')
   @DocsEditable()
-  bool get complete => _blink.BlinkHTMLImageElement.$complete_Getter(this);
+  bool get complete => _blink.BlinkHTMLImageElement.instance.complete_Getter_(this);
 
   @DomName('HTMLImageElement.crossOrigin')
   @DocsEditable()
-  String get crossOrigin => _blink.BlinkHTMLImageElement.$crossOrigin_Getter(this);
+  String get crossOrigin => _blink.BlinkHTMLImageElement.instance.crossOrigin_Getter_(this);
 
   @DomName('HTMLImageElement.crossOrigin')
   @DocsEditable()
-  void set crossOrigin(String value) => _blink.BlinkHTMLImageElement.$crossOrigin_Setter(this, value);
+  void set crossOrigin(String value) => _blink.BlinkHTMLImageElement.instance.crossOrigin_Setter_(this, value);
+
+  @DomName('HTMLImageElement.currentSrc')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get currentSrc => _blink.BlinkHTMLImageElement.instance.currentSrc_Getter_(this);
 
   @DomName('HTMLImageElement.height')
   @DocsEditable()
-  int get height => _blink.BlinkHTMLImageElement.$height_Getter(this);
+  int get height => _blink.BlinkHTMLImageElement.instance.height_Getter_(this);
 
   @DomName('HTMLImageElement.height')
   @DocsEditable()
-  void set height(int value) => _blink.BlinkHTMLImageElement.$height_Setter(this, value);
+  void set height(int value) => _blink.BlinkHTMLImageElement.instance.height_Setter_(this, value);
+
+  @DomName('HTMLImageElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLImageElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLImageElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLImageElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLImageElement.isMap')
   @DocsEditable()
-  bool get isMap => _blink.BlinkHTMLImageElement.$isMap_Getter(this);
+  bool get isMap => _blink.BlinkHTMLImageElement.instance.isMap_Getter_(this);
 
   @DomName('HTMLImageElement.isMap')
   @DocsEditable()
-  void set isMap(bool value) => _blink.BlinkHTMLImageElement.$isMap_Setter(this, value);
+  void set isMap(bool value) => _blink.BlinkHTMLImageElement.instance.isMap_Setter_(this, value);
 
   @DomName('HTMLImageElement.naturalHeight')
   @DocsEditable()
-  int get naturalHeight => _blink.BlinkHTMLImageElement.$naturalHeight_Getter(this);
+  int get naturalHeight => _blink.BlinkHTMLImageElement.instance.naturalHeight_Getter_(this);
 
   @DomName('HTMLImageElement.naturalWidth')
   @DocsEditable()
-  int get naturalWidth => _blink.BlinkHTMLImageElement.$naturalWidth_Getter(this);
+  int get naturalWidth => _blink.BlinkHTMLImageElement.instance.naturalWidth_Getter_(this);
+
+  @DomName('HTMLImageElement.sizes')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get sizes => _blink.BlinkHTMLImageElement.instance.sizes_Getter_(this);
+
+  @DomName('HTMLImageElement.sizes')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set sizes(String value) => _blink.BlinkHTMLImageElement.instance.sizes_Setter_(this, value);
 
   @DomName('HTMLImageElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLImageElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLImageElement.instance.src_Getter_(this);
 
   @DomName('HTMLImageElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLImageElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLImageElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLImageElement.srcset')
   @DocsEditable()
   @Experimental() // untriaged
-  String get srcset => _blink.BlinkHTMLImageElement.$srcset_Getter(this);
+  String get srcset => _blink.BlinkHTMLImageElement.instance.srcset_Getter_(this);
 
   @DomName('HTMLImageElement.srcset')
   @DocsEditable()
   @Experimental() // untriaged
-  void set srcset(String value) => _blink.BlinkHTMLImageElement.$srcset_Setter(this, value);
+  void set srcset(String value) => _blink.BlinkHTMLImageElement.instance.srcset_Setter_(this, value);
 
   @DomName('HTMLImageElement.useMap')
   @DocsEditable()
-  String get useMap => _blink.BlinkHTMLImageElement.$useMap_Getter(this);
+  String get useMap => _blink.BlinkHTMLImageElement.instance.useMap_Getter_(this);
 
   @DomName('HTMLImageElement.useMap')
   @DocsEditable()
-  void set useMap(String value) => _blink.BlinkHTMLImageElement.$useMap_Setter(this, value);
+  void set useMap(String value) => _blink.BlinkHTMLImageElement.instance.useMap_Setter_(this, value);
 
   @DomName('HTMLImageElement.width')
   @DocsEditable()
-  int get width => _blink.BlinkHTMLImageElement.$width_Getter(this);
+  int get width => _blink.BlinkHTMLImageElement.instance.width_Getter_(this);
 
   @DomName('HTMLImageElement.width')
   @DocsEditable()
-  void set width(int value) => _blink.BlinkHTMLImageElement.$width_Setter(this, value);
+  void set width(int value) => _blink.BlinkHTMLImageElement.instance.width_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -16861,7 +19198,7 @@ class InjectedScriptHost extends NativeFieldWrapperClass2 {
   @DomName('InjectedScriptHost.inspect')
   @DocsEditable()
   @Experimental() // untriaged
-  void inspect(Object objectId, Object hints) => _blink.BlinkInjectedScriptHost.$inspect_Callback(this, objectId, hints);
+  void inspect(Object objectId, Object hints) => _blink.BlinkInjectedScriptHost.instance.inspect_Callback_2_(this, objectId, hints);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -16906,20 +19243,6 @@ class InputElement extends HtmlElement implements
 
   // To suppress missing implicit constructor warnings.
   factory InputElement._() { throw new UnsupportedError("Not supported"); }
-
-  /**
-   * Static factory designed to expose `speechchange` events to event
-   * handlers that are not necessarily instances of [InputElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLInputElement.webkitSpeechChangeEvent')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html#extending_html_elements
-  static const EventStreamProvider<Event> speechChangeEvent = const EventStreamProvider<Event>('webkitSpeechChange');
   /**
    * Constructor instantiated by the DOM when a custom element has been created.
    *
@@ -16929,333 +19252,343 @@ class InputElement extends HtmlElement implements
 
   @DomName('HTMLInputElement.accept')
   @DocsEditable()
-  String get accept => _blink.BlinkHTMLInputElement.$accept_Getter(this);
+  String get accept => _blink.BlinkHTMLInputElement.instance.accept_Getter_(this);
 
   @DomName('HTMLInputElement.accept')
   @DocsEditable()
-  void set accept(String value) => _blink.BlinkHTMLInputElement.$accept_Setter(this, value);
+  void set accept(String value) => _blink.BlinkHTMLInputElement.instance.accept_Setter_(this, value);
 
   @DomName('HTMLInputElement.alt')
   @DocsEditable()
-  String get alt => _blink.BlinkHTMLInputElement.$alt_Getter(this);
+  String get alt => _blink.BlinkHTMLInputElement.instance.alt_Getter_(this);
 
   @DomName('HTMLInputElement.alt')
   @DocsEditable()
-  void set alt(String value) => _blink.BlinkHTMLInputElement.$alt_Setter(this, value);
+  void set alt(String value) => _blink.BlinkHTMLInputElement.instance.alt_Setter_(this, value);
 
   @DomName('HTMLInputElement.autocomplete')
   @DocsEditable()
-  String get autocomplete => _blink.BlinkHTMLInputElement.$autocomplete_Getter(this);
+  String get autocomplete => _blink.BlinkHTMLInputElement.instance.autocomplete_Getter_(this);
 
   @DomName('HTMLInputElement.autocomplete')
   @DocsEditable()
-  void set autocomplete(String value) => _blink.BlinkHTMLInputElement.$autocomplete_Setter(this, value);
+  void set autocomplete(String value) => _blink.BlinkHTMLInputElement.instance.autocomplete_Setter_(this, value);
 
   @DomName('HTMLInputElement.autofocus')
   @DocsEditable()
-  bool get autofocus => _blink.BlinkHTMLInputElement.$autofocus_Getter(this);
+  bool get autofocus => _blink.BlinkHTMLInputElement.instance.autofocus_Getter_(this);
 
   @DomName('HTMLInputElement.autofocus')
   @DocsEditable()
-  void set autofocus(bool value) => _blink.BlinkHTMLInputElement.$autofocus_Setter(this, value);
+  void set autofocus(bool value) => _blink.BlinkHTMLInputElement.instance.autofocus_Setter_(this, value);
+
+  @DomName('HTMLInputElement.capture')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get capture => _blink.BlinkHTMLInputElement.instance.capture_Getter_(this);
+
+  @DomName('HTMLInputElement.capture')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set capture(bool value) => _blink.BlinkHTMLInputElement.instance.capture_Setter_(this, value);
 
   @DomName('HTMLInputElement.checked')
   @DocsEditable()
-  bool get checked => _blink.BlinkHTMLInputElement.$checked_Getter(this);
+  bool get checked => _blink.BlinkHTMLInputElement.instance.checked_Getter_(this);
 
   @DomName('HTMLInputElement.checked')
   @DocsEditable()
-  void set checked(bool value) => _blink.BlinkHTMLInputElement.$checked_Setter(this, value);
+  void set checked(bool value) => _blink.BlinkHTMLInputElement.instance.checked_Setter_(this, value);
 
   @DomName('HTMLInputElement.defaultChecked')
   @DocsEditable()
-  bool get defaultChecked => _blink.BlinkHTMLInputElement.$defaultChecked_Getter(this);
+  bool get defaultChecked => _blink.BlinkHTMLInputElement.instance.defaultChecked_Getter_(this);
 
   @DomName('HTMLInputElement.defaultChecked')
   @DocsEditable()
-  void set defaultChecked(bool value) => _blink.BlinkHTMLInputElement.$defaultChecked_Setter(this, value);
+  void set defaultChecked(bool value) => _blink.BlinkHTMLInputElement.instance.defaultChecked_Setter_(this, value);
 
   @DomName('HTMLInputElement.defaultValue')
   @DocsEditable()
-  String get defaultValue => _blink.BlinkHTMLInputElement.$defaultValue_Getter(this);
+  String get defaultValue => _blink.BlinkHTMLInputElement.instance.defaultValue_Getter_(this);
 
   @DomName('HTMLInputElement.defaultValue')
   @DocsEditable()
-  void set defaultValue(String value) => _blink.BlinkHTMLInputElement.$defaultValue_Setter(this, value);
+  void set defaultValue(String value) => _blink.BlinkHTMLInputElement.instance.defaultValue_Setter_(this, value);
 
   @DomName('HTMLInputElement.dirName')
   @DocsEditable()
-  String get dirName => _blink.BlinkHTMLInputElement.$dirName_Getter(this);
+  String get dirName => _blink.BlinkHTMLInputElement.instance.dirName_Getter_(this);
 
   @DomName('HTMLInputElement.dirName')
   @DocsEditable()
-  void set dirName(String value) => _blink.BlinkHTMLInputElement.$dirName_Setter(this, value);
+  void set dirName(String value) => _blink.BlinkHTMLInputElement.instance.dirName_Setter_(this, value);
 
   @DomName('HTMLInputElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLInputElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLInputElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLInputElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLInputElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLInputElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLInputElement.files')
   @DocsEditable()
-  List<File> get files => _blink.BlinkHTMLInputElement.$files_Getter(this);
+  List<File> get files => _blink.BlinkHTMLInputElement.instance.files_Getter_(this);
 
   @DomName('HTMLInputElement.files')
   @DocsEditable()
-  void set files(List<File> value) => _blink.BlinkHTMLInputElement.$files_Setter(this, value);
+  void set files(List<File> value) => _blink.BlinkHTMLInputElement.instance.files_Setter_(this, value);
 
   @DomName('HTMLInputElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLInputElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLInputElement.instance.form_Getter_(this);
 
   @DomName('HTMLInputElement.formAction')
   @DocsEditable()
-  String get formAction => _blink.BlinkHTMLInputElement.$formAction_Getter(this);
+  String get formAction => _blink.BlinkHTMLInputElement.instance.formAction_Getter_(this);
 
   @DomName('HTMLInputElement.formAction')
   @DocsEditable()
-  void set formAction(String value) => _blink.BlinkHTMLInputElement.$formAction_Setter(this, value);
+  void set formAction(String value) => _blink.BlinkHTMLInputElement.instance.formAction_Setter_(this, value);
 
   @DomName('HTMLInputElement.formEnctype')
   @DocsEditable()
-  String get formEnctype => _blink.BlinkHTMLInputElement.$formEnctype_Getter(this);
+  String get formEnctype => _blink.BlinkHTMLInputElement.instance.formEnctype_Getter_(this);
 
   @DomName('HTMLInputElement.formEnctype')
   @DocsEditable()
-  void set formEnctype(String value) => _blink.BlinkHTMLInputElement.$formEnctype_Setter(this, value);
+  void set formEnctype(String value) => _blink.BlinkHTMLInputElement.instance.formEnctype_Setter_(this, value);
 
   @DomName('HTMLInputElement.formMethod')
   @DocsEditable()
-  String get formMethod => _blink.BlinkHTMLInputElement.$formMethod_Getter(this);
+  String get formMethod => _blink.BlinkHTMLInputElement.instance.formMethod_Getter_(this);
 
   @DomName('HTMLInputElement.formMethod')
   @DocsEditable()
-  void set formMethod(String value) => _blink.BlinkHTMLInputElement.$formMethod_Setter(this, value);
+  void set formMethod(String value) => _blink.BlinkHTMLInputElement.instance.formMethod_Setter_(this, value);
 
   @DomName('HTMLInputElement.formNoValidate')
   @DocsEditable()
-  bool get formNoValidate => _blink.BlinkHTMLInputElement.$formNoValidate_Getter(this);
+  bool get formNoValidate => _blink.BlinkHTMLInputElement.instance.formNoValidate_Getter_(this);
 
   @DomName('HTMLInputElement.formNoValidate')
   @DocsEditable()
-  void set formNoValidate(bool value) => _blink.BlinkHTMLInputElement.$formNoValidate_Setter(this, value);
+  void set formNoValidate(bool value) => _blink.BlinkHTMLInputElement.instance.formNoValidate_Setter_(this, value);
 
   @DomName('HTMLInputElement.formTarget')
   @DocsEditable()
-  String get formTarget => _blink.BlinkHTMLInputElement.$formTarget_Getter(this);
+  String get formTarget => _blink.BlinkHTMLInputElement.instance.formTarget_Getter_(this);
 
   @DomName('HTMLInputElement.formTarget')
   @DocsEditable()
-  void set formTarget(String value) => _blink.BlinkHTMLInputElement.$formTarget_Setter(this, value);
+  void set formTarget(String value) => _blink.BlinkHTMLInputElement.instance.formTarget_Setter_(this, value);
 
   @DomName('HTMLInputElement.height')
   @DocsEditable()
-  int get height => _blink.BlinkHTMLInputElement.$height_Getter(this);
+  int get height => _blink.BlinkHTMLInputElement.instance.height_Getter_(this);
 
   @DomName('HTMLInputElement.height')
   @DocsEditable()
-  void set height(int value) => _blink.BlinkHTMLInputElement.$height_Setter(this, value);
+  void set height(int value) => _blink.BlinkHTMLInputElement.instance.height_Setter_(this, value);
 
   @DomName('HTMLInputElement.incremental')
   @DocsEditable()
   // http://www.w3.org/TR/html-markup/input.search.html
   @Experimental()
-  bool get incremental => _blink.BlinkHTMLInputElement.$incremental_Getter(this);
+  bool get incremental => _blink.BlinkHTMLInputElement.instance.incremental_Getter_(this);
 
   @DomName('HTMLInputElement.incremental')
   @DocsEditable()
   // http://www.w3.org/TR/html-markup/input.search.html
   @Experimental()
-  void set incremental(bool value) => _blink.BlinkHTMLInputElement.$incremental_Setter(this, value);
+  void set incremental(bool value) => _blink.BlinkHTMLInputElement.instance.incremental_Setter_(this, value);
 
   @DomName('HTMLInputElement.indeterminate')
   @DocsEditable()
-  bool get indeterminate => _blink.BlinkHTMLInputElement.$indeterminate_Getter(this);
+  bool get indeterminate => _blink.BlinkHTMLInputElement.instance.indeterminate_Getter_(this);
 
   @DomName('HTMLInputElement.indeterminate')
   @DocsEditable()
-  void set indeterminate(bool value) => _blink.BlinkHTMLInputElement.$indeterminate_Setter(this, value);
+  void set indeterminate(bool value) => _blink.BlinkHTMLInputElement.instance.indeterminate_Setter_(this, value);
 
   @DomName('HTMLInputElement.inputMode')
   @DocsEditable()
   @Experimental() // untriaged
-  String get inputMode => _blink.BlinkHTMLInputElement.$inputMode_Getter(this);
+  String get inputMode => _blink.BlinkHTMLInputElement.instance.inputMode_Getter_(this);
 
   @DomName('HTMLInputElement.inputMode')
   @DocsEditable()
   @Experimental() // untriaged
-  void set inputMode(String value) => _blink.BlinkHTMLInputElement.$inputMode_Setter(this, value);
+  void set inputMode(String value) => _blink.BlinkHTMLInputElement.instance.inputMode_Setter_(this, value);
 
   @DomName('HTMLInputElement.labels')
   @DocsEditable()
-  List<Node> get labels => _blink.BlinkHTMLInputElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLInputElement.instance.labels_Getter_(this);
 
   @DomName('HTMLInputElement.list')
   @DocsEditable()
-  HtmlElement get list => _blink.BlinkHTMLInputElement.$list_Getter(this);
+  HtmlElement get list => _blink.BlinkHTMLInputElement.instance.list_Getter_(this);
 
   @DomName('HTMLInputElement.max')
   @DocsEditable()
-  String get max => _blink.BlinkHTMLInputElement.$max_Getter(this);
+  String get max => _blink.BlinkHTMLInputElement.instance.max_Getter_(this);
 
   @DomName('HTMLInputElement.max')
   @DocsEditable()
-  void set max(String value) => _blink.BlinkHTMLInputElement.$max_Setter(this, value);
+  void set max(String value) => _blink.BlinkHTMLInputElement.instance.max_Setter_(this, value);
 
   @DomName('HTMLInputElement.maxLength')
   @DocsEditable()
-  int get maxLength => _blink.BlinkHTMLInputElement.$maxLength_Getter(this);
+  int get maxLength => _blink.BlinkHTMLInputElement.instance.maxLength_Getter_(this);
 
   @DomName('HTMLInputElement.maxLength')
   @DocsEditable()
-  void set maxLength(int value) => _blink.BlinkHTMLInputElement.$maxLength_Setter(this, value);
+  void set maxLength(int value) => _blink.BlinkHTMLInputElement.instance.maxLength_Setter_(this, value);
 
   @DomName('HTMLInputElement.min')
   @DocsEditable()
-  String get min => _blink.BlinkHTMLInputElement.$min_Getter(this);
+  String get min => _blink.BlinkHTMLInputElement.instance.min_Getter_(this);
 
   @DomName('HTMLInputElement.min')
   @DocsEditable()
-  void set min(String value) => _blink.BlinkHTMLInputElement.$min_Setter(this, value);
+  void set min(String value) => _blink.BlinkHTMLInputElement.instance.min_Setter_(this, value);
 
   @DomName('HTMLInputElement.multiple')
   @DocsEditable()
-  bool get multiple => _blink.BlinkHTMLInputElement.$multiple_Getter(this);
+  bool get multiple => _blink.BlinkHTMLInputElement.instance.multiple_Getter_(this);
 
   @DomName('HTMLInputElement.multiple')
   @DocsEditable()
-  void set multiple(bool value) => _blink.BlinkHTMLInputElement.$multiple_Setter(this, value);
+  void set multiple(bool value) => _blink.BlinkHTMLInputElement.instance.multiple_Setter_(this, value);
 
   @DomName('HTMLInputElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLInputElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLInputElement.instance.name_Getter_(this);
 
   @DomName('HTMLInputElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLInputElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLInputElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLInputElement.pattern')
   @DocsEditable()
-  String get pattern => _blink.BlinkHTMLInputElement.$pattern_Getter(this);
+  String get pattern => _blink.BlinkHTMLInputElement.instance.pattern_Getter_(this);
 
   @DomName('HTMLInputElement.pattern')
   @DocsEditable()
-  void set pattern(String value) => _blink.BlinkHTMLInputElement.$pattern_Setter(this, value);
+  void set pattern(String value) => _blink.BlinkHTMLInputElement.instance.pattern_Setter_(this, value);
 
   @DomName('HTMLInputElement.placeholder')
   @DocsEditable()
-  String get placeholder => _blink.BlinkHTMLInputElement.$placeholder_Getter(this);
+  String get placeholder => _blink.BlinkHTMLInputElement.instance.placeholder_Getter_(this);
 
   @DomName('HTMLInputElement.placeholder')
   @DocsEditable()
-  void set placeholder(String value) => _blink.BlinkHTMLInputElement.$placeholder_Setter(this, value);
+  void set placeholder(String value) => _blink.BlinkHTMLInputElement.instance.placeholder_Setter_(this, value);
 
   @DomName('HTMLInputElement.readOnly')
   @DocsEditable()
-  bool get readOnly => _blink.BlinkHTMLInputElement.$readOnly_Getter(this);
+  bool get readOnly => _blink.BlinkHTMLInputElement.instance.readOnly_Getter_(this);
 
   @DomName('HTMLInputElement.readOnly')
   @DocsEditable()
-  void set readOnly(bool value) => _blink.BlinkHTMLInputElement.$readOnly_Setter(this, value);
+  void set readOnly(bool value) => _blink.BlinkHTMLInputElement.instance.readOnly_Setter_(this, value);
 
   @DomName('HTMLInputElement.required')
   @DocsEditable()
-  bool get required => _blink.BlinkHTMLInputElement.$required_Getter(this);
+  bool get required => _blink.BlinkHTMLInputElement.instance.required_Getter_(this);
 
   @DomName('HTMLInputElement.required')
   @DocsEditable()
-  void set required(bool value) => _blink.BlinkHTMLInputElement.$required_Setter(this, value);
+  void set required(bool value) => _blink.BlinkHTMLInputElement.instance.required_Setter_(this, value);
 
   @DomName('HTMLInputElement.selectionDirection')
   @DocsEditable()
-  String get selectionDirection => _blink.BlinkHTMLInputElement.$selectionDirection_Getter(this);
+  String get selectionDirection => _blink.BlinkHTMLInputElement.instance.selectionDirection_Getter_(this);
 
   @DomName('HTMLInputElement.selectionDirection')
   @DocsEditable()
-  void set selectionDirection(String value) => _blink.BlinkHTMLInputElement.$selectionDirection_Setter(this, value);
+  void set selectionDirection(String value) => _blink.BlinkHTMLInputElement.instance.selectionDirection_Setter_(this, value);
 
   @DomName('HTMLInputElement.selectionEnd')
   @DocsEditable()
-  int get selectionEnd => _blink.BlinkHTMLInputElement.$selectionEnd_Getter(this);
+  int get selectionEnd => _blink.BlinkHTMLInputElement.instance.selectionEnd_Getter_(this);
 
   @DomName('HTMLInputElement.selectionEnd')
   @DocsEditable()
-  void set selectionEnd(int value) => _blink.BlinkHTMLInputElement.$selectionEnd_Setter(this, value);
+  void set selectionEnd(int value) => _blink.BlinkHTMLInputElement.instance.selectionEnd_Setter_(this, value);
 
   @DomName('HTMLInputElement.selectionStart')
   @DocsEditable()
-  int get selectionStart => _blink.BlinkHTMLInputElement.$selectionStart_Getter(this);
+  int get selectionStart => _blink.BlinkHTMLInputElement.instance.selectionStart_Getter_(this);
 
   @DomName('HTMLInputElement.selectionStart')
   @DocsEditable()
-  void set selectionStart(int value) => _blink.BlinkHTMLInputElement.$selectionStart_Setter(this, value);
+  void set selectionStart(int value) => _blink.BlinkHTMLInputElement.instance.selectionStart_Setter_(this, value);
 
   @DomName('HTMLInputElement.size')
   @DocsEditable()
-  int get size => _blink.BlinkHTMLInputElement.$size_Getter(this);
+  int get size => _blink.BlinkHTMLInputElement.instance.size_Getter_(this);
 
   @DomName('HTMLInputElement.size')
   @DocsEditable()
-  void set size(int value) => _blink.BlinkHTMLInputElement.$size_Setter(this, value);
+  void set size(int value) => _blink.BlinkHTMLInputElement.instance.size_Setter_(this, value);
 
   @DomName('HTMLInputElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLInputElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLInputElement.instance.src_Getter_(this);
 
   @DomName('HTMLInputElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLInputElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLInputElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLInputElement.step')
   @DocsEditable()
-  String get step => _blink.BlinkHTMLInputElement.$step_Getter(this);
+  String get step => _blink.BlinkHTMLInputElement.instance.step_Getter_(this);
 
   @DomName('HTMLInputElement.step')
   @DocsEditable()
-  void set step(String value) => _blink.BlinkHTMLInputElement.$step_Setter(this, value);
+  void set step(String value) => _blink.BlinkHTMLInputElement.instance.step_Setter_(this, value);
 
   @DomName('HTMLInputElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLInputElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLInputElement.instance.type_Getter_(this);
 
   @DomName('HTMLInputElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLInputElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLInputElement.instance.type_Setter_(this, value);
 
   @DomName('HTMLInputElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLInputElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLInputElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLInputElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLInputElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLInputElement.instance.validity_Getter_(this);
 
   @DomName('HTMLInputElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLInputElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLInputElement.instance.value_Getter_(this);
 
   @DomName('HTMLInputElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLInputElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLInputElement.instance.value_Setter_(this, value);
 
   @DomName('HTMLInputElement.valueAsDate')
   @DocsEditable()
-  DateTime get valueAsDate => _blink.BlinkHTMLInputElement.$valueAsDate_Getter(this);
+  DateTime get valueAsDate => _blink.BlinkHTMLInputElement.instance.valueAsDate_Getter_(this);
 
   @DomName('HTMLInputElement.valueAsDate')
   @DocsEditable()
-  void set valueAsDate(DateTime value) => _blink.BlinkHTMLInputElement.$valueAsDate_Setter(this, value);
+  void set valueAsDate(DateTime value) => _blink.BlinkHTMLInputElement.instance.valueAsDate_Setter_(this, value);
 
   @DomName('HTMLInputElement.valueAsNumber')
   @DocsEditable()
-  num get valueAsNumber => _blink.BlinkHTMLInputElement.$valueAsNumber_Getter(this);
+  num get valueAsNumber => _blink.BlinkHTMLInputElement.instance.valueAsNumber_Getter_(this);
 
   @DomName('HTMLInputElement.valueAsNumber')
   @DocsEditable()
-  void set valueAsNumber(num value) => _blink.BlinkHTMLInputElement.$valueAsNumber_Setter(this, value);
+  void set valueAsNumber(num value) => _blink.BlinkHTMLInputElement.instance.valueAsNumber_Setter_(this, value);
 
   @DomName('HTMLInputElement.webkitEntries')
   @DocsEditable()
@@ -17263,7 +19596,7 @@ class InputElement extends HtmlElement implements
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#concept-input-type-file-selected
-  List<Entry> get entries => _blink.BlinkHTMLInputElement.$webkitEntries_Getter(this);
+  List<Entry> get entries => _blink.BlinkHTMLInputElement.instance.webkitEntries_Getter_(this);
 
   @DomName('HTMLInputElement.webkitdirectory')
   @DocsEditable()
@@ -17271,7 +19604,7 @@ class InputElement extends HtmlElement implements
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://plus.sandbox.google.com/+AddyOsmani/posts/Dk5UhZ6zfF3
-  bool get directory => _blink.BlinkHTMLInputElement.$webkitdirectory_Getter(this);
+  bool get directory => _blink.BlinkHTMLInputElement.instance.webkitdirectory_Getter_(this);
 
   @DomName('HTMLInputElement.webkitdirectory')
   @DocsEditable()
@@ -17279,39 +19612,39 @@ class InputElement extends HtmlElement implements
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://plus.sandbox.google.com/+AddyOsmani/posts/Dk5UhZ6zfF3
-  void set directory(bool value) => _blink.BlinkHTMLInputElement.$webkitdirectory_Setter(this, value);
+  void set directory(bool value) => _blink.BlinkHTMLInputElement.instance.webkitdirectory_Setter_(this, value);
 
   @DomName('HTMLInputElement.width')
   @DocsEditable()
-  int get width => _blink.BlinkHTMLInputElement.$width_Getter(this);
+  int get width => _blink.BlinkHTMLInputElement.instance.width_Getter_(this);
 
   @DomName('HTMLInputElement.width')
   @DocsEditable()
-  void set width(int value) => _blink.BlinkHTMLInputElement.$width_Setter(this, value);
+  void set width(int value) => _blink.BlinkHTMLInputElement.instance.width_Setter_(this, value);
 
   @DomName('HTMLInputElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLInputElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLInputElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLInputElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLInputElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLInputElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLInputElement.select')
   @DocsEditable()
-  void select() => _blink.BlinkHTMLInputElement.$select_Callback(this);
+  void select() => _blink.BlinkHTMLInputElement.instance.select_Callback_0_(this);
 
   @DomName('HTMLInputElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLInputElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLInputElement.instance.setCustomValidity_Callback_1_(this, error);
 
   void setRangeText(String replacement, {int start, int end, String selectionMode}) {
     if ((replacement is String || replacement == null) && start == null && end == null && selectionMode == null) {
-      _blink.BlinkHTMLInputElement.$_setRangeText_1_Callback(this, replacement);
+      _blink.BlinkHTMLInputElement.instance.setRangeText_Callback_1_(this, replacement);
       return;
     }
     if ((selectionMode is String || selectionMode == null) && (end is int || end == null) && (start is int || start == null) && (replacement is String || replacement == null)) {
-      _blink.BlinkHTMLInputElement.$_setRangeText_2_Callback(this, replacement, start, end, selectionMode);
+      _blink.BlinkHTMLInputElement.instance.setRangeText_Callback_4_(this, replacement, start, end, selectionMode);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -17319,37 +19652,30 @@ class InputElement extends HtmlElement implements
 
   void setSelectionRange(int start, int end, [String direction]) {
     if (direction != null) {
-      _blink.BlinkHTMLInputElement.$_setSelectionRange_1_Callback(this, start, end, direction);
+      _blink.BlinkHTMLInputElement.instance.setSelectionRange_Callback_3_(this, start, end, direction);
       return;
     }
-    _blink.BlinkHTMLInputElement.$_setSelectionRange_2_Callback(this, start, end);
+    _blink.BlinkHTMLInputElement.instance.setSelectionRange_Callback_2_(this, start, end);
     return;
   }
 
   void stepDown([int n]) {
     if (n != null) {
-      _blink.BlinkHTMLInputElement.$_stepDown_1_Callback(this, n);
+      _blink.BlinkHTMLInputElement.instance.stepDown_Callback_1_(this, n);
       return;
     }
-    _blink.BlinkHTMLInputElement.$_stepDown_2_Callback(this);
+    _blink.BlinkHTMLInputElement.instance.stepDown_Callback_0_(this);
     return;
   }
 
   void stepUp([int n]) {
     if (n != null) {
-      _blink.BlinkHTMLInputElement.$_stepUp_1_Callback(this, n);
+      _blink.BlinkHTMLInputElement.instance.stepUp_Callback_1_(this, n);
       return;
     }
-    _blink.BlinkHTMLInputElement.$_stepUp_2_Callback(this);
+    _blink.BlinkHTMLInputElement.instance.stepUp_Callback_0_(this);
     return;
   }
-
-  /// Stream of `speechchange` events handled by this [InputElement].
-  @DomName('HTMLInputElement.onwebkitSpeechChange')
-  @DocsEditable()
-  // http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html#extending_html_elements
-  @Experimental()
-  ElementStream<Event> get onSpeechChange => speechChangeEvent.forElement(this);
 
 }
 
@@ -17925,25 +20251,25 @@ class InputMethodContext extends EventTarget {
   @DomName('InputMethodContext.compositionEndOffset')
   @DocsEditable()
   @Experimental() // untriaged
-  int get compositionEndOffset => _blink.BlinkInputMethodContext.$compositionEndOffset_Getter(this);
+  int get compositionEndOffset => _blink.BlinkInputMethodContext.instance.compositionEndOffset_Getter_(this);
 
   @DomName('InputMethodContext.compositionStartOffset')
   @DocsEditable()
   @Experimental() // untriaged
-  int get compositionStartOffset => _blink.BlinkInputMethodContext.$compositionStartOffset_Getter(this);
+  int get compositionStartOffset => _blink.BlinkInputMethodContext.instance.compositionStartOffset_Getter_(this);
 
   @DomName('InputMethodContext.locale')
   @DocsEditable()
-  String get locale => _blink.BlinkInputMethodContext.$locale_Getter(this);
+  String get locale => _blink.BlinkInputMethodContext.instance.locale_Getter_(this);
 
   @DomName('InputMethodContext.target')
   @DocsEditable()
   @Experimental() // untriaged
-  HtmlElement get target => _blink.BlinkInputMethodContext.$target_Getter(this);
+  HtmlElement get target => _blink.BlinkInputMethodContext.instance.target_Getter_(this);
 
   @DomName('InputMethodContext.confirmComposition')
   @DocsEditable()
-  void confirmComposition() => _blink.BlinkInputMethodContext.$confirmComposition_Callback(this);
+  void confirmComposition() => _blink.BlinkInputMethodContext.instance.confirmComposition_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -17960,10 +20286,15 @@ class InstallEvent extends InstallPhaseEvent {
   // To suppress missing implicit constructor warnings.
   factory InstallEvent._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('InstallEvent.reloadAll')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future reloadAll() => _blink.BlinkInstallEvent.instance.reloadAll_Callback_0_(this);
+
   @DomName('InstallEvent.replace')
   @DocsEditable()
   @Experimental() // untriaged
-  void replace() => _blink.BlinkInstallEvent.$replace_Callback(this);
+  void replace() => _blink.BlinkInstallEvent.instance.replace_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -17983,32 +20314,7 @@ class InstallPhaseEvent extends Event {
   @DomName('InstallPhaseEvent.waitUntil')
   @DocsEditable()
   @Experimental() // untriaged
-  void waitUntil(Object value) => _blink.BlinkInstallPhaseEvent.$waitUntil_Callback(this, value);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('KeyPair')
-@Experimental() // untriaged
-class KeyPair extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory KeyPair._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('KeyPair.privateKey')
-  @DocsEditable()
-  @Experimental() // untriaged
-  CryptoKey get privateKey => _blink.BlinkKeyPair.$privateKey_Getter(this);
-
-  @DomName('KeyPair.publicKey')
-  @DocsEditable()
-  @Experimental() // untriaged
-  CryptoKey get publicKey => _blink.BlinkKeyPair.$publicKey_Getter(this);
+  void waitUntil(Object value) => _blink.BlinkInstallPhaseEvent.instance.waitUntil_Callback_1_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18022,14 +20328,13 @@ class KeyboardEvent extends UIEvent {
   factory KeyboardEvent(String type,
       {Window view, bool canBubble: true, bool cancelable: true,
       int keyLocation: 1, bool ctrlKey: false,
-      bool altKey: false, bool shiftKey: false, bool metaKey: false,
-      bool altGraphKey: false}) {
+      bool altKey: false, bool shiftKey: false, bool metaKey: false}) {
     if (view == null) {
       view = window;
     }
     final e = document._createEvent("KeyboardEvent");
     e._initKeyboardEvent(type, canBubble, cancelable, view, "",
-        keyLocation, ctrlKey, altKey, shiftKey, metaKey, altGraphKey);
+        keyLocation, ctrlKey, altKey, shiftKey, metaKey);
     return e;
   }
 
@@ -18061,55 +20366,50 @@ class KeyboardEvent extends UIEvent {
   @Experimental() // untriaged
   static const int DOM_KEY_LOCATION_STANDARD = 0x00;
 
-  @DomName('KeyboardEvent.altGraphKey')
-  @DocsEditable()
-  @Experimental() // nonstandard
-  bool get altGraphKey => _blink.BlinkKeyboardEvent.$altGraphKey_Getter(this);
-
   @DomName('KeyboardEvent.altKey')
   @DocsEditable()
-  bool get altKey => _blink.BlinkKeyboardEvent.$altKey_Getter(this);
+  bool get altKey => _blink.BlinkKeyboardEvent.instance.altKey_Getter_(this);
 
   @DomName('KeyboardEvent.ctrlKey')
   @DocsEditable()
-  bool get ctrlKey => _blink.BlinkKeyboardEvent.$ctrlKey_Getter(this);
+  bool get ctrlKey => _blink.BlinkKeyboardEvent.instance.ctrlKey_Getter_(this);
 
   @DomName('KeyboardEvent.keyIdentifier')
   @DocsEditable()
   @Experimental() // nonstandard
-  String get _keyIdentifier => _blink.BlinkKeyboardEvent.$keyIdentifier_Getter(this);
+  String get _keyIdentifier => _blink.BlinkKeyboardEvent.instance.keyIdentifier_Getter_(this);
 
   @DomName('KeyboardEvent.keyLocation')
   @DocsEditable()
   @Experimental() // nonstandard
-  int get keyLocation => _blink.BlinkKeyboardEvent.$keyLocation_Getter(this);
+  int get keyLocation => _blink.BlinkKeyboardEvent.instance.keyLocation_Getter_(this);
 
   @DomName('KeyboardEvent.location')
   @DocsEditable()
   @Experimental() // untriaged
-  int get location => _blink.BlinkKeyboardEvent.$location_Getter(this);
+  int get location => _blink.BlinkKeyboardEvent.instance.location_Getter_(this);
 
   @DomName('KeyboardEvent.metaKey')
   @DocsEditable()
-  bool get metaKey => _blink.BlinkKeyboardEvent.$metaKey_Getter(this);
+  bool get metaKey => _blink.BlinkKeyboardEvent.instance.metaKey_Getter_(this);
 
   @DomName('KeyboardEvent.repeat')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get repeat => _blink.BlinkKeyboardEvent.$repeat_Getter(this);
+  bool get repeat => _blink.BlinkKeyboardEvent.instance.repeat_Getter_(this);
 
   @DomName('KeyboardEvent.shiftKey')
   @DocsEditable()
-  bool get shiftKey => _blink.BlinkKeyboardEvent.$shiftKey_Getter(this);
+  bool get shiftKey => _blink.BlinkKeyboardEvent.instance.shiftKey_Getter_(this);
 
   @DomName('KeyboardEvent.getModifierState')
   @DocsEditable()
   @Experimental() // untriaged
-  bool getModifierState(String keyArgument) => _blink.BlinkKeyboardEvent.$getModifierState_Callback(this, keyArgument);
+  bool getModifierState(String keyArgument) => _blink.BlinkKeyboardEvent.instance.getModifierState_Callback_1_(this, keyArgument);
 
   @DomName('KeyboardEvent.initKeyboardEvent')
   @DocsEditable()
-  void _initKeyboardEvent(String type, bool canBubble, bool cancelable, Window view, String keyIdentifier, int location, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, bool altGraphKey) => _blink.BlinkKeyboardEvent.$initKeyboardEvent_Callback(this, type, canBubble, cancelable, view, keyIdentifier, location, ctrlKey, altKey, shiftKey, metaKey, altGraphKey);
+  void _initKeyboardEvent(String type, bool canBubble, bool cancelable, Window view, String keyIdentifier, int location, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey) => _blink.BlinkKeyboardEvent.instance.initKeyboardEvent_Callback_10_(this, type, canBubble, cancelable, view, keyIdentifier, location, ctrlKey, altKey, shiftKey, metaKey);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18144,76 +20444,76 @@ class KeygenElement extends HtmlElement {
 
   @DomName('HTMLKeygenElement.autofocus')
   @DocsEditable()
-  bool get autofocus => _blink.BlinkHTMLKeygenElement.$autofocus_Getter(this);
+  bool get autofocus => _blink.BlinkHTMLKeygenElement.instance.autofocus_Getter_(this);
 
   @DomName('HTMLKeygenElement.autofocus')
   @DocsEditable()
-  void set autofocus(bool value) => _blink.BlinkHTMLKeygenElement.$autofocus_Setter(this, value);
+  void set autofocus(bool value) => _blink.BlinkHTMLKeygenElement.instance.autofocus_Setter_(this, value);
 
   @DomName('HTMLKeygenElement.challenge')
   @DocsEditable()
-  String get challenge => _blink.BlinkHTMLKeygenElement.$challenge_Getter(this);
+  String get challenge => _blink.BlinkHTMLKeygenElement.instance.challenge_Getter_(this);
 
   @DomName('HTMLKeygenElement.challenge')
   @DocsEditable()
-  void set challenge(String value) => _blink.BlinkHTMLKeygenElement.$challenge_Setter(this, value);
+  void set challenge(String value) => _blink.BlinkHTMLKeygenElement.instance.challenge_Setter_(this, value);
 
   @DomName('HTMLKeygenElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLKeygenElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLKeygenElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLKeygenElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLKeygenElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLKeygenElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLKeygenElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLKeygenElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLKeygenElement.instance.form_Getter_(this);
 
   @DomName('HTMLKeygenElement.keytype')
   @DocsEditable()
-  String get keytype => _blink.BlinkHTMLKeygenElement.$keytype_Getter(this);
+  String get keytype => _blink.BlinkHTMLKeygenElement.instance.keytype_Getter_(this);
 
   @DomName('HTMLKeygenElement.keytype')
   @DocsEditable()
-  void set keytype(String value) => _blink.BlinkHTMLKeygenElement.$keytype_Setter(this, value);
+  void set keytype(String value) => _blink.BlinkHTMLKeygenElement.instance.keytype_Setter_(this, value);
 
   @DomName('HTMLKeygenElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLKeygenElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLKeygenElement.instance.labels_Getter_(this);
 
   @DomName('HTMLKeygenElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLKeygenElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLKeygenElement.instance.name_Getter_(this);
 
   @DomName('HTMLKeygenElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLKeygenElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLKeygenElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLKeygenElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLKeygenElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLKeygenElement.instance.type_Getter_(this);
 
   @DomName('HTMLKeygenElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLKeygenElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLKeygenElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLKeygenElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLKeygenElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLKeygenElement.instance.validity_Getter_(this);
 
   @DomName('HTMLKeygenElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLKeygenElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLKeygenElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLKeygenElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLKeygenElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLKeygenElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLKeygenElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLKeygenElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLKeygenElement.instance.setCustomValidity_Callback_1_(this, error);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18241,11 +20541,11 @@ class LIElement extends HtmlElement {
 
   @DomName('HTMLLIElement.value')
   @DocsEditable()
-  int get value => _blink.BlinkHTMLLIElement.$value_Getter(this);
+  int get value => _blink.BlinkHTMLLIElement.instance.value_Getter_(this);
 
   @DomName('HTMLLIElement.value')
   @DocsEditable()
-  void set value(int value) => _blink.BlinkHTMLLIElement.$value_Setter(this, value);
+  void set value(int value) => _blink.BlinkHTMLLIElement.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18273,19 +20573,19 @@ class LabelElement extends HtmlElement {
 
   @DomName('HTMLLabelElement.control')
   @DocsEditable()
-  HtmlElement get control => _blink.BlinkHTMLLabelElement.$control_Getter(this);
+  HtmlElement get control => _blink.BlinkHTMLLabelElement.instance.control_Getter_(this);
 
   @DomName('HTMLLabelElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLLabelElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLLabelElement.instance.form_Getter_(this);
 
   @DomName('HTMLLabelElement.htmlFor')
   @DocsEditable()
-  String get htmlFor => _blink.BlinkHTMLLabelElement.$htmlFor_Getter(this);
+  String get htmlFor => _blink.BlinkHTMLLabelElement.instance.htmlFor_Getter_(this);
 
   @DomName('HTMLLabelElement.htmlFor')
   @DocsEditable()
-  void set htmlFor(String value) => _blink.BlinkHTMLLabelElement.$htmlFor_Setter(this, value);
+  void set htmlFor(String value) => _blink.BlinkHTMLLabelElement.instance.htmlFor_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18313,7 +20613,7 @@ class LegendElement extends HtmlElement {
 
   @DomName('HTMLLegendElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLLegendElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLLegendElement.instance.form_Getter_(this);
 
 }
 // Copyright (c) 2014, the Dart project authors.  Please see the AUTHORS file
@@ -18340,80 +20640,116 @@ class LinkElement extends HtmlElement {
   @DomName('HTMLLinkElement.crossOrigin')
   @DocsEditable()
   @Experimental() // untriaged
-  String get crossOrigin => _blink.BlinkHTMLLinkElement.$crossOrigin_Getter(this);
+  String get crossOrigin => _blink.BlinkHTMLLinkElement.instance.crossOrigin_Getter_(this);
 
   @DomName('HTMLLinkElement.crossOrigin')
   @DocsEditable()
   @Experimental() // untriaged
-  void set crossOrigin(String value) => _blink.BlinkHTMLLinkElement.$crossOrigin_Setter(this, value);
+  void set crossOrigin(String value) => _blink.BlinkHTMLLinkElement.instance.crossOrigin_Setter_(this, value);
 
   @DomName('HTMLLinkElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLLinkElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLLinkElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLLinkElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLLinkElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLLinkElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLLinkElement.href')
   @DocsEditable()
-  String get href => _blink.BlinkHTMLLinkElement.$href_Getter(this);
+  String get href => _blink.BlinkHTMLLinkElement.instance.href_Getter_(this);
 
   @DomName('HTMLLinkElement.href')
   @DocsEditable()
-  void set href(String value) => _blink.BlinkHTMLLinkElement.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkHTMLLinkElement.instance.href_Setter_(this, value);
 
   @DomName('HTMLLinkElement.hreflang')
   @DocsEditable()
-  String get hreflang => _blink.BlinkHTMLLinkElement.$hreflang_Getter(this);
+  String get hreflang => _blink.BlinkHTMLLinkElement.instance.hreflang_Getter_(this);
 
   @DomName('HTMLLinkElement.hreflang')
   @DocsEditable()
-  void set hreflang(String value) => _blink.BlinkHTMLLinkElement.$hreflang_Setter(this, value);
+  void set hreflang(String value) => _blink.BlinkHTMLLinkElement.instance.hreflang_Setter_(this, value);
 
   @DomName('HTMLLinkElement.import')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html#interface-import
   @Experimental()
-  Document get import => _blink.BlinkHTMLLinkElement.$import_Getter(this);
+  Document get import => _blink.BlinkHTMLLinkElement.instance.import_Getter_(this);
+
+  @DomName('HTMLLinkElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLLinkElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLLinkElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLLinkElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLLinkElement.media')
   @DocsEditable()
-  String get media => _blink.BlinkHTMLLinkElement.$media_Getter(this);
+  String get media => _blink.BlinkHTMLLinkElement.instance.media_Getter_(this);
 
   @DomName('HTMLLinkElement.media')
   @DocsEditable()
-  void set media(String value) => _blink.BlinkHTMLLinkElement.$media_Setter(this, value);
+  void set media(String value) => _blink.BlinkHTMLLinkElement.instance.media_Setter_(this, value);
 
   @DomName('HTMLLinkElement.rel')
   @DocsEditable()
-  String get rel => _blink.BlinkHTMLLinkElement.$rel_Getter(this);
+  String get rel => _blink.BlinkHTMLLinkElement.instance.rel_Getter_(this);
 
   @DomName('HTMLLinkElement.rel')
   @DocsEditable()
-  void set rel(String value) => _blink.BlinkHTMLLinkElement.$rel_Setter(this, value);
+  void set rel(String value) => _blink.BlinkHTMLLinkElement.instance.rel_Setter_(this, value);
 
   @DomName('HTMLLinkElement.sheet')
   @DocsEditable()
-  StyleSheet get sheet => _blink.BlinkHTMLLinkElement.$sheet_Getter(this);
+  StyleSheet get sheet => _blink.BlinkHTMLLinkElement.instance.sheet_Getter_(this);
 
   @DomName('HTMLLinkElement.sizes')
   @DocsEditable()
-  DomSettableTokenList get sizes => _blink.BlinkHTMLLinkElement.$sizes_Getter(this);
+  DomSettableTokenList get sizes => _blink.BlinkHTMLLinkElement.instance.sizes_Getter_(this);
 
   @DomName('HTMLLinkElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLLinkElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLLinkElement.instance.type_Getter_(this);
 
   @DomName('HTMLLinkElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLLinkElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLLinkElement.instance.type_Setter_(this, value);
 
 
     /// Checks if HTML imports are supported on the current platform.
   bool get supportsImport {
     return true;
   }
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('LocalCredential')
+@Experimental() // untriaged
+class LocalCredential extends Credential {
+  // To suppress missing implicit constructor warnings.
+  factory LocalCredential._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('LocalCredential.LocalCredential')
+  @DocsEditable()
+  factory LocalCredential(String id, String name, String avatarURL, String password) {
+    return _blink.BlinkLocalCredential.instance.constructorCallback_4_(id, name, avatarURL, password);
+  }
+
+  @DomName('LocalCredential.password')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get password => _blink.BlinkLocalCredential.instance.password_Getter_(this);
+
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -18429,93 +20765,93 @@ class Location extends NativeFieldWrapperClass2 implements LocationBase {
   @DomName('Location.ancestorOrigins')
   @DocsEditable()
   @Experimental() // nonstandard
-  List<String> get ancestorOrigins => _blink.BlinkLocation.$ancestorOrigins_Getter(this);
+  List<String> get ancestorOrigins => _blink.BlinkLocation.instance.ancestorOrigins_Getter_(this);
 
   @DomName('Location.hash')
   @DocsEditable()
-  String get hash => _blink.BlinkLocation.$hash_Getter(this);
+  String get hash => _blink.BlinkLocation.instance.hash_Getter_(this);
 
   @DomName('Location.hash')
   @DocsEditable()
-  void set hash(String value) => _blink.BlinkLocation.$hash_Setter(this, value);
+  void set hash(String value) => _blink.BlinkLocation.instance.hash_Setter_(this, value);
 
   @DomName('Location.host')
   @DocsEditable()
-  String get host => _blink.BlinkLocation.$host_Getter(this);
+  String get host => _blink.BlinkLocation.instance.host_Getter_(this);
 
   @DomName('Location.host')
   @DocsEditable()
-  void set host(String value) => _blink.BlinkLocation.$host_Setter(this, value);
+  void set host(String value) => _blink.BlinkLocation.instance.host_Setter_(this, value);
 
   @DomName('Location.hostname')
   @DocsEditable()
-  String get hostname => _blink.BlinkLocation.$hostname_Getter(this);
+  String get hostname => _blink.BlinkLocation.instance.hostname_Getter_(this);
 
   @DomName('Location.hostname')
   @DocsEditable()
-  void set hostname(String value) => _blink.BlinkLocation.$hostname_Setter(this, value);
+  void set hostname(String value) => _blink.BlinkLocation.instance.hostname_Setter_(this, value);
 
   @DomName('Location.href')
   @DocsEditable()
-  String get href => _blink.BlinkLocation.$href_Getter(this);
+  String get href => _blink.BlinkLocation.instance.href_Getter_(this);
 
   @DomName('Location.href')
   @DocsEditable()
-  void set href(String value) => _blink.BlinkLocation.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkLocation.instance.href_Setter_(this, value);
 
   @DomName('Location.origin')
   @DocsEditable()
   // http://url.spec.whatwg.org/#urlutils Webkit Only
   @Experimental() // non-standard
-  String get origin => _blink.BlinkLocation.$origin_Getter(this);
+  String get origin => _blink.BlinkLocation.instance.origin_Getter_(this);
 
   @DomName('Location.pathname')
   @DocsEditable()
-  String get pathname => _blink.BlinkLocation.$pathname_Getter(this);
+  String get pathname => _blink.BlinkLocation.instance.pathname_Getter_(this);
 
   @DomName('Location.pathname')
   @DocsEditable()
-  void set pathname(String value) => _blink.BlinkLocation.$pathname_Setter(this, value);
+  void set pathname(String value) => _blink.BlinkLocation.instance.pathname_Setter_(this, value);
 
   @DomName('Location.port')
   @DocsEditable()
-  String get port => _blink.BlinkLocation.$port_Getter(this);
+  String get port => _blink.BlinkLocation.instance.port_Getter_(this);
 
   @DomName('Location.port')
   @DocsEditable()
-  void set port(String value) => _blink.BlinkLocation.$port_Setter(this, value);
+  void set port(String value) => _blink.BlinkLocation.instance.port_Setter_(this, value);
 
   @DomName('Location.protocol')
   @DocsEditable()
-  String get protocol => _blink.BlinkLocation.$protocol_Getter(this);
+  String get protocol => _blink.BlinkLocation.instance.protocol_Getter_(this);
 
   @DomName('Location.protocol')
   @DocsEditable()
-  void set protocol(String value) => _blink.BlinkLocation.$protocol_Setter(this, value);
+  void set protocol(String value) => _blink.BlinkLocation.instance.protocol_Setter_(this, value);
 
   @DomName('Location.search')
   @DocsEditable()
-  String get search => _blink.BlinkLocation.$search_Getter(this);
+  String get search => _blink.BlinkLocation.instance.search_Getter_(this);
 
   @DomName('Location.search')
   @DocsEditable()
-  void set search(String value) => _blink.BlinkLocation.$search_Setter(this, value);
+  void set search(String value) => _blink.BlinkLocation.instance.search_Setter_(this, value);
 
   @DomName('Location.assign')
   @DocsEditable()
-  void assign(String url) => _blink.BlinkLocation.$assign_Callback(this, url);
+  void assign([String url]) => _blink.BlinkLocation.instance.assign_Callback_1_(this, url);
 
   @DomName('Location.reload')
   @DocsEditable()
-  void reload() => _blink.BlinkLocation.$reload_Callback(this);
+  void reload() => _blink.BlinkLocation.instance.reload_Callback_0_(this);
 
   @DomName('Location.replace')
   @DocsEditable()
-  void replace(String url) => _blink.BlinkLocation.$replace_Callback(this, url);
+  void replace(String url) => _blink.BlinkLocation.instance.replace_Callback_1_(this, url);
 
   @DomName('Location.toString')
   @DocsEditable()
-  String toString() => _blink.BlinkLocation.$toString_Callback(this);
+  String toString() => _blink.BlinkLocation.instance.toString_Callback_0_(this);
 
 
 }
@@ -18565,15 +20901,15 @@ class MapElement extends HtmlElement {
 
   @DomName('HTMLMapElement.areas')
   @DocsEditable()
-  List<Node> get areas => _blink.BlinkHTMLMapElement.$areas_Getter(this);
+  List<Node> get areas => _blink.BlinkHTMLMapElement.instance.areas_Getter_(this);
 
   @DomName('HTMLMapElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLMapElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLMapElement.instance.name_Getter_(this);
 
   @DomName('HTMLMapElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLMapElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLMapElement.instance.name_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18594,84 +20930,84 @@ class MediaController extends EventTarget {
   @DomName('MediaController.MediaController')
   @DocsEditable()
   factory MediaController() {
-    return _blink.BlinkMediaController.$_create_1constructorCallback();
+    return _blink.BlinkMediaController.instance.constructorCallback_0_();
   }
 
   @DomName('MediaController.buffered')
   @DocsEditable()
-  TimeRanges get buffered => _blink.BlinkMediaController.$buffered_Getter(this);
+  TimeRanges get buffered => _blink.BlinkMediaController.instance.buffered_Getter_(this);
 
   @DomName('MediaController.currentTime')
   @DocsEditable()
-  num get currentTime => _blink.BlinkMediaController.$currentTime_Getter(this);
+  num get currentTime => _blink.BlinkMediaController.instance.currentTime_Getter_(this);
 
   @DomName('MediaController.currentTime')
   @DocsEditable()
-  void set currentTime(num value) => _blink.BlinkMediaController.$currentTime_Setter(this, value);
+  void set currentTime(num value) => _blink.BlinkMediaController.instance.currentTime_Setter_(this, value);
 
   @DomName('MediaController.defaultPlaybackRate')
   @DocsEditable()
-  num get defaultPlaybackRate => _blink.BlinkMediaController.$defaultPlaybackRate_Getter(this);
+  num get defaultPlaybackRate => _blink.BlinkMediaController.instance.defaultPlaybackRate_Getter_(this);
 
   @DomName('MediaController.defaultPlaybackRate')
   @DocsEditable()
-  void set defaultPlaybackRate(num value) => _blink.BlinkMediaController.$defaultPlaybackRate_Setter(this, value);
+  void set defaultPlaybackRate(num value) => _blink.BlinkMediaController.instance.defaultPlaybackRate_Setter_(this, value);
 
   @DomName('MediaController.duration')
   @DocsEditable()
-  double get duration => _blink.BlinkMediaController.$duration_Getter(this);
+  double get duration => _blink.BlinkMediaController.instance.duration_Getter_(this);
 
   @DomName('MediaController.muted')
   @DocsEditable()
-  bool get muted => _blink.BlinkMediaController.$muted_Getter(this);
+  bool get muted => _blink.BlinkMediaController.instance.muted_Getter_(this);
 
   @DomName('MediaController.muted')
   @DocsEditable()
-  void set muted(bool value) => _blink.BlinkMediaController.$muted_Setter(this, value);
+  void set muted(bool value) => _blink.BlinkMediaController.instance.muted_Setter_(this, value);
 
   @DomName('MediaController.paused')
   @DocsEditable()
-  bool get paused => _blink.BlinkMediaController.$paused_Getter(this);
+  bool get paused => _blink.BlinkMediaController.instance.paused_Getter_(this);
 
   @DomName('MediaController.playbackRate')
   @DocsEditable()
-  num get playbackRate => _blink.BlinkMediaController.$playbackRate_Getter(this);
+  num get playbackRate => _blink.BlinkMediaController.instance.playbackRate_Getter_(this);
 
   @DomName('MediaController.playbackRate')
   @DocsEditable()
-  void set playbackRate(num value) => _blink.BlinkMediaController.$playbackRate_Setter(this, value);
+  void set playbackRate(num value) => _blink.BlinkMediaController.instance.playbackRate_Setter_(this, value);
 
   @DomName('MediaController.playbackState')
   @DocsEditable()
-  String get playbackState => _blink.BlinkMediaController.$playbackState_Getter(this);
+  String get playbackState => _blink.BlinkMediaController.instance.playbackState_Getter_(this);
 
   @DomName('MediaController.played')
   @DocsEditable()
-  TimeRanges get played => _blink.BlinkMediaController.$played_Getter(this);
+  TimeRanges get played => _blink.BlinkMediaController.instance.played_Getter_(this);
 
   @DomName('MediaController.seekable')
   @DocsEditable()
-  TimeRanges get seekable => _blink.BlinkMediaController.$seekable_Getter(this);
+  TimeRanges get seekable => _blink.BlinkMediaController.instance.seekable_Getter_(this);
 
   @DomName('MediaController.volume')
   @DocsEditable()
-  num get volume => _blink.BlinkMediaController.$volume_Getter(this);
+  num get volume => _blink.BlinkMediaController.instance.volume_Getter_(this);
 
   @DomName('MediaController.volume')
   @DocsEditable()
-  void set volume(num value) => _blink.BlinkMediaController.$volume_Setter(this, value);
+  void set volume(num value) => _blink.BlinkMediaController.instance.volume_Setter_(this, value);
 
   @DomName('MediaController.pause')
   @DocsEditable()
-  void pause() => _blink.BlinkMediaController.$pause_Callback(this);
+  void pause() => _blink.BlinkMediaController.instance.pause_Callback_0_(this);
 
   @DomName('MediaController.play')
   @DocsEditable()
-  void play() => _blink.BlinkMediaController.$play_Callback(this);
+  void play() => _blink.BlinkMediaController.instance.play_Callback_0_(this);
 
   @DomName('MediaController.unpause')
   @DocsEditable()
-  void unpause() => _blink.BlinkMediaController.$unpause_Callback(this);
+  void unpause() => _blink.BlinkMediaController.instance.unpause_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -18682,223 +21018,54 @@ class MediaController extends EventTarget {
 
 
 @DocsEditable()
+@DomName('MediaDeviceInfo')
+@Experimental() // untriaged
+class MediaDeviceInfo extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory MediaDeviceInfo._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('MediaDeviceInfo.deviceId')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get deviceId => _blink.BlinkMediaDeviceInfo.instance.deviceId_Getter_(this);
+
+  @DomName('MediaDeviceInfo.groupId')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get groupId => _blink.BlinkMediaDeviceInfo.instance.groupId_Getter_(this);
+
+  @DomName('MediaDeviceInfo.kind')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get kind => _blink.BlinkMediaDeviceInfo.instance.kind_Getter_(this);
+
+  @DomName('MediaDeviceInfo.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get label => _blink.BlinkMediaDeviceInfo.instance.label_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DomName('MediaDeviceInfoCallback')
+@Experimental() // untriaged
+typedef void MediaDeviceInfoCallback(List<MediaDeviceInfo> devices);
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+
+@DocsEditable()
 @DomName('HTMLMediaElement')
 @Unstable()
 class MediaElement extends HtmlElement {
   // To suppress missing implicit constructor warnings.
   factory MediaElement._() { throw new UnsupportedError("Not supported"); }
-
-  /**
-   * Static factory designed to expose `canplay` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.canplayEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> canPlayEvent = const EventStreamProvider<Event>('canplay');
-
-  /**
-   * Static factory designed to expose `canplaythrough` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.canplaythroughEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> canPlayThroughEvent = const EventStreamProvider<Event>('canplaythrough');
-
-  /**
-   * Static factory designed to expose `durationchange` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.durationchangeEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> durationChangeEvent = const EventStreamProvider<Event>('durationchange');
-
-  /**
-   * Static factory designed to expose `emptied` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.emptiedEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> emptiedEvent = const EventStreamProvider<Event>('emptied');
-
-  /**
-   * Static factory designed to expose `ended` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.endedEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> endedEvent = const EventStreamProvider<Event>('ended');
-
-  /**
-   * Static factory designed to expose `loadeddata` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.loadeddataEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> loadedDataEvent = const EventStreamProvider<Event>('loadeddata');
-
-  /**
-   * Static factory designed to expose `loadedmetadata` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.loadedmetadataEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> loadedMetadataEvent = const EventStreamProvider<Event>('loadedmetadata');
-
-  /**
-   * Static factory designed to expose `loadstart` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.loadstartEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> loadStartEvent = const EventStreamProvider<Event>('loadstart');
-
-  /**
-   * Static factory designed to expose `pause` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.pauseEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> pauseEvent = const EventStreamProvider<Event>('pause');
-
-  /**
-   * Static factory designed to expose `play` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.playEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> playEvent = const EventStreamProvider<Event>('play');
-
-  /**
-   * Static factory designed to expose `playing` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.playingEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> playingEvent = const EventStreamProvider<Event>('playing');
-
-  /**
-   * Static factory designed to expose `progress` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.progressEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> progressEvent = const EventStreamProvider<Event>('progress');
-
-  /**
-   * Static factory designed to expose `ratechange` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.ratechangeEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> rateChangeEvent = const EventStreamProvider<Event>('ratechange');
-
-  /**
-   * Static factory designed to expose `seeked` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.seekedEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> seekedEvent = const EventStreamProvider<Event>('seeked');
-
-  /**
-   * Static factory designed to expose `seeking` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.seekingEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> seekingEvent = const EventStreamProvider<Event>('seeking');
-
-  /**
-   * Static factory designed to expose `show` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.showEvent')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#event-media-loadstart
-  @Experimental()
-  static const EventStreamProvider<Event> showEvent = const EventStreamProvider<Event>('show');
-
-  /**
-   * Static factory designed to expose `stalled` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.stalledEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> stalledEvent = const EventStreamProvider<Event>('stalled');
-
-  /**
-   * Static factory designed to expose `suspend` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.suspendEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> suspendEvent = const EventStreamProvider<Event>('suspend');
-
-  /**
-   * Static factory designed to expose `timeupdate` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.timeupdateEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> timeUpdateEvent = const EventStreamProvider<Event>('timeupdate');
-
-  /**
-   * Static factory designed to expose `volumechange` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.volumechangeEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> volumeChangeEvent = const EventStreamProvider<Event>('volumechange');
-
-  /**
-   * Static factory designed to expose `waiting` events to event
-   * handlers that are not necessarily instances of [MediaElement].
-   *
-   * See [EventStreamProvider] for usage information.
-   */
-  @DomName('HTMLMediaElement.waitingEvent')
-  @DocsEditable()
-  static const EventStreamProvider<Event> waitingEvent = const EventStreamProvider<Event>('waiting');
 
   /**
    * Static factory designed to expose `keyadded` events to event
@@ -18998,175 +21165,195 @@ class MediaElement extends HtmlElement {
   @DocsEditable()
   static const int NETWORK_NO_SOURCE = 3;
 
-  @DomName('HTMLMediaElement.autoplay')
+  @DomName('HTMLMediaElement.audioTracks')
   @DocsEditable()
-  bool get autoplay => _blink.BlinkHTMLMediaElement.$autoplay_Getter(this);
+  @Experimental() // untriaged
+  AudioTrackList get audioTracks => _blink.BlinkHTMLMediaElement.instance.audioTracks_Getter_(this);
 
   @DomName('HTMLMediaElement.autoplay')
   @DocsEditable()
-  void set autoplay(bool value) => _blink.BlinkHTMLMediaElement.$autoplay_Setter(this, value);
+  bool get autoplay => _blink.BlinkHTMLMediaElement.instance.autoplay_Getter_(this);
+
+  @DomName('HTMLMediaElement.autoplay')
+  @DocsEditable()
+  void set autoplay(bool value) => _blink.BlinkHTMLMediaElement.instance.autoplay_Setter_(this, value);
 
   @DomName('HTMLMediaElement.buffered')
   @DocsEditable()
-  TimeRanges get buffered => _blink.BlinkHTMLMediaElement.$buffered_Getter(this);
+  TimeRanges get buffered => _blink.BlinkHTMLMediaElement.instance.buffered_Getter_(this);
 
   @DomName('HTMLMediaElement.controller')
   @DocsEditable()
-  MediaController get controller => _blink.BlinkHTMLMediaElement.$controller_Getter(this);
+  MediaController get controller => _blink.BlinkHTMLMediaElement.instance.controller_Getter_(this);
 
   @DomName('HTMLMediaElement.controller')
   @DocsEditable()
-  void set controller(MediaController value) => _blink.BlinkHTMLMediaElement.$controller_Setter(this, value);
+  void set controller(MediaController value) => _blink.BlinkHTMLMediaElement.instance.controller_Setter_(this, value);
 
   @DomName('HTMLMediaElement.controls')
   @DocsEditable()
-  bool get controls => _blink.BlinkHTMLMediaElement.$controls_Getter(this);
+  bool get controls => _blink.BlinkHTMLMediaElement.instance.controls_Getter_(this);
 
   @DomName('HTMLMediaElement.controls')
   @DocsEditable()
-  void set controls(bool value) => _blink.BlinkHTMLMediaElement.$controls_Setter(this, value);
+  void set controls(bool value) => _blink.BlinkHTMLMediaElement.instance.controls_Setter_(this, value);
 
   @DomName('HTMLMediaElement.crossOrigin')
   @DocsEditable()
   @Experimental() // untriaged
-  String get crossOrigin => _blink.BlinkHTMLMediaElement.$crossOrigin_Getter(this);
+  String get crossOrigin => _blink.BlinkHTMLMediaElement.instance.crossOrigin_Getter_(this);
 
   @DomName('HTMLMediaElement.crossOrigin')
   @DocsEditable()
   @Experimental() // untriaged
-  void set crossOrigin(String value) => _blink.BlinkHTMLMediaElement.$crossOrigin_Setter(this, value);
+  void set crossOrigin(String value) => _blink.BlinkHTMLMediaElement.instance.crossOrigin_Setter_(this, value);
 
   @DomName('HTMLMediaElement.currentSrc')
   @DocsEditable()
-  String get currentSrc => _blink.BlinkHTMLMediaElement.$currentSrc_Getter(this);
+  String get currentSrc => _blink.BlinkHTMLMediaElement.instance.currentSrc_Getter_(this);
 
   @DomName('HTMLMediaElement.currentTime')
   @DocsEditable()
-  num get currentTime => _blink.BlinkHTMLMediaElement.$currentTime_Getter(this);
+  num get currentTime => _blink.BlinkHTMLMediaElement.instance.currentTime_Getter_(this);
 
   @DomName('HTMLMediaElement.currentTime')
   @DocsEditable()
-  void set currentTime(num value) => _blink.BlinkHTMLMediaElement.$currentTime_Setter(this, value);
+  void set currentTime(num value) => _blink.BlinkHTMLMediaElement.instance.currentTime_Setter_(this, value);
 
   @DomName('HTMLMediaElement.defaultMuted')
   @DocsEditable()
-  bool get defaultMuted => _blink.BlinkHTMLMediaElement.$defaultMuted_Getter(this);
+  bool get defaultMuted => _blink.BlinkHTMLMediaElement.instance.defaultMuted_Getter_(this);
 
   @DomName('HTMLMediaElement.defaultMuted')
   @DocsEditable()
-  void set defaultMuted(bool value) => _blink.BlinkHTMLMediaElement.$defaultMuted_Setter(this, value);
+  void set defaultMuted(bool value) => _blink.BlinkHTMLMediaElement.instance.defaultMuted_Setter_(this, value);
 
   @DomName('HTMLMediaElement.defaultPlaybackRate')
   @DocsEditable()
-  num get defaultPlaybackRate => _blink.BlinkHTMLMediaElement.$defaultPlaybackRate_Getter(this);
+  num get defaultPlaybackRate => _blink.BlinkHTMLMediaElement.instance.defaultPlaybackRate_Getter_(this);
 
   @DomName('HTMLMediaElement.defaultPlaybackRate')
   @DocsEditable()
-  void set defaultPlaybackRate(num value) => _blink.BlinkHTMLMediaElement.$defaultPlaybackRate_Setter(this, value);
+  void set defaultPlaybackRate(num value) => _blink.BlinkHTMLMediaElement.instance.defaultPlaybackRate_Setter_(this, value);
 
   @DomName('HTMLMediaElement.duration')
   @DocsEditable()
-  double get duration => _blink.BlinkHTMLMediaElement.$duration_Getter(this);
+  double get duration => _blink.BlinkHTMLMediaElement.instance.duration_Getter_(this);
 
   @DomName('HTMLMediaElement.ended')
   @DocsEditable()
-  bool get ended => _blink.BlinkHTMLMediaElement.$ended_Getter(this);
+  bool get ended => _blink.BlinkHTMLMediaElement.instance.ended_Getter_(this);
 
   @DomName('HTMLMediaElement.error')
   @DocsEditable()
-  MediaError get error => _blink.BlinkHTMLMediaElement.$error_Getter(this);
+  MediaError get error => _blink.BlinkHTMLMediaElement.instance.error_Getter_(this);
+
+  @DomName('HTMLMediaElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLMediaElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLMediaElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLMediaElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLMediaElement.loop')
   @DocsEditable()
-  bool get loop => _blink.BlinkHTMLMediaElement.$loop_Getter(this);
+  bool get loop => _blink.BlinkHTMLMediaElement.instance.loop_Getter_(this);
 
   @DomName('HTMLMediaElement.loop')
   @DocsEditable()
-  void set loop(bool value) => _blink.BlinkHTMLMediaElement.$loop_Setter(this, value);
+  void set loop(bool value) => _blink.BlinkHTMLMediaElement.instance.loop_Setter_(this, value);
 
   @DomName('HTMLMediaElement.mediaGroup')
   @DocsEditable()
-  String get mediaGroup => _blink.BlinkHTMLMediaElement.$mediaGroup_Getter(this);
+  String get mediaGroup => _blink.BlinkHTMLMediaElement.instance.mediaGroup_Getter_(this);
 
   @DomName('HTMLMediaElement.mediaGroup')
   @DocsEditable()
-  void set mediaGroup(String value) => _blink.BlinkHTMLMediaElement.$mediaGroup_Setter(this, value);
+  void set mediaGroup(String value) => _blink.BlinkHTMLMediaElement.instance.mediaGroup_Setter_(this, value);
 
   @DomName('HTMLMediaElement.mediaKeys')
   @DocsEditable()
   // https://dvcs.w3.org/hg/html-media/raw-file/eme-v0.1/encrypted-media/encrypted-media.html
   @Experimental()
-  MediaKeys get mediaKeys => _blink.BlinkHTMLMediaElement.$mediaKeys_Getter(this);
+  MediaKeys get mediaKeys => _blink.BlinkHTMLMediaElement.instance.mediaKeys_Getter_(this);
 
   @DomName('HTMLMediaElement.muted')
   @DocsEditable()
-  bool get muted => _blink.BlinkHTMLMediaElement.$muted_Getter(this);
+  bool get muted => _blink.BlinkHTMLMediaElement.instance.muted_Getter_(this);
 
   @DomName('HTMLMediaElement.muted')
   @DocsEditable()
-  void set muted(bool value) => _blink.BlinkHTMLMediaElement.$muted_Setter(this, value);
+  void set muted(bool value) => _blink.BlinkHTMLMediaElement.instance.muted_Setter_(this, value);
 
   @DomName('HTMLMediaElement.networkState')
   @DocsEditable()
-  int get networkState => _blink.BlinkHTMLMediaElement.$networkState_Getter(this);
+  int get networkState => _blink.BlinkHTMLMediaElement.instance.networkState_Getter_(this);
 
   @DomName('HTMLMediaElement.paused')
   @DocsEditable()
-  bool get paused => _blink.BlinkHTMLMediaElement.$paused_Getter(this);
+  bool get paused => _blink.BlinkHTMLMediaElement.instance.paused_Getter_(this);
 
   @DomName('HTMLMediaElement.playbackRate')
   @DocsEditable()
-  num get playbackRate => _blink.BlinkHTMLMediaElement.$playbackRate_Getter(this);
+  num get playbackRate => _blink.BlinkHTMLMediaElement.instance.playbackRate_Getter_(this);
 
   @DomName('HTMLMediaElement.playbackRate')
   @DocsEditable()
-  void set playbackRate(num value) => _blink.BlinkHTMLMediaElement.$playbackRate_Setter(this, value);
+  void set playbackRate(num value) => _blink.BlinkHTMLMediaElement.instance.playbackRate_Setter_(this, value);
 
   @DomName('HTMLMediaElement.played')
   @DocsEditable()
-  TimeRanges get played => _blink.BlinkHTMLMediaElement.$played_Getter(this);
+  TimeRanges get played => _blink.BlinkHTMLMediaElement.instance.played_Getter_(this);
 
   @DomName('HTMLMediaElement.preload')
   @DocsEditable()
-  String get preload => _blink.BlinkHTMLMediaElement.$preload_Getter(this);
+  String get preload => _blink.BlinkHTMLMediaElement.instance.preload_Getter_(this);
 
   @DomName('HTMLMediaElement.preload')
   @DocsEditable()
-  void set preload(String value) => _blink.BlinkHTMLMediaElement.$preload_Setter(this, value);
+  void set preload(String value) => _blink.BlinkHTMLMediaElement.instance.preload_Setter_(this, value);
 
   @DomName('HTMLMediaElement.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkHTMLMediaElement.$readyState_Getter(this);
+  int get readyState => _blink.BlinkHTMLMediaElement.instance.readyState_Getter_(this);
 
   @DomName('HTMLMediaElement.seekable')
   @DocsEditable()
-  TimeRanges get seekable => _blink.BlinkHTMLMediaElement.$seekable_Getter(this);
+  TimeRanges get seekable => _blink.BlinkHTMLMediaElement.instance.seekable_Getter_(this);
 
   @DomName('HTMLMediaElement.seeking')
   @DocsEditable()
-  bool get seeking => _blink.BlinkHTMLMediaElement.$seeking_Getter(this);
+  bool get seeking => _blink.BlinkHTMLMediaElement.instance.seeking_Getter_(this);
 
   @DomName('HTMLMediaElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLMediaElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLMediaElement.instance.src_Getter_(this);
 
   @DomName('HTMLMediaElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLMediaElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLMediaElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLMediaElement.textTracks')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#dom-media-texttracks
   @Experimental()
-  TextTrackList get textTracks => _blink.BlinkHTMLMediaElement.$textTracks_Getter(this);
+  TextTrackList get textTracks => _blink.BlinkHTMLMediaElement.instance.textTracks_Getter_(this);
+
+  @DomName('HTMLMediaElement.videoTracks')
+  @DocsEditable()
+  @Experimental() // untriaged
+  VideoTrackList get videoTracks => _blink.BlinkHTMLMediaElement.instance.videoTracks_Getter_(this);
 
   @DomName('HTMLMediaElement.volume')
   @DocsEditable()
-  num get volume => _blink.BlinkHTMLMediaElement.$volume_Getter(this);
+  num get volume => _blink.BlinkHTMLMediaElement.instance.volume_Getter_(this);
 
   @DomName('HTMLMediaElement.volume')
   @DocsEditable()
-  void set volume(num value) => _blink.BlinkHTMLMediaElement.$volume_Setter(this, value);
+  void set volume(num value) => _blink.BlinkHTMLMediaElement.instance.volume_Setter_(this, value);
 
   @DomName('HTMLMediaElement.webkitAudioDecodedByteCount')
   @DocsEditable()
@@ -19174,7 +21361,7 @@ class MediaElement extends HtmlElement {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   @Experimental() // nonstandard
-  int get audioDecodedByteCount => _blink.BlinkHTMLMediaElement.$webkitAudioDecodedByteCount_Getter(this);
+  int get audioDecodedByteCount => _blink.BlinkHTMLMediaElement.instance.webkitAudioDecodedByteCount_Getter_(this);
 
   @DomName('HTMLMediaElement.webkitVideoDecodedByteCount')
   @DocsEditable()
@@ -19182,46 +21369,41 @@ class MediaElement extends HtmlElement {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   @Experimental() // nonstandard
-  int get videoDecodedByteCount => _blink.BlinkHTMLMediaElement.$webkitVideoDecodedByteCount_Getter(this);
+  int get videoDecodedByteCount => _blink.BlinkHTMLMediaElement.instance.webkitVideoDecodedByteCount_Getter_(this);
 
   TextTrack addTextTrack(String kind, [String label, String language]) {
     if (language != null) {
-      return _blink.BlinkHTMLMediaElement.$_addTextTrack_1_Callback(this, kind, label, language);
+      return _blink.BlinkHTMLMediaElement.instance.addTextTrack_Callback_3_(this, kind, label, language);
     }
     if (label != null) {
-      return _blink.BlinkHTMLMediaElement.$_addTextTrack_2_Callback(this, kind, label);
+      return _blink.BlinkHTMLMediaElement.instance.addTextTrack_Callback_2_(this, kind, label);
     }
-    return _blink.BlinkHTMLMediaElement.$_addTextTrack_3_Callback(this, kind);
+    return _blink.BlinkHTMLMediaElement.instance.addTextTrack_Callback_1_(this, kind);
   }
-
-  @DomName('HTMLMediaElement.canPlayType')
-  @DocsEditable()
-  @Unstable()
-  String canPlayType(String type, [String keySystem]) => _blink.BlinkHTMLMediaElement.$canPlayType_Callback(this, type, keySystem);
 
   @DomName('HTMLMediaElement.load')
   @DocsEditable()
-  void load() => _blink.BlinkHTMLMediaElement.$load_Callback(this);
+  void load() => _blink.BlinkHTMLMediaElement.instance.load_Callback_0_(this);
 
   @DomName('HTMLMediaElement.pause')
   @DocsEditable()
-  void pause() => _blink.BlinkHTMLMediaElement.$pause_Callback(this);
+  void pause() => _blink.BlinkHTMLMediaElement.instance.pause_Callback_0_(this);
 
   @DomName('HTMLMediaElement.play')
   @DocsEditable()
-  void play() => _blink.BlinkHTMLMediaElement.$play_Callback(this);
+  void play() => _blink.BlinkHTMLMediaElement.instance.play_Callback_0_(this);
 
   @DomName('HTMLMediaElement.setMediaKeys')
   @DocsEditable()
   @Experimental() // untriaged
-  void setMediaKeys(MediaKeys mediaKeys) => _blink.BlinkHTMLMediaElement.$setMediaKeys_Callback(this, mediaKeys);
+  void setMediaKeys(MediaKeys mediaKeys) => _blink.BlinkHTMLMediaElement.instance.setMediaKeys_Callback_1_(this, mediaKeys);
 
   void addKey(String keySystem, Uint8List key, [Uint8List initData, String sessionId]) {
     if (initData != null) {
-      _blink.BlinkHTMLMediaElement.$_webkitAddKey_1_Callback(this, keySystem, key, initData, sessionId);
+      _blink.BlinkHTMLMediaElement.instance.webkitAddKey_Callback_4_(this, keySystem, key, initData, sessionId);
       return;
     }
-    _blink.BlinkHTMLMediaElement.$_webkitAddKey_2_Callback(this, keySystem, key);
+    _blink.BlinkHTMLMediaElement.instance.webkitAddKey_Callback_2_(this, keySystem, key);
     return;
   }
 
@@ -19231,123 +21413,16 @@ class MediaElement extends HtmlElement {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/html-media/raw-file/eme-v0.1/encrypted-media/encrypted-media.html#extensions
-  void cancelKeyRequest(String keySystem, String sessionId) => _blink.BlinkHTMLMediaElement.$webkitCancelKeyRequest_Callback(this, keySystem, sessionId);
+  void cancelKeyRequest(String keySystem, String sessionId) => _blink.BlinkHTMLMediaElement.instance.webkitCancelKeyRequest_Callback_2_(this, keySystem, sessionId);
 
   void generateKeyRequest(String keySystem, [Uint8List initData]) {
     if (initData != null) {
-      _blink.BlinkHTMLMediaElement.$_webkitGenerateKeyRequest_1_Callback(this, keySystem, initData);
+      _blink.BlinkHTMLMediaElement.instance.webkitGenerateKeyRequest_Callback_2_(this, keySystem, initData);
       return;
     }
-    _blink.BlinkHTMLMediaElement.$_webkitGenerateKeyRequest_2_Callback(this, keySystem);
+    _blink.BlinkHTMLMediaElement.instance.webkitGenerateKeyRequest_Callback_1_(this, keySystem);
     return;
   }
-
-  /// Stream of `canplay` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.oncanplay')
-  @DocsEditable()
-  ElementStream<Event> get onCanPlay => canPlayEvent.forElement(this);
-
-  /// Stream of `canplaythrough` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.oncanplaythrough')
-  @DocsEditable()
-  ElementStream<Event> get onCanPlayThrough => canPlayThroughEvent.forElement(this);
-
-  /// Stream of `durationchange` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.ondurationchange')
-  @DocsEditable()
-  ElementStream<Event> get onDurationChange => durationChangeEvent.forElement(this);
-
-  /// Stream of `emptied` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onemptied')
-  @DocsEditable()
-  ElementStream<Event> get onEmptied => emptiedEvent.forElement(this);
-
-  /// Stream of `ended` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onended')
-  @DocsEditable()
-  ElementStream<Event> get onEnded => endedEvent.forElement(this);
-
-  /// Stream of `loadeddata` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onloadeddata')
-  @DocsEditable()
-  ElementStream<Event> get onLoadedData => loadedDataEvent.forElement(this);
-
-  /// Stream of `loadedmetadata` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onloadedmetadata')
-  @DocsEditable()
-  ElementStream<Event> get onLoadedMetadata => loadedMetadataEvent.forElement(this);
-
-  /// Stream of `loadstart` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onloadstart')
-  @DocsEditable()
-  ElementStream<Event> get onLoadStart => loadStartEvent.forElement(this);
-
-  /// Stream of `pause` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onpause')
-  @DocsEditable()
-  ElementStream<Event> get onPause => pauseEvent.forElement(this);
-
-  /// Stream of `play` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onplay')
-  @DocsEditable()
-  ElementStream<Event> get onPlay => playEvent.forElement(this);
-
-  /// Stream of `playing` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onplaying')
-  @DocsEditable()
-  ElementStream<Event> get onPlaying => playingEvent.forElement(this);
-
-  /// Stream of `progress` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onprogress')
-  @DocsEditable()
-  ElementStream<Event> get onProgress => progressEvent.forElement(this);
-
-  /// Stream of `ratechange` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onratechange')
-  @DocsEditable()
-  ElementStream<Event> get onRateChange => rateChangeEvent.forElement(this);
-
-  /// Stream of `seeked` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onseeked')
-  @DocsEditable()
-  ElementStream<Event> get onSeeked => seekedEvent.forElement(this);
-
-  /// Stream of `seeking` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onseeking')
-  @DocsEditable()
-  ElementStream<Event> get onSeeking => seekingEvent.forElement(this);
-
-  /// Stream of `show` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onshow')
-  @DocsEditable()
-  // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#event-media-loadstart
-  @Experimental()
-  ElementStream<Event> get onShow => showEvent.forElement(this);
-
-  /// Stream of `stalled` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onstalled')
-  @DocsEditable()
-  ElementStream<Event> get onStalled => stalledEvent.forElement(this);
-
-  /// Stream of `suspend` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onsuspend')
-  @DocsEditable()
-  ElementStream<Event> get onSuspend => suspendEvent.forElement(this);
-
-  /// Stream of `timeupdate` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.ontimeupdate')
-  @DocsEditable()
-  ElementStream<Event> get onTimeUpdate => timeUpdateEvent.forElement(this);
-
-  /// Stream of `volumechange` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onvolumechange')
-  @DocsEditable()
-  ElementStream<Event> get onVolumeChange => volumeChangeEvent.forElement(this);
-
-  /// Stream of `waiting` events handled by this [MediaElement].
-  @DomName('HTMLMediaElement.onwaiting')
-  @DocsEditable()
-  ElementStream<Event> get onWaiting => waitingEvent.forElement(this);
 
   /// Stream of `keyadded` events handled by this [MediaElement].
   @DomName('HTMLMediaElement.onwebkitkeyadded')
@@ -19377,6 +21452,15 @@ class MediaElement extends HtmlElement {
   @Experimental()
   ElementStream<MediaKeyEvent> get onNeedKey => needKeyEvent.forElement(this);
 
+  @DomName('HTMLMediaElement.canPlayType')
+  @DocsEditable()
+  @Unstable()
+  String canPlayType(String type, [String keySystem]) {
+    if (keySystem != null) {
+      return _blink.BlinkHTMLMediaElement.instance.canPlayType_Callback_2_(this, type, keySystem);
+    }
+    return _blink.BlinkHTMLMediaElement.instance.canPlayType_Callback_2_(this, type, null);
+  }
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -19416,7 +21500,7 @@ class MediaError extends NativeFieldWrapperClass2 {
 
   @DomName('MediaError.code')
   @DocsEditable()
-  int get code => _blink.BlinkMediaError.$code_Getter(this);
+  int get code => _blink.BlinkMediaError.instance.code_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19460,12 +21544,12 @@ class MediaKeyError extends NativeFieldWrapperClass2 {
 
   @DomName('MediaKeyError.code')
   @DocsEditable()
-  int get code => _blink.BlinkMediaKeyError.$code_Getter(this);
+  int get code => _blink.BlinkMediaKeyError.instance.code_Getter_(this);
 
   @DomName('MediaKeyError.systemCode')
   @DocsEditable()
   @Experimental() // non-standard
-  int get systemCode => _blink.BlinkMediaKeyError.$systemCode_Getter(this);
+  int get systemCode => _blink.BlinkMediaKeyError.instance.systemCode_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19485,31 +21569,31 @@ class MediaKeyEvent extends Event {
 
   @DomName('MediaKeyEvent.defaultURL')
   @DocsEditable()
-  String get defaultUrl => _blink.BlinkMediaKeyEvent.$defaultURL_Getter(this);
+  String get defaultUrl => _blink.BlinkMediaKeyEvent.instance.defaultURL_Getter_(this);
 
   @DomName('MediaKeyEvent.errorCode')
   @DocsEditable()
-  MediaKeyError get errorCode => _blink.BlinkMediaKeyEvent.$errorCode_Getter(this);
+  MediaKeyError get errorCode => _blink.BlinkMediaKeyEvent.instance.errorCode_Getter_(this);
 
   @DomName('MediaKeyEvent.initData')
   @DocsEditable()
-  Uint8List get initData => _blink.BlinkMediaKeyEvent.$initData_Getter(this);
+  Uint8List get initData => _blink.BlinkMediaKeyEvent.instance.initData_Getter_(this);
 
   @DomName('MediaKeyEvent.keySystem')
   @DocsEditable()
-  String get keySystem => _blink.BlinkMediaKeyEvent.$keySystem_Getter(this);
+  String get keySystem => _blink.BlinkMediaKeyEvent.instance.keySystem_Getter_(this);
 
   @DomName('MediaKeyEvent.message')
   @DocsEditable()
-  Uint8List get message => _blink.BlinkMediaKeyEvent.$message_Getter(this);
+  Uint8List get message => _blink.BlinkMediaKeyEvent.instance.message_Getter_(this);
 
   @DomName('MediaKeyEvent.sessionId')
   @DocsEditable()
-  String get sessionId => _blink.BlinkMediaKeyEvent.$sessionId_Getter(this);
+  String get sessionId => _blink.BlinkMediaKeyEvent.instance.sessionId_Getter_(this);
 
   @DomName('MediaKeyEvent.systemCode')
   @DocsEditable()
-  int get systemCode => _blink.BlinkMediaKeyEvent.$systemCode_Getter(this);
+  int get systemCode => _blink.BlinkMediaKeyEvent.instance.systemCode_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19529,11 +21613,11 @@ class MediaKeyMessageEvent extends Event {
 
   @DomName('MediaKeyMessageEvent.destinationURL')
   @DocsEditable()
-  String get destinationUrl => _blink.BlinkMediaKeyMessageEvent.$destinationURL_Getter(this);
+  String get destinationUrl => _blink.BlinkMediaKeyMessageEvent.instance.destinationURL_Getter_(this);
 
   @DomName('MediaKeyMessageEvent.message')
   @DocsEditable()
-  Uint8List get message => _blink.BlinkMediaKeyMessageEvent.$message_Getter(this);
+  ByteBuffer get message => _blink.BlinkMediaKeyMessageEvent.instance.message_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19554,11 +21638,11 @@ class MediaKeyNeededEvent extends Event {
   @DomName('MediaKeyNeededEvent.contentType')
   @DocsEditable()
   @Experimental() // untriaged
-  String get contentType => _blink.BlinkMediaKeyNeededEvent.$contentType_Getter(this);
+  String get contentType => _blink.BlinkMediaKeyNeededEvent.instance.contentType_Getter_(this);
 
   @DomName('MediaKeyNeededEvent.initData')
   @DocsEditable()
-  Uint8List get initData => _blink.BlinkMediaKeyNeededEvent.$initData_Getter(this);
+  Uint8List get initData => _blink.BlinkMediaKeyNeededEvent.instance.initData_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19576,26 +21660,37 @@ class MediaKeySession extends EventTarget {
   // To suppress missing implicit constructor warnings.
   factory MediaKeySession._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('MediaKeySession.closed')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future get closed => _blink.BlinkMediaKeySession.instance.closed_Getter_(this);
+
   @DomName('MediaKeySession.error')
   @DocsEditable()
-  MediaKeyError get error => _blink.BlinkMediaKeySession.$error_Getter(this);
+  MediaKeyError get error => _blink.BlinkMediaKeySession.instance.error_Getter_(this);
 
   @DomName('MediaKeySession.keySystem')
   @DocsEditable()
-  String get keySystem => _blink.BlinkMediaKeySession.$keySystem_Getter(this);
+  String get keySystem => _blink.BlinkMediaKeySession.instance.keySystem_Getter_(this);
 
   @DomName('MediaKeySession.sessionId')
   @DocsEditable()
-  String get sessionId => _blink.BlinkMediaKeySession.$sessionId_Getter(this);
+  String get sessionId => _blink.BlinkMediaKeySession.instance.sessionId_Getter_(this);
 
   @DomName('MediaKeySession.release')
   @DocsEditable()
   @Experimental() // untriaged
-  void release() => _blink.BlinkMediaKeySession.$release_Callback(this);
+  Future release() => _blink.BlinkMediaKeySession.instance.release_Callback_0_(this);
 
-  @DomName('MediaKeySession.update')
-  @DocsEditable()
-  void update(Uint8List response) => _blink.BlinkMediaKeySession.$update_Callback(this, response);
+  Future _update(response) {
+    if ((response is TypedData)) {
+      return _blink.BlinkMediaKeySession.instance.update_Callback_1_(this, response);
+    }
+    if ((response is ByteBuffer)) {
+      return _blink.BlinkMediaKeySession.instance.update_Callback_1_(this, response);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19613,19 +21708,35 @@ class MediaKeys extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory MediaKeys._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('MediaKeys.MediaKeys')
-  @DocsEditable()
-  factory MediaKeys(String keySystem) {
-    return _blink.BlinkMediaKeys.$_create_1constructorCallback(keySystem);
-  }
-
   @DomName('MediaKeys.keySystem')
   @DocsEditable()
-  String get keySystem => _blink.BlinkMediaKeys.$keySystem_Getter(this);
+  String get keySystem => _blink.BlinkMediaKeys.instance.keySystem_Getter_(this);
 
-  @DomName('MediaKeys.createSession')
+  @DomName('MediaKeys.create')
   @DocsEditable()
-  MediaKeySession createSession(String type, Uint8List initData) => _blink.BlinkMediaKeys.$createSession_Callback(this, type, initData);
+  @Experimental() // untriaged
+  static Future create(String keySystem) => _blink.BlinkMediaKeys.instance.create_Callback_1_(keySystem);
+
+  Future _createSession(String initDataType, initData, [String sessionType]) {
+    if ((initData is TypedData) && (initDataType is String) && sessionType == null) {
+      return _blink.BlinkMediaKeys.instance.createSession_Callback_2_(this, initDataType, initData);
+    }
+    if ((sessionType is String || sessionType == null) && (initData is TypedData) && (initDataType is String)) {
+      return _blink.BlinkMediaKeys.instance.createSession_Callback_3_(this, initDataType, initData, sessionType);
+    }
+    if ((initData is ByteBuffer) && (initDataType is String) && sessionType == null) {
+      return _blink.BlinkMediaKeys.instance.createSession_Callback_2_(this, initDataType, initData);
+    }
+    if ((sessionType is String || sessionType == null) && (initData is ByteBuffer) && (initDataType is String)) {
+      return _blink.BlinkMediaKeys.instance.createSession_Callback_3_(this, initDataType, initData, sessionType);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('MediaKeys.isTypeSupported')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static bool isTypeSupported(String keySystem, String contentType) => _blink.BlinkMediaKeys.instance.isTypeSupported_Callback_2_(keySystem, contentType);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19644,27 +21755,27 @@ class MediaList extends NativeFieldWrapperClass2 {
 
   @DomName('MediaList.length')
   @DocsEditable()
-  int get length => _blink.BlinkMediaList.$length_Getter(this);
+  int get length => _blink.BlinkMediaList.instance.length_Getter_(this);
 
   @DomName('MediaList.mediaText')
   @DocsEditable()
-  String get mediaText => _blink.BlinkMediaList.$mediaText_Getter(this);
+  String get mediaText => _blink.BlinkMediaList.instance.mediaText_Getter_(this);
 
   @DomName('MediaList.mediaText')
   @DocsEditable()
-  void set mediaText(String value) => _blink.BlinkMediaList.$mediaText_Setter(this, value);
+  void set mediaText(String value) => _blink.BlinkMediaList.instance.mediaText_Setter_(this, value);
 
   @DomName('MediaList.appendMedium')
   @DocsEditable()
-  void appendMedium(String newMedium) => _blink.BlinkMediaList.$appendMedium_Callback(this, newMedium);
+  void appendMedium(String newMedium) => _blink.BlinkMediaList.instance.appendMedium_Callback_1_(this, newMedium);
 
   @DomName('MediaList.deleteMedium')
   @DocsEditable()
-  void deleteMedium(String oldMedium) => _blink.BlinkMediaList.$deleteMedium_Callback(this, oldMedium);
+  void deleteMedium(String oldMedium) => _blink.BlinkMediaList.instance.deleteMedium_Callback_1_(this, oldMedium);
 
   @DomName('MediaList.item')
   @DocsEditable()
-  String item(int index) => _blink.BlinkMediaList.$item_Callback(this, index);
+  String item(int index) => _blink.BlinkMediaList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19683,11 +21794,11 @@ class MediaQueryList extends NativeFieldWrapperClass2 {
 
   @DomName('MediaQueryList.matches')
   @DocsEditable()
-  bool get matches => _blink.BlinkMediaQueryList.$matches_Getter(this);
+  bool get matches => _blink.BlinkMediaQueryList.instance.matches_Getter_(this);
 
   @DomName('MediaQueryList.media')
   @DocsEditable()
-  String get media => _blink.BlinkMediaQueryList.$media_Getter(this);
+  String get media => _blink.BlinkMediaQueryList.instance.media_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19708,49 +21819,49 @@ class MediaSource extends EventTarget {
   @DomName('MediaSource.MediaSource')
   @DocsEditable()
   factory MediaSource() {
-    return _blink.BlinkMediaSource.$_create_1constructorCallback();
+    return _blink.BlinkMediaSource.instance.constructorCallback_0_();
   }
 
   @DomName('MediaSource.activeSourceBuffers')
   @DocsEditable()
-  SourceBufferList get activeSourceBuffers => _blink.BlinkMediaSource.$activeSourceBuffers_Getter(this);
+  SourceBufferList get activeSourceBuffers => _blink.BlinkMediaSource.instance.activeSourceBuffers_Getter_(this);
 
   @DomName('MediaSource.duration')
   @DocsEditable()
-  num get duration => _blink.BlinkMediaSource.$duration_Getter(this);
+  num get duration => _blink.BlinkMediaSource.instance.duration_Getter_(this);
 
   @DomName('MediaSource.duration')
   @DocsEditable()
-  void set duration(num value) => _blink.BlinkMediaSource.$duration_Setter(this, value);
+  void set duration(num value) => _blink.BlinkMediaSource.instance.duration_Setter_(this, value);
 
   @DomName('MediaSource.readyState')
   @DocsEditable()
-  String get readyState => _blink.BlinkMediaSource.$readyState_Getter(this);
+  String get readyState => _blink.BlinkMediaSource.instance.readyState_Getter_(this);
 
   @DomName('MediaSource.sourceBuffers')
   @DocsEditable()
-  SourceBufferList get sourceBuffers => _blink.BlinkMediaSource.$sourceBuffers_Getter(this);
+  SourceBufferList get sourceBuffers => _blink.BlinkMediaSource.instance.sourceBuffers_Getter_(this);
 
   @DomName('MediaSource.addSourceBuffer')
   @DocsEditable()
-  SourceBuffer addSourceBuffer(String type) => _blink.BlinkMediaSource.$addSourceBuffer_Callback(this, type);
+  SourceBuffer addSourceBuffer(String type) => _blink.BlinkMediaSource.instance.addSourceBuffer_Callback_1_(this, type);
 
   void endOfStream([String error]) {
     if (error != null) {
-      _blink.BlinkMediaSource.$_endOfStream_1_Callback(this, error);
+      _blink.BlinkMediaSource.instance.endOfStream_Callback_1_(this, error);
       return;
     }
-    _blink.BlinkMediaSource.$_endOfStream_2_Callback(this);
+    _blink.BlinkMediaSource.instance.endOfStream_Callback_0_(this);
     return;
   }
 
   @DomName('MediaSource.isTypeSupported')
   @DocsEditable()
-  static bool isTypeSupported(String type) => _blink.BlinkMediaSource.$isTypeSupported_Callback(type);
+  static bool isTypeSupported(String type) => _blink.BlinkMediaSource.instance.isTypeSupported_Callback_1_(type);
 
   @DomName('MediaSource.removeSourceBuffer')
   @DocsEditable()
-  void removeSourceBuffer(SourceBuffer buffer) => _blink.BlinkMediaSource.$removeSourceBuffer_Callback(this, buffer);
+  void removeSourceBuffer(SourceBuffer buffer) => _blink.BlinkMediaSource.instance.removeSourceBuffer_Callback_1_(this, buffer);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -19800,53 +21911,63 @@ class MediaStream extends EventTarget {
   @DocsEditable()
   factory MediaStream([stream_OR_tracks]) {
     if (stream_OR_tracks == null) {
-      return _blink.BlinkMediaStream.$_create_1constructorCallback();
+      return _blink.BlinkMediaStream.instance.constructorCallback_0_();
     }
     if ((stream_OR_tracks is MediaStream || stream_OR_tracks == null)) {
-      return _blink.BlinkMediaStream.$_create_2constructorCallback(stream_OR_tracks);
+      return _blink.BlinkMediaStream.instance.constructorCallback_1_(stream_OR_tracks);
     }
     if ((stream_OR_tracks is List<MediaStreamTrack> || stream_OR_tracks == null)) {
-      return _blink.BlinkMediaStream.$_create_3constructorCallback(stream_OR_tracks);
+      return _blink.BlinkMediaStream.instance.constructorCallback_1_(stream_OR_tracks);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   @DomName('MediaStream.ended')
   @DocsEditable()
-  bool get ended => _blink.BlinkMediaStream.$ended_Getter(this);
+  bool get ended => _blink.BlinkMediaStream.instance.ended_Getter_(this);
 
   @DomName('MediaStream.id')
   @DocsEditable()
-  String get id => _blink.BlinkMediaStream.$id_Getter(this);
+  String get id => _blink.BlinkMediaStream.instance.id_Getter_(this);
 
   @DomName('MediaStream.label')
   @DocsEditable()
   @Experimental() // non-standard
-  String get label => _blink.BlinkMediaStream.$label_Getter(this);
+  String get label => _blink.BlinkMediaStream.instance.label_Getter_(this);
 
   @DomName('MediaStream.addTrack')
   @DocsEditable()
-  void addTrack(MediaStreamTrack track) => _blink.BlinkMediaStream.$addTrack_Callback(this, track);
+  void addTrack(MediaStreamTrack track) => _blink.BlinkMediaStream.instance.addTrack_Callback_1_(this, track);
+
+  @DomName('MediaStream.clone')
+  @DocsEditable()
+  @Experimental() // untriaged
+  MediaStream clone() => _blink.BlinkMediaStream.instance.clone_Callback_0_(this);
 
   @DomName('MediaStream.getAudioTracks')
   @DocsEditable()
-  List<MediaStreamTrack> getAudioTracks() => _blink.BlinkMediaStream.$getAudioTracks_Callback(this);
+  List<MediaStreamTrack> getAudioTracks() => _blink.BlinkMediaStream.instance.getAudioTracks_Callback_0_(this);
 
   @DomName('MediaStream.getTrackById')
   @DocsEditable()
-  MediaStreamTrack getTrackById(String trackId) => _blink.BlinkMediaStream.$getTrackById_Callback(this, trackId);
+  MediaStreamTrack getTrackById(String trackId) => _blink.BlinkMediaStream.instance.getTrackById_Callback_1_(this, trackId);
+
+  @DomName('MediaStream.getTracks')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<MediaStreamTrack> getTracks() => _blink.BlinkMediaStream.instance.getTracks_Callback_0_(this);
 
   @DomName('MediaStream.getVideoTracks')
   @DocsEditable()
-  List<MediaStreamTrack> getVideoTracks() => _blink.BlinkMediaStream.$getVideoTracks_Callback(this);
+  List<MediaStreamTrack> getVideoTracks() => _blink.BlinkMediaStream.instance.getVideoTracks_Callback_0_(this);
 
   @DomName('MediaStream.removeTrack')
   @DocsEditable()
-  void removeTrack(MediaStreamTrack track) => _blink.BlinkMediaStream.$removeTrack_Callback(this, track);
+  void removeTrack(MediaStreamTrack track) => _blink.BlinkMediaStream.instance.removeTrack_Callback_1_(this, track);
 
   @DomName('MediaStream.stop')
   @DocsEditable()
-  void stop() => _blink.BlinkMediaStream.$stop_Callback(this);
+  void stop() => _blink.BlinkMediaStream.instance.stop_Callback_0_(this);
 
   /// Stream of `addtrack` events handled by this [MediaStream].
   @DomName('MediaStream.onaddtrack')
@@ -19894,7 +22015,7 @@ class MediaStreamEvent extends Event {
 
   @DomName('MediaStreamEvent.stream')
   @DocsEditable()
-  MediaStream get stream => _blink.BlinkMediaStreamEvent.$stream_Getter(this);
+  MediaStream get stream => _blink.BlinkMediaStreamEvent.instance.stream_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -19945,32 +22066,42 @@ class MediaStreamTrack extends EventTarget {
 
   @DomName('MediaStreamTrack.enabled')
   @DocsEditable()
-  bool get enabled => _blink.BlinkMediaStreamTrack.$enabled_Getter(this);
+  bool get enabled => _blink.BlinkMediaStreamTrack.instance.enabled_Getter_(this);
 
   @DomName('MediaStreamTrack.enabled')
   @DocsEditable()
-  void set enabled(bool value) => _blink.BlinkMediaStreamTrack.$enabled_Setter(this, value);
+  void set enabled(bool value) => _blink.BlinkMediaStreamTrack.instance.enabled_Setter_(this, value);
 
   @DomName('MediaStreamTrack.id')
   @DocsEditable()
-  String get id => _blink.BlinkMediaStreamTrack.$id_Getter(this);
+  String get id => _blink.BlinkMediaStreamTrack.instance.id_Getter_(this);
 
   @DomName('MediaStreamTrack.kind')
   @DocsEditable()
-  String get kind => _blink.BlinkMediaStreamTrack.$kind_Getter(this);
+  String get kind => _blink.BlinkMediaStreamTrack.instance.kind_Getter_(this);
 
   @DomName('MediaStreamTrack.label')
   @DocsEditable()
-  String get label => _blink.BlinkMediaStreamTrack.$label_Getter(this);
+  String get label => _blink.BlinkMediaStreamTrack.instance.label_Getter_(this);
+
+  @DomName('MediaStreamTrack.muted')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get muted => _blink.BlinkMediaStreamTrack.instance.muted_Getter_(this);
 
   @DomName('MediaStreamTrack.readyState')
   @DocsEditable()
-  String get readyState => _blink.BlinkMediaStreamTrack.$readyState_Getter(this);
+  String get readyState => _blink.BlinkMediaStreamTrack.instance.readyState_Getter_(this);
+
+  @DomName('MediaStreamTrack.clone')
+  @DocsEditable()
+  @Experimental() // untriaged
+  MediaStreamTrack clone() => _blink.BlinkMediaStreamTrack.instance.clone_Callback_0_(this);
 
   @DomName('MediaStreamTrack.getSources')
   @DocsEditable()
   @Experimental() // untriaged
-  static void _getSources(MediaStreamTrackSourcesCallback callback) => _blink.BlinkMediaStreamTrack.$getSources_Callback(callback);
+  static void _getSources(MediaStreamTrackSourcesCallback callback) => _blink.BlinkMediaStreamTrack.instance.getSources_Callback_1_(callback);
 
   static Future<List<SourceInfo>> getSources() {
     var completer = new Completer<List<SourceInfo>>();
@@ -19982,7 +22113,7 @@ class MediaStreamTrack extends EventTarget {
   @DomName('MediaStreamTrack.stop')
   @DocsEditable()
   @Experimental() // untriaged
-  void stop() => _blink.BlinkMediaStreamTrack.$stop_Callback(this);
+  void stop() => _blink.BlinkMediaStreamTrack.instance.stop_Callback_0_(this);
 
   /// Stream of `ended` events handled by this [MediaStreamTrack].
   @DomName('MediaStreamTrack.onended')
@@ -20021,7 +22152,7 @@ class MediaStreamTrackEvent extends Event {
 
   @DomName('MediaStreamTrackEvent.track')
   @DocsEditable()
-  MediaStreamTrack get track => _blink.BlinkMediaStreamTrackEvent.$track_Getter(this);
+  MediaStreamTrack get track => _blink.BlinkMediaStreamTrackEvent.instance.track_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20050,15 +22181,15 @@ class MemoryInfo extends NativeFieldWrapperClass2 {
 
   @DomName('MemoryInfo.jsHeapSizeLimit')
   @DocsEditable()
-  int get jsHeapSizeLimit => _blink.BlinkMemoryInfo.$jsHeapSizeLimit_Getter(this);
+  int get jsHeapSizeLimit => _blink.BlinkMemoryInfo.instance.jsHeapSizeLimit_Getter_(this);
 
   @DomName('MemoryInfo.totalJSHeapSize')
   @DocsEditable()
-  int get totalJSHeapSize => _blink.BlinkMemoryInfo.$totalJSHeapSize_Getter(this);
+  int get totalJSHeapSize => _blink.BlinkMemoryInfo.instance.totalJSHeapSize_Getter_(this);
 
   @DomName('MemoryInfo.usedJSHeapSize')
   @DocsEditable()
-  int get usedJSHeapSize => _blink.BlinkMemoryInfo.$usedJSHeapSize_Getter(this);
+  int get usedJSHeapSize => _blink.BlinkMemoryInfo.instance.usedJSHeapSize_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20094,6 +22225,97 @@ class MenuElement extends HtmlElement {
    */
   MenuElement.created() : super.created();
 
+  @DomName('HTMLMenuElement.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get label => _blink.BlinkHTMLMenuElement.instance.label_Getter_(this);
+
+  @DomName('HTMLMenuElement.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set label(String value) => _blink.BlinkHTMLMenuElement.instance.label_Setter_(this, value);
+
+  @DomName('HTMLMenuElement.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get type => _blink.BlinkHTMLMenuElement.instance.type_Getter_(this);
+
+  @DomName('HTMLMenuElement.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set type(String value) => _blink.BlinkHTMLMenuElement.instance.type_Setter_(this, value);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('HTMLMenuItemElement')
+@Experimental() // untriaged
+class MenuItemElement extends HtmlElement {
+  // To suppress missing implicit constructor warnings.
+  factory MenuItemElement._() { throw new UnsupportedError("Not supported"); }
+  /**
+   * Constructor instantiated by the DOM when a custom element has been created.
+   *
+   * This can only be called by subclasses from their created constructor.
+   */
+  MenuItemElement.created() : super.created();
+
+  @DomName('HTMLMenuItemElement.checked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get checked => _blink.BlinkHTMLMenuItemElement.instance.checked_Getter_(this);
+
+  @DomName('HTMLMenuItemElement.checked')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set checked(bool value) => _blink.BlinkHTMLMenuItemElement.instance.checked_Setter_(this, value);
+
+  @DomName('HTMLMenuItemElement.default')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get defaultValue => _blink.BlinkHTMLMenuItemElement.instance.default_Getter_(this);
+
+  @DomName('HTMLMenuItemElement.default')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set defaultValue(bool value) => _blink.BlinkHTMLMenuItemElement.instance.default_Setter_(this, value);
+
+  @DomName('HTMLMenuItemElement.disabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get disabled => _blink.BlinkHTMLMenuItemElement.instance.disabled_Getter_(this);
+
+  @DomName('HTMLMenuItemElement.disabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set disabled(bool value) => _blink.BlinkHTMLMenuItemElement.instance.disabled_Setter_(this, value);
+
+  @DomName('HTMLMenuItemElement.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get label => _blink.BlinkHTMLMenuItemElement.instance.label_Getter_(this);
+
+  @DomName('HTMLMenuItemElement.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set label(String value) => _blink.BlinkHTMLMenuItemElement.instance.label_Setter_(this, value);
+
+  @DomName('HTMLMenuItemElement.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get type => _blink.BlinkHTMLMenuItemElement.instance.type_Getter_(this);
+
+  @DomName('HTMLMenuItemElement.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set type(String value) => _blink.BlinkHTMLMenuItemElement.instance.type_Setter_(this, value);
+
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -20111,11 +22333,11 @@ class MessageChannel extends NativeFieldWrapperClass2 {
 
   @DomName('MessageChannel.port1')
   @DocsEditable()
-  MessagePort get port1 => _blink.BlinkMessageChannel.$port1_Getter(this);
+  MessagePort get port1 => _blink.BlinkMessageChannel.instance.port1_Getter_(this);
 
   @DomName('MessageChannel.port2')
   @DocsEditable()
-  MessagePort get port2 => _blink.BlinkMessageChannel.$port2_Getter(this);
+  MessagePort get port2 => _blink.BlinkMessageChannel.instance.port2_Getter_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -20144,24 +22366,24 @@ class MessageEvent extends Event {
 
   @DomName('MessageEvent.data')
   @DocsEditable()
-  Object get data => _blink.BlinkMessageEvent.$data_Getter(this);
+  Object get data => _blink.BlinkMessageEvent.instance.data_Getter_(this);
 
   @DomName('MessageEvent.lastEventId')
   @DocsEditable()
   @Unstable()
-  String get lastEventId => _blink.BlinkMessageEvent.$lastEventId_Getter(this);
+  String get lastEventId => _blink.BlinkMessageEvent.instance.lastEventId_Getter_(this);
 
   @DomName('MessageEvent.origin')
   @DocsEditable()
-  String get origin => _blink.BlinkMessageEvent.$origin_Getter(this);
+  String get origin => _blink.BlinkMessageEvent.instance.origin_Getter_(this);
 
   @DomName('MessageEvent.source')
   @DocsEditable()
-  EventTarget get source => _blink.BlinkMessageEvent.$source_Getter(this);
+  EventTarget get source => _blink.BlinkMessageEvent.instance.source_Getter_(this);
 
   @DomName('MessageEvent.initMessageEvent')
   @DocsEditable()
-  void _initMessageEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Object dataArg, String originArg, String lastEventIdArg, Window sourceArg, List<MessagePort> messagePorts) => _blink.BlinkMessageEvent.$initMessageEvent_Callback(this, typeArg, canBubbleArg, cancelableArg, dataArg, originArg, lastEventIdArg, sourceArg, messagePorts);
+  void _initMessageEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Object dataArg, String originArg, String lastEventIdArg, Window sourceArg, List<MessagePort> messagePorts) => _blink.BlinkMessageEvent.instance.initMessageEvent_Callback_8_(this, typeArg, canBubbleArg, cancelableArg, dataArg, originArg, lastEventIdArg, sourceArg, messagePorts);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20190,15 +22412,15 @@ class MessagePort extends EventTarget {
 
   @DomName('MessagePort.close')
   @DocsEditable()
-  void close() => _blink.BlinkMessagePort.$close_Callback(this);
+  void close() => _blink.BlinkMessagePort.instance.close_Callback_0_(this);
 
   @DomName('MessagePort.postMessage')
   @DocsEditable()
-  void postMessage(Object message, [List<MessagePort> messagePorts]) => _blink.BlinkMessagePort.$postMessage_Callback(this, message, messagePorts);
+  void postMessage(Object message, [List<MessagePort> transfer]) => _blink.BlinkMessagePort.instance.postMessage_Callback_2_(this, message, transfer);
 
   @DomName('MessagePort.start')
   @DocsEditable()
-  void start() => _blink.BlinkMessagePort.$start_Callback(this);
+  void start() => _blink.BlinkMessagePort.instance.start_Callback_0_(this);
 
   /// Stream of `message` events handled by this [MessagePort].
   @DomName('MessagePort.onmessage')
@@ -20231,27 +22453,27 @@ class MetaElement extends HtmlElement {
 
   @DomName('HTMLMetaElement.content')
   @DocsEditable()
-  String get content => _blink.BlinkHTMLMetaElement.$content_Getter(this);
+  String get content => _blink.BlinkHTMLMetaElement.instance.content_Getter_(this);
 
   @DomName('HTMLMetaElement.content')
   @DocsEditable()
-  void set content(String value) => _blink.BlinkHTMLMetaElement.$content_Setter(this, value);
+  void set content(String value) => _blink.BlinkHTMLMetaElement.instance.content_Setter_(this, value);
 
   @DomName('HTMLMetaElement.httpEquiv')
   @DocsEditable()
-  String get httpEquiv => _blink.BlinkHTMLMetaElement.$httpEquiv_Getter(this);
+  String get httpEquiv => _blink.BlinkHTMLMetaElement.instance.httpEquiv_Getter_(this);
 
   @DomName('HTMLMetaElement.httpEquiv')
   @DocsEditable()
-  void set httpEquiv(String value) => _blink.BlinkHTMLMetaElement.$httpEquiv_Setter(this, value);
+  void set httpEquiv(String value) => _blink.BlinkHTMLMetaElement.instance.httpEquiv_Setter_(this, value);
 
   @DomName('HTMLMetaElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLMetaElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLMetaElement.instance.name_Getter_(this);
 
   @DomName('HTMLMetaElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLMetaElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLMetaElement.instance.name_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20271,11 +22493,11 @@ class Metadata extends NativeFieldWrapperClass2 {
 
   @DomName('Metadata.modificationTime')
   @DocsEditable()
-  DateTime get modificationTime => _blink.BlinkMetadata.$modificationTime_Getter(this);
+  DateTime get modificationTime => _blink.BlinkMetadata.instance.modificationTime_Getter_(this);
 
   @DomName('Metadata.size')
   @DocsEditable()
-  int get size => _blink.BlinkMetadata.$size_Getter(this);
+  int get size => _blink.BlinkMetadata.instance.size_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20321,56 +22543,56 @@ class MeterElement extends HtmlElement {
 
   @DomName('HTMLMeterElement.high')
   @DocsEditable()
-  num get high => _blink.BlinkHTMLMeterElement.$high_Getter(this);
+  num get high => _blink.BlinkHTMLMeterElement.instance.high_Getter_(this);
 
   @DomName('HTMLMeterElement.high')
   @DocsEditable()
-  void set high(num value) => _blink.BlinkHTMLMeterElement.$high_Setter(this, value);
+  void set high(num value) => _blink.BlinkHTMLMeterElement.instance.high_Setter_(this, value);
 
   @DomName('HTMLMeterElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLMeterElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLMeterElement.instance.labels_Getter_(this);
 
   @DomName('HTMLMeterElement.low')
   @DocsEditable()
-  num get low => _blink.BlinkHTMLMeterElement.$low_Getter(this);
+  num get low => _blink.BlinkHTMLMeterElement.instance.low_Getter_(this);
 
   @DomName('HTMLMeterElement.low')
   @DocsEditable()
-  void set low(num value) => _blink.BlinkHTMLMeterElement.$low_Setter(this, value);
+  void set low(num value) => _blink.BlinkHTMLMeterElement.instance.low_Setter_(this, value);
 
   @DomName('HTMLMeterElement.max')
   @DocsEditable()
-  num get max => _blink.BlinkHTMLMeterElement.$max_Getter(this);
+  num get max => _blink.BlinkHTMLMeterElement.instance.max_Getter_(this);
 
   @DomName('HTMLMeterElement.max')
   @DocsEditable()
-  void set max(num value) => _blink.BlinkHTMLMeterElement.$max_Setter(this, value);
+  void set max(num value) => _blink.BlinkHTMLMeterElement.instance.max_Setter_(this, value);
 
   @DomName('HTMLMeterElement.min')
   @DocsEditable()
-  num get min => _blink.BlinkHTMLMeterElement.$min_Getter(this);
+  num get min => _blink.BlinkHTMLMeterElement.instance.min_Getter_(this);
 
   @DomName('HTMLMeterElement.min')
   @DocsEditable()
-  void set min(num value) => _blink.BlinkHTMLMeterElement.$min_Setter(this, value);
+  void set min(num value) => _blink.BlinkHTMLMeterElement.instance.min_Setter_(this, value);
 
   @DomName('HTMLMeterElement.optimum')
   @DocsEditable()
-  num get optimum => _blink.BlinkHTMLMeterElement.$optimum_Getter(this);
+  num get optimum => _blink.BlinkHTMLMeterElement.instance.optimum_Getter_(this);
 
   @DomName('HTMLMeterElement.optimum')
   @DocsEditable()
-  void set optimum(num value) => _blink.BlinkHTMLMeterElement.$optimum_Setter(this, value);
+  void set optimum(num value) => _blink.BlinkHTMLMeterElement.instance.optimum_Setter_(this, value);
 
   @DomName('HTMLMeterElement.value')
   @DocsEditable()
-  num get value => _blink.BlinkHTMLMeterElement.$value_Getter(this);
+  num get value => _blink.BlinkHTMLMeterElement.instance.value_Getter_(this);
 
   @DomName('HTMLMeterElement.value')
   @DocsEditable()
-  void set value(num value) => _blink.BlinkHTMLMeterElement.$value_Setter(this, value);
+  void set value(num value) => _blink.BlinkHTMLMeterElement.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20408,13 +22630,18 @@ class MidiAccess extends EventTarget {
   @DocsEditable()
   static const EventStreamProvider<MidiConnectionEvent> disconnectEvent = const EventStreamProvider<MidiConnectionEvent>('disconnect');
 
+  @DomName('MIDIAccess.sysexEnabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get sysexEnabled => _blink.BlinkMIDIAccess.instance.sysexEnabled_Getter_(this);
+
   @DomName('MIDIAccess.inputs')
   @DocsEditable()
-  List<MidiInput> inputs() => _blink.BlinkMIDIAccess.$inputs_Callback(this);
+  List<MidiInput> inputs() => _blink.BlinkMIDIAccess.instance.inputs_Callback_0_(this);
 
   @DomName('MIDIAccess.outputs')
   @DocsEditable()
-  List<MidiOutput> outputs() => _blink.BlinkMIDIAccess.$outputs_Callback(this);
+  List<MidiOutput> outputs() => _blink.BlinkMIDIAccess.instance.outputs_Callback_0_(this);
 
   /// Stream of `connect` events handled by this [MidiAccess].
   @DomName('MIDIAccess.onconnect')
@@ -20435,26 +22662,6 @@ class MidiAccess extends EventTarget {
 
 
 @DocsEditable()
-@DomName('MIDIAccessPromise')
-@Experimental() // untriaged
-class MidiAccessPromise extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory MidiAccessPromise._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('MIDIAccessPromise.then')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void then(MidiSuccessCallback successCallback, MidiErrorCallback errorCallback) => _blink.BlinkMIDIAccessPromise.$then_Callback(this, successCallback, errorCallback);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
 @DomName('MIDIConnectionEvent')
 // http://webaudio.github.io/web-midi-api/#midiconnectionevent-interface
 @Experimental()
@@ -20464,7 +22671,7 @@ class MidiConnectionEvent extends Event {
 
   @DomName('MIDIConnectionEvent.port')
   @DocsEditable()
-  MidiPort get port => _blink.BlinkMIDIConnectionEvent.$port_Getter(this);
+  MidiPort get port => _blink.BlinkMIDIConnectionEvent.instance.port_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20515,11 +22722,11 @@ class MidiMessageEvent extends Event {
 
   @DomName('MIDIMessageEvent.data')
   @DocsEditable()
-  Uint8List get data => _blink.BlinkMIDIMessageEvent.$data_Getter(this);
+  Uint8List get data => _blink.BlinkMIDIMessageEvent.instance.data_Getter_(this);
 
   @DomName('MIDIMessageEvent.receivedTime')
   @DocsEditable()
-  double get receivedTime => _blink.BlinkMIDIMessageEvent.$receivedTime_Getter(this);
+  double get receivedTime => _blink.BlinkMIDIMessageEvent.instance.receivedTime_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20539,10 +22746,10 @@ class MidiOutput extends MidiPort {
 
   void send(Uint8List data, [num timestamp]) {
     if (timestamp != null) {
-      _blink.BlinkMIDIOutput.$_send_1_Callback(this, data, timestamp);
+      _blink.BlinkMIDIOutput.instance.send_Callback_2_(this, data, timestamp);
       return;
     }
-    _blink.BlinkMIDIOutput.$_send_2_Callback(this, data);
+    _blink.BlinkMIDIOutput.instance.send_Callback_1_(this, data);
     return;
   }
 
@@ -20574,23 +22781,23 @@ class MidiPort extends EventTarget {
 
   @DomName('MIDIPort.id')
   @DocsEditable()
-  String get id => _blink.BlinkMIDIPort.$id_Getter(this);
+  String get id => _blink.BlinkMIDIPort.instance.id_Getter_(this);
 
   @DomName('MIDIPort.manufacturer')
   @DocsEditable()
-  String get manufacturer => _blink.BlinkMIDIPort.$manufacturer_Getter(this);
+  String get manufacturer => _blink.BlinkMIDIPort.instance.manufacturer_Getter_(this);
 
   @DomName('MIDIPort.name')
   @DocsEditable()
-  String get name => _blink.BlinkMIDIPort.$name_Getter(this);
+  String get name => _blink.BlinkMIDIPort.instance.name_Getter_(this);
 
   @DomName('MIDIPort.type')
   @DocsEditable()
-  String get type => _blink.BlinkMIDIPort.$type_Getter(this);
+  String get type => _blink.BlinkMIDIPort.instance.type_Getter_(this);
 
   @DomName('MIDIPort.version')
   @DocsEditable()
-  String get version => _blink.BlinkMIDIPort.$version_Getter(this);
+  String get version => _blink.BlinkMIDIPort.instance.version_Getter_(this);
 
   /// Stream of `disconnect` events handled by this [MidiPort].
   @DomName('MIDIPort.ondisconnect')
@@ -20614,19 +22821,19 @@ class MimeType extends NativeFieldWrapperClass2 {
 
   @DomName('MimeType.description')
   @DocsEditable()
-  String get description => _blink.BlinkMimeType.$description_Getter(this);
+  String get description => _blink.BlinkMimeType.instance.description_Getter_(this);
 
   @DomName('MimeType.enabledPlugin')
   @DocsEditable()
-  Plugin get enabledPlugin => _blink.BlinkMimeType.$enabledPlugin_Getter(this);
+  Plugin get enabledPlugin => _blink.BlinkMimeType.instance.enabledPlugin_Getter_(this);
 
   @DomName('MimeType.suffixes')
   @DocsEditable()
-  String get suffixes => _blink.BlinkMimeType.$suffixes_Getter(this);
+  String get suffixes => _blink.BlinkMimeType.instance.suffixes_Getter_(this);
 
   @DomName('MimeType.type')
   @DocsEditable()
-  String get type => _blink.BlinkMimeType.$type_Getter(this);
+  String get type => _blink.BlinkMimeType.instance.type_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20645,15 +22852,15 @@ class MimeTypeArray extends NativeFieldWrapperClass2 with ListMixin<MimeType>, I
 
   @DomName('MimeTypeArray.length')
   @DocsEditable()
-  int get length => _blink.BlinkMimeTypeArray.$length_Getter(this);
+  int get length => _blink.BlinkMimeTypeArray.instance.length_Getter_(this);
 
   MimeType operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkMimeTypeArray.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkMimeTypeArray.instance.item_Callback_1_(this, index);
   }
 
-  MimeType _nativeIndexedGetter(int index) => _blink.BlinkMimeTypeArray.$NativeIndexed_Getter(this, index);
+  MimeType _nativeIndexedGetter(int index) => _blink.BlinkMimeTypeArray.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, MimeType value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -20695,15 +22902,15 @@ class MimeTypeArray extends NativeFieldWrapperClass2 with ListMixin<MimeType>, I
 
   @DomName('MimeTypeArray.__getter__')
   @DocsEditable()
-  MimeType __getter__(String name) => _blink.BlinkMimeTypeArray.$__getter___Callback(this, name);
+  MimeType __getter__(String name) => _blink.BlinkMimeTypeArray.instance.$__getter___Callback_1_(this, name);
 
   @DomName('MimeTypeArray.item')
   @DocsEditable()
-  MimeType item(int index) => _blink.BlinkMimeTypeArray.$item_Callback(this, index);
+  MimeType item(int index) => _blink.BlinkMimeTypeArray.instance.item_Callback_1_(this, index);
 
   @DomName('MimeTypeArray.namedItem')
   @DocsEditable()
-  MimeType namedItem(String name) => _blink.BlinkMimeTypeArray.$namedItem_Callback(this, name);
+  MimeType namedItem(String name) => _blink.BlinkMimeTypeArray.instance.namedItem_Callback_1_(this, name);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20728,19 +22935,19 @@ class ModElement extends HtmlElement {
 
   @DomName('HTMLModElement.cite')
   @DocsEditable()
-  String get cite => _blink.BlinkHTMLModElement.$cite_Getter(this);
+  String get cite => _blink.BlinkHTMLModElement.instance.cite_Getter_(this);
 
   @DomName('HTMLModElement.cite')
   @DocsEditable()
-  void set cite(String value) => _blink.BlinkHTMLModElement.$cite_Setter(this, value);
+  void set cite(String value) => _blink.BlinkHTMLModElement.instance.cite_Setter_(this, value);
 
   @DomName('HTMLModElement.dateTime')
   @DocsEditable()
-  String get dateTime => _blink.BlinkHTMLModElement.$dateTime_Getter(this);
+  String get dateTime => _blink.BlinkHTMLModElement.instance.dateTime_Getter_(this);
 
   @DomName('HTMLModElement.dateTime')
   @DocsEditable()
-  void set dateTime(String value) => _blink.BlinkHTMLModElement.$dateTime_Setter(this, value);
+  void set dateTime(String value) => _blink.BlinkHTMLModElement.instance.dateTime_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -20772,28 +22979,28 @@ class MouseEvent extends UIEvent {
 
   @DomName('MouseEvent.altKey')
   @DocsEditable()
-  bool get altKey => _blink.BlinkMouseEvent.$altKey_Getter(this);
+  bool get altKey => _blink.BlinkMouseEvent.instance.altKey_Getter_(this);
 
   @DomName('MouseEvent.button')
   @DocsEditable()
-  int get button => _blink.BlinkMouseEvent.$button_Getter(this);
+  int get button => _blink.BlinkMouseEvent.instance.button_Getter_(this);
 
   @DomName('MouseEvent.clientX')
   @DocsEditable()
-  int get _clientX => _blink.BlinkMouseEvent.$clientX_Getter(this);
+  int get _clientX => _blink.BlinkMouseEvent.instance.clientX_Getter_(this);
 
   @DomName('MouseEvent.clientY')
   @DocsEditable()
-  int get _clientY => _blink.BlinkMouseEvent.$clientY_Getter(this);
+  int get _clientY => _blink.BlinkMouseEvent.instance.clientY_Getter_(this);
 
   @DomName('MouseEvent.ctrlKey')
   @DocsEditable()
-  bool get ctrlKey => _blink.BlinkMouseEvent.$ctrlKey_Getter(this);
+  bool get ctrlKey => _blink.BlinkMouseEvent.instance.ctrlKey_Getter_(this);
 
   @DomName('MouseEvent.dataTransfer')
   @DocsEditable()
   @Unstable()
-  DataTransfer get dataTransfer => _blink.BlinkMouseEvent.$dataTransfer_Getter(this);
+  DataTransfer get dataTransfer => _blink.BlinkMouseEvent.instance.dataTransfer_Getter_(this);
 
   /**
    * The nonstandard way to access the element that the mouse comes
@@ -20805,37 +23012,52 @@ class MouseEvent extends UIEvent {
   @DomName('MouseEvent.fromElement')
   @DocsEditable()
   @deprecated
-  Node get fromElement => _blink.BlinkMouseEvent.$fromElement_Getter(this);
+  Node get fromElement => _blink.BlinkMouseEvent.instance.fromElement_Getter_(this);
 
   @DomName('MouseEvent.metaKey')
   @DocsEditable()
-  bool get metaKey => _blink.BlinkMouseEvent.$metaKey_Getter(this);
+  bool get metaKey => _blink.BlinkMouseEvent.instance.metaKey_Getter_(this);
+
+  @DomName('MouseEvent.movementX')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get _movementX => _blink.BlinkMouseEvent.instance.movementX_Getter_(this);
+
+  @DomName('MouseEvent.movementY')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get _movementY => _blink.BlinkMouseEvent.instance.movementY_Getter_(this);
 
   @DomName('MouseEvent.offsetX')
   @DocsEditable()
   @Unstable()
-  int get _offsetX => _blink.BlinkMouseEvent.$offsetX_Getter(this);
+  int get _offsetX => _blink.BlinkMouseEvent.instance.offsetX_Getter_(this);
 
   @DomName('MouseEvent.offsetY')
   @DocsEditable()
   @Unstable()
-  int get _offsetY => _blink.BlinkMouseEvent.$offsetY_Getter(this);
+  int get _offsetY => _blink.BlinkMouseEvent.instance.offsetY_Getter_(this);
+
+  @DomName('MouseEvent.region')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get region => _blink.BlinkMouseEvent.instance.region_Getter_(this);
 
   @DomName('MouseEvent.relatedTarget')
   @DocsEditable()
-  EventTarget get relatedTarget => _blink.BlinkMouseEvent.$relatedTarget_Getter(this);
+  EventTarget get relatedTarget => _blink.BlinkMouseEvent.instance.relatedTarget_Getter_(this);
 
   @DomName('MouseEvent.screenX')
   @DocsEditable()
-  int get _screenX => _blink.BlinkMouseEvent.$screenX_Getter(this);
+  int get _screenX => _blink.BlinkMouseEvent.instance.screenX_Getter_(this);
 
   @DomName('MouseEvent.screenY')
   @DocsEditable()
-  int get _screenY => _blink.BlinkMouseEvent.$screenY_Getter(this);
+  int get _screenY => _blink.BlinkMouseEvent.instance.screenY_Getter_(this);
 
   @DomName('MouseEvent.shiftKey')
   @DocsEditable()
-  bool get shiftKey => _blink.BlinkMouseEvent.$shiftKey_Getter(this);
+  bool get shiftKey => _blink.BlinkMouseEvent.instance.shiftKey_Getter_(this);
 
   /**
    * The nonstandard way to access the element that the mouse goes
@@ -20847,25 +23069,25 @@ class MouseEvent extends UIEvent {
   @DomName('MouseEvent.toElement')
   @DocsEditable()
   @deprecated
-  Node get toElement => _blink.BlinkMouseEvent.$toElement_Getter(this);
+  Node get toElement => _blink.BlinkMouseEvent.instance.toElement_Getter_(this);
 
   @DomName('MouseEvent.webkitMovementX')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get _webkitMovementX => _blink.BlinkMouseEvent.$webkitMovementX_Getter(this);
+  int get _webkitMovementX => _blink.BlinkMouseEvent.instance.webkitMovementX_Getter_(this);
 
   @DomName('MouseEvent.webkitMovementY')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get _webkitMovementY => _blink.BlinkMouseEvent.$webkitMovementY_Getter(this);
+  int get _webkitMovementY => _blink.BlinkMouseEvent.instance.webkitMovementY_Getter_(this);
 
   @DomName('MouseEvent.initMouseEvent')
   @DocsEditable()
-  void _initMouseEvent(String type, bool canBubble, bool cancelable, Window view, int detail, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int button, EventTarget relatedTarget) => _blink.BlinkMouseEvent.$initMouseEvent_Callback(this, type, canBubble, cancelable, view, detail, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey, button, relatedTarget);
+  void _initMouseEvent(String type, bool canBubble, bool cancelable, Window view, int detail, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey, int button, EventTarget relatedTarget) => _blink.BlinkMouseEvent.instance.initMouseEvent_Callback_15_(this, type, canBubble, cancelable, view, detail, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey, button, relatedTarget);
 
 
   @deprecated
@@ -20935,19 +23157,19 @@ class MutationObserver extends NativeFieldWrapperClass2 {
   factory MutationObserver._(MutationCallback callback) => _create(callback);
 
   @DocsEditable()
-  static MutationObserver _create(callback) => _blink.BlinkMutationObserver.$constructorCallback(callback);
+  static MutationObserver _create(callback) => _blink.BlinkMutationObserver.instance.constructorCallback_1_(callback);
 
   @DomName('MutationObserver.disconnect')
   @DocsEditable()
-  void disconnect() => _blink.BlinkMutationObserver.$disconnect_Callback(this);
+  void disconnect() => _blink.BlinkMutationObserver.instance.disconnect_Callback_0_(this);
 
   @DomName('MutationObserver.observe')
   @DocsEditable()
-  void _observe(Node target, Map options) => _blink.BlinkMutationObserver.$observe_Callback(this, target, options);
+  void _observe(Node target, Map options) => _blink.BlinkMutationObserver.instance.observe_Callback_2_(this, target, options);
 
   @DomName('MutationObserver.takeRecords')
   @DocsEditable()
-  List<MutationRecord> takeRecords() => _blink.BlinkMutationObserver.$takeRecords_Callback(this);
+  List<MutationRecord> takeRecords() => _blink.BlinkMutationObserver.instance.takeRecords_Callback_0_(this);
 
   /**
    * Checks to see if the mutation observer API is supported on the current
@@ -21032,39 +23254,39 @@ class MutationRecord extends NativeFieldWrapperClass2 {
 
   @DomName('MutationRecord.addedNodes')
   @DocsEditable()
-  List<Node> get addedNodes => _blink.BlinkMutationRecord.$addedNodes_Getter(this);
+  List<Node> get addedNodes => _blink.BlinkMutationRecord.instance.addedNodes_Getter_(this);
 
   @DomName('MutationRecord.attributeName')
   @DocsEditable()
-  String get attributeName => _blink.BlinkMutationRecord.$attributeName_Getter(this);
+  String get attributeName => _blink.BlinkMutationRecord.instance.attributeName_Getter_(this);
 
   @DomName('MutationRecord.attributeNamespace')
   @DocsEditable()
-  String get attributeNamespace => _blink.BlinkMutationRecord.$attributeNamespace_Getter(this);
+  String get attributeNamespace => _blink.BlinkMutationRecord.instance.attributeNamespace_Getter_(this);
 
   @DomName('MutationRecord.nextSibling')
   @DocsEditable()
-  Node get nextSibling => _blink.BlinkMutationRecord.$nextSibling_Getter(this);
+  Node get nextSibling => _blink.BlinkMutationRecord.instance.nextSibling_Getter_(this);
 
   @DomName('MutationRecord.oldValue')
   @DocsEditable()
-  String get oldValue => _blink.BlinkMutationRecord.$oldValue_Getter(this);
+  String get oldValue => _blink.BlinkMutationRecord.instance.oldValue_Getter_(this);
 
   @DomName('MutationRecord.previousSibling')
   @DocsEditable()
-  Node get previousSibling => _blink.BlinkMutationRecord.$previousSibling_Getter(this);
+  Node get previousSibling => _blink.BlinkMutationRecord.instance.previousSibling_Getter_(this);
 
   @DomName('MutationRecord.removedNodes')
   @DocsEditable()
-  List<Node> get removedNodes => _blink.BlinkMutationRecord.$removedNodes_Getter(this);
+  List<Node> get removedNodes => _blink.BlinkMutationRecord.instance.removedNodes_Getter_(this);
 
   @DomName('MutationRecord.target')
   @DocsEditable()
-  Node get target => _blink.BlinkMutationRecord.$target_Getter(this);
+  Node get target => _blink.BlinkMutationRecord.instance.target_Getter_(this);
 
   @DomName('MutationRecord.type')
   @DocsEditable()
-  String get type => _blink.BlinkMutationRecord.$type_Getter(this);
+  String get type => _blink.BlinkMutationRecord.instance.type_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -21073,7 +23295,7 @@ class MutationRecord extends NativeFieldWrapperClass2 {
 
 
 @DomName('Navigator')
-class Navigator extends NativeFieldWrapperClass2 implements NavigatorOnLine, NavigatorID {
+class Navigator extends NativeFieldWrapperClass2 implements NavigatorCpu, NavigatorLanguage, NavigatorOnLine, NavigatorID {
 
 
   /**
@@ -21134,60 +23356,76 @@ class Navigator extends NativeFieldWrapperClass2 implements NavigatorOnLine, Nav
   // To suppress missing implicit constructor warnings.
   factory Navigator._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('Navigator.connection')
+  @DocsEditable()
+  @Experimental() // untriaged
+  NetworkInformation get connection => _blink.BlinkNavigator.instance.connection_Getter_(this);
+
   @DomName('Navigator.cookieEnabled')
   @DocsEditable()
   @Unstable()
-  bool get cookieEnabled => _blink.BlinkNavigator.$cookieEnabled_Getter(this);
+  bool get cookieEnabled => _blink.BlinkNavigator.instance.cookieEnabled_Getter_(this);
+
+  @DomName('Navigator.credentials')
+  @DocsEditable()
+  @Experimental() // untriaged
+  CredentialsContainer get credentials => _blink.BlinkNavigator.instance.credentials_Getter_(this);
 
   @DomName('Navigator.doNotTrack')
   @DocsEditable()
   // http://www.w3.org/2011/tracking-protection/drafts/tracking-dnt.html#js-dom
   @Experimental() // experimental
-  String get doNotTrack => _blink.BlinkNavigator.$doNotTrack_Getter(this);
+  String get doNotTrack => _blink.BlinkNavigator.instance.doNotTrack_Getter_(this);
+
+  @DomName('Navigator.geofencing')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Geofencing get geofencing => _blink.BlinkNavigator.instance.geofencing_Getter_(this);
 
   @DomName('Navigator.geolocation')
   @DocsEditable()
   @Unstable()
-  Geolocation get geolocation => _blink.BlinkNavigator.$geolocation_Getter(this);
-
-  @DomName('Navigator.language')
-  @DocsEditable()
-  String get language => _blink.BlinkNavigator.$language_Getter(this);
+  Geolocation get geolocation => _blink.BlinkNavigator.instance.geolocation_Getter_(this);
 
   @DomName('Navigator.maxTouchPoints')
   @DocsEditable()
   @Experimental() // untriaged
-  int get maxTouchPoints => _blink.BlinkNavigator.$maxTouchPoints_Getter(this);
+  int get maxTouchPoints => _blink.BlinkNavigator.instance.maxTouchPoints_Getter_(this);
 
   @DomName('Navigator.mimeTypes')
   @DocsEditable()
   @Experimental() // nonstandard
-  MimeTypeArray get mimeTypes => _blink.BlinkNavigator.$mimeTypes_Getter(this);
+  MimeTypeArray get mimeTypes => _blink.BlinkNavigator.instance.mimeTypes_Getter_(this);
 
   @DomName('Navigator.productSub')
   @DocsEditable()
   @Unstable()
-  String get productSub => _blink.BlinkNavigator.$productSub_Getter(this);
+  String get productSub => _blink.BlinkNavigator.instance.productSub_Getter_(this);
+
+  @DomName('Navigator.push')
+  @DocsEditable()
+  @Experimental() // untriaged
+  PushManager get push => _blink.BlinkNavigator.instance.push_Getter_(this);
 
   @DomName('Navigator.serviceWorker')
   @DocsEditable()
   @Experimental() // untriaged
-  ServiceWorkerContainer get serviceWorker => _blink.BlinkNavigator.$serviceWorker_Getter(this);
+  ServiceWorkerContainer get serviceWorker => _blink.BlinkNavigator.instance.serviceWorker_Getter_(this);
 
   @DomName('Navigator.storageQuota')
   @DocsEditable()
   @Experimental() // untriaged
-  StorageQuota get storageQuota => _blink.BlinkNavigator.$storageQuota_Getter(this);
+  StorageQuota get storageQuota => _blink.BlinkNavigator.instance.storageQuota_Getter_(this);
 
   @DomName('Navigator.vendor')
   @DocsEditable()
   @Unstable()
-  String get vendor => _blink.BlinkNavigator.$vendor_Getter(this);
+  String get vendor => _blink.BlinkNavigator.instance.vendor_Getter_(this);
 
   @DomName('Navigator.vendorSub')
   @DocsEditable()
   @Unstable()
-  String get vendorSub => _blink.BlinkNavigator.$vendorSub_Getter(this);
+  String get vendorSub => _blink.BlinkNavigator.instance.vendorSub_Getter_(this);
 
   @DomName('Navigator.webkitPersistentStorage')
   @DocsEditable()
@@ -21195,7 +23433,7 @@ class Navigator extends NativeFieldWrapperClass2 implements NavigatorOnLine, Nav
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.w3.org/TR/quota-api/#accessing-storagequota
-  DeprecatedStorageQuota get persistentStorage => _blink.BlinkNavigator.$webkitPersistentStorage_Getter(this);
+  DeprecatedStorageQuota get persistentStorage => _blink.BlinkNavigator.instance.webkitPersistentStorage_Getter_(this);
 
   @DomName('Navigator.webkitTemporaryStorage')
   @DocsEditable()
@@ -21203,78 +23441,130 @@ class Navigator extends NativeFieldWrapperClass2 implements NavigatorOnLine, Nav
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.w3.org/TR/quota-api/#accessing-storagequota
-  DeprecatedStorageQuota get temporaryStorage => _blink.BlinkNavigator.$webkitTemporaryStorage_Getter(this);
+  DeprecatedStorageQuota get temporaryStorage => _blink.BlinkNavigator.instance.webkitTemporaryStorage_Getter_(this);
+
+  @DomName('Navigator.getBattery')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future getBattery() => _blink.BlinkNavigator.instance.getBattery_Callback_0_(this);
+
+  @DomName('Navigator.getGamepads')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<Gamepad> getGamepads() => _blink.BlinkNavigator.instance.getGamepads_Callback_0_(this);
 
   @DomName('Navigator.getStorageUpdates')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#navigatorstorageutils
   @Experimental()
-  void getStorageUpdates() => _blink.BlinkNavigator.$getStorageUpdates_Callback(this);
+  void getStorageUpdates() => _blink.BlinkNavigator.instance.getStorageUpdates_Callback_0_(this);
 
   @DomName('Navigator.isProtocolHandlerRegistered')
   @DocsEditable()
   @Experimental() // untriaged
-  String isProtocolHandlerRegistered(String scheme, String url) => _blink.BlinkNavigator.$isProtocolHandlerRegistered_Callback(this, scheme, url);
+  String isProtocolHandlerRegistered(String scheme, String url) => _blink.BlinkNavigator.instance.isProtocolHandlerRegistered_Callback_2_(this, scheme, url);
 
   @DomName('Navigator.registerProtocolHandler')
   @DocsEditable()
   @Unstable()
-  void registerProtocolHandler(String scheme, String url, String title) => _blink.BlinkNavigator.$registerProtocolHandler_Callback(this, scheme, url, title);
+  void registerProtocolHandler(String scheme, String url, String title) => _blink.BlinkNavigator.instance.registerProtocolHandler_Callback_3_(this, scheme, url, title);
 
-  @DomName('Navigator.requestMIDIAccess')
-  @DocsEditable()
-  @Experimental() // untriaged
-  MidiAccessPromise requestMidiAccess([Map options]) => _blink.BlinkNavigator.$requestMIDIAccess_Callback(this, options);
+  bool sendBeacon(String url, data) {
+    if ((data is String || data == null) && (url is String || url == null)) {
+      return _blink.BlinkNavigator.instance.sendBeacon_Callback_2_(this, url, data);
+    }
+    if ((data is TypedData || data == null) && (url is String || url == null)) {
+      return _blink.BlinkNavigator.instance.sendBeacon_Callback_2_(this, url, data);
+    }
+    if ((data is FormData || data == null) && (url is String || url == null)) {
+      return _blink.BlinkNavigator.instance.sendBeacon_Callback_2_(this, url, data);
+    }
+    if ((data is Blob || data == null) && (url is String || url == null)) {
+      return _blink.BlinkNavigator.instance.sendBeacon_Callback_2_(this, url, data);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
 
   @DomName('Navigator.unregisterProtocolHandler')
   @DocsEditable()
   @Experimental() // untriaged
-  void unregisterProtocolHandler(String scheme, String url) => _blink.BlinkNavigator.$unregisterProtocolHandler_Callback(this, scheme, url);
-
-  @DomName('Navigator.webkitGetGamepads')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // https://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html#widl-Navigator-getGamepads-Gamepad
-  List<Gamepad> getGamepads() => _blink.BlinkNavigator.$webkitGetGamepads_Callback(this);
+  void unregisterProtocolHandler(String scheme, String url) => _blink.BlinkNavigator.instance.unregisterProtocolHandler_Callback_2_(this, scheme, url);
 
   @DomName('Navigator.webkitGetUserMedia')
   @DocsEditable()
   // http://dev.w3.org/2011/webrtc/editor/getusermedia.html#navigatorusermedia
   @Experimental()
-  void _getUserMedia(Map options, _NavigatorUserMediaSuccessCallback successCallback, [_NavigatorUserMediaErrorCallback errorCallback]) => _blink.BlinkNavigator.$webkitGetUserMedia_Callback(this, options, successCallback, errorCallback);
+  void _getUserMedia(Map options, _NavigatorUserMediaSuccessCallback successCallback, _NavigatorUserMediaErrorCallback errorCallback) => _blink.BlinkNavigator.instance.webkitGetUserMedia_Callback_3_(this, options, successCallback, errorCallback);
+
+  @DomName('Navigator.hardwareConcurrency')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get hardwareConcurrency => _blink.BlinkNavigator.instance.hardwareConcurrency_Getter_(this);
 
   @DomName('Navigator.appCodeName')
   @DocsEditable()
   @Experimental() // non-standard
-  String get appCodeName => _blink.BlinkNavigator.$appCodeName_Getter(this);
+  String get appCodeName => _blink.BlinkNavigator.instance.appCodeName_Getter_(this);
 
   @DomName('Navigator.appName')
   @DocsEditable()
-  String get appName => _blink.BlinkNavigator.$appName_Getter(this);
+  String get appName => _blink.BlinkNavigator.instance.appName_Getter_(this);
 
   @DomName('Navigator.appVersion')
   @DocsEditable()
-  String get appVersion => _blink.BlinkNavigator.$appVersion_Getter(this);
+  String get appVersion => _blink.BlinkNavigator.instance.appVersion_Getter_(this);
+
+  @DomName('Navigator.dartEnabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get dartEnabled => _blink.BlinkNavigator.instance.dartEnabled_Getter_(this);
 
   @DomName('Navigator.platform')
   @DocsEditable()
-  String get platform => _blink.BlinkNavigator.$platform_Getter(this);
+  String get platform => _blink.BlinkNavigator.instance.platform_Getter_(this);
 
   @DomName('Navigator.product')
   @DocsEditable()
   @Unstable()
-  String get product => _blink.BlinkNavigator.$product_Getter(this);
+  String get product => _blink.BlinkNavigator.instance.product_Getter_(this);
 
   @DomName('Navigator.userAgent')
   @DocsEditable()
-  String get userAgent => _blink.BlinkNavigator.$userAgent_Getter(this);
+  String get userAgent => _blink.BlinkNavigator.instance.userAgent_Getter_(this);
+
+  @DomName('Navigator.language')
+  @DocsEditable()
+  String get language => _blink.BlinkNavigator.instance.language_Getter_(this);
+
+  @DomName('Navigator.languages')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<String> get languages => _blink.BlinkNavigator.instance.languages_Getter_(this);
 
   @DomName('Navigator.onLine')
   @DocsEditable()
   @Unstable()
-  bool get onLine => _blink.BlinkNavigator.$onLine_Getter(this);
+  bool get onLine => _blink.BlinkNavigator.instance.onLine_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('NavigatorCPU')
+@Experimental() // untriaged
+abstract class NavigatorCpu extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory NavigatorCpu._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('NavigatorCPU.hardwareConcurrency')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get hardwareConcurrency;
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -21294,32 +23584,62 @@ abstract class NavigatorID extends NativeFieldWrapperClass2 {
   @DomName('NavigatorID.appCodeName')
   @DocsEditable()
   @Experimental() // untriaged
-  String get appCodeName => _blink.BlinkNavigatorID.$appCodeName_Getter(this);
+  String get appCodeName;
 
   @DomName('NavigatorID.appName')
   @DocsEditable()
   @Experimental() // untriaged
-  String get appName => _blink.BlinkNavigatorID.$appName_Getter(this);
+  String get appName;
 
   @DomName('NavigatorID.appVersion')
   @DocsEditable()
   @Experimental() // untriaged
-  String get appVersion => _blink.BlinkNavigatorID.$appVersion_Getter(this);
+  String get appVersion;
+
+  @DomName('NavigatorID.dartEnabled')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get dartEnabled;
 
   @DomName('NavigatorID.platform')
   @DocsEditable()
   @Experimental() // untriaged
-  String get platform => _blink.BlinkNavigatorID.$platform_Getter(this);
+  String get platform;
 
   @DomName('NavigatorID.product')
   @DocsEditable()
   @Experimental() // untriaged
-  String get product => _blink.BlinkNavigatorID.$product_Getter(this);
+  String get product;
 
   @DomName('NavigatorID.userAgent')
   @DocsEditable()
   @Experimental() // untriaged
-  String get userAgent => _blink.BlinkNavigatorID.$userAgent_Getter(this);
+  String get userAgent;
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('NavigatorLanguage')
+@Experimental() // untriaged
+abstract class NavigatorLanguage extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory NavigatorLanguage._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('NavigatorLanguage.language')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get language;
+
+  @DomName('NavigatorLanguage.languages')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<String> get languages;
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -21339,7 +23659,7 @@ abstract class NavigatorOnLine extends NativeFieldWrapperClass2 {
   @DomName('NavigatorOnLine.onLine')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get onLine => _blink.BlinkNavigatorOnLine.$onLine_Getter(this);
+  bool get onLine;
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -21359,15 +23679,15 @@ class NavigatorUserMediaError extends NativeFieldWrapperClass2 {
 
   @DomName('NavigatorUserMediaError.constraintName')
   @DocsEditable()
-  String get constraintName => _blink.BlinkNavigatorUserMediaError.$constraintName_Getter(this);
+  String get constraintName => _blink.BlinkNavigatorUserMediaError.instance.constraintName_Getter_(this);
 
   @DomName('NavigatorUserMediaError.message')
   @DocsEditable()
-  String get message => _blink.BlinkNavigatorUserMediaError.$message_Getter(this);
+  String get message => _blink.BlinkNavigatorUserMediaError.instance.message_Getter_(this);
 
   @DomName('NavigatorUserMediaError.name')
   @DocsEditable()
-  String get name => _blink.BlinkNavigatorUserMediaError.$name_Getter(this);
+  String get name => _blink.BlinkNavigatorUserMediaError.instance.name_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -21392,6 +23712,26 @@ typedef void _NavigatorUserMediaErrorCallback(NavigatorUserMediaError error);
 // http://dev.w3.org/2011/webrtc/editor/getusermedia.html#idl-def-NavigatorUserMediaSuccessCallback
 @Experimental()
 typedef void _NavigatorUserMediaSuccessCallback(MediaStream stream);
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('NetworkInformation')
+@Experimental() // untriaged
+class NetworkInformation extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory NetworkInformation._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('NetworkInformation.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get type => _blink.BlinkNetworkInformation.instance.type_Getter_(this);
+
+}
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -21457,8 +23797,12 @@ class _ChildNodeListLazy extends ListBase<Node> implements NodeListWrapper {
   }
 
   void insertAll(int index, Iterable<Node> iterable) {
-    var item = this[index];
-    _this.insertAllBefore(iterable, item);
+    if (index == length) {
+      addAll(iterable);
+    } else {
+      var item = this[index];
+      _this.insertAllBefore(iterable, item);
+    }
   }
 
   void setAll(int index, Iterable<Node> iterable) {
@@ -21697,7 +24041,7 @@ class Node extends EventTarget {
 
   @DomName('Node.baseURI')
   @DocsEditable()
-  String get baseUri => _blink.BlinkNode.$baseURI_Getter(this);
+  String get baseUri => _blink.BlinkNode.instance.baseURI_Getter_(this);
 
   /**
    * A list of this node's children.
@@ -21710,7 +24054,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.childNodes')
   @DocsEditable()
-  List<Node> get childNodes => _blink.BlinkNode.$childNodes_Getter(this);
+  List<Node> get childNodes => _blink.BlinkNode.instance.childNodes_Getter_(this);
 
   /**
    * The first child of this node.
@@ -21723,7 +24067,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.firstChild')
   @DocsEditable()
-  Node get firstChild => _blink.BlinkNode.$firstChild_Getter(this);
+  Node get firstChild => _blink.BlinkNode.instance.firstChild_Getter_(this);
 
   /**
    * The last child of this node.
@@ -21736,15 +24080,15 @@ class Node extends EventTarget {
    */
   @DomName('Node.lastChild')
   @DocsEditable()
-  Node get lastChild => _blink.BlinkNode.$lastChild_Getter(this);
+  Node get lastChild => _blink.BlinkNode.instance.lastChild_Getter_(this);
 
   @DomName('Node.localName')
   @DocsEditable()
-  String get _localName => _blink.BlinkNode.$localName_Getter(this);
+  String get _localName => _blink.BlinkNode.instance.localName_Getter_(this);
 
   @DomName('Node.namespaceURI')
   @DocsEditable()
-  String get _namespaceUri => _blink.BlinkNode.$namespaceURI_Getter(this);
+  String get _namespaceUri => _blink.BlinkNode.instance.namespaceURI_Getter_(this);
 
   /**
    * The next sibling node.
@@ -21757,7 +24101,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.nextSibling')
   @DocsEditable()
-  Node get nextNode => _blink.BlinkNode.$nextSibling_Getter(this);
+  Node get nextNode => _blink.BlinkNode.instance.nextSibling_Getter_(this);
 
   /**
    * The name of this node.
@@ -21773,7 +24117,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.nodeName')
   @DocsEditable()
-  String get nodeName => _blink.BlinkNode.$nodeName_Getter(this);
+  String get nodeName => _blink.BlinkNode.instance.nodeName_Getter_(this);
 
   /**
    * The type of node.
@@ -21800,7 +24144,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.nodeType')
   @DocsEditable()
-  int get nodeType => _blink.BlinkNode.$nodeType_Getter(this);
+  int get nodeType => _blink.BlinkNode.instance.nodeType_Getter_(this);
 
   /**
    * The value of this node.
@@ -21816,7 +24160,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.nodeValue')
   @DocsEditable()
-  String get nodeValue => _blink.BlinkNode.$nodeValue_Getter(this);
+  String get nodeValue => _blink.BlinkNode.instance.nodeValue_Getter_(this);
 
   /**
    * The document this node belongs to.
@@ -21831,7 +24175,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.ownerDocument')
   @DocsEditable()
-  Document get ownerDocument => _blink.BlinkNode.$ownerDocument_Getter(this);
+  Document get ownerDocument => _blink.BlinkNode.instance.ownerDocument_Getter_(this);
 
   /**
    * The parent element of this node.
@@ -21847,7 +24191,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.parentElement')
   @DocsEditable()
-  Element get parent => _blink.BlinkNode.$parentElement_Getter(this);
+  Element get parent => _blink.BlinkNode.instance.parentElement_Getter_(this);
 
   /**
    * The parent node of this node.
@@ -21860,7 +24204,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.parentNode')
   @DocsEditable()
-  Node get parentNode => _blink.BlinkNode.$parentNode_Getter(this);
+  Node get parentNode => _blink.BlinkNode.instance.parentNode_Getter_(this);
 
   /**
    * The previous sibling node.
@@ -21873,7 +24217,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.previousSibling')
   @DocsEditable()
-  Node get previousNode => _blink.BlinkNode.$previousSibling_Getter(this);
+  Node get previousNode => _blink.BlinkNode.instance.previousSibling_Getter_(this);
 
   /**
    * All text within this node and its decendents.
@@ -21886,7 +24230,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.textContent')
   @DocsEditable()
-  String get text => _blink.BlinkNode.$textContent_Getter(this);
+  String get text => _blink.BlinkNode.instance.textContent_Getter_(this);
 
   /**
    * All text within this node and its decendents.
@@ -21899,7 +24243,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.textContent')
   @DocsEditable()
-  void set text(String value) => _blink.BlinkNode.$textContent_Setter(this, value);
+  void set text(String value) => _blink.BlinkNode.instance.textContent_Setter_(this, value);
 
   /**
    * Adds a node to the end of the child [nodes] list of this node.
@@ -21912,7 +24256,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.appendChild')
   @DocsEditable()
-  Node append(Node newChild) => _blink.BlinkNode.$appendChild_Callback(this, newChild);
+  Node append(Node newChild) => _blink.BlinkNode.instance.appendChild_Callback_1_(this, newChild);
 
   /**
    * Returns a copy of this node.
@@ -21928,7 +24272,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.cloneNode')
   @DocsEditable()
-  Node clone(bool deep) => _blink.BlinkNode.$cloneNode_Callback(this, deep);
+  Node clone(bool deep) => _blink.BlinkNode.instance.cloneNode_Callback_1_(this, deep);
 
   /**
    * Returns true if this node contains the specified node.
@@ -21940,7 +24284,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.contains')
   @DocsEditable()
-  bool contains(Node other) => _blink.BlinkNode.$contains_Callback(this, other);
+  bool contains(Node other) => _blink.BlinkNode.instance.contains_Callback_1_(this, other);
 
   /**
    * Returns true if this node has any children.
@@ -21953,7 +24297,7 @@ class Node extends EventTarget {
    */
   @DomName('Node.hasChildNodes')
   @DocsEditable()
-  bool hasChildNodes() => _blink.BlinkNode.$hasChildNodes_Callback(this);
+  bool hasChildNodes() => _blink.BlinkNode.instance.hasChildNodes_Callback_0_(this);
 
   /**
    * Inserts all of the nodes into this node directly before refChild.
@@ -21966,15 +24310,15 @@ class Node extends EventTarget {
    */
   @DomName('Node.insertBefore')
   @DocsEditable()
-  Node insertBefore(Node newChild, Node refChild) => _blink.BlinkNode.$insertBefore_Callback(this, newChild, refChild);
+  Node insertBefore(Node newChild, Node refChild) => _blink.BlinkNode.instance.insertBefore_Callback_2_(this, newChild, refChild);
 
   @DomName('Node.removeChild')
   @DocsEditable()
-  Node _removeChild(Node oldChild) => _blink.BlinkNode.$removeChild_Callback(this, oldChild);
+  Node _removeChild(Node oldChild) => _blink.BlinkNode.instance.removeChild_Callback_1_(this, oldChild);
 
   @DomName('Node.replaceChild')
   @DocsEditable()
-  Node _replaceChild(Node newChild, Node oldChild) => _blink.BlinkNode.$replaceChild_Callback(this, newChild, oldChild);
+  Node _replaceChild(Node newChild, Node oldChild) => _blink.BlinkNode.instance.replaceChild_Callback_2_(this, newChild, oldChild);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22052,31 +24396,31 @@ class NodeIterator extends NativeFieldWrapperClass2 {
 
   @DomName('NodeIterator.pointerBeforeReferenceNode')
   @DocsEditable()
-  bool get pointerBeforeReferenceNode => _blink.BlinkNodeIterator.$pointerBeforeReferenceNode_Getter(this);
+  bool get pointerBeforeReferenceNode => _blink.BlinkNodeIterator.instance.pointerBeforeReferenceNode_Getter_(this);
 
   @DomName('NodeIterator.referenceNode')
   @DocsEditable()
-  Node get referenceNode => _blink.BlinkNodeIterator.$referenceNode_Getter(this);
+  Node get referenceNode => _blink.BlinkNodeIterator.instance.referenceNode_Getter_(this);
 
   @DomName('NodeIterator.root')
   @DocsEditable()
-  Node get root => _blink.BlinkNodeIterator.$root_Getter(this);
+  Node get root => _blink.BlinkNodeIterator.instance.root_Getter_(this);
 
   @DomName('NodeIterator.whatToShow')
   @DocsEditable()
-  int get whatToShow => _blink.BlinkNodeIterator.$whatToShow_Getter(this);
+  int get whatToShow => _blink.BlinkNodeIterator.instance.whatToShow_Getter_(this);
 
   @DomName('NodeIterator.detach')
   @DocsEditable()
-  void detach() => _blink.BlinkNodeIterator.$detach_Callback(this);
+  void detach() => _blink.BlinkNodeIterator.instance.detach_Callback_0_(this);
 
   @DomName('NodeIterator.nextNode')
   @DocsEditable()
-  Node nextNode() => _blink.BlinkNodeIterator.$nextNode_Callback(this);
+  Node nextNode() => _blink.BlinkNodeIterator.instance.nextNode_Callback_0_(this);
 
   @DomName('NodeIterator.previousNode')
   @DocsEditable()
-  Node previousNode() => _blink.BlinkNodeIterator.$previousNode_Callback(this);
+  Node previousNode() => _blink.BlinkNodeIterator.instance.previousNode_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22094,15 +24438,15 @@ class NodeList extends NativeFieldWrapperClass2 with ListMixin<Node>, ImmutableL
 
   @DomName('NodeList.length')
   @DocsEditable()
-  int get length => _blink.BlinkNodeList.$length_Getter(this);
+  int get length => _blink.BlinkNodeList.instance.length_Getter_(this);
 
   Node operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkNodeList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkNodeList.instance.item_Callback_1_(this, index);
   }
 
-  Node _nativeIndexedGetter(int index) => _blink.BlinkNodeList.$NativeIndexed_Getter(this, index);
+  Node _nativeIndexedGetter(int index) => _blink.BlinkNodeList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Node value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -22144,7 +24488,7 @@ class NodeList extends NativeFieldWrapperClass2 with ListMixin<Node>, ImmutableL
 
   @DomName('NodeList.item')
   @DocsEditable()
-  Node _item(int index) => _blink.BlinkNodeList.$item_Callback(this, index);
+  Node _item(int index) => _blink.BlinkNodeList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -22215,50 +24559,55 @@ class Notification extends EventTarget {
   @DomName('Notification.Notification')
   @DocsEditable()
   static Notification _factoryNotification(String title, [Map options]) {
-    return _blink.BlinkNotification.$_create_1constructorCallback(title, options);
+    return _blink.BlinkNotification.instance.constructorCallback_2_(title, options);
   }
 
   @DomName('Notification.body')
   @DocsEditable()
   @Experimental() // untriaged
-  String get body => _blink.BlinkNotification.$body_Getter(this);
+  String get body => _blink.BlinkNotification.instance.body_Getter_(this);
 
   @DomName('Notification.dir')
   @DocsEditable()
   @Experimental() // nonstandard
-  String get dir => _blink.BlinkNotification.$dir_Getter(this);
+  String get dir => _blink.BlinkNotification.instance.dir_Getter_(this);
 
   @DomName('Notification.icon')
   @DocsEditable()
   @Experimental() // untriaged
-  String get icon => _blink.BlinkNotification.$icon_Getter(this);
+  String get icon => _blink.BlinkNotification.instance.icon_Getter_(this);
 
   @DomName('Notification.lang')
   @DocsEditable()
   @Experimental() // untriaged
-  String get lang => _blink.BlinkNotification.$lang_Getter(this);
+  String get lang => _blink.BlinkNotification.instance.lang_Getter_(this);
 
   @DomName('Notification.permission')
   @DocsEditable()
-  String get permission => _blink.BlinkNotification.$permission_Getter(this);
+  String get permission => _blink.BlinkNotification.instance.permission_Getter_();
 
   @DomName('Notification.tag')
   @DocsEditable()
   @Experimental() // nonstandard
-  String get tag => _blink.BlinkNotification.$tag_Getter(this);
+  String get tag => _blink.BlinkNotification.instance.tag_Getter_(this);
 
   @DomName('Notification.title')
   @DocsEditable()
   @Experimental() // untriaged
-  String get title => _blink.BlinkNotification.$title_Getter(this);
+  String get title => _blink.BlinkNotification.instance.title_Getter_(this);
 
   @DomName('Notification.close')
   @DocsEditable()
-  void close() => _blink.BlinkNotification.$close_Callback(this);
+  void close() => _blink.BlinkNotification.instance.close_Callback_0_(this);
 
-  @DomName('Notification.requestPermission')
-  @DocsEditable()
-  static void _requestPermission([_NotificationPermissionCallback callback]) => _blink.BlinkNotification.$requestPermission_Callback(callback);
+  static void _requestPermission([_NotificationPermissionCallback callback]) {
+    if (callback != null) {
+      _blink.BlinkNotification.instance.requestPermission_Callback_1_(callback);
+      return;
+    }
+    _blink.BlinkNotification.instance.requestPermission_Callback_0_();
+    return;
+  }
 
   static Future<String> requestPermission() {
     var completer = new Completer<String>();
@@ -22324,27 +24673,27 @@ class OListElement extends HtmlElement {
 
   @DomName('HTMLOListElement.reversed')
   @DocsEditable()
-  bool get reversed => _blink.BlinkHTMLOListElement.$reversed_Getter(this);
+  bool get reversed => _blink.BlinkHTMLOListElement.instance.reversed_Getter_(this);
 
   @DomName('HTMLOListElement.reversed')
   @DocsEditable()
-  void set reversed(bool value) => _blink.BlinkHTMLOListElement.$reversed_Setter(this, value);
+  void set reversed(bool value) => _blink.BlinkHTMLOListElement.instance.reversed_Setter_(this, value);
 
   @DomName('HTMLOListElement.start')
   @DocsEditable()
-  int get start => _blink.BlinkHTMLOListElement.$start_Getter(this);
+  int get start => _blink.BlinkHTMLOListElement.instance.start_Getter_(this);
 
   @DomName('HTMLOListElement.start')
   @DocsEditable()
-  void set start(int value) => _blink.BlinkHTMLOListElement.$start_Setter(this, value);
+  void set start(int value) => _blink.BlinkHTMLOListElement.instance.start_Setter_(this, value);
 
   @DomName('HTMLOListElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLOListElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLOListElement.instance.type_Getter_(this);
 
   @DomName('HTMLOListElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLOListElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLOListElement.instance.type_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22379,83 +24728,93 @@ class ObjectElement extends HtmlElement {
 
   @DomName('HTMLObjectElement.data')
   @DocsEditable()
-  String get data => _blink.BlinkHTMLObjectElement.$data_Getter(this);
+  String get data => _blink.BlinkHTMLObjectElement.instance.data_Getter_(this);
 
   @DomName('HTMLObjectElement.data')
   @DocsEditable()
-  void set data(String value) => _blink.BlinkHTMLObjectElement.$data_Setter(this, value);
+  void set data(String value) => _blink.BlinkHTMLObjectElement.instance.data_Setter_(this, value);
 
   @DomName('HTMLObjectElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLObjectElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLObjectElement.instance.form_Getter_(this);
 
   @DomName('HTMLObjectElement.height')
   @DocsEditable()
-  String get height => _blink.BlinkHTMLObjectElement.$height_Getter(this);
+  String get height => _blink.BlinkHTMLObjectElement.instance.height_Getter_(this);
 
   @DomName('HTMLObjectElement.height')
   @DocsEditable()
-  void set height(String value) => _blink.BlinkHTMLObjectElement.$height_Setter(this, value);
+  void set height(String value) => _blink.BlinkHTMLObjectElement.instance.height_Setter_(this, value);
+
+  @DomName('HTMLObjectElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLObjectElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLObjectElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLObjectElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLObjectElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLObjectElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLObjectElement.instance.name_Getter_(this);
 
   @DomName('HTMLObjectElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLObjectElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLObjectElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLObjectElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLObjectElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLObjectElement.instance.type_Getter_(this);
 
   @DomName('HTMLObjectElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLObjectElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLObjectElement.instance.type_Setter_(this, value);
 
   @DomName('HTMLObjectElement.useMap')
   @DocsEditable()
-  String get useMap => _blink.BlinkHTMLObjectElement.$useMap_Getter(this);
+  String get useMap => _blink.BlinkHTMLObjectElement.instance.useMap_Getter_(this);
 
   @DomName('HTMLObjectElement.useMap')
   @DocsEditable()
-  void set useMap(String value) => _blink.BlinkHTMLObjectElement.$useMap_Setter(this, value);
+  void set useMap(String value) => _blink.BlinkHTMLObjectElement.instance.useMap_Setter_(this, value);
 
   @DomName('HTMLObjectElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLObjectElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLObjectElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLObjectElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLObjectElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLObjectElement.instance.validity_Getter_(this);
 
   @DomName('HTMLObjectElement.width')
   @DocsEditable()
-  String get width => _blink.BlinkHTMLObjectElement.$width_Getter(this);
+  String get width => _blink.BlinkHTMLObjectElement.instance.width_Getter_(this);
 
   @DomName('HTMLObjectElement.width')
   @DocsEditable()
-  void set width(String value) => _blink.BlinkHTMLObjectElement.$width_Setter(this, value);
+  void set width(String value) => _blink.BlinkHTMLObjectElement.instance.width_Setter_(this, value);
 
   @DomName('HTMLObjectElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLObjectElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLObjectElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLObjectElement.__getter__')
   @DocsEditable()
-  bool __getter__(index_OR_name) => _blink.BlinkHTMLObjectElement.$__getter___Callback(this, index_OR_name);
+  bool __getter__(index_OR_name) => _blink.BlinkHTMLObjectElement.instance.$__getter___Callback_1_(this, index_OR_name);
 
   @DomName('HTMLObjectElement.__setter__')
   @DocsEditable()
-  void __setter__(index_OR_name, Node value) => _blink.BlinkHTMLObjectElement.$__setter___Callback(this, index_OR_name, value);
+  void __setter__(index_OR_name, Node value) => _blink.BlinkHTMLObjectElement.instance.$__setter___Callback_2_(this, index_OR_name, value);
 
   @DomName('HTMLObjectElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLObjectElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLObjectElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLObjectElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLObjectElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLObjectElement.instance.setCustomValidity_Callback_1_(this, error);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22483,19 +24842,19 @@ class OptGroupElement extends HtmlElement {
 
   @DomName('HTMLOptGroupElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLOptGroupElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLOptGroupElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLOptGroupElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLOptGroupElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLOptGroupElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLOptGroupElement.label')
   @DocsEditable()
-  String get label => _blink.BlinkHTMLOptGroupElement.$label_Getter(this);
+  String get label => _blink.BlinkHTMLOptGroupElement.instance.label_Getter_(this);
 
   @DomName('HTMLOptGroupElement.label')
   @DocsEditable()
-  void set label(String value) => _blink.BlinkHTMLOptGroupElement.$label_Setter(this, value);
+  void set label(String value) => _blink.BlinkHTMLOptGroupElement.instance.label_Setter_(this, value);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -22512,7 +24871,7 @@ class OptionElement extends HtmlElement {
   @DomName('HTMLOptionElement.HTMLOptionElement')
   @DocsEditable()
   factory OptionElement._([String data, String value, bool defaultSelected, bool selected]) {
-    return _blink.BlinkHTMLOptionElement.$_create_1constructorCallback(data, value, defaultSelected, selected);
+    return _blink.BlinkHTMLOptionElement.instance.constructorCallback_4_(data, value, defaultSelected, selected);
   }
   /**
    * Constructor instantiated by the DOM when a custom element has been created.
@@ -22523,51 +24882,51 @@ class OptionElement extends HtmlElement {
 
   @DomName('HTMLOptionElement.defaultSelected')
   @DocsEditable()
-  bool get defaultSelected => _blink.BlinkHTMLOptionElement.$defaultSelected_Getter(this);
+  bool get defaultSelected => _blink.BlinkHTMLOptionElement.instance.defaultSelected_Getter_(this);
 
   @DomName('HTMLOptionElement.defaultSelected')
   @DocsEditable()
-  void set defaultSelected(bool value) => _blink.BlinkHTMLOptionElement.$defaultSelected_Setter(this, value);
+  void set defaultSelected(bool value) => _blink.BlinkHTMLOptionElement.instance.defaultSelected_Setter_(this, value);
 
   @DomName('HTMLOptionElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLOptionElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLOptionElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLOptionElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLOptionElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLOptionElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLOptionElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLOptionElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLOptionElement.instance.form_Getter_(this);
 
   @DomName('HTMLOptionElement.index')
   @DocsEditable()
-  int get index => _blink.BlinkHTMLOptionElement.$index_Getter(this);
+  int get index => _blink.BlinkHTMLOptionElement.instance.index_Getter_(this);
 
   @DomName('HTMLOptionElement.label')
   @DocsEditable()
-  String get label => _blink.BlinkHTMLOptionElement.$label_Getter(this);
+  String get label => _blink.BlinkHTMLOptionElement.instance.label_Getter_(this);
 
   @DomName('HTMLOptionElement.label')
   @DocsEditable()
-  void set label(String value) => _blink.BlinkHTMLOptionElement.$label_Setter(this, value);
+  void set label(String value) => _blink.BlinkHTMLOptionElement.instance.label_Setter_(this, value);
 
   @DomName('HTMLOptionElement.selected')
   @DocsEditable()
-  bool get selected => _blink.BlinkHTMLOptionElement.$selected_Getter(this);
+  bool get selected => _blink.BlinkHTMLOptionElement.instance.selected_Getter_(this);
 
   @DomName('HTMLOptionElement.selected')
   @DocsEditable()
-  void set selected(bool value) => _blink.BlinkHTMLOptionElement.$selected_Setter(this, value);
+  void set selected(bool value) => _blink.BlinkHTMLOptionElement.instance.selected_Setter_(this, value);
 
   @DomName('HTMLOptionElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLOptionElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLOptionElement.instance.value_Getter_(this);
 
   @DomName('HTMLOptionElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLOptionElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLOptionElement.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22601,64 +24960,64 @@ class OutputElement extends HtmlElement {
 
   @DomName('HTMLOutputElement.defaultValue')
   @DocsEditable()
-  String get defaultValue => _blink.BlinkHTMLOutputElement.$defaultValue_Getter(this);
+  String get defaultValue => _blink.BlinkHTMLOutputElement.instance.defaultValue_Getter_(this);
 
   @DomName('HTMLOutputElement.defaultValue')
   @DocsEditable()
-  void set defaultValue(String value) => _blink.BlinkHTMLOutputElement.$defaultValue_Setter(this, value);
+  void set defaultValue(String value) => _blink.BlinkHTMLOutputElement.instance.defaultValue_Setter_(this, value);
 
   @DomName('HTMLOutputElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLOutputElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLOutputElement.instance.form_Getter_(this);
 
   @DomName('HTMLOutputElement.htmlFor')
   @DocsEditable()
-  DomSettableTokenList get htmlFor => _blink.BlinkHTMLOutputElement.$htmlFor_Getter(this);
+  DomSettableTokenList get htmlFor => _blink.BlinkHTMLOutputElement.instance.htmlFor_Getter_(this);
 
   @DomName('HTMLOutputElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLOutputElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLOutputElement.instance.labels_Getter_(this);
 
   @DomName('HTMLOutputElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLOutputElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLOutputElement.instance.name_Getter_(this);
 
   @DomName('HTMLOutputElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLOutputElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLOutputElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLOutputElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLOutputElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLOutputElement.instance.type_Getter_(this);
 
   @DomName('HTMLOutputElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLOutputElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLOutputElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLOutputElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLOutputElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLOutputElement.instance.validity_Getter_(this);
 
   @DomName('HTMLOutputElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLOutputElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLOutputElement.instance.value_Getter_(this);
 
   @DomName('HTMLOutputElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLOutputElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLOutputElement.instance.value_Setter_(this, value);
 
   @DomName('HTMLOutputElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLOutputElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLOutputElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLOutputElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLOutputElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLOutputElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLOutputElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLOutputElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLOutputElement.instance.setCustomValidity_Callback_1_(this, error);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22689,15 +25048,15 @@ class OverflowEvent extends Event {
 
   @DomName('OverflowEvent.horizontalOverflow')
   @DocsEditable()
-  bool get horizontalOverflow => _blink.BlinkOverflowEvent.$horizontalOverflow_Getter(this);
+  bool get horizontalOverflow => _blink.BlinkOverflowEvent.instance.horizontalOverflow_Getter_(this);
 
   @DomName('OverflowEvent.orient')
   @DocsEditable()
-  int get orient => _blink.BlinkOverflowEvent.$orient_Getter(this);
+  int get orient => _blink.BlinkOverflowEvent.instance.orient_Getter_(this);
 
   @DomName('OverflowEvent.verticalOverflow')
   @DocsEditable()
-  bool get verticalOverflow => _blink.BlinkOverflowEvent.$verticalOverflow_Getter(this);
+  bool get verticalOverflow => _blink.BlinkOverflowEvent.instance.verticalOverflow_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22717,7 +25076,7 @@ class PageTransitionEvent extends Event {
 
   @DomName('PageTransitionEvent.persisted')
   @DocsEditable()
-  bool get persisted => _blink.BlinkPageTransitionEvent.$persisted_Getter(this);
+  bool get persisted => _blink.BlinkPageTransitionEvent.instance.persisted_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22770,19 +25129,19 @@ class ParamElement extends HtmlElement {
 
   @DomName('HTMLParamElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLParamElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLParamElement.instance.name_Getter_(this);
 
   @DomName('HTMLParamElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLParamElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLParamElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLParamElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLParamElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLParamElement.instance.value_Getter_(this);
 
   @DomName('HTMLParamElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLParamElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLParamElement.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22802,22 +25161,32 @@ abstract class ParentNode extends NativeFieldWrapperClass2 {
   @DomName('ParentNode.childElementCount')
   @DocsEditable()
   @Experimental() // untriaged
-  int get _childElementCount => _blink.BlinkParentNode.$childElementCount_Getter(this);
+  int get _childElementCount;
 
   @DomName('ParentNode.children')
   @DocsEditable()
   @Experimental() // untriaged
-  List<Node> get _children => _blink.BlinkParentNode.$children_Getter(this);
+  List<Node> get _children;
 
   @DomName('ParentNode.firstElementChild')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get _firstElementChild => _blink.BlinkParentNode.$firstElementChild_Getter(this);
+  Element get _firstElementChild;
 
   @DomName('ParentNode.lastElementChild')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get _lastElementChild => _blink.BlinkParentNode.$lastElementChild_Getter(this);
+  Element get _lastElementChild;
+
+  @DomName('ParentNode.querySelector')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Element querySelector(String selectors);
+
+  @DomName('ParentNode.querySelectorAll')
+  @DocsEditable()
+  @Experimental() // untriaged
+  List<Node> querySelectorAll(String selectors);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22828,59 +25197,80 @@ abstract class ParentNode extends NativeFieldWrapperClass2 {
 
 
 @DocsEditable()
-@DomName('Path')
-// http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#path-objects
-@Experimental()
-class Path extends NativeFieldWrapperClass2 {
+@DomName('Path2D')
+@Experimental() // untriaged
+class Path2D extends NativeFieldWrapperClass2 implements _CanvasPathMethods {
   // To suppress missing implicit constructor warnings.
-  factory Path._() { throw new UnsupportedError("Not supported"); }
+  factory Path2D._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('Path.Path')
+  @DomName('Path2D.Path2D')
   @DocsEditable()
-  factory Path([path_OR_text]) {
+  factory Path2D([path_OR_text]) {
     if (path_OR_text == null) {
-      return _blink.BlinkPath.$_create_1constructorCallback();
+      return _blink.BlinkPath2D.instance.constructorCallback_0_();
     }
-    if ((path_OR_text is Path || path_OR_text == null)) {
-      return _blink.BlinkPath.$_create_2constructorCallback(path_OR_text);
+    if ((path_OR_text is Path2D || path_OR_text == null)) {
+      return _blink.BlinkPath2D.instance.constructorCallback_1_(path_OR_text);
     }
     if ((path_OR_text is String || path_OR_text == null)) {
-      return _blink.BlinkPath.$_create_3constructorCallback(path_OR_text);
+      return _blink.BlinkPath2D.instance.constructorCallback_1_(path_OR_text);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  @DomName('Path.arc')
-  @DocsEditable()
-  void arc(num x, num y, num radius, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkPath.$arc_Callback(this, x, y, radius, startAngle, endAngle, anticlockwise);
+  void addPath(Path2D path, [Matrix transform]) {
+    if (transform != null) {
+      _blink.BlinkPath2D.instance.addPath_Callback_2_(this, path, transform);
+      return;
+    }
+    _blink.BlinkPath2D.instance.addPath_Callback_1_(this, path);
+    return;
+  }
 
-  @DomName('Path.arcTo')
+  @DomName('Path2D.arc')
   @DocsEditable()
-  void arcTo(num x1, num y1, num x2, num y2, num radius) => _blink.BlinkPath.$arcTo_Callback(this, x1, y1, x2, y2, radius);
+  @Experimental() // untriaged
+  void arc(num x, num y, num radius, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkPath2D.instance.arc_Callback_6_(this, x, y, radius, startAngle, endAngle, anticlockwise);
 
-  @DomName('Path.bezierCurveTo')
+  @DomName('Path2D.arcTo')
   @DocsEditable()
-  void bezierCurveTo(num cp1x, num cp1y, num cp2x, num cp2y, num x, num y) => _blink.BlinkPath.$bezierCurveTo_Callback(this, cp1x, cp1y, cp2x, cp2y, x, y);
+  @Experimental() // untriaged
+  void arcTo(num x1, num y1, num x2, num y2, num radius) => _blink.BlinkPath2D.instance.arcTo_Callback_5_(this, x1, y1, x2, y2, radius);
 
-  @DomName('Path.closePath')
+  @DomName('Path2D.bezierCurveTo')
   @DocsEditable()
-  void closePath() => _blink.BlinkPath.$closePath_Callback(this);
+  @Experimental() // untriaged
+  void bezierCurveTo(num cp1x, num cp1y, num cp2x, num cp2y, num x, num y) => _blink.BlinkPath2D.instance.bezierCurveTo_Callback_6_(this, cp1x, cp1y, cp2x, cp2y, x, y);
 
-  @DomName('Path.lineTo')
+  @DomName('Path2D.closePath')
   @DocsEditable()
-  void lineTo(num x, num y) => _blink.BlinkPath.$lineTo_Callback(this, x, y);
+  @Experimental() // untriaged
+  void closePath() => _blink.BlinkPath2D.instance.closePath_Callback_0_(this);
 
-  @DomName('Path.moveTo')
+  @DomName('Path2D.ellipse')
   @DocsEditable()
-  void moveTo(num x, num y) => _blink.BlinkPath.$moveTo_Callback(this, x, y);
+  @Experimental() // untriaged
+  void ellipse(num x, num y, num radiusX, num radiusY, num rotation, num startAngle, num endAngle, bool anticlockwise) => _blink.BlinkPath2D.instance.ellipse_Callback_8_(this, x, y, radiusX, radiusY, rotation, startAngle, endAngle, anticlockwise);
 
-  @DomName('Path.quadraticCurveTo')
+  @DomName('Path2D.lineTo')
   @DocsEditable()
-  void quadraticCurveTo(num cpx, num cpy, num x, num y) => _blink.BlinkPath.$quadraticCurveTo_Callback(this, cpx, cpy, x, y);
+  @Experimental() // untriaged
+  void lineTo(num x, num y) => _blink.BlinkPath2D.instance.lineTo_Callback_2_(this, x, y);
 
-  @DomName('Path.rect')
+  @DomName('Path2D.moveTo')
   @DocsEditable()
-  void rect(num x, num y, num width, num height) => _blink.BlinkPath.$rect_Callback(this, x, y, width, height);
+  @Experimental() // untriaged
+  void moveTo(num x, num y) => _blink.BlinkPath2D.instance.moveTo_Callback_2_(this, x, y);
+
+  @DomName('Path2D.quadraticCurveTo')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void quadraticCurveTo(num cpx, num cpy, num x, num y) => _blink.BlinkPath2D.instance.quadraticCurveTo_Callback_4_(this, cpx, cpy, x, y);
+
+  @DomName('Path2D.rect')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void rect(num x, num y, num width, num height) => _blink.BlinkPath2D.instance.rect_Callback_4_(this, x, y, width, height);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -22919,61 +25309,61 @@ class Performance extends EventTarget {
   @DomName('Performance.memory')
   @DocsEditable()
   @Experimental() // nonstandard
-  MemoryInfo get memory => _blink.BlinkPerformance.$memory_Getter(this);
+  MemoryInfo get memory => _blink.BlinkPerformance.instance.memory_Getter_(this);
 
   @DomName('Performance.navigation')
   @DocsEditable()
-  PerformanceNavigation get navigation => _blink.BlinkPerformance.$navigation_Getter(this);
+  PerformanceNavigation get navigation => _blink.BlinkPerformance.instance.navigation_Getter_(this);
 
   @DomName('Performance.timing')
   @DocsEditable()
-  PerformanceTiming get timing => _blink.BlinkPerformance.$timing_Getter(this);
+  PerformanceTiming get timing => _blink.BlinkPerformance.instance.timing_Getter_(this);
 
   @DomName('Performance.clearMarks')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html#extensions-performance-interface
   @Experimental()
-  void clearMarks(String markName) => _blink.BlinkPerformance.$clearMarks_Callback(this, markName);
+  void clearMarks(String markName) => _blink.BlinkPerformance.instance.clearMarks_Callback_1_(this, markName);
 
   @DomName('Performance.clearMeasures')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html#extensions-performance-interface
   @Experimental()
-  void clearMeasures(String measureName) => _blink.BlinkPerformance.$clearMeasures_Callback(this, measureName);
+  void clearMeasures(String measureName) => _blink.BlinkPerformance.instance.clearMeasures_Callback_1_(this, measureName);
 
   @DomName('Performance.getEntries')
   @DocsEditable()
   // http://www.w3.org/TR/performance-timeline/#sec-window.performance-attribute
   @Experimental()
-  List<PerformanceEntry> getEntries() => _blink.BlinkPerformance.$getEntries_Callback(this);
+  List<PerformanceEntry> getEntries() => _blink.BlinkPerformance.instance.getEntries_Callback_0_(this);
 
   @DomName('Performance.getEntriesByName')
   @DocsEditable()
   // http://www.w3.org/TR/performance-timeline/#sec-window.performance-attribute
   @Experimental()
-  List<PerformanceEntry> getEntriesByName(String name, String entryType) => _blink.BlinkPerformance.$getEntriesByName_Callback(this, name, entryType);
+  List<PerformanceEntry> getEntriesByName(String name, String entryType) => _blink.BlinkPerformance.instance.getEntriesByName_Callback_2_(this, name, entryType);
 
   @DomName('Performance.getEntriesByType')
   @DocsEditable()
   // http://www.w3.org/TR/performance-timeline/#sec-window.performance-attribute
   @Experimental()
-  List<PerformanceEntry> getEntriesByType(String entryType) => _blink.BlinkPerformance.$getEntriesByType_Callback(this, entryType);
+  List<PerformanceEntry> getEntriesByType(String entryType) => _blink.BlinkPerformance.instance.getEntriesByType_Callback_1_(this, entryType);
 
   @DomName('Performance.mark')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html#extensions-performance-interface
   @Experimental()
-  void mark(String markName) => _blink.BlinkPerformance.$mark_Callback(this, markName);
+  void mark(String markName) => _blink.BlinkPerformance.instance.mark_Callback_1_(this, markName);
 
   @DomName('Performance.measure')
   @DocsEditable()
   // https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/UserTiming/Overview.html#extensions-performance-interface
   @Experimental()
-  void measure(String measureName, String startMark, String endMark) => _blink.BlinkPerformance.$measure_Callback(this, measureName, startMark, endMark);
+  void measure(String measureName, String startMark, String endMark) => _blink.BlinkPerformance.instance.measure_Callback_3_(this, measureName, startMark, endMark);
 
   @DomName('Performance.now')
   @DocsEditable()
-  double now() => _blink.BlinkPerformance.$now_Callback(this);
+  double now() => _blink.BlinkPerformance.instance.now_Callback_0_(this);
 
   @DomName('Performance.webkitClearResourceTimings')
   @DocsEditable()
@@ -22981,7 +25371,7 @@ class Performance extends EventTarget {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.w3c-test.org/webperf/specs/ResourceTiming/#extensions-performance-interface
-  void clearResourceTimings() => _blink.BlinkPerformance.$webkitClearResourceTimings_Callback(this);
+  void clearResourceTimings() => _blink.BlinkPerformance.instance.webkitClearResourceTimings_Callback_0_(this);
 
   @DomName('Performance.webkitSetResourceTimingBufferSize')
   @DocsEditable()
@@ -22989,7 +25379,7 @@ class Performance extends EventTarget {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // http://www.w3c-test.org/webperf/specs/ResourceTiming/#performanceresourcetiming-methods
-  void setResourceTimingBufferSize(int maxSize) => _blink.BlinkPerformance.$webkitSetResourceTimingBufferSize_Callback(this, maxSize);
+  void setResourceTimingBufferSize(int maxSize) => _blink.BlinkPerformance.instance.webkitSetResourceTimingBufferSize_Callback_1_(this, maxSize);
 
   /// Stream of `resourcetimingbufferfull` events handled by this [Performance].
   @DomName('Performance.onwebkitresourcetimingbufferfull')
@@ -23016,19 +25406,19 @@ class PerformanceEntry extends NativeFieldWrapperClass2 {
 
   @DomName('PerformanceEntry.duration')
   @DocsEditable()
-  double get duration => _blink.BlinkPerformanceEntry.$duration_Getter(this);
+  double get duration => _blink.BlinkPerformanceEntry.instance.duration_Getter_(this);
 
   @DomName('PerformanceEntry.entryType')
   @DocsEditable()
-  String get entryType => _blink.BlinkPerformanceEntry.$entryType_Getter(this);
+  String get entryType => _blink.BlinkPerformanceEntry.instance.entryType_Getter_(this);
 
   @DomName('PerformanceEntry.name')
   @DocsEditable()
-  String get name => _blink.BlinkPerformanceEntry.$name_Getter(this);
+  String get name => _blink.BlinkPerformanceEntry.instance.name_Getter_(this);
 
   @DomName('PerformanceEntry.startTime')
   @DocsEditable()
-  double get startTime => _blink.BlinkPerformanceEntry.$startTime_Getter(this);
+  double get startTime => _blink.BlinkPerformanceEntry.instance.startTime_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23095,11 +25485,11 @@ class PerformanceNavigation extends NativeFieldWrapperClass2 {
 
   @DomName('PerformanceNavigation.redirectCount')
   @DocsEditable()
-  int get redirectCount => _blink.BlinkPerformanceNavigation.$redirectCount_Getter(this);
+  int get redirectCount => _blink.BlinkPerformanceNavigation.instance.redirectCount_Getter_(this);
 
   @DomName('PerformanceNavigation.type')
   @DocsEditable()
-  int get type => _blink.BlinkPerformanceNavigation.$type_Getter(this);
+  int get type => _blink.BlinkPerformanceNavigation.instance.type_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23119,54 +25509,54 @@ class PerformanceResourceTiming extends PerformanceEntry {
 
   @DomName('PerformanceResourceTiming.connectEnd')
   @DocsEditable()
-  double get connectEnd => _blink.BlinkPerformanceResourceTiming.$connectEnd_Getter(this);
+  double get connectEnd => _blink.BlinkPerformanceResourceTiming.instance.connectEnd_Getter_(this);
 
   @DomName('PerformanceResourceTiming.connectStart')
   @DocsEditable()
-  double get connectStart => _blink.BlinkPerformanceResourceTiming.$connectStart_Getter(this);
+  double get connectStart => _blink.BlinkPerformanceResourceTiming.instance.connectStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.domainLookupEnd')
   @DocsEditable()
-  double get domainLookupEnd => _blink.BlinkPerformanceResourceTiming.$domainLookupEnd_Getter(this);
+  double get domainLookupEnd => _blink.BlinkPerformanceResourceTiming.instance.domainLookupEnd_Getter_(this);
 
   @DomName('PerformanceResourceTiming.domainLookupStart')
   @DocsEditable()
-  double get domainLookupStart => _blink.BlinkPerformanceResourceTiming.$domainLookupStart_Getter(this);
+  double get domainLookupStart => _blink.BlinkPerformanceResourceTiming.instance.domainLookupStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.fetchStart')
   @DocsEditable()
-  double get fetchStart => _blink.BlinkPerformanceResourceTiming.$fetchStart_Getter(this);
+  double get fetchStart => _blink.BlinkPerformanceResourceTiming.instance.fetchStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.initiatorType')
   @DocsEditable()
-  String get initiatorType => _blink.BlinkPerformanceResourceTiming.$initiatorType_Getter(this);
+  String get initiatorType => _blink.BlinkPerformanceResourceTiming.instance.initiatorType_Getter_(this);
 
   @DomName('PerformanceResourceTiming.redirectEnd')
   @DocsEditable()
-  double get redirectEnd => _blink.BlinkPerformanceResourceTiming.$redirectEnd_Getter(this);
+  double get redirectEnd => _blink.BlinkPerformanceResourceTiming.instance.redirectEnd_Getter_(this);
 
   @DomName('PerformanceResourceTiming.redirectStart')
   @DocsEditable()
-  double get redirectStart => _blink.BlinkPerformanceResourceTiming.$redirectStart_Getter(this);
+  double get redirectStart => _blink.BlinkPerformanceResourceTiming.instance.redirectStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.requestStart')
   @DocsEditable()
   @Experimental() // nonstandard
-  double get requestStart => _blink.BlinkPerformanceResourceTiming.$requestStart_Getter(this);
+  double get requestStart => _blink.BlinkPerformanceResourceTiming.instance.requestStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.responseEnd')
   @DocsEditable()
   @Experimental() // nonstandard
-  double get responseEnd => _blink.BlinkPerformanceResourceTiming.$responseEnd_Getter(this);
+  double get responseEnd => _blink.BlinkPerformanceResourceTiming.instance.responseEnd_Getter_(this);
 
   @DomName('PerformanceResourceTiming.responseStart')
   @DocsEditable()
   @Experimental() // nonstandard
-  double get responseStart => _blink.BlinkPerformanceResourceTiming.$responseStart_Getter(this);
+  double get responseStart => _blink.BlinkPerformanceResourceTiming.instance.responseStart_Getter_(this);
 
   @DomName('PerformanceResourceTiming.secureConnectionStart')
   @DocsEditable()
-  double get secureConnectionStart => _blink.BlinkPerformanceResourceTiming.$secureConnectionStart_Getter(this);
+  double get secureConnectionStart => _blink.BlinkPerformanceResourceTiming.instance.secureConnectionStart_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23185,87 +25575,87 @@ class PerformanceTiming extends NativeFieldWrapperClass2 {
 
   @DomName('PerformanceTiming.connectEnd')
   @DocsEditable()
-  int get connectEnd => _blink.BlinkPerformanceTiming.$connectEnd_Getter(this);
+  int get connectEnd => _blink.BlinkPerformanceTiming.instance.connectEnd_Getter_(this);
 
   @DomName('PerformanceTiming.connectStart')
   @DocsEditable()
-  int get connectStart => _blink.BlinkPerformanceTiming.$connectStart_Getter(this);
+  int get connectStart => _blink.BlinkPerformanceTiming.instance.connectStart_Getter_(this);
 
   @DomName('PerformanceTiming.domComplete')
   @DocsEditable()
-  int get domComplete => _blink.BlinkPerformanceTiming.$domComplete_Getter(this);
+  int get domComplete => _blink.BlinkPerformanceTiming.instance.domComplete_Getter_(this);
 
   @DomName('PerformanceTiming.domContentLoadedEventEnd')
   @DocsEditable()
-  int get domContentLoadedEventEnd => _blink.BlinkPerformanceTiming.$domContentLoadedEventEnd_Getter(this);
+  int get domContentLoadedEventEnd => _blink.BlinkPerformanceTiming.instance.domContentLoadedEventEnd_Getter_(this);
 
   @DomName('PerformanceTiming.domContentLoadedEventStart')
   @DocsEditable()
-  int get domContentLoadedEventStart => _blink.BlinkPerformanceTiming.$domContentLoadedEventStart_Getter(this);
+  int get domContentLoadedEventStart => _blink.BlinkPerformanceTiming.instance.domContentLoadedEventStart_Getter_(this);
 
   @DomName('PerformanceTiming.domInteractive')
   @DocsEditable()
-  int get domInteractive => _blink.BlinkPerformanceTiming.$domInteractive_Getter(this);
+  int get domInteractive => _blink.BlinkPerformanceTiming.instance.domInteractive_Getter_(this);
 
   @DomName('PerformanceTiming.domLoading')
   @DocsEditable()
-  int get domLoading => _blink.BlinkPerformanceTiming.$domLoading_Getter(this);
+  int get domLoading => _blink.BlinkPerformanceTiming.instance.domLoading_Getter_(this);
 
   @DomName('PerformanceTiming.domainLookupEnd')
   @DocsEditable()
-  int get domainLookupEnd => _blink.BlinkPerformanceTiming.$domainLookupEnd_Getter(this);
+  int get domainLookupEnd => _blink.BlinkPerformanceTiming.instance.domainLookupEnd_Getter_(this);
 
   @DomName('PerformanceTiming.domainLookupStart')
   @DocsEditable()
-  int get domainLookupStart => _blink.BlinkPerformanceTiming.$domainLookupStart_Getter(this);
+  int get domainLookupStart => _blink.BlinkPerformanceTiming.instance.domainLookupStart_Getter_(this);
 
   @DomName('PerformanceTiming.fetchStart')
   @DocsEditable()
-  int get fetchStart => _blink.BlinkPerformanceTiming.$fetchStart_Getter(this);
+  int get fetchStart => _blink.BlinkPerformanceTiming.instance.fetchStart_Getter_(this);
 
   @DomName('PerformanceTiming.loadEventEnd')
   @DocsEditable()
-  int get loadEventEnd => _blink.BlinkPerformanceTiming.$loadEventEnd_Getter(this);
+  int get loadEventEnd => _blink.BlinkPerformanceTiming.instance.loadEventEnd_Getter_(this);
 
   @DomName('PerformanceTiming.loadEventStart')
   @DocsEditable()
-  int get loadEventStart => _blink.BlinkPerformanceTiming.$loadEventStart_Getter(this);
+  int get loadEventStart => _blink.BlinkPerformanceTiming.instance.loadEventStart_Getter_(this);
 
   @DomName('PerformanceTiming.navigationStart')
   @DocsEditable()
-  int get navigationStart => _blink.BlinkPerformanceTiming.$navigationStart_Getter(this);
+  int get navigationStart => _blink.BlinkPerformanceTiming.instance.navigationStart_Getter_(this);
 
   @DomName('PerformanceTiming.redirectEnd')
   @DocsEditable()
-  int get redirectEnd => _blink.BlinkPerformanceTiming.$redirectEnd_Getter(this);
+  int get redirectEnd => _blink.BlinkPerformanceTiming.instance.redirectEnd_Getter_(this);
 
   @DomName('PerformanceTiming.redirectStart')
   @DocsEditable()
-  int get redirectStart => _blink.BlinkPerformanceTiming.$redirectStart_Getter(this);
+  int get redirectStart => _blink.BlinkPerformanceTiming.instance.redirectStart_Getter_(this);
 
   @DomName('PerformanceTiming.requestStart')
   @DocsEditable()
-  int get requestStart => _blink.BlinkPerformanceTiming.$requestStart_Getter(this);
+  int get requestStart => _blink.BlinkPerformanceTiming.instance.requestStart_Getter_(this);
 
   @DomName('PerformanceTiming.responseEnd')
   @DocsEditable()
-  int get responseEnd => _blink.BlinkPerformanceTiming.$responseEnd_Getter(this);
+  int get responseEnd => _blink.BlinkPerformanceTiming.instance.responseEnd_Getter_(this);
 
   @DomName('PerformanceTiming.responseStart')
   @DocsEditable()
-  int get responseStart => _blink.BlinkPerformanceTiming.$responseStart_Getter(this);
+  int get responseStart => _blink.BlinkPerformanceTiming.instance.responseStart_Getter_(this);
 
   @DomName('PerformanceTiming.secureConnectionStart')
   @DocsEditable()
-  int get secureConnectionStart => _blink.BlinkPerformanceTiming.$secureConnectionStart_Getter(this);
+  int get secureConnectionStart => _blink.BlinkPerformanceTiming.instance.secureConnectionStart_Getter_(this);
 
   @DomName('PerformanceTiming.unloadEventEnd')
   @DocsEditable()
-  int get unloadEventEnd => _blink.BlinkPerformanceTiming.$unloadEventEnd_Getter(this);
+  int get unloadEventEnd => _blink.BlinkPerformanceTiming.instance.unloadEventEnd_Getter_(this);
 
   @DomName('PerformanceTiming.unloadEventStart')
   @DocsEditable()
-  int get unloadEventStart => _blink.BlinkPerformanceTiming.$unloadEventStart_Getter(this);
+  int get unloadEventStart => _blink.BlinkPerformanceTiming.instance.unloadEventStart_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23276,91 +25666,17 @@ class PerformanceTiming extends NativeFieldWrapperClass2 {
 
 
 @DocsEditable()
-@DomName('Player')
+@DomName('HTMLPictureElement')
 @Experimental() // untriaged
-class Player extends NativeFieldWrapperClass2 {
+class PictureElement extends HtmlElement {
   // To suppress missing implicit constructor warnings.
-  factory Player._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('Player.currentTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  num get currentTime => _blink.BlinkPlayer.$currentTime_Getter(this);
-
-  @DomName('Player.currentTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void set currentTime(num value) => _blink.BlinkPlayer.$currentTime_Setter(this, value);
-
-  @DomName('Player.finished')
-  @DocsEditable()
-  @Experimental() // untriaged
-  bool get finished => _blink.BlinkPlayer.$finished_Getter(this);
-
-  @DomName('Player.paused')
-  @DocsEditable()
-  @Experimental() // untriaged
-  bool get paused => _blink.BlinkPlayer.$paused_Getter(this);
-
-  @DomName('Player.playbackRate')
-  @DocsEditable()
-  @Experimental() // untriaged
-  num get playbackRate => _blink.BlinkPlayer.$playbackRate_Getter(this);
-
-  @DomName('Player.playbackRate')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void set playbackRate(num value) => _blink.BlinkPlayer.$playbackRate_Setter(this, value);
-
-  @DomName('Player.source')
-  @DocsEditable()
-  @Experimental() // untriaged
-  TimedItem get source => _blink.BlinkPlayer.$source_Getter(this);
-
-  @DomName('Player.source')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void set source(TimedItem value) => _blink.BlinkPlayer.$source_Setter(this, value);
-
-  @DomName('Player.startTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  num get startTime => _blink.BlinkPlayer.$startTime_Getter(this);
-
-  @DomName('Player.startTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void set startTime(num value) => _blink.BlinkPlayer.$startTime_Setter(this, value);
-
-  @DomName('Player.timeLag')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get timeLag => _blink.BlinkPlayer.$timeLag_Getter(this);
-
-  @DomName('Player.cancel')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void cancel() => _blink.BlinkPlayer.$cancel_Callback(this);
-
-  @DomName('Player.finish')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void finish() => _blink.BlinkPlayer.$finish_Callback(this);
-
-  @DomName('Player.pause')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void pause() => _blink.BlinkPlayer.$pause_Callback(this);
-
-  @DomName('Player.play')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void play() => _blink.BlinkPlayer.$play_Callback(this);
-
-  @DomName('Player.reverse')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void reverse() => _blink.BlinkPlayer.$reverse_Callback(this);
+  factory PictureElement._() { throw new UnsupportedError("Not supported"); }
+  /**
+   * Constructor instantiated by the DOM when a custom element has been created.
+   *
+   * This can only be called by subclasses from their created constructor.
+   */
+  PictureElement.created() : super.created();
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23379,31 +25695,31 @@ class Plugin extends NativeFieldWrapperClass2 {
 
   @DomName('Plugin.description')
   @DocsEditable()
-  String get description => _blink.BlinkPlugin.$description_Getter(this);
+  String get description => _blink.BlinkPlugin.instance.description_Getter_(this);
 
   @DomName('Plugin.filename')
   @DocsEditable()
-  String get filename => _blink.BlinkPlugin.$filename_Getter(this);
+  String get filename => _blink.BlinkPlugin.instance.filename_Getter_(this);
 
   @DomName('Plugin.length')
   @DocsEditable()
-  int get length => _blink.BlinkPlugin.$length_Getter(this);
+  int get length => _blink.BlinkPlugin.instance.length_Getter_(this);
 
   @DomName('Plugin.name')
   @DocsEditable()
-  String get name => _blink.BlinkPlugin.$name_Getter(this);
+  String get name => _blink.BlinkPlugin.instance.name_Getter_(this);
 
   @DomName('Plugin.__getter__')
   @DocsEditable()
-  MimeType __getter__(String name) => _blink.BlinkPlugin.$__getter___Callback(this, name);
+  MimeType __getter__(String name) => _blink.BlinkPlugin.instance.$__getter___Callback_1_(this, name);
 
   @DomName('Plugin.item')
   @DocsEditable()
-  MimeType item(int index) => _blink.BlinkPlugin.$item_Callback(this, index);
+  MimeType item(int index) => _blink.BlinkPlugin.instance.item_Callback_1_(this, index);
 
   @DomName('Plugin.namedItem')
   @DocsEditable()
-  MimeType namedItem(String name) => _blink.BlinkPlugin.$namedItem_Callback(this, name);
+  MimeType namedItem(String name) => _blink.BlinkPlugin.instance.namedItem_Callback_1_(this, name);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23422,15 +25738,15 @@ class PluginArray extends NativeFieldWrapperClass2 with ListMixin<Plugin>, Immut
 
   @DomName('PluginArray.length')
   @DocsEditable()
-  int get length => _blink.BlinkPluginArray.$length_Getter(this);
+  int get length => _blink.BlinkPluginArray.instance.length_Getter_(this);
 
   Plugin operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkPluginArray.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkPluginArray.instance.item_Callback_1_(this, index);
   }
 
-  Plugin _nativeIndexedGetter(int index) => _blink.BlinkPluginArray.$NativeIndexed_Getter(this, index);
+  Plugin _nativeIndexedGetter(int index) => _blink.BlinkPluginArray.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Plugin value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -23472,19 +25788,19 @@ class PluginArray extends NativeFieldWrapperClass2 with ListMixin<Plugin>, Immut
 
   @DomName('PluginArray.__getter__')
   @DocsEditable()
-  Plugin __getter__(String name) => _blink.BlinkPluginArray.$__getter___Callback(this, name);
+  Plugin __getter__(String name) => _blink.BlinkPluginArray.instance.$__getter___Callback_1_(this, name);
 
   @DomName('PluginArray.item')
   @DocsEditable()
-  Plugin item(int index) => _blink.BlinkPluginArray.$item_Callback(this, index);
+  Plugin item(int index) => _blink.BlinkPluginArray.instance.item_Callback_1_(this, index);
 
   @DomName('PluginArray.namedItem')
   @DocsEditable()
-  Plugin namedItem(String name) => _blink.BlinkPluginArray.$namedItem_Callback(this, name);
+  Plugin namedItem(String name) => _blink.BlinkPluginArray.instance.namedItem_Callback_1_(this, name);
 
   @DomName('PluginArray.refresh')
   @DocsEditable()
-  void refresh(bool reload) => _blink.BlinkPluginArray.$refresh_Callback(this, reload);
+  void refresh(bool reload) => _blink.BlinkPluginArray.instance.refresh_Callback_1_(this, reload);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23506,7 +25822,7 @@ class PopStateEvent extends Event {
 
   @DomName('PopStateEvent.state')
   @DocsEditable()
-  Object get state => _blink.BlinkPopStateEvent.$state_Getter(this);
+  Object get state => _blink.BlinkPopStateEvent.instance.state_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23547,11 +25863,11 @@ class PositionError extends NativeFieldWrapperClass2 {
 
   @DomName('PositionError.code')
   @DocsEditable()
-  int get code => _blink.BlinkPositionError.$code_Getter(this);
+  int get code => _blink.BlinkPositionError.instance.code_Getter_(this);
 
   @DomName('PositionError.message')
   @DocsEditable()
-  String get message => _blink.BlinkPositionError.$message_Getter(this);
+  String get message => _blink.BlinkPositionError.instance.message_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23605,11 +25921,11 @@ class ProcessingInstruction extends CharacterData {
   @DomName('ProcessingInstruction.sheet')
   @DocsEditable()
   @Experimental() // non-standard
-  StyleSheet get sheet => _blink.BlinkProcessingInstruction.$sheet_Getter(this);
+  StyleSheet get sheet => _blink.BlinkProcessingInstruction.instance.sheet_Getter_(this);
 
   @DomName('ProcessingInstruction.target')
   @DocsEditable()
-  String get target => _blink.BlinkProcessingInstruction.$target_Getter(this);
+  String get target => _blink.BlinkProcessingInstruction.instance.target_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23645,27 +25961,27 @@ class ProgressElement extends HtmlElement {
   @DomName('HTMLProgressElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLProgressElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLProgressElement.instance.labels_Getter_(this);
 
   @DomName('HTMLProgressElement.max')
   @DocsEditable()
-  num get max => _blink.BlinkHTMLProgressElement.$max_Getter(this);
+  num get max => _blink.BlinkHTMLProgressElement.instance.max_Getter_(this);
 
   @DomName('HTMLProgressElement.max')
   @DocsEditable()
-  void set max(num value) => _blink.BlinkHTMLProgressElement.$max_Setter(this, value);
+  void set max(num value) => _blink.BlinkHTMLProgressElement.instance.max_Setter_(this, value);
 
   @DomName('HTMLProgressElement.position')
   @DocsEditable()
-  double get position => _blink.BlinkHTMLProgressElement.$position_Getter(this);
+  double get position => _blink.BlinkHTMLProgressElement.instance.position_Getter_(this);
 
   @DomName('HTMLProgressElement.value')
   @DocsEditable()
-  num get value => _blink.BlinkHTMLProgressElement.$value_Getter(this);
+  num get value => _blink.BlinkHTMLProgressElement.instance.value_Getter_(this);
 
   @DomName('HTMLProgressElement.value')
   @DocsEditable()
-  void set value(num value) => _blink.BlinkHTMLProgressElement.$value_Setter(this, value);
+  void set value(num value) => _blink.BlinkHTMLProgressElement.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23683,15 +25999,80 @@ class ProgressEvent extends Event {
 
   @DomName('ProgressEvent.lengthComputable')
   @DocsEditable()
-  bool get lengthComputable => _blink.BlinkProgressEvent.$lengthComputable_Getter(this);
+  bool get lengthComputable => _blink.BlinkProgressEvent.instance.lengthComputable_Getter_(this);
 
   @DomName('ProgressEvent.loaded')
   @DocsEditable()
-  int get loaded => _blink.BlinkProgressEvent.$loaded_Getter(this);
+  int get loaded => _blink.BlinkProgressEvent.instance.loaded_Getter_(this);
 
   @DomName('ProgressEvent.total')
   @DocsEditable()
-  int get total => _blink.BlinkProgressEvent.$total_Getter(this);
+  int get total => _blink.BlinkProgressEvent.instance.total_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('PushEvent')
+@Experimental() // untriaged
+class PushEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory PushEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('PushEvent.data')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get data => _blink.BlinkPushEvent.instance.data_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('PushManager')
+@Experimental() // untriaged
+class PushManager extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory PushManager._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('PushManager.register')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future register(String senderId) => _blink.BlinkPushManager.instance.register_Callback_1_(this, senderId);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('PushRegistration')
+@Experimental() // untriaged
+class PushRegistration extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory PushRegistration._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('PushRegistration.pushEndpoint')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get pushEndpoint => _blink.BlinkPushRegistration.instance.pushEndpoint_Getter_(this);
+
+  @DomName('PushRegistration.pushRegistrationId')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get pushRegistrationId => _blink.BlinkPushRegistration.instance.pushRegistrationId_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23719,11 +26100,11 @@ class QuoteElement extends HtmlElement {
 
   @DomName('HTMLQuoteElement.cite')
   @DocsEditable()
-  String get cite => _blink.BlinkHTMLQuoteElement.$cite_Getter(this);
+  String get cite => _blink.BlinkHTMLQuoteElement.instance.cite_Getter_(this);
 
   @DomName('HTMLQuoteElement.cite')
   @DocsEditable()
-  void set cite(String value) => _blink.BlinkHTMLQuoteElement.$cite_Setter(this, value);
+  void set cite(String value) => _blink.BlinkHTMLQuoteElement.instance.cite_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -23814,120 +26195,121 @@ class Range extends NativeFieldWrapperClass2 {
 
   @DomName('Range.collapsed')
   @DocsEditable()
-  bool get collapsed => _blink.BlinkRange.$collapsed_Getter(this);
+  bool get collapsed => _blink.BlinkRange.instance.collapsed_Getter_(this);
 
   @DomName('Range.commonAncestorContainer')
   @DocsEditable()
-  Node get commonAncestorContainer => _blink.BlinkRange.$commonAncestorContainer_Getter(this);
+  Node get commonAncestorContainer => _blink.BlinkRange.instance.commonAncestorContainer_Getter_(this);
 
   @DomName('Range.endContainer')
   @DocsEditable()
-  Node get endContainer => _blink.BlinkRange.$endContainer_Getter(this);
+  Node get endContainer => _blink.BlinkRange.instance.endContainer_Getter_(this);
 
   @DomName('Range.endOffset')
   @DocsEditable()
-  int get endOffset => _blink.BlinkRange.$endOffset_Getter(this);
+  int get endOffset => _blink.BlinkRange.instance.endOffset_Getter_(this);
 
   @DomName('Range.startContainer')
   @DocsEditable()
-  Node get startContainer => _blink.BlinkRange.$startContainer_Getter(this);
+  Node get startContainer => _blink.BlinkRange.instance.startContainer_Getter_(this);
 
   @DomName('Range.startOffset')
   @DocsEditable()
-  int get startOffset => _blink.BlinkRange.$startOffset_Getter(this);
+  int get startOffset => _blink.BlinkRange.instance.startOffset_Getter_(this);
 
   @DomName('Range.cloneContents')
   @DocsEditable()
-  DocumentFragment cloneContents() => _blink.BlinkRange.$cloneContents_Callback(this);
+  DocumentFragment cloneContents() => _blink.BlinkRange.instance.cloneContents_Callback_0_(this);
 
   @DomName('Range.cloneRange')
   @DocsEditable()
-  Range cloneRange() => _blink.BlinkRange.$cloneRange_Callback(this);
+  Range cloneRange() => _blink.BlinkRange.instance.cloneRange_Callback_0_(this);
 
-  @DomName('Range.collapse')
-  @DocsEditable()
-  void collapse(bool toStart) => _blink.BlinkRange.$collapse_Callback(this, toStart);
+  void collapse([bool toStart]) {
+    if (toStart != null) {
+      _blink.BlinkRange.instance.collapse_Callback_1_(this, toStart);
+      return;
+    }
+    _blink.BlinkRange.instance.collapse_Callback_0_(this);
+    return;
+  }
 
   @DomName('Range.comparePoint')
   @DocsEditable()
-  int comparePoint(Node refNode, int offset) => _blink.BlinkRange.$comparePoint_Callback(this, refNode, offset);
+  int comparePoint(Node refNode, int offset) => _blink.BlinkRange.instance.comparePoint_Callback_2_(this, refNode, offset);
 
   @DomName('Range.createContextualFragment')
   @DocsEditable()
-  DocumentFragment createContextualFragment(String html) => _blink.BlinkRange.$createContextualFragment_Callback(this, html);
+  DocumentFragment createContextualFragment(String html) => _blink.BlinkRange.instance.createContextualFragment_Callback_1_(this, html);
 
   @DomName('Range.deleteContents')
   @DocsEditable()
-  void deleteContents() => _blink.BlinkRange.$deleteContents_Callback(this);
+  void deleteContents() => _blink.BlinkRange.instance.deleteContents_Callback_0_(this);
 
   @DomName('Range.detach')
   @DocsEditable()
-  void detach() => _blink.BlinkRange.$detach_Callback(this);
+  void detach() => _blink.BlinkRange.instance.detach_Callback_0_(this);
 
   @DomName('Range.expand')
   @DocsEditable()
   @Experimental() // non-standard
-  void expand(String unit) => _blink.BlinkRange.$expand_Callback(this, unit);
+  void expand(String unit) => _blink.BlinkRange.instance.expand_Callback_1_(this, unit);
 
   @DomName('Range.extractContents')
   @DocsEditable()
-  DocumentFragment extractContents() => _blink.BlinkRange.$extractContents_Callback(this);
+  DocumentFragment extractContents() => _blink.BlinkRange.instance.extractContents_Callback_0_(this);
 
   @DomName('Range.getBoundingClientRect')
   @DocsEditable()
-  Rectangle getBoundingClientRect() => _blink.BlinkRange.$getBoundingClientRect_Callback(this);
+  Rectangle getBoundingClientRect() => _blink.BlinkRange.instance.getBoundingClientRect_Callback_0_(this);
 
   @DomName('Range.getClientRects')
   @DocsEditable()
-  List<Rectangle> getClientRects() => _blink.BlinkRange.$getClientRects_Callback(this);
+  List<Rectangle> getClientRects() => _blink.BlinkRange.instance.getClientRects_Callback_0_(this);
 
   @DomName('Range.insertNode')
   @DocsEditable()
-  void insertNode(Node newNode) => _blink.BlinkRange.$insertNode_Callback(this, newNode);
+  void insertNode(Node newNode) => _blink.BlinkRange.instance.insertNode_Callback_1_(this, newNode);
 
   @DomName('Range.isPointInRange')
   @DocsEditable()
-  bool isPointInRange(Node refNode, int offset) => _blink.BlinkRange.$isPointInRange_Callback(this, refNode, offset);
+  bool isPointInRange(Node refNode, int offset) => _blink.BlinkRange.instance.isPointInRange_Callback_2_(this, refNode, offset);
 
   @DomName('Range.selectNode')
   @DocsEditable()
-  void selectNode(Node refNode) => _blink.BlinkRange.$selectNode_Callback(this, refNode);
+  void selectNode(Node refNode) => _blink.BlinkRange.instance.selectNode_Callback_1_(this, refNode);
 
   @DomName('Range.selectNodeContents')
   @DocsEditable()
-  void selectNodeContents(Node refNode) => _blink.BlinkRange.$selectNodeContents_Callback(this, refNode);
+  void selectNodeContents(Node refNode) => _blink.BlinkRange.instance.selectNodeContents_Callback_1_(this, refNode);
 
   @DomName('Range.setEnd')
   @DocsEditable()
-  void setEnd(Node refNode, int offset) => _blink.BlinkRange.$setEnd_Callback(this, refNode, offset);
+  void setEnd(Node refNode, int offset) => _blink.BlinkRange.instance.setEnd_Callback_2_(this, refNode, offset);
 
   @DomName('Range.setEndAfter')
   @DocsEditable()
-  void setEndAfter(Node refNode) => _blink.BlinkRange.$setEndAfter_Callback(this, refNode);
+  void setEndAfter(Node refNode) => _blink.BlinkRange.instance.setEndAfter_Callback_1_(this, refNode);
 
   @DomName('Range.setEndBefore')
   @DocsEditable()
-  void setEndBefore(Node refNode) => _blink.BlinkRange.$setEndBefore_Callback(this, refNode);
+  void setEndBefore(Node refNode) => _blink.BlinkRange.instance.setEndBefore_Callback_1_(this, refNode);
 
   @DomName('Range.setStart')
   @DocsEditable()
-  void setStart(Node refNode, int offset) => _blink.BlinkRange.$setStart_Callback(this, refNode, offset);
+  void setStart(Node refNode, int offset) => _blink.BlinkRange.instance.setStart_Callback_2_(this, refNode, offset);
 
   @DomName('Range.setStartAfter')
   @DocsEditable()
-  void setStartAfter(Node refNode) => _blink.BlinkRange.$setStartAfter_Callback(this, refNode);
+  void setStartAfter(Node refNode) => _blink.BlinkRange.instance.setStartAfter_Callback_1_(this, refNode);
 
   @DomName('Range.setStartBefore')
   @DocsEditable()
-  void setStartBefore(Node refNode) => _blink.BlinkRange.$setStartBefore_Callback(this, refNode);
+  void setStartBefore(Node refNode) => _blink.BlinkRange.instance.setStartBefore_Callback_1_(this, refNode);
 
   @DomName('Range.surroundContents')
   @DocsEditable()
-  void surroundContents(Node newParent) => _blink.BlinkRange.$surroundContents_Callback(this, newParent);
-
-  @DomName('Range.toString')
-  @DocsEditable()
-  String toString() => _blink.BlinkRange.$toString_Callback(this);
+  void surroundContents(Node newParent) => _blink.BlinkRange.instance.surroundContents_Callback_1_(this, newParent);
 
 
   /**
@@ -23938,6 +26320,41 @@ class Range extends NativeFieldWrapperClass2 {
    * * [createContextualFragment]
    */
   static bool get supportsCreateContextualFragment => true;
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ReadableStream')
+@Experimental() // untriaged
+class ReadableStream extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory ReadableStream._() { throw new UnsupportedError("Not supported"); }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('RelatedEvent')
+@Experimental() // untriaged
+class RelatedEvent extends Event {
+  // To suppress missing implicit constructor warnings.
+  factory RelatedEvent._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('RelatedEvent.relatedTarget')
+  @DocsEditable()
+  @Experimental() // untriaged
+  EventTarget get relatedTarget => _blink.BlinkRelatedEvent.instance.relatedTarget_Getter_(this);
+
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -23965,7 +26382,7 @@ class ResourceProgressEvent extends ProgressEvent {
 
   @DomName('ResourceProgressEvent.url')
   @DocsEditable()
-  String get url => _blink.BlinkResourceProgressEvent.$url_Getter(this);
+  String get url => _blink.BlinkResourceProgressEvent.instance.url_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24025,77 +26442,77 @@ class RtcDataChannel extends EventTarget {
 
   @DomName('RTCDataChannel.binaryType')
   @DocsEditable()
-  String get binaryType => _blink.BlinkRTCDataChannel.$binaryType_Getter(this);
+  String get binaryType => _blink.BlinkRTCDataChannel.instance.binaryType_Getter_(this);
 
   @DomName('RTCDataChannel.binaryType')
   @DocsEditable()
-  void set binaryType(String value) => _blink.BlinkRTCDataChannel.$binaryType_Setter(this, value);
+  void set binaryType(String value) => _blink.BlinkRTCDataChannel.instance.binaryType_Setter_(this, value);
 
   @DomName('RTCDataChannel.bufferedAmount')
   @DocsEditable()
-  int get bufferedAmount => _blink.BlinkRTCDataChannel.$bufferedAmount_Getter(this);
+  int get bufferedAmount => _blink.BlinkRTCDataChannel.instance.bufferedAmount_Getter_(this);
 
   @DomName('RTCDataChannel.id')
   @DocsEditable()
   @Experimental() // untriaged
-  int get id => _blink.BlinkRTCDataChannel.$id_Getter(this);
+  int get id => _blink.BlinkRTCDataChannel.instance.id_Getter_(this);
 
   @DomName('RTCDataChannel.label')
   @DocsEditable()
-  String get label => _blink.BlinkRTCDataChannel.$label_Getter(this);
+  String get label => _blink.BlinkRTCDataChannel.instance.label_Getter_(this);
 
   @DomName('RTCDataChannel.maxRetransmitTime')
   @DocsEditable()
   @Experimental() // untriaged
-  int get maxRetransmitTime => _blink.BlinkRTCDataChannel.$maxRetransmitTime_Getter(this);
+  int get maxRetransmitTime => _blink.BlinkRTCDataChannel.instance.maxRetransmitTime_Getter_(this);
 
   @DomName('RTCDataChannel.maxRetransmits')
   @DocsEditable()
   @Experimental() // untriaged
-  int get maxRetransmits => _blink.BlinkRTCDataChannel.$maxRetransmits_Getter(this);
+  int get maxRetransmits => _blink.BlinkRTCDataChannel.instance.maxRetransmits_Getter_(this);
 
   @DomName('RTCDataChannel.negotiated')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get negotiated => _blink.BlinkRTCDataChannel.$negotiated_Getter(this);
+  bool get negotiated => _blink.BlinkRTCDataChannel.instance.negotiated_Getter_(this);
 
   @DomName('RTCDataChannel.ordered')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get ordered => _blink.BlinkRTCDataChannel.$ordered_Getter(this);
+  bool get ordered => _blink.BlinkRTCDataChannel.instance.ordered_Getter_(this);
 
   @DomName('RTCDataChannel.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  String get protocol => _blink.BlinkRTCDataChannel.$protocol_Getter(this);
+  String get protocol => _blink.BlinkRTCDataChannel.instance.protocol_Getter_(this);
 
   @DomName('RTCDataChannel.readyState')
   @DocsEditable()
-  String get readyState => _blink.BlinkRTCDataChannel.$readyState_Getter(this);
+  String get readyState => _blink.BlinkRTCDataChannel.instance.readyState_Getter_(this);
 
   @DomName('RTCDataChannel.reliable')
   @DocsEditable()
-  bool get reliable => _blink.BlinkRTCDataChannel.$reliable_Getter(this);
+  bool get reliable => _blink.BlinkRTCDataChannel.instance.reliable_Getter_(this);
 
   @DomName('RTCDataChannel.close')
   @DocsEditable()
-  void close() => _blink.BlinkRTCDataChannel.$close_Callback(this);
+  void close() => _blink.BlinkRTCDataChannel.instance.close_Callback_0_(this);
 
   void send(data) {
-    if ((data is TypedData || data == null)) {
-      _blink.BlinkRTCDataChannel.$_send_1_Callback(this, data);
-      return;
-    }
-    if ((data is ByteBuffer || data == null)) {
-      _blink.BlinkRTCDataChannel.$_send_2_Callback(this, data);
+    if ((data is String || data == null)) {
+      _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
       return;
     }
     if ((data is Blob || data == null)) {
-      _blink.BlinkRTCDataChannel.$_send_3_Callback(this, data);
+      _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
       return;
     }
-    if ((data is String || data == null)) {
-      _blink.BlinkRTCDataChannel.$_send_4_Callback(this, data);
+    if ((data is TypedData || data == null)) {
+      _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
+      return;
+    }
+    if ((data is ByteBuffer || data == null)) {
+      _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -24103,19 +26520,19 @@ class RtcDataChannel extends EventTarget {
 
   @DomName('RTCDataChannel.sendBlob')
   @DocsEditable()
-  void sendBlob(Blob data) => _blink.BlinkRTCDataChannel.$sendBlob_Callback(this, data);
+  void sendBlob(Blob data) => _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
 
   @DomName('RTCDataChannel.sendByteBuffer')
   @DocsEditable()
-  void sendByteBuffer(ByteBuffer data) => _blink.BlinkRTCDataChannel.$sendByteBuffer_Callback(this, data);
+  void sendByteBuffer(ByteBuffer data) => _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
 
   @DomName('RTCDataChannel.sendString')
   @DocsEditable()
-  void sendString(String data) => _blink.BlinkRTCDataChannel.$sendString_Callback(this, data);
+  void sendString(String data) => _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
 
   @DomName('RTCDataChannel.sendTypedData')
   @DocsEditable()
-  void sendTypedData(TypedData data) => _blink.BlinkRTCDataChannel.$sendTypedData_Callback(this, data);
+  void sendTypedData(TypedData data) => _blink.BlinkRTCDataChannel.instance.send_Callback_1_(this, data);
 
   /// Stream of `close` events handled by this [RtcDataChannel].
   @DomName('RTCDataChannel.onclose')
@@ -24155,7 +26572,7 @@ class RtcDataChannelEvent extends Event {
 
   @DomName('RTCDataChannelEvent.channel')
   @DocsEditable()
-  RtcDataChannel get channel => _blink.BlinkRTCDataChannelEvent.$channel_Getter(this);
+  RtcDataChannel get channel => _blink.BlinkRTCDataChannelEvent.instance.channel_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24185,34 +26602,34 @@ class RtcDtmfSender extends EventTarget {
 
   @DomName('RTCDTMFSender.canInsertDTMF')
   @DocsEditable()
-  bool get canInsertDtmf => _blink.BlinkRTCDTMFSender.$canInsertDTMF_Getter(this);
+  bool get canInsertDtmf => _blink.BlinkRTCDTMFSender.instance.canInsertDTMF_Getter_(this);
 
   @DomName('RTCDTMFSender.duration')
   @DocsEditable()
-  int get duration => _blink.BlinkRTCDTMFSender.$duration_Getter(this);
+  int get duration => _blink.BlinkRTCDTMFSender.instance.duration_Getter_(this);
 
   @DomName('RTCDTMFSender.interToneGap')
   @DocsEditable()
-  int get interToneGap => _blink.BlinkRTCDTMFSender.$interToneGap_Getter(this);
+  int get interToneGap => _blink.BlinkRTCDTMFSender.instance.interToneGap_Getter_(this);
 
   @DomName('RTCDTMFSender.toneBuffer')
   @DocsEditable()
-  String get toneBuffer => _blink.BlinkRTCDTMFSender.$toneBuffer_Getter(this);
+  String get toneBuffer => _blink.BlinkRTCDTMFSender.instance.toneBuffer_Getter_(this);
 
   @DomName('RTCDTMFSender.track')
   @DocsEditable()
-  MediaStreamTrack get track => _blink.BlinkRTCDTMFSender.$track_Getter(this);
+  MediaStreamTrack get track => _blink.BlinkRTCDTMFSender.instance.track_Getter_(this);
 
   void insertDtmf(String tones, [int duration, int interToneGap]) {
     if (interToneGap != null) {
-      _blink.BlinkRTCDTMFSender.$_insertDTMF_1_Callback(this, tones, duration, interToneGap);
+      _blink.BlinkRTCDTMFSender.instance.insertDTMF_Callback_3_(this, tones, duration, interToneGap);
       return;
     }
     if (duration != null) {
-      _blink.BlinkRTCDTMFSender.$_insertDTMF_2_Callback(this, tones, duration);
+      _blink.BlinkRTCDTMFSender.instance.insertDTMF_Callback_2_(this, tones, duration);
       return;
     }
-    _blink.BlinkRTCDTMFSender.$_insertDTMF_3_Callback(this, tones);
+    _blink.BlinkRTCDTMFSender.instance.insertDTMF_Callback_1_(this, tones);
     return;
   }
 
@@ -24239,7 +26656,7 @@ class RtcDtmfToneChangeEvent extends Event {
 
   @DomName('RTCDTMFToneChangeEvent.tone')
   @DocsEditable()
-  String get tone => _blink.BlinkRTCDTMFToneChangeEvent.$tone_Getter(this);
+  String get tone => _blink.BlinkRTCDTMFToneChangeEvent.instance.tone_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24261,20 +26678,32 @@ class RtcIceCandidate extends NativeFieldWrapperClass2 {
   @DomName('RTCIceCandidate.RTCIceCandidate')
   @DocsEditable()
   factory RtcIceCandidate(Map dictionary) {
-    return _blink.BlinkRTCIceCandidate.$_create_1constructorCallback(dictionary);
+    return _blink.BlinkRTCIceCandidate.instance.constructorCallback_1_(dictionary);
   }
 
   @DomName('RTCIceCandidate.candidate')
   @DocsEditable()
-  String get candidate => _blink.BlinkRTCIceCandidate.$candidate_Getter(this);
+  String get candidate => _blink.BlinkRTCIceCandidate.instance.candidate_Getter_(this);
+
+  @DomName('RTCIceCandidate.candidate')
+  @DocsEditable()
+  void set candidate(String value) => _blink.BlinkRTCIceCandidate.instance.candidate_Setter_(this, value);
 
   @DomName('RTCIceCandidate.sdpMLineIndex')
   @DocsEditable()
-  int get sdpMLineIndex => _blink.BlinkRTCIceCandidate.$sdpMLineIndex_Getter(this);
+  int get sdpMLineIndex => _blink.BlinkRTCIceCandidate.instance.sdpMLineIndex_Getter_(this);
+
+  @DomName('RTCIceCandidate.sdpMLineIndex')
+  @DocsEditable()
+  void set sdpMLineIndex(int value) => _blink.BlinkRTCIceCandidate.instance.sdpMLineIndex_Setter_(this, value);
 
   @DomName('RTCIceCandidate.sdpMid')
   @DocsEditable()
-  String get sdpMid => _blink.BlinkRTCIceCandidate.$sdpMid_Getter(this);
+  String get sdpMid => _blink.BlinkRTCIceCandidate.instance.sdpMid_Getter_(this);
+
+  @DomName('RTCIceCandidate.sdpMid')
+  @DocsEditable()
+  void set sdpMid(String value) => _blink.BlinkRTCIceCandidate.instance.sdpMid_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24294,7 +26723,7 @@ class RtcIceCandidateEvent extends Event {
 
   @DomName('RTCIceCandidateEvent.candidate')
   @DocsEditable()
-  RtcIceCandidate get candidate => _blink.BlinkRTCIceCandidateEvent.$candidate_Getter(this);
+  RtcIceCandidate get candidate => _blink.BlinkRTCIceCandidateEvent.instance.candidate_Getter_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -24410,81 +26839,102 @@ class RtcPeerConnection extends EventTarget {
 
   @DomName('RTCPeerConnection.RTCPeerConnection')
   @DocsEditable()
-  factory RtcPeerConnection(Map rtcIceServers, [Map mediaConstraints]) {
-    return _blink.BlinkRTCPeerConnection.$_create_1constructorCallback(rtcIceServers, mediaConstraints);
+  factory RtcPeerConnection(Map rtcConfiguration, [Map mediaConstraints]) {
+    if (mediaConstraints != null) {
+      return _blink.BlinkRTCPeerConnection.instance.constructorCallback_2_(rtcConfiguration, mediaConstraints);
+    }
+    return _blink.BlinkRTCPeerConnection.instance.constructorCallback_1_(rtcConfiguration);
   }
 
   @DomName('RTCPeerConnection.iceConnectionState')
   @DocsEditable()
-  String get iceConnectionState => _blink.BlinkRTCPeerConnection.$iceConnectionState_Getter(this);
+  String get iceConnectionState => _blink.BlinkRTCPeerConnection.instance.iceConnectionState_Getter_(this);
 
   @DomName('RTCPeerConnection.iceGatheringState')
   @DocsEditable()
-  String get iceGatheringState => _blink.BlinkRTCPeerConnection.$iceGatheringState_Getter(this);
+  String get iceGatheringState => _blink.BlinkRTCPeerConnection.instance.iceGatheringState_Getter_(this);
 
   @DomName('RTCPeerConnection.localDescription')
   @DocsEditable()
-  RtcSessionDescription get localDescription => _blink.BlinkRTCPeerConnection.$localDescription_Getter(this);
+  RtcSessionDescription get localDescription => _blink.BlinkRTCPeerConnection.instance.localDescription_Getter_(this);
 
   @DomName('RTCPeerConnection.remoteDescription')
   @DocsEditable()
-  RtcSessionDescription get remoteDescription => _blink.BlinkRTCPeerConnection.$remoteDescription_Getter(this);
+  RtcSessionDescription get remoteDescription => _blink.BlinkRTCPeerConnection.instance.remoteDescription_Getter_(this);
 
   @DomName('RTCPeerConnection.signalingState')
   @DocsEditable()
-  String get signalingState => _blink.BlinkRTCPeerConnection.$signalingState_Getter(this);
+  String get signalingState => _blink.BlinkRTCPeerConnection.instance.signalingState_Getter_(this);
 
   @DomName('RTCPeerConnection.addIceCandidate')
   @DocsEditable()
-  void addIceCandidate(RtcIceCandidate candidate, VoidCallback successCallback, _RtcErrorCallback failureCallback) => _blink.BlinkRTCPeerConnection.$addIceCandidate_Callback(this, candidate, successCallback, failureCallback);
+  void addIceCandidate(RtcIceCandidate candidate, VoidCallback successCallback, _RtcErrorCallback failureCallback) => _blink.BlinkRTCPeerConnection.instance.addIceCandidate_Callback_3_(this, candidate, successCallback, failureCallback);
 
-  @DomName('RTCPeerConnection.addStream')
-  @DocsEditable()
-  void addStream(MediaStream stream, [Map mediaConstraints]) => _blink.BlinkRTCPeerConnection.$addStream_Callback(this, stream, mediaConstraints);
+  void addStream(MediaStream stream, [Map mediaConstraints]) {
+    if (mediaConstraints != null) {
+      _blink.BlinkRTCPeerConnection.instance.addStream_Callback_2_(this, stream, mediaConstraints);
+      return;
+    }
+    _blink.BlinkRTCPeerConnection.instance.addStream_Callback_1_(this, stream);
+    return;
+  }
 
   @DomName('RTCPeerConnection.close')
   @DocsEditable()
-  void close() => _blink.BlinkRTCPeerConnection.$close_Callback(this);
+  void close() => _blink.BlinkRTCPeerConnection.instance.close_Callback_0_(this);
 
-  @DomName('RTCPeerConnection.createAnswer')
-  @DocsEditable()
-  void _createAnswer(_RtcSessionDescriptionCallback successCallback, [_RtcErrorCallback failureCallback, Map mediaConstraints]) => _blink.BlinkRTCPeerConnection.$createAnswer_Callback(this, successCallback, failureCallback, mediaConstraints);
+  void _createAnswer(_RtcSessionDescriptionCallback successCallback, [_RtcErrorCallback failureCallback, Map mediaConstraints]) {
+    if (mediaConstraints != null) {
+      _blink.BlinkRTCPeerConnection.instance.createAnswer_Callback_3_(this, successCallback, failureCallback, mediaConstraints);
+      return;
+    }
+    _blink.BlinkRTCPeerConnection.instance.createAnswer_Callback_2_(this, successCallback, failureCallback);
+    return;
+  }
 
   @DomName('RTCPeerConnection.createDTMFSender')
   @DocsEditable()
-  RtcDtmfSender createDtmfSender(MediaStreamTrack track) => _blink.BlinkRTCPeerConnection.$createDTMFSender_Callback(this, track);
+  RtcDtmfSender createDtmfSender(MediaStreamTrack track) => _blink.BlinkRTCPeerConnection.instance.createDTMFSender_Callback_1_(this, track);
 
-  @DomName('RTCPeerConnection.createDataChannel')
-  @DocsEditable()
-  RtcDataChannel createDataChannel(String label, [Map options]) => _blink.BlinkRTCPeerConnection.$createDataChannel_Callback(this, label, options);
+  RtcDataChannel createDataChannel(String label, [Map options]) {
+    if (options != null) {
+      return _blink.BlinkRTCPeerConnection.instance.createDataChannel_Callback_2_(this, label, options);
+    }
+    return _blink.BlinkRTCPeerConnection.instance.createDataChannel_Callback_1_(this, label);
+  }
 
-  @DomName('RTCPeerConnection.createOffer')
-  @DocsEditable()
-  void _createOffer(_RtcSessionDescriptionCallback successCallback, [_RtcErrorCallback failureCallback, Map mediaConstraints]) => _blink.BlinkRTCPeerConnection.$createOffer_Callback(this, successCallback, failureCallback, mediaConstraints);
+  void _createOffer(_RtcSessionDescriptionCallback successCallback, [_RtcErrorCallback failureCallback, Map rtcOfferOptions]) {
+    if (rtcOfferOptions != null) {
+      _blink.BlinkRTCPeerConnection.instance.createOffer_Callback_3_(this, successCallback, failureCallback, rtcOfferOptions);
+      return;
+    }
+    _blink.BlinkRTCPeerConnection.instance.createOffer_Callback_2_(this, successCallback, failureCallback);
+    return;
+  }
 
   @DomName('RTCPeerConnection.getLocalStreams')
   @DocsEditable()
-  List<MediaStream> getLocalStreams() => _blink.BlinkRTCPeerConnection.$getLocalStreams_Callback(this);
+  List<MediaStream> getLocalStreams() => _blink.BlinkRTCPeerConnection.instance.getLocalStreams_Callback_0_(this);
 
   @DomName('RTCPeerConnection.getRemoteStreams')
   @DocsEditable()
-  List<MediaStream> getRemoteStreams() => _blink.BlinkRTCPeerConnection.$getRemoteStreams_Callback(this);
+  List<MediaStream> getRemoteStreams() => _blink.BlinkRTCPeerConnection.instance.getRemoteStreams_Callback_0_(this);
 
   @DomName('RTCPeerConnection.getStats')
   @DocsEditable()
-  void _getStats(RtcStatsCallback successCallback, MediaStreamTrack selector) => _blink.BlinkRTCPeerConnection.$getStats_Callback(this, successCallback, selector);
+  void _getStats(RtcStatsCallback successCallback, MediaStreamTrack selector) => _blink.BlinkRTCPeerConnection.instance.getStats_Callback_2_(this, successCallback, selector);
 
   @DomName('RTCPeerConnection.getStreamById')
   @DocsEditable()
-  MediaStream getStreamById(String streamId) => _blink.BlinkRTCPeerConnection.$getStreamById_Callback(this, streamId);
+  MediaStream getStreamById(String streamId) => _blink.BlinkRTCPeerConnection.instance.getStreamById_Callback_1_(this, streamId);
 
   @DomName('RTCPeerConnection.removeStream')
   @DocsEditable()
-  void removeStream(MediaStream stream) => _blink.BlinkRTCPeerConnection.$removeStream_Callback(this, stream);
+  void removeStream(MediaStream stream) => _blink.BlinkRTCPeerConnection.instance.removeStream_Callback_1_(this, stream);
 
   @DomName('RTCPeerConnection.setLocalDescription')
   @DocsEditable()
-  void _setLocalDescription(RtcSessionDescription description, [VoidCallback successCallback, _RtcErrorCallback failureCallback]) => _blink.BlinkRTCPeerConnection.$setLocalDescription_Callback(this, description, successCallback, failureCallback);
+  void _setLocalDescription(RtcSessionDescription description, [VoidCallback successCallback, _RtcErrorCallback failureCallback]) => _blink.BlinkRTCPeerConnection.instance.setLocalDescription_Callback_3_(this, description, successCallback, failureCallback);
 
   Future setLocalDescription(RtcSessionDescription description) {
     var completer = new Completer();
@@ -24496,7 +26946,7 @@ class RtcPeerConnection extends EventTarget {
 
   @DomName('RTCPeerConnection.setRemoteDescription')
   @DocsEditable()
-  void _setRemoteDescription(RtcSessionDescription description, [VoidCallback successCallback, _RtcErrorCallback failureCallback]) => _blink.BlinkRTCPeerConnection.$setRemoteDescription_Callback(this, description, successCallback, failureCallback);
+  void _setRemoteDescription(RtcSessionDescription description, [VoidCallback successCallback, _RtcErrorCallback failureCallback]) => _blink.BlinkRTCPeerConnection.instance.setRemoteDescription_Callback_3_(this, description, successCallback, failureCallback);
 
   Future setRemoteDescription(RtcSessionDescription description) {
     var completer = new Completer();
@@ -24506,9 +26956,18 @@ class RtcPeerConnection extends EventTarget {
     return completer.future;
   }
 
-  @DomName('RTCPeerConnection.updateIce')
-  @DocsEditable()
-  void updateIce([Map configuration, Map mediaConstraints]) => _blink.BlinkRTCPeerConnection.$updateIce_Callback(this, configuration, mediaConstraints);
+  void updateIce([Map configuration, Map mediaConstraints]) {
+    if (mediaConstraints != null) {
+      _blink.BlinkRTCPeerConnection.instance.updateIce_Callback_2_(this, configuration, mediaConstraints);
+      return;
+    }
+    if (configuration != null) {
+      _blink.BlinkRTCPeerConnection.instance.updateIce_Callback_1_(this, configuration);
+      return;
+    }
+    _blink.BlinkRTCPeerConnection.instance.updateIce_Callback_0_(this);
+    return;
+  }
 
   /// Stream of `addstream` events handled by this [RtcPeerConnection].
   @DomName('RTCPeerConnection.onaddstream')
@@ -24565,24 +27024,27 @@ class RtcSessionDescription extends NativeFieldWrapperClass2 {
   @DomName('RTCSessionDescription.RTCSessionDescription')
   @DocsEditable()
   factory RtcSessionDescription([Map descriptionInitDict]) {
-    return _blink.BlinkRTCSessionDescription.$_create_1constructorCallback(descriptionInitDict);
+    if (descriptionInitDict != null) {
+      return _blink.BlinkRTCSessionDescription.instance.constructorCallback_1_(descriptionInitDict);
+    }
+    return _blink.BlinkRTCSessionDescription.instance.constructorCallback_0_();
   }
 
   @DomName('RTCSessionDescription.sdp')
   @DocsEditable()
-  String get sdp => _blink.BlinkRTCSessionDescription.$sdp_Getter(this);
+  String get sdp => _blink.BlinkRTCSessionDescription.instance.sdp_Getter_(this);
 
   @DomName('RTCSessionDescription.sdp')
   @DocsEditable()
-  void set sdp(String value) => _blink.BlinkRTCSessionDescription.$sdp_Setter(this, value);
+  void set sdp(String value) => _blink.BlinkRTCSessionDescription.instance.sdp_Setter_(this, value);
 
   @DomName('RTCSessionDescription.type')
   @DocsEditable()
-  String get type => _blink.BlinkRTCSessionDescription.$type_Getter(this);
+  String get type => _blink.BlinkRTCSessionDescription.instance.type_Getter_(this);
 
   @DomName('RTCSessionDescription.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkRTCSessionDescription.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkRTCSessionDescription.instance.type_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24602,31 +27064,31 @@ class RtcStatsReport extends NativeFieldWrapperClass2 {
 
   @DomName('RTCStatsReport.id')
   @DocsEditable()
-  String get id => _blink.BlinkRTCStatsReport.$id_Getter(this);
+  String get id => _blink.BlinkRTCStatsReport.instance.id_Getter_(this);
 
   @DomName('RTCStatsReport.local')
   @DocsEditable()
-  RtcStatsReport get local => _blink.BlinkRTCStatsReport.$local_Getter(this);
+  RtcStatsReport get local => _blink.BlinkRTCStatsReport.instance.local_Getter_(this);
 
   @DomName('RTCStatsReport.remote')
   @DocsEditable()
-  RtcStatsReport get remote => _blink.BlinkRTCStatsReport.$remote_Getter(this);
+  RtcStatsReport get remote => _blink.BlinkRTCStatsReport.instance.remote_Getter_(this);
 
   @DomName('RTCStatsReport.timestamp')
   @DocsEditable()
-  DateTime get timestamp => _blink.BlinkRTCStatsReport.$timestamp_Getter(this);
+  DateTime get timestamp => _blink.BlinkRTCStatsReport.instance.timestamp_Getter_(this);
 
   @DomName('RTCStatsReport.type')
   @DocsEditable()
-  String get type => _blink.BlinkRTCStatsReport.$type_Getter(this);
+  String get type => _blink.BlinkRTCStatsReport.instance.type_Getter_(this);
 
   @DomName('RTCStatsReport.names')
   @DocsEditable()
-  List<String> names() => _blink.BlinkRTCStatsReport.$names_Callback(this);
+  List<String> names() => _blink.BlinkRTCStatsReport.instance.names_Callback_0_(this);
 
   @DomName('RTCStatsReport.stat')
   @DocsEditable()
-  String stat(String name) => _blink.BlinkRTCStatsReport.$stat_Callback(this, name);
+  String stat(String name) => _blink.BlinkRTCStatsReport.instance.stat_Callback_1_(this, name);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24646,15 +27108,15 @@ class RtcStatsResponse extends NativeFieldWrapperClass2 {
 
   @DomName('RTCStatsResponse.__getter__')
   @DocsEditable()
-  RtcStatsReport __getter__(String name) => _blink.BlinkRTCStatsResponse.$__getter___Callback(this, name);
+  RtcStatsReport __getter__(String name) => _blink.BlinkRTCStatsResponse.instance.$__getter___Callback_1_(this, name);
 
   @DomName('RTCStatsResponse.namedItem')
   @DocsEditable()
-  RtcStatsReport namedItem(String name) => _blink.BlinkRTCStatsResponse.$namedItem_Callback(this, name);
+  RtcStatsReport namedItem(String name) => _blink.BlinkRTCStatsResponse.instance.namedItem_Callback_1_(this, name);
 
   @DomName('RTCStatsResponse.result')
   @DocsEditable()
-  List<RtcStatsReport> result() => _blink.BlinkRTCStatsResponse.$result_Callback(this);
+  List<RtcStatsReport> result() => _blink.BlinkRTCStatsResponse.instance.result_Callback_0_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -24664,7 +27126,7 @@ class RtcStatsResponse extends NativeFieldWrapperClass2 {
 
 @DocsEditable()
 @DomName('Screen')
-class Screen extends EventTarget {
+class Screen extends NativeFieldWrapperClass2 {
 
   @DomName('Screen.availHeight')
   @DomName('Screen.availLeft')
@@ -24677,52 +27139,87 @@ class Screen extends EventTarget {
 
   @DomName('Screen.availHeight')
   @DocsEditable()
-  int get _availHeight => _blink.BlinkScreen.$availHeight_Getter(this);
+  int get _availHeight => _blink.BlinkScreen.instance.availHeight_Getter_(this);
 
   @DomName('Screen.availLeft')
   @DocsEditable()
   @Experimental() // nonstandard
-  int get _availLeft => _blink.BlinkScreen.$availLeft_Getter(this);
+  int get _availLeft => _blink.BlinkScreen.instance.availLeft_Getter_(this);
 
   @DomName('Screen.availTop')
   @DocsEditable()
   @Experimental() // nonstandard
-  int get _availTop => _blink.BlinkScreen.$availTop_Getter(this);
+  int get _availTop => _blink.BlinkScreen.instance.availTop_Getter_(this);
 
   @DomName('Screen.availWidth')
   @DocsEditable()
-  int get _availWidth => _blink.BlinkScreen.$availWidth_Getter(this);
+  int get _availWidth => _blink.BlinkScreen.instance.availWidth_Getter_(this);
 
   @DomName('Screen.colorDepth')
   @DocsEditable()
-  int get colorDepth => _blink.BlinkScreen.$colorDepth_Getter(this);
+  int get colorDepth => _blink.BlinkScreen.instance.colorDepth_Getter_(this);
 
   @DomName('Screen.height')
   @DocsEditable()
-  int get height => _blink.BlinkScreen.$height_Getter(this);
+  int get height => _blink.BlinkScreen.instance.height_Getter_(this);
 
   @DomName('Screen.orientation')
   @DocsEditable()
   @Experimental() // untriaged
-  String get orientation => _blink.BlinkScreen.$orientation_Getter(this);
+  ScreenOrientation get orientation => _blink.BlinkScreen.instance.orientation_Getter_(this);
 
   @DomName('Screen.pixelDepth')
   @DocsEditable()
-  int get pixelDepth => _blink.BlinkScreen.$pixelDepth_Getter(this);
+  int get pixelDepth => _blink.BlinkScreen.instance.pixelDepth_Getter_(this);
 
   @DomName('Screen.width')
   @DocsEditable()
-  int get width => _blink.BlinkScreen.$width_Getter(this);
+  int get width => _blink.BlinkScreen.instance.width_Getter_(this);
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
 
-  @DomName('Screen.lockOrientation')
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ScreenOrientation')
+@Experimental() // untriaged
+class ScreenOrientation extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory ScreenOrientation._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ScreenOrientation.changeEvent')
   @DocsEditable()
   @Experimental() // untriaged
-  bool lockOrientation(String orientation) => _blink.BlinkScreen.$lockOrientation_Callback(this, orientation);
+  static const EventStreamProvider<Event> changeEvent = const EventStreamProvider<Event>('change');
 
-  @DomName('Screen.unlockOrientation')
+  @DomName('ScreenOrientation.angle')
   @DocsEditable()
   @Experimental() // untriaged
-  void unlockOrientation() => _blink.BlinkScreen.$unlockOrientation_Callback(this);
+  int get angle => _blink.BlinkScreenOrientation.instance.angle_Getter_(this);
+
+  @DomName('ScreenOrientation.type')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get type => _blink.BlinkScreenOrientation.instance.type_Getter_(this);
+
+  @DomName('ScreenOrientation.lock')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future lock(String orientation) => _blink.BlinkScreenOrientation.instance.lock_Callback_1_(this, orientation);
+
+  @DomName('ScreenOrientation.unlock')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void unlock() => _blink.BlinkScreenOrientation.instance.unlock_Callback_0_(this);
+
+  @DomName('ScreenOrientation.onchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onChange => changeEvent.forTarget(this);
+
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -24749,67 +27246,77 @@ class ScriptElement extends HtmlElement {
 
   @DomName('HTMLScriptElement.async')
   @DocsEditable()
-  bool get async => _blink.BlinkHTMLScriptElement.$async_Getter(this);
+  bool get async => _blink.BlinkHTMLScriptElement.instance.async_Getter_(this);
 
   @DomName('HTMLScriptElement.async')
   @DocsEditable()
-  void set async(bool value) => _blink.BlinkHTMLScriptElement.$async_Setter(this, value);
+  void set async(bool value) => _blink.BlinkHTMLScriptElement.instance.async_Setter_(this, value);
 
   @DomName('HTMLScriptElement.charset')
   @DocsEditable()
-  String get charset => _blink.BlinkHTMLScriptElement.$charset_Getter(this);
+  String get charset => _blink.BlinkHTMLScriptElement.instance.charset_Getter_(this);
 
   @DomName('HTMLScriptElement.charset')
   @DocsEditable()
-  void set charset(String value) => _blink.BlinkHTMLScriptElement.$charset_Setter(this, value);
+  void set charset(String value) => _blink.BlinkHTMLScriptElement.instance.charset_Setter_(this, value);
 
   @DomName('HTMLScriptElement.crossOrigin')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/scripting-1.html#attr-script-crossorigin
   @Experimental()
-  String get crossOrigin => _blink.BlinkHTMLScriptElement.$crossOrigin_Getter(this);
+  String get crossOrigin => _blink.BlinkHTMLScriptElement.instance.crossOrigin_Getter_(this);
 
   @DomName('HTMLScriptElement.crossOrigin')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/scripting-1.html#attr-script-crossorigin
   @Experimental()
-  void set crossOrigin(String value) => _blink.BlinkHTMLScriptElement.$crossOrigin_Setter(this, value);
+  void set crossOrigin(String value) => _blink.BlinkHTMLScriptElement.instance.crossOrigin_Setter_(this, value);
 
   @DomName('HTMLScriptElement.defer')
   @DocsEditable()
-  bool get defer => _blink.BlinkHTMLScriptElement.$defer_Getter(this);
+  bool get defer => _blink.BlinkHTMLScriptElement.instance.defer_Getter_(this);
 
   @DomName('HTMLScriptElement.defer')
   @DocsEditable()
-  void set defer(bool value) => _blink.BlinkHTMLScriptElement.$defer_Setter(this, value);
+  void set defer(bool value) => _blink.BlinkHTMLScriptElement.instance.defer_Setter_(this, value);
+
+  @DomName('HTMLScriptElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLScriptElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLScriptElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLScriptElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLScriptElement.nonce')
   @DocsEditable()
   // https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html#interaction-with-the-script-src-directive
   @Experimental()
-  String get nonce => _blink.BlinkHTMLScriptElement.$nonce_Getter(this);
+  String get nonce => _blink.BlinkHTMLScriptElement.instance.nonce_Getter_(this);
 
   @DomName('HTMLScriptElement.nonce')
   @DocsEditable()
   // https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html#interaction-with-the-script-src-directive
   @Experimental()
-  void set nonce(String value) => _blink.BlinkHTMLScriptElement.$nonce_Setter(this, value);
+  void set nonce(String value) => _blink.BlinkHTMLScriptElement.instance.nonce_Setter_(this, value);
 
   @DomName('HTMLScriptElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLScriptElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLScriptElement.instance.src_Getter_(this);
 
   @DomName('HTMLScriptElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLScriptElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLScriptElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLScriptElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLScriptElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLScriptElement.instance.type_Getter_(this);
 
   @DomName('HTMLScriptElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLScriptElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLScriptElement.instance.type_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24829,44 +27336,44 @@ class SecurityPolicyViolationEvent extends Event {
 
   @DomName('SecurityPolicyViolationEvent.blockedURI')
   @DocsEditable()
-  String get blockedUri => _blink.BlinkSecurityPolicyViolationEvent.$blockedURI_Getter(this);
+  String get blockedUri => _blink.BlinkSecurityPolicyViolationEvent.instance.blockedURI_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.columnNumber')
   @DocsEditable()
-  int get columnNumber => _blink.BlinkSecurityPolicyViolationEvent.$columnNumber_Getter(this);
+  int get columnNumber => _blink.BlinkSecurityPolicyViolationEvent.instance.columnNumber_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.documentURI')
   @DocsEditable()
-  String get documentUri => _blink.BlinkSecurityPolicyViolationEvent.$documentURI_Getter(this);
+  String get documentUri => _blink.BlinkSecurityPolicyViolationEvent.instance.documentURI_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.effectiveDirective')
   @DocsEditable()
-  String get effectiveDirective => _blink.BlinkSecurityPolicyViolationEvent.$effectiveDirective_Getter(this);
+  String get effectiveDirective => _blink.BlinkSecurityPolicyViolationEvent.instance.effectiveDirective_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.lineNumber')
   @DocsEditable()
-  int get lineNumber => _blink.BlinkSecurityPolicyViolationEvent.$lineNumber_Getter(this);
+  int get lineNumber => _blink.BlinkSecurityPolicyViolationEvent.instance.lineNumber_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.originalPolicy')
   @DocsEditable()
-  String get originalPolicy => _blink.BlinkSecurityPolicyViolationEvent.$originalPolicy_Getter(this);
+  String get originalPolicy => _blink.BlinkSecurityPolicyViolationEvent.instance.originalPolicy_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.referrer')
   @DocsEditable()
-  String get referrer => _blink.BlinkSecurityPolicyViolationEvent.$referrer_Getter(this);
+  String get referrer => _blink.BlinkSecurityPolicyViolationEvent.instance.referrer_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.sourceFile')
   @DocsEditable()
-  String get sourceFile => _blink.BlinkSecurityPolicyViolationEvent.$sourceFile_Getter(this);
+  String get sourceFile => _blink.BlinkSecurityPolicyViolationEvent.instance.sourceFile_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.statusCode')
   @DocsEditable()
   @Experimental() // untriaged
-  int get statusCode => _blink.BlinkSecurityPolicyViolationEvent.$statusCode_Getter(this);
+  int get statusCode => _blink.BlinkSecurityPolicyViolationEvent.instance.statusCode_Getter_(this);
 
   @DomName('SecurityPolicyViolationEvent.violatedDirective')
   @DocsEditable()
-  String get violatedDirective => _blink.BlinkSecurityPolicyViolationEvent.$violatedDirective_Getter(this);
+  String get violatedDirective => _blink.BlinkSecurityPolicyViolationEvent.instance.violatedDirective_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -24891,120 +27398,125 @@ class SelectElement extends HtmlElement {
 
   @DomName('HTMLSelectElement.autofocus')
   @DocsEditable()
-  bool get autofocus => _blink.BlinkHTMLSelectElement.$autofocus_Getter(this);
+  bool get autofocus => _blink.BlinkHTMLSelectElement.instance.autofocus_Getter_(this);
 
   @DomName('HTMLSelectElement.autofocus')
   @DocsEditable()
-  void set autofocus(bool value) => _blink.BlinkHTMLSelectElement.$autofocus_Setter(this, value);
+  void set autofocus(bool value) => _blink.BlinkHTMLSelectElement.instance.autofocus_Setter_(this, value);
 
   @DomName('HTMLSelectElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLSelectElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLSelectElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLSelectElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLSelectElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLSelectElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLSelectElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLSelectElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLSelectElement.instance.form_Getter_(this);
 
   @DomName('HTMLSelectElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLSelectElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLSelectElement.instance.labels_Getter_(this);
 
   @DomName('HTMLSelectElement.length')
   @DocsEditable()
-  int get length => _blink.BlinkHTMLSelectElement.$length_Getter(this);
+  int get length => _blink.BlinkHTMLSelectElement.instance.length_Getter_(this);
 
   @DomName('HTMLSelectElement.length')
   @DocsEditable()
-  void set length(int value) => _blink.BlinkHTMLSelectElement.$length_Setter(this, value);
+  void set length(int value) => _blink.BlinkHTMLSelectElement.instance.length_Setter_(this, value);
 
   @DomName('HTMLSelectElement.multiple')
   @DocsEditable()
-  bool get multiple => _blink.BlinkHTMLSelectElement.$multiple_Getter(this);
+  bool get multiple => _blink.BlinkHTMLSelectElement.instance.multiple_Getter_(this);
 
   @DomName('HTMLSelectElement.multiple')
   @DocsEditable()
-  void set multiple(bool value) => _blink.BlinkHTMLSelectElement.$multiple_Setter(this, value);
+  void set multiple(bool value) => _blink.BlinkHTMLSelectElement.instance.multiple_Setter_(this, value);
 
   @DomName('HTMLSelectElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLSelectElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLSelectElement.instance.name_Getter_(this);
 
   @DomName('HTMLSelectElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLSelectElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLSelectElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLSelectElement.required')
   @DocsEditable()
-  bool get required => _blink.BlinkHTMLSelectElement.$required_Getter(this);
+  bool get required => _blink.BlinkHTMLSelectElement.instance.required_Getter_(this);
 
   @DomName('HTMLSelectElement.required')
   @DocsEditable()
-  void set required(bool value) => _blink.BlinkHTMLSelectElement.$required_Setter(this, value);
+  void set required(bool value) => _blink.BlinkHTMLSelectElement.instance.required_Setter_(this, value);
 
   @DomName('HTMLSelectElement.selectedIndex')
   @DocsEditable()
-  int get selectedIndex => _blink.BlinkHTMLSelectElement.$selectedIndex_Getter(this);
+  int get selectedIndex => _blink.BlinkHTMLSelectElement.instance.selectedIndex_Getter_(this);
 
   @DomName('HTMLSelectElement.selectedIndex')
   @DocsEditable()
-  void set selectedIndex(int value) => _blink.BlinkHTMLSelectElement.$selectedIndex_Setter(this, value);
+  void set selectedIndex(int value) => _blink.BlinkHTMLSelectElement.instance.selectedIndex_Setter_(this, value);
 
   @DomName('HTMLSelectElement.size')
   @DocsEditable()
-  int get size => _blink.BlinkHTMLSelectElement.$size_Getter(this);
+  int get size => _blink.BlinkHTMLSelectElement.instance.size_Getter_(this);
 
   @DomName('HTMLSelectElement.size')
   @DocsEditable()
-  void set size(int value) => _blink.BlinkHTMLSelectElement.$size_Setter(this, value);
+  void set size(int value) => _blink.BlinkHTMLSelectElement.instance.size_Setter_(this, value);
 
   @DomName('HTMLSelectElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLSelectElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLSelectElement.instance.type_Getter_(this);
 
   @DomName('HTMLSelectElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLSelectElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLSelectElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLSelectElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLSelectElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLSelectElement.instance.validity_Getter_(this);
 
   @DomName('HTMLSelectElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLSelectElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLSelectElement.instance.value_Getter_(this);
 
   @DomName('HTMLSelectElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLSelectElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLSelectElement.instance.value_Setter_(this, value);
 
   @DomName('HTMLSelectElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLSelectElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLSelectElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLSelectElement.__setter__')
   @DocsEditable()
-  void __setter__(int index, OptionElement value) => _blink.BlinkHTMLSelectElement.$__setter___Callback(this, index, value);
+  void __setter__(int index, OptionElement value) => _blink.BlinkHTMLSelectElement.instance.$__setter___Callback_2_(this, index, value);
+
+  @DomName('HTMLSelectElement.add')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void add(HtmlElement element, int before) => _blink.BlinkHTMLSelectElement.instance.add_Callback_2_(this, element, before);
 
   @DomName('HTMLSelectElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLSelectElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLSelectElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLSelectElement.item')
   @DocsEditable()
-  Element item(int index) => _blink.BlinkHTMLSelectElement.$item_Callback(this, index);
+  Element item(int index) => _blink.BlinkHTMLSelectElement.instance.item_Callback_1_(this, index);
 
   @DomName('HTMLSelectElement.namedItem')
   @DocsEditable()
-  Element namedItem(String name) => _blink.BlinkHTMLSelectElement.$namedItem_Callback(this, name);
+  Element namedItem(String name) => _blink.BlinkHTMLSelectElement.instance.namedItem_Callback_1_(this, name);
 
   @DomName('HTMLSelectElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLSelectElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLSelectElement.instance.setCustomValidity_Callback_1_(this, error);
 
 
   // Override default options, since IE returns SelectElement itself and it
@@ -25040,117 +27552,172 @@ class Selection extends NativeFieldWrapperClass2 {
 
   @DomName('Selection.anchorNode')
   @DocsEditable()
-  Node get anchorNode => _blink.BlinkSelection.$anchorNode_Getter(this);
+  Node get anchorNode => _blink.BlinkSelection.instance.anchorNode_Getter_(this);
 
   @DomName('Selection.anchorOffset')
   @DocsEditable()
-  int get anchorOffset => _blink.BlinkSelection.$anchorOffset_Getter(this);
+  int get anchorOffset => _blink.BlinkSelection.instance.anchorOffset_Getter_(this);
 
   @DomName('Selection.baseNode')
   @DocsEditable()
   @Experimental() // non-standard
-  Node get baseNode => _blink.BlinkSelection.$baseNode_Getter(this);
+  Node get baseNode => _blink.BlinkSelection.instance.baseNode_Getter_(this);
 
   @DomName('Selection.baseOffset')
   @DocsEditable()
   @Experimental() // non-standard
-  int get baseOffset => _blink.BlinkSelection.$baseOffset_Getter(this);
+  int get baseOffset => _blink.BlinkSelection.instance.baseOffset_Getter_(this);
 
   @DomName('Selection.extentNode')
   @DocsEditable()
   @Experimental() // non-standard
-  Node get extentNode => _blink.BlinkSelection.$extentNode_Getter(this);
+  Node get extentNode => _blink.BlinkSelection.instance.extentNode_Getter_(this);
 
   @DomName('Selection.extentOffset')
   @DocsEditable()
   @Experimental() // non-standard
-  int get extentOffset => _blink.BlinkSelection.$extentOffset_Getter(this);
+  int get extentOffset => _blink.BlinkSelection.instance.extentOffset_Getter_(this);
 
   @DomName('Selection.focusNode')
   @DocsEditable()
-  Node get focusNode => _blink.BlinkSelection.$focusNode_Getter(this);
+  Node get focusNode => _blink.BlinkSelection.instance.focusNode_Getter_(this);
 
   @DomName('Selection.focusOffset')
   @DocsEditable()
-  int get focusOffset => _blink.BlinkSelection.$focusOffset_Getter(this);
+  int get focusOffset => _blink.BlinkSelection.instance.focusOffset_Getter_(this);
 
   @DomName('Selection.isCollapsed')
   @DocsEditable()
-  bool get isCollapsed => _blink.BlinkSelection.$isCollapsed_Getter(this);
+  bool get isCollapsed => _blink.BlinkSelection.instance.isCollapsed_Getter_(this);
 
   @DomName('Selection.rangeCount')
   @DocsEditable()
-  int get rangeCount => _blink.BlinkSelection.$rangeCount_Getter(this);
+  int get rangeCount => _blink.BlinkSelection.instance.rangeCount_Getter_(this);
 
   @DomName('Selection.type')
   @DocsEditable()
   @Experimental() // non-standard
-  String get type => _blink.BlinkSelection.$type_Getter(this);
+  String get type => _blink.BlinkSelection.instance.type_Getter_(this);
 
   @DomName('Selection.addRange')
   @DocsEditable()
-  void addRange(Range range) => _blink.BlinkSelection.$addRange_Callback(this, range);
+  void addRange(Range range) => _blink.BlinkSelection.instance.addRange_Callback_1_(this, range);
 
-  @DomName('Selection.collapse')
-  @DocsEditable()
-  void collapse(Node node, int index) => _blink.BlinkSelection.$collapse_Callback(this, node, index);
+  void collapse(Node node, [int offset]) {
+    if (offset != null) {
+      _blink.BlinkSelection.instance.collapse_Callback_2_(this, node, offset);
+      return;
+    }
+    _blink.BlinkSelection.instance.collapse_Callback_1_(this, node);
+    return;
+  }
 
   @DomName('Selection.collapseToEnd')
   @DocsEditable()
-  void collapseToEnd() => _blink.BlinkSelection.$collapseToEnd_Callback(this);
+  void collapseToEnd() => _blink.BlinkSelection.instance.collapseToEnd_Callback_0_(this);
 
   @DomName('Selection.collapseToStart')
   @DocsEditable()
-  void collapseToStart() => _blink.BlinkSelection.$collapseToStart_Callback(this);
+  void collapseToStart() => _blink.BlinkSelection.instance.collapseToStart_Callback_0_(this);
 
   @DomName('Selection.containsNode')
   @DocsEditable()
   @Experimental() // non-standard
-  bool containsNode(Node node, bool allowPartial) => _blink.BlinkSelection.$containsNode_Callback(this, node, allowPartial);
+  bool containsNode(Node node, bool allowPartial) => _blink.BlinkSelection.instance.containsNode_Callback_2_(this, node, allowPartial);
 
   @DomName('Selection.deleteFromDocument')
   @DocsEditable()
-  void deleteFromDocument() => _blink.BlinkSelection.$deleteFromDocument_Callback(this);
+  void deleteFromDocument() => _blink.BlinkSelection.instance.deleteFromDocument_Callback_0_(this);
 
   @DomName('Selection.empty')
   @DocsEditable()
   @Experimental() // non-standard
-  void empty() => _blink.BlinkSelection.$empty_Callback(this);
+  void empty() => _blink.BlinkSelection.instance.empty_Callback_0_(this);
 
-  @DomName('Selection.extend')
-  @DocsEditable()
-  void extend(Node node, int offset) => _blink.BlinkSelection.$extend_Callback(this, node, offset);
+  void extend(Node node, [int offset]) {
+    if (offset != null) {
+      _blink.BlinkSelection.instance.extend_Callback_2_(this, node, offset);
+      return;
+    }
+    _blink.BlinkSelection.instance.extend_Callback_1_(this, node);
+    return;
+  }
 
   @DomName('Selection.getRangeAt')
   @DocsEditable()
-  Range getRangeAt(int index) => _blink.BlinkSelection.$getRangeAt_Callback(this, index);
+  Range getRangeAt(int index) => _blink.BlinkSelection.instance.getRangeAt_Callback_1_(this, index);
 
   @DomName('Selection.modify')
   @DocsEditable()
   @Experimental() // non-standard
-  void modify(String alter, String direction, String granularity) => _blink.BlinkSelection.$modify_Callback(this, alter, direction, granularity);
+  void modify(String alter, String direction, String granularity) => _blink.BlinkSelection.instance.modify_Callback_3_(this, alter, direction, granularity);
 
   @DomName('Selection.removeAllRanges')
   @DocsEditable()
-  void removeAllRanges() => _blink.BlinkSelection.$removeAllRanges_Callback(this);
+  void removeAllRanges() => _blink.BlinkSelection.instance.removeAllRanges_Callback_0_(this);
 
   @DomName('Selection.selectAllChildren')
   @DocsEditable()
-  void selectAllChildren(Node node) => _blink.BlinkSelection.$selectAllChildren_Callback(this, node);
+  void selectAllChildren(Node node) => _blink.BlinkSelection.instance.selectAllChildren_Callback_1_(this, node);
 
   @DomName('Selection.setBaseAndExtent')
   @DocsEditable()
   @Experimental() // non-standard
-  void setBaseAndExtent(Node baseNode, int baseOffset, Node extentNode, int extentOffset) => _blink.BlinkSelection.$setBaseAndExtent_Callback(this, baseNode, baseOffset, extentNode, extentOffset);
+  void setBaseAndExtent(Node baseNode, int baseOffset, Node extentNode, int extentOffset) => _blink.BlinkSelection.instance.setBaseAndExtent_Callback_4_(this, baseNode, baseOffset, extentNode, extentOffset);
 
-  @DomName('Selection.setPosition')
-  @DocsEditable()
-  @Experimental() // non-standard
-  void setPosition(Node node, int offset) => _blink.BlinkSelection.$setPosition_Callback(this, node, offset);
+  void setPosition(Node node, [int offset]) {
+    if (offset != null) {
+      _blink.BlinkSelection.instance.setPosition_Callback_2_(this, node, offset);
+      return;
+    }
+    _blink.BlinkSelection.instance.setPosition_Callback_1_(this, node);
+    return;
+  }
 
-  @DomName('Selection.toString')
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ServiceWorkerClient')
+@Experimental() // untriaged
+class ServiceWorkerClient extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory ServiceWorkerClient._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ServiceWorkerClient.id')
   @DocsEditable()
-  String toString() => _blink.BlinkSelection.$toString_Callback(this);
+  @Experimental() // untriaged
+  int get id => _blink.BlinkServiceWorkerClient.instance.id_Getter_(this);
+
+  @DomName('ServiceWorkerClient.postMessage')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void postMessage(/*SerializedScriptValue*/ message, [List<MessagePort> transfer]) => _blink.BlinkServiceWorkerClient.instance.postMessage_Callback_2_(this, message, transfer);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ServiceWorkerClients')
+@Experimental() // untriaged
+class ServiceWorkerClients extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory ServiceWorkerClients._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ServiceWorkerClients.getServiced')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future getServiced() => _blink.BlinkServiceWorkerClients.instance.getServiced_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25167,6 +27734,45 @@ class ServiceWorkerContainer extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory ServiceWorkerContainer._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('ServiceWorkerContainer.active')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get active => _blink.BlinkServiceWorkerContainer.instance.active_Getter_(this);
+
+  @DomName('ServiceWorkerContainer.controller')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get controller => _blink.BlinkServiceWorkerContainer.instance.controller_Getter_(this);
+
+  @DomName('ServiceWorkerContainer.installing')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get installing => _blink.BlinkServiceWorkerContainer.instance.installing_Getter_(this);
+
+  @DomName('ServiceWorkerContainer.ready')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future get ready => _blink.BlinkServiceWorkerContainer.instance.ready_Getter_(this);
+
+  @DomName('ServiceWorkerContainer.waiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get waiting => _blink.BlinkServiceWorkerContainer.instance.waiting_Getter_(this);
+
+  Future register(String url, [Map options]) {
+    if (options != null) {
+      return _blink.BlinkServiceWorkerContainer.instance.register_Callback_2_(this, url, options);
+    }
+    return _blink.BlinkServiceWorkerContainer.instance.register_Callback_1_(this, url);
+  }
+
+  Future unregister([String scope]) {
+    if (scope != null) {
+      return _blink.BlinkServiceWorkerContainer.instance.unregister_Callback_1_(this, scope);
+    }
+    return _blink.BlinkServiceWorkerContainer.instance.unregister_Callback_0_(this);
+  }
+
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -25181,6 +27787,87 @@ class ServiceWorkerContainer extends NativeFieldWrapperClass2 {
 class ServiceWorkerGlobalScope extends WorkerGlobalScope {
   // To suppress missing implicit constructor warnings.
   factory ServiceWorkerGlobalScope._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ServiceWorkerGlobalScope.messageEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<MessageEvent> messageEvent = const EventStreamProvider<MessageEvent>('message');
+
+  @DomName('ServiceWorkerGlobalScope.clients')
+  @DocsEditable()
+  @Experimental() // untriaged
+  ServiceWorkerClients get clients => _blink.BlinkServiceWorkerGlobalScope.instance.clients_Getter_(this);
+
+  @DomName('ServiceWorkerGlobalScope.nativeCaches')
+  @DocsEditable()
+  @Experimental() // untriaged
+  CacheStorage get nativeCaches => _blink.BlinkServiceWorkerGlobalScope.instance.nativeCaches_Getter_(this);
+
+  @DomName('ServiceWorkerGlobalScope.scope')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get scope => _blink.BlinkServiceWorkerGlobalScope.instance.scope_Getter_(this);
+
+  Future _fetch(request, [Map requestInitDict]) {
+    if ((request is String || request == null) && requestInitDict == null) {
+      return _blink.BlinkServiceWorkerGlobalScope.instance.fetch_Callback_1_(this, request);
+    }
+    if ((requestInitDict is Map || requestInitDict == null) && (request is String || request == null)) {
+      return _blink.BlinkServiceWorkerGlobalScope.instance.fetch_Callback_2_(this, request, requestInitDict);
+    }
+    if ((request is _Request || request == null) && requestInitDict == null) {
+      return _blink.BlinkServiceWorkerGlobalScope.instance.fetch_Callback_1_(this, request);
+    }
+    if ((requestInitDict is Map || requestInitDict == null) && (request is _Request || request == null)) {
+      return _blink.BlinkServiceWorkerGlobalScope.instance.fetch_Callback_2_(this, request, requestInitDict);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('ServiceWorkerGlobalScope.onmessage')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<MessageEvent> get onMessage => messageEvent.forTarget(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ServiceWorkerRegistration')
+@Experimental() // untriaged
+class ServiceWorkerRegistration extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory ServiceWorkerRegistration._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('ServiceWorkerRegistration.active')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get active => _blink.BlinkServiceWorkerRegistration.instance.active_Getter_(this);
+
+  @DomName('ServiceWorkerRegistration.installing')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get installing => _blink.BlinkServiceWorkerRegistration.instance.installing_Getter_(this);
+
+  @DomName('ServiceWorkerRegistration.scope')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get scope => _blink.BlinkServiceWorkerRegistration.instance.scope_Getter_(this);
+
+  @DomName('ServiceWorkerRegistration.waiting')
+  @DocsEditable()
+  @Experimental() // untriaged
+  _ServiceWorker get waiting => _blink.BlinkServiceWorkerRegistration.instance.waiting_Getter_(this);
+
+  @DomName('ServiceWorkerRegistration.unregister')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future unregister() => _blink.BlinkServiceWorkerRegistration.instance.unregister_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25212,18 +27899,10 @@ class ShadowElement extends HtmlElement {
   /// Checks if this type is supported on the current platform.
   static bool get supported => true;
 
-  @DomName('HTMLShadowElement.resetStyleInheritance')
-  @DocsEditable()
-  bool get resetStyleInheritance => _blink.BlinkHTMLShadowElement.$resetStyleInheritance_Getter(this);
-
-  @DomName('HTMLShadowElement.resetStyleInheritance')
-  @DocsEditable()
-  void set resetStyleInheritance(bool value) => _blink.BlinkHTMLShadowElement.$resetStyleInheritance_Setter(this, value);
-
   @DomName('HTMLShadowElement.getDistributedNodes')
   @DocsEditable()
   @Experimental() // untriaged
-  List<Node> getDistributedNodes() => _blink.BlinkHTMLShadowElement.$getDistributedNodes_Callback(this);
+  List<Node> getDistributedNodes() => _blink.BlinkHTMLShadowElement.instance.getDistributedNodes_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25243,62 +27922,54 @@ class ShadowRoot extends DocumentFragment {
 
   @DomName('ShadowRoot.activeElement')
   @DocsEditable()
-  Element get activeElement => _blink.BlinkShadowRoot.$activeElement_Getter(this);
+  Element get activeElement => _blink.BlinkShadowRoot.instance.activeElement_Getter_(this);
 
   @DomName('ShadowRoot.host')
   @DocsEditable()
   @Experimental() // untriaged
-  Element get host => _blink.BlinkShadowRoot.$host_Getter(this);
+  Element get host => _blink.BlinkShadowRoot.instance.host_Getter_(this);
 
   @DomName('ShadowRoot.innerHTML')
   @DocsEditable()
-  String get innerHtml => _blink.BlinkShadowRoot.$innerHTML_Getter(this);
+  String get innerHtml => _blink.BlinkShadowRoot.instance.innerHTML_Getter_(this);
 
   @DomName('ShadowRoot.innerHTML')
   @DocsEditable()
-  void set innerHtml(String value) => _blink.BlinkShadowRoot.$innerHTML_Setter(this, value);
+  void set innerHtml(String value) => _blink.BlinkShadowRoot.instance.innerHTML_Setter_(this, value);
 
   @DomName('ShadowRoot.olderShadowRoot')
   @DocsEditable()
   @Experimental() // untriaged
-  ShadowRoot get olderShadowRoot => _blink.BlinkShadowRoot.$olderShadowRoot_Getter(this);
-
-  @DomName('ShadowRoot.resetStyleInheritance')
-  @DocsEditable()
-  bool get _resetStyleInheritance => _blink.BlinkShadowRoot.$resetStyleInheritance_Getter(this);
-
-  @DomName('ShadowRoot.resetStyleInheritance')
-  @DocsEditable()
-  void set _resetStyleInheritance(bool value) => _blink.BlinkShadowRoot.$resetStyleInheritance_Setter(this, value);
+  ShadowRoot get olderShadowRoot => _blink.BlinkShadowRoot.instance.olderShadowRoot_Getter_(this);
 
   @DomName('ShadowRoot.styleSheets')
   @DocsEditable()
   @Experimental() // untriaged
-  List<StyleSheet> get styleSheets => _blink.BlinkShadowRoot.$styleSheets_Getter(this);
+  List<StyleSheet> get styleSheets => _blink.BlinkShadowRoot.instance.styleSheets_Getter_(this);
 
   @DomName('ShadowRoot.cloneNode')
   @DocsEditable()
-  Node clone(bool deep) => _blink.BlinkShadowRoot.$cloneNode_Callback(this, deep);
+  Node clone(bool deep) => _blink.BlinkShadowRoot.instance.cloneNode_Callback_1_(this, deep);
 
   @DomName('ShadowRoot.elementFromPoint')
   @DocsEditable()
-  Element elementFromPoint(int x, int y) => _blink.BlinkShadowRoot.$elementFromPoint_Callback(this, x, y);
+  Element elementFromPoint(int x, int y) => _blink.BlinkShadowRoot.instance.elementFromPoint_Callback_2_(this, x, y);
 
   @DomName('ShadowRoot.getElementById')
   @DocsEditable()
-  Element getElementById(String elementId) => _blink.BlinkShadowRoot.$getElementById_Callback(this, elementId);
+  Element getElementById(String elementId) => _blink.BlinkShadowRoot.instance.getElementById_Callback_1_(this, elementId);
 
   @DomName('ShadowRoot.getElementsByClassName')
   @DocsEditable()
-  List<Node> getElementsByClassName(String className) => _blink.BlinkShadowRoot.$getElementsByClassName_Callback(this, className);
+  List<Node> getElementsByClassName(String className) => _blink.BlinkShadowRoot.instance.getElementsByClassName_Callback_1_(this, className);
 
   @DomName('ShadowRoot.getElementsByTagName')
   @DocsEditable()
-  List<Node> getElementsByTagName(String tagName) => _blink.BlinkShadowRoot.$getElementsByTagName_Callback(this, tagName);
+  List<Node> getElementsByTagName(String tagName) => _blink.BlinkShadowRoot.instance.getElementsByTagName_Callback_1_(this, tagName);
 
   @DomName('ShadowRoot.getSelection')
   @DocsEditable()
-  Selection getSelection() => _blink.BlinkShadowRoot.$getSelection_Callback(this);
+  Selection getSelection() => _blink.BlinkShadowRoot.instance.getSelection_Callback_0_(this);
 
   static final bool supported = true;
 
@@ -25360,17 +28031,17 @@ class SharedWorker extends EventTarget implements AbstractWorker {
   @DomName('SharedWorker.SharedWorker')
   @DocsEditable()
   factory SharedWorker(String scriptURL, [String name]) {
-    return _blink.BlinkSharedWorker.$_create_1constructorCallback(scriptURL, name);
+    return _blink.BlinkSharedWorker.instance.constructorCallback_2_(scriptURL, name);
   }
 
   @DomName('SharedWorker.port')
   @DocsEditable()
-  MessagePort get port => _blink.BlinkSharedWorker.$port_Getter(this);
+  MessagePort get port => _blink.BlinkSharedWorker.instance.port_Getter_(this);
 
   @DomName('SharedWorker.workerStart')
   @DocsEditable()
   @Experimental() // untriaged
-  double get workerStart => _blink.BlinkSharedWorker.$workerStart_Getter(this);
+  double get workerStart => _blink.BlinkSharedWorker.instance.workerStart_Getter_(this);
 
   @DomName('SharedWorker.onerror')
   @DocsEditable()
@@ -25406,7 +28077,7 @@ class SharedWorkerGlobalScope extends WorkerGlobalScope {
   @DomName('SharedWorkerGlobalScope.name')
   @DocsEditable()
   @Experimental() // untriaged
-  String get name => _blink.BlinkSharedWorkerGlobalScope.$name_Getter(this);
+  String get name => _blink.BlinkSharedWorkerGlobalScope.instance.name_Getter_(this);
 
   /// Stream of `connect` events handled by this [SharedWorkerGlobalScope].
   @DomName('SharedWorkerGlobalScope.onconnect')
@@ -25433,77 +28104,77 @@ class SourceBuffer extends EventTarget {
   @DomName('SourceBuffer.appendWindowEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  num get appendWindowEnd => _blink.BlinkSourceBuffer.$appendWindowEnd_Getter(this);
+  num get appendWindowEnd => _blink.BlinkSourceBuffer.instance.appendWindowEnd_Getter_(this);
 
   @DomName('SourceBuffer.appendWindowEnd')
   @DocsEditable()
   @Experimental() // untriaged
-  void set appendWindowEnd(num value) => _blink.BlinkSourceBuffer.$appendWindowEnd_Setter(this, value);
+  void set appendWindowEnd(num value) => _blink.BlinkSourceBuffer.instance.appendWindowEnd_Setter_(this, value);
 
   @DomName('SourceBuffer.appendWindowStart')
   @DocsEditable()
   @Experimental() // untriaged
-  num get appendWindowStart => _blink.BlinkSourceBuffer.$appendWindowStart_Getter(this);
+  num get appendWindowStart => _blink.BlinkSourceBuffer.instance.appendWindowStart_Getter_(this);
 
   @DomName('SourceBuffer.appendWindowStart')
   @DocsEditable()
   @Experimental() // untriaged
-  void set appendWindowStart(num value) => _blink.BlinkSourceBuffer.$appendWindowStart_Setter(this, value);
+  void set appendWindowStart(num value) => _blink.BlinkSourceBuffer.instance.appendWindowStart_Setter_(this, value);
 
   @DomName('SourceBuffer.buffered')
   @DocsEditable()
-  TimeRanges get buffered => _blink.BlinkSourceBuffer.$buffered_Getter(this);
+  TimeRanges get buffered => _blink.BlinkSourceBuffer.instance.buffered_Getter_(this);
 
   @DomName('SourceBuffer.mode')
   @DocsEditable()
   @Experimental() // untriaged
-  String get mode => _blink.BlinkSourceBuffer.$mode_Getter(this);
+  String get mode => _blink.BlinkSourceBuffer.instance.mode_Getter_(this);
 
   @DomName('SourceBuffer.mode')
   @DocsEditable()
   @Experimental() // untriaged
-  void set mode(String value) => _blink.BlinkSourceBuffer.$mode_Setter(this, value);
+  void set mode(String value) => _blink.BlinkSourceBuffer.instance.mode_Setter_(this, value);
 
   @DomName('SourceBuffer.timestampOffset')
   @DocsEditable()
-  num get timestampOffset => _blink.BlinkSourceBuffer.$timestampOffset_Getter(this);
+  num get timestampOffset => _blink.BlinkSourceBuffer.instance.timestampOffset_Getter_(this);
 
   @DomName('SourceBuffer.timestampOffset')
   @DocsEditable()
-  void set timestampOffset(num value) => _blink.BlinkSourceBuffer.$timestampOffset_Setter(this, value);
+  void set timestampOffset(num value) => _blink.BlinkSourceBuffer.instance.timestampOffset_Setter_(this, value);
 
   @DomName('SourceBuffer.updating')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get updating => _blink.BlinkSourceBuffer.$updating_Getter(this);
+  bool get updating => _blink.BlinkSourceBuffer.instance.updating_Getter_(this);
 
   @DomName('SourceBuffer.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkSourceBuffer.$abort_Callback(this);
+  void abort() => _blink.BlinkSourceBuffer.instance.abort_Callback_0_(this);
 
   @DomName('SourceBuffer.appendBuffer')
   @DocsEditable()
   @Experimental() // untriaged
-  void appendBuffer(ByteBuffer data) => _blink.BlinkSourceBuffer.$appendBuffer_Callback(this, data);
+  void appendBuffer(ByteBuffer data) => _blink.BlinkSourceBuffer.instance.appendBuffer_Callback_1_(this, data);
 
   void appendStream(FileStream stream, [int maxSize]) {
     if (maxSize != null) {
-      _blink.BlinkSourceBuffer.$_appendStream_1_Callback(this, stream, maxSize);
+      _blink.BlinkSourceBuffer.instance.appendStream_Callback_2_(this, stream, maxSize);
       return;
     }
-    _blink.BlinkSourceBuffer.$_appendStream_2_Callback(this, stream);
+    _blink.BlinkSourceBuffer.instance.appendStream_Callback_1_(this, stream);
     return;
   }
 
   @DomName('SourceBuffer.appendTypedData')
   @DocsEditable()
   @Experimental() // untriaged
-  void appendTypedData(TypedData data) => _blink.BlinkSourceBuffer.$appendTypedData_Callback(this, data);
+  void appendTypedData(TypedData data) => _blink.BlinkSourceBuffer.instance.appendBuffer_Callback_1_(this, data);
 
   @DomName('SourceBuffer.remove')
   @DocsEditable()
   @Experimental() // untriaged
-  void remove(num start, num end) => _blink.BlinkSourceBuffer.$remove_Callback(this, start, end);
+  void remove(num start, num end) => _blink.BlinkSourceBuffer.instance.remove_Callback_2_(this, start, end);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25523,15 +28194,15 @@ class SourceBufferList extends EventTarget with ListMixin<SourceBuffer>, Immutab
 
   @DomName('SourceBufferList.length')
   @DocsEditable()
-  int get length => _blink.BlinkSourceBufferList.$length_Getter(this);
+  int get length => _blink.BlinkSourceBufferList.instance.length_Getter_(this);
 
   SourceBuffer operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkSourceBufferList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkSourceBufferList.instance.item_Callback_1_(this, index);
   }
 
-  SourceBuffer _nativeIndexedGetter(int index) => _blink.BlinkSourceBufferList.$NativeIndexed_Getter(this, index);
+  SourceBuffer _nativeIndexedGetter(int index) => _blink.BlinkSourceBufferList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, SourceBuffer value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -25573,7 +28244,7 @@ class SourceBufferList extends EventTarget with ListMixin<SourceBuffer>, Immutab
 
   @DomName('SourceBufferList.item')
   @DocsEditable()
-  SourceBuffer item(int index) => _blink.BlinkSourceBufferList.$item_Callback(this, index);
+  SourceBuffer item(int index) => _blink.BlinkSourceBufferList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25599,29 +28270,59 @@ class SourceElement extends HtmlElement {
    */
   SourceElement.created() : super.created();
 
-  @DomName('HTMLSourceElement.media')
+  @DomName('HTMLSourceElement.integrity')
   @DocsEditable()
-  String get media => _blink.BlinkHTMLSourceElement.$media_Getter(this);
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLSourceElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLSourceElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLSourceElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLSourceElement.media')
   @DocsEditable()
-  void set media(String value) => _blink.BlinkHTMLSourceElement.$media_Setter(this, value);
+  String get media => _blink.BlinkHTMLSourceElement.instance.media_Getter_(this);
+
+  @DomName('HTMLSourceElement.media')
+  @DocsEditable()
+  void set media(String value) => _blink.BlinkHTMLSourceElement.instance.media_Setter_(this, value);
+
+  @DomName('HTMLSourceElement.sizes')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get sizes => _blink.BlinkHTMLSourceElement.instance.sizes_Getter_(this);
+
+  @DomName('HTMLSourceElement.sizes')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set sizes(String value) => _blink.BlinkHTMLSourceElement.instance.sizes_Setter_(this, value);
 
   @DomName('HTMLSourceElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLSourceElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLSourceElement.instance.src_Getter_(this);
 
   @DomName('HTMLSourceElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLSourceElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLSourceElement.instance.src_Setter_(this, value);
+
+  @DomName('HTMLSourceElement.srcset')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get srcset => _blink.BlinkHTMLSourceElement.instance.srcset_Getter_(this);
+
+  @DomName('HTMLSourceElement.srcset')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set srcset(String value) => _blink.BlinkHTMLSourceElement.instance.srcset_Setter_(this, value);
 
   @DomName('HTMLSourceElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLSourceElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLSourceElement.instance.type_Getter_(this);
 
   @DomName('HTMLSourceElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLSourceElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLSourceElement.instance.type_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25641,22 +28342,22 @@ class SourceInfo extends NativeFieldWrapperClass2 {
   @DomName('SourceInfo.facing')
   @DocsEditable()
   @Experimental() // untriaged
-  String get facing => _blink.BlinkSourceInfo.$facing_Getter(this);
+  String get facing => _blink.BlinkSourceInfo.instance.facing_Getter_(this);
 
   @DomName('SourceInfo.id')
   @DocsEditable()
   @Experimental() // untriaged
-  String get id => _blink.BlinkSourceInfo.$id_Getter(this);
+  String get id => _blink.BlinkSourceInfo.instance.id_Getter_(this);
 
   @DomName('SourceInfo.kind')
   @DocsEditable()
   @Experimental() // untriaged
-  String get kind => _blink.BlinkSourceInfo.$kind_Getter(this);
+  String get kind => _blink.BlinkSourceInfo.instance.kind_Getter_(this);
 
   @DomName('SourceInfo.label')
   @DocsEditable()
   @Experimental() // untriaged
-  String get label => _blink.BlinkSourceInfo.$label_Getter(this);
+  String get label => _blink.BlinkSourceInfo.instance.label_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25701,24 +28402,24 @@ class SpeechGrammar extends NativeFieldWrapperClass2 {
   @DomName('SpeechGrammar.SpeechGrammar')
   @DocsEditable()
   factory SpeechGrammar() {
-    return _blink.BlinkSpeechGrammar.$_create_1constructorCallback();
+    return _blink.BlinkSpeechGrammar.instance.constructorCallback_0_();
   }
 
   @DomName('SpeechGrammar.src')
   @DocsEditable()
-  String get src => _blink.BlinkSpeechGrammar.$src_Getter(this);
+  String get src => _blink.BlinkSpeechGrammar.instance.src_Getter_(this);
 
   @DomName('SpeechGrammar.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkSpeechGrammar.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkSpeechGrammar.instance.src_Setter_(this, value);
 
   @DomName('SpeechGrammar.weight')
   @DocsEditable()
-  num get weight => _blink.BlinkSpeechGrammar.$weight_Getter(this);
+  num get weight => _blink.BlinkSpeechGrammar.instance.weight_Getter_(this);
 
   @DomName('SpeechGrammar.weight')
   @DocsEditable()
-  void set weight(num value) => _blink.BlinkSpeechGrammar.$weight_Setter(this, value);
+  void set weight(num value) => _blink.BlinkSpeechGrammar.instance.weight_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25739,20 +28440,20 @@ class SpeechGrammarList extends NativeFieldWrapperClass2 with ListMixin<SpeechGr
   @DomName('SpeechGrammarList.SpeechGrammarList')
   @DocsEditable()
   factory SpeechGrammarList() {
-    return _blink.BlinkSpeechGrammarList.$_create_1constructorCallback();
+    return _blink.BlinkSpeechGrammarList.instance.constructorCallback_0_();
   }
 
   @DomName('SpeechGrammarList.length')
   @DocsEditable()
-  int get length => _blink.BlinkSpeechGrammarList.$length_Getter(this);
+  int get length => _blink.BlinkSpeechGrammarList.instance.length_Getter_(this);
 
   SpeechGrammar operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkSpeechGrammarList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkSpeechGrammarList.instance.item_Callback_1_(this, index);
   }
 
-  SpeechGrammar _nativeIndexedGetter(int index) => _blink.BlinkSpeechGrammarList.$NativeIndexed_Getter(this, index);
+  SpeechGrammar _nativeIndexedGetter(int index) => _blink.BlinkSpeechGrammarList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, SpeechGrammar value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -25794,57 +28495,25 @@ class SpeechGrammarList extends NativeFieldWrapperClass2 with ListMixin<SpeechGr
 
   void addFromString(String string, [num weight]) {
     if (weight != null) {
-      _blink.BlinkSpeechGrammarList.$_addFromString_1_Callback(this, string, weight);
+      _blink.BlinkSpeechGrammarList.instance.addFromString_Callback_2_(this, string, weight);
       return;
     }
-    _blink.BlinkSpeechGrammarList.$_addFromString_2_Callback(this, string);
+    _blink.BlinkSpeechGrammarList.instance.addFromString_Callback_1_(this, string);
     return;
   }
 
   void addFromUri(String src, [num weight]) {
     if (weight != null) {
-      _blink.BlinkSpeechGrammarList.$_addFromUri_1_Callback(this, src, weight);
+      _blink.BlinkSpeechGrammarList.instance.addFromUri_Callback_2_(this, src, weight);
       return;
     }
-    _blink.BlinkSpeechGrammarList.$_addFromUri_2_Callback(this, src);
+    _blink.BlinkSpeechGrammarList.instance.addFromUri_Callback_1_(this, src);
     return;
   }
 
   @DomName('SpeechGrammarList.item')
   @DocsEditable()
-  SpeechGrammar item(int index) => _blink.BlinkSpeechGrammarList.$item_Callback(this, index);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('SpeechInputEvent')
-// http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html#speech_input_event_interface
-@Experimental()
-class SpeechInputEvent extends Event {
-  // To suppress missing implicit constructor warnings.
-  factory SpeechInputEvent._() { throw new UnsupportedError("Not supported"); }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('SpeechInputResult')
-// http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html#speech_input_result_interface
-@Experimental()
-class SpeechInputResult extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory SpeechInputResult._() { throw new UnsupportedError("Not supported"); }
+  SpeechGrammar item(int index) => _blink.BlinkSpeechGrammarList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -25976,7 +28645,7 @@ class SpeechRecognition extends EventTarget {
   @DomName('SpeechRecognition.SpeechRecognition')
   @DocsEditable()
   factory SpeechRecognition() {
-    return _blink.BlinkSpeechRecognition.$_create_1constructorCallback();
+    return _blink.BlinkSpeechRecognition.instance.constructorCallback_0_();
   }
 
   /// Checks if this type is supported on the current platform.
@@ -25984,55 +28653,55 @@ class SpeechRecognition extends EventTarget {
 
   @DomName('SpeechRecognition.continuous')
   @DocsEditable()
-  bool get continuous => _blink.BlinkSpeechRecognition.$continuous_Getter(this);
+  bool get continuous => _blink.BlinkSpeechRecognition.instance.continuous_Getter_(this);
 
   @DomName('SpeechRecognition.continuous')
   @DocsEditable()
-  void set continuous(bool value) => _blink.BlinkSpeechRecognition.$continuous_Setter(this, value);
+  void set continuous(bool value) => _blink.BlinkSpeechRecognition.instance.continuous_Setter_(this, value);
 
   @DomName('SpeechRecognition.grammars')
   @DocsEditable()
-  SpeechGrammarList get grammars => _blink.BlinkSpeechRecognition.$grammars_Getter(this);
+  SpeechGrammarList get grammars => _blink.BlinkSpeechRecognition.instance.grammars_Getter_(this);
 
   @DomName('SpeechRecognition.grammars')
   @DocsEditable()
-  void set grammars(SpeechGrammarList value) => _blink.BlinkSpeechRecognition.$grammars_Setter(this, value);
+  void set grammars(SpeechGrammarList value) => _blink.BlinkSpeechRecognition.instance.grammars_Setter_(this, value);
 
   @DomName('SpeechRecognition.interimResults')
   @DocsEditable()
-  bool get interimResults => _blink.BlinkSpeechRecognition.$interimResults_Getter(this);
+  bool get interimResults => _blink.BlinkSpeechRecognition.instance.interimResults_Getter_(this);
 
   @DomName('SpeechRecognition.interimResults')
   @DocsEditable()
-  void set interimResults(bool value) => _blink.BlinkSpeechRecognition.$interimResults_Setter(this, value);
+  void set interimResults(bool value) => _blink.BlinkSpeechRecognition.instance.interimResults_Setter_(this, value);
 
   @DomName('SpeechRecognition.lang')
   @DocsEditable()
-  String get lang => _blink.BlinkSpeechRecognition.$lang_Getter(this);
+  String get lang => _blink.BlinkSpeechRecognition.instance.lang_Getter_(this);
 
   @DomName('SpeechRecognition.lang')
   @DocsEditable()
-  void set lang(String value) => _blink.BlinkSpeechRecognition.$lang_Setter(this, value);
+  void set lang(String value) => _blink.BlinkSpeechRecognition.instance.lang_Setter_(this, value);
 
   @DomName('SpeechRecognition.maxAlternatives')
   @DocsEditable()
-  int get maxAlternatives => _blink.BlinkSpeechRecognition.$maxAlternatives_Getter(this);
+  int get maxAlternatives => _blink.BlinkSpeechRecognition.instance.maxAlternatives_Getter_(this);
 
   @DomName('SpeechRecognition.maxAlternatives')
   @DocsEditable()
-  void set maxAlternatives(int value) => _blink.BlinkSpeechRecognition.$maxAlternatives_Setter(this, value);
+  void set maxAlternatives(int value) => _blink.BlinkSpeechRecognition.instance.maxAlternatives_Setter_(this, value);
 
   @DomName('SpeechRecognition.abort')
   @DocsEditable()
-  void abort() => _blink.BlinkSpeechRecognition.$abort_Callback(this);
+  void abort() => _blink.BlinkSpeechRecognition.instance.abort_Callback_0_(this);
 
   @DomName('SpeechRecognition.start')
   @DocsEditable()
-  void start() => _blink.BlinkSpeechRecognition.$start_Callback(this);
+  void start() => _blink.BlinkSpeechRecognition.instance.start_Callback_0_(this);
 
   @DomName('SpeechRecognition.stop')
   @DocsEditable()
-  void stop() => _blink.BlinkSpeechRecognition.$stop_Callback(this);
+  void stop() => _blink.BlinkSpeechRecognition.instance.stop_Callback_0_(this);
 
   /// Stream of `audioend` events handled by this [SpeechRecognition].
   @DomName('SpeechRecognition.onaudioend')
@@ -26108,11 +28777,11 @@ class SpeechRecognitionAlternative extends NativeFieldWrapperClass2 {
 
   @DomName('SpeechRecognitionAlternative.confidence')
   @DocsEditable()
-  double get confidence => _blink.BlinkSpeechRecognitionAlternative.$confidence_Getter(this);
+  double get confidence => _blink.BlinkSpeechRecognitionAlternative.instance.confidence_Getter_(this);
 
   @DomName('SpeechRecognitionAlternative.transcript')
   @DocsEditable()
-  String get transcript => _blink.BlinkSpeechRecognitionAlternative.$transcript_Getter(this);
+  String get transcript => _blink.BlinkSpeechRecognitionAlternative.instance.transcript_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26133,11 +28802,11 @@ class SpeechRecognitionError extends Event {
 
   @DomName('SpeechRecognitionError.error')
   @DocsEditable()
-  String get error => _blink.BlinkSpeechRecognitionError.$error_Getter(this);
+  String get error => _blink.BlinkSpeechRecognitionError.instance.error_Getter_(this);
 
   @DomName('SpeechRecognitionError.message')
   @DocsEditable()
-  String get message => _blink.BlinkSpeechRecognitionError.$message_Getter(this);
+  String get message => _blink.BlinkSpeechRecognitionError.instance.message_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26158,19 +28827,19 @@ class SpeechRecognitionEvent extends Event {
 
   @DomName('SpeechRecognitionEvent.emma')
   @DocsEditable()
-  Document get emma => _blink.BlinkSpeechRecognitionEvent.$emma_Getter(this);
+  Document get emma => _blink.BlinkSpeechRecognitionEvent.instance.emma_Getter_(this);
 
   @DomName('SpeechRecognitionEvent.interpretation')
   @DocsEditable()
-  Document get interpretation => _blink.BlinkSpeechRecognitionEvent.$interpretation_Getter(this);
+  Document get interpretation => _blink.BlinkSpeechRecognitionEvent.instance.interpretation_Getter_(this);
 
   @DomName('SpeechRecognitionEvent.resultIndex')
   @DocsEditable()
-  int get resultIndex => _blink.BlinkSpeechRecognitionEvent.$resultIndex_Getter(this);
+  int get resultIndex => _blink.BlinkSpeechRecognitionEvent.instance.resultIndex_Getter_(this);
 
   @DomName('SpeechRecognitionEvent.results')
   @DocsEditable()
-  List<SpeechRecognitionResult> get results => _blink.BlinkSpeechRecognitionEvent.$results_Getter(this);
+  List<SpeechRecognitionResult> get results => _blink.BlinkSpeechRecognitionEvent.instance.results_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26191,15 +28860,15 @@ class SpeechRecognitionResult extends NativeFieldWrapperClass2 {
 
   @DomName('SpeechRecognitionResult.isFinal')
   @DocsEditable()
-  bool get isFinal => _blink.BlinkSpeechRecognitionResult.$isFinal_Getter(this);
+  bool get isFinal => _blink.BlinkSpeechRecognitionResult.instance.isFinal_Getter_(this);
 
   @DomName('SpeechRecognitionResult.length')
   @DocsEditable()
-  int get length => _blink.BlinkSpeechRecognitionResult.$length_Getter(this);
+  int get length => _blink.BlinkSpeechRecognitionResult.instance.length_Getter_(this);
 
   @DomName('SpeechRecognitionResult.item')
   @DocsEditable()
-  SpeechRecognitionAlternative item(int index) => _blink.BlinkSpeechRecognitionResult.$item_Callback(this, index);
+  SpeechRecognitionAlternative item(int index) => _blink.BlinkSpeechRecognitionResult.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26219,35 +28888,35 @@ class SpeechSynthesis extends EventTarget {
 
   @DomName('SpeechSynthesis.paused')
   @DocsEditable()
-  bool get paused => _blink.BlinkSpeechSynthesis.$paused_Getter(this);
+  bool get paused => _blink.BlinkSpeechSynthesis.instance.paused_Getter_(this);
 
   @DomName('SpeechSynthesis.pending')
   @DocsEditable()
-  bool get pending => _blink.BlinkSpeechSynthesis.$pending_Getter(this);
+  bool get pending => _blink.BlinkSpeechSynthesis.instance.pending_Getter_(this);
 
   @DomName('SpeechSynthesis.speaking')
   @DocsEditable()
-  bool get speaking => _blink.BlinkSpeechSynthesis.$speaking_Getter(this);
+  bool get speaking => _blink.BlinkSpeechSynthesis.instance.speaking_Getter_(this);
 
   @DomName('SpeechSynthesis.cancel')
   @DocsEditable()
-  void cancel() => _blink.BlinkSpeechSynthesis.$cancel_Callback(this);
+  void cancel() => _blink.BlinkSpeechSynthesis.instance.cancel_Callback_0_(this);
 
   @DomName('SpeechSynthesis.getVoices')
   @DocsEditable()
-  List<SpeechSynthesisVoice> getVoices() => _blink.BlinkSpeechSynthesis.$getVoices_Callback(this);
+  List<SpeechSynthesisVoice> getVoices() => _blink.BlinkSpeechSynthesis.instance.getVoices_Callback_0_(this);
 
   @DomName('SpeechSynthesis.pause')
   @DocsEditable()
-  void pause() => _blink.BlinkSpeechSynthesis.$pause_Callback(this);
+  void pause() => _blink.BlinkSpeechSynthesis.instance.pause_Callback_0_(this);
 
   @DomName('SpeechSynthesis.resume')
   @DocsEditable()
-  void resume() => _blink.BlinkSpeechSynthesis.$resume_Callback(this);
+  void resume() => _blink.BlinkSpeechSynthesis.instance.resume_Callback_0_(this);
 
   @DomName('SpeechSynthesis.speak')
   @DocsEditable()
-  void speak(SpeechSynthesisUtterance utterance) => _blink.BlinkSpeechSynthesis.$speak_Callback(this, utterance);
+  void speak(SpeechSynthesisUtterance utterance) => _blink.BlinkSpeechSynthesis.instance.speak_Callback_1_(this, utterance);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26267,15 +28936,15 @@ class SpeechSynthesisEvent extends Event {
 
   @DomName('SpeechSynthesisEvent.charIndex')
   @DocsEditable()
-  int get charIndex => _blink.BlinkSpeechSynthesisEvent.$charIndex_Getter(this);
+  int get charIndex => _blink.BlinkSpeechSynthesisEvent.instance.charIndex_Getter_(this);
 
   @DomName('SpeechSynthesisEvent.elapsedTime')
   @DocsEditable()
-  double get elapsedTime => _blink.BlinkSpeechSynthesisEvent.$elapsedTime_Getter(this);
+  double get elapsedTime => _blink.BlinkSpeechSynthesisEvent.instance.elapsedTime_Getter_(this);
 
   @DomName('SpeechSynthesisEvent.name')
   @DocsEditable()
-  String get name => _blink.BlinkSpeechSynthesisEvent.$name_Getter(this);
+  String get name => _blink.BlinkSpeechSynthesisEvent.instance.name_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26366,56 +29035,56 @@ class SpeechSynthesisUtterance extends EventTarget {
   @DomName('SpeechSynthesisUtterance.SpeechSynthesisUtterance')
   @DocsEditable()
   factory SpeechSynthesisUtterance([String text]) {
-    return _blink.BlinkSpeechSynthesisUtterance.$_create_1constructorCallback(text);
+    return _blink.BlinkSpeechSynthesisUtterance.instance.constructorCallback_1_(text);
   }
 
   @DomName('SpeechSynthesisUtterance.lang')
   @DocsEditable()
-  String get lang => _blink.BlinkSpeechSynthesisUtterance.$lang_Getter(this);
+  String get lang => _blink.BlinkSpeechSynthesisUtterance.instance.lang_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.lang')
   @DocsEditable()
-  void set lang(String value) => _blink.BlinkSpeechSynthesisUtterance.$lang_Setter(this, value);
+  void set lang(String value) => _blink.BlinkSpeechSynthesisUtterance.instance.lang_Setter_(this, value);
 
   @DomName('SpeechSynthesisUtterance.pitch')
   @DocsEditable()
-  num get pitch => _blink.BlinkSpeechSynthesisUtterance.$pitch_Getter(this);
+  num get pitch => _blink.BlinkSpeechSynthesisUtterance.instance.pitch_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.pitch')
   @DocsEditable()
-  void set pitch(num value) => _blink.BlinkSpeechSynthesisUtterance.$pitch_Setter(this, value);
+  void set pitch(num value) => _blink.BlinkSpeechSynthesisUtterance.instance.pitch_Setter_(this, value);
 
   @DomName('SpeechSynthesisUtterance.rate')
   @DocsEditable()
-  num get rate => _blink.BlinkSpeechSynthesisUtterance.$rate_Getter(this);
+  num get rate => _blink.BlinkSpeechSynthesisUtterance.instance.rate_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.rate')
   @DocsEditable()
-  void set rate(num value) => _blink.BlinkSpeechSynthesisUtterance.$rate_Setter(this, value);
+  void set rate(num value) => _blink.BlinkSpeechSynthesisUtterance.instance.rate_Setter_(this, value);
 
   @DomName('SpeechSynthesisUtterance.text')
   @DocsEditable()
-  String get text => _blink.BlinkSpeechSynthesisUtterance.$text_Getter(this);
+  String get text => _blink.BlinkSpeechSynthesisUtterance.instance.text_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.text')
   @DocsEditable()
-  void set text(String value) => _blink.BlinkSpeechSynthesisUtterance.$text_Setter(this, value);
+  void set text(String value) => _blink.BlinkSpeechSynthesisUtterance.instance.text_Setter_(this, value);
 
   @DomName('SpeechSynthesisUtterance.voice')
   @DocsEditable()
-  SpeechSynthesisVoice get voice => _blink.BlinkSpeechSynthesisUtterance.$voice_Getter(this);
+  SpeechSynthesisVoice get voice => _blink.BlinkSpeechSynthesisUtterance.instance.voice_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.voice')
   @DocsEditable()
-  void set voice(SpeechSynthesisVoice value) => _blink.BlinkSpeechSynthesisUtterance.$voice_Setter(this, value);
+  void set voice(SpeechSynthesisVoice value) => _blink.BlinkSpeechSynthesisUtterance.instance.voice_Setter_(this, value);
 
   @DomName('SpeechSynthesisUtterance.volume')
   @DocsEditable()
-  num get volume => _blink.BlinkSpeechSynthesisUtterance.$volume_Getter(this);
+  num get volume => _blink.BlinkSpeechSynthesisUtterance.instance.volume_Getter_(this);
 
   @DomName('SpeechSynthesisUtterance.volume')
   @DocsEditable()
-  void set volume(num value) => _blink.BlinkSpeechSynthesisUtterance.$volume_Setter(this, value);
+  void set volume(num value) => _blink.BlinkSpeechSynthesisUtterance.instance.volume_Setter_(this, value);
 
   /// Stream of `boundary` events handled by this [SpeechSynthesisUtterance].
   @DomName('SpeechSynthesisUtterance.onboundary')
@@ -26470,23 +29139,23 @@ class SpeechSynthesisVoice extends NativeFieldWrapperClass2 {
 
   @DomName('SpeechSynthesisVoice.default')
   @DocsEditable()
-  bool get defaultValue => _blink.BlinkSpeechSynthesisVoice.$default_Getter(this);
+  bool get defaultValue => _blink.BlinkSpeechSynthesisVoice.instance.default_Getter_(this);
 
   @DomName('SpeechSynthesisVoice.lang')
   @DocsEditable()
-  String get lang => _blink.BlinkSpeechSynthesisVoice.$lang_Getter(this);
+  String get lang => _blink.BlinkSpeechSynthesisVoice.instance.lang_Getter_(this);
 
   @DomName('SpeechSynthesisVoice.localService')
   @DocsEditable()
-  bool get localService => _blink.BlinkSpeechSynthesisVoice.$localService_Getter(this);
+  bool get localService => _blink.BlinkSpeechSynthesisVoice.instance.localService_Getter_(this);
 
   @DomName('SpeechSynthesisVoice.name')
   @DocsEditable()
-  String get name => _blink.BlinkSpeechSynthesisVoice.$name_Getter(this);
+  String get name => _blink.BlinkSpeechSynthesisVoice.instance.name_Getter_(this);
 
   @DomName('SpeechSynthesisVoice.voiceURI')
   @DocsEditable()
-  String get voiceUri => _blink.BlinkSpeechSynthesisVoice.$voiceURI_Getter(this);
+  String get voiceUri => _blink.BlinkSpeechSynthesisVoice.instance.voiceURI_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26581,35 +29250,35 @@ class Storage extends NativeFieldWrapperClass2
 
   @DomName('Storage.length')
   @DocsEditable()
-  int get _length => _blink.BlinkStorage.$length_Getter(this);
+  int get _length => _blink.BlinkStorage.instance.length_Getter_(this);
 
   bool __delete__(index_OR_name) {
     if ((index_OR_name is int || index_OR_name == null)) {
-      return _blink.BlinkStorage.$___delete___1_Callback(this, index_OR_name);
+      return _blink.BlinkStorage.instance.$__delete___Callback_1_(this, index_OR_name);
     }
     if ((index_OR_name is String || index_OR_name == null)) {
-      return _blink.BlinkStorage.$___delete___2_Callback(this, index_OR_name);
+      return _blink.BlinkStorage.instance.$__delete___Callback_1_(this, index_OR_name);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   String __getter__(index_OR_name) {
     if ((index_OR_name is int || index_OR_name == null)) {
-      return _blink.BlinkStorage.$___getter___1_Callback(this, index_OR_name);
+      return _blink.BlinkStorage.instance.$__getter___Callback_1_(this, index_OR_name);
     }
     if ((index_OR_name is String || index_OR_name == null)) {
-      return _blink.BlinkStorage.$___getter___2_Callback(this, index_OR_name);
+      return _blink.BlinkStorage.instance.$__getter___Callback_1_(this, index_OR_name);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   void __setter__(index_OR_name, String value) {
     if ((value is String || value == null) && (index_OR_name is int || index_OR_name == null)) {
-      _blink.BlinkStorage.$___setter___1_Callback(this, index_OR_name, value);
+      _blink.BlinkStorage.instance.$__setter___Callback_2_(this, index_OR_name, value);
       return;
     }
     if ((value is String || value == null) && (index_OR_name is String || index_OR_name == null)) {
-      _blink.BlinkStorage.$___setter___2_Callback(this, index_OR_name, value);
+      _blink.BlinkStorage.instance.$__setter___Callback_2_(this, index_OR_name, value);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -26617,23 +29286,23 @@ class Storage extends NativeFieldWrapperClass2
 
   @DomName('Storage.clear')
   @DocsEditable()
-  void _clear() => _blink.BlinkStorage.$clear_Callback(this);
+  void _clear() => _blink.BlinkStorage.instance.clear_Callback_0_(this);
 
   @DomName('Storage.getItem')
   @DocsEditable()
-  String _getItem(String key) => _blink.BlinkStorage.$getItem_Callback(this, key);
+  String _getItem(String key) => _blink.BlinkStorage.instance.getItem_Callback_1_(this, key);
 
   @DomName('Storage.key')
   @DocsEditable()
-  String _key(int index) => _blink.BlinkStorage.$key_Callback(this, index);
+  String _key(int index) => _blink.BlinkStorage.instance.key_Callback_1_(this, index);
 
   @DomName('Storage.removeItem')
   @DocsEditable()
-  void _removeItem(String key) => _blink.BlinkStorage.$removeItem_Callback(this, key);
+  void _removeItem(String key) => _blink.BlinkStorage.instance.removeItem_Callback_1_(this, key);
 
   @DomName('Storage.setItem')
   @DocsEditable()
-  void _setItem(String key, String data) => _blink.BlinkStorage.$setItem_Callback(this, key, data);
+  void _setItem(String key, String data) => _blink.BlinkStorage.instance.setItem_Callback_2_(this, key, data);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26671,27 +29340,27 @@ class StorageEvent extends Event {
 
   @DomName('StorageEvent.key')
   @DocsEditable()
-  String get key => _blink.BlinkStorageEvent.$key_Getter(this);
+  String get key => _blink.BlinkStorageEvent.instance.key_Getter_(this);
 
   @DomName('StorageEvent.newValue')
   @DocsEditable()
-  String get newValue => _blink.BlinkStorageEvent.$newValue_Getter(this);
+  String get newValue => _blink.BlinkStorageEvent.instance.newValue_Getter_(this);
 
   @DomName('StorageEvent.oldValue')
   @DocsEditable()
-  String get oldValue => _blink.BlinkStorageEvent.$oldValue_Getter(this);
+  String get oldValue => _blink.BlinkStorageEvent.instance.oldValue_Getter_(this);
 
   @DomName('StorageEvent.storageArea')
   @DocsEditable()
-  Storage get storageArea => _blink.BlinkStorageEvent.$storageArea_Getter(this);
+  Storage get storageArea => _blink.BlinkStorageEvent.instance.storageArea_Getter_(this);
 
   @DomName('StorageEvent.url')
   @DocsEditable()
-  String get url => _blink.BlinkStorageEvent.$url_Getter(this);
+  String get url => _blink.BlinkStorageEvent.instance.url_Getter_(this);
 
   @DomName('StorageEvent.initStorageEvent')
   @DocsEditable()
-  void _initStorageEvent(String typeArg, bool canBubbleArg, bool cancelableArg, String keyArg, String oldValueArg, String newValueArg, String urlArg, Storage storageAreaArg) => _blink.BlinkStorageEvent.$initStorageEvent_Callback(this, typeArg, canBubbleArg, cancelableArg, keyArg, oldValueArg, newValueArg, urlArg, storageAreaArg);
+  void _initStorageEvent(String typeArg, bool canBubbleArg, bool cancelableArg, String keyArg, String oldValueArg, String newValueArg, String urlArg, Storage storageAreaArg) => _blink.BlinkStorageEvent.instance.initStorageEvent_Callback_8_(this, typeArg, canBubbleArg, cancelableArg, keyArg, oldValueArg, newValueArg, urlArg, storageAreaArg);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26712,12 +29381,12 @@ class StorageInfo extends NativeFieldWrapperClass2 {
   @DomName('StorageInfo.quota')
   @DocsEditable()
   @Experimental() // untriaged
-  int get quota => _blink.BlinkStorageInfo.$quota_Getter(this);
+  int get quota => _blink.BlinkStorageInfo.instance.quota_Getter_(this);
 
   @DomName('StorageInfo.usage')
   @DocsEditable()
   @Experimental() // untriaged
-  int get usage => _blink.BlinkStorageInfo.$usage_Getter(this);
+  int get usage => _blink.BlinkStorageInfo.instance.usage_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26738,7 +29407,17 @@ class StorageQuota extends NativeFieldWrapperClass2 {
   @DomName('StorageQuota.supportedTypes')
   @DocsEditable()
   @Experimental() // untriaged
-  List<String> get supportedTypes => _blink.BlinkStorageQuota.$supportedTypes_Getter(this);
+  List<String> get supportedTypes => _blink.BlinkStorageQuota.instance.supportedTypes_Getter_(this);
+
+  @DomName('StorageQuota.queryInfo')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future queryInfo(String type) => _blink.BlinkStorageQuota.instance.queryInfo_Callback_1_(this, type);
+
+  @DomName('StorageQuota.requestPersistentQuota')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Future requestPersistentQuota(int newQuota) => _blink.BlinkStorageQuota.instance.requestPersistentQuota_Callback_1_(this, newQuota);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26799,39 +29478,31 @@ class StyleElement extends HtmlElement {
 
   @DomName('HTMLStyleElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLStyleElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLStyleElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLStyleElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLStyleElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLStyleElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLStyleElement.media')
   @DocsEditable()
-  String get media => _blink.BlinkHTMLStyleElement.$media_Getter(this);
+  String get media => _blink.BlinkHTMLStyleElement.instance.media_Getter_(this);
 
   @DomName('HTMLStyleElement.media')
   @DocsEditable()
-  void set media(String value) => _blink.BlinkHTMLStyleElement.$media_Setter(this, value);
-
-  @DomName('HTMLStyleElement.scoped')
-  @DocsEditable()
-  bool get scoped => _blink.BlinkHTMLStyleElement.$scoped_Getter(this);
-
-  @DomName('HTMLStyleElement.scoped')
-  @DocsEditable()
-  void set scoped(bool value) => _blink.BlinkHTMLStyleElement.$scoped_Setter(this, value);
+  void set media(String value) => _blink.BlinkHTMLStyleElement.instance.media_Setter_(this, value);
 
   @DomName('HTMLStyleElement.sheet')
   @DocsEditable()
-  StyleSheet get sheet => _blink.BlinkHTMLStyleElement.$sheet_Getter(this);
+  StyleSheet get sheet => _blink.BlinkHTMLStyleElement.instance.sheet_Getter_(this);
 
   @DomName('HTMLStyleElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLStyleElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLStyleElement.instance.type_Getter_(this);
 
   @DomName('HTMLStyleElement.type')
   @DocsEditable()
-  void set type(String value) => _blink.BlinkHTMLStyleElement.$type_Setter(this, value);
+  void set type(String value) => _blink.BlinkHTMLStyleElement.instance.type_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26851,11 +29522,11 @@ class StyleMedia extends NativeFieldWrapperClass2 {
 
   @DomName('StyleMedia.type')
   @DocsEditable()
-  String get type => _blink.BlinkStyleMedia.$type_Getter(this);
+  String get type => _blink.BlinkStyleMedia.instance.type_Getter_(this);
 
   @DomName('StyleMedia.matchMedium')
   @DocsEditable()
-  bool matchMedium(String mediaquery) => _blink.BlinkStyleMedia.$matchMedium_Callback(this, mediaquery);
+  bool matchMedium(String mediaquery) => _blink.BlinkStyleMedia.instance.matchMedium_Callback_1_(this, mediaquery);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26873,35 +29544,35 @@ class StyleSheet extends NativeFieldWrapperClass2 {
 
   @DomName('StyleSheet.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkStyleSheet.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkStyleSheet.instance.disabled_Getter_(this);
 
   @DomName('StyleSheet.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkStyleSheet.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkStyleSheet.instance.disabled_Setter_(this, value);
 
   @DomName('StyleSheet.href')
   @DocsEditable()
-  String get href => _blink.BlinkStyleSheet.$href_Getter(this);
+  String get href => _blink.BlinkStyleSheet.instance.href_Getter_(this);
 
   @DomName('StyleSheet.media')
   @DocsEditable()
-  MediaList get media => _blink.BlinkStyleSheet.$media_Getter(this);
+  MediaList get media => _blink.BlinkStyleSheet.instance.media_Getter_(this);
 
   @DomName('StyleSheet.ownerNode')
   @DocsEditable()
-  Node get ownerNode => _blink.BlinkStyleSheet.$ownerNode_Getter(this);
+  Node get ownerNode => _blink.BlinkStyleSheet.instance.ownerNode_Getter_(this);
 
   @DomName('StyleSheet.parentStyleSheet')
   @DocsEditable()
-  StyleSheet get parentStyleSheet => _blink.BlinkStyleSheet.$parentStyleSheet_Getter(this);
+  StyleSheet get parentStyleSheet => _blink.BlinkStyleSheet.instance.parentStyleSheet_Getter_(this);
 
   @DomName('StyleSheet.title')
   @DocsEditable()
-  String get title => _blink.BlinkStyleSheet.$title_Getter(this);
+  String get title => _blink.BlinkStyleSheet.instance.title_Getter_(this);
 
   @DomName('StyleSheet.type')
   @DocsEditable()
-  String get type => _blink.BlinkStyleSheet.$type_Getter(this);
+  String get type => _blink.BlinkStyleSheet.instance.type_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -26953,31 +29624,31 @@ class TableCellElement extends HtmlElement {
 
   @DomName('HTMLTableCellElement.cellIndex')
   @DocsEditable()
-  int get cellIndex => _blink.BlinkHTMLTableCellElement.$cellIndex_Getter(this);
+  int get cellIndex => _blink.BlinkHTMLTableCellElement.instance.cellIndex_Getter_(this);
 
   @DomName('HTMLTableCellElement.colSpan')
   @DocsEditable()
-  int get colSpan => _blink.BlinkHTMLTableCellElement.$colSpan_Getter(this);
+  int get colSpan => _blink.BlinkHTMLTableCellElement.instance.colSpan_Getter_(this);
 
   @DomName('HTMLTableCellElement.colSpan')
   @DocsEditable()
-  void set colSpan(int value) => _blink.BlinkHTMLTableCellElement.$colSpan_Setter(this, value);
+  void set colSpan(int value) => _blink.BlinkHTMLTableCellElement.instance.colSpan_Setter_(this, value);
 
   @DomName('HTMLTableCellElement.headers')
   @DocsEditable()
-  String get headers => _blink.BlinkHTMLTableCellElement.$headers_Getter(this);
+  String get headers => _blink.BlinkHTMLTableCellElement.instance.headers_Getter_(this);
 
   @DomName('HTMLTableCellElement.headers')
   @DocsEditable()
-  void set headers(String value) => _blink.BlinkHTMLTableCellElement.$headers_Setter(this, value);
+  void set headers(String value) => _blink.BlinkHTMLTableCellElement.instance.headers_Setter_(this, value);
 
   @DomName('HTMLTableCellElement.rowSpan')
   @DocsEditable()
-  int get rowSpan => _blink.BlinkHTMLTableCellElement.$rowSpan_Getter(this);
+  int get rowSpan => _blink.BlinkHTMLTableCellElement.instance.rowSpan_Getter_(this);
 
   @DomName('HTMLTableCellElement.rowSpan')
   @DocsEditable()
-  void set rowSpan(int value) => _blink.BlinkHTMLTableCellElement.$rowSpan_Setter(this, value);
+  void set rowSpan(int value) => _blink.BlinkHTMLTableCellElement.instance.rowSpan_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -27005,11 +29676,11 @@ class TableColElement extends HtmlElement {
 
   @DomName('HTMLTableColElement.span')
   @DocsEditable()
-  int get span => _blink.BlinkHTMLTableColElement.$span_Getter(this);
+  int get span => _blink.BlinkHTMLTableColElement.instance.span_Getter_(this);
 
   @DomName('HTMLTableColElement.span')
   @DocsEditable()
-  void set span(int value) => _blink.BlinkHTMLTableColElement.$span_Setter(this, value);
+  void set span(int value) => _blink.BlinkHTMLTableColElement.instance.span_Setter_(this, value);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -27055,71 +29726,74 @@ class TableElement extends HtmlElement {
 
   @DomName('HTMLTableElement.caption')
   @DocsEditable()
-  TableCaptionElement get caption => _blink.BlinkHTMLTableElement.$caption_Getter(this);
+  TableCaptionElement get caption => _blink.BlinkHTMLTableElement.instance.caption_Getter_(this);
 
   @DomName('HTMLTableElement.caption')
   @DocsEditable()
-  void set caption(TableCaptionElement value) => _blink.BlinkHTMLTableElement.$caption_Setter(this, value);
+  void set caption(TableCaptionElement value) => _blink.BlinkHTMLTableElement.instance.caption_Setter_(this, value);
 
   @DomName('HTMLTableElement.rows')
   @DocsEditable()
-  List<Node> get _rows => _blink.BlinkHTMLTableElement.$rows_Getter(this);
+  List<Node> get _rows => _blink.BlinkHTMLTableElement.instance.rows_Getter_(this);
 
   @DomName('HTMLTableElement.tBodies')
   @DocsEditable()
-  List<Node> get _tBodies => _blink.BlinkHTMLTableElement.$tBodies_Getter(this);
+  List<Node> get _tBodies => _blink.BlinkHTMLTableElement.instance.tBodies_Getter_(this);
 
   @DomName('HTMLTableElement.tFoot')
   @DocsEditable()
-  TableSectionElement get tFoot => _blink.BlinkHTMLTableElement.$tFoot_Getter(this);
+  TableSectionElement get tFoot => _blink.BlinkHTMLTableElement.instance.tFoot_Getter_(this);
 
   @DomName('HTMLTableElement.tFoot')
   @DocsEditable()
-  void set tFoot(TableSectionElement value) => _blink.BlinkHTMLTableElement.$tFoot_Setter(this, value);
+  void set tFoot(TableSectionElement value) => _blink.BlinkHTMLTableElement.instance.tFoot_Setter_(this, value);
 
   @DomName('HTMLTableElement.tHead')
   @DocsEditable()
-  TableSectionElement get tHead => _blink.BlinkHTMLTableElement.$tHead_Getter(this);
+  TableSectionElement get tHead => _blink.BlinkHTMLTableElement.instance.tHead_Getter_(this);
 
   @DomName('HTMLTableElement.tHead')
   @DocsEditable()
-  void set tHead(TableSectionElement value) => _blink.BlinkHTMLTableElement.$tHead_Setter(this, value);
+  void set tHead(TableSectionElement value) => _blink.BlinkHTMLTableElement.instance.tHead_Setter_(this, value);
 
   @DomName('HTMLTableElement.createCaption')
   @DocsEditable()
-  HtmlElement _createCaption() => _blink.BlinkHTMLTableElement.$createCaption_Callback(this);
+  HtmlElement _createCaption() => _blink.BlinkHTMLTableElement.instance.createCaption_Callback_0_(this);
 
   @DomName('HTMLTableElement.createTBody')
   @DocsEditable()
-  HtmlElement _createTBody() => _blink.BlinkHTMLTableElement.$createTBody_Callback(this);
+  HtmlElement _createTBody() => _blink.BlinkHTMLTableElement.instance.createTBody_Callback_0_(this);
 
   @DomName('HTMLTableElement.createTFoot')
   @DocsEditable()
-  HtmlElement _createTFoot() => _blink.BlinkHTMLTableElement.$createTFoot_Callback(this);
+  HtmlElement _createTFoot() => _blink.BlinkHTMLTableElement.instance.createTFoot_Callback_0_(this);
 
   @DomName('HTMLTableElement.createTHead')
   @DocsEditable()
-  HtmlElement _createTHead() => _blink.BlinkHTMLTableElement.$createTHead_Callback(this);
+  HtmlElement _createTHead() => _blink.BlinkHTMLTableElement.instance.createTHead_Callback_0_(this);
 
   @DomName('HTMLTableElement.deleteCaption')
   @DocsEditable()
-  void deleteCaption() => _blink.BlinkHTMLTableElement.$deleteCaption_Callback(this);
+  void deleteCaption() => _blink.BlinkHTMLTableElement.instance.deleteCaption_Callback_0_(this);
 
   @DomName('HTMLTableElement.deleteRow')
   @DocsEditable()
-  void deleteRow(int index) => _blink.BlinkHTMLTableElement.$deleteRow_Callback(this, index);
+  void deleteRow(int index) => _blink.BlinkHTMLTableElement.instance.deleteRow_Callback_1_(this, index);
 
   @DomName('HTMLTableElement.deleteTFoot')
   @DocsEditable()
-  void deleteTFoot() => _blink.BlinkHTMLTableElement.$deleteTFoot_Callback(this);
+  void deleteTFoot() => _blink.BlinkHTMLTableElement.instance.deleteTFoot_Callback_0_(this);
 
   @DomName('HTMLTableElement.deleteTHead')
   @DocsEditable()
-  void deleteTHead() => _blink.BlinkHTMLTableElement.$deleteTHead_Callback(this);
+  void deleteTHead() => _blink.BlinkHTMLTableElement.instance.deleteTHead_Callback_0_(this);
 
-  @DomName('HTMLTableElement.insertRow')
-  @DocsEditable()
-  HtmlElement _insertRow(int index) => _blink.BlinkHTMLTableElement.$insertRow_Callback(this, index);
+  HtmlElement _insertRow([int index]) {
+    if (index != null) {
+      return _blink.BlinkHTMLTableElement.instance.insertRow_Callback_1_(this, index);
+    }
+    return _blink.BlinkHTMLTableElement.instance.insertRow_Callback_0_(this);
+  }
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -27156,23 +29830,26 @@ class TableRowElement extends HtmlElement {
 
   @DomName('HTMLTableRowElement.cells')
   @DocsEditable()
-  List<Node> get _cells => _blink.BlinkHTMLTableRowElement.$cells_Getter(this);
+  List<Node> get _cells => _blink.BlinkHTMLTableRowElement.instance.cells_Getter_(this);
 
   @DomName('HTMLTableRowElement.rowIndex')
   @DocsEditable()
-  int get rowIndex => _blink.BlinkHTMLTableRowElement.$rowIndex_Getter(this);
+  int get rowIndex => _blink.BlinkHTMLTableRowElement.instance.rowIndex_Getter_(this);
 
   @DomName('HTMLTableRowElement.sectionRowIndex')
   @DocsEditable()
-  int get sectionRowIndex => _blink.BlinkHTMLTableRowElement.$sectionRowIndex_Getter(this);
+  int get sectionRowIndex => _blink.BlinkHTMLTableRowElement.instance.sectionRowIndex_Getter_(this);
 
   @DomName('HTMLTableRowElement.deleteCell')
   @DocsEditable()
-  void deleteCell(int index) => _blink.BlinkHTMLTableRowElement.$deleteCell_Callback(this, index);
+  void deleteCell(int index) => _blink.BlinkHTMLTableRowElement.instance.deleteCell_Callback_1_(this, index);
 
-  @DomName('HTMLTableRowElement.insertCell')
-  @DocsEditable()
-  HtmlElement _insertCell(int index) => _blink.BlinkHTMLTableRowElement.$insertCell_Callback(this, index);
+  HtmlElement _insertCell([int index]) {
+    if (index != null) {
+      return _blink.BlinkHTMLTableRowElement.instance.insertCell_Callback_1_(this, index);
+    }
+    return _blink.BlinkHTMLTableRowElement.instance.insertCell_Callback_0_(this);
+  }
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -27205,15 +29882,18 @@ class TableSectionElement extends HtmlElement {
 
   @DomName('HTMLTableSectionElement.rows')
   @DocsEditable()
-  List<Node> get _rows => _blink.BlinkHTMLTableSectionElement.$rows_Getter(this);
+  List<Node> get _rows => _blink.BlinkHTMLTableSectionElement.instance.rows_Getter_(this);
 
   @DomName('HTMLTableSectionElement.deleteRow')
   @DocsEditable()
-  void deleteRow(int index) => _blink.BlinkHTMLTableSectionElement.$deleteRow_Callback(this, index);
+  void deleteRow(int index) => _blink.BlinkHTMLTableSectionElement.instance.deleteRow_Callback_1_(this, index);
 
-  @DomName('HTMLTableSectionElement.insertRow')
-  @DocsEditable()
-  HtmlElement _insertRow(int index) => _blink.BlinkHTMLTableSectionElement.$insertRow_Callback(this, index);
+  HtmlElement _insertRow([int index]) {
+    if (index != null) {
+      return _blink.BlinkHTMLTableSectionElement.instance.insertRow_Callback_1_(this, index);
+    }
+    return _blink.BlinkHTMLTableSectionElement.instance.insertRow_Callback_0_(this);
+  }
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -27246,7 +29926,7 @@ class TemplateElement extends HtmlElement {
 
   @DomName('HTMLTemplateElement.content')
   @DocsEditable()
-  DocumentFragment get content => _blink.BlinkHTMLTemplateElement.$content_Getter(this);
+  DocumentFragment get content => _blink.BlinkHTMLTemplateElement.instance.content_Getter_(this);
 
 
   /**
@@ -27280,16 +29960,16 @@ class Text extends CharacterData {
 
   @DomName('Text.wholeText')
   @DocsEditable()
-  String get wholeText => _blink.BlinkText.$wholeText_Getter(this);
+  String get wholeText => _blink.BlinkText.instance.wholeText_Getter_(this);
 
   @DomName('Text.getDestinationInsertionPoints')
   @DocsEditable()
   @Experimental() // untriaged
-  List<Node> getDestinationInsertionPoints() => _blink.BlinkText.$getDestinationInsertionPoints_Callback(this);
+  List<Node> getDestinationInsertionPoints() => _blink.BlinkText.instance.getDestinationInsertionPoints_Callback_0_(this);
 
   @DomName('Text.splitText')
   @DocsEditable()
-  Text splitText(int offset) => _blink.BlinkText.$splitText_Callback(this, offset);
+  Text splitText(int offset) => _blink.BlinkText.instance.splitText_Callback_1_(this, offset);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -27317,194 +29997,194 @@ class TextAreaElement extends HtmlElement {
 
   @DomName('HTMLTextAreaElement.autofocus')
   @DocsEditable()
-  bool get autofocus => _blink.BlinkHTMLTextAreaElement.$autofocus_Getter(this);
+  bool get autofocus => _blink.BlinkHTMLTextAreaElement.instance.autofocus_Getter_(this);
 
   @DomName('HTMLTextAreaElement.autofocus')
   @DocsEditable()
-  void set autofocus(bool value) => _blink.BlinkHTMLTextAreaElement.$autofocus_Setter(this, value);
+  void set autofocus(bool value) => _blink.BlinkHTMLTextAreaElement.instance.autofocus_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.cols')
   @DocsEditable()
-  int get cols => _blink.BlinkHTMLTextAreaElement.$cols_Getter(this);
+  int get cols => _blink.BlinkHTMLTextAreaElement.instance.cols_Getter_(this);
 
   @DomName('HTMLTextAreaElement.cols')
   @DocsEditable()
-  void set cols(int value) => _blink.BlinkHTMLTextAreaElement.$cols_Setter(this, value);
+  void set cols(int value) => _blink.BlinkHTMLTextAreaElement.instance.cols_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.defaultValue')
   @DocsEditable()
-  String get defaultValue => _blink.BlinkHTMLTextAreaElement.$defaultValue_Getter(this);
+  String get defaultValue => _blink.BlinkHTMLTextAreaElement.instance.defaultValue_Getter_(this);
 
   @DomName('HTMLTextAreaElement.defaultValue')
   @DocsEditable()
-  void set defaultValue(String value) => _blink.BlinkHTMLTextAreaElement.$defaultValue_Setter(this, value);
+  void set defaultValue(String value) => _blink.BlinkHTMLTextAreaElement.instance.defaultValue_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.dirName')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#dom-textarea-dirname
   @Experimental()
-  String get dirName => _blink.BlinkHTMLTextAreaElement.$dirName_Getter(this);
+  String get dirName => _blink.BlinkHTMLTextAreaElement.instance.dirName_Getter_(this);
 
   @DomName('HTMLTextAreaElement.dirName')
   @DocsEditable()
   // http://www.whatwg.org/specs/web-apps/current-work/multipage/the-button-element.html#dom-textarea-dirname
   @Experimental()
-  void set dirName(String value) => _blink.BlinkHTMLTextAreaElement.$dirName_Setter(this, value);
+  void set dirName(String value) => _blink.BlinkHTMLTextAreaElement.instance.dirName_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.disabled')
   @DocsEditable()
-  bool get disabled => _blink.BlinkHTMLTextAreaElement.$disabled_Getter(this);
+  bool get disabled => _blink.BlinkHTMLTextAreaElement.instance.disabled_Getter_(this);
 
   @DomName('HTMLTextAreaElement.disabled')
   @DocsEditable()
-  void set disabled(bool value) => _blink.BlinkHTMLTextAreaElement.$disabled_Setter(this, value);
+  void set disabled(bool value) => _blink.BlinkHTMLTextAreaElement.instance.disabled_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.form')
   @DocsEditable()
-  FormElement get form => _blink.BlinkHTMLTextAreaElement.$form_Getter(this);
+  FormElement get form => _blink.BlinkHTMLTextAreaElement.instance.form_Getter_(this);
 
   @DomName('HTMLTextAreaElement.inputMode')
   @DocsEditable()
   @Experimental() // untriaged
-  String get inputMode => _blink.BlinkHTMLTextAreaElement.$inputMode_Getter(this);
+  String get inputMode => _blink.BlinkHTMLTextAreaElement.instance.inputMode_Getter_(this);
 
   @DomName('HTMLTextAreaElement.inputMode')
   @DocsEditable()
   @Experimental() // untriaged
-  void set inputMode(String value) => _blink.BlinkHTMLTextAreaElement.$inputMode_Setter(this, value);
+  void set inputMode(String value) => _blink.BlinkHTMLTextAreaElement.instance.inputMode_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.labels')
   @DocsEditable()
   @Unstable()
-  List<Node> get labels => _blink.BlinkHTMLTextAreaElement.$labels_Getter(this);
+  List<Node> get labels => _blink.BlinkHTMLTextAreaElement.instance.labels_Getter_(this);
 
   @DomName('HTMLTextAreaElement.maxLength')
   @DocsEditable()
-  int get maxLength => _blink.BlinkHTMLTextAreaElement.$maxLength_Getter(this);
+  int get maxLength => _blink.BlinkHTMLTextAreaElement.instance.maxLength_Getter_(this);
 
   @DomName('HTMLTextAreaElement.maxLength')
   @DocsEditable()
-  void set maxLength(int value) => _blink.BlinkHTMLTextAreaElement.$maxLength_Setter(this, value);
+  void set maxLength(int value) => _blink.BlinkHTMLTextAreaElement.instance.maxLength_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.name')
   @DocsEditable()
-  String get name => _blink.BlinkHTMLTextAreaElement.$name_Getter(this);
+  String get name => _blink.BlinkHTMLTextAreaElement.instance.name_Getter_(this);
 
   @DomName('HTMLTextAreaElement.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkHTMLTextAreaElement.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkHTMLTextAreaElement.instance.name_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.placeholder')
   @DocsEditable()
-  String get placeholder => _blink.BlinkHTMLTextAreaElement.$placeholder_Getter(this);
+  String get placeholder => _blink.BlinkHTMLTextAreaElement.instance.placeholder_Getter_(this);
 
   @DomName('HTMLTextAreaElement.placeholder')
   @DocsEditable()
-  void set placeholder(String value) => _blink.BlinkHTMLTextAreaElement.$placeholder_Setter(this, value);
+  void set placeholder(String value) => _blink.BlinkHTMLTextAreaElement.instance.placeholder_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.readOnly')
   @DocsEditable()
-  bool get readOnly => _blink.BlinkHTMLTextAreaElement.$readOnly_Getter(this);
+  bool get readOnly => _blink.BlinkHTMLTextAreaElement.instance.readOnly_Getter_(this);
 
   @DomName('HTMLTextAreaElement.readOnly')
   @DocsEditable()
-  void set readOnly(bool value) => _blink.BlinkHTMLTextAreaElement.$readOnly_Setter(this, value);
+  void set readOnly(bool value) => _blink.BlinkHTMLTextAreaElement.instance.readOnly_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.required')
   @DocsEditable()
-  bool get required => _blink.BlinkHTMLTextAreaElement.$required_Getter(this);
+  bool get required => _blink.BlinkHTMLTextAreaElement.instance.required_Getter_(this);
 
   @DomName('HTMLTextAreaElement.required')
   @DocsEditable()
-  void set required(bool value) => _blink.BlinkHTMLTextAreaElement.$required_Setter(this, value);
+  void set required(bool value) => _blink.BlinkHTMLTextAreaElement.instance.required_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.rows')
   @DocsEditable()
-  int get rows => _blink.BlinkHTMLTextAreaElement.$rows_Getter(this);
+  int get rows => _blink.BlinkHTMLTextAreaElement.instance.rows_Getter_(this);
 
   @DomName('HTMLTextAreaElement.rows')
   @DocsEditable()
-  void set rows(int value) => _blink.BlinkHTMLTextAreaElement.$rows_Setter(this, value);
+  void set rows(int value) => _blink.BlinkHTMLTextAreaElement.instance.rows_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.selectionDirection')
   @DocsEditable()
-  String get selectionDirection => _blink.BlinkHTMLTextAreaElement.$selectionDirection_Getter(this);
+  String get selectionDirection => _blink.BlinkHTMLTextAreaElement.instance.selectionDirection_Getter_(this);
 
   @DomName('HTMLTextAreaElement.selectionDirection')
   @DocsEditable()
-  void set selectionDirection(String value) => _blink.BlinkHTMLTextAreaElement.$selectionDirection_Setter(this, value);
+  void set selectionDirection(String value) => _blink.BlinkHTMLTextAreaElement.instance.selectionDirection_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.selectionEnd')
   @DocsEditable()
-  int get selectionEnd => _blink.BlinkHTMLTextAreaElement.$selectionEnd_Getter(this);
+  int get selectionEnd => _blink.BlinkHTMLTextAreaElement.instance.selectionEnd_Getter_(this);
 
   @DomName('HTMLTextAreaElement.selectionEnd')
   @DocsEditable()
-  void set selectionEnd(int value) => _blink.BlinkHTMLTextAreaElement.$selectionEnd_Setter(this, value);
+  void set selectionEnd(int value) => _blink.BlinkHTMLTextAreaElement.instance.selectionEnd_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.selectionStart')
   @DocsEditable()
-  int get selectionStart => _blink.BlinkHTMLTextAreaElement.$selectionStart_Getter(this);
+  int get selectionStart => _blink.BlinkHTMLTextAreaElement.instance.selectionStart_Getter_(this);
 
   @DomName('HTMLTextAreaElement.selectionStart')
   @DocsEditable()
-  void set selectionStart(int value) => _blink.BlinkHTMLTextAreaElement.$selectionStart_Setter(this, value);
+  void set selectionStart(int value) => _blink.BlinkHTMLTextAreaElement.instance.selectionStart_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.textLength')
   @DocsEditable()
-  int get textLength => _blink.BlinkHTMLTextAreaElement.$textLength_Getter(this);
+  int get textLength => _blink.BlinkHTMLTextAreaElement.instance.textLength_Getter_(this);
 
   @DomName('HTMLTextAreaElement.type')
   @DocsEditable()
-  String get type => _blink.BlinkHTMLTextAreaElement.$type_Getter(this);
+  String get type => _blink.BlinkHTMLTextAreaElement.instance.type_Getter_(this);
 
   @DomName('HTMLTextAreaElement.validationMessage')
   @DocsEditable()
-  String get validationMessage => _blink.BlinkHTMLTextAreaElement.$validationMessage_Getter(this);
+  String get validationMessage => _blink.BlinkHTMLTextAreaElement.instance.validationMessage_Getter_(this);
 
   @DomName('HTMLTextAreaElement.validity')
   @DocsEditable()
-  ValidityState get validity => _blink.BlinkHTMLTextAreaElement.$validity_Getter(this);
+  ValidityState get validity => _blink.BlinkHTMLTextAreaElement.instance.validity_Getter_(this);
 
   @DomName('HTMLTextAreaElement.value')
   @DocsEditable()
-  String get value => _blink.BlinkHTMLTextAreaElement.$value_Getter(this);
+  String get value => _blink.BlinkHTMLTextAreaElement.instance.value_Getter_(this);
 
   @DomName('HTMLTextAreaElement.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkHTMLTextAreaElement.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkHTMLTextAreaElement.instance.value_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.willValidate')
   @DocsEditable()
-  bool get willValidate => _blink.BlinkHTMLTextAreaElement.$willValidate_Getter(this);
+  bool get willValidate => _blink.BlinkHTMLTextAreaElement.instance.willValidate_Getter_(this);
 
   @DomName('HTMLTextAreaElement.wrap')
   @DocsEditable()
-  String get wrap => _blink.BlinkHTMLTextAreaElement.$wrap_Getter(this);
+  String get wrap => _blink.BlinkHTMLTextAreaElement.instance.wrap_Getter_(this);
 
   @DomName('HTMLTextAreaElement.wrap')
   @DocsEditable()
-  void set wrap(String value) => _blink.BlinkHTMLTextAreaElement.$wrap_Setter(this, value);
+  void set wrap(String value) => _blink.BlinkHTMLTextAreaElement.instance.wrap_Setter_(this, value);
 
   @DomName('HTMLTextAreaElement.checkValidity')
   @DocsEditable()
-  bool checkValidity() => _blink.BlinkHTMLTextAreaElement.$checkValidity_Callback(this);
+  bool checkValidity() => _blink.BlinkHTMLTextAreaElement.instance.checkValidity_Callback_0_(this);
 
   @DomName('HTMLTextAreaElement.select')
   @DocsEditable()
-  void select() => _blink.BlinkHTMLTextAreaElement.$select_Callback(this);
+  void select() => _blink.BlinkHTMLTextAreaElement.instance.select_Callback_0_(this);
 
   @DomName('HTMLTextAreaElement.setCustomValidity')
   @DocsEditable()
-  void setCustomValidity(String error) => _blink.BlinkHTMLTextAreaElement.$setCustomValidity_Callback(this, error);
+  void setCustomValidity(String error) => _blink.BlinkHTMLTextAreaElement.instance.setCustomValidity_Callback_1_(this, error);
 
   void setRangeText(String replacement, {int start, int end, String selectionMode}) {
     if ((replacement is String || replacement == null) && start == null && end == null && selectionMode == null) {
-      _blink.BlinkHTMLTextAreaElement.$_setRangeText_1_Callback(this, replacement);
+      _blink.BlinkHTMLTextAreaElement.instance.setRangeText_Callback_1_(this, replacement);
       return;
     }
     if ((selectionMode is String || selectionMode == null) && (end is int || end == null) && (start is int || start == null) && (replacement is String || replacement == null)) {
-      _blink.BlinkHTMLTextAreaElement.$_setRangeText_2_Callback(this, replacement, start, end, selectionMode);
+      _blink.BlinkHTMLTextAreaElement.instance.setRangeText_Callback_4_(this, replacement, start, end, selectionMode);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -27512,10 +30192,10 @@ class TextAreaElement extends HtmlElement {
 
   void setSelectionRange(int start, int end, [String direction]) {
     if (direction != null) {
-      _blink.BlinkHTMLTextAreaElement.$_setSelectionRange_1_Callback(this, start, end, direction);
+      _blink.BlinkHTMLTextAreaElement.instance.setSelectionRange_Callback_3_(this, start, end, direction);
       return;
     }
-    _blink.BlinkHTMLTextAreaElement.$_setSelectionRange_2_Callback(this, start, end);
+    _blink.BlinkHTMLTextAreaElement.instance.setSelectionRange_Callback_2_(this, start, end);
     return;
   }
 
@@ -27544,11 +30224,11 @@ class TextEvent extends UIEvent {
 
   @DomName('TextEvent.data')
   @DocsEditable()
-  String get data => _blink.BlinkTextEvent.$data_Getter(this);
+  String get data => _blink.BlinkTextEvent.instance.data_Getter_(this);
 
   @DomName('TextEvent.initTextEvent')
   @DocsEditable()
-  void _initTextEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Window viewArg, String dataArg) => _blink.BlinkTextEvent.$initTextEvent_Callback(this, typeArg, canBubbleArg, cancelableArg, viewArg, dataArg);
+  void _initTextEvent(String typeArg, bool canBubbleArg, bool cancelableArg, Window viewArg, String dataArg) => _blink.BlinkTextEvent.instance.initTextEvent_Callback_5_(this, typeArg, canBubbleArg, cancelableArg, viewArg, dataArg);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -27564,9 +30244,64 @@ class TextMetrics extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory TextMetrics._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('TextMetrics.actualBoundingBoxAscent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get actualBoundingBoxAscent => _blink.BlinkTextMetrics.instance.actualBoundingBoxAscent_Getter_(this);
+
+  @DomName('TextMetrics.actualBoundingBoxDescent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get actualBoundingBoxDescent => _blink.BlinkTextMetrics.instance.actualBoundingBoxDescent_Getter_(this);
+
+  @DomName('TextMetrics.actualBoundingBoxLeft')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get actualBoundingBoxLeft => _blink.BlinkTextMetrics.instance.actualBoundingBoxLeft_Getter_(this);
+
+  @DomName('TextMetrics.actualBoundingBoxRight')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get actualBoundingBoxRight => _blink.BlinkTextMetrics.instance.actualBoundingBoxRight_Getter_(this);
+
+  @DomName('TextMetrics.alphabeticBaseline')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get alphabeticBaseline => _blink.BlinkTextMetrics.instance.alphabeticBaseline_Getter_(this);
+
+  @DomName('TextMetrics.emHeightAscent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get emHeightAscent => _blink.BlinkTextMetrics.instance.emHeightAscent_Getter_(this);
+
+  @DomName('TextMetrics.emHeightDescent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get emHeightDescent => _blink.BlinkTextMetrics.instance.emHeightDescent_Getter_(this);
+
+  @DomName('TextMetrics.fontBoundingBoxAscent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get fontBoundingBoxAscent => _blink.BlinkTextMetrics.instance.fontBoundingBoxAscent_Getter_(this);
+
+  @DomName('TextMetrics.fontBoundingBoxDescent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get fontBoundingBoxDescent => _blink.BlinkTextMetrics.instance.fontBoundingBoxDescent_Getter_(this);
+
+  @DomName('TextMetrics.hangingBaseline')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get hangingBaseline => _blink.BlinkTextMetrics.instance.hangingBaseline_Getter_(this);
+
+  @DomName('TextMetrics.ideographicBaseline')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get ideographicBaseline => _blink.BlinkTextMetrics.instance.ideographicBaseline_Getter_(this);
+
   @DomName('TextMetrics.width')
   @DocsEditable()
-  double get width => _blink.BlinkTextMetrics.$width_Getter(this);
+  double get width => _blink.BlinkTextMetrics.instance.width_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -27596,59 +30331,59 @@ class TextTrack extends EventTarget {
 
   @DomName('TextTrack.activeCues')
   @DocsEditable()
-  TextTrackCueList get activeCues => _blink.BlinkTextTrack.$activeCues_Getter(this);
+  TextTrackCueList get activeCues => _blink.BlinkTextTrack.instance.activeCues_Getter_(this);
 
   @DomName('TextTrack.cues')
   @DocsEditable()
-  TextTrackCueList get cues => _blink.BlinkTextTrack.$cues_Getter(this);
+  TextTrackCueList get cues => _blink.BlinkTextTrack.instance.cues_Getter_(this);
 
   @DomName('TextTrack.id')
   @DocsEditable()
   @Experimental() // untriaged
-  String get id => _blink.BlinkTextTrack.$id_Getter(this);
+  String get id => _blink.BlinkTextTrack.instance.id_Getter_(this);
 
   @DomName('TextTrack.kind')
   @DocsEditable()
-  String get kind => _blink.BlinkTextTrack.$kind_Getter(this);
+  String get kind => _blink.BlinkTextTrack.instance.kind_Getter_(this);
 
   @DomName('TextTrack.label')
   @DocsEditable()
-  String get label => _blink.BlinkTextTrack.$label_Getter(this);
+  String get label => _blink.BlinkTextTrack.instance.label_Getter_(this);
 
   @DomName('TextTrack.language')
   @DocsEditable()
-  String get language => _blink.BlinkTextTrack.$language_Getter(this);
+  String get language => _blink.BlinkTextTrack.instance.language_Getter_(this);
 
   @DomName('TextTrack.mode')
   @DocsEditable()
-  String get mode => _blink.BlinkTextTrack.$mode_Getter(this);
+  String get mode => _blink.BlinkTextTrack.instance.mode_Getter_(this);
 
   @DomName('TextTrack.mode')
   @DocsEditable()
-  void set mode(String value) => _blink.BlinkTextTrack.$mode_Setter(this, value);
+  void set mode(String value) => _blink.BlinkTextTrack.instance.mode_Setter_(this, value);
 
   @DomName('TextTrack.regions')
   @DocsEditable()
   @Experimental() // untriaged
-  VttRegionList get regions => _blink.BlinkTextTrack.$regions_Getter(this);
+  VttRegionList get regions => _blink.BlinkTextTrack.instance.regions_Getter_(this);
 
   @DomName('TextTrack.addCue')
   @DocsEditable()
-  void addCue(TextTrackCue cue) => _blink.BlinkTextTrack.$addCue_Callback(this, cue);
+  void addCue(TextTrackCue cue) => _blink.BlinkTextTrack.instance.addCue_Callback_1_(this, cue);
 
   @DomName('TextTrack.addRegion')
   @DocsEditable()
   @Experimental() // untriaged
-  void addRegion(VttRegion region) => _blink.BlinkTextTrack.$addRegion_Callback(this, region);
+  void addRegion(VttRegion region) => _blink.BlinkTextTrack.instance.addRegion_Callback_1_(this, region);
 
   @DomName('TextTrack.removeCue')
   @DocsEditable()
-  void removeCue(TextTrackCue cue) => _blink.BlinkTextTrack.$removeCue_Callback(this, cue);
+  void removeCue(TextTrackCue cue) => _blink.BlinkTextTrack.instance.removeCue_Callback_1_(this, cue);
 
   @DomName('TextTrack.removeRegion')
   @DocsEditable()
   @Experimental() // untriaged
-  void removeRegion(VttRegion region) => _blink.BlinkTextTrack.$removeRegion_Callback(this, region);
+  void removeRegion(VttRegion region) => _blink.BlinkTextTrack.instance.removeRegion_Callback_1_(this, region);
 
   /// Stream of `cuechange` events handled by this [TextTrack].
   @DomName('TextTrack.oncuechange')
@@ -27693,39 +30428,39 @@ class TextTrackCue extends EventTarget {
 
   @DomName('TextTrackCue.endTime')
   @DocsEditable()
-  num get endTime => _blink.BlinkTextTrackCue.$endTime_Getter(this);
+  num get endTime => _blink.BlinkTextTrackCue.instance.endTime_Getter_(this);
 
   @DomName('TextTrackCue.endTime')
   @DocsEditable()
-  void set endTime(num value) => _blink.BlinkTextTrackCue.$endTime_Setter(this, value);
+  void set endTime(num value) => _blink.BlinkTextTrackCue.instance.endTime_Setter_(this, value);
 
   @DomName('TextTrackCue.id')
   @DocsEditable()
-  String get id => _blink.BlinkTextTrackCue.$id_Getter(this);
+  String get id => _blink.BlinkTextTrackCue.instance.id_Getter_(this);
 
   @DomName('TextTrackCue.id')
   @DocsEditable()
-  void set id(String value) => _blink.BlinkTextTrackCue.$id_Setter(this, value);
+  void set id(String value) => _blink.BlinkTextTrackCue.instance.id_Setter_(this, value);
 
   @DomName('TextTrackCue.pauseOnExit')
   @DocsEditable()
-  bool get pauseOnExit => _blink.BlinkTextTrackCue.$pauseOnExit_Getter(this);
+  bool get pauseOnExit => _blink.BlinkTextTrackCue.instance.pauseOnExit_Getter_(this);
 
   @DomName('TextTrackCue.pauseOnExit')
   @DocsEditable()
-  void set pauseOnExit(bool value) => _blink.BlinkTextTrackCue.$pauseOnExit_Setter(this, value);
+  void set pauseOnExit(bool value) => _blink.BlinkTextTrackCue.instance.pauseOnExit_Setter_(this, value);
 
   @DomName('TextTrackCue.startTime')
   @DocsEditable()
-  num get startTime => _blink.BlinkTextTrackCue.$startTime_Getter(this);
+  num get startTime => _blink.BlinkTextTrackCue.instance.startTime_Getter_(this);
 
   @DomName('TextTrackCue.startTime')
   @DocsEditable()
-  void set startTime(num value) => _blink.BlinkTextTrackCue.$startTime_Setter(this, value);
+  void set startTime(num value) => _blink.BlinkTextTrackCue.instance.startTime_Setter_(this, value);
 
   @DomName('TextTrackCue.track')
   @DocsEditable()
-  TextTrack get track => _blink.BlinkTextTrackCue.$track_Getter(this);
+  TextTrack get track => _blink.BlinkTextTrackCue.instance.track_Getter_(this);
 
   /// Stream of `enter` events handled by this [TextTrackCue].
   @DomName('TextTrackCue.onenter')
@@ -27755,15 +30490,15 @@ class TextTrackCueList extends NativeFieldWrapperClass2 with ListMixin<TextTrack
 
   @DomName('TextTrackCueList.length')
   @DocsEditable()
-  int get length => _blink.BlinkTextTrackCueList.$length_Getter(this);
+  int get length => _blink.BlinkTextTrackCueList.instance.length_Getter_(this);
 
   TextTrackCue operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkTextTrackCueList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkTextTrackCueList.instance.item_Callback_1_(this, index);
   }
 
-  TextTrackCue _nativeIndexedGetter(int index) => _blink.BlinkTextTrackCueList.$NativeIndexed_Getter(this, index);
+  TextTrackCue _nativeIndexedGetter(int index) => _blink.BlinkTextTrackCueList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, TextTrackCue value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -27805,11 +30540,11 @@ class TextTrackCueList extends NativeFieldWrapperClass2 with ListMixin<TextTrack
 
   @DomName('TextTrackCueList.getCueById')
   @DocsEditable()
-  TextTrackCue getCueById(String id) => _blink.BlinkTextTrackCueList.$getCueById_Callback(this, id);
+  TextTrackCue getCueById(String id) => _blink.BlinkTextTrackCueList.instance.getCueById_Callback_1_(this, id);
 
   @DomName('TextTrackCueList.item')
   @DocsEditable()
-  TextTrackCue item(int index) => _blink.BlinkTextTrackCueList.$item_Callback(this, index);
+  TextTrackCue item(int index) => _blink.BlinkTextTrackCueList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -27844,15 +30579,15 @@ class TextTrackList extends EventTarget with ListMixin<TextTrack>, ImmutableList
 
   @DomName('TextTrackList.length')
   @DocsEditable()
-  int get length => _blink.BlinkTextTrackList.$length_Getter(this);
+  int get length => _blink.BlinkTextTrackList.instance.length_Getter_(this);
 
   TextTrack operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkTextTrackList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkTextTrackList.instance.item_Callback_1_(this, index);
   }
 
-  TextTrack _nativeIndexedGetter(int index) => _blink.BlinkTextTrackList.$NativeIndexed_Getter(this, index);
+  TextTrack _nativeIndexedGetter(int index) => _blink.BlinkTextTrackList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, TextTrack value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -27895,11 +30630,11 @@ class TextTrackList extends EventTarget with ListMixin<TextTrack>, ImmutableList
   @DomName('TextTrackList.getTrackById')
   @DocsEditable()
   @Experimental() // untriaged
-  TextTrack getTrackById(String id) => _blink.BlinkTextTrackList.$getTrackById_Callback(this, id);
+  TextTrack getTrackById(String id) => _blink.BlinkTextTrackList.instance.getTrackById_Callback_1_(this, id);
 
   @DomName('TextTrackList.item')
   @DocsEditable()
-  TextTrack item(int index) => _blink.BlinkTextTrackList.$item_Callback(this, index);
+  TextTrack item(int index) => _blink.BlinkTextTrackList.instance.item_Callback_1_(this, index);
 
   /// Stream of `addtrack` events handled by this [TextTrackList].
   @DomName('TextTrackList.onaddtrack')
@@ -27928,85 +30663,15 @@ class TimeRanges extends NativeFieldWrapperClass2 {
 
   @DomName('TimeRanges.length')
   @DocsEditable()
-  int get length => _blink.BlinkTimeRanges.$length_Getter(this);
+  int get length => _blink.BlinkTimeRanges.instance.length_Getter_(this);
 
   @DomName('TimeRanges.end')
   @DocsEditable()
-  double end(int index) => _blink.BlinkTimeRanges.$end_Callback(this, index);
+  double end(int index) => _blink.BlinkTimeRanges.instance.end_Callback_1_(this, index);
 
   @DomName('TimeRanges.start')
   @DocsEditable()
-  double start(int index) => _blink.BlinkTimeRanges.$start_Callback(this, index);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('TimedItem')
-@Experimental() // untriaged
-class TimedItem extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory TimedItem._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('TimedItem.activeDuration')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get activeDuration => _blink.BlinkTimedItem.$activeDuration_Getter(this);
-
-  @DomName('TimedItem.currentIteration')
-  @DocsEditable()
-  @Experimental() // untriaged
-  int get currentIteration => _blink.BlinkTimedItem.$currentIteration_Getter(this);
-
-  @DomName('TimedItem.duration')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get duration => _blink.BlinkTimedItem.$duration_Getter(this);
-
-  @DomName('TimedItem.endTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get endTime => _blink.BlinkTimedItem.$endTime_Getter(this);
-
-  @DomName('TimedItem.localTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get localTime => _blink.BlinkTimedItem.$localTime_Getter(this);
-
-  @DomName('TimedItem.player')
-  @DocsEditable()
-  @Experimental() // untriaged
-  Player get player => _blink.BlinkTimedItem.$player_Getter(this);
-
-  @DomName('TimedItem.startTime')
-  @DocsEditable()
-  @Experimental() // untriaged
-  double get startTime => _blink.BlinkTimedItem.$startTime_Getter(this);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('Timeline')
-@Experimental() // untriaged
-class Timeline extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory Timeline._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('Timeline.play')
-  @DocsEditable()
-  @Experimental() // untriaged
-  Player play(TimedItem source) => _blink.BlinkTimeline.$play_Callback(this, source);
+  double start(int index) => _blink.BlinkTimeRanges.instance.start_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28035,87 +30700,92 @@ class Timing extends NativeFieldWrapperClass2 {
   @DomName('Timing.delay')
   @DocsEditable()
   @Experimental() // untriaged
-  num get delay => _blink.BlinkTiming.$delay_Getter(this);
+  num get delay => _blink.BlinkTiming.instance.delay_Getter_(this);
 
   @DomName('Timing.delay')
   @DocsEditable()
   @Experimental() // untriaged
-  void set delay(num value) => _blink.BlinkTiming.$delay_Setter(this, value);
+  void set delay(num value) => _blink.BlinkTiming.instance.delay_Setter_(this, value);
 
   @DomName('Timing.direction')
   @DocsEditable()
   @Experimental() // untriaged
-  String get direction => _blink.BlinkTiming.$direction_Getter(this);
+  String get direction => _blink.BlinkTiming.instance.direction_Getter_(this);
 
   @DomName('Timing.direction')
   @DocsEditable()
   @Experimental() // untriaged
-  void set direction(String value) => _blink.BlinkTiming.$direction_Setter(this, value);
+  void set direction(String value) => _blink.BlinkTiming.instance.direction_Setter_(this, value);
 
   @DomName('Timing.easing')
   @DocsEditable()
   @Experimental() // untriaged
-  String get easing => _blink.BlinkTiming.$easing_Getter(this);
+  String get easing => _blink.BlinkTiming.instance.easing_Getter_(this);
 
   @DomName('Timing.easing')
   @DocsEditable()
   @Experimental() // untriaged
-  void set easing(String value) => _blink.BlinkTiming.$easing_Setter(this, value);
+  void set easing(String value) => _blink.BlinkTiming.instance.easing_Setter_(this, value);
 
   @DomName('Timing.endDelay')
   @DocsEditable()
   @Experimental() // untriaged
-  num get endDelay => _blink.BlinkTiming.$endDelay_Getter(this);
+  num get endDelay => _blink.BlinkTiming.instance.endDelay_Getter_(this);
 
   @DomName('Timing.endDelay')
   @DocsEditable()
   @Experimental() // untriaged
-  void set endDelay(num value) => _blink.BlinkTiming.$endDelay_Setter(this, value);
+  void set endDelay(num value) => _blink.BlinkTiming.instance.endDelay_Setter_(this, value);
 
   @DomName('Timing.fill')
   @DocsEditable()
   @Experimental() // untriaged
-  String get fill => _blink.BlinkTiming.$fill_Getter(this);
+  String get fill => _blink.BlinkTiming.instance.fill_Getter_(this);
 
   @DomName('Timing.fill')
   @DocsEditable()
   @Experimental() // untriaged
-  void set fill(String value) => _blink.BlinkTiming.$fill_Setter(this, value);
+  void set fill(String value) => _blink.BlinkTiming.instance.fill_Setter_(this, value);
 
   @DomName('Timing.iterationStart')
   @DocsEditable()
   @Experimental() // untriaged
-  num get iterationStart => _blink.BlinkTiming.$iterationStart_Getter(this);
+  num get iterationStart => _blink.BlinkTiming.instance.iterationStart_Getter_(this);
 
   @DomName('Timing.iterationStart')
   @DocsEditable()
   @Experimental() // untriaged
-  void set iterationStart(num value) => _blink.BlinkTiming.$iterationStart_Setter(this, value);
+  void set iterationStart(num value) => _blink.BlinkTiming.instance.iterationStart_Setter_(this, value);
 
   @DomName('Timing.iterations')
   @DocsEditable()
   @Experimental() // untriaged
-  num get iterations => _blink.BlinkTiming.$iterations_Getter(this);
+  num get iterations => _blink.BlinkTiming.instance.iterations_Getter_(this);
 
   @DomName('Timing.iterations')
   @DocsEditable()
   @Experimental() // untriaged
-  void set iterations(num value) => _blink.BlinkTiming.$iterations_Setter(this, value);
+  void set iterations(num value) => _blink.BlinkTiming.instance.iterations_Setter_(this, value);
 
   @DomName('Timing.playbackRate')
   @DocsEditable()
   @Experimental() // untriaged
-  num get playbackRate => _blink.BlinkTiming.$playbackRate_Getter(this);
+  num get playbackRate => _blink.BlinkTiming.instance.playbackRate_Getter_(this);
 
   @DomName('Timing.playbackRate')
   @DocsEditable()
   @Experimental() // untriaged
-  void set playbackRate(num value) => _blink.BlinkTiming.$playbackRate_Setter(this, value);
+  void set playbackRate(num value) => _blink.BlinkTiming.instance.playbackRate_Setter_(this, value);
+
+  @DomName('Timing.__getter__')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Object __getter__(String name) => _blink.BlinkTiming.instance.$__getter___Callback_1_(this, name);
 
   @DomName('Timing.__setter__')
   @DocsEditable()
   @Experimental() // untriaged
-  void __setter__(String name, num duration) => _blink.BlinkTiming.$__setter___Callback(this, name, duration);
+  void __setter__(String name, num duration) => _blink.BlinkTiming.instance.$__setter___Callback_2_(this, name, duration);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28157,75 +30827,69 @@ class Touch extends NativeFieldWrapperClass2 {
 
   @DomName('Touch.clientX')
   @DocsEditable()
-  int get _clientX => _blink.BlinkTouch.$clientX_Getter(this);
+  double get _clientX => _blink.BlinkTouch.instance.clientX_Getter_(this);
 
   @DomName('Touch.clientY')
   @DocsEditable()
-  int get _clientY => _blink.BlinkTouch.$clientY_Getter(this);
+  double get _clientY => _blink.BlinkTouch.instance.clientY_Getter_(this);
+
+  @DomName('Touch.force')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get force => _blink.BlinkTouch.instance.force_Getter_(this);
 
   @DomName('Touch.identifier')
   @DocsEditable()
-  int get identifier => _blink.BlinkTouch.$identifier_Getter(this);
+  int get identifier => _blink.BlinkTouch.instance.identifier_Getter_(this);
 
   @DomName('Touch.pageX')
   @DocsEditable()
-  int get _pageX => _blink.BlinkTouch.$pageX_Getter(this);
+  double get _pageX => _blink.BlinkTouch.instance.pageX_Getter_(this);
 
   @DomName('Touch.pageY')
   @DocsEditable()
-  int get _pageY => _blink.BlinkTouch.$pageY_Getter(this);
+  double get _pageY => _blink.BlinkTouch.instance.pageY_Getter_(this);
+
+  @DomName('Touch.radiusX')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get _radiusX => _blink.BlinkTouch.instance.radiusX_Getter_(this);
+
+  @DomName('Touch.radiusY')
+  @DocsEditable()
+  @Experimental() // untriaged
+  double get _radiusY => _blink.BlinkTouch.instance.radiusY_Getter_(this);
 
   @DomName('Touch.screenX')
   @DocsEditable()
-  int get _screenX => _blink.BlinkTouch.$screenX_Getter(this);
+  double get _screenX => _blink.BlinkTouch.instance.screenX_Getter_(this);
 
   @DomName('Touch.screenY')
   @DocsEditable()
-  int get _screenY => _blink.BlinkTouch.$screenY_Getter(this);
+  double get _screenY => _blink.BlinkTouch.instance.screenY_Getter_(this);
 
   @DomName('Touch.target')
   @DocsEditable()
-  EventTarget get target => _blink.BlinkTouch.$target_Getter(this);
-
-  @DomName('Touch.webkitForce')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  double get force => _blink.BlinkTouch.$webkitForce_Getter(this);
-
-  @DomName('Touch.webkitRadiusX')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  int get _webkitRadiusX => _blink.BlinkTouch.$webkitRadiusX_Getter(this);
-
-  @DomName('Touch.webkitRadiusY')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  int get _webkitRadiusY => _blink.BlinkTouch.$webkitRadiusY_Getter(this);
+  EventTarget get target => _blink.BlinkTouch.instance.target_Getter_(this);
 
   @DomName('Touch.webkitRotationAngle')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  double get rotationAngle => _blink.BlinkTouch.$webkitRotationAngle_Getter(this);
+  double get rotationAngle => _blink.BlinkTouch.instance.webkitRotationAngle_Getter_(this);
 
 
 // As of Chrome 37, these all changed from long to double.  This code
 // preserves backwards compatability for the time being.
-  int get __clientX => _blink.BlinkTouch.$clientX_Getter(this).round();
-  int get __clientY => _blink.BlinkTouch.$clientY_Getter(this).round();
-  int get __screenX => _blink.BlinkTouch.$screenX_Getter(this).round();
-  int get __screenY => _blink.BlinkTouch.$screenY_Getter(this).round();
-  int get __pageX => _blink.BlinkTouch.$pageX_Getter(this).round();
-  int get __pageY => _blink.BlinkTouch.$pageY_Getter(this).round();
-  int get __webkitRadiusX => _blink.BlinkTouch.$webkitRadiusX_Getter(this).round();
-  int get __webkitRadiusY => _blink.BlinkTouch.$webkitRadiusY_Getter(this).round();
+  int get __clientX => _blink.BlinkTouch.clientX_Getter(this).round();
+  int get __clientY => _blink.BlinkTouch.clientY_Getter(this).round();
+  int get __screenX => _blink.BlinkTouch.screenX_Getter(this).round();
+  int get __screenY => _blink.BlinkTouch.screenY_Getter(this).round();
+  int get __pageX => _blink.BlinkTouch.pageX_Getter(this).round();
+  int get __pageY => _blink.BlinkTouch.pageY_Getter(this).round();
+  int get __radiusX => _blink.BlinkTouch.radiusX_Getter(this).round();
+  int get __radiusY => _blink.BlinkTouch.radiusY_Getter(this).round();
 
   @DomName('Touch.clientX')
   @DomName('Touch.clientY')
@@ -28239,19 +30903,19 @@ class Touch extends NativeFieldWrapperClass2 {
   @DomName('Touch.screenY')
   Point get screen => new Point(__screenX, __screenY);
 
-  @DomName('Touch.webkitRadiusX')
+  @DomName('Touch.radiusX')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get radiusX => __webkitRadiusX;
+  int get radiusX => __radiusX;
 
-  @DomName('Touch.webkitRadiusY')
+  @DomName('Touch.radiusY')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get radiusY => __webkitRadiusY;
+  int get radiusY => __radiusY;
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -28283,35 +30947,35 @@ class TouchEvent extends UIEvent {
 
   @DomName('TouchEvent.altKey')
   @DocsEditable()
-  bool get altKey => _blink.BlinkTouchEvent.$altKey_Getter(this);
+  bool get altKey => _blink.BlinkTouchEvent.instance.altKey_Getter_(this);
 
   @DomName('TouchEvent.changedTouches')
   @DocsEditable()
-  TouchList get changedTouches => _blink.BlinkTouchEvent.$changedTouches_Getter(this);
+  TouchList get changedTouches => _blink.BlinkTouchEvent.instance.changedTouches_Getter_(this);
 
   @DomName('TouchEvent.ctrlKey')
   @DocsEditable()
-  bool get ctrlKey => _blink.BlinkTouchEvent.$ctrlKey_Getter(this);
+  bool get ctrlKey => _blink.BlinkTouchEvent.instance.ctrlKey_Getter_(this);
 
   @DomName('TouchEvent.metaKey')
   @DocsEditable()
-  bool get metaKey => _blink.BlinkTouchEvent.$metaKey_Getter(this);
+  bool get metaKey => _blink.BlinkTouchEvent.instance.metaKey_Getter_(this);
 
   @DomName('TouchEvent.shiftKey')
   @DocsEditable()
-  bool get shiftKey => _blink.BlinkTouchEvent.$shiftKey_Getter(this);
+  bool get shiftKey => _blink.BlinkTouchEvent.instance.shiftKey_Getter_(this);
 
   @DomName('TouchEvent.targetTouches')
   @DocsEditable()
-  TouchList get targetTouches => _blink.BlinkTouchEvent.$targetTouches_Getter(this);
+  TouchList get targetTouches => _blink.BlinkTouchEvent.instance.targetTouches_Getter_(this);
 
   @DomName('TouchEvent.touches')
   @DocsEditable()
-  TouchList get touches => _blink.BlinkTouchEvent.$touches_Getter(this);
+  TouchList get touches => _blink.BlinkTouchEvent.instance.touches_Getter_(this);
 
   @DomName('TouchEvent.initTouchEvent')
   @DocsEditable()
-  void _initTouchEvent(TouchList touches, TouchList targetTouches, TouchList changedTouches, String type, Window view, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey) => _blink.BlinkTouchEvent.$initTouchEvent_Callback(this, touches, targetTouches, changedTouches, type, view, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey);
+  void _initTouchEvent(TouchList touches, TouchList targetTouches, TouchList changedTouches, String type, Window view, int unused1, int unused2, int unused3, int unused4, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey) => _blink.BlinkTouchEvent.instance.initTouchEvent_Callback_13_(this, touches, targetTouches, changedTouches, type, view, unused1, unused2, unused3, unused4, ctrlKey, altKey, shiftKey, metaKey);
 
 
   /**
@@ -28346,15 +31010,15 @@ class TouchList extends NativeFieldWrapperClass2 with ListMixin<Touch>, Immutabl
 
   @DomName('TouchList.length')
   @DocsEditable()
-  int get length => _blink.BlinkTouchList.$length_Getter(this);
+  int get length => _blink.BlinkTouchList.instance.length_Getter_(this);
 
   Touch operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkTouchList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkTouchList.instance.item_Callback_1_(this, index);
   }
 
-  Touch _nativeIndexedGetter(int index) => _blink.BlinkTouchList.$NativeIndexed_Getter(this, index);
+  Touch _nativeIndexedGetter(int index) => _blink.BlinkTouchList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Touch value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -28396,7 +31060,7 @@ class TouchList extends NativeFieldWrapperClass2 with ListMixin<Touch>, Immutabl
 
   @DomName('TouchList.item')
   @DocsEditable()
-  Touch item(int index) => _blink.BlinkTouchList.$item_Callback(this, index);
+  Touch item(int index) => _blink.BlinkTouchList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28448,51 +31112,61 @@ class TrackElement extends HtmlElement {
 
   @DomName('HTMLTrackElement.default')
   @DocsEditable()
-  bool get defaultValue => _blink.BlinkHTMLTrackElement.$default_Getter(this);
+  bool get defaultValue => _blink.BlinkHTMLTrackElement.instance.default_Getter_(this);
 
   @DomName('HTMLTrackElement.default')
   @DocsEditable()
-  void set defaultValue(bool value) => _blink.BlinkHTMLTrackElement.$default_Setter(this, value);
+  void set defaultValue(bool value) => _blink.BlinkHTMLTrackElement.instance.default_Setter_(this, value);
+
+  @DomName('HTMLTrackElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get integrity => _blink.BlinkHTMLTrackElement.instance.integrity_Getter_(this);
+
+  @DomName('HTMLTrackElement.integrity')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set integrity(String value) => _blink.BlinkHTMLTrackElement.instance.integrity_Setter_(this, value);
 
   @DomName('HTMLTrackElement.kind')
   @DocsEditable()
-  String get kind => _blink.BlinkHTMLTrackElement.$kind_Getter(this);
+  String get kind => _blink.BlinkHTMLTrackElement.instance.kind_Getter_(this);
 
   @DomName('HTMLTrackElement.kind')
   @DocsEditable()
-  void set kind(String value) => _blink.BlinkHTMLTrackElement.$kind_Setter(this, value);
+  void set kind(String value) => _blink.BlinkHTMLTrackElement.instance.kind_Setter_(this, value);
 
   @DomName('HTMLTrackElement.label')
   @DocsEditable()
-  String get label => _blink.BlinkHTMLTrackElement.$label_Getter(this);
+  String get label => _blink.BlinkHTMLTrackElement.instance.label_Getter_(this);
 
   @DomName('HTMLTrackElement.label')
   @DocsEditable()
-  void set label(String value) => _blink.BlinkHTMLTrackElement.$label_Setter(this, value);
+  void set label(String value) => _blink.BlinkHTMLTrackElement.instance.label_Setter_(this, value);
 
   @DomName('HTMLTrackElement.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkHTMLTrackElement.$readyState_Getter(this);
+  int get readyState => _blink.BlinkHTMLTrackElement.instance.readyState_Getter_(this);
 
   @DomName('HTMLTrackElement.src')
   @DocsEditable()
-  String get src => _blink.BlinkHTMLTrackElement.$src_Getter(this);
+  String get src => _blink.BlinkHTMLTrackElement.instance.src_Getter_(this);
 
   @DomName('HTMLTrackElement.src')
   @DocsEditable()
-  void set src(String value) => _blink.BlinkHTMLTrackElement.$src_Setter(this, value);
+  void set src(String value) => _blink.BlinkHTMLTrackElement.instance.src_Setter_(this, value);
 
   @DomName('HTMLTrackElement.srclang')
   @DocsEditable()
-  String get srclang => _blink.BlinkHTMLTrackElement.$srclang_Getter(this);
+  String get srclang => _blink.BlinkHTMLTrackElement.instance.srclang_Getter_(this);
 
   @DomName('HTMLTrackElement.srclang')
   @DocsEditable()
-  void set srclang(String value) => _blink.BlinkHTMLTrackElement.$srclang_Setter(this, value);
+  void set srclang(String value) => _blink.BlinkHTMLTrackElement.instance.srclang_Setter_(this, value);
 
   @DomName('HTMLTrackElement.track')
   @DocsEditable()
-  TextTrack get track => _blink.BlinkHTMLTrackElement.$track_Getter(this);
+  TextTrack get track => _blink.BlinkHTMLTrackElement.instance.track_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28511,7 +31185,7 @@ class TrackEvent extends Event {
 
   @DomName('TrackEvent.track')
   @DocsEditable()
-  Object get track => _blink.BlinkTrackEvent.$track_Getter(this);
+  Object get track => _blink.BlinkTrackEvent.instance.track_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28529,15 +31203,15 @@ class TransitionEvent extends Event {
 
   @DomName('TransitionEvent.elapsedTime')
   @DocsEditable()
-  double get elapsedTime => _blink.BlinkTransitionEvent.$elapsedTime_Getter(this);
+  double get elapsedTime => _blink.BlinkTransitionEvent.instance.elapsedTime_Getter_(this);
 
   @DomName('TransitionEvent.propertyName')
   @DocsEditable()
-  String get propertyName => _blink.BlinkTransitionEvent.$propertyName_Getter(this);
+  String get propertyName => _blink.BlinkTransitionEvent.instance.propertyName_Getter_(this);
 
   @DomName('TransitionEvent.pseudoElement')
   @DocsEditable()
-  String get pseudoElement => _blink.BlinkTransitionEvent.$pseudoElement_Getter(this);
+  String get pseudoElement => _blink.BlinkTransitionEvent.instance.pseudoElement_Getter_(this);
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -28556,51 +31230,51 @@ class TreeWalker extends NativeFieldWrapperClass2 {
 
   @DomName('TreeWalker.currentNode')
   @DocsEditable()
-  Node get currentNode => _blink.BlinkTreeWalker.$currentNode_Getter(this);
+  Node get currentNode => _blink.BlinkTreeWalker.instance.currentNode_Getter_(this);
 
   @DomName('TreeWalker.currentNode')
   @DocsEditable()
-  void set currentNode(Node value) => _blink.BlinkTreeWalker.$currentNode_Setter(this, value);
+  void set currentNode(Node value) => _blink.BlinkTreeWalker.instance.currentNode_Setter_(this, value);
 
   @DomName('TreeWalker.filter')
   @DocsEditable()
-  NodeFilter get filter => _blink.BlinkTreeWalker.$filter_Getter(this);
+  NodeFilter get filter => _blink.BlinkTreeWalker.instance.filter_Getter_(this);
 
   @DomName('TreeWalker.root')
   @DocsEditable()
-  Node get root => _blink.BlinkTreeWalker.$root_Getter(this);
+  Node get root => _blink.BlinkTreeWalker.instance.root_Getter_(this);
 
   @DomName('TreeWalker.whatToShow')
   @DocsEditable()
-  int get whatToShow => _blink.BlinkTreeWalker.$whatToShow_Getter(this);
+  int get whatToShow => _blink.BlinkTreeWalker.instance.whatToShow_Getter_(this);
 
   @DomName('TreeWalker.firstChild')
   @DocsEditable()
-  Node firstChild() => _blink.BlinkTreeWalker.$firstChild_Callback(this);
+  Node firstChild() => _blink.BlinkTreeWalker.instance.firstChild_Callback_0_(this);
 
   @DomName('TreeWalker.lastChild')
   @DocsEditable()
-  Node lastChild() => _blink.BlinkTreeWalker.$lastChild_Callback(this);
+  Node lastChild() => _blink.BlinkTreeWalker.instance.lastChild_Callback_0_(this);
 
   @DomName('TreeWalker.nextNode')
   @DocsEditable()
-  Node nextNode() => _blink.BlinkTreeWalker.$nextNode_Callback(this);
+  Node nextNode() => _blink.BlinkTreeWalker.instance.nextNode_Callback_0_(this);
 
   @DomName('TreeWalker.nextSibling')
   @DocsEditable()
-  Node nextSibling() => _blink.BlinkTreeWalker.$nextSibling_Callback(this);
+  Node nextSibling() => _blink.BlinkTreeWalker.instance.nextSibling_Callback_0_(this);
 
   @DomName('TreeWalker.parentNode')
   @DocsEditable()
-  Node parentNode() => _blink.BlinkTreeWalker.$parentNode_Callback(this);
+  Node parentNode() => _blink.BlinkTreeWalker.instance.parentNode_Callback_0_(this);
 
   @DomName('TreeWalker.previousNode')
   @DocsEditable()
-  Node previousNode() => _blink.BlinkTreeWalker.$previousNode_Callback(this);
+  Node previousNode() => _blink.BlinkTreeWalker.instance.previousNode_Callback_0_(this);
 
   @DomName('TreeWalker.previousSibling')
   @DocsEditable()
-  Node previousSibling() => _blink.BlinkTreeWalker.$previousSibling_Callback(this);
+  Node previousSibling() => _blink.BlinkTreeWalker.instance.previousSibling_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28634,53 +31308,53 @@ class UIEvent extends Event {
   @DomName('UIEvent.charCode')
   @DocsEditable()
   @Unstable()
-  int get _charCode => _blink.BlinkUIEvent.$charCode_Getter(this);
+  int get _charCode => _blink.BlinkUIEvent.instance.charCode_Getter_(this);
 
   @DomName('UIEvent.detail')
   @DocsEditable()
-  int get detail => _blink.BlinkUIEvent.$detail_Getter(this);
+  int get detail => _blink.BlinkUIEvent.instance.detail_Getter_(this);
 
   @DomName('UIEvent.keyCode')
   @DocsEditable()
   @Unstable()
-  int get _keyCode => _blink.BlinkUIEvent.$keyCode_Getter(this);
+  int get _keyCode => _blink.BlinkUIEvent.instance.keyCode_Getter_(this);
 
   @DomName('UIEvent.layerX')
   @DocsEditable()
   // http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-mouseevents
   @Experimental() // nonstandard
-  int get _layerX => _blink.BlinkUIEvent.$layerX_Getter(this);
+  int get _layerX => _blink.BlinkUIEvent.instance.layerX_Getter_(this);
 
   @DomName('UIEvent.layerY')
   @DocsEditable()
   // http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-mouseevents
   @Experimental() // nonstandard
-  int get _layerY => _blink.BlinkUIEvent.$layerY_Getter(this);
+  int get _layerY => _blink.BlinkUIEvent.instance.layerY_Getter_(this);
 
   @DomName('UIEvent.pageX')
   @DocsEditable()
   // http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-mouseevents
   @Experimental() // nonstandard
-  int get _pageX => _blink.BlinkUIEvent.$pageX_Getter(this);
+  int get _pageX => _blink.BlinkUIEvent.instance.pageX_Getter_(this);
 
   @DomName('UIEvent.pageY')
   @DocsEditable()
   // http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#events-mouseevents
   @Experimental() // nonstandard
-  int get _pageY => _blink.BlinkUIEvent.$pageY_Getter(this);
+  int get _pageY => _blink.BlinkUIEvent.instance.pageY_Getter_(this);
 
   @DomName('UIEvent.view')
   @DocsEditable()
-  WindowBase get view => _blink.BlinkUIEvent.$view_Getter(this);
+  WindowBase get view => _blink.BlinkUIEvent.instance.view_Getter_(this);
 
   @DomName('UIEvent.which')
   @DocsEditable()
   @Unstable()
-  int get which => _blink.BlinkUIEvent.$which_Getter(this);
+  int get which => _blink.BlinkUIEvent.instance.which_Getter_(this);
 
   @DomName('UIEvent.initUIEvent')
   @DocsEditable()
-  void _initUIEvent(String type, bool canBubble, bool cancelable, Window view, int detail) => _blink.BlinkUIEvent.$initUIEvent_Callback(this, type, canBubble, cancelable, view, detail);
+  void _initUIEvent(String type, bool canBubble, bool cancelable, Window view, int detail) => _blink.BlinkUIEvent.instance.initUIEvent_Callback_5_(this, type, canBubble, cancelable, view, detail);
 
 
   @DomName('UIEvent.layerX')
@@ -28750,142 +31424,142 @@ class Url extends NativeFieldWrapperClass2 implements UrlUtils {
 
   static String createObjectUrl(blob_OR_source_OR_stream) {
     if ((blob_OR_source_OR_stream is Blob || blob_OR_source_OR_stream == null)) {
-      return _blink.BlinkURL.$_createObjectURL_1_Callback(blob_OR_source_OR_stream);
+      return _blink.BlinkURL.instance.createObjectURL_Callback_1_(blob_OR_source_OR_stream);
     }
-    if ((blob_OR_source_OR_stream is MediaStream || blob_OR_source_OR_stream == null)) {
-      return _blink.BlinkURL.$_createObjectURL_2_Callback(blob_OR_source_OR_stream);
+    if ((blob_OR_source_OR_stream is MediaSource)) {
+      return _blink.BlinkURL.instance.createObjectURL_Callback_1_(blob_OR_source_OR_stream);
     }
-    if ((blob_OR_source_OR_stream is MediaSource || blob_OR_source_OR_stream == null)) {
-      return _blink.BlinkURL.$_createObjectURL_3_Callback(blob_OR_source_OR_stream);
+    if ((blob_OR_source_OR_stream is MediaStream)) {
+      return _blink.BlinkURL.instance.createObjectURL_Callback_1_(blob_OR_source_OR_stream);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
   @DomName('URL.createObjectUrlFromBlob')
   @DocsEditable()
-  static String createObjectUrlFromBlob(Blob blob) => _blink.BlinkURL.$createObjectUrlFromBlob_Callback(blob);
+  static String createObjectUrlFromBlob(Blob blob) => _blink.BlinkURL.instance.createObjectURL_Callback_1_(blob);
 
   @DomName('URL.createObjectUrlFromSource')
   @DocsEditable()
-  static String createObjectUrlFromSource(MediaSource source) => _blink.BlinkURL.$createObjectUrlFromSource_Callback(source);
+  static String createObjectUrlFromSource(MediaSource source) => _blink.BlinkURL.instance.createObjectURL_Callback_1_(source);
 
   @DomName('URL.createObjectUrlFromStream')
   @DocsEditable()
-  static String createObjectUrlFromStream(MediaStream stream) => _blink.BlinkURL.$createObjectUrlFromStream_Callback(stream);
+  static String createObjectUrlFromStream(MediaStream stream) => _blink.BlinkURL.instance.createObjectURL_Callback_1_(stream);
 
   @DomName('URL.revokeObjectURL')
   @DocsEditable()
-  static void revokeObjectUrl(String url) => _blink.BlinkURL.$revokeObjectURL_Callback(url);
+  static void revokeObjectUrl(String url) => _blink.BlinkURL.instance.revokeObjectURL_Callback_1_(url);
 
   @DomName('URL.hash')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hash => _blink.BlinkURL.$hash_Getter(this);
+  String get hash => _blink.BlinkURL.instance.hash_Getter_(this);
 
   @DomName('URL.hash')
   @DocsEditable()
   @Experimental() // untriaged
-  void set hash(String value) => _blink.BlinkURL.$hash_Setter(this, value);
+  void set hash(String value) => _blink.BlinkURL.instance.hash_Setter_(this, value);
 
   @DomName('URL.host')
   @DocsEditable()
   @Experimental() // untriaged
-  String get host => _blink.BlinkURL.$host_Getter(this);
+  String get host => _blink.BlinkURL.instance.host_Getter_(this);
 
   @DomName('URL.host')
   @DocsEditable()
   @Experimental() // untriaged
-  void set host(String value) => _blink.BlinkURL.$host_Setter(this, value);
+  void set host(String value) => _blink.BlinkURL.instance.host_Setter_(this, value);
 
   @DomName('URL.hostname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hostname => _blink.BlinkURL.$hostname_Getter(this);
+  String get hostname => _blink.BlinkURL.instance.hostname_Getter_(this);
 
   @DomName('URL.hostname')
   @DocsEditable()
   @Experimental() // untriaged
-  void set hostname(String value) => _blink.BlinkURL.$hostname_Setter(this, value);
+  void set hostname(String value) => _blink.BlinkURL.instance.hostname_Setter_(this, value);
 
   @DomName('URL.href')
   @DocsEditable()
   @Experimental() // untriaged
-  String get href => _blink.BlinkURL.$href_Getter(this);
+  String get href => _blink.BlinkURL.instance.href_Getter_(this);
 
   @DomName('URL.href')
   @DocsEditable()
   @Experimental() // untriaged
-  void set href(String value) => _blink.BlinkURL.$href_Setter(this, value);
+  void set href(String value) => _blink.BlinkURL.instance.href_Setter_(this, value);
 
   @DomName('URL.origin')
   @DocsEditable()
   @Experimental() // untriaged
-  String get origin => _blink.BlinkURL.$origin_Getter(this);
+  String get origin => _blink.BlinkURL.instance.origin_Getter_(this);
 
   @DomName('URL.password')
   @DocsEditable()
   @Experimental() // untriaged
-  String get password => _blink.BlinkURL.$password_Getter(this);
+  String get password => _blink.BlinkURL.instance.password_Getter_(this);
 
   @DomName('URL.password')
   @DocsEditable()
   @Experimental() // untriaged
-  void set password(String value) => _blink.BlinkURL.$password_Setter(this, value);
+  void set password(String value) => _blink.BlinkURL.instance.password_Setter_(this, value);
 
   @DomName('URL.pathname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get pathname => _blink.BlinkURL.$pathname_Getter(this);
+  String get pathname => _blink.BlinkURL.instance.pathname_Getter_(this);
 
   @DomName('URL.pathname')
   @DocsEditable()
   @Experimental() // untriaged
-  void set pathname(String value) => _blink.BlinkURL.$pathname_Setter(this, value);
+  void set pathname(String value) => _blink.BlinkURL.instance.pathname_Setter_(this, value);
 
   @DomName('URL.port')
   @DocsEditable()
   @Experimental() // untriaged
-  String get port => _blink.BlinkURL.$port_Getter(this);
+  String get port => _blink.BlinkURL.instance.port_Getter_(this);
 
   @DomName('URL.port')
   @DocsEditable()
   @Experimental() // untriaged
-  void set port(String value) => _blink.BlinkURL.$port_Setter(this, value);
+  void set port(String value) => _blink.BlinkURL.instance.port_Setter_(this, value);
 
   @DomName('URL.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  String get protocol => _blink.BlinkURL.$protocol_Getter(this);
+  String get protocol => _blink.BlinkURL.instance.protocol_Getter_(this);
 
   @DomName('URL.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  void set protocol(String value) => _blink.BlinkURL.$protocol_Setter(this, value);
+  void set protocol(String value) => _blink.BlinkURL.instance.protocol_Setter_(this, value);
 
   @DomName('URL.search')
   @DocsEditable()
   @Experimental() // untriaged
-  String get search => _blink.BlinkURL.$search_Getter(this);
+  String get search => _blink.BlinkURL.instance.search_Getter_(this);
 
   @DomName('URL.search')
   @DocsEditable()
   @Experimental() // untriaged
-  void set search(String value) => _blink.BlinkURL.$search_Setter(this, value);
+  void set search(String value) => _blink.BlinkURL.instance.search_Setter_(this, value);
 
   @DomName('URL.username')
   @DocsEditable()
   @Experimental() // untriaged
-  String get username => _blink.BlinkURL.$username_Getter(this);
+  String get username => _blink.BlinkURL.instance.username_Getter_(this);
 
   @DomName('URL.username')
   @DocsEditable()
   @Experimental() // untriaged
-  void set username(String value) => _blink.BlinkURL.$username_Setter(this, value);
+  void set username(String value) => _blink.BlinkURL.instance.username_Setter_(this, value);
 
   @DomName('URL.toString')
   @DocsEditable()
   @Experimental() // untriaged
-  String toString() => _blink.BlinkURL.$toString_Callback(this);
+  String toString() => _blink.BlinkURL.instance.toString_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -28905,112 +31579,112 @@ abstract class UrlUtils extends NativeFieldWrapperClass2 {
   @DomName('URLUtils.hash')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hash => _blink.BlinkURLUtils.$hash_Getter(this);
+  String get hash;
 
   @DomName('URLUtils.hash')
   @DocsEditable()
   @Experimental() // untriaged
-  void set hash(String value) => _blink.BlinkURLUtils.$hash_Setter(this, value);
+  void set hash(String value);
 
   @DomName('URLUtils.host')
   @DocsEditable()
   @Experimental() // untriaged
-  String get host => _blink.BlinkURLUtils.$host_Getter(this);
+  String get host;
 
   @DomName('URLUtils.host')
   @DocsEditable()
   @Experimental() // untriaged
-  void set host(String value) => _blink.BlinkURLUtils.$host_Setter(this, value);
+  void set host(String value);
 
   @DomName('URLUtils.hostname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hostname => _blink.BlinkURLUtils.$hostname_Getter(this);
+  String get hostname;
 
   @DomName('URLUtils.hostname')
   @DocsEditable()
   @Experimental() // untriaged
-  void set hostname(String value) => _blink.BlinkURLUtils.$hostname_Setter(this, value);
+  void set hostname(String value);
 
   @DomName('URLUtils.href')
   @DocsEditable()
   @Experimental() // untriaged
-  String get href => _blink.BlinkURLUtils.$href_Getter(this);
+  String get href;
 
   @DomName('URLUtils.href')
   @DocsEditable()
   @Experimental() // untriaged
-  void set href(String value) => _blink.BlinkURLUtils.$href_Setter(this, value);
+  void set href(String value);
 
   @DomName('URLUtils.origin')
   @DocsEditable()
   @Experimental() // untriaged
-  String get origin => _blink.BlinkURLUtils.$origin_Getter(this);
+  String get origin;
 
   @DomName('URLUtils.password')
   @DocsEditable()
   @Experimental() // untriaged
-  String get password => _blink.BlinkURLUtils.$password_Getter(this);
+  String get password;
 
   @DomName('URLUtils.password')
   @DocsEditable()
   @Experimental() // untriaged
-  void set password(String value) => _blink.BlinkURLUtils.$password_Setter(this, value);
+  void set password(String value);
 
   @DomName('URLUtils.pathname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get pathname => _blink.BlinkURLUtils.$pathname_Getter(this);
+  String get pathname;
 
   @DomName('URLUtils.pathname')
   @DocsEditable()
   @Experimental() // untriaged
-  void set pathname(String value) => _blink.BlinkURLUtils.$pathname_Setter(this, value);
+  void set pathname(String value);
 
   @DomName('URLUtils.port')
   @DocsEditable()
   @Experimental() // untriaged
-  String get port => _blink.BlinkURLUtils.$port_Getter(this);
+  String get port;
 
   @DomName('URLUtils.port')
   @DocsEditable()
   @Experimental() // untriaged
-  void set port(String value) => _blink.BlinkURLUtils.$port_Setter(this, value);
+  void set port(String value);
 
   @DomName('URLUtils.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  String get protocol => _blink.BlinkURLUtils.$protocol_Getter(this);
+  String get protocol;
 
   @DomName('URLUtils.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  void set protocol(String value) => _blink.BlinkURLUtils.$protocol_Setter(this, value);
+  void set protocol(String value);
 
   @DomName('URLUtils.search')
   @DocsEditable()
   @Experimental() // untriaged
-  String get search => _blink.BlinkURLUtils.$search_Getter(this);
+  String get search;
 
   @DomName('URLUtils.search')
   @DocsEditable()
   @Experimental() // untriaged
-  void set search(String value) => _blink.BlinkURLUtils.$search_Setter(this, value);
+  void set search(String value);
 
   @DomName('URLUtils.username')
   @DocsEditable()
   @Experimental() // untriaged
-  String get username => _blink.BlinkURLUtils.$username_Getter(this);
+  String get username;
 
   @DomName('URLUtils.username')
   @DocsEditable()
   @Experimental() // untriaged
-  void set username(String value) => _blink.BlinkURLUtils.$username_Setter(this, value);
+  void set username(String value);
 
   @DomName('URLUtils.toString')
   @DocsEditable()
   @Experimental() // untriaged
-  String toString() => _blink.BlinkURLUtils.$toString_Callback(this);
+  String toString();
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29030,47 +31704,52 @@ abstract class UrlUtilsReadOnly extends NativeFieldWrapperClass2 {
   @DomName('URLUtilsReadOnly.hash')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hash => _blink.BlinkURLUtilsReadOnly.$hash_Getter(this);
+  String get hash;
 
   @DomName('URLUtilsReadOnly.host')
   @DocsEditable()
   @Experimental() // untriaged
-  String get host => _blink.BlinkURLUtilsReadOnly.$host_Getter(this);
+  String get host;
 
   @DomName('URLUtilsReadOnly.hostname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get hostname => _blink.BlinkURLUtilsReadOnly.$hostname_Getter(this);
+  String get hostname;
 
   @DomName('URLUtilsReadOnly.href')
   @DocsEditable()
   @Experimental() // untriaged
-  String get href => _blink.BlinkURLUtilsReadOnly.$href_Getter(this);
+  String get href;
+
+  @DomName('URLUtilsReadOnly.origin')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get origin;
 
   @DomName('URLUtilsReadOnly.pathname')
   @DocsEditable()
   @Experimental() // untriaged
-  String get pathname => _blink.BlinkURLUtilsReadOnly.$pathname_Getter(this);
+  String get pathname;
 
   @DomName('URLUtilsReadOnly.port')
   @DocsEditable()
   @Experimental() // untriaged
-  String get port => _blink.BlinkURLUtilsReadOnly.$port_Getter(this);
+  String get port;
 
   @DomName('URLUtilsReadOnly.protocol')
   @DocsEditable()
   @Experimental() // untriaged
-  String get protocol => _blink.BlinkURLUtilsReadOnly.$protocol_Getter(this);
+  String get protocol;
 
   @DomName('URLUtilsReadOnly.search')
   @DocsEditable()
   @Experimental() // untriaged
-  String get search => _blink.BlinkURLUtilsReadOnly.$search_Getter(this);
+  String get search;
 
   @DomName('URLUtilsReadOnly.toString')
   @DocsEditable()
   @Experimental() // untriaged
-  String toString() => _blink.BlinkURLUtilsReadOnly.$toString_Callback(this);
+  String toString();
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29088,43 +31767,43 @@ class ValidityState extends NativeFieldWrapperClass2 {
 
   @DomName('ValidityState.badInput')
   @DocsEditable()
-  bool get badInput => _blink.BlinkValidityState.$badInput_Getter(this);
+  bool get badInput => _blink.BlinkValidityState.instance.badInput_Getter_(this);
 
   @DomName('ValidityState.customError')
   @DocsEditable()
-  bool get customError => _blink.BlinkValidityState.$customError_Getter(this);
+  bool get customError => _blink.BlinkValidityState.instance.customError_Getter_(this);
 
   @DomName('ValidityState.patternMismatch')
   @DocsEditable()
-  bool get patternMismatch => _blink.BlinkValidityState.$patternMismatch_Getter(this);
+  bool get patternMismatch => _blink.BlinkValidityState.instance.patternMismatch_Getter_(this);
 
   @DomName('ValidityState.rangeOverflow')
   @DocsEditable()
-  bool get rangeOverflow => _blink.BlinkValidityState.$rangeOverflow_Getter(this);
+  bool get rangeOverflow => _blink.BlinkValidityState.instance.rangeOverflow_Getter_(this);
 
   @DomName('ValidityState.rangeUnderflow')
   @DocsEditable()
-  bool get rangeUnderflow => _blink.BlinkValidityState.$rangeUnderflow_Getter(this);
+  bool get rangeUnderflow => _blink.BlinkValidityState.instance.rangeUnderflow_Getter_(this);
 
   @DomName('ValidityState.stepMismatch')
   @DocsEditable()
-  bool get stepMismatch => _blink.BlinkValidityState.$stepMismatch_Getter(this);
+  bool get stepMismatch => _blink.BlinkValidityState.instance.stepMismatch_Getter_(this);
 
   @DomName('ValidityState.tooLong')
   @DocsEditable()
-  bool get tooLong => _blink.BlinkValidityState.$tooLong_Getter(this);
+  bool get tooLong => _blink.BlinkValidityState.instance.tooLong_Getter_(this);
 
   @DomName('ValidityState.typeMismatch')
   @DocsEditable()
-  bool get typeMismatch => _blink.BlinkValidityState.$typeMismatch_Getter(this);
+  bool get typeMismatch => _blink.BlinkValidityState.instance.typeMismatch_Getter_(this);
 
   @DomName('ValidityState.valid')
   @DocsEditable()
-  bool get valid => _blink.BlinkValidityState.$valid_Getter(this);
+  bool get valid => _blink.BlinkValidityState.instance.valid_Getter_(this);
 
   @DomName('ValidityState.valueMissing')
   @DocsEditable()
-  bool get valueMissing => _blink.BlinkValidityState.$valueMissing_Getter(this);
+  bool get valueMissing => _blink.BlinkValidityState.instance.valueMissing_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29149,54 +31828,54 @@ class VideoElement extends MediaElement implements CanvasImageSource {
 
   @DomName('HTMLVideoElement.height')
   @DocsEditable()
-  int get height => _blink.BlinkHTMLVideoElement.$height_Getter(this);
+  int get height => _blink.BlinkHTMLVideoElement.instance.height_Getter_(this);
 
   @DomName('HTMLVideoElement.height')
   @DocsEditable()
-  void set height(int value) => _blink.BlinkHTMLVideoElement.$height_Setter(this, value);
+  void set height(int value) => _blink.BlinkHTMLVideoElement.instance.height_Setter_(this, value);
 
   @DomName('HTMLVideoElement.poster')
   @DocsEditable()
-  String get poster => _blink.BlinkHTMLVideoElement.$poster_Getter(this);
+  String get poster => _blink.BlinkHTMLVideoElement.instance.poster_Getter_(this);
 
   @DomName('HTMLVideoElement.poster')
   @DocsEditable()
-  void set poster(String value) => _blink.BlinkHTMLVideoElement.$poster_Setter(this, value);
+  void set poster(String value) => _blink.BlinkHTMLVideoElement.instance.poster_Setter_(this, value);
 
   @DomName('HTMLVideoElement.videoHeight')
   @DocsEditable()
-  int get videoHeight => _blink.BlinkHTMLVideoElement.$videoHeight_Getter(this);
+  int get videoHeight => _blink.BlinkHTMLVideoElement.instance.videoHeight_Getter_(this);
 
   @DomName('HTMLVideoElement.videoWidth')
   @DocsEditable()
-  int get videoWidth => _blink.BlinkHTMLVideoElement.$videoWidth_Getter(this);
+  int get videoWidth => _blink.BlinkHTMLVideoElement.instance.videoWidth_Getter_(this);
 
   @DomName('HTMLVideoElement.webkitDecodedFrameCount')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get decodedFrameCount => _blink.BlinkHTMLVideoElement.$webkitDecodedFrameCount_Getter(this);
+  int get decodedFrameCount => _blink.BlinkHTMLVideoElement.instance.webkitDecodedFrameCount_Getter_(this);
 
   @DomName('HTMLVideoElement.webkitDroppedFrameCount')
   @DocsEditable()
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
-  int get droppedFrameCount => _blink.BlinkHTMLVideoElement.$webkitDroppedFrameCount_Getter(this);
+  int get droppedFrameCount => _blink.BlinkHTMLVideoElement.instance.webkitDroppedFrameCount_Getter_(this);
 
   @DomName('HTMLVideoElement.width')
   @DocsEditable()
-  int get width => _blink.BlinkHTMLVideoElement.$width_Getter(this);
+  int get width => _blink.BlinkHTMLVideoElement.instance.width_Getter_(this);
 
   @DomName('HTMLVideoElement.width')
   @DocsEditable()
-  void set width(int value) => _blink.BlinkHTMLVideoElement.$width_Setter(this, value);
+  void set width(int value) => _blink.BlinkHTMLVideoElement.instance.width_Setter_(this, value);
 
   @DomName('HTMLVideoElement.getVideoPlaybackQuality')
   @DocsEditable()
   @Experimental() // untriaged
-  VideoPlaybackQuality getVideoPlaybackQuality() => _blink.BlinkHTMLVideoElement.$getVideoPlaybackQuality_Callback(this);
+  VideoPlaybackQuality getVideoPlaybackQuality() => _blink.BlinkHTMLVideoElement.instance.getVideoPlaybackQuality_Callback_0_(this);
 
   @DomName('HTMLVideoElement.webkitEnterFullscreen')
   @DocsEditable()
@@ -29204,7 +31883,7 @@ class VideoElement extends MediaElement implements CanvasImageSource {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html
-  void enterFullscreen() => _blink.BlinkHTMLVideoElement.$webkitEnterFullscreen_Callback(this);
+  void enterFullscreen() => _blink.BlinkHTMLVideoElement.instance.webkitEnterFullscreen_Callback_0_(this);
 
   @DomName('HTMLVideoElement.webkitExitFullscreen')
   @DocsEditable()
@@ -29212,7 +31891,7 @@ class VideoElement extends MediaElement implements CanvasImageSource {
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   // https://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html#dom-document-exitfullscreen
-  void exitFullscreen() => _blink.BlinkHTMLVideoElement.$webkitExitFullscreen_Callback(this);
+  void exitFullscreen() => _blink.BlinkHTMLVideoElement.instance.webkitExitFullscreen_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29232,22 +31911,112 @@ class VideoPlaybackQuality extends NativeFieldWrapperClass2 {
   @DomName('VideoPlaybackQuality.corruptedVideoFrames')
   @DocsEditable()
   @Experimental() // untriaged
-  int get corruptedVideoFrames => _blink.BlinkVideoPlaybackQuality.$corruptedVideoFrames_Getter(this);
+  int get corruptedVideoFrames => _blink.BlinkVideoPlaybackQuality.instance.corruptedVideoFrames_Getter_(this);
 
   @DomName('VideoPlaybackQuality.creationTime')
   @DocsEditable()
   @Experimental() // untriaged
-  double get creationTime => _blink.BlinkVideoPlaybackQuality.$creationTime_Getter(this);
+  double get creationTime => _blink.BlinkVideoPlaybackQuality.instance.creationTime_Getter_(this);
 
   @DomName('VideoPlaybackQuality.droppedVideoFrames')
   @DocsEditable()
   @Experimental() // untriaged
-  int get droppedVideoFrames => _blink.BlinkVideoPlaybackQuality.$droppedVideoFrames_Getter(this);
+  int get droppedVideoFrames => _blink.BlinkVideoPlaybackQuality.instance.droppedVideoFrames_Getter_(this);
 
   @DomName('VideoPlaybackQuality.totalVideoFrames')
   @DocsEditable()
   @Experimental() // untriaged
-  int get totalVideoFrames => _blink.BlinkVideoPlaybackQuality.$totalVideoFrames_Getter(this);
+  int get totalVideoFrames => _blink.BlinkVideoPlaybackQuality.instance.totalVideoFrames_Getter_(this);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('VideoTrack')
+@Experimental() // untriaged
+class VideoTrack extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory VideoTrack._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('VideoTrack.id')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get id => _blink.BlinkVideoTrack.instance.id_Getter_(this);
+
+  @DomName('VideoTrack.kind')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get kind => _blink.BlinkVideoTrack.instance.kind_Getter_(this);
+
+  @DomName('VideoTrack.label')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get label => _blink.BlinkVideoTrack.instance.label_Getter_(this);
+
+  @DomName('VideoTrack.language')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get language => _blink.BlinkVideoTrack.instance.language_Getter_(this);
+
+  @DomName('VideoTrack.selected')
+  @DocsEditable()
+  @Experimental() // untriaged
+  bool get selected => _blink.BlinkVideoTrack.instance.selected_Getter_(this);
+
+  @DomName('VideoTrack.selected')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set selected(bool value) => _blink.BlinkVideoTrack.instance.selected_Setter_(this, value);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('VideoTrackList')
+@Experimental() // untriaged
+class VideoTrackList extends EventTarget {
+  // To suppress missing implicit constructor warnings.
+  factory VideoTrackList._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('VideoTrackList.changeEvent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  static const EventStreamProvider<Event> changeEvent = const EventStreamProvider<Event>('change');
+
+  @DomName('VideoTrackList.length')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get length => _blink.BlinkVideoTrackList.instance.length_Getter_(this);
+
+  @DomName('VideoTrackList.selectedIndex')
+  @DocsEditable()
+  @Experimental() // untriaged
+  int get selectedIndex => _blink.BlinkVideoTrackList.instance.selectedIndex_Getter_(this);
+
+  @DomName('VideoTrackList.__getter__')
+  @DocsEditable()
+  @Experimental() // untriaged
+  VideoTrack __getter__(int index) => _blink.BlinkVideoTrackList.instance.$__getter___Callback_1_(this, index);
+
+  @DomName('VideoTrackList.getTrackById')
+  @DocsEditable()
+  @Experimental() // untriaged
+  VideoTrack getTrackById(String id) => _blink.BlinkVideoTrackList.instance.getTrackById_Callback_1_(this, id);
+
+  @DomName('VideoTrackList.onchange')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Stream<Event> get onChange => changeEvent.forTarget(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29278,93 +32047,93 @@ class VttCue extends TextTrackCue {
   @DomName('VTTCue.VTTCue')
   @DocsEditable()
   factory VttCue(num startTime, num endTime, String text) {
-    return _blink.BlinkVTTCue.$_create_1constructorCallback(startTime, endTime, text);
+    return _blink.BlinkVTTCue.instance.constructorCallback_3_(startTime, endTime, text);
   }
 
   @DomName('VTTCue.align')
   @DocsEditable()
   @Experimental() // untriaged
-  String get align => _blink.BlinkVTTCue.$align_Getter(this);
+  String get align => _blink.BlinkVTTCue.instance.align_Getter_(this);
 
   @DomName('VTTCue.align')
   @DocsEditable()
   @Experimental() // untriaged
-  void set align(String value) => _blink.BlinkVTTCue.$align_Setter(this, value);
+  void set align(String value) => _blink.BlinkVTTCue.instance.align_Setter_(this, value);
 
   @DomName('VTTCue.line')
   @DocsEditable()
   @Experimental() // untriaged
-  int get line => _blink.BlinkVTTCue.$line_Getter(this);
+  int get line => _blink.BlinkVTTCue.instance.line_Getter_(this);
 
   @DomName('VTTCue.line')
   @DocsEditable()
   @Experimental() // untriaged
-  void set line(int value) => _blink.BlinkVTTCue.$line_Setter(this, value);
+  void set line(int value) => _blink.BlinkVTTCue.instance.line_Setter_(this, value);
 
   @DomName('VTTCue.position')
   @DocsEditable()
   @Experimental() // untriaged
-  int get position => _blink.BlinkVTTCue.$position_Getter(this);
+  int get position => _blink.BlinkVTTCue.instance.position_Getter_(this);
 
   @DomName('VTTCue.position')
   @DocsEditable()
   @Experimental() // untriaged
-  void set position(int value) => _blink.BlinkVTTCue.$position_Setter(this, value);
+  void set position(int value) => _blink.BlinkVTTCue.instance.position_Setter_(this, value);
 
   @DomName('VTTCue.regionId')
   @DocsEditable()
   @Experimental() // untriaged
-  String get regionId => _blink.BlinkVTTCue.$regionId_Getter(this);
+  String get regionId => _blink.BlinkVTTCue.instance.regionId_Getter_(this);
 
   @DomName('VTTCue.regionId')
   @DocsEditable()
   @Experimental() // untriaged
-  void set regionId(String value) => _blink.BlinkVTTCue.$regionId_Setter(this, value);
+  void set regionId(String value) => _blink.BlinkVTTCue.instance.regionId_Setter_(this, value);
 
   @DomName('VTTCue.size')
   @DocsEditable()
   @Experimental() // untriaged
-  int get size => _blink.BlinkVTTCue.$size_Getter(this);
+  int get size => _blink.BlinkVTTCue.instance.size_Getter_(this);
 
   @DomName('VTTCue.size')
   @DocsEditable()
   @Experimental() // untriaged
-  void set size(int value) => _blink.BlinkVTTCue.$size_Setter(this, value);
+  void set size(int value) => _blink.BlinkVTTCue.instance.size_Setter_(this, value);
 
   @DomName('VTTCue.snapToLines')
   @DocsEditable()
   @Experimental() // untriaged
-  bool get snapToLines => _blink.BlinkVTTCue.$snapToLines_Getter(this);
+  bool get snapToLines => _blink.BlinkVTTCue.instance.snapToLines_Getter_(this);
 
   @DomName('VTTCue.snapToLines')
   @DocsEditable()
   @Experimental() // untriaged
-  void set snapToLines(bool value) => _blink.BlinkVTTCue.$snapToLines_Setter(this, value);
+  void set snapToLines(bool value) => _blink.BlinkVTTCue.instance.snapToLines_Setter_(this, value);
 
   @DomName('VTTCue.text')
   @DocsEditable()
   @Experimental() // untriaged
-  String get text => _blink.BlinkVTTCue.$text_Getter(this);
+  String get text => _blink.BlinkVTTCue.instance.text_Getter_(this);
 
   @DomName('VTTCue.text')
   @DocsEditable()
   @Experimental() // untriaged
-  void set text(String value) => _blink.BlinkVTTCue.$text_Setter(this, value);
+  void set text(String value) => _blink.BlinkVTTCue.instance.text_Setter_(this, value);
 
   @DomName('VTTCue.vertical')
   @DocsEditable()
   @Experimental() // untriaged
-  String get vertical => _blink.BlinkVTTCue.$vertical_Getter(this);
+  String get vertical => _blink.BlinkVTTCue.instance.vertical_Getter_(this);
 
   @DomName('VTTCue.vertical')
   @DocsEditable()
   @Experimental() // untriaged
-  void set vertical(String value) => _blink.BlinkVTTCue.$vertical_Setter(this, value);
+  void set vertical(String value) => _blink.BlinkVTTCue.instance.vertical_Setter_(this, value);
 
   @DomName('VTTCue.getCueAsHTML')
   @DocsEditable()
   @Experimental() // untriaged
-  DocumentFragment getCueAsHtml() => _blink.BlinkVTTCue.$getCueAsHTML_Callback(this);
+  DocumentFragment getCueAsHtml() => _blink.BlinkVTTCue.instance.getCueAsHTML_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29384,93 +32153,93 @@ class VttRegion extends NativeFieldWrapperClass2 {
   @DomName('VTTRegion.VTTRegion')
   @DocsEditable()
   factory VttRegion() {
-    return _blink.BlinkVTTRegion.$_create_1constructorCallback();
+    return _blink.BlinkVTTRegion.instance.constructorCallback_0_();
   }
 
   @DomName('VTTRegion.height')
   @DocsEditable()
   @Experimental() // untriaged
-  int get height => _blink.BlinkVTTRegion.$height_Getter(this);
+  int get height => _blink.BlinkVTTRegion.instance.height_Getter_(this);
 
   @DomName('VTTRegion.height')
   @DocsEditable()
   @Experimental() // untriaged
-  void set height(int value) => _blink.BlinkVTTRegion.$height_Setter(this, value);
+  void set height(int value) => _blink.BlinkVTTRegion.instance.height_Setter_(this, value);
 
   @DomName('VTTRegion.id')
   @DocsEditable()
   @Experimental() // untriaged
-  String get id => _blink.BlinkVTTRegion.$id_Getter(this);
+  String get id => _blink.BlinkVTTRegion.instance.id_Getter_(this);
 
   @DomName('VTTRegion.id')
   @DocsEditable()
   @Experimental() // untriaged
-  void set id(String value) => _blink.BlinkVTTRegion.$id_Setter(this, value);
+  void set id(String value) => _blink.BlinkVTTRegion.instance.id_Setter_(this, value);
 
   @DomName('VTTRegion.regionAnchorX')
   @DocsEditable()
   @Experimental() // untriaged
-  num get regionAnchorX => _blink.BlinkVTTRegion.$regionAnchorX_Getter(this);
+  num get regionAnchorX => _blink.BlinkVTTRegion.instance.regionAnchorX_Getter_(this);
 
   @DomName('VTTRegion.regionAnchorX')
   @DocsEditable()
   @Experimental() // untriaged
-  void set regionAnchorX(num value) => _blink.BlinkVTTRegion.$regionAnchorX_Setter(this, value);
+  void set regionAnchorX(num value) => _blink.BlinkVTTRegion.instance.regionAnchorX_Setter_(this, value);
 
   @DomName('VTTRegion.regionAnchorY')
   @DocsEditable()
   @Experimental() // untriaged
-  num get regionAnchorY => _blink.BlinkVTTRegion.$regionAnchorY_Getter(this);
+  num get regionAnchorY => _blink.BlinkVTTRegion.instance.regionAnchorY_Getter_(this);
 
   @DomName('VTTRegion.regionAnchorY')
   @DocsEditable()
   @Experimental() // untriaged
-  void set regionAnchorY(num value) => _blink.BlinkVTTRegion.$regionAnchorY_Setter(this, value);
+  void set regionAnchorY(num value) => _blink.BlinkVTTRegion.instance.regionAnchorY_Setter_(this, value);
 
   @DomName('VTTRegion.scroll')
   @DocsEditable()
   @Experimental() // untriaged
-  String get scroll => _blink.BlinkVTTRegion.$scroll_Getter(this);
+  String get scroll => _blink.BlinkVTTRegion.instance.scroll_Getter_(this);
 
   @DomName('VTTRegion.scroll')
   @DocsEditable()
   @Experimental() // untriaged
-  void set scroll(String value) => _blink.BlinkVTTRegion.$scroll_Setter(this, value);
+  void set scroll(String value) => _blink.BlinkVTTRegion.instance.scroll_Setter_(this, value);
 
   @DomName('VTTRegion.track')
   @DocsEditable()
   @Experimental() // untriaged
-  TextTrack get track => _blink.BlinkVTTRegion.$track_Getter(this);
+  TextTrack get track => _blink.BlinkVTTRegion.instance.track_Getter_(this);
 
   @DomName('VTTRegion.viewportAnchorX')
   @DocsEditable()
   @Experimental() // untriaged
-  num get viewportAnchorX => _blink.BlinkVTTRegion.$viewportAnchorX_Getter(this);
+  num get viewportAnchorX => _blink.BlinkVTTRegion.instance.viewportAnchorX_Getter_(this);
 
   @DomName('VTTRegion.viewportAnchorX')
   @DocsEditable()
   @Experimental() // untriaged
-  void set viewportAnchorX(num value) => _blink.BlinkVTTRegion.$viewportAnchorX_Setter(this, value);
+  void set viewportAnchorX(num value) => _blink.BlinkVTTRegion.instance.viewportAnchorX_Setter_(this, value);
 
   @DomName('VTTRegion.viewportAnchorY')
   @DocsEditable()
   @Experimental() // untriaged
-  num get viewportAnchorY => _blink.BlinkVTTRegion.$viewportAnchorY_Getter(this);
+  num get viewportAnchorY => _blink.BlinkVTTRegion.instance.viewportAnchorY_Getter_(this);
 
   @DomName('VTTRegion.viewportAnchorY')
   @DocsEditable()
   @Experimental() // untriaged
-  void set viewportAnchorY(num value) => _blink.BlinkVTTRegion.$viewportAnchorY_Setter(this, value);
+  void set viewportAnchorY(num value) => _blink.BlinkVTTRegion.instance.viewportAnchorY_Setter_(this, value);
 
   @DomName('VTTRegion.width')
   @DocsEditable()
   @Experimental() // untriaged
-  num get width => _blink.BlinkVTTRegion.$width_Getter(this);
+  num get width => _blink.BlinkVTTRegion.instance.width_Getter_(this);
 
   @DomName('VTTRegion.width')
   @DocsEditable()
   @Experimental() // untriaged
-  void set width(num value) => _blink.BlinkVTTRegion.$width_Setter(this, value);
+  void set width(num value) => _blink.BlinkVTTRegion.instance.width_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29490,17 +32259,17 @@ class VttRegionList extends NativeFieldWrapperClass2 {
   @DomName('VTTRegionList.length')
   @DocsEditable()
   @Experimental() // untriaged
-  int get length => _blink.BlinkVTTRegionList.$length_Getter(this);
+  int get length => _blink.BlinkVTTRegionList.instance.length_Getter_(this);
 
   @DomName('VTTRegionList.getRegionById')
   @DocsEditable()
   @Experimental() // untriaged
-  VttRegion getRegionById(String id) => _blink.BlinkVTTRegionList.$getRegionById_Callback(this, id);
+  VttRegion getRegionById(String id) => _blink.BlinkVTTRegionList.instance.getRegionById_Callback_1_(this, id);
 
   @DomName('VTTRegionList.item')
   @DocsEditable()
   @Experimental() // untriaged
-  VttRegion item(int index) => _blink.BlinkVTTRegionList.$item_Callback(this, index);
+  VttRegion item(int index) => _blink.BlinkVTTRegionList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -29599,13 +32368,13 @@ class WebSocket extends EventTarget {
   @DocsEditable()
   factory WebSocket(String url, [protocol_OR_protocols]) {
     if ((url is String || url == null) && protocol_OR_protocols == null) {
-      return _blink.BlinkWebSocket.$_create_1constructorCallback(url);
-    }
-    if ((protocol_OR_protocols is List<String> || protocol_OR_protocols == null) && (url is String || url == null)) {
-      return _blink.BlinkWebSocket.$_create_2constructorCallback(url, protocol_OR_protocols);
+      return _blink.BlinkWebSocket.instance.constructorCallback_1_(url);
     }
     if ((protocol_OR_protocols is String || protocol_OR_protocols == null) && (url is String || url == null)) {
-      return _blink.BlinkWebSocket.$_create_3constructorCallback(url, protocol_OR_protocols);
+      return _blink.BlinkWebSocket.instance.constructorCallback_2_(url, protocol_OR_protocols);
+    }
+    if ((protocol_OR_protocols is List<String> || protocol_OR_protocols == null) && (url is String || url == null)) {
+      return _blink.BlinkWebSocket.instance.constructorCallback_2_(url, protocol_OR_protocols);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
@@ -29631,60 +32400,60 @@ class WebSocket extends EventTarget {
 
   @DomName('WebSocket.binaryType')
   @DocsEditable()
-  String get binaryType => _blink.BlinkWebSocket.$binaryType_Getter(this);
+  String get binaryType => _blink.BlinkWebSocket.instance.binaryType_Getter_(this);
 
   @DomName('WebSocket.binaryType')
   @DocsEditable()
-  void set binaryType(String value) => _blink.BlinkWebSocket.$binaryType_Setter(this, value);
+  void set binaryType(String value) => _blink.BlinkWebSocket.instance.binaryType_Setter_(this, value);
 
   @DomName('WebSocket.bufferedAmount')
   @DocsEditable()
-  int get bufferedAmount => _blink.BlinkWebSocket.$bufferedAmount_Getter(this);
+  int get bufferedAmount => _blink.BlinkWebSocket.instance.bufferedAmount_Getter_(this);
 
   @DomName('WebSocket.extensions')
   @DocsEditable()
-  String get extensions => _blink.BlinkWebSocket.$extensions_Getter(this);
+  String get extensions => _blink.BlinkWebSocket.instance.extensions_Getter_(this);
 
   @DomName('WebSocket.protocol')
   @DocsEditable()
-  String get protocol => _blink.BlinkWebSocket.$protocol_Getter(this);
+  String get protocol => _blink.BlinkWebSocket.instance.protocol_Getter_(this);
 
   @DomName('WebSocket.readyState')
   @DocsEditable()
-  int get readyState => _blink.BlinkWebSocket.$readyState_Getter(this);
+  int get readyState => _blink.BlinkWebSocket.instance.readyState_Getter_(this);
 
   @DomName('WebSocket.url')
   @DocsEditable()
-  String get url => _blink.BlinkWebSocket.$url_Getter(this);
+  String get url => _blink.BlinkWebSocket.instance.url_Getter_(this);
 
   void close([int code, String reason]) {
     if (reason != null) {
-      _blink.BlinkWebSocket.$_close_1_Callback(this, code, reason);
+      _blink.BlinkWebSocket.instance.close_Callback_2_(this, code, reason);
       return;
     }
     if (code != null) {
-      _blink.BlinkWebSocket.$_close_2_Callback(this, code);
+      _blink.BlinkWebSocket.instance.close_Callback_1_(this, code);
       return;
     }
-    _blink.BlinkWebSocket.$_close_3_Callback(this);
+    _blink.BlinkWebSocket.instance.close_Callback_0_(this);
     return;
   }
 
   void send(data) {
-    if ((data is TypedData || data == null)) {
-      _blink.BlinkWebSocket.$_send_1_Callback(this, data);
-      return;
-    }
-    if ((data is ByteBuffer || data == null)) {
-      _blink.BlinkWebSocket.$_send_2_Callback(this, data);
+    if ((data is String || data == null)) {
+      _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
       return;
     }
     if ((data is Blob || data == null)) {
-      _blink.BlinkWebSocket.$_send_3_Callback(this, data);
+      _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
       return;
     }
-    if ((data is String || data == null)) {
-      _blink.BlinkWebSocket.$_send_4_Callback(this, data);
+    if ((data is TypedData || data == null)) {
+      _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
+      return;
+    }
+    if ((data is ByteBuffer || data == null)) {
+      _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
       return;
     }
     throw new ArgumentError("Incorrect number or type of arguments");
@@ -29692,19 +32461,19 @@ class WebSocket extends EventTarget {
 
   @DomName('WebSocket.sendBlob')
   @DocsEditable()
-  void sendBlob(Blob data) => _blink.BlinkWebSocket.$sendBlob_Callback(this, data);
+  void sendBlob(Blob data) => _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
 
   @DomName('WebSocket.sendByteBuffer')
   @DocsEditable()
-  void sendByteBuffer(ByteBuffer data) => _blink.BlinkWebSocket.$sendByteBuffer_Callback(this, data);
+  void sendByteBuffer(ByteBuffer data) => _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
 
   @DomName('WebSocket.sendString')
   @DocsEditable()
-  void sendString(String data) => _blink.BlinkWebSocket.$sendString_Callback(this, data);
+  void sendString(String data) => _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
 
   @DomName('WebSocket.sendTypedData')
   @DocsEditable()
-  void sendTypedData(TypedData data) => _blink.BlinkWebSocket.$sendTypedData_Callback(this, data);
+  void sendTypedData(TypedData data) => _blink.BlinkWebSocket.instance.send_Callback_1_(this, data);
 
   /// Stream of `close` events handled by this [WebSocket].
   @DomName('WebSocket.onclose')
@@ -29741,29 +32510,25 @@ class WheelEvent extends MouseEvent {
       int clientY: 0, int button: 0, bool canBubble: true,
       bool cancelable: true, bool ctrlKey: false, bool altKey: false,
       bool shiftKey: false, bool metaKey: false, EventTarget relatedTarget}) {
-
-    if (view == null) {
-      view = window;
-    }
-    var eventType = 'WheelEvent';
-    if (Device.isFirefox) {
-      eventType = 'MouseScrollEvents';
-    }
-    final event = document._createEvent(eventType);
-    // Dartium always needs these flipped because we're using the legacy
-    // _initWebKitWheelEvent instead of the more modern WheelEvent constructor
-    // which isn't yet properly exposed by the Dartium bindings.
-    deltaX = -deltaX;
-    deltaY = -deltaY;
-      // Fallthrough for Dartium.
-      event._initMouseEvent(type, canBubble, cancelable, view, detail,
-          screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey,
-          metaKey, button, relatedTarget);
-      event._initWebKitWheelEvent(deltaX, deltaY,
-          view, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey,
-          metaKey);
-
-    return event;
+    var options = {
+      'view': view,
+      'deltaX': deltaX,
+      'deltaY': deltaY,
+      'detail': detail,
+      'screenX': screenX,
+      'screenY': screenY,
+      'clientX': clientX,
+      'clientY': clientY,
+      'button': button,
+      'bubbles': canBubble,
+      'cancelable': cancelable,
+      'ctrlKey': ctrlKey,
+      'altKey': altKey,
+      'shiftKey': shiftKey,
+      'metaKey': metaKey,
+      'relatedTarget': relatedTarget,
+    };
+    return _blink.BlinkWheelEvent.constructorCallback_2(type, options);
   }
 
   // To suppress missing implicit constructor warnings.
@@ -29783,44 +32548,32 @@ class WheelEvent extends MouseEvent {
 
   @DomName('WheelEvent.deltaMode')
   @DocsEditable()
-  int get deltaMode => _blink.BlinkWheelEvent.$deltaMode_Getter(this);
+  int get deltaMode => _blink.BlinkWheelEvent.instance.deltaMode_Getter_(this);
 
   @DomName('WheelEvent.deltaX')
   @DocsEditable()
   @Experimental() // untriaged
-  double get _deltaX => _blink.BlinkWheelEvent.$deltaX_Getter(this);
+  double get _deltaX => _blink.BlinkWheelEvent.instance.deltaX_Getter_(this);
 
   @DomName('WheelEvent.deltaY')
   @DocsEditable()
   @Experimental() // untriaged
-  double get _deltaY => _blink.BlinkWheelEvent.$deltaY_Getter(this);
+  double get _deltaY => _blink.BlinkWheelEvent.instance.deltaY_Getter_(this);
 
   @DomName('WheelEvent.deltaZ')
   @DocsEditable()
   @Experimental() // untriaged
-  double get deltaZ => _blink.BlinkWheelEvent.$deltaZ_Getter(this);
-
-  @DomName('WheelEvent.webkitDirectionInvertedFromDevice')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  bool get directionInvertedFromDevice => _blink.BlinkWheelEvent.$webkitDirectionInvertedFromDevice_Getter(this);
+  double get deltaZ => _blink.BlinkWheelEvent.instance.deltaZ_Getter_(this);
 
   @DomName('WheelEvent.wheelDeltaX')
   @DocsEditable()
   @Experimental() // non-standard
-  int get wheelDeltaX => _blink.BlinkWheelEvent.$wheelDeltaX_Getter(this);
+  int get wheelDeltaX => _blink.BlinkWheelEvent.instance.wheelDeltaX_Getter_(this);
 
   @DomName('WheelEvent.wheelDeltaY')
   @DocsEditable()
   @Experimental() // non-standard
-  int get wheelDeltaY => _blink.BlinkWheelEvent.$wheelDeltaY_Getter(this);
-
-  @DomName('WheelEvent.initWebKitWheelEvent')
-  @DocsEditable()
-  @Experimental()
-  void _initWebKitWheelEvent(int wheelDeltaX, int wheelDeltaY, Window view, int screenX, int screenY, int clientX, int clientY, bool ctrlKey, bool altKey, bool shiftKey, bool metaKey) => _blink.BlinkWheelEvent.$initWebKitWheelEvent_Callback(this, wheelDeltaX, wheelDeltaY, view, screenX, screenY, clientX, clientY, ctrlKey, altKey, shiftKey, metaKey);
+  int get wheelDeltaY => _blink.BlinkWheelEvent.instance.wheelDeltaY_Getter_(this);
 
 
   /**
@@ -29944,46 +32697,8 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   }
 
   /**
-   * Converts a point from node coordinates to this window's coordinates.
-   *
-   * ## Other resources
-   *
-   * * [webkitConvertPointFromPageToNode]
-   * (https://developer.apple.com/library/safari/documentation/DataManagement/Reference/DOMWindowAdditionsReference/DOMWindowAdditions/DOMWindowAdditions.html#//apple_ref/javascript/instm/DOMWindow/webkitConvertPointFromNodeToPage)
-   * from Safari Development Library.
-   */
-  @DomName('Window.convertPointFromNodeToPage')
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  Point convertPointFromNodeToPage(Node node, Point point) {
-    var result = _convertPointFromNodeToPage(node,
-        new _DomPoint(point.x, point.y));
-    return new Point(result.x, result.y);
-  }
-
-  /**
-   * Converts a point from this window's coordinates to node coordinates.
-   *
-   * ## Other resources
-   *
-   * * [webkitConvertPointFromPageToNode]
-   * (https://developer.apple.com/library/safari/documentation/DataManagement/Reference/DOMWindowAdditionsReference/DOMWindowAdditions/DOMWindowAdditions.html#//apple_ref/javascript/instm/DOMWindow/webkitConvertPointFromPageToNode)
-   * from Safari Development Library.
-   */
-  @DomName('Window.convertPointFromPageToNode')
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  Point convertPointFromPageToNode(Node node, Point point) {
-    var result = _convertPointFromPageToNode(node,
-        new _DomPoint(point.x, point.y));
-    return new Point(result.x, result.y);
-  }
-
-  /**
-   * Checks whether [convertPointFromNodeToPage] and
-   * [convertPointFromPageToNode] are supported on the current platform.
+   * convertPointFromNodeToPage and convertPointFromPageToNode are removed.
+   * see http://dev.w3.org/csswg/cssom-view/#geometry
    */
   static bool get supportsPointConversions => _DomPoint.supported;
   // To suppress missing implicit constructor warnings.
@@ -30032,6 +32747,10 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.hashchangeEvent')
   @DocsEditable()
   static const EventStreamProvider<Event> hashChangeEvent = const EventStreamProvider<Event>('hashchange');
+
+  @DomName('Window.loadstartEvent')
+  @DocsEditable()
+  static const EventStreamProvider<Event> loadStartEvent = const EventStreamProvider<Event>('loadstart');
 
   /**
    * Static factory designed to expose `message` events to event
@@ -30092,6 +32811,10 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.popstateEvent')
   @DocsEditable()
   static const EventStreamProvider<PopStateEvent> popStateEvent = const EventStreamProvider<PopStateEvent>('popstate');
+
+  @DomName('Window.progressEvent')
+  @DocsEditable()
+  static const EventStreamProvider<Event> progressEvent = const EventStreamProvider<Event>('progress');
 
   /**
    * Static factory designed to expose `storage` events to event
@@ -30194,7 +32917,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.CSS')
   @DocsEditable()
-  Css get css => _blink.BlinkWindow.$CSS_Getter(this);
+  Css get css => _blink.BlinkWindow.instance.CSS_Getter_(this);
 
   /**
    * The application cache for this window.
@@ -30209,15 +32932,15 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.applicationCache')
   @DocsEditable()
-  ApplicationCache get applicationCache => _blink.BlinkWindow.$applicationCache_Getter(this);
+  ApplicationCache get applicationCache => _blink.BlinkWindow.instance.applicationCache_Getter_(this);
 
   @DomName('Window.closed')
   @DocsEditable()
-  bool get closed => _blink.BlinkWindow.$closed_Getter(this);
+  bool get closed => _blink.BlinkWindow.instance.closed_Getter_(this);
 
   @DomName('Window.console')
   @DocsEditable()
-  Console get console => _blink.BlinkWindow.$console_Getter(this);
+  Console get console => _blink.BlinkWindow.instance.console_Getter_(this);
 
   /**
    * Entrypoint for the browser's cryptographic functions.
@@ -30230,31 +32953,31 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   // http://www.w3.org/TR/WebCryptoAPI/
   @Experimental()
-  Crypto get crypto => _blink.BlinkWindow.$crypto_Getter(this);
+  Crypto get crypto => _blink.BlinkWindow.instance.crypto_Getter_(this);
 
   /// *Deprecated*.
   @DomName('Window.defaultStatus')
   @DocsEditable()
   @Experimental() // non-standard
-  String get defaultStatus => _blink.BlinkWindow.$defaultStatus_Getter(this);
+  String get defaultStatus => _blink.BlinkWindow.instance.defaultStatus_Getter_(this);
 
   /// *Deprecated*.
   @DomName('Window.defaultStatus')
   @DocsEditable()
   @Experimental() // non-standard
-  void set defaultStatus(String value) => _blink.BlinkWindow.$defaultStatus_Setter(this, value);
+  void set defaultStatus(String value) => _blink.BlinkWindow.instance.defaultStatus_Setter_(this, value);
 
   /// *Deprecated*.
   @DomName('Window.defaultstatus')
   @DocsEditable()
   @Experimental() // non-standard
-  String get defaultstatus => _blink.BlinkWindow.$defaultstatus_Getter(this);
+  String get defaultstatus => _blink.BlinkWindow.instance.defaultstatus_Getter_(this);
 
   /// *Deprecated*.
   @DomName('Window.defaultstatus')
   @DocsEditable()
   @Experimental() // non-standard
-  void set defaultstatus(String value) => _blink.BlinkWindow.$defaultstatus_Setter(this, value);
+  void set defaultstatus(String value) => _blink.BlinkWindow.instance.defaultstatus_Setter_(this, value);
 
   /**
    * The ratio between physical pixels and logical CSS pixels.
@@ -30272,11 +32995,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   // http://www.quirksmode.org/blog/archives/2012/06/devicepixelrati.html
   @Experimental() // non-standard
-  double get devicePixelRatio => _blink.BlinkWindow.$devicePixelRatio_Getter(this);
+  double get devicePixelRatio => _blink.BlinkWindow.instance.devicePixelRatio_Getter_(this);
 
   @DomName('Window.document')
   @DocsEditable()
-  Document get document => _blink.BlinkWindow.$document_Getter(this);
+  Document get document => _blink.BlinkWindow.instance.document_Getter_(this);
 
   /**
    * The current session history for this window's newest document.
@@ -30289,7 +33012,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.history')
   @DocsEditable()
-  History get history => _blink.BlinkWindow.$history_Getter(this);
+  History get history => _blink.BlinkWindow.instance.history_Getter_(this);
 
   @DomName('Window.indexedDB')
   @DocsEditable()
@@ -30297,7 +33020,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @SupportedBrowser(SupportedBrowser.FIREFOX, '15')
   @SupportedBrowser(SupportedBrowser.IE, '10')
   @Experimental()
-  IdbFactory get indexedDB => _blink.BlinkWindow.$indexedDB_Getter(this);
+  IdbFactory get indexedDB => _blink.BlinkWindow.instance.indexedDB_Getter_(this);
 
   /**
    * The height of the viewport including scrollbars.
@@ -30310,7 +33033,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.innerHeight')
   @DocsEditable()
-  int get innerHeight => _blink.BlinkWindow.$innerHeight_Getter(this);
+  int get innerHeight => _blink.BlinkWindow.instance.innerHeight_Getter_(this);
 
   /**
    * The width of the viewport including scrollbars.
@@ -30323,7 +33046,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.innerWidth')
   @DocsEditable()
-  int get innerWidth => _blink.BlinkWindow.$innerWidth_Getter(this);
+  int get innerWidth => _blink.BlinkWindow.instance.innerWidth_Getter_(this);
 
   /**
    * Storage for this window that persists across sessions.
@@ -30340,11 +33063,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.localStorage')
   @DocsEditable()
-  Storage get localStorage => _blink.BlinkWindow.$localStorage_Getter(this);
+  Storage get localStorage => _blink.BlinkWindow.instance.localStorage_Getter_(this);
 
   @DomName('Window.location')
   @DocsEditable()
-  Location get location => _blink.BlinkWindow.$location_Getter(this);
+  Location get location => _blink.BlinkWindow.instance.location_Getter_(this);
 
   /**
    * This window's location bar, which displays the URL.
@@ -30357,7 +33080,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.locationbar')
   @DocsEditable()
-  BarProp get locationbar => _blink.BlinkWindow.$locationbar_Getter(this);
+  BarProp get locationbar => _blink.BlinkWindow.instance.locationbar_Getter_(this);
 
   /**
    * This window's menu bar, which displays menu commands.
@@ -30370,7 +33093,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.menubar')
   @DocsEditable()
-  BarProp get menubar => _blink.BlinkWindow.$menubar_Getter(this);
+  BarProp get menubar => _blink.BlinkWindow.instance.menubar_Getter_(this);
 
   /**
    * The name of this window.
@@ -30383,7 +33106,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.name')
   @DocsEditable()
-  String get name => _blink.BlinkWindow.$name_Getter(this);
+  String get name => _blink.BlinkWindow.instance.name_Getter_(this);
 
   /**
    * The name of this window.
@@ -30396,7 +33119,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.name')
   @DocsEditable()
-  void set name(String value) => _blink.BlinkWindow.$name_Setter(this, value);
+  void set name(String value) => _blink.BlinkWindow.instance.name_Setter_(this, value);
 
   /**
    * The user agent accessing this window.
@@ -30409,7 +33132,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.navigator')
   @DocsEditable()
-  Navigator get navigator => _blink.BlinkWindow.$navigator_Getter(this);
+  Navigator get navigator => _blink.BlinkWindow.instance.navigator_Getter_(this);
 
   /**
    * Whether objects are drawn offscreen before being displayed.
@@ -30423,20 +33146,20 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.offscreenBuffering')
   @DocsEditable()
   @Experimental() // non-standard
-  bool get offscreenBuffering => _blink.BlinkWindow.$offscreenBuffering_Getter(this);
+  bool get offscreenBuffering => _blink.BlinkWindow.instance.offscreenBuffering_Getter_(this);
 
   @DomName('Window.opener')
   @DocsEditable()
-  WindowBase get opener => _blink.BlinkWindow.$opener_Getter(this);
+  WindowBase get opener => _blink.BlinkWindow.instance.opener_Getter_(this);
 
   @DomName('Window.opener')
   @DocsEditable()
-  void set opener(Window value) => _blink.BlinkWindow.$opener_Setter(this, value);
+  void set opener(Window value) => _blink.BlinkWindow.instance.opener_Setter_(this, value);
 
   @DomName('Window.orientation')
   @DocsEditable()
   @Experimental() // untriaged
-  int get orientation => _blink.BlinkWindow.$orientation_Getter(this);
+  int get orientation => _blink.BlinkWindow.instance.orientation_Getter_(this);
 
   /**
    * The height of this window including all user interface elements.
@@ -30449,7 +33172,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.outerHeight')
   @DocsEditable()
-  int get outerHeight => _blink.BlinkWindow.$outerHeight_Getter(this);
+  int get outerHeight => _blink.BlinkWindow.instance.outerHeight_Getter_(this);
 
   /**
    * The width of the window including all user interface elements.
@@ -30462,7 +33185,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.outerWidth')
   @DocsEditable()
-  int get outerWidth => _blink.BlinkWindow.$outerWidth_Getter(this);
+  int get outerWidth => _blink.BlinkWindow.instance.outerWidth_Getter_(this);
 
   /**
    * The distance this window has been scrolled horizontally.
@@ -30478,7 +33201,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.pageXOffset')
   @DocsEditable()
-  int get pageXOffset => _blink.BlinkWindow.$pageXOffset_Getter(this);
+  int get pageXOffset => _blink.BlinkWindow.instance.pageXOffset_Getter_(this);
 
   /**
    * The distance this window has been scrolled vertically.
@@ -30494,11 +33217,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.pageYOffset')
   @DocsEditable()
-  int get pageYOffset => _blink.BlinkWindow.$pageYOffset_Getter(this);
+  int get pageYOffset => _blink.BlinkWindow.instance.pageYOffset_Getter_(this);
 
   @DomName('Window.parent')
   @DocsEditable()
-  WindowBase get parent => _blink.BlinkWindow.$parent_Getter(this);
+  WindowBase get parent => _blink.BlinkWindow.instance.parent_Getter_(this);
 
   /**
    * Timing and navigation data for this window.
@@ -30516,7 +33239,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @SupportedBrowser(SupportedBrowser.CHROME)
   @SupportedBrowser(SupportedBrowser.FIREFOX)
   @SupportedBrowser(SupportedBrowser.IE)
-  Performance get performance => _blink.BlinkWindow.$performance_Getter(this);
+  Performance get performance => _blink.BlinkWindow.instance.performance_Getter_(this);
 
   /**
    * Information about the screen displaying this window.
@@ -30528,7 +33251,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.screen')
   @DocsEditable()
-  Screen get screen => _blink.BlinkWindow.$screen_Getter(this);
+  Screen get screen => _blink.BlinkWindow.instance.screen_Getter_(this);
 
   /**
    * The distance from the left side of the screen to the left side of this
@@ -30541,7 +33264,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.screenLeft')
   @DocsEditable()
-  int get screenLeft => _blink.BlinkWindow.$screenLeft_Getter(this);
+  int get screenLeft => _blink.BlinkWindow.instance.screenLeft_Getter_(this);
 
   /**
    * The distance from the top of the screen to the top of this window.
@@ -30553,7 +33276,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.screenTop')
   @DocsEditable()
-  int get screenTop => _blink.BlinkWindow.$screenTop_Getter(this);
+  int get screenTop => _blink.BlinkWindow.instance.screenTop_Getter_(this);
 
   /**
    * The distance from the left side of the screen to the mouse pointer.
@@ -30565,7 +33288,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.screenX')
   @DocsEditable()
-  int get screenX => _blink.BlinkWindow.$screenX_Getter(this);
+  int get screenX => _blink.BlinkWindow.instance.screenX_Getter_(this);
 
   /**
    * The distance from the top of the screen to the mouse pointer.
@@ -30577,15 +33300,15 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.screenY')
   @DocsEditable()
-  int get screenY => _blink.BlinkWindow.$screenY_Getter(this);
+  int get screenY => _blink.BlinkWindow.instance.screenY_Getter_(this);
 
   @DomName('Window.scrollX')
   @DocsEditable()
-  int get scrollX => _blink.BlinkWindow.$scrollX_Getter(this);
+  int get scrollX => _blink.BlinkWindow.instance.scrollX_Getter_(this);
 
   @DomName('Window.scrollY')
   @DocsEditable()
-  int get scrollY => _blink.BlinkWindow.$scrollY_Getter(this);
+  int get scrollY => _blink.BlinkWindow.instance.scrollY_Getter_(this);
 
   /**
    * This window's scroll bars.
@@ -30598,7 +33321,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.scrollbars')
   @DocsEditable()
-  BarProp get scrollbars => _blink.BlinkWindow.$scrollbars_Getter(this);
+  BarProp get scrollbars => _blink.BlinkWindow.instance.scrollbars_Getter_(this);
 
   /**
    * The current window.
@@ -30610,7 +33333,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.self')
   @DocsEditable()
-  WindowBase get self => _blink.BlinkWindow.$self_Getter(this);
+  WindowBase get self => _blink.BlinkWindow.instance.self_Getter_(this);
 
   /**
    * Storage for this window that is cleared when this session ends.
@@ -30627,7 +33350,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.sessionStorage')
   @DocsEditable()
-  Storage get sessionStorage => _blink.BlinkWindow.$sessionStorage_Getter(this);
+  Storage get sessionStorage => _blink.BlinkWindow.instance.sessionStorage_Getter_(this);
 
   /**
    * Access to speech synthesis in the browser.
@@ -30642,17 +33365,17 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   // https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#tts-section
   @Experimental()
-  SpeechSynthesis get speechSynthesis => _blink.BlinkWindow.$speechSynthesis_Getter(this);
+  SpeechSynthesis get speechSynthesis => _blink.BlinkWindow.instance.speechSynthesis_Getter_(this);
 
   /// *Deprecated*.
   @DomName('Window.status')
   @DocsEditable()
-  String get status => _blink.BlinkWindow.$status_Getter(this);
+  String get status => _blink.BlinkWindow.instance.status_Getter_(this);
 
   /// *Deprecated*.
   @DomName('Window.status')
   @DocsEditable()
-  void set status(String value) => _blink.BlinkWindow.$status_Setter(this, value);
+  void set status(String value) => _blink.BlinkWindow.instance.status_Setter_(this, value);
 
   /**
    * This window's status bar.
@@ -30665,7 +33388,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.statusbar')
   @DocsEditable()
-  BarProp get statusbar => _blink.BlinkWindow.$statusbar_Getter(this);
+  BarProp get statusbar => _blink.BlinkWindow.instance.statusbar_Getter_(this);
 
   /**
    * Access to CSS media queries.
@@ -30680,7 +33403,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   // http://developer.apple.com/library/safari/#documentation/SafariDOMAdditions/Reference/StyleMedia/StyleMedia/StyleMedia.html
   @Experimental() // nonstandard
-  StyleMedia get styleMedia => _blink.BlinkWindow.$styleMedia_Getter(this);
+  StyleMedia get styleMedia => _blink.BlinkWindow.instance.styleMedia_Getter_(this);
 
   /**
    * This window's tool bar.
@@ -30693,11 +33416,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.toolbar')
   @DocsEditable()
-  BarProp get toolbar => _blink.BlinkWindow.$toolbar_Getter(this);
+  BarProp get toolbar => _blink.BlinkWindow.instance.toolbar_Getter_(this);
 
   @DomName('Window.top')
   @DocsEditable()
-  WindowBase get top => _blink.BlinkWindow.$top_Getter(this);
+  WindowBase get top => _blink.BlinkWindow.instance.top_Getter_(this);
 
   /**
    * The current window.
@@ -30709,51 +33432,41 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.window')
   @DocsEditable()
-  WindowBase get window => _blink.BlinkWindow.$window_Getter(this);
+  WindowBase get window => _blink.BlinkWindow.instance.window_Getter_(this);
 
   WindowBase __getter__(index_OR_name) {
-    if ((index_OR_name is int || index_OR_name == null)) {
-      return _blink.BlinkWindow.$___getter___1_Callback(this, index_OR_name);
+    if ((index_OR_name is int)) {
+      return _blink.BlinkWindow.instance.$__getter___Callback_1_(this, index_OR_name);
     }
-    if ((index_OR_name is String || index_OR_name == null)) {
-      return _blink.BlinkWindow.$___getter___2_Callback(this, index_OR_name);
+    if ((index_OR_name is String)) {
+      return _blink.BlinkWindow.instance.$__getter___Callback_1_(this, index_OR_name);
     }
     throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  /**
-   * Displays a modal alert to the user.
-   *
-   * ## Other resources
-   *
-   * * [User prompts]
-   * (http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#user-prompts)
-   * from WHATWG.
-   */
-  @DomName('Window.alert')
-  @DocsEditable()
-  void alert(String message) => _blink.BlinkWindow.$alert_Callback(this, message);
+  void alert([String message]) {
+    if (message != null) {
+      _blink.BlinkWindow.instance.alert_Callback_1_(this, message);
+      return;
+    }
+    _blink.BlinkWindow.instance.alert_Callback_0_(this);
+    return;
+  }
 
   @DomName('Window.cancelAnimationFrame')
   @DocsEditable()
-  void cancelAnimationFrame(int id) => _blink.BlinkWindow.$cancelAnimationFrame_Callback(this, id);
+  void cancelAnimationFrame(int id) => _blink.BlinkWindow.instance.cancelAnimationFrame_Callback_1_(this, id);
 
   @DomName('Window.close')
   @DocsEditable()
-  void close() => _blink.BlinkWindow.$close_Callback(this);
+  void close() => _blink.BlinkWindow.instance.close_Callback_0_(this);
 
-  /**
-   * Displays a modal OK/Cancel prompt to the user.
-   *
-   * ## Other resources
-   *
-   * * [User prompts]
-   * (http://www.whatwg.org/specs/web-apps/current-work/multipage/timers.html#user-prompts)
-   * from WHATWG.
-   */
-  @DomName('Window.confirm')
-  @DocsEditable()
-  bool confirm(String message) => _blink.BlinkWindow.$confirm_Callback(this, message);
+  bool confirm([String message]) {
+    if (message != null) {
+      return _blink.BlinkWindow.instance.confirm_Callback_1_(this, message);
+    }
+    return _blink.BlinkWindow.instance.confirm_Callback_0_(this);
+  }
 
   /**
    * Finds text in this window.
@@ -30766,11 +33479,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.find')
   @DocsEditable()
   @Experimental() // non-standard
-  bool find(String string, bool caseSensitive, bool backwards, bool wrap, bool wholeWord, bool searchInFrames, bool showDialog) => _blink.BlinkWindow.$find_Callback(this, string, caseSensitive, backwards, wrap, wholeWord, searchInFrames, showDialog);
+  bool find(String string, bool caseSensitive, bool backwards, bool wrap, bool wholeWord, bool searchInFrames, bool showDialog) => _blink.BlinkWindow.instance.find_Callback_7_(this, string, caseSensitive, backwards, wrap, wholeWord, searchInFrames, showDialog);
 
   @DomName('Window.getComputedStyle')
   @DocsEditable()
-  CssStyleDeclaration _getComputedStyle(Element element, String pseudoElement) => _blink.BlinkWindow.$getComputedStyle_Callback(this, element, pseudoElement);
+  CssStyleDeclaration _getComputedStyle(Element element, String pseudoElement) => _blink.BlinkWindow.instance.getComputedStyle_Callback_2_(this, element, pseudoElement);
 
   /**
    * Returns all CSS rules that apply to the element's pseudo-element.
@@ -30778,7 +33491,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.getMatchedCSSRules')
   @DocsEditable()
   @Experimental() // non-standard
-  List<CssRule> getMatchedCssRules(Element element, String pseudoElement) => _blink.BlinkWindow.$getMatchedCSSRules_Callback(this, element, pseudoElement);
+  List<CssRule> getMatchedCssRules(Element element, String pseudoElement) => _blink.BlinkWindow.instance.getMatchedCSSRules_Callback_2_(this, element, pseudoElement);
 
   /**
    * Returns the currently selected text.
@@ -30791,7 +33504,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.getSelection')
   @DocsEditable()
-  Selection getSelection() => _blink.BlinkWindow.$getSelection_Callback(this);
+  Selection getSelection() => _blink.BlinkWindow.instance.getSelection_Callback_0_(this);
 
   /**
    * Returns a list of media queries for the given query string.
@@ -30806,7 +33519,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.matchMedia')
   @DocsEditable()
-  MediaQueryList matchMedia(String query) => _blink.BlinkWindow.$matchMedia_Callback(this, query);
+  MediaQueryList matchMedia(String query) => _blink.BlinkWindow.instance.matchMedia_Callback_1_(this, query);
 
   /**
    * Moves this window.
@@ -30822,29 +33535,26 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.moveBy')
   @DocsEditable()
-  void moveBy(num x, num y) => _blink.BlinkWindow.$moveBy_Callback(this, x, y);
+  void moveBy(num x, num y) => _blink.BlinkWindow.instance.moveBy_Callback_2_(this, x, y);
 
   @DomName('Window.moveTo')
   @DocsEditable()
-  void _moveTo(num x, num y) => _blink.BlinkWindow.$moveTo_Callback(this, x, y);
+  void _moveTo(num x, num y) => _blink.BlinkWindow.instance.moveTo_Callback_2_(this, x, y);
 
   @DomName('Window.open')
   @DocsEditable()
-  WindowBase open(String url, String name, [String options]) => _blink.BlinkWindow.$open_Callback(this, url, name, options);
+  WindowBase open(String url, String name, [String options]) => _blink.BlinkWindow.instance.open_Callback_3_(this, url, name, options);
 
-  /// *Deprecated.*
-  @DomName('Window.openDatabase')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // http://www.w3.org/TR/webdatabase/
-  @Experimental() // deprecated
-  SqlDatabase openDatabase(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) => _blink.BlinkWindow.$openDatabase_Callback(this, name, version, displayName, estimatedSize, creationCallback);
+  SqlDatabase openDatabase(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) {
+    if (creationCallback != null) {
+      return _blink.BlinkWindow.instance.openDatabase_Callback_5_(this, name, version, displayName, estimatedSize, creationCallback);
+    }
+    return _blink.BlinkWindow.instance.openDatabase_Callback_4_(this, name, version, displayName, estimatedSize);
+  }
 
   @DomName('Window.postMessage')
   @DocsEditable()
-  void postMessage(/*SerializedScriptValue*/ message, String targetOrigin, [List<MessagePort> messagePorts]) => _blink.BlinkWindow.$postMessage_Callback(this, message, targetOrigin, messagePorts);
+  void postMessage(/*SerializedScriptValue*/ message, String targetOrigin, [List<MessagePort> transfer]) => _blink.BlinkWindow.instance.postMessage_Callback_3_(this, message, targetOrigin, transfer);
 
   /**
    * Opens the print dialog for this window.
@@ -30856,11 +33566,11 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.print')
   @DocsEditable()
-  void print() => _blink.BlinkWindow.$print_Callback(this);
+  void print() => _blink.BlinkWindow.instance.print_Callback_0_(this);
 
   @DomName('Window.requestAnimationFrame')
   @DocsEditable()
-  int _requestAnimationFrame(RequestAnimationFrameCallback callback) => _blink.BlinkWindow.$requestAnimationFrame_Callback(this, callback);
+  int _requestAnimationFrame(RequestAnimationFrameCallback callback) => _blink.BlinkWindow.instance.requestAnimationFrame_Callback_1_(this, callback);
 
   /**
    * Resizes this window by an offset.
@@ -30872,7 +33582,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.resizeBy')
   @DocsEditable()
-  void resizeBy(num x, num y) => _blink.BlinkWindow.$resizeBy_Callback(this, x, y);
+  void resizeBy(num x, num y) => _blink.BlinkWindow.instance.resizeBy_Callback_2_(this, x, y);
 
   /**
    * Resizes this window to a specific width and height.
@@ -30884,47 +33594,34 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.resizeTo')
   @DocsEditable()
-  void resizeTo(num width, num height) => _blink.BlinkWindow.$resizeTo_Callback(this, width, height);
+  void resizeTo(num width, num height) => _blink.BlinkWindow.instance.resizeTo_Callback_2_(this, width, height);
 
-  /**
-   * Scrolls the page horizontally and vertically to a specific point.
-   *
-   * This method is identical to [scrollTo].
-   *
-   * ## Other resources
-   *
-   * * [Window scroll] (http://docs.webplatform.org/wiki/dom/methods/scroll)
-   * from WebPlatform.org.
-   */
-  @DomName('Window.scroll')
-  @DocsEditable()
-  void scroll(int x, int y, [Map scrollOptions]) => _blink.BlinkWindow.$scroll_Callback(this, x, y, scrollOptions);
+  void scroll(int x, int y, [Map scrollOptions]) {
+    if (scrollOptions != null) {
+      _blink.BlinkWindow.instance.scroll_Callback_3_(this, x, y, scrollOptions);
+      return;
+    }
+    _blink.BlinkWindow.instance.scroll_Callback_2_(this, x, y);
+    return;
+  }
 
-  /**
-   * Scrolls the page horizontally and vertically by an offset.
-   *
-   * ## Other resources
-   *
-   * * [Window scrollBy] (http://docs.webplatform.org/wiki/dom/methods/scrollBy)
-   * from WebPlatform.org.
-   */
-  @DomName('Window.scrollBy')
-  @DocsEditable()
-  void scrollBy(int x, int y, [Map scrollOptions]) => _blink.BlinkWindow.$scrollBy_Callback(this, x, y, scrollOptions);
+  void scrollBy(int x, int y, [Map scrollOptions]) {
+    if (scrollOptions != null) {
+      _blink.BlinkWindow.instance.scrollBy_Callback_3_(this, x, y, scrollOptions);
+      return;
+    }
+    _blink.BlinkWindow.instance.scrollBy_Callback_2_(this, x, y);
+    return;
+  }
 
-  /**
-   * Scrolls the page horizontally and vertically to a specific point.
-   *
-   * This method is identical to [scroll].
-   *
-   * ## Other resources
-   *
-   * * [Window scrollTo] (http://docs.webplatform.org/wiki/dom/methods/scrollTo)
-   * from WebPlatform.org.
-   */
-  @DomName('Window.scrollTo')
-  @DocsEditable()
-  void scrollTo(int x, int y, [Map scrollOptions]) => _blink.BlinkWindow.$scrollTo_Callback(this, x, y, scrollOptions);
+  void scrollTo(int x, int y, [Map scrollOptions]) {
+    if (scrollOptions != null) {
+      _blink.BlinkWindow.instance.scrollTo_Callback_3_(this, x, y, scrollOptions);
+      return;
+    }
+    _blink.BlinkWindow.instance.scrollTo_Callback_2_(this, x, y);
+    return;
+  }
 
   /**
    * Opens a new page as a modal dialog.
@@ -30937,7 +33634,7 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.showModalDialog')
   @DocsEditable()
-  Object showModalDialog(String url, [Object dialogArgs, String featureArgs]) => _blink.BlinkWindow.$showModalDialog_Callback(this, url, dialogArgs, featureArgs);
+  Object showModalDialog(String url, [Object dialogArgs, String featureArgs]) => _blink.BlinkWindow.instance.showModalDialog_Callback_3_(this, url, dialogArgs, featureArgs);
 
   /**
    * Stops the window from loading.
@@ -30950,34 +33647,16 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
    */
   @DomName('Window.stop')
   @DocsEditable()
-  void stop() => _blink.BlinkWindow.$stop_Callback(this);
+  void stop() => _blink.BlinkWindow.instance.stop_Callback_0_(this);
 
-  @DomName('Window.toString')
-  @DocsEditable()
-  String toString() => _blink.BlinkWindow.$toString_Callback(this);
-
-  @DomName('Window.webkitConvertPointFromNodeToPage')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // http://developer.apple.com/library/safari/#documentation/DataManagement/Reference/DOMWindowAdditionsReference/DOMWindowAdditions/DOMWindowAdditions.html
-  _DomPoint _convertPointFromNodeToPage(Node node, _DomPoint p) => _blink.BlinkWindow.$webkitConvertPointFromNodeToPage_Callback(this, node, p);
-
-  @DomName('Window.webkitConvertPointFromPageToNode')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @SupportedBrowser(SupportedBrowser.SAFARI)
-  @Experimental()
-  // http://developer.apple.com/library/safari/#documentation/DataManagement/Reference/DOMWindowAdditionsReference/DOMWindowAdditions/DOMWindowAdditions.html
-  _DomPoint _convertPointFromPageToNode(Node node, _DomPoint p) => _blink.BlinkWindow.$webkitConvertPointFromPageToNode_Callback(this, node, p);
-
-  @DomName('Window.webkitRequestFileSystem')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @Experimental()
-  // http://www.w3.org/TR/file-system-api/#idl-def-LocalFileSystem
-  void __requestFileSystem(int type, int size, _FileSystemCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkWindow.$webkitRequestFileSystem_Callback(this, type, size, successCallback, errorCallback);
+  void __requestFileSystem(int type, int size, _FileSystemCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkWindow.instance.webkitRequestFileSystem_Callback_4_(this, type, size, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkWindow.instance.webkitRequestFileSystem_Callback_3_(this, type, size, successCallback);
+    return;
+  }
 
   Future<FileSystem> _requestFileSystem(int type, int size) {
     var completer = new Completer<FileSystem>();
@@ -30987,21 +33666,14 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
     return completer.future;
   }
 
-  /**
-   * Asynchronously retrieves a local filesystem entry.
-   *
-   * ## Other resources
-   *
-   * * [Obtaining access to file system entry points]
-   * (http://www.w3.org/TR/file-system-api/#obtaining-access-to-file-system-entry-points)
-   * from W3C.
-   */
-  @DomName('Window.webkitResolveLocalFileSystemURL')
-  @DocsEditable()
-  @SupportedBrowser(SupportedBrowser.CHROME)
-  @Experimental()
-  // http://www.w3.org/TR/file-system-api/#idl-def-LocalFileSystem
-  void _resolveLocalFileSystemUrl(String url, _EntryCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkWindow.$webkitResolveLocalFileSystemURL_Callback(this, url, successCallback, errorCallback);
+  void _resolveLocalFileSystemUrl(String url, _EntryCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkWindow.instance.webkitResolveLocalFileSystemURL_Callback_3_(this, url, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkWindow.instance.webkitResolveLocalFileSystemURL_Callback_2_(this, url, successCallback);
+    return;
+  }
 
   Future<Entry> resolveLocalFileSystemUrl(String url) {
     var completer = new Completer<Entry>();
@@ -31013,27 +33685,27 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
 
   @DomName('Window.atob')
   @DocsEditable()
-  String atob(String string) => _blink.BlinkWindow.$atob_Callback(this, string);
+  String atob(String string) => _blink.BlinkWindow.instance.atob_Callback_1_(this, string);
 
   @DomName('Window.btoa')
   @DocsEditable()
-  String btoa(String string) => _blink.BlinkWindow.$btoa_Callback(this, string);
+  String btoa(String string) => _blink.BlinkWindow.instance.btoa_Callback_1_(this, string);
 
   @DomName('Window.clearInterval')
   @DocsEditable()
-  void _clearInterval(int handle) => _blink.BlinkWindow.$clearInterval_Callback(this, handle);
+  void _clearInterval(int handle) => _blink.BlinkWindow.instance.clearInterval_Callback_1_(this, handle);
 
   @DomName('Window.clearTimeout')
   @DocsEditable()
-  void _clearTimeout(int handle) => _blink.BlinkWindow.$clearTimeout_Callback(this, handle);
+  void _clearTimeout(int handle) => _blink.BlinkWindow.instance.clearTimeout_Callback_1_(this, handle);
 
   @DomName('Window.setInterval')
   @DocsEditable()
-  int _setInterval(Object handler, int timeout) => _blink.BlinkWindow.$setInterval_Callback(this, handler, timeout);
+  int _setInterval(Object handler, int timeout) => _blink.BlinkWindow.instance.setInterval_Callback_2_(this, handler, timeout);
 
   @DomName('Window.setTimeout')
   @DocsEditable()
-  int _setTimeout(Object handler, int timeout) => _blink.BlinkWindow.$setTimeout_Callback(this, handler, timeout);
+  int _setTimeout(Object handler, int timeout) => _blink.BlinkWindow.instance.setTimeout_Callback_2_(this, handler, timeout);
 
   /// Stream of `contentloaded` events handled by this [Window].
   @DomName('Window.onDOMContentLoaded')
@@ -31049,6 +33721,14 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.onblur')
   @DocsEditable()
   Stream<Event> get onBlur => Element.blurEvent.forTarget(this);
+
+  @DomName('Window.oncanplay')
+  @DocsEditable()
+  Stream<Event> get onCanPlay => Element.canPlayEvent.forTarget(this);
+
+  @DomName('Window.oncanplaythrough')
+  @DocsEditable()
+  Stream<Event> get onCanPlayThrough => Element.canPlayThroughEvent.forTarget(this);
 
   /// Stream of `change` events handled by this [Window].
   @DomName('Window.onchange')
@@ -31119,6 +33799,18 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   Stream<MouseEvent> get onDrop => Element.dropEvent.forTarget(this);
 
+  @DomName('Window.ondurationchange')
+  @DocsEditable()
+  Stream<Event> get onDurationChange => Element.durationChangeEvent.forTarget(this);
+
+  @DomName('Window.onemptied')
+  @DocsEditable()
+  Stream<Event> get onEmptied => Element.emptiedEvent.forTarget(this);
+
+  @DomName('Window.onended')
+  @DocsEditable()
+  Stream<Event> get onEnded => Element.endedEvent.forTarget(this);
+
   /// Stream of `error` events handled by this [Window].
   @DomName('Window.onerror')
   @DocsEditable()
@@ -31163,6 +33855,18 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.onload')
   @DocsEditable()
   Stream<Event> get onLoad => Element.loadEvent.forTarget(this);
+
+  @DomName('Window.onloadeddata')
+  @DocsEditable()
+  Stream<Event> get onLoadedData => Element.loadedDataEvent.forTarget(this);
+
+  @DomName('Window.onloadedmetadata')
+  @DocsEditable()
+  Stream<Event> get onLoadedMetadata => Element.loadedMetadataEvent.forTarget(this);
+
+  @DomName('Window.onloadstart')
+  @DocsEditable()
+  Stream<Event> get onLoadStart => loadStartEvent.forTarget(this);
 
   /// Stream of `message` events handled by this [Window].
   @DomName('Window.onmessage')
@@ -31231,10 +33935,30 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DocsEditable()
   Stream<Event> get onPageShow => pageShowEvent.forTarget(this);
 
+  @DomName('Window.onpause')
+  @DocsEditable()
+  Stream<Event> get onPause => Element.pauseEvent.forTarget(this);
+
+  @DomName('Window.onplay')
+  @DocsEditable()
+  Stream<Event> get onPlay => Element.playEvent.forTarget(this);
+
+  @DomName('Window.onplaying')
+  @DocsEditable()
+  Stream<Event> get onPlaying => Element.playingEvent.forTarget(this);
+
   /// Stream of `popstate` events handled by this [Window].
   @DomName('Window.onpopstate')
   @DocsEditable()
   Stream<PopStateEvent> get onPopState => popStateEvent.forTarget(this);
+
+  @DomName('Window.onprogress')
+  @DocsEditable()
+  Stream<Event> get onProgress => progressEvent.forTarget(this);
+
+  @DomName('Window.onratechange')
+  @DocsEditable()
+  Stream<Event> get onRateChange => Element.rateChangeEvent.forTarget(this);
 
   /// Stream of `reset` events handled by this [Window].
   @DomName('Window.onreset')
@@ -31258,10 +33982,22 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @Experimental()
   Stream<Event> get onSearch => Element.searchEvent.forTarget(this);
 
+  @DomName('Window.onseeked')
+  @DocsEditable()
+  Stream<Event> get onSeeked => Element.seekedEvent.forTarget(this);
+
+  @DomName('Window.onseeking')
+  @DocsEditable()
+  Stream<Event> get onSeeking => Element.seekingEvent.forTarget(this);
+
   /// Stream of `select` events handled by this [Window].
   @DomName('Window.onselect')
   @DocsEditable()
   Stream<Event> get onSelect => Element.selectEvent.forTarget(this);
+
+  @DomName('Window.onstalled')
+  @DocsEditable()
+  Stream<Event> get onStalled => Element.stalledEvent.forTarget(this);
 
   /// Stream of `storage` events handled by this [Window].
   @DomName('Window.onstorage')
@@ -31272,6 +34008,14 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.onsubmit')
   @DocsEditable()
   Stream<Event> get onSubmit => Element.submitEvent.forTarget(this);
+
+  @DomName('Window.onsuspend')
+  @DocsEditable()
+  Stream<Event> get onSuspend => Element.suspendEvent.forTarget(this);
+
+  @DomName('Window.ontimeupdate')
+  @DocsEditable()
+  Stream<Event> get onTimeUpdate => Element.timeUpdateEvent.forTarget(this);
 
   /// Stream of `touchcancel` events handled by this [Window].
   @DomName('Window.ontouchcancel')
@@ -31310,6 +34054,14 @@ class Window extends EventTarget implements WindowEventHandlers, WindowBase, Glo
   @DomName('Window.onunload')
   @DocsEditable()
   Stream<Event> get onUnload => unloadEvent.forTarget(this);
+
+  @DomName('Window.onvolumechange')
+  @DocsEditable()
+  Stream<Event> get onVolumeChange => Element.volumeChangeEvent.forTarget(this);
+
+  @DomName('Window.onwaiting')
+  @DocsEditable()
+  Stream<Event> get onWaiting => Element.waitingEvent.forTarget(this);
 
   /// Stream of `animationend` events handled by this [Window].
   @DomName('Window.onwebkitAnimationEnd')
@@ -31404,12 +34156,12 @@ abstract class WindowBase64 extends NativeFieldWrapperClass2 {
   @DomName('WindowBase64.atob')
   @DocsEditable()
   @Experimental() // untriaged
-  String atob(String string) => _blink.BlinkWindowBase64.$atob_Callback(this, string);
+  String atob(String string);
 
   @DomName('WindowBase64.btoa')
   @DocsEditable()
   @Experimental() // untriaged
-  String btoa(String string) => _blink.BlinkWindowBase64.$btoa_Callback(this, string);
+  String btoa(String string);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31537,7 +34289,7 @@ class Worker extends EventTarget implements AbstractWorker {
   @DomName('Worker.Worker')
   @DocsEditable()
   factory Worker(String scriptUrl) {
-    return _blink.BlinkWorker.$_create_1constructorCallback(scriptUrl);
+    return _blink.BlinkWorker.instance.constructorCallback_1_(scriptUrl);
   }
 
   /// Checks if this type is supported on the current platform.
@@ -31545,11 +34297,11 @@ class Worker extends EventTarget implements AbstractWorker {
 
   @DomName('Worker.postMessage')
   @DocsEditable()
-  void postMessage(/*SerializedScriptValue*/ message, [List<MessagePort> messagePorts]) => _blink.BlinkWorker.$postMessage_Callback(this, message, messagePorts);
+  void postMessage(/*SerializedScriptValue*/ message, [List<MessagePort> transfer]) => _blink.BlinkWorker.instance.postMessage_Callback_2_(this, message, transfer);
 
   @DomName('Worker.terminate')
   @DocsEditable()
-  void terminate() => _blink.BlinkWorker.$terminate_Callback(this);
+  void terminate() => _blink.BlinkWorker.instance.terminate_Callback_0_(this);
 
   /// Stream of `error` events handled by this [Worker].
   @DomName('Worker.onerror')
@@ -31576,21 +34328,6 @@ class Worker extends EventTarget implements AbstractWorker {
 class WorkerConsole extends ConsoleBase {
   // To suppress missing implicit constructor warnings.
   factory WorkerConsole._() { throw new UnsupportedError("Not supported"); }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('WorkerCrypto')
-@Experimental() // untriaged
-class WorkerCrypto extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory WorkerCrypto._() { throw new UnsupportedError("Not supported"); }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31631,57 +34368,74 @@ class WorkerGlobalScope extends EventTarget implements _WindowTimers, WindowBase
   @DomName('WorkerGlobalScope.console')
   @DocsEditable()
   @Experimental() // untriaged
-  WorkerConsole get console => _blink.BlinkWorkerGlobalScope.$console_Getter(this);
+  WorkerConsole get console => _blink.BlinkWorkerGlobalScope.instance.console_Getter_(this);
 
   @DomName('WorkerGlobalScope.crypto')
   @DocsEditable()
   @Experimental() // untriaged
-  WorkerCrypto get crypto => _blink.BlinkWorkerGlobalScope.$crypto_Getter(this);
+  Crypto get crypto => _blink.BlinkWorkerGlobalScope.instance.crypto_Getter_(this);
 
   @DomName('WorkerGlobalScope.indexedDB')
   @DocsEditable()
   @Experimental() // untriaged
-  IdbFactory get indexedDB => _blink.BlinkWorkerGlobalScope.$indexedDB_Getter(this);
+  IdbFactory get indexedDB => _blink.BlinkWorkerGlobalScope.instance.indexedDB_Getter_(this);
 
   @DomName('WorkerGlobalScope.location')
   @DocsEditable()
   @Experimental() // untriaged
-  _WorkerLocation get location => _blink.BlinkWorkerGlobalScope.$location_Getter(this);
+  _WorkerLocation get location => _blink.BlinkWorkerGlobalScope.instance.location_Getter_(this);
 
   @DomName('WorkerGlobalScope.navigator')
   @DocsEditable()
   @Experimental() // untriaged
-  _WorkerNavigator get navigator => _blink.BlinkWorkerGlobalScope.$navigator_Getter(this);
+  _WorkerNavigator get navigator => _blink.BlinkWorkerGlobalScope.instance.navigator_Getter_(this);
 
   @DomName('WorkerGlobalScope.performance')
   @DocsEditable()
   @Experimental() // untriaged
-  WorkerPerformance get performance => _blink.BlinkWorkerGlobalScope.$performance_Getter(this);
+  WorkerPerformance get performance => _blink.BlinkWorkerGlobalScope.instance.performance_Getter_(this);
 
   @DomName('WorkerGlobalScope.self')
   @DocsEditable()
   @Experimental() // untriaged
-  WorkerGlobalScope get self => _blink.BlinkWorkerGlobalScope.$self_Getter(this);
+  WorkerGlobalScope get self => _blink.BlinkWorkerGlobalScope.instance.self_Getter_(this);
 
   @DomName('WorkerGlobalScope.close')
   @DocsEditable()
   @Experimental() // untriaged
-  void close() => _blink.BlinkWorkerGlobalScope.$close_Callback(this);
+  void close() => _blink.BlinkWorkerGlobalScope.instance.close_Callback_0_(this);
 
-  @DomName('WorkerGlobalScope.openDatabase')
+  @DomName('WorkerGlobalScope.importScripts')
   @DocsEditable()
   @Experimental() // untriaged
-  SqlDatabase openDatabase(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) => _blink.BlinkWorkerGlobalScope.$openDatabase_Callback(this, name, version, displayName, estimatedSize, creationCallback);
+  void importScripts(String urls) => _blink.BlinkWorkerGlobalScope.instance.importScripts_Callback_1_(this, urls);
 
-  @DomName('WorkerGlobalScope.openDatabaseSync')
-  @DocsEditable()
-  @Experimental() // untriaged
-  _DatabaseSync openDatabaseSync(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) => _blink.BlinkWorkerGlobalScope.$openDatabaseSync_Callback(this, name, version, displayName, estimatedSize, creationCallback);
+  SqlDatabase openDatabase(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) {
+    if (creationCallback != null) {
+      return _blink.BlinkWorkerGlobalScope.instance.openDatabase_Callback_5_(this, name, version, displayName, estimatedSize, creationCallback);
+    }
+    return _blink.BlinkWorkerGlobalScope.instance.openDatabase_Callback_4_(this, name, version, displayName, estimatedSize);
+  }
 
-  @DomName('WorkerGlobalScope.webkitRequestFileSystem')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void _webkitRequestFileSystem(int type, int size, [_FileSystemCallback successCallback, _ErrorCallback errorCallback]) => _blink.BlinkWorkerGlobalScope.$webkitRequestFileSystem_Callback(this, type, size, successCallback, errorCallback);
+  _DatabaseSync openDatabaseSync(String name, String version, String displayName, int estimatedSize, [DatabaseCallback creationCallback]) {
+    if (creationCallback != null) {
+      return _blink.BlinkWorkerGlobalScope.instance.openDatabaseSync_Callback_5_(this, name, version, displayName, estimatedSize, creationCallback);
+    }
+    return _blink.BlinkWorkerGlobalScope.instance.openDatabaseSync_Callback_4_(this, name, version, displayName, estimatedSize);
+  }
+
+  void _webkitRequestFileSystem(int type, int size, [_FileSystemCallback successCallback, _ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkWorkerGlobalScope.instance.webkitRequestFileSystem_Callback_4_(this, type, size, successCallback, errorCallback);
+      return;
+    }
+    if (successCallback != null) {
+      _blink.BlinkWorkerGlobalScope.instance.webkitRequestFileSystem_Callback_3_(this, type, size, successCallback);
+      return;
+    }
+    _blink.BlinkWorkerGlobalScope.instance.webkitRequestFileSystem_Callback_2_(this, type, size);
+    return;
+  }
 
   Future<FileSystem> webkitRequestFileSystem(int type, int size) {
     var completer = new Completer<FileSystem>();
@@ -31697,7 +34451,7 @@ class WorkerGlobalScope extends EventTarget implements _WindowTimers, WindowBase
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   @Experimental() // untriaged
-  _DOMFileSystemSync requestFileSystemSync(int type, int size) => _blink.BlinkWorkerGlobalScope.$webkitRequestFileSystemSync_Callback(this, type, size);
+  _DOMFileSystemSync requestFileSystemSync(int type, int size) => _blink.BlinkWorkerGlobalScope.instance.webkitRequestFileSystemSync_Callback_2_(this, type, size);
 
   @DomName('WorkerGlobalScope.webkitResolveLocalFileSystemSyncURL')
   @DocsEditable()
@@ -31705,12 +34459,16 @@ class WorkerGlobalScope extends EventTarget implements _WindowTimers, WindowBase
   @SupportedBrowser(SupportedBrowser.SAFARI)
   @Experimental()
   @Experimental() // untriaged
-  _EntrySync resolveLocalFileSystemSyncUrl(String url) => _blink.BlinkWorkerGlobalScope.$webkitResolveLocalFileSystemSyncURL_Callback(this, url);
+  _EntrySync resolveLocalFileSystemSyncUrl(String url) => _blink.BlinkWorkerGlobalScope.instance.webkitResolveLocalFileSystemSyncURL_Callback_1_(this, url);
 
-  @DomName('WorkerGlobalScope.webkitResolveLocalFileSystemURL')
-  @DocsEditable()
-  @Experimental() // untriaged
-  void _webkitResolveLocalFileSystemUrl(String url, _EntryCallback successCallback, [_ErrorCallback errorCallback]) => _blink.BlinkWorkerGlobalScope.$webkitResolveLocalFileSystemURL_Callback(this, url, successCallback, errorCallback);
+  void _webkitResolveLocalFileSystemUrl(String url, _EntryCallback successCallback, [_ErrorCallback errorCallback]) {
+    if (errorCallback != null) {
+      _blink.BlinkWorkerGlobalScope.instance.webkitResolveLocalFileSystemURL_Callback_3_(this, url, successCallback, errorCallback);
+      return;
+    }
+    _blink.BlinkWorkerGlobalScope.instance.webkitResolveLocalFileSystemURL_Callback_2_(this, url, successCallback);
+    return;
+  }
 
   Future<Entry> webkitResolveLocalFileSystemUrl(String url) {
     var completer = new Completer<Entry>();
@@ -31723,32 +34481,32 @@ class WorkerGlobalScope extends EventTarget implements _WindowTimers, WindowBase
   @DomName('WorkerGlobalScope.atob')
   @DocsEditable()
   @Experimental() // untriaged
-  String atob(String string) => _blink.BlinkWorkerGlobalScope.$atob_Callback(this, string);
+  String atob(String string) => _blink.BlinkWorkerGlobalScope.instance.atob_Callback_1_(this, string);
 
   @DomName('WorkerGlobalScope.btoa')
   @DocsEditable()
   @Experimental() // untriaged
-  String btoa(String string) => _blink.BlinkWorkerGlobalScope.$btoa_Callback(this, string);
+  String btoa(String string) => _blink.BlinkWorkerGlobalScope.instance.btoa_Callback_1_(this, string);
 
   @DomName('WorkerGlobalScope.clearInterval')
   @DocsEditable()
   @Experimental() // untriaged
-  void _clearInterval(int handle) => _blink.BlinkWorkerGlobalScope.$clearInterval_Callback(this, handle);
+  void _clearInterval(int handle) => _blink.BlinkWorkerGlobalScope.instance.clearInterval_Callback_1_(this, handle);
 
   @DomName('WorkerGlobalScope.clearTimeout')
   @DocsEditable()
   @Experimental() // untriaged
-  void _clearTimeout(int handle) => _blink.BlinkWorkerGlobalScope.$clearTimeout_Callback(this, handle);
+  void _clearTimeout(int handle) => _blink.BlinkWorkerGlobalScope.instance.clearTimeout_Callback_1_(this, handle);
 
   @DomName('WorkerGlobalScope.setInterval')
   @DocsEditable()
   @Experimental() // untriaged
-  int _setInterval(Object handler, int timeout) => _blink.BlinkWorkerGlobalScope.$setInterval_Callback(this, handler, timeout);
+  int _setInterval(Object handler, int timeout) => _blink.BlinkWorkerGlobalScope.instance.setInterval_Callback_2_(this, handler, timeout);
 
   @DomName('WorkerGlobalScope.setTimeout')
   @DocsEditable()
   @Experimental() // untriaged
-  int _setTimeout(Object handler, int timeout) => _blink.BlinkWorkerGlobalScope.$setTimeout_Callback(this, handler, timeout);
+  int _setTimeout(Object handler, int timeout) => _blink.BlinkWorkerGlobalScope.instance.setTimeout_Callback_2_(this, handler, timeout);
 
   /// Stream of `error` events handled by this [WorkerGlobalScope].
   @DomName('WorkerGlobalScope.onerror')
@@ -31771,10 +34529,15 @@ class WorkerPerformance extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory WorkerPerformance._() { throw new UnsupportedError("Not supported"); }
 
+  @DomName('WorkerPerformance.memory')
+  @DocsEditable()
+  @Experimental() // untriaged
+  MemoryInfo get memory => _blink.BlinkWorkerPerformance.instance.memory_Getter_(this);
+
   @DomName('WorkerPerformance.now')
   @DocsEditable()
   @Experimental() // untriaged
-  double now() => _blink.BlinkWorkerPerformance.$now_Callback(this);
+  double now() => _blink.BlinkWorkerPerformance.instance.now_Callback_0_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31795,20 +34558,20 @@ class XPathEvaluator extends NativeFieldWrapperClass2 {
   @DomName('XPathEvaluator.XPathEvaluator')
   @DocsEditable()
   factory XPathEvaluator() {
-    return _blink.BlinkXPathEvaluator.$_create_1constructorCallback();
+    return _blink.BlinkXPathEvaluator.instance.constructorCallback_0_();
   }
 
   @DomName('XPathEvaluator.createExpression')
   @DocsEditable()
-  XPathExpression createExpression(String expression, XPathNSResolver resolver) => _blink.BlinkXPathEvaluator.$createExpression_Callback(this, expression, resolver);
+  XPathExpression createExpression(String expression, XPathNSResolver resolver) => _blink.BlinkXPathEvaluator.instance.createExpression_Callback_2_(this, expression, resolver);
 
   @DomName('XPathEvaluator.createNSResolver')
   @DocsEditable()
-  XPathNSResolver createNSResolver(Node nodeResolver) => _blink.BlinkXPathEvaluator.$createNSResolver_Callback(this, nodeResolver);
+  XPathNSResolver createNSResolver(Node nodeResolver) => _blink.BlinkXPathEvaluator.instance.createNSResolver_Callback_1_(this, nodeResolver);
 
   @DomName('XPathEvaluator.evaluate')
   @DocsEditable()
-  XPathResult evaluate(String expression, Node contextNode, XPathNSResolver resolver, int type, XPathResult inResult) => _blink.BlinkXPathEvaluator.$evaluate_Callback(this, expression, contextNode, resolver, type, inResult);
+  XPathResult evaluate(String expression, Node contextNode, XPathNSResolver resolver, int type, XPathResult inResult) => _blink.BlinkXPathEvaluator.instance.evaluate_Callback_5_(this, expression, contextNode, resolver, type, inResult);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31828,7 +34591,7 @@ class XPathExpression extends NativeFieldWrapperClass2 {
 
   @DomName('XPathExpression.evaluate')
   @DocsEditable()
-  XPathResult evaluate(Node contextNode, int type, XPathResult inResult) => _blink.BlinkXPathExpression.$evaluate_Callback(this, contextNode, type, inResult);
+  XPathResult evaluate(Node contextNode, int type, XPathResult inResult) => _blink.BlinkXPathExpression.instance.evaluate_Callback_3_(this, contextNode, type, inResult);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31848,7 +34611,7 @@ class XPathNSResolver extends NativeFieldWrapperClass2 {
 
   @DomName('XPathNSResolver.lookupNamespaceURI')
   @DocsEditable()
-  String lookupNamespaceUri(String prefix) => _blink.BlinkXPathNSResolver.$lookupNamespaceURI_Callback(this, prefix);
+  String lookupNamespaceUri(String prefix) => _blink.BlinkXPathNSResolver.instance.lookupNamespaceURI_Callback_1_(this, prefix);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31908,39 +34671,39 @@ class XPathResult extends NativeFieldWrapperClass2 {
 
   @DomName('XPathResult.booleanValue')
   @DocsEditable()
-  bool get booleanValue => _blink.BlinkXPathResult.$booleanValue_Getter(this);
+  bool get booleanValue => _blink.BlinkXPathResult.instance.booleanValue_Getter_(this);
 
   @DomName('XPathResult.invalidIteratorState')
   @DocsEditable()
-  bool get invalidIteratorState => _blink.BlinkXPathResult.$invalidIteratorState_Getter(this);
+  bool get invalidIteratorState => _blink.BlinkXPathResult.instance.invalidIteratorState_Getter_(this);
 
   @DomName('XPathResult.numberValue')
   @DocsEditable()
-  double get numberValue => _blink.BlinkXPathResult.$numberValue_Getter(this);
+  double get numberValue => _blink.BlinkXPathResult.instance.numberValue_Getter_(this);
 
   @DomName('XPathResult.resultType')
   @DocsEditable()
-  int get resultType => _blink.BlinkXPathResult.$resultType_Getter(this);
+  int get resultType => _blink.BlinkXPathResult.instance.resultType_Getter_(this);
 
   @DomName('XPathResult.singleNodeValue')
   @DocsEditable()
-  Node get singleNodeValue => _blink.BlinkXPathResult.$singleNodeValue_Getter(this);
+  Node get singleNodeValue => _blink.BlinkXPathResult.instance.singleNodeValue_Getter_(this);
 
   @DomName('XPathResult.snapshotLength')
   @DocsEditable()
-  int get snapshotLength => _blink.BlinkXPathResult.$snapshotLength_Getter(this);
+  int get snapshotLength => _blink.BlinkXPathResult.instance.snapshotLength_Getter_(this);
 
   @DomName('XPathResult.stringValue')
   @DocsEditable()
-  String get stringValue => _blink.BlinkXPathResult.$stringValue_Getter(this);
+  String get stringValue => _blink.BlinkXPathResult.instance.stringValue_Getter_(this);
 
   @DomName('XPathResult.iterateNext')
   @DocsEditable()
-  Node iterateNext() => _blink.BlinkXPathResult.$iterateNext_Callback(this);
+  Node iterateNext() => _blink.BlinkXPathResult.instance.iterateNext_Callback_0_(this);
 
   @DomName('XPathResult.snapshotItem')
   @DocsEditable()
-  Node snapshotItem(int index) => _blink.BlinkXPathResult.$snapshotItem_Callback(this, index);
+  Node snapshotItem(int index) => _blink.BlinkXPathResult.instance.snapshotItem_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -31976,12 +34739,12 @@ class XmlSerializer extends NativeFieldWrapperClass2 {
   @DomName('XMLSerializer.XMLSerializer')
   @DocsEditable()
   factory XmlSerializer() {
-    return _blink.BlinkXMLSerializer.$_create_1constructorCallback();
+    return _blink.BlinkXMLSerializer.instance.constructorCallback_0_();
   }
 
   @DomName('XMLSerializer.serializeToString')
   @DocsEditable()
-  String serializeToString(Node node) => _blink.BlinkXMLSerializer.$serializeToString_Callback(this, node);
+  String serializeToString(Node node) => _blink.BlinkXMLSerializer.instance.serializeToString_Callback_1_(this, node);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32004,7 +34767,7 @@ class XsltProcessor extends NativeFieldWrapperClass2 {
   @DomName('XSLTProcessor.XSLTProcessor')
   @DocsEditable()
   factory XsltProcessor() {
-    return _blink.BlinkXSLTProcessor.$_create_1constructorCallback();
+    return _blink.BlinkXSLTProcessor.instance.constructorCallback_0_();
   }
 
   /// Checks if this type is supported on the current platform.
@@ -32012,35 +34775,35 @@ class XsltProcessor extends NativeFieldWrapperClass2 {
 
   @DomName('XSLTProcessor.clearParameters')
   @DocsEditable()
-  void clearParameters() => _blink.BlinkXSLTProcessor.$clearParameters_Callback(this);
+  void clearParameters() => _blink.BlinkXSLTProcessor.instance.clearParameters_Callback_0_(this);
 
   @DomName('XSLTProcessor.getParameter')
   @DocsEditable()
-  String getParameter(String namespaceURI, String localName) => _blink.BlinkXSLTProcessor.$getParameter_Callback(this, namespaceURI, localName);
+  String getParameter(String namespaceURI, String localName) => _blink.BlinkXSLTProcessor.instance.getParameter_Callback_2_(this, namespaceURI, localName);
 
   @DomName('XSLTProcessor.importStylesheet')
   @DocsEditable()
-  void importStylesheet(Node stylesheet) => _blink.BlinkXSLTProcessor.$importStylesheet_Callback(this, stylesheet);
+  void importStylesheet(Node stylesheet) => _blink.BlinkXSLTProcessor.instance.importStylesheet_Callback_1_(this, stylesheet);
 
   @DomName('XSLTProcessor.removeParameter')
   @DocsEditable()
-  void removeParameter(String namespaceURI, String localName) => _blink.BlinkXSLTProcessor.$removeParameter_Callback(this, namespaceURI, localName);
+  void removeParameter(String namespaceURI, String localName) => _blink.BlinkXSLTProcessor.instance.removeParameter_Callback_2_(this, namespaceURI, localName);
 
   @DomName('XSLTProcessor.reset')
   @DocsEditable()
-  void reset() => _blink.BlinkXSLTProcessor.$reset_Callback(this);
+  void reset() => _blink.BlinkXSLTProcessor.instance.reset_Callback_0_(this);
 
   @DomName('XSLTProcessor.setParameter')
   @DocsEditable()
-  void setParameter(String namespaceURI, String localName, String value) => _blink.BlinkXSLTProcessor.$setParameter_Callback(this, namespaceURI, localName, value);
+  void setParameter(String namespaceURI, String localName, String value) => _blink.BlinkXSLTProcessor.instance.setParameter_Callback_3_(this, namespaceURI, localName, value);
 
   @DomName('XSLTProcessor.transformToDocument')
   @DocsEditable()
-  Document transformToDocument(Node source) => _blink.BlinkXSLTProcessor.$transformToDocument_Callback(this, source);
+  Document transformToDocument(Node source) => _blink.BlinkXSLTProcessor.instance.transformToDocument_Callback_1_(this, source);
 
   @DomName('XSLTProcessor.transformToFragment')
   @DocsEditable()
-  DocumentFragment transformToFragment(Node source, Document docVal) => _blink.BlinkXSLTProcessor.$transformToFragment_Callback(this, source, docVal);
+  DocumentFragment transformToFragment(Node source, Document docVal) => _blink.BlinkXSLTProcessor.instance.transformToFragment_Callback_2_(this, source, docVal);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32059,24 +34822,39 @@ class _Attr extends Node {
   @DomName('Attr.localName')
   @DocsEditable()
   @Experimental() // untriaged
-  String get _localName => _blink.BlinkAttr.$localName_Getter(this);
+  String get _localName => _blink.BlinkAttr.instance.localName_Getter_(this);
 
   @DomName('Attr.name')
   @DocsEditable()
-  String get name => _blink.BlinkAttr.$name_Getter(this);
+  String get name => _blink.BlinkAttr.instance.name_Getter_(this);
 
   @DomName('Attr.namespaceURI')
   @DocsEditable()
   @Experimental() // untriaged
-  String get _namespaceUri => _blink.BlinkAttr.$namespaceURI_Getter(this);
+  String get _namespaceUri => _blink.BlinkAttr.instance.namespaceURI_Getter_(this);
+
+  @DomName('Attr.nodeValue')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get nodeValue => _blink.BlinkAttr.instance.nodeValue_Getter_(this);
+
+  @DomName('Attr.textContent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get text => _blink.BlinkAttr.instance.textContent_Getter_(this);
+
+  @DomName('Attr.textContent')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set text(String value) => _blink.BlinkAttr.instance.textContent_Setter_(this, value);
 
   @DomName('Attr.value')
   @DocsEditable()
-  String get value => _blink.BlinkAttr.$value_Getter(this);
+  String get value => _blink.BlinkAttr.instance.value_Getter_(this);
 
   @DomName('Attr.value')
   @DocsEditable()
-  void set value(String value) => _blink.BlinkAttr.$value_Setter(this, value);
+  void set value(String value) => _blink.BlinkAttr.instance.value_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32125,6 +34903,36 @@ abstract class _CSSUnknownRule extends CssRule {
 abstract class _CSSValue extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
   factory _CSSValue._() { throw new UnsupportedError("Not supported"); }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('Cache')
+@Experimental() // untriaged
+abstract class _Cache extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory _Cache._() { throw new UnsupportedError("Not supported"); }
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('CanvasPathMethods')
+@Experimental() // untriaged
+abstract class _CanvasPathMethods extends NativeFieldWrapperClass2 {
+  // To suppress missing implicit constructor warnings.
+  factory _CanvasPathMethods._() { throw new UnsupportedError("Not supported"); }
 
 }
 // Copyright (c) 2013, the Dart project authors.  Please see the AUTHORS file
@@ -32230,27 +35038,27 @@ class _ClientRect extends NativeFieldWrapperClass2 implements Rectangle {
 
   @DomName('ClientRect.bottom')
   @DocsEditable()
-  double get bottom => _blink.BlinkClientRect.$bottom_Getter(this);
+  double get bottom => _blink.BlinkClientRect.instance.bottom_Getter_(this);
 
   @DomName('ClientRect.height')
   @DocsEditable()
-  double get height => _blink.BlinkClientRect.$height_Getter(this);
+  double get height => _blink.BlinkClientRect.instance.height_Getter_(this);
 
   @DomName('ClientRect.left')
   @DocsEditable()
-  double get left => _blink.BlinkClientRect.$left_Getter(this);
+  double get left => _blink.BlinkClientRect.instance.left_Getter_(this);
 
   @DomName('ClientRect.right')
   @DocsEditable()
-  double get right => _blink.BlinkClientRect.$right_Getter(this);
+  double get right => _blink.BlinkClientRect.instance.right_Getter_(this);
 
   @DomName('ClientRect.top')
   @DocsEditable()
-  double get top => _blink.BlinkClientRect.$top_Getter(this);
+  double get top => _blink.BlinkClientRect.instance.top_Getter_(this);
 
   @DomName('ClientRect.width')
   @DocsEditable()
-  double get width => _blink.BlinkClientRect.$width_Getter(this);
+  double get width => _blink.BlinkClientRect.instance.width_Getter_(this);
 }
 
 /**
@@ -32304,15 +35112,15 @@ class _ClientRectList extends NativeFieldWrapperClass2 with ListMixin<Rectangle>
 
   @DomName('ClientRectList.length')
   @DocsEditable()
-  int get length => _blink.BlinkClientRectList.$length_Getter(this);
+  int get length => _blink.BlinkClientRectList.instance.length_Getter_(this);
 
   Rectangle operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkClientRectList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkClientRectList.instance.item_Callback_1_(this, index);
   }
 
-  Rectangle _nativeIndexedGetter(int index) => _blink.BlinkClientRectList.$NativeIndexed_Getter(this, index);
+  Rectangle _nativeIndexedGetter(int index) => _blink.BlinkClientRectList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Rectangle value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -32354,7 +35162,7 @@ class _ClientRectList extends NativeFieldWrapperClass2 with ListMixin<Rectangle>
 
   @DomName('ClientRectList.item')
   @DocsEditable()
-  Rectangle item(int index) => _blink.BlinkClientRectList.$item_Callback(this, index);
+  Rectangle item(int index) => _blink.BlinkClientRectList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32388,15 +35196,15 @@ class _CssRuleList extends NativeFieldWrapperClass2 with ListMixin<CssRule>, Imm
 
   @DomName('CSSRuleList.length')
   @DocsEditable()
-  int get length => _blink.BlinkCSSRuleList.$length_Getter(this);
+  int get length => _blink.BlinkCSSRuleList.instance.length_Getter_(this);
 
   CssRule operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkCSSRuleList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkCSSRuleList.instance.item_Callback_1_(this, index);
   }
 
-  CssRule _nativeIndexedGetter(int index) => _blink.BlinkCSSRuleList.$NativeIndexed_Getter(this, index);
+  CssRule _nativeIndexedGetter(int index) => _blink.BlinkCSSRuleList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, CssRule value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -32438,7 +35246,7 @@ class _CssRuleList extends NativeFieldWrapperClass2 with ListMixin<CssRule>, Imm
 
   @DomName('CSSRuleList.item')
   @DocsEditable()
-  CssRule item(int index) => _blink.BlinkCSSRuleList.$item_Callback(this, index);
+  CssRule item(int index) => _blink.BlinkCSSRuleList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32458,15 +35266,15 @@ class _CssValueList extends _CSSValue with ListMixin<_CSSValue>, ImmutableListMi
 
   @DomName('CSSValueList.length')
   @DocsEditable()
-  int get length => _blink.BlinkCSSValueList.$length_Getter(this);
+  int get length => _blink.BlinkCSSValueList.instance.length_Getter_(this);
 
   _CSSValue operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkCSSValueList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkCSSValueList.instance.item_Callback_1_(this, index);
   }
 
-  _CSSValue _nativeIndexedGetter(int index) => _blink.BlinkCSSValueList.$NativeIndexed_Getter(this, index);
+  _CSSValue _nativeIndexedGetter(int index) => _blink.BlinkCSSValueList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, _CSSValue value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -32508,7 +35316,7 @@ class _CssValueList extends _CSSValue with ListMixin<_CSSValue>, ImmutableListMi
 
   @DomName('CSSValueList.item')
   @DocsEditable()
-  _CSSValue item(int index) => _blink.BlinkCSSValueList.$item_Callback(this, index);
+  _CSSValue item(int index) => _blink.BlinkCSSValueList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32618,26 +35426,99 @@ class _DomPoint extends NativeFieldWrapperClass2 {
   factory _DomPoint(num x, num y) => _create(x, y);
 
   @DocsEditable()
-  static _DomPoint _create(x, y) => _blink.BlinkWebKitPoint.$constructorCallback(x, y);
+  static _DomPoint _create(x, y) => _blink.BlinkWebKitPoint.instance.constructorCallback_2_(x, y);
 
   /// Checks if this type is supported on the current platform.
   static bool get supported => true;
 
   @DomName('WebKitPoint.x')
   @DocsEditable()
-  num get x => _blink.BlinkWebKitPoint.$x_Getter(this);
+  num get x => _blink.BlinkWebKitPoint.instance.x_Getter_(this);
 
   @DomName('WebKitPoint.x')
   @DocsEditable()
-  void set x(num value) => _blink.BlinkWebKitPoint.$x_Setter(this, value);
+  void set x(num value) => _blink.BlinkWebKitPoint.instance.x_Setter_(this, value);
 
   @DomName('WebKitPoint.y')
   @DocsEditable()
-  num get y => _blink.BlinkWebKitPoint.$y_Getter(this);
+  num get y => _blink.BlinkWebKitPoint.instance.y_Getter_(this);
 
   @DomName('WebKitPoint.y')
   @DocsEditable()
-  void set y(num value) => _blink.BlinkWebKitPoint.$y_Setter(this, value);
+  void set y(num value) => _blink.BlinkWebKitPoint.instance.y_Setter_(this, value);
+
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('DOMRect')
+@Experimental() // untriaged
+class _DomRect extends DomRectReadOnly {
+  // To suppress missing implicit constructor warnings.
+  factory _DomRect._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('DOMRect.DOMRect')
+  @DocsEditable()
+  factory _DomRect([num x, num y, num width, num height]) {
+    if (height != null) {
+      return _blink.BlinkDOMRect.instance.constructorCallback_4_(x, y, width, height);
+    }
+    if (width != null) {
+      return _blink.BlinkDOMRect.instance.constructorCallback_3_(x, y, width);
+    }
+    if (y != null) {
+      return _blink.BlinkDOMRect.instance.constructorCallback_2_(x, y);
+    }
+    if (x != null) {
+      return _blink.BlinkDOMRect.instance.constructorCallback_1_(x);
+    }
+    return _blink.BlinkDOMRect.instance.constructorCallback_0_();
+  }
+
+  @DomName('DOMRect.height')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get height => _blink.BlinkDOMRect.instance.height_Getter_(this);
+
+  @DomName('DOMRect.height')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set height(num value) => _blink.BlinkDOMRect.instance.height_Setter_(this, value);
+
+  @DomName('DOMRect.width')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get width => _blink.BlinkDOMRect.instance.width_Getter_(this);
+
+  @DomName('DOMRect.width')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set width(num value) => _blink.BlinkDOMRect.instance.width_Setter_(this, value);
+
+  @DomName('DOMRect.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get x => _blink.BlinkDOMRect.instance.x_Getter_(this);
+
+  @DomName('DOMRect.x')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set x(num value) => _blink.BlinkDOMRect.instance.x_Setter_(this, value);
+
+  @DomName('DOMRect.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  num get y => _blink.BlinkDOMRect.instance.y_Getter_(this);
+
+  @DomName('DOMRect.y')
+  @DocsEditable()
+  @Experimental() // untriaged
+  void set y(num value) => _blink.BlinkDOMRect.instance.y_Setter_(this, value);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32690,7 +35571,7 @@ abstract class _FileReaderSync extends NativeFieldWrapperClass2 {
   @DomName('FileReaderSync.FileReaderSync')
   @DocsEditable()
   factory _FileReaderSync() {
-    return _blink.BlinkFileReaderSync.$_create_1constructorCallback();
+    return _blink.BlinkFileReaderSync.instance.constructorCallback_0_();
   }
 
 }
@@ -32727,15 +35608,15 @@ class _GamepadList extends NativeFieldWrapperClass2 with ListMixin<Gamepad>, Imm
 
   @DomName('GamepadList.length')
   @DocsEditable()
-  int get length => _blink.BlinkGamepadList.$length_Getter(this);
+  int get length => _blink.BlinkGamepadList.instance.length_Getter_(this);
 
   Gamepad operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkGamepadList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkGamepadList.instance.item_Callback_1_(this, index);
   }
 
-  Gamepad _nativeIndexedGetter(int index) => _blink.BlinkGamepadList.$NativeIndexed_Getter(this, index);
+  Gamepad _nativeIndexedGetter(int index) => _blink.BlinkGamepadList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Gamepad value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -32777,7 +35658,7 @@ class _GamepadList extends NativeFieldWrapperClass2 with ListMixin<Gamepad>, Imm
 
   @DomName('GamepadList.item')
   @DocsEditable()
-  Gamepad item(int index) => _blink.BlinkGamepadList.$item_Callback(this, index);
+  Gamepad item(int index) => _blink.BlinkGamepadList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32797,7 +35678,7 @@ abstract class _HTMLAllCollection extends NativeFieldWrapperClass2 {
 
   @DomName('HTMLAllCollection.item')
   @DocsEditable()
-  Element _item(int index) => _blink.BlinkHTMLAllCollection.$item_Callback(this, index);
+  Element _item(int index) => _blink.BlinkHTMLAllCollection.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -32971,15 +35852,15 @@ class _NamedNodeMap extends NativeFieldWrapperClass2 with ListMixin<Node>, Immut
 
   @DomName('NamedNodeMap.length')
   @DocsEditable()
-  int get length => _blink.BlinkNamedNodeMap.$length_Getter(this);
+  int get length => _blink.BlinkNamedNodeMap.instance.length_Getter_(this);
 
   Node operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkNamedNodeMap.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkNamedNodeMap.instance.item_Callback_1_(this, index);
   }
 
-  Node _nativeIndexedGetter(int index) => _blink.BlinkNamedNodeMap.$NativeIndexed_Getter(this, index);
+  Node _nativeIndexedGetter(int index) => _blink.BlinkNamedNodeMap.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, Node value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -33021,35 +35902,35 @@ class _NamedNodeMap extends NativeFieldWrapperClass2 with ListMixin<Node>, Immut
 
   @DomName('NamedNodeMap.__getter__')
   @DocsEditable()
-  Node __getter__(String name) => _blink.BlinkNamedNodeMap.$__getter___Callback(this, name);
+  Node __getter__(String name) => _blink.BlinkNamedNodeMap.instance.$__getter___Callback_1_(this, name);
 
   @DomName('NamedNodeMap.getNamedItem')
   @DocsEditable()
-  Node getNamedItem(String name) => _blink.BlinkNamedNodeMap.$getNamedItem_Callback(this, name);
+  Node getNamedItem(String name) => _blink.BlinkNamedNodeMap.instance.getNamedItem_Callback_1_(this, name);
 
   @DomName('NamedNodeMap.getNamedItemNS')
   @DocsEditable()
-  Node getNamedItemNS(String namespaceURI, String localName) => _blink.BlinkNamedNodeMap.$getNamedItemNS_Callback(this, namespaceURI, localName);
+  Node getNamedItemNS(String namespaceURI, String localName) => _blink.BlinkNamedNodeMap.instance.getNamedItemNS_Callback_2_(this, namespaceURI, localName);
 
   @DomName('NamedNodeMap.item')
   @DocsEditable()
-  Node item(int index) => _blink.BlinkNamedNodeMap.$item_Callback(this, index);
+  Node item(int index) => _blink.BlinkNamedNodeMap.instance.item_Callback_1_(this, index);
 
   @DomName('NamedNodeMap.removeNamedItem')
   @DocsEditable()
-  Node removeNamedItem(String name) => _blink.BlinkNamedNodeMap.$removeNamedItem_Callback(this, name);
+  Node removeNamedItem(String name) => _blink.BlinkNamedNodeMap.instance.removeNamedItem_Callback_1_(this, name);
 
   @DomName('NamedNodeMap.removeNamedItemNS')
   @DocsEditable()
-  Node removeNamedItemNS(String namespaceURI, String localName) => _blink.BlinkNamedNodeMap.$removeNamedItemNS_Callback(this, namespaceURI, localName);
+  Node removeNamedItemNS(String namespaceURI, String localName) => _blink.BlinkNamedNodeMap.instance.removeNamedItemNS_Callback_2_(this, namespaceURI, localName);
 
   @DomName('NamedNodeMap.setNamedItem')
   @DocsEditable()
-  Node setNamedItem(Node node) => _blink.BlinkNamedNodeMap.$setNamedItem_Callback(this, node);
+  Node setNamedItem(Node node) => _blink.BlinkNamedNodeMap.instance.setNamedItem_Callback_1_(this, node);
 
   @DomName('NamedNodeMap.setNamedItemNS')
   @DocsEditable()
-  Node setNamedItemNS(Node node) => _blink.BlinkNamedNodeMap.$setNamedItemNS_Callback(this, node);
+  Node setNamedItemNS(Node node) => _blink.BlinkNamedNodeMap.instance.setNamedItemNS_Callback_1_(this, node);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33066,28 +35947,6 @@ class _NamedNodeMap extends NativeFieldWrapperClass2 with ListMixin<Node>, Immut
 abstract class _Notation extends Node {
   // To suppress missing implicit constructor warnings.
   factory _Notation._() { throw new UnsupportedError("Not supported"); }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('NotificationCenter')
-@SupportedBrowser(SupportedBrowser.CHROME)
-@SupportedBrowser(SupportedBrowser.SAFARI)
-@Experimental()
-// http://www.w3.org/TR/notifications/#showing-a-notification
-@deprecated // deprecated
-abstract class _NotificationCenter extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory _NotificationCenter._() { throw new UnsupportedError("Not supported"); }
-
-  /// Checks if this type is supported on the current platform.
-  static bool get supported => true;
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33156,11 +36015,54 @@ abstract class _Rect extends NativeFieldWrapperClass2 {
 
 
 @DocsEditable()
-@DomName('ServiceWorker')
+@DomName('Request')
 @Experimental() // untriaged
-abstract class _ServiceWorker extends NativeFieldWrapperClass2 {
+class _Request extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
-  factory _ServiceWorker._() { throw new UnsupportedError("Not supported"); }
+  factory _Request._() { throw new UnsupportedError("Not supported"); }
+
+  @DomName('Request.Request')
+  @DocsEditable()
+  factory _Request(input, [Map requestInitDict]) {
+    if ((input is String || input == null) && requestInitDict == null) {
+      return _blink.BlinkRequest.instance.constructorCallback_1_(input);
+    }
+    if ((requestInitDict is Map || requestInitDict == null) && (input is String || input == null)) {
+      return _blink.BlinkRequest.instance.constructorCallback_2_(input, requestInitDict);
+    }
+    if ((input is _Request || input == null) && requestInitDict == null) {
+      return _blink.BlinkRequest.instance.constructorCallback_1_(input);
+    }
+    if ((requestInitDict is Map || requestInitDict == null) && (input is _Request || input == null)) {
+      return _blink.BlinkRequest.instance.constructorCallback_2_(input, requestInitDict);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
+  }
+
+  @DomName('Request.credentials')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get credentials => _blink.BlinkRequest.instance.credentials_Getter_(this);
+
+  @DomName('Request.headers')
+  @DocsEditable()
+  @Experimental() // untriaged
+  Headers get headers => _blink.BlinkRequest.instance.headers_Getter_(this);
+
+  @DomName('Request.mode')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get mode => _blink.BlinkRequest.instance.mode_Getter_(this);
+
+  @DomName('Request.referrer')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get referrer => _blink.BlinkRequest.instance.referrer_Getter_(this);
+
+  @DomName('Request.url')
+  @DocsEditable()
+  @Experimental() // untriaged
+  String get url => _blink.BlinkRequest.instance.url_Getter_(this);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33171,66 +36073,44 @@ abstract class _ServiceWorker extends NativeFieldWrapperClass2 {
 
 
 @DocsEditable()
-@DomName('SpeechInputResultList')
-// http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html#speech_input_result_list_interface
-@Experimental()
-class _SpeechInputResultList extends NativeFieldWrapperClass2 with ListMixin<SpeechInputResult>, ImmutableListMixin<SpeechInputResult> implements List<SpeechInputResult> {
+@DomName('Response')
+@Experimental() // untriaged
+abstract class _Response extends NativeFieldWrapperClass2 {
   // To suppress missing implicit constructor warnings.
-  factory _SpeechInputResultList._() { throw new UnsupportedError("Not supported"); }
+  factory _Response._() { throw new UnsupportedError("Not supported"); }
 
-  @DomName('SpeechInputResultList.length')
+  @DomName('Response.Response')
   @DocsEditable()
-  int get length => _blink.BlinkSpeechInputResultList.$length_Getter(this);
-
-  SpeechInputResult operator[](int index) {
-    if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkSpeechInputResultList.$NativeIndexed_Getter(this, index);
-  }
-
-  SpeechInputResult _nativeIndexedGetter(int index) => _blink.BlinkSpeechInputResultList.$NativeIndexed_Getter(this, index);
-
-  void operator[]=(int index, SpeechInputResult value) {
-    throw new UnsupportedError("Cannot assign element of immutable List.");
-  }
-  // -- start List<SpeechInputResult> mixins.
-  // SpeechInputResult is the element type.
-
-
-  void set length(int value) {
-    throw new UnsupportedError("Cannot resize immutable List.");
-  }
-
-  SpeechInputResult get first {
-    if (this.length > 0) {
-      return _nativeIndexedGetter(0);
+  factory _Response(body, [Map responseInitDict]) {
+    if ((body is String || body == null) && responseInitDict == null) {
+      return _blink.BlinkResponse.instance.constructorCallback_1_(body);
     }
-    throw new StateError("No elements");
-  }
-
-  SpeechInputResult get last {
-    int len = this.length;
-    if (len > 0) {
-      return _nativeIndexedGetter(len - 1);
+    if ((responseInitDict is Map || responseInitDict == null) && (body is String || body == null)) {
+      return _blink.BlinkResponse.instance.constructorCallback_2_(body, responseInitDict);
     }
-    throw new StateError("No elements");
-  }
-
-  SpeechInputResult get single {
-    int len = this.length;
-    if (len == 1) {
-      return _nativeIndexedGetter(0);
+    if ((body is Blob || body == null) && responseInitDict == null) {
+      return _blink.BlinkResponse.instance.constructorCallback_1_(body);
     }
-    if (len == 0) throw new StateError("No elements");
-    throw new StateError("More than one element");
+    if ((responseInitDict is Map || responseInitDict == null) && (body is Blob || body == null)) {
+      return _blink.BlinkResponse.instance.constructorCallback_2_(body, responseInitDict);
+    }
+    throw new ArgumentError("Incorrect number or type of arguments");
   }
 
-  SpeechInputResult elementAt(int index) => this[index];
-  // -- end List<SpeechInputResult> mixins.
+}
+// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
 
-  @DomName('SpeechInputResultList.item')
-  @DocsEditable()
-  SpeechInputResult item(int index) => _blink.BlinkSpeechInputResultList.$item_Callback(this, index);
+// WARNING: Do not edit - generated code.
+
+
+@DocsEditable()
+@DomName('ServiceWorker')
+@Experimental() // untriaged
+abstract class _ServiceWorker extends EventTarget implements AbstractWorker {
+  // To suppress missing implicit constructor warnings.
+  factory _ServiceWorker._() { throw new UnsupportedError("Not supported"); }
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33250,15 +36130,15 @@ class _SpeechRecognitionResultList extends NativeFieldWrapperClass2 with ListMix
 
   @DomName('SpeechRecognitionResultList.length')
   @DocsEditable()
-  int get length => _blink.BlinkSpeechRecognitionResultList.$length_Getter(this);
+  int get length => _blink.BlinkSpeechRecognitionResultList.instance.length_Getter_(this);
 
   SpeechRecognitionResult operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkSpeechRecognitionResultList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkSpeechRecognitionResultList.instance.item_Callback_1_(this, index);
   }
 
-  SpeechRecognitionResult _nativeIndexedGetter(int index) => _blink.BlinkSpeechRecognitionResultList.$NativeIndexed_Getter(this, index);
+  SpeechRecognitionResult _nativeIndexedGetter(int index) => _blink.BlinkSpeechRecognitionResultList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, SpeechRecognitionResult value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -33300,7 +36180,7 @@ class _SpeechRecognitionResultList extends NativeFieldWrapperClass2 with ListMix
 
   @DomName('SpeechRecognitionResultList.item')
   @DocsEditable()
-  SpeechRecognitionResult item(int index) => _blink.BlinkSpeechRecognitionResultList.$item_Callback(this, index);
+  SpeechRecognitionResult item(int index) => _blink.BlinkSpeechRecognitionResultList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33318,15 +36198,15 @@ class _StyleSheetList extends NativeFieldWrapperClass2 with ListMixin<StyleSheet
 
   @DomName('StyleSheetList.length')
   @DocsEditable()
-  int get length => _blink.BlinkStyleSheetList.$length_Getter(this);
+  int get length => _blink.BlinkStyleSheetList.instance.length_Getter_(this);
 
   StyleSheet operator[](int index) {
     if (index < 0 || index >= length)
-      throw new RangeError.range(index, 0, length);
-    return _blink.BlinkStyleSheetList.$NativeIndexed_Getter(this, index);
+      throw new RangeError.index(index, this);
+    return _blink.BlinkStyleSheetList.instance.item_Callback_1_(this, index);
   }
 
-  StyleSheet _nativeIndexedGetter(int index) => _blink.BlinkStyleSheetList.$NativeIndexed_Getter(this, index);
+  StyleSheet _nativeIndexedGetter(int index) => _blink.BlinkStyleSheetList.instance.item_Callback_1_(this, index);
 
   void operator[]=(int index, StyleSheet value) {
     throw new UnsupportedError("Cannot assign element of immutable List.");
@@ -33368,11 +36248,11 @@ class _StyleSheetList extends NativeFieldWrapperClass2 with ListMixin<StyleSheet
 
   @DomName('StyleSheetList.__getter__')
   @DocsEditable()
-  CssStyleSheet __getter__(String name) => _blink.BlinkStyleSheetList.$__getter___Callback(this, name);
+  CssStyleSheet __getter__(String name) => _blink.BlinkStyleSheetList.instance.$__getter___Callback_1_(this, name);
 
   @DomName('StyleSheetList.item')
   @DocsEditable()
-  StyleSheet item(int index) => _blink.BlinkStyleSheetList.$item_Callback(this, index);
+  StyleSheet item(int index) => _blink.BlinkStyleSheetList.instance.item_Callback_1_(this, index);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33427,7 +36307,7 @@ abstract class _WebKitCSSMatrix extends NativeFieldWrapperClass2 {
   @DomName('WebKitCSSMatrix.WebKitCSSMatrix')
   @DocsEditable()
   factory _WebKitCSSMatrix([String cssValue]) {
-    return _blink.BlinkWebKitCSSMatrix.$_create_1constructorCallback(cssValue);
+    return _blink.BlinkWebKitCSSMatrix.instance.constructorCallback_1_(cssValue);
   }
 
 }
@@ -33455,77 +36335,6 @@ abstract class _WebKitCSSTransformValue extends _CssValueList {
 
 
 @DocsEditable()
-@DomName('WebKitMediaSource')
-@Experimental() // untriaged
-abstract class _WebKitMediaSource extends EventTarget {
-  // To suppress missing implicit constructor warnings.
-  factory _WebKitMediaSource._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('WebKitMediaSource.WebKitMediaSource')
-  @DocsEditable()
-  factory _WebKitMediaSource() {
-    return _blink.BlinkWebKitMediaSource.$_create_1constructorCallback();
-  }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('WebKitNotification')
-@Experimental() // untriaged
-abstract class _WebKitNotification extends EventTarget {
-  // To suppress missing implicit constructor warnings.
-  factory _WebKitNotification._() { throw new UnsupportedError("Not supported"); }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('WebKitSourceBuffer')
-@Experimental() // untriaged
-abstract class _WebKitSourceBuffer extends NativeFieldWrapperClass2 {
-  // To suppress missing implicit constructor warnings.
-  factory _WebKitSourceBuffer._() { throw new UnsupportedError("Not supported"); }
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
-@DomName('WebKitSourceBufferList')
-@Experimental() // untriaged
-abstract class _WebKitSourceBufferList extends EventTarget {
-  // To suppress missing implicit constructor warnings.
-  factory _WebKitSourceBufferList._() { throw new UnsupportedError("Not supported"); }
-
-  @DomName('WebKitSourceBufferList.item')
-  @DocsEditable()
-  @Experimental() // untriaged
-  _WebKitSourceBuffer _item(int index) => _blink.BlinkWebKitSourceBufferList.$item_Callback(this, index);
-
-}
-// Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
-
-// WARNING: Do not edit - generated code.
-
-
-@DocsEditable()
 @DomName('WindowTimers')
 @Experimental() // untriaged
 abstract class _WindowTimers extends NativeFieldWrapperClass2 {
@@ -33535,22 +36344,22 @@ abstract class _WindowTimers extends NativeFieldWrapperClass2 {
   @DomName('WindowTimers.clearInterval')
   @DocsEditable()
   @Experimental() // untriaged
-  void _clearInterval(int handle) => _blink.BlinkWindowTimers.$clearInterval_Callback(this, handle);
+  void _clearInterval(int handle);
 
   @DomName('WindowTimers.clearTimeout')
   @DocsEditable()
   @Experimental() // untriaged
-  void _clearTimeout(int handle) => _blink.BlinkWindowTimers.$clearTimeout_Callback(this, handle);
+  void _clearTimeout(int handle);
 
   @DomName('WindowTimers.setInterval')
   @DocsEditable()
   @Experimental() // untriaged
-  int _setInterval(Object handler, int timeout) => _blink.BlinkWindowTimers.$setInterval_Callback(this, handler, timeout);
+  int _setInterval(Object handler, int timeout);
 
   @DomName('WindowTimers.setTimeout')
   @DocsEditable()
   @Experimental() // untriaged
-  int _setTimeout(Object handler, int timeout) => _blink.BlinkWindowTimers.$setTimeout_Callback(this, handler, timeout);
+  int _setTimeout(Object handler, int timeout);
 
 }
 // Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
@@ -33580,7 +36389,7 @@ abstract class _WorkerLocation extends NativeFieldWrapperClass2 implements UrlUt
 @DomName('WorkerNavigator')
 // http://www.whatwg.org/specs/web-apps/current-work/multipage/workers.html#workernavigator
 @Experimental()
-abstract class _WorkerNavigator extends NativeFieldWrapperClass2 implements NavigatorOnLine, NavigatorID {
+abstract class _WorkerNavigator extends NativeFieldWrapperClass2 implements NavigatorCpu, NavigatorOnLine, NavigatorID {
   // To suppress missing implicit constructor warnings.
   factory _WorkerNavigator._() { throw new UnsupportedError("Not supported"); }
 
@@ -37771,11 +40580,10 @@ class KeyEvent extends _WrappedEvent implements KeyboardEvent {
       {Window view, bool canBubble: true, bool cancelable: true, int keyCode: 0,
       int charCode: 0, int keyLocation: 1, bool ctrlKey: false,
       bool altKey: false, bool shiftKey: false, bool metaKey: false,
-      bool altGraphKey: false, EventTarget currentTarget}) {
+       EventTarget currentTarget}) {
      var parent = new KeyboardEvent(type, view: view, canBubble: canBubble,
         cancelable: cancelable, keyLocation: keyLocation, ctrlKey: ctrlKey,
-        altKey: altKey, shiftKey: shiftKey, metaKey: metaKey, altGraphKey:
-        altGraphKey);
+        altKey: altKey, shiftKey: shiftKey, metaKey: metaKey);
      var keyEvent = new KeyEvent.wrap(parent);
      keyEvent._shadowAltKey = altKey;
      keyEvent._shadowCharCode = charCode;
@@ -37797,8 +40605,6 @@ class KeyEvent extends _WrappedEvent implements KeyboardEvent {
   /** The currently registered target for this event. */
   EventTarget get currentTarget => _currentTarget;
 
-  /** True if the altGraphKey is pressed during this event. */
-  bool get altGraphKey => _parent.altGraphKey;
   /** Accessor to the clipboardData available for this event. */
   DataTransfer get clipboardData => _parent.clipboardData;
   /** True if the ctrl key is pressed during this event. */
@@ -37830,8 +40636,7 @@ class KeyEvent extends _WrappedEvent implements KeyboardEvent {
   }
   void _initKeyboardEvent(String type, bool canBubble, bool cancelable,
       Window view, String keyIdentifier, int keyLocation, bool ctrlKey,
-      bool altKey, bool shiftKey, bool metaKey,
-      bool altGraphKey) {
+      bool altKey, bool shiftKey, bool metaKey) {
     throw new UnsupportedError(
         "Cannot initialize a KeyboardEvent from a KeyEvent.");
   }
@@ -38862,11 +41667,19 @@ class _DOMWindowCrossFrame extends NativeFieldWrapperClass2 implements
   Events get on => throw new UnsupportedError(
     'You can only attach EventListeners to your own window.');
   // TODO(efortuna): Remove this method. dartbug.com/16814
+  void _addEventListener([String type, EventListener listener, bool useCapture])
+      => throw new UnsupportedError(
+    'You can only attach EventListeners to your own window.');
+  // TODO(efortuna): Remove this method. dartbug.com/16814
   void addEventListener(String type, EventListener listener, [bool useCapture])
       => throw new UnsupportedError(
     'You can only attach EventListeners to your own window.');
   // TODO(efortuna): Remove this method. dartbug.com/16814
   bool dispatchEvent(Event event) => throw new UnsupportedError(
+    'You can only attach EventListeners to your own window.');
+  // TODO(efortuna): Remove this method. dartbug.com/16814
+  void _removeEventListener([String type, EventListener listener,
+      bool useCapture]) => throw new UnsupportedError(
     'You can only attach EventListeners to your own window.');
   // TODO(efortuna): Remove this method. dartbug.com/16814
   void removeEventListener(String type, EventListener listener,
@@ -39020,4 +41833,8 @@ get _pureIsolateScheduleImmediateClosure => ((void callback()) =>
 
 void _initializeCustomElement(Element e) {
   _Utils.initializeCustomElement(e);
+}
+
+// Class for unsupported native browser 'DOM' objects.
+class _UnsupportedBrowserObject extends NativeFieldWrapperClass2 {
 }

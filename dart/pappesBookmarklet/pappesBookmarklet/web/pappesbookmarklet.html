@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PappesBookmarklet</title>
     
+    <script src="packages/browser/interop.js"></script>
     <script async type="application/dart" src="pappesbookmarklet.dart"></script>
     <script async src="packages/browser/dart.js"></script>
     
@@ -14,11 +15,46 @@
   <body>
     <h1>PappesBookmarklet</h1>
     
-    <p>Hello world from Dart!</p>
+    <p>Page for developing and testing DART code to be made into bookmarklets</p>
     
     <div id="sample_container_id">
-      <p id="sample_text_id">Don't click me!</p>
+      <p id="sample_text_id">__click me!__</p>
     </div>
+    <a id=non_redirct href=http://www.abc.com/noredirect?u=realurl_com>
+    Non-redirect URL</a><br>
+    <a id=redirct_simple_www href=http://www.abc.com/redirect?u=www.realurl.com>
+    Simple www redirect URL</a><br>
+    <a id=redirct_simple_http href=http://www.abc.com/redirect?u=http://www.realurl.com>
+    Simple http redirect URL</a><br>
+    <a id=redirct_simple_http_dir href=http://www.abc.com/redirect?u=http://www.realurl.com/target/>
+    Simple http redirect URL with directories</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?u=http://www.realurl.com/target/?x=y&a=b>
+    http redirect URL with params</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?u=http://www.realurl.com/target/&x=y&a=b>
+    http redirect URL without params</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?u=http%3A%2F%2Fwww.realurl.com%2Ftarget%2F>
+    http redirect URL with URL encoding</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?u=http%3A%2F%2Fwww.realurl.com%2Ftarget%2F%3Fx%3Dy%26a%3Db>
+    http redirect URL with URL encoding and params</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?out/?l=YTo5OntzOjE6ImMiO2k6MTtzOjM6InNpZCI7aToxNTU5O3M6MzoiaWlkIjtpOjQ5O3M6MjoiaXQiO3M6MjoiaWMiO3M6MzoiZ2lkIjtzOjc6Ijc4NzU1NzAiO3M6NDoia3dpZCI7aTo1ODY5O3M6NDoiY3NpZCI7czozOiIzNTkiO3M6MzoicG9zIjtpOjE7czoyOiJycyI7aToxMTt9&u=http://www.realurl.com/target/?x=y&a=b>
+    http redirect URL with fake base64 payload and URL params</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?out/?l=YTo5OntzOjE6ImMiO2k6MTtzOjM6InNpZCI7aToxNTU5O3M6MzoiaWlkIjtpOjQ5O3M6MjoiaXQiO3M6MjoiaWMiO3M6MzoiZ2lkIjtzOjc6Ijc4NzU1NzAiO3M6NDoia3dpZCI7aTo1ODY5O3M6NDoiY3NpZCI7czozOiIzNTkiO3M6MzoicG9zIjtpOjE7czoyOiJycyI7aToxMTt9&u=http%3A%2F%2Fwww.realurl.com%2Ftarget%2F%3Fx%3Dy%26a%3Db>
+    http redirect URL with fake base64 payload URL encoding and params</a><br>
+    
+    <a id=redirct_http_param href=http://www.abc.com/redirect?out/?l=aHR0cDovL3d3dy5yZWFsdXJsLmNvbS90YXJnZXQvP2M9ZCZlPTEyMw==>
+    http redirect URL with real base64 payload</a><br>
+    <a id=redirct_http_param href=http://www.abc.com/redirect?out/?l=aHR0cDovL3d3dy5yZWFsdXJsLmNvbS90YXJnZXQvP2M9ZCZlPTEyMw==&x=y&a=b>
+    http redirect URL with real base64 payload and fake params</a><br>
+    
+    
+    <!--base64 encoded examples
+    
+    DQogICAgDQogICAgaHR0cDovL3d3dy5vbmxpbmVzdG9ja2luZ3MuY29tL2ZnYmEvY2dpL291dC5waHA/bWVtYmVyPXBhbnR5aG9zZWN1dGllcy5jb20mbGluaz10b3BpbWcNCiAgICBodHRwOi8vd3d3LmZpbmQtYmVzdC1saW5nZXJpZS5jb20vZS9vLz8vcGljdHVyZXMvZ28ucGhwP2lkPTIxMjlfMSZ1cmw9aHR0cCUzQSUyRiUyRmNvcmluLXJpZ2dzLmNyb2NvZ2lybHMuY29tJTJGYXJvdXNhbC1mcm9tLWEtYnJ1bmV0dGUtaG90dGllJTJGDQogICAgaHR0cDovL3d3dy5jcm9jb3Bvcm4uY29tL2Uvby8/L3BpY3R1cmVzL2dvLnBocD9pZD03OTlfMSZ1cmw9aHR0cCUzQSUyRiUyRnByaXZhdGVzY2hvb2wtamV3ZWwuY3JvY29naXJscy5jb20lM0ElMkYlMkZGdmlzaW9ucy1vZi1hLXRlZW4tcHVzc3klMkYNCiAgICBodHRwOi8vd3d3LnN0b2NraW5nLXRlYXNlLmNvbS9vdXQvP2w9WVRvNU9udHpPakU2SW1NaU8yazZNVHR6T2pNNkluTnBaQ0k3YVRveE5UVTVPM002TXpvaWFXbGtJanRwT2pRNU8zTTZNam9pYVhRaU8zTTZNam9pYVdNaU8zTTZNem9pWjJsa0lqdHpPamM2SWpjNE56VTFOekFpTzNNNk5Eb2lhM2RwWkNJN2FUbzFPRFk1TzNNNk5Eb2lZM05wWkNJN2N6b3pPaUl6TlRraU8zTTZNem9pY0c5eklqdHBPakU3Y3pveU9pSnljeUk3YVRveE1UdDkmdT1odHRwOi8vd3d3LmVyb3RpY2JlYXV0aWVzLm5ldC9waWNzL21vbnJvZS1pbi1ibG9uZC1pbi1iZWQtMTExMzEuaHRtbD9zaXRlPWF3biZ1dG1fc291cmNlPWF3biZ1dG1fbWVkaXVtPXBwYyZ1dG1fY2FtcGFpZ249aGVncmVhcnQNCiAgICBodHRwOi8vd3d3LmF6Z2Fscy5jb20vYWNqL291dC5waHA/Yz0xJnM9OTAmbD0wOjE1OTExMjozMTcmdT1odHRwOi8vcHJldmlldy5mdHZnaXJscy5jb20vZnJlZS9zdGFjaS1kcmVzc2VkLWZvci1wZW5ldHJhdGlvbi8wMWIzMjBjZi8/Y2NiaWxsX2lkPTE5NTU5NTQmc2l0ZV9saW5rPWh0dHA6Ly93d3cuZnR2Z2lybHMuY29tDQogICAgaHR0cDovL3d3dy5hemdhbHMuY29tL2Fjai9vdXQucGhwP2lkPTE2MSZ0YWc9aW1ndG9wbGlzdCZ0cmFkZT1odHRwOi8vd3d3Lmxpb25wb3JuLmNvbQ0KICAgIGh0dHA6Ly93d3cuYXpnYWxzLmNvbS9hY2ovb3V0LnBocD9pZD0xMDcmdGFnPXRvcGxpc3QmdHJhZGU9aHR0cDovL3d3dy5jbGVvbXlzdGVyeS5jb20vZ2FsbGVyaWVzL2luZGV4LnNodG1sDQogICAgaHR0cDovL3d3dy5zZXh1YWwtY3V0aWVzLmNvbS9vdXQucGhwP2M9MzMmbj0xJnI9OTc2NyZ1PWh0dHAlMjUzQSUyNTJGJTI1MkZ3d3cubmljZXNvbG90ZWVucy5jb20lMjUyRmdhbGxlcmllcyUyNTJGMWUlMjUyRjAwJTI1MkYyNG4lMjUyRg0KICAgIGh0dHA6Ly9yZS50cnk5LmNvbS9vdXQucGhwP2NpZD0zMzkmYWlkPTU3OCZzcmlkPTAmdXJsPWh0dHAlM0ElMkYlMkZ3d3cuMThhbmRhYnVzZWQuY29tJTJGZ28ucGhwJTNGbCUzRDE5Mzk2JTI2dCUzRDMzMjY5JTI2bHMlM0Q0OA0KICAgIGh0dHA6Ly9iYndzbHV0cy5vcmcvZHRyL2xpbmsucGhwP2xpbms9aW1hZ2UmZ3I9MSZpZD1mNjU4NDUmdXJsPS9jZ2ktYmluL3Qvb3V0LmNnaT9nPTEldT1odHRwOi8vZnBmcmVlZ2Fscy5jb20vZm90b3MveWYvZWlnaHQvNS9pbmRleC5odG1sP2lkPXJleW5vbGQNCiAgICBodHRwOi8vd3d3LmltYWdlcG9zdC5jb20vdC5waHA/SUQ9MzQ3JlVSTD1odHRwJTNhJTJmJTJmd3d3LmltYWdlcG9zdC5jb20lMmZ2aWRlb3MlMmZzYXJhLWx1dnYtb24tY2FzdGluZy1jb3VjaC14JTJmDQogICAgaHR0cDovL3lvdW5nLWRyZWFtcy5jb20vZHkvZHJpLnBocD9pZD0xNjM1Mjk5Jmc9NzImdT1odHRwOi8vZ2FsbGVyaWVzLnBheXNlcnZlLmNvbS8xLzMyMjEwLzU1NzQ1L2luZGV4Lmh0bWwNCiAgICBodHRwOi8vd3d3LnNlY3JldGFyeXBpY3MuY29tL291dC8/aWQ9MTM0NDk0MTkmZz0xNSZ1PS9zZWNyZXRhcnlwaWNzLz9jPTEmcz03MCZ1PWh0dHA6Ly9nYWxseXMucmVhbGl0eWtpbmdzLmNvbS9zbC8xNTQ2Lz9pZD1idXN0eXBhc3Npb24NCiAgICBodHRwOi8vbWFpbi5leG9jbGljay5jb20vY2xpY2sucGhwP2RhdGE9Y21Wc1lYaDBjbUZtWm1samZEWTFNVGM1Tm53eE1IeG9kSFJ3SlROQkpUSkdKVEpHZEhKaFkyc3lMblJ5WVdOclltRmphMlZ5TVM1amIyMGxNa1l3TVRrNFkyTTJNQzAxTnpaa0xUUmpZalV0WWpObU9DMWtOMk5pT1Raak5EazFabU1sTTBaallXMXdhV1FsTTBRbE4wSmpZVzF3WVdsbmJsOXBaQ1UzUkh3NU9EQTBOSHg4ZkRnMGZERTBNVGs0TVRZM01ERjhlVzkxYm1jdFpISmxZVzF6TG1OdmJYd3hNakV1TWpBNExqRTFNaTR5TlRCOE5qVXhOemsyTFRrNE5qTTBOako4T1RnMk16UTJNbnczTXpBMU1qbDhNVE01ZkRkOE5ERjhNbnd6Zkh3d2ZESjhNekF3ZURJMU1Id3hmRTlMZkdVMU1XSTBOV1E1WlRrMk5ETmpORGxoTXpoa1pqQTJZakJpWlRneVpXUTUNCiAgICANCiAgICA=
+    
+    -->
+    
+    
+    
 
   </body>
 </html>

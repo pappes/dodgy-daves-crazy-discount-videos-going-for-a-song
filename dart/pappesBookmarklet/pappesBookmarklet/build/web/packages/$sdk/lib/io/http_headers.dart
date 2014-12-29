@@ -449,8 +449,7 @@ class _HttpHeaders implements HttpHeaders {
 
   _updateHostHeader() {
     bool defaultPort = _port == null || _port == _defaultPortForScheme;
-    String portPart = defaultPort ? "" : ":$_port";
-    _set("host", "$host$portPart");
+    _set("host", defaultPort ? host : "$host:$_port");
   }
 
   _foldHeader(String name) {
@@ -748,6 +747,10 @@ class _HeaderValue implements HeaderValue {
         expect("=");
         skipWS();
         String value = parseParameterValue();
+        if (name == 'charset' && this is _ContentType) {
+          // Charset parameter of ContentTypes are always lower-case.
+          value = value.toLowerCase();
+        }
         parameters[name] = value;
         skipWS();
         if (done()) return;
@@ -780,7 +783,11 @@ class _ContentType extends _HeaderValue implements ContentType {
     if (parameters != null) {
       _ensureParameters();
       parameters.forEach((String key, String value) {
-        this._parameters[key.toLowerCase()] = value.toLowerCase();
+        String lowerCaseKey = key.toLowerCase();
+        if (lowerCaseKey == "charset") {
+          value = value.toLowerCase();
+        }
+        this._parameters[lowerCaseKey] = value;
       });
     }
     if (charset != null) {
