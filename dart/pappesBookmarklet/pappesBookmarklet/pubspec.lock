@@ -5,3 +5,15 @@ packages:
     description: browser
     source: hosted
     version: "0.10.0+2"
+  pappes_utility:
+    description:
+      path: "..\\..\\..\\..\\aarvark\\dart\\pappes_utility"
+      relative: true
+    source: path
+    version: "0.0.1"
+  pappes_web_utility:
+    description:
+      path: "..\\..\\..\\..\\aarvark\\dart\\pappes_web_utility"
+      relative: true
+    source: path
+    version: "0.0.1"

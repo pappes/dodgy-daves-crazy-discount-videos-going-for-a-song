@@ -9717,28 +9717,9 @@ var $$ = Object.create(null);
     }
   }
 }],
-["", "pappesbookmarklet.dart", , L, {
+["pappes_web_utility.base", "package:pappes_web_utility/src/pappes_web_utility_base.dart", , E, {
   "^": "",
-  main: [function() {
-    var t1 = document.querySelector("#sample_text_id");
-    t1.textContent = "Click me!";
-    t1 = J.get$onClick$x(t1);
-    H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(L.reverseText$closure()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
-    L.iterateHTMLDOM(document.body, new L.main_closure());
-  }, "call$0", "main$closure", 0, 0, 12],
-  reverseText: [function($event) {
-    var text, buffer, i, t1, t2;
-    text = document.querySelector("#sample_text_id").textContent;
-    buffer = P.StringBuffer$("");
-    for (i = text.length - 1; i >= 0; --i) {
-      t1 = text[i];
-      buffer._contents += t1;
-    }
-    t1 = document.querySelector("#sample_text_id");
-    t2 = buffer._contents;
-    t1.textContent = t2.charCodeAt(0) == 0 ? t2 : t2;
-  }, "call$1", "reverseText$closure", 2, 0, 32, 33],
-  removeUrlRedirect: function(originalUrl) {
+  MyHtml_removeUrlRedirect: function(originalUrl) {
     var t1, t2, finalUrl, base64Uri, param;
     t1 = P.Uri_parse(originalUrl);
     t2 = t1._queryParameters;
@@ -9763,25 +9744,25 @@ var $$ = Object.create(null);
           finalUrl = param;
           break;
         }
-        if (L.base64Decode(param) != null)
-          t2 = C.JSString_methods.startsWith$1(J.toLowerCase$0$s(L.base64Decode(param)), "www") || C.JSString_methods.startsWith$1(J.toLowerCase$0$s(L.base64Decode(param)), "http");
+        if (E.MyJS_base64Decode(param) != null)
+          t2 = C.JSString_methods.startsWith$1(J.toLowerCase$0$s(E.MyJS_base64Decode(param)), "www") || C.JSString_methods.startsWith$1(J.toLowerCase$0$s(E.MyJS_base64Decode(param)), "http");
         else
           t2 = false;
         if (t2)
-          base64Uri = L.base64Decode(param);
+          base64Uri = E.MyJS_base64Decode(param);
       }
     } else {
       finalUrl = null;
       base64Uri = null;
     }
-    finalUrl = L.setUriSchemeToHttp(finalUrl != null ? finalUrl : base64Uri);
+    finalUrl = E.MyHtml_setUriSchemeToHttp(finalUrl != null ? finalUrl : base64Uri);
     finalUrl = finalUrl != null ? finalUrl : originalUrl;
-    P.print("removeUrlRediriect \n      originalUrl: " + H.S(originalUrl) + " \n  became finalUrl: " + H.S(finalUrl));
+    P.print("          removeUrlRediriect \r\n                originalUrl: " + H.S(originalUrl) + " \r\n            became finalUrl: " + H.S(finalUrl));
     return finalUrl;
   },
-  setUriSchemeToHttp: function(originalURL) {
-    var finalURL, parsedUri, exception;
-    finalURL = originalURL;
+  MyHtml_setUriSchemeToHttp: function(originalURL) {
+    var finalURL, parsedUri, exception, t1, t2;
+    finalURL = null;
     parsedUri = null;
     try {
       parsedUri = P.Uri_parse(originalURL);
@@ -9790,9 +9771,17 @@ var $$ = Object.create(null);
       H.unwrapException(exception);
     }
 
-    return finalURL;
+    t1 = finalURL;
+    t2 = originalURL;
+    return t1 != null ? t1 : t2;
   },
-  base64Decode: function(val) {
+  MyHtml_iterateHTMLDOM: function(DOM, process) {
+    var t1 = J.getInterceptor$x(DOM);
+    if (t1.hasChildNodes$0(DOM) === true)
+      J.forEach$1$ax(t1.get$children(DOM), new E.MyHtml_iterateHTMLDOM_closure(process));
+    process.call$1(DOM);
+  },
+  MyJS_base64Decode: function(val) {
     var jsHasAtob, e, exception, t1;
     jsHasAtob = null;
     try {
@@ -9814,13 +9803,34 @@ var $$ = Object.create(null);
 
     throw H.wrapException(P.StateError$("Dart -> JavaScript interop not accepting calls to atob().  Try changing your html to include <script src=\"packages/browser/inteerop.js\"></script>);"));
   },
-  iterateHTMLDOM: function(DOM, process) {
-    var t1;
-    process.call$1(DOM);
-    t1 = J.getInterceptor$x(DOM);
-    if (t1.hasChildNodes$0(DOM) === true)
-      J.forEach$1$ax(t1.get$children(DOM), new L.iterateHTMLDOM_closure(process));
-  },
+  MyHtml_iterateHTMLDOM_closure: {
+    "^": "Closure:29;process_0",
+    call$1: function(child) {
+      return E.MyHtml_iterateHTMLDOM(child, this.process_0);
+    }
+  }
+}],
+["", "pappesbookmarklet.dart", , L, {
+  "^": "",
+  main: [function() {
+    var t1 = document.querySelector("#sample_text_id");
+    t1.textContent = "Click me!";
+    t1 = J.get$onClick$x(t1);
+    H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(L.reverseText$closure()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
+    E.MyHtml_iterateHTMLDOM(document.body, new L.main_closure());
+  }, "call$0", "main$closure", 0, 0, 12],
+  reverseText: [function($event) {
+    var text, buffer, i, t1, t2;
+    text = document.querySelector("#sample_text_id").textContent;
+    buffer = P.StringBuffer$("");
+    for (i = text.length - 1; i >= 0; --i) {
+      t1 = text[i];
+      buffer._contents += t1;
+    }
+    t1 = document.querySelector("#sample_text_id");
+    t2 = buffer._contents;
+    t1.textContent = t2.charCodeAt(0) == 0 ? t2 : t2;
+  }, "call$1", "reverseText$closure", 2, 0, 32, 33],
   main_closure: {
     "^": "Closure:29;",
     call$1: function(element) {
@@ -9833,13 +9843,7 @@ var $$ = Object.create(null);
   main__closure: {
     "^": "Closure:29;",
     call$1: function(url) {
-      return L.removeUrlRedirect(url);
-    }
-  },
-  iterateHTMLDOM_closure: {
-    "^": "Closure:29;process_0",
-    call$1: function(child) {
-      return L.iterateHTMLDOM(child, this.process_0);
+      return E.MyHtml_removeUrlRedirect(url);
     }
   }
 },
@@ -9872,11 +9876,11 @@ $$ = null;
   _.$isComparable = TRUE;
   _.$asComparable = [P.num];
   _.$isObject = TRUE;
+  P.List.$isObject = TRUE;
   _ = W.Element;
   _.$isElement = TRUE;
   _.$isNode = TRUE;
   _.$isObject = TRUE;
-  P.List.$isObject = TRUE;
   _ = P.Duration;
   _.$isDuration = TRUE;
   _.$isComparable = TRUE;

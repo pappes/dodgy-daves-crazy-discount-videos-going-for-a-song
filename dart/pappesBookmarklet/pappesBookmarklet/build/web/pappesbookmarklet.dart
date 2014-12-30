@@ -1,12 +1,14 @@
-import 'dart:js' as js;
+//import 'dart:js' as js;
 import 'dart:html';
+//import 'package:pappes_utility/pappes_utility.dart';
+import 'package:pappes_web_utility/pappes_web_utility.dart';
 
 void main() {
   querySelector("#sample_text_id")
       ..text = "Click me!"
       ..onClick.listen(reverseText);
   
-  iterateHTMLDOM(document.body, (element) => alterAttribute(element, 'href', (url) => removeUrlRedirect(url)));
+  MyHtml.iterateHTMLDOM(document.body, (element) => MyHtml.alterAttribute(element, 'href', (url) => MyHtml.removeUrlRedirect(url)));
 }
 
 void reverseText(MouseEvent event) {
@@ -17,7 +19,7 @@ void reverseText(MouseEvent event) {
   }
   querySelector("#sample_text_id").text = buffer.toString();
 }
-
+/*
 /// Changes [originalURL] to remove any attempt at redirection.
 ///
 /// ## Known redirect attempts:
@@ -107,4 +109,4 @@ void iterateHTMLDOM(Element DOM, Function process) {
   if (DOM.hasChildNodes()) {
     DOM.children.forEach((child) => iterateHTMLDOM(child, process));
   }
-}
+}*/

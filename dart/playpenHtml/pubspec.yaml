@@ -8,5 +8,7 @@ environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
   browser: any
-  pappesUtility:
-    path: ../../../aarvark/dart/pappesUtility
+  pappes_utility:
+    path: ../../../aarvark/dart/pappes_utility
+  pappes_web_utility:
+    path: ../../../aarvark/dart/pappes_web_utility
