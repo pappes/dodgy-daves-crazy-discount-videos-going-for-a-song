@@ -670,21 +670,19 @@ var $$ = Object.create(null);
       return this.startsWith$2($receiver, pattern, 0);
     },
     substring$2: function(receiver, startIndex, endIndex) {
+      var t1;
       if (typeof startIndex !== "number" || Math.floor(startIndex) !== startIndex)
         H.throwExpression(P.ArgumentError$(startIndex));
       if (endIndex == null)
         endIndex = receiver.length;
       if (typeof endIndex !== "number" || Math.floor(endIndex) !== endIndex)
         H.throwExpression(P.ArgumentError$(endIndex));
-      if (typeof startIndex !== "number")
-        return startIndex.$lt();
-      if (startIndex < 0)
+      t1 = J.getInterceptor$n(startIndex);
+      if (t1.$lt(startIndex, 0))
         throw H.wrapException(P.RangeError$value(startIndex, null, null));
-      if (typeof endIndex !== "number")
-        return H.iae(endIndex);
-      if (startIndex > endIndex)
+      if (t1.$gt(startIndex, endIndex))
         throw H.wrapException(P.RangeError$value(startIndex, null, null));
-      if (endIndex > receiver.length)
+      if (J.$gt$n(endIndex, receiver.length))
         throw H.wrapException(P.RangeError$value(endIndex, null, null));
       return receiver.substring(startIndex, endIndex);
     },
@@ -716,6 +714,8 @@ var $$ = Object.create(null);
       return new J._CodeUnits(receiver);
     },
     indexOf$2: function(receiver, pattern, start) {
+      if (typeof start !== "number" || Math.floor(start) !== start)
+        throw H.wrapException(P.ArgumentError$(start));
       if (start < 0 || start > receiver.length)
         throw H.wrapException(P.RangeError$range(start, 0, receiver.length, null, null));
       return receiver.indexOf(pattern, start);
@@ -2500,9 +2500,6 @@ var $$ = Object.create(null);
     reflectionInfo.fixed$length = Array;
     return H.Closure_fromTearOff(receiver, functions, reflectionInfo, !!isStatic, jsArguments, $name);
   },
-  throwNoSuchMethod: function(obj, $name, $arguments, expectedArgumentNames) {
-    throw H.wrapException(P.NoSuchMethodError$(obj, new H.Symbol0($name), $arguments, P.LinkedHashMap_LinkedHashMap(null, null, null, P.Symbol, null), expectedArgumentNames));
-  },
   throwCyclicInit: function(staticName) {
     throw H.wrapException(P.CyclicInitializationError$("Cyclic initialization for static " + H.S(staticName)));
   },
@@ -3403,8 +3400,10 @@ var $$ = Object.create(null);
     var i;
     if (startIndex >= a.length)
       return -1;
+    if (startIndex < 0)
+      startIndex = 0;
     for (i = startIndex; i < endIndex; ++i) {
-      if (i >= a.length)
+      if (i >>> 0 !== i || i >= a.length)
         return H.ioore(a, i);
       if (J.$eq(a[i], element))
         return i;
@@ -6284,6 +6283,8 @@ var $$ = Object.create(null);
       var i;
       if (startIndex >= this.get$length(receiver))
         return -1;
+      if (startIndex < 0)
+        startIndex = 0;
       for (i = startIndex; i < this.get$length(receiver); ++i)
         if (J.$eq(this.$index(receiver, i), element))
           return i;
@@ -7045,61 +7046,23 @@ var $$ = Object.create(null);
   NoSuchMethodError: {
     "^": "Error;_core$_receiver,_memberName,_core$_arguments,_namedArguments,_existingArgumentNames",
     toString$0: function(_) {
-      var t1, t2, t3, t4, t5, str, actualParameters, i, formalParameters;
+      var t1, t2, t3, t4, t5, str;
       t1 = {};
       t1.sb_0 = P.StringBuffer$("");
       t1.i_1 = 0;
-      t2 = this._core$_arguments;
-      if (t2 != null) {
-        t3 = J.getInterceptor$asx(t2);
-        t4 = 0;
-        while (true) {
-          t5 = t3.get$length(t2);
-          if (typeof t5 !== "number")
-            return H.iae(t5);
-          if (!(t4 < t5))
-            break;
-          t4 = t1.i_1;
-          if (t4 > 0) {
-            t5 = t1.sb_0;
-            t5._contents += ", ";
-          }
+      for (t2 = this._core$_arguments, t3 = 0; t4 = t2.length, t3 < t4; t3 = ++t1.i_1) {
+        if (t3 > 0) {
           t5 = t1.sb_0;
-          str = P.Error_safeToString(t3.$index(t2, t4));
-          t5._contents += typeof str === "string" ? str : H.S(str);
-          t4 = ++t1.i_1;
+          t5._contents += ", ";
         }
+        t5 = t1.sb_0;
+        if (t3 < 0)
+          return H.ioore(t2, t3);
+        str = P.Error_safeToString(t2[t3]);
+        t5._contents += typeof str === "string" ? str : H.S(str);
       }
       this._namedArguments.forEach$1(0, new P.NoSuchMethodError_toString_closure(t1));
-      t2 = this._existingArgumentNames;
-      if (t2 == null)
-        return "NoSuchMethodError : method not found: '" + this._memberName.toString$0(0) + "'\nReceiver: " + H.S(P.Error_safeToString(this._core$_receiver)) + "\nArguments: [" + H.S(t1.sb_0) + "]";
-      else {
-        t3 = t1.sb_0._contents;
-        actualParameters = t3.charCodeAt(0) == 0 ? t3 : t3;
-        t1.sb_0 = P.StringBuffer$("");
-        t3 = J.getInterceptor$asx(t2);
-        i = 0;
-        while (true) {
-          t4 = t3.get$length(t2);
-          if (typeof t4 !== "number")
-            return H.iae(t4);
-          if (!(i < t4))
-            break;
-          if (i > 0) {
-            t4 = t1.sb_0;
-            t4._contents += ", ";
-          }
-          t4 = t1.sb_0;
-          str = t3.$index(t2, i);
-          t4._contents += typeof str === "string" ? str : H.S(str);
-          ++i;
-        }
-        t1 = t1.sb_0._contents;
-        formalParameters = t1.charCodeAt(0) == 0 ? t1 : t1;
-        t1 = this._memberName;
-        return "NoSuchMethodError: incorrect number of arguments passed to method named '" + t1.toString$0(0) + "'\nReceiver: " + H.S(P.Error_safeToString(this._core$_receiver)) + "\nTried calling: " + t1.toString$0(0) + "(" + H.S(actualParameters) + ")\nFound: " + t1.toString$0(0) + "(" + H.S(formalParameters) + ")";
-      }
+      return "NoSuchMethodError : method not found: '" + this._memberName.toString$0(0) + "'\nReceiver: " + H.S(P.Error_safeToString(this._core$_receiver)) + "\nArguments: [" + H.S(t1.sb_0) + "]";
     },
     static: {NoSuchMethodError$: function(receiver, memberName, positionalArguments, namedArguments, existingArgumentNames) {
         return new P.NoSuchMethodError(receiver, memberName, positionalArguments, namedArguments, existingArgumentNames);
@@ -7184,25 +7147,34 @@ var $$ = Object.create(null);
   FormatException: {
     "^": "Object;message,source,offset",
     toString$0: function(_) {
-      var t1, report, offset, source, lineNum, lineStart, lastWasCR, i, $char, lineEnd, end, start, prefix, postfix, slice;
+      var t1, report, offset, source, lineNum, lineStart, lastWasCR, i, $char, lineEnd, t2, end, start, prefix, postfix, slice;
       t1 = this.message;
       report = t1 != null && "" !== t1 ? "FormatException: " + H.S(t1) : "FormatException";
       offset = this.offset;
       source = this.source;
       if (typeof source !== "string")
         return offset != null ? report + (" (at offset " + H.S(offset) + ")") : report;
-      if (offset != null)
-        t1 = offset < 0 || offset > source.length;
-      else
+      if (offset != null) {
+        t1 = J.getInterceptor$n(offset);
+        t1 = t1.$lt(offset, 0) || t1.$gt(offset, J.get$length$asx(source));
+      } else
         t1 = false;
       if (t1)
         offset = null;
       if (offset == null) {
-        if (source.length > 78)
-          source = J.substring$2$s(source, 0, 75) + "...";
+        t1 = J.getInterceptor$asx(source);
+        if (J.$gt$n(t1.get$length(source), 78))
+          source = t1.substring$2(source, 0, 75) + "...";
         return report + "\n" + H.S(source);
       }
-      for (t1 = J.getInterceptor$s(source), lineNum = 1, lineStart = 0, lastWasCR = null, i = 0; i < offset; ++i) {
+      if (typeof offset !== "number")
+        return H.iae(offset);
+      t1 = J.getInterceptor$asx(source);
+      lineNum = 1;
+      lineStart = 0;
+      lastWasCR = null;
+      i = 0;
+      for (; i < offset; ++i) {
         $char = t1.codeUnitAt$1(source, i);
         if ($char === 10) {
           if (lineStart !== i || lastWasCR !== true)
@@ -7215,24 +7187,32 @@ var $$ = Object.create(null);
           lastWasCR = true;
         }
       }
-      report = lineNum > 1 ? report + (" (at line " + lineNum + ", character " + (offset - lineStart + 1) + ")\n") : report + (" (at character " + (offset + 1) + ")\n");
-      lineEnd = source.length;
-      for (i = offset; i < lineEnd; ++i) {
+      report = lineNum > 1 ? report + (" (at line " + lineNum + ", character " + H.S(offset - lineStart + 1) + ")\n") : report + (" (at character " + H.S(offset + 1) + ")\n");
+      lineEnd = t1.get$length(source);
+      i = offset;
+      while (true) {
+        t2 = t1.get$length(source);
+        if (typeof t2 !== "number")
+          return H.iae(t2);
+        if (!(i < t2))
+          break;
         $char = t1.codeUnitAt$1(source, i);
         if ($char === 10 || $char === 13) {
           lineEnd = i;
           break;
         }
+        ++i;
       }
-      if (lineEnd - lineStart > 78)
+      t2 = J.getInterceptor$n(lineEnd);
+      if (t2.$sub(lineEnd, lineStart) > 78)
         if (offset - lineStart < 75) {
           end = lineStart + 75;
           start = lineStart;
           prefix = "";
           postfix = "...";
         } else {
-          if (lineEnd - offset < 75) {
-            start = lineEnd - 75;
+          if (t2.$sub(lineEnd, offset) < 75) {
+            start = t2.$sub(lineEnd, 75);
             end = lineEnd;
             postfix = "";
           } else {
@@ -7394,7 +7374,7 @@ var $$ = Object.create(null);
     "^": "Object;"
   },
   Uri: {
-    "^": "Object;_host,_port,_path,scheme,_userInfo,_query,_fragment,_pathSegments,_queryParameters",
+    "^": "Object;_host,_port,_path,scheme<,_userInfo,_query,_fragment,_pathSegments,_queryParameters",
     get$host: function(_) {
       var t1, t2;
       t1 = this._host;
@@ -7520,7 +7500,7 @@ var $$ = Object.create(null);
           return 443;
         return 0;
       }, Uri_parse: function(uri) {
-        var t1, pathStart, state, t2, i, $char, index, t3, t4, path, numberSignIndex, query, fragment;
+        var t1, pathStart, state, t2, i, t3, $char, index, t4, path, numberSignIndex, query, fragment;
         t1 = {};
         t1.scheme_0 = "";
         t1.userinfo_1 = "";
@@ -7528,15 +7508,18 @@ var $$ = Object.create(null);
         t1.port_3 = null;
         t1.index_4 = 0;
         t1.char_5 = -1;
-        t2 = uri.length;
+        t2 = J.getInterceptor$asx(uri);
         i = 0;
         while (true) {
-          if (!(i < t2)) {
+          t3 = t2.get$length(uri);
+          if (typeof t3 !== "number")
+            return H.iae(t3);
+          if (!(i < t3)) {
             pathStart = 0;
             state = 0;
             break;
           }
-          $char = C.JSString_methods.codeUnitAt$1(uri, i);
+          $char = t2.codeUnitAt$1(uri, i);
           t1.char_5 = $char;
           if ($char === 63 || $char === 35) {
             pathStart = 0;
@@ -7553,11 +7536,11 @@ var $$ = Object.create(null);
               P.Uri__fail(uri, 0, "Invalid empty scheme");
             t1.scheme_0 = P.Uri__makeScheme(uri, i);
             ++i;
-            if (i === t2) {
+            if (i === t2.get$length(uri)) {
               t1.char_5 = -1;
               state = 0;
             } else {
-              $char = C.JSString_methods.codeUnitAt$1(uri, i);
+              $char = t2.codeUnitAt$1(uri, i);
               t1.char_5 = $char;
               if ($char === 63 || $char === 35)
                 state = 0;
@@ -7574,14 +7557,14 @@ var $$ = Object.create(null);
         if (state === 2) {
           index = i + 1;
           t1.index_4 = index;
-          if (index === t2) {
+          if (index === t2.get$length(uri)) {
             t1.char_5 = -1;
             state = 0;
           } else {
-            $char = C.JSString_methods.codeUnitAt$1(uri, index);
+            $char = t2.codeUnitAt$1(uri, t1.index_4);
             t1.char_5 = $char;
             if ($char === 47) {
-              ++t1.index_4;
+              t1.index_4 = J.$add$ns(t1.index_4, 1);
               new P.Uri_parse_parseAuth(t1, uri, -1).call$0();
               pathStart = t1.index_4;
             }
@@ -7590,8 +7573,15 @@ var $$ = Object.create(null);
           }
         }
         if (state === 1)
-          for (; t3 = ++t1.index_4, t3 < t2;) {
-            $char = C.JSString_methods.codeUnitAt$1(uri, t3);
+          while (true) {
+            index = J.$add$ns(t1.index_4, 1);
+            t1.index_4 = index;
+            t3 = t2.get$length(uri);
+            if (typeof t3 !== "number")
+              return H.iae(t3);
+            if (!(index < t3))
+              break;
+            $char = t2.codeUnitAt$1(uri, t1.index_4);
             t1.char_5 = $char;
             if ($char === 63 || $char === 35)
               break;
@@ -7602,17 +7592,17 @@ var $$ = Object.create(null);
         path = P.Uri__makePath(uri, pathStart, t1.index_4, null, t4 != null, t3 === "file");
         t3 = t1.char_5;
         if (t3 === 63) {
-          numberSignIndex = C.JSString_methods.indexOf$2(uri, "#", t1.index_4 + 1);
+          numberSignIndex = t2.indexOf$2(uri, "#", J.$add$ns(t1.index_4, 1));
           t3 = t1.index_4;
           if (numberSignIndex < 0) {
-            query = P.Uri__makeQuery(uri, t3 + 1, t2, null);
+            query = P.Uri__makeQuery(uri, J.$add$ns(t3, 1), t2.get$length(uri), null);
             fragment = null;
           } else {
-            query = P.Uri__makeQuery(uri, t3 + 1, numberSignIndex, null);
-            fragment = P.Uri__makeFragment(uri, numberSignIndex + 1, t2);
+            query = P.Uri__makeQuery(uri, J.$add$ns(t3, 1), numberSignIndex, null);
+            fragment = P.Uri__makeFragment(uri, numberSignIndex + 1, t2.get$length(uri));
           }
         } else {
-          fragment = t3 === 35 ? P.Uri__makeFragment(uri, t1.index_4 + 1, t2) : null;
+          fragment = t3 === 35 ? P.Uri__makeFragment(uri, J.$add$ns(t1.index_4, 1), t2.get$length(uri)) : null;
           query = null;
         }
         t2 = t1.scheme_0;
@@ -7625,46 +7615,47 @@ var $$ = Object.create(null);
           return;
         return port;
       }, Uri__makeHost: function(host, start, end, strictIPv6) {
-        var t1, i;
+        var t1, t2, i;
         if (host == null)
           return;
-        if (start === end)
+        if (start == null ? end == null : start === end)
           return "";
-        if (C.JSString_methods.codeUnitAt$1(host, start) === 91) {
-          t1 = end - 1;
-          if (C.JSString_methods.codeUnitAt$1(host, t1) !== 93)
+        t1 = J.getInterceptor$s(host);
+        if (t1.codeUnitAt$1(host, start) === 91) {
+          t2 = J.getInterceptor$n(end);
+          if (t1.codeUnitAt$1(host, t2.$sub(end, 1)) !== 93)
             P.Uri__fail(host, start, "Missing end `]` to match `[` in host");
-          P.Uri_parseIPv6Address(host, start + 1, t1);
-          return C.JSString_methods.substring$2(host, start, end).toLowerCase();
+          P.Uri_parseIPv6Address(host, J.$add$ns(start, 1), t2.$sub(end, 1));
+          return t1.substring$2(host, start, end).toLowerCase();
         }
         if (!strictIPv6)
-          for (i = start; i < end; ++i)
-            if (C.JSString_methods.codeUnitAt$1(host, i) === 58) {
+          for (i = start; t2 = J.getInterceptor$n(i), t2.$lt(i, end); i = t2.$add(i, 1))
+            if (t1.codeUnitAt$1(host, i) === 58) {
               P.Uri_parseIPv6Address(host, start, end);
-              return "[" + host + "]";
+              return "[" + H.S(host) + "]";
             }
         return P.Uri__normalizeRegName(host, start, end);
       }, Uri__normalizeRegName: function(host, start, end) {
-        var index, sectionStart, buffer, isNormalized, $char, replacement, t1, slice, sourceLength, tail;
-        for (index = start, sectionStart = index, buffer = null, isNormalized = true; index < end;) {
-          $char = C.JSString_methods.codeUnitAt$1(host, index);
+        var t1, index, sectionStart, buffer, isNormalized, t2, $char, replacement, t3, slice, sourceLength, tail;
+        for (t1 = J.getInterceptor$s(host), index = start, sectionStart = index, buffer = null, isNormalized = true; t2 = J.getInterceptor$n(index), t2.$lt(index, end);) {
+          $char = t1.codeUnitAt$1(host, index);
           if ($char === 37) {
             replacement = P.Uri__normalizeEscape(host, index, true);
-            t1 = replacement == null;
-            if (t1 && isNormalized) {
-              index += 3;
+            t3 = replacement == null;
+            if (t3 && isNormalized) {
+              index = t2.$add(index, 3);
               continue;
             }
             if (buffer == null) {
               buffer = new P.StringBuffer("");
               buffer._contents = "";
             }
-            slice = C.JSString_methods.substring$2(host, sectionStart, index);
+            slice = t1.substring$2(host, sectionStart, index);
             if (!isNormalized)
               slice = slice.toLowerCase();
             buffer._contents = buffer._contents + slice;
-            if (t1) {
-              replacement = C.JSString_methods.substring$2(host, index, index + 3);
+            if (t3) {
+              replacement = t1.substring$2(host, index, t2.$add(index, 3));
               sourceLength = 3;
             } else if (replacement === "%") {
               replacement = "%25";
@@ -7672,44 +7663,51 @@ var $$ = Object.create(null);
             } else
               sourceLength = 3;
             buffer._contents += replacement;
-            index += sourceLength;
+            index = t2.$add(index, sourceLength);
             sectionStart = index;
             isNormalized = true;
           } else {
             if ($char < 127) {
-              t1 = $char >>> 4;
-              if (t1 >= 8)
-                return H.ioore(C.List_qNA, t1);
-              t1 = (C.List_qNA[t1] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
+              t3 = $char >>> 4;
+              if (t3 >= 8)
+                return H.ioore(C.List_qNA, t3);
+              t3 = (C.List_qNA[t3] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
             } else
-              t1 = false;
-            if (t1) {
+              t3 = false;
+            if (t3) {
               if (isNormalized && 65 <= $char && 90 >= $char) {
                 if (buffer == null) {
                   buffer = new P.StringBuffer("");
                   buffer._contents = "";
                 }
-                if (sectionStart < index) {
-                  t1 = C.JSString_methods.substring$2(host, sectionStart, index);
-                  buffer._contents = buffer._contents + t1;
+                if (J.$lt$n(sectionStart, index)) {
+                  t3 = t1.substring$2(host, sectionStart, index);
+                  buffer._contents = buffer._contents + t3;
                   sectionStart = index;
                 }
                 isNormalized = false;
               }
-              ++index;
+              index = t2.$add(index, 1);
             } else {
               if ($char <= 93) {
-                t1 = $char >>> 4;
-                if (t1 >= 8)
-                  return H.ioore(C.List_2Vk, t1);
-                t1 = (C.List_2Vk[t1] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
+                t3 = $char >>> 4;
+                if (t3 >= 8)
+                  return H.ioore(C.List_2Vk, t3);
+                t3 = (C.List_2Vk[t3] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
               } else
-                t1 = false;
-              if (t1)
+                t3 = false;
+              if (t3)
                 P.Uri__fail(host, index, "Invalid character");
               else {
-                if (($char & 64512) === 55296 && index + 1 < end) {
-                  tail = C.JSString_methods.codeUnitAt$1(host, index + 1);
+                if (($char & 64512) === 55296) {
+                  t3 = t2.$add(index, 1);
+                  if (typeof end !== "number")
+                    return H.iae(end);
+                  t3 = t3 < end;
+                } else
+                  t3 = false;
+                if (t3) {
+                  tail = t1.codeUnitAt$1(host, t2.$add(index, 1));
                   if ((tail & 64512) === 56320) {
                     $char = (65536 | ($char & 1023) << 10 | tail & 1023) >>> 0;
                     sourceLength = 2;
@@ -7721,53 +7719,57 @@ var $$ = Object.create(null);
                   buffer = new P.StringBuffer("");
                   buffer._contents = "";
                 }
-                slice = C.JSString_methods.substring$2(host, sectionStart, index);
+                slice = t1.substring$2(host, sectionStart, index);
                 if (!isNormalized)
                   slice = slice.toLowerCase();
                 buffer._contents = buffer._contents + slice;
-                t1 = P.Uri__escapeChar($char);
-                buffer._contents += t1;
-                index += sourceLength;
+                t3 = P.Uri__escapeChar($char);
+                buffer._contents += t3;
+                index = t2.$add(index, sourceLength);
                 sectionStart = index;
               }
             }
           }
         }
         if (buffer == null)
-          return C.JSString_methods.substring$2(host, start, end);
-        if (sectionStart < end) {
-          slice = C.JSString_methods.substring$2(host, sectionStart, end);
+          return t1.substring$2(host, start, end);
+        if (J.$lt$n(sectionStart, end)) {
+          slice = t1.substring$2(host, sectionStart, end);
           buffer.write$1(!isNormalized ? slice.toLowerCase() : slice);
         }
         t1 = buffer._contents;
         return t1.charCodeAt(0) == 0 ? t1 : t1;
       }, Uri__makeScheme: function(scheme, end) {
-        var firstCodeUnit, allLowercase, t1, i, codeUnit;
+        var t1, firstCodeUnit, allLowercase, t2, i, codeUnit;
         if (end === 0)
           return "";
-        firstCodeUnit = J.getInterceptor$s(scheme).codeUnitAt$1(scheme, 0);
+        t1 = J.getInterceptor$s(scheme);
+        firstCodeUnit = t1.codeUnitAt$1(scheme, 0);
         allLowercase = firstCodeUnit >= 97;
         if (!(allLowercase && firstCodeUnit <= 122))
-          t1 = firstCodeUnit >= 65 && firstCodeUnit <= 90;
+          t2 = firstCodeUnit >= 65 && firstCodeUnit <= 90;
         else
-          t1 = true;
-        if (!t1)
+          t2 = true;
+        if (!t2)
           P.Uri__fail(scheme, 0, "Scheme not starting with alphabetic character");
-        for (i = 0; i < end; ++i) {
-          codeUnit = C.JSString_methods.codeUnitAt$1(scheme, i);
+        if (typeof end !== "number")
+          return H.iae(end);
+        i = 0;
+        for (; i < end; ++i) {
+          codeUnit = t1.codeUnitAt$1(scheme, i);
           if (codeUnit < 128) {
-            t1 = codeUnit >>> 4;
-            if (t1 >= 8)
-              return H.ioore(C.List_JYB, t1);
-            t1 = (C.List_JYB[t1] & C.JSInt_methods._shlPositive$1(1, codeUnit & 15)) !== 0;
+            t2 = codeUnit >>> 4;
+            if (t2 >= 8)
+              return H.ioore(C.List_JYB, t2);
+            t2 = (C.List_JYB[t2] & C.JSInt_methods._shlPositive$1(1, codeUnit & 15)) !== 0;
           } else
-            t1 = false;
-          if (!t1)
+            t2 = false;
+          if (!t2)
             P.Uri__fail(scheme, i, "Illegal scheme character");
           if (codeUnit < 97 || codeUnit > 122)
             allLowercase = false;
         }
-        scheme = C.JSString_methods.substring$2(scheme, 0, end);
+        scheme = t1.substring$2(scheme, 0, end);
         return !allLowercase ? scheme.toLowerCase() : scheme;
       }, Uri__makeUserInfo: function(userInfo, start, end) {
         if (userInfo == null)
@@ -7819,26 +7821,31 @@ var $$ = Object.create(null);
           return $char - 48;
         return ($char | 32) - 87;
       }, Uri__normalizeEscape: function(source, index, lowerCase) {
-        var t1, firstDigit, secondDigit, value;
-        t1 = index + 2;
-        if (t1 >= source.length)
+        var t1, t2, t3, t4, firstDigit, secondDigit, value;
+        t1 = J.getInterceptor$ns(index);
+        t2 = t1.$add(index, 2);
+        t3 = J.getInterceptor$asx(source);
+        t4 = t3.get$length(source);
+        if (typeof t4 !== "number")
+          return H.iae(t4);
+        if (t2 >= t4)
           return "%";
-        firstDigit = C.JSString_methods.codeUnitAt$1(source, index + 1);
-        secondDigit = C.JSString_methods.codeUnitAt$1(source, t1);
+        firstDigit = t3.codeUnitAt$1(source, t1.$add(index, 1));
+        secondDigit = t3.codeUnitAt$1(source, t1.$add(index, 2));
         if (!P.Uri__isHexDigit(firstDigit) || !P.Uri__isHexDigit(secondDigit))
           return "%";
         value = P.Uri__hexValue(firstDigit) * 16 + P.Uri__hexValue(secondDigit);
         if (value < 127) {
-          t1 = C.JSInt_methods._shrOtherPositive$1(value, 4);
-          if (t1 >= 8)
-            return H.ioore(C.List_nxB, t1);
-          t1 = (C.List_nxB[t1] & C.JSInt_methods._shlPositive$1(1, value & 15)) !== 0;
+          t2 = C.JSInt_methods._shrOtherPositive$1(value, 4);
+          if (t2 >= 8)
+            return H.ioore(C.List_nxB, t2);
+          t2 = (C.List_nxB[t2] & C.JSInt_methods._shlPositive$1(1, value & 15)) !== 0;
         } else
-          t1 = false;
-        if (t1)
+          t2 = false;
+        if (t2)
           return H.Primitives_stringFromCharCode(lowerCase && 65 <= value && 90 >= value ? (value | 32) >>> 0 : value);
         if (firstDigit >= 97 || secondDigit >= 97)
-          return C.JSString_methods.substring$2(source, index, index + 3).toUpperCase();
+          return t3.substring$2(source, index, t1.$add(index, 3)).toUpperCase();
         return;
       }, Uri__escapeChar: function($char) {
         var codeUnits, flag, encodedBytes, t1, index, $byte, t2, t3;
@@ -7884,23 +7891,23 @@ var $$ = Object.create(null);
         }
         return P.String_String$fromCharCodes(codeUnits, 0, null);
       }, Uri__normalize: function(component, start, end, charTable) {
-        var index, sectionStart, buffer, $char, t1, replacement, sourceLength, tail;
-        for (index = start, sectionStart = index, buffer = null; index < end;) {
-          $char = C.JSString_methods.codeUnitAt$1(component, index);
+        var t1, index, sectionStart, buffer, t2, $char, t3, replacement, sourceLength, tail;
+        for (t1 = J.getInterceptor$s(component), index = start, sectionStart = index, buffer = null; t2 = J.getInterceptor$n(index), t2.$lt(index, end);) {
+          $char = t1.codeUnitAt$1(component, index);
           if ($char < 127) {
-            t1 = $char >>> 4;
-            if (t1 >= 8)
-              return H.ioore(charTable, t1);
-            t1 = (charTable[t1] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
+            t3 = $char >>> 4;
+            if (t3 >= 8)
+              return H.ioore(charTable, t3);
+            t3 = (charTable[t3] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
           } else
-            t1 = false;
-          if (t1)
-            ++index;
+            t3 = false;
+          if (t3)
+            index = t2.$add(index, 1);
           else {
             if ($char === 37) {
               replacement = P.Uri__normalizeEscape(component, index, false);
               if (replacement == null) {
-                index += 3;
+                index = t2.$add(index, 3);
                 continue;
               }
               if ("%" === replacement) {
@@ -7910,21 +7917,23 @@ var $$ = Object.create(null);
                 sourceLength = 3;
             } else {
               if ($char <= 93) {
-                t1 = $char >>> 4;
-                if (t1 >= 8)
-                  return H.ioore(C.List_2Vk, t1);
-                t1 = (C.List_2Vk[t1] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
+                t3 = $char >>> 4;
+                if (t3 >= 8)
+                  return H.ioore(C.List_2Vk, t3);
+                t3 = (C.List_2Vk[t3] & C.JSInt_methods._shlPositive$1(1, $char & 15)) !== 0;
               } else
-                t1 = false;
-              if (t1) {
+                t3 = false;
+              if (t3) {
                 P.Uri__fail(component, index, "Invalid character");
                 replacement = null;
                 sourceLength = null;
               } else {
                 if (($char & 64512) === 55296) {
-                  t1 = index + 1;
-                  if (t1 < end) {
-                    tail = C.JSString_methods.codeUnitAt$1(component, t1);
+                  t3 = t2.$add(index, 1);
+                  if (typeof end !== "number")
+                    return H.iae(end);
+                  if (t3 < end) {
+                    tail = t1.codeUnitAt$1(component, t2.$add(index, 1));
                     if ((tail & 64512) === 56320) {
                       $char = (65536 | ($char & 1023) << 10 | tail & 1023) >>> 0;
                       sourceLength = 2;
@@ -7941,19 +7950,17 @@ var $$ = Object.create(null);
               buffer = new P.StringBuffer("");
               buffer._contents = "";
             }
-            t1 = C.JSString_methods.substring$2(component, sectionStart, index);
-            buffer._contents = buffer._contents + t1;
+            t3 = t1.substring$2(component, sectionStart, index);
+            buffer._contents = buffer._contents + t3;
             buffer._contents += typeof replacement === "string" ? replacement : H.S(replacement);
-            if (typeof sourceLength !== "number")
-              return H.iae(sourceLength);
-            index += sourceLength;
+            index = t2.$add(index, sourceLength);
             sectionStart = index;
           }
         }
         if (buffer == null)
-          return C.JSString_methods.substring$2(component, start, end);
-        if (sectionStart < end)
-          buffer.write$1(C.JSString_methods.substring$2(component, sectionStart, end));
+          return t1.substring$2(component, start, end);
+        if (J.$lt$n(sectionStart, end))
+          buffer.write$1(t1.substring$2(component, sectionStart, end));
         t1 = buffer._contents;
         return t1.charCodeAt(0) == 0 ? t1 : t1;
       }, Uri_splitQueryString: function(query, encoding) {
@@ -7971,36 +7978,28 @@ var $$ = Object.create(null);
           end = J.get$length$asx(host);
         error = new P.Uri_parseIPv6Address_error(host);
         parseHex = new P.Uri_parseIPv6Address_parseHex(host, error);
-        if (J.get$length$asx(host) < 2)
+        if (J.$lt$n(J.get$length$asx(host), 2))
           error.call$1("address is too short");
         parts = [];
         partStart = start;
-        i = start;
-        wildcardSeen = false;
-        while (true) {
-          t1 = end;
-          if (typeof t1 !== "number")
-            return H.iae(t1);
-          if (!(i < t1))
-            break;
+        for (i = start, wildcardSeen = false; t1 = J.getInterceptor$n(i), t1.$lt(i, end); i = J.$add$ns(i, 1))
           if (J.codeUnitAt$1$s(host, i) === 58) {
-            if (i === start) {
-              ++i;
+            if (i == null ? start == null : i === start) {
+              i = t1.$add(i, 1);
               if (J.codeUnitAt$1$s(host, i) !== 58)
                 error.call$2("invalid start colon.", i);
               partStart = i;
             }
-            if (i === partStart) {
+            t1 = partStart;
+            if (i == null ? t1 == null : i === t1) {
               if (wildcardSeen)
                 error.call$2("only one wildcard `::` is allowed", i);
               J.add$1$ax(parts, -1);
               wildcardSeen = true;
             } else
               J.add$1$ax(parts, parseHex.call$2(partStart, i));
-            partStart = i + 1;
+            partStart = J.$add$ns(i, 1);
           }
-          ++i;
-        }
         if (J.get$length$asx(parts) === 0)
           error.call$1("too few parts");
         atEnd = J.$eq(partStart, end);
@@ -8179,18 +8178,20 @@ var $$ = Object.create(null);
   Uri_parse_parseAuth: {
     "^": "Closure:12;box_0,uri_1,EOI_2",
     call$0: function() {
-      var t1, hostStart, t2, t3, $char, lastColon, lastAt, t4, char0, endBracket, hostEnd, i, portNumber, digit;
+      var t1, t2, t3, t4, t5, authStart, $char, lastColon, lastAt, char0, endBracket, hostEnd, hostStart, t6, i, portNumber, digit;
       t1 = this.box_0;
-      hostStart = t1.index_4;
-      t2 = this.uri_1;
-      t3 = t2.length;
-      if (hostStart === t3) {
+      t2 = t1.index_4;
+      t3 = this.uri_1;
+      t4 = J.getInterceptor$asx(t3);
+      t5 = t4.get$length(t3);
+      if (t2 == null ? t5 == null : t2 === t5) {
         t1.char_5 = this.EOI_2;
         return;
       }
-      t1.char_5 = J.getInterceptor$s(t2).codeUnitAt$1(t2, hostStart);
-      for ($char = this.EOI_2, lastColon = -1, lastAt = -1; t4 = t1.index_4, t4 < t3;) {
-        char0 = C.JSString_methods.codeUnitAt$1(t2, t4);
+      authStart = t1.index_4;
+      t1.char_5 = t4.codeUnitAt$1(t3, authStart);
+      for ($char = this.EOI_2, lastColon = -1, lastAt = -1; J.$lt$n(t1.index_4, t4.get$length(t3));) {
+        char0 = t4.codeUnitAt$1(t3, t1.index_4);
         t1.char_5 = char0;
         if (char0 === 47 || char0 === 63 || char0 === 35)
           break;
@@ -8200,9 +8201,9 @@ var $$ = Object.create(null);
         } else if (char0 === 58)
           lastColon = t1.index_4;
         else if (char0 === 91) {
-          endBracket = C.JSString_methods.indexOf$2(t2, "]", t1.index_4 + 1);
+          endBracket = t4.indexOf$2(t3, "]", J.$add$ns(t1.index_4, 1));
           if (endBracket === -1) {
-            t1.index_4 = t3;
+            t1.index_4 = t4.get$length(t3);
             t1.char_5 = $char;
             lastColon = -1;
             break;
@@ -8210,32 +8211,45 @@ var $$ = Object.create(null);
             t1.index_4 = endBracket;
           lastColon = -1;
         }
-        ++t1.index_4;
+        t1.index_4 = J.$add$ns(t1.index_4, 1);
         t1.char_5 = $char;
       }
       hostEnd = t1.index_4;
-      if (lastAt >= 0) {
-        t1.userinfo_1 = P.Uri__makeUserInfo(t2, hostStart, lastAt);
-        hostStart = lastAt + 1;
-      }
-      if (lastColon >= 0) {
-        i = lastColon + 1;
-        if (i < t1.index_4)
-          for (portNumber = 0; i < t1.index_4; ++i) {
-            digit = C.JSString_methods.codeUnitAt$1(t2, i);
+      t2 = J.getInterceptor$n(lastAt);
+      if (t2.$ge(lastAt, 0)) {
+        t1.userinfo_1 = P.Uri__makeUserInfo(t3, authStart, lastAt);
+        hostStart = t2.$add(lastAt, 1);
+      } else
+        hostStart = authStart;
+      t2 = J.getInterceptor$n(lastColon);
+      if (t2.$ge(lastColon, 0)) {
+        t5 = t2.$add(lastColon, 1);
+        t6 = t1.index_4;
+        if (typeof t6 !== "number")
+          return H.iae(t6);
+        if (t5 < t6) {
+          i = t2.$add(lastColon, 1);
+          portNumber = 0;
+          while (true) {
+            t2 = t1.index_4;
+            if (typeof t2 !== "number")
+              return H.iae(t2);
+            if (!(i < t2))
+              break;
+            digit = t4.codeUnitAt$1(t3, i);
             if (48 > digit || 57 < digit)
-              P.Uri__fail(t2, i, "Invalid port number");
+              P.Uri__fail(t3, i, "Invalid port number");
             portNumber = portNumber * 10 + (digit - 48);
+            ++i;
           }
-        else
+        } else
           portNumber = null;
         t1.port_3 = P.Uri__makePort(portNumber, t1.scheme_0);
         hostEnd = lastColon;
       }
-      t1.host_2 = P.Uri__makeHost(t2, hostStart, hostEnd, true);
-      t4 = t1.index_4;
-      if (t4 < t3)
-        t1.char_5 = C.JSString_methods.codeUnitAt$1(t2, t4);
+      t1.host_2 = P.Uri__makeHost(t3, hostStart, hostEnd, true);
+      if (J.$lt$n(t1.index_4, t4.get$length(t3)))
+        t1.char_5 = t4.codeUnitAt$1(t3, t1.index_4);
     }
   },
   Uri__makePath_closure: {
@@ -8315,9 +8329,9 @@ var $$ = Object.create(null);
     "^": "Closure:60;host_1,error_2",
     call$2: function(start, end) {
       var value, t1;
-      if (end - start > 4)
+      if (J.$sub$n(end, start) > 4)
         this.error_2.call$2("an IPv6 part can only contain a maximum of 4 hex digits", start);
-      value = H.Primitives_parseInt(C.JSString_methods.substring$2(this.host_1, start, end), 16, null);
+      value = H.Primitives_parseInt(J.substring$2$s(this.host_1, start, end), 16, null);
       t1 = J.getInterceptor$n(value);
       if (t1.$lt(value, 0) || t1.$gt(value, 65535))
         this.error_2.call$2("each part must be in the range of `0x0..0xFFFF`", start);
@@ -9283,6 +9297,9 @@ var $$ = Object.create(null);
         return false;
       return !!J.getInterceptor(other).$isJsObject && this._jsObject === other._jsObject;
     },
+    hasProperty$1: function(property) {
+      return property in this._jsObject;
+    },
     toString$0: function(_) {
       var t1, exception;
       try {
@@ -9309,7 +9326,7 @@ var $$ = Object.create(null);
     "^": "JsObject_ListMixin;_jsObject",
     $index: function(_, index) {
       var t1;
-      if (typeof index === "number" && index === C.JSInt_methods.toInt$0(index)) {
+      if (typeof index === "number" && index === C.JSNumber_methods.toInt$0(index)) {
         if (typeof index === "number" && Math.floor(index) === index)
           t1 = index < 0 || index >= this.get$length(this);
         else
@@ -9721,9 +9738,9 @@ var $$ = Object.create(null);
     t2 = buffer._contents;
     t1.textContent = t2.charCodeAt(0) == 0 ? t2 : t2;
   }, "call$1", "reverseText$closure", 2, 0, 32, 33],
-  removeURLRedirect: function(originalURL) {
-    var t1, t2;
-    t1 = P.Uri_parse(originalURL);
+  removeUrlRedirect: function(originalUrl) {
+    var t1, t2, finalUrl, base64Uri, param;
+    t1 = P.Uri_parse(originalUrl);
     t2 = t1._queryParameters;
     if (t2 == null) {
       t2 = t1._query;
@@ -9732,17 +9749,70 @@ var $$ = Object.create(null);
       t1 = t2;
     } else
       t1 = t2;
-    J.forEach$1$ax(t1._map, new L.removeURLRedirect_closure());
-    return originalURL;
+    if (!!J.getInterceptor(t1).$isMap) {
+      t1 = J.get$iterator$ax(J.get$values$x(t1._map));
+      base64Uri = null;
+      while (true) {
+        if (!t1.moveNext$0()) {
+          finalUrl = null;
+          break;
+        }
+        param = t1.get$current();
+        t2 = J.getInterceptor$s(param);
+        if (C.JSString_methods.startsWith$1(t2.toLowerCase$0(param), "www") || C.JSString_methods.startsWith$1(t2.toLowerCase$0(param), "http")) {
+          finalUrl = param;
+          break;
+        }
+        if (L.base64Decode(param) != null)
+          t2 = C.JSString_methods.startsWith$1(J.toLowerCase$0$s(L.base64Decode(param)), "www") || C.JSString_methods.startsWith$1(J.toLowerCase$0$s(L.base64Decode(param)), "http");
+        else
+          t2 = false;
+        if (t2)
+          base64Uri = L.base64Decode(param);
+      }
+    } else {
+      finalUrl = null;
+      base64Uri = null;
+    }
+    finalUrl = L.setUriSchemeToHttp(finalUrl != null ? finalUrl : base64Uri);
+    finalUrl = finalUrl != null ? finalUrl : originalUrl;
+    P.print("removeUrlRediriect \n      originalUrl: " + H.S(originalUrl) + " \n  became finalUrl: " + H.S(finalUrl));
+    return finalUrl;
   },
-  findURLRedirect: function(val) {
-    if (C.JSString_methods.startsWith$1(J.toLowerCase$0$s(val), "www"))
-      return val;
-    if (C.JSString_methods.startsWith$1(J.toLowerCase$0$s(val), "http"))
-      return val;
-    if (J.startsWith$1$s($.get$context().callMethod$2("btoa", [H.S(val)]), "www"))
-      return val;
-    return H.throwNoSuchMethod("", "originalURL", [], null);
+  setUriSchemeToHttp: function(originalURL) {
+    var finalURL, parsedUri, exception;
+    finalURL = originalURL;
+    parsedUri = null;
+    try {
+      parsedUri = P.Uri_parse(originalURL);
+      parsedUri.get$scheme();
+    } catch (exception) {
+      H.unwrapException(exception);
+    }
+
+    return finalURL;
+  },
+  base64Decode: function(val) {
+    var jsHasAtob, e, exception, t1;
+    jsHasAtob = null;
+    try {
+      jsHasAtob = $.get$context().hasProperty$1("atob");
+    } catch (exception) {
+      t1 = H.unwrapException(exception);
+      e = t1;
+      throw H.wrapException(P.StateError$("Dart -> JavaScript interop not initialised.  Try changing your html to include <script src=\"packages/browser/inteerop.js\"></script>);  Original error: " + H.S(e)));
+    }
+
+    if (jsHasAtob === true)
+      try {
+        t1 = $.get$context().callMethod$2("atob", [H.S(val)]);
+        return t1;
+      } catch (exception) {
+        H.unwrapException(exception);
+        return;
+      }
+
+    throw H.wrapException(P.StateError$("Dart -> JavaScript interop not accepting calls to atob().  Try changing your html to include <script src=\"packages/browser/inteerop.js\"></script>);"));
   },
   iterateHTMLDOM: function(DOM, process) {
     var t1;
@@ -9763,14 +9833,8 @@ var $$ = Object.create(null);
   main__closure: {
     "^": "Closure:29;",
     call$1: function(url) {
-      return L.removeURLRedirect(url);
+      return L.removeUrlRedirect(url);
     }
-  },
-  removeURLRedirect_closure: {
-    "^": "Closure:37;",
-    call$2: [function(arg, val) {
-      return L.findURLRedirect(val);
-    }, "call$2", null, 4, 0, null, 49, 36, "call"]
   },
   iterateHTMLDOM_closure: {
     "^": "Closure:29;process_0",
@@ -9792,12 +9856,12 @@ $$ = null;
   _.$isComparable = TRUE;
   _.$asComparable = [P.num];
   _.$isObject = TRUE;
+  _ = W.Node;
+  _.$isNode = TRUE;
+  _.$isObject = TRUE;
   _ = P.$double;
   _.$isComparable = TRUE;
   _.$asComparable = [P.num];
-  _.$isObject = TRUE;
-  _ = W.Node;
-  _.$isNode = TRUE;
   _.$isObject = TRUE;
   _ = P.String;
   _.$isString = TRUE;
@@ -9848,11 +9912,6 @@ $$ = null;
   _.$isElement = TRUE;
   _.$isNode = TRUE;
   _.$isObject = TRUE;
-  _ = P.DateTime;
-  _.$isDateTime = TRUE;
-  _.$isComparable = TRUE;
-  _.$asComparable = [null];
-  _.$isObject = TRUE;
   _ = P._DelayedEvent;
   _.$is_DelayedEvent = TRUE;
   _.$isObject = TRUE;
@@ -9861,6 +9920,11 @@ $$ = null;
   _.$isObject = TRUE;
   _ = P.AsyncError;
   _.$isAsyncError = TRUE;
+  _.$isObject = TRUE;
+  _ = P.DateTime;
+  _.$isDateTime = TRUE;
+  _.$isComparable = TRUE;
+  _.$asComparable = [null];
   _.$isObject = TRUE;
 })();
 ;
