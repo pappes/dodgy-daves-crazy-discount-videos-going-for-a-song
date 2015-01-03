@@ -1,14 +1,10 @@
-name: 'playpenHtml'
+name: playpenHtml
 version: 0.0.1
-description: >
-  An absolute bare-bones web app.
-#author: <your name> <email@example.com>
-#homepage: https://www.example.com
+description: An absolute bare-bones web app.
 environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
   browser: any
-  pappes_utility:
-    path: ../../../aarvark/dart/pappes_utility
+  http: any
   pappes_web_utility:
     path: ../../../aarvark/dart/pappes_web_utility
