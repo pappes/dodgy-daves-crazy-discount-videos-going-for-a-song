@@ -2,14 +2,6 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:html';
-import 'package:http/http.dart' as http;
-import 'package:http/browser_client.dart' as http;
-/* import 'package:http/http.dart' as http;
- * works if `dart:io` is available and throw an [UnsupportedError] otherwise
- */
-/*dart:io not allowed in dartium
- * 
- import 'dart:io' ;//this is used by http.dart*/
 //import 'dart:async';
 
 import 'package:pappes_web_utility/pappes_web_utility.dart';
@@ -40,7 +32,7 @@ void whitelistElementAndParents(Element e, Set s ) {
   }
 
   
-  void addIFrameToBody (String contents){
+  void embedIFrameInBody (String contents){
     String fragment = '<iframe src=\'$contents\'>';
     fragment = modifyHtml(fragment);
     Element iframeElement = MyHtml.createElementFromHTML(fragment);
@@ -50,7 +42,7 @@ void whitelistElementAndParents(Element e, Set s ) {
   buildFrameAsHtml(Element e) {
       String src;
       if (e.attributes['src'].contains('</html>'))
-        addIFrameToBody(e.attributes['src']);
+        embedIFrameInBody(e.attributes['src']);
       else{
         //unable to load external web site content
 //        addIFrameToBody(' data:text/html,'+contents);
@@ -77,15 +69,15 @@ void whitelistElementAndParents(Element e, Set s ) {
 
 
   //pull down each iframe and add it to the body
-  //querySelectorAll('iframe').toList().forEach(buildFrameAsHtml);
+    //querySelectorAll('iframe').toList().forEach(buildFrameAsHtml);
 
   //pull down each iframe and add it to the body
- /* for (Element e in querySelectorAll('iframe')) {
-    if (document.locatioun.domain != e.attributes['src'].domain) {
-      document.locatioun.domain = e.attributes['src'].domain;
+  for (Element e in querySelectorAll('iframe').where((e) => e.width > 400)) {
+    if (Uri.parse(window.location.href).host != Uri.parse(e.attributes['src']).host) {
+      window.location.assign(e.attributes['src']);
       break;
   }
-  });*/
+  }
   }
 //      var client = new http.BrowserClient();
 //      client.read(e.attributes['src']).then((contents) { 
