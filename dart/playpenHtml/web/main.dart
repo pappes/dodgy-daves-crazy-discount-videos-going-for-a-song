@@ -148,5 +148,6 @@ void whitelistElementAndParents(Element e, Set s ) {
 
 void main() {
   querySelector('#output').text = 'Dart is running.';
+  MyHtml.removeAllOverlays(document);
 
 }
