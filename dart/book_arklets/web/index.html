@@ -40,8 +40,8 @@
       &quot;
       ">rotate an image 1.0</a>    
     </td>
-    </tr>
-    <tr>
+  </tr>
+  <tr>
     <td>
       <b>Description:</b>
       <br>
@@ -54,50 +54,248 @@
 </table></div>
 
 
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/remove_html_overlays.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>remove html overlays</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>strips back the current page to expose any iframe containing media</div>
+      </td>
+    </tr>
+  </table>
+</div>
 
 
 <div>
-<table>
-  <tr>
-    <td>
-      <b>Bookmarklet:</b> <a href="
-      javascript:(function(d){var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];s.src='http://pappes.github.io/book_arklets/build/web/remove_all_redirects.dart.js';h.appendChild(s);})(document);
-      ">
-        <nobr>Bookmarklet to inject and run remove_all_redirects.dart into the current page</nobr></a>
-    </td>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/remove_javascript.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>remove javascript</nobr></a>
+      </td>
     </tr>
     <tr>
-    <td><b>Description:</b><br><div>inserts http://pappes.github.io/book_arklets/build/web/remove_all_redirects.dart into the current page and runs it</div>
-    </td>
-  </tr>
-</table></div>
+      <td><b>Description:</b><br><div>strips all javascript source code from the current page</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/remove_javascript_timers.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>remove javascript timers</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>terminates all javascript that is queued to be run</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/remove_url_query_string.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>remove url query string</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>edits all URLs in that page to remove URL parmeters</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/remove_url_redirects.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>remove url redirects</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>edits all URLs in that page to prevent third part redirection (goes directly to the target)</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
 
 
 
 
 <div>
-<table>
-  <tr>
-    <td>
-      <b>Bookmarklet:</b> <a href="
-      javascript:(function(d){var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];s.src='http://pappes.github.io/bookmarklets/test.js';h.appendChild(s);})(document);
-      ">
-        <nobr>load and run a DART script</nobr></a>
-    </td>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/retarget_url_new_tab.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>link in new tab</nobr></a>
+      </td>
     </tr>
     <tr>
-    <td><b>Description:</b><br><div>inserts http://pappes.github.io/bookmarklets/test.js into the current page and runs it</div>
-    </td>
-  </tr>
-</table></div>
+      <td><b>Description:</b><br><div>change urls so that they open in a new tab</div>
+      </td>
+    </tr>
+  </table>
+</div>
 
 
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/retarget_url_self.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>url in current tab</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>change urls so that they open in a the current tab</div>
+      </td>
+    </tr>
+  </table>
+</div>
 
-  
-  
-  
-  
-  
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/set_log_level_all.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>log level all</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>log level that is most verbose</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/set_log_level_fine.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>log level fine</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>log level that is quite verbose</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/set_log_level_info.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>log level info</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>log level that is not very verbose</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div>
+  <table>
+    <tr>
+      <td>
+        <b>Bookmarklet:</b> <a href="
+        javascript:(function(d){
+          var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];
+          s.src='http://pappes.github.io/book_arklets/build/web/set_log_level_warn.dart.js';
+          h.appendChild(s);
+        })(document);
+        ">
+          <nobr>log level warn</nobr></a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Description:</b><br><div>log level that is very quite</div>
+      </td>
+    </tr>
+  </table>
+</div>
+
   
 
 <script type="application/dart" src="main.dart"></script>
