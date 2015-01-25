@@ -3,13 +3,20 @@ import 'dart:html';
 import 'package:pappes_web_utility/pappes_web_utility.dart';
 //import 'package:pappes_utility/pappes_utility.dart';
 
+removeRedirects(Event e) {
+  MyHtml.iterateHTMLDOM(document.body, (element) => MyHtml.alterAttribute(element, 'href', (url) => MyHtml.removeUrlRedirect(url)));  
+}
+
+
 void main() {
   /*querySelector("#sample_text_id")
       ..text = "Click me!"
       ..onClick.listen(reverseText);*/
   
-  MyHtml.iterateHTMLDOM(document.body, (element) => MyHtml.alterAttribute(element, 'href', (url) => MyHtml.removeUrlRedirect(url)));
+
+  querySelector('#removeAllRedirects').onClick.listen(removeRedirects);
 }
+
 
 /*void reverseText(MouseEvent event) {
   var text = querySelector("#sample_text_id").text;

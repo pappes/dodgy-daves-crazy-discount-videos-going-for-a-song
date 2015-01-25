@@ -1,24 +1,31 @@
 //import 'dart:js' as js;
 import 'dart:html';
-//import 'package:pappes_utility/pappes_utility.dart';
 import 'package:pappes_web_utility/pappes_web_utility.dart';
+//import 'package:pappes_utility/pappes_utility.dart';
 
-void main() {
-  querySelector("#sample_text_id")
-      ..text = "Click me!"
-      ..onClick.listen(reverseText);
-  
-  MyHtml.iterateHTMLDOM(document.body, (element) => MyHtml.alterAttribute(element, 'href', (url) => MyHtml.removeUrlRedirect(url)));
+removeRedirects(Event e) {
+  MyHtml.iterateHTMLDOM(document.body, (element) => MyHtml.alterAttribute(element, 'href', (url) => MyHtml.removeUrlRedirect(url)));  
 }
 
-void reverseText(MouseEvent event) {
+
+void main() {
+  /*querySelector("#sample_text_id")
+      ..text = "Click me!"
+      ..onClick.listen(reverseText);*/
+  
+
+  querySelector('#generateButton').onClick.listen(removeRedirects);
+}
+
+
+/*void reverseText(MouseEvent event) {
   var text = querySelector("#sample_text_id").text;
   var buffer = new StringBuffer();
   for (int i = text.length - 1; i >= 0; i--) {
     buffer.write(text[i]);
   }
   querySelector("#sample_text_id").text = buffer.toString();
-}
+}*/
 /*
 /// Changes [originalURL] to remove any attempt at redirection.
 ///
