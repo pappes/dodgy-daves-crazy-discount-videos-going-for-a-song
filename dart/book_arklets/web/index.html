@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2015, Pappes. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>BookArklets_uber_simple</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <div id="output"></div>
+  
+  
+<div>
+<table>
+  <tr>
+    <td>
+      <b>Bookmarklet:</b>         
+      <a href="javascript: var oldURL=document.URL; document.location.href=&quot; data:text/html, \
+      <head>\n\
+        <style>\n\
+          img {\n\
+          height:  100%  ;-webkit-transform:  translateX(  -8px  ) translateY(  -8px  )  rotate(  0deg  );\n\
+          }\n\
+        </style>\n\
+      </head>\n\
+      <body>\n\
+        <img src='&quot; + oldURL + &quot;'/>\n\
+      </body>\
+      &quot;
+      ">rotate an image 1.0</a>    
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <b>Description:</b>
+      <br>
+      <div>when viewing a single image (not a HTML page) this bookmarklet wrapps the image location in HTML which allows customisation of:</div>
+      <li> height (and implicitly width)</li>
+      <li> top(y) and left(x) position </li>
+      <li> angle of rotation - from 0 to 360 </li> 
+    </td>
+  </tr>
+</table></div>
+
+
+
+
+<div>
+<table>
+  <tr>
+    <td>
+      <b>Bookmarklet:</b> <a href="
+      javascript:(function(d){var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];s.src='http://pappes.github.io/book_arklets/build/web/remove_all_redirects.dart.js';h.appendChild(s);})(document);
+      ">
+        <nobr>Bookmarklet to inject and run remove_all_redirects.dart into the current page</nobr></a>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Description:</b><br><div>inserts http://pappes.github.io/book_arklets/build/web/remove_all_redirects.dart into the current page and runs it</div>
+    </td>
+  </tr>
+</table></div>
+
+
+
+
+<div>
+<table>
+  <tr>
+    <td>
+      <b>Bookmarklet:</b> <a href="
+      javascript:(function(d){var s=d.createElement('script'),h=d.head||d.getElementsByTagName('head')[0];s.src='http://pappes.github.io/bookmarklets/test.js';h.appendChild(s);})(document);
+      ">
+        <nobr>load and run a DART script</nobr></a>
+    </td>
+    </tr>
+    <tr>
+    <td><b>Description:</b><br><div>inserts http://pappes.github.io/bookmarklets/test.js into the current page and runs it</div>
+    </td>
+  </tr>
+</table></div>
+
+
+
+  
+  
+  
+  
+  
+  
+
+<script type="application/dart" src="main.dart"></script>
+<script data-pub-inline src="packages/browser/dart.js"></script>
+</body>
+</html>

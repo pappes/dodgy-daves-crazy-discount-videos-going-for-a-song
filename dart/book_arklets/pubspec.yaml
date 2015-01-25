@@ -1,0 +1,10 @@
+name: book_arklets
+version: 0.0.1
+author: Pappes
+description: Public webpage for injecting DART into bookmarklets
+homepage: https://github.com/pappes/aarvark
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  pappes_web_utility: any

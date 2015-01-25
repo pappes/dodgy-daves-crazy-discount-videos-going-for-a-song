@@ -1,0 +1,7 @@
+.buildlog
+.DS_Store
+.idea
+.pub/
+##build/   ##needed for web page
+##packages   ##needed for publishing
+pubspec.lock
