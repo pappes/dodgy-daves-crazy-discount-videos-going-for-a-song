@@ -11,5 +11,5 @@ void main() {
   });
   
   
-  MyHtml.removeAllOverlays(document);  
+  MyHtml.removeAllOverlays(document, false);  
 }
