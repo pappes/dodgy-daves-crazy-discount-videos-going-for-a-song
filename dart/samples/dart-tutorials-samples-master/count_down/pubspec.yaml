@@ -1,0 +1,8 @@
+name: count_down
+description: A sample application
+dependencies:
+  polymer: '>=0.15.1 <0.17.0'
+transformers:
+- polymer:
+    entry_points:
+     - web/count_down.html
