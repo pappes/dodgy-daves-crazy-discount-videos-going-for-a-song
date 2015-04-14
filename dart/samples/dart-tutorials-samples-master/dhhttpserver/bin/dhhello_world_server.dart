@@ -5,18 +5,16 @@
 // Replies "Hello, world!" to all requests.
 // Use the URL localhost:4040 in your browser.
 
-//import 'dart:io';
+import 'dart:io';
 
 main() {
   //
-  print('about to listen on localhost, port ');
-/*  HttpServer.bind(InternetAddress.LOOPBACK_IP_V4, 4040)
+  HttpServer.bind(InternetAddress.LOOPBACK_IP_V4, 4040)
       .then((HttpServer server) {
     print('listening on localhost, port ${server.port}');
     server.listen((HttpRequest request) {
       request.response.write('Hello, world!');
       request.response.close();
     });
-  }).catchError((e) => print(e.toString()));*/
-  print('listening on localhost, port ');
+  }).catchError((e) => print(e.toString()));
 }

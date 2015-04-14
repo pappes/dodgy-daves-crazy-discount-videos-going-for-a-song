@@ -1,0 +1,4 @@
+name: dhhttpserver
+description: A sample application
+dependencies:
+  http_server: any
