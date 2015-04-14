@@ -1,0 +1,11 @@
+name: pappes_proxy
+version: 0.0.1
+author: pappes
+description: A minimal command-line application.
+homepage: https://github.com/pappes/aarvark
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  shelf_proxy: any
+dev_dependencies:
+  unittest: any
