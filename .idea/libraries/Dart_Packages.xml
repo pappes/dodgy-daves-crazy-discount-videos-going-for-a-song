@@ -1,0 +1,43 @@
+<component name="libraryTable">
+  <library name="Dart Packages" type="DartPackagesLibraryType">
+    <properties>
+      <option name="packageNameToDirsMap">
+        <entry key="browser">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/browser-0.10.0+2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="logging">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/logging-0.9.3/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="pappes_utility">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pappes_utility-0.0.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="pappes_web_utility">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../aarvark/dart/pappes_web_utility/lib" />
+            </list>
+          </value>
+        </entry>
+      </option>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/browser-0.10.0+2/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/logging-0.9.3/lib" />
+      <root url="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/pappes_utility-0.0.1/lib" />
+      <root url="file://$PROJECT_DIR$/../aarvark/dart/pappes_web_utility/lib" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

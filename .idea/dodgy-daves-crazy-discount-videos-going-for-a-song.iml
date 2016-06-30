@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/dart/book_arklets/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/book_arklets/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/book_arklets/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/book_arklets/web/styles/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/console-playpen/playpen/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/console-playpen/playpen/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/console-playpen/playpen/test/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappesBookmarklet/pappesBookmarklet/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappesBookmarklet/pappesBookmarklet/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappesBookmarklet/pappesBookmarklet/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappes_proxy/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappes_proxy/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/pappes_proxy/test/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/playpenHtml/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/playpenHtml/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/playpenHtml/web/styles/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/anagram/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/anagram/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/clickme/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/clickme/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/cmdline/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/cmdline/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/count_down/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/count_down/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/dhhttpserver/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/dhhttpserver/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/futures/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/futures/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/helloworld/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/helloworld/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/httpserver/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/httpserver/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/its_all_about_you/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/its_all_about_you/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/mini/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/mini/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/mini_with_style/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/mini_with_style/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/polymer_list/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/polymer_list/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/portmanteaux/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/portmanteaux/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/portmanteaux_simple/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/portmanteaux_simple/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/search_form/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/search_form/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/slambook/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/slambook/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/slambook/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/stopwatch/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/stopwatch/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/streams/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/streams/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/streams/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/todo/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/todo/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/todo_with_delete/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/dart-tutorials-samples-master/todo_with_delete/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/docker/helloworld/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/docker/helloworld/bin/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/docker/helloworld/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/1-blankbadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/2-inputnamebadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/3-buttonbadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/4-classbadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/5-localbadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/6-piratebadge/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/dart/samples/one-hour-codelab-master/web/packages" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="application" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
