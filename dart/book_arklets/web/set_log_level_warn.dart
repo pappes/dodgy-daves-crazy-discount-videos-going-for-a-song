@@ -2,14 +2,9 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 
-import 'package:logging/logging.dart' as logging;
-import 'package:pappes_web_utility/pappes_web_utility.dart';
-
+import 'package:logging/logging.dart';
+import 'logging_functions.dart';
 main() {
-
-  logging.hierarchicalLoggingEnabled = true;
-  log.level = logging.Level.WARNING;
-  log.onRecord.listen((logging.LogRecord rec) {
-    print('${rec.level.name}: ${rec.time}: ${rec.message}');
-  });
+  //use common function to record preferred log level
+  setLogLevel(Level.WARNING);
 }

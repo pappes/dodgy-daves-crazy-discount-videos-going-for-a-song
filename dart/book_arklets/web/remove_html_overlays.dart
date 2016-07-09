@@ -1,15 +1,10 @@
 import 'dart:html';
-import 'package:logging/logging.dart' as logging;
 import 'package:pappes_web_utility/pappes_web_utility.dart';
+import 'logging_functions.dart';
 
 void main() {
-
-  logging.hierarchicalLoggingEnabled = true;
-  log.level = logging.Level.ALL;
-  log.onRecord.listen((logging.LogRecord rec) {
-    print('${rec.level.name}: ${rec.time}: ${rec.message}');
-  });
-  
-  
+  //use common function to set up logging
+  turnOnLogging();
+  //change all overlapping HTML Elements in the body
   MyHtml.removeAllOverlays(document, true);  
 }
