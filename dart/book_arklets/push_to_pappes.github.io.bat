@@ -1,6 +1,8 @@
 xcopy /f /y /s /c build ..\..\..\pappes.github.io\book_arklets\build
 xcopy /f /y /s /c /d /e /v /h web ..\..\..\pappes.github.io\book_arklets\build\web
 xcopy /f /y /s /c web\packages ..\..\..\pappes.github.io\book_arklets\build\web\packages
+copy /y web ..\..\..\pappes.github.io\book_arklets\build\web
+copy /y web\packages ..\..\..\pappes.github.io\book_arklets\build\web\packages
 copy /y web\packages\browser ..\..\..\pappes.github.io\book_arklets\build\web\packages\browser
 copy /y web\packages\logging ..\..\..\pappes.github.io\book_arklets\build\web\packages\logging
 copy /y web\packages\pappes_utility ..\..\..\pappes.github.io\book_arklets\build\web\packages\pappes_utility

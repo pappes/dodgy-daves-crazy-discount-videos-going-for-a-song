@@ -7,12 +7,14 @@ import 'package:pappes_web_utility/pappes_web_utility.dart';
 import 'dart:html';
 import 'dart:convert';
 
+const String elementId = 'bookmaklet_log_level';
+
 setLogLevel(logging.Level level) {
-  HiddenInputElement logLevelElement = querySelector('#pappes_web_utility.log_level');
+  HiddenInputElement logLevelElement = querySelector('#$elementId');
   if (logLevelElement==null) {
     logLevelElement=new HiddenInputElement()
-      ..name='pappes_web_utility.log_level';
-    document.insertBefore(document.nodes.first, logLevelElement);
+      ..id=elementId;
+    document.body.append(logLevelElement);
   }
   //convert object [logging.Level] to JSON to store in the HTML page
   var mapData = new Map();
@@ -22,7 +24,7 @@ setLogLevel(logging.Level level) {
 }
 
 turnOnLogging() {
-  HiddenInputElement logLevelElement = querySelector('#pappes_web_utility.log_level');
+  HiddenInputElement logLevelElement = querySelector('#$elementId');
   if (logLevelElement!=null) {
     logging.hierarchicalLoggingEnabled = true;
     log.onRecord.listen((logging.LogRecord rec) {
