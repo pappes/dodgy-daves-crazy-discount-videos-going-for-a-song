@@ -11,8 +11,10 @@ const int buttonYellow = 2;
 const int buttonGreen = 3;
 const int buttonRed = 4;
 const int buttonBlue = 5;
+const int numberOfButtons = 4;
 
 //these values are the pins on the Uno R3 that the LEDs connect to
+const int ledAll = 0;
 const int ledYellow = 7;
 const int ledGreen = 8;
 const int ledRed = 9;
@@ -47,9 +49,75 @@ int ledDelay = 200; //This is the amount of time taken before the next LED patte
          digitalWrite(buzzer, HIGH);//Turns the buzzer on
          delayMicroseconds(tone); //Creates the tone on the buzzer 
          digitalWrite(buzzer, LOW); //turns the buzzer off
-         delayMicroSeconds(tone);
+         delayMicroseconds(tone);
      }
  } //end of playTune
+
+ void victorySong() {
+    int notes[] = {2,2,2,2,0,1,2,1,2};
+    int note=0;
+    int tempo[]={200,200,200,400,400,400,200,200,600};
+    int breaks[]={100,100,100,200,200,200,300,100,200};
+    for (int i=0; i<9; i=i+1){
+        note=notes[i];
+        brightBuzz(ledYellow+note, tones[note],tempo[i]);
+        delay(breaks[i]);
+    }
+ } //end of victorySong
+
+ void brightBuzz(int led, int tone, int duration) {
+     if (led==ledAll) {
+         //Turn all LEDs on
+        for (int i=0; i<numberOfButtons; i=i+1){
+            digitalWrite(ledYellow+i, HIGH);
+        }
+        playTone(tone,duration);
+        for (int i=0; i<numberOfButtons; i=i+1){
+            digitalWrite(ledYellow+i, LOW);
+        }
+     } else {
+         //Turn nominated LED on
+        digitalWrite(led, HIGH);
+        playTone(tone,duration);
+        digitalWrite(led, LOW);
+
+     }
+ } //end of brightBuzz
+
+ void showMistake() {
+    //These loops make the LEDs blink twice and the buzzer beep twice when the user makes a mistake and resets the game 
+    brightBuzz(ledAll, tones[4], ledTime);
+    delay(200);
+    brightBuzz(ledAll, tones[4], ledTime);
+    delay(500);
+ } //end of showMistake
+
+ void showPattern(int *pattern) {
+    for (int i=0; i<currentLevel; i=i+1) { //this for loop shows the user the curent state of the game 
+        ledDelay = ledTime/(1+(speedFactor/nLevels) * (currentLevel-1));
+        pinAndTone = pattern[i];
+        brightBuzz(ledYellow+pinAndTone, tones[pinAndTone], ledDelay);
+        delay( 100/speedFactor);
+    }
+ } //end of showPattern
+
+ int getButtonPress() {
+    while (true){
+        for (int i=0; i<numberOfButtons; i=i+1) {
+            if (digitalRead(i+buttonYellow) != 0) {
+                return (i);
+            }
+        } 
+    }
+ } //end of getButtonPress
+
+ int initLevel(int *gamePattern, int *userPattern) {
+    for (int i=0; i<nLevels; i=i+1){
+        //saves the number in nArray to generate a random pattern
+        userPattern[i] = 0;
+        gamePattern[i] = random(0,4);
+    }
+ } //end of initLevel
 
  //step 4: Initalise the inputs and outputs
  //Here, We're telling the UNO that buttons are inputs and LEDs and the buzzer are outputs
@@ -76,43 +144,57 @@ void loop() {
     int nArray[nLevels]; //nArray will store the randomised game pattern 
     int uArray[nLevels]; //uArray will store the pattern input byu the user 
 
-    int i;
     if (gameOn == 0) {//Only triggers if it's a new game or level 
-        for (i=1; i<nLevels; i-i+1){
-            //saves the number in nArray to generate a random pattern
-            uArray[i] = 0;
-            nArray[i] = random(0,4);
-        }
+        initLevel(nArray, uArray);
         gameOn = 1; //this tells the game to run
     }    
-    if (wait == 0) { //triggers if not action is required from the user 
+    if (wait == 0) { //triggers if no action is required from the user 
         delay(200);
-        i=0;
-        for (i=0; i<currentLevel; i=i+1) { //this for loop shows the user the curent state of the game 
-            ledDelay = ledTime/(1+(speedFactor/nLevels) * (currentLevel-1));
-            pinAndTone = nArray[i];
-            digitalWrite(ledYellow + pinAndTone , HIGH);
-            playTone(tones[pinAndTone], ledDelay);
-            digitalWrite(ledYellow + pinAndTone, LOW);
-            delay( 100/speedFactor);
-        }
-        wait = 1; //THis puts the game on hold until the user enteres a pattern
+        showPattern(nArray);
+        wait = 1; //This puts the game on hold until the user enteres a pattern
     }
 
-    i=0;
-    int buttonChange=0; //buttonchange will be used to detect when a button is pressed
-    int j=0; //'k' is the current position in the pattern
-    while (j<currentLevel)  {
-        while (buttonChange == 0){
-            for (i=0; i<4; i=i+1) {
-                buttonState[i] = digitalRead(i+1);
-                buttonChange != buttonState[i];
-            } 
+    int buttonPressed=0; 
+    int patternPosition=0; //'patternPosition' is the current position in the pattern
+    while (patternPosition<currentLevel)  {
+        buttonPressed=getButtonPress();
+        //this turns on the corresponding LED to the button pressed, and calls the function "playTone" to  play the corresponding sound on the buzzer 
+        brightBuzz(ledYellow+buttonPressed, tones[buttonPressed], ledTime);
+        wait=0;
+        uArray[patternPosition]=buttonPressed; //This stores the users input to be matched against the game pattern
+                
+        //this section checks if the button pressed by the user matches the game pattern
+        if (uArray[patternPosition]==nArray[patternPosition]){
+            correctAnswer=1;
+            patternPosition++;
+        } else {
+            //if user makes a mistake, these variables will be reset so that the game starts over.
+            correctAnswer=0;
+            delay(300);
+            gameOn = 0;
+            currentLevel = 1;
+            showMistake;
+            break;
         }
-        //this turns on the corresponding LED to the buttonpressed, and calls the function"payTone" to  play the corresponding sound on the buzzer 
-        
     }
-}
+
+    //if the user gets the sequence right the game goes up one level.
+    if (correctAnswer==1){
+        currentLevel++;
+    }
+
+    //This section play the victory song if the game is beaten 
+    if (currentLevel == nLevels){
+        delay(500);
+        victorySong();
+
+        gameOn=0;
+        currentLevel=1;
+        nLevels=nLevels+2; //this adds two more levels to the game.
+        speedFactor +=1; //This increases the speed factor by 1.
+    }
+}//end of void loop 
+
 
 
 
