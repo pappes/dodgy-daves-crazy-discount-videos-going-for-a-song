@@ -1,0 +1,11 @@
+trigger AccountAddressTrigger on Account (before insert, before update) {
+
+    //loop through all accounts to see if the account requires a matching billing and shipping postcode
+    for(Account a : Trigger.New) {
+        System.debug(a.BillingPostalCode + ' matches ' +  a.BillingPostalCode);
+        if (a.Match_Billing_Address__c && a.BillingPostalCode != a.shippingPostalCode) {
+    		//change the shipping postcode to matchthe billing postcode	            
+            a.shippingPostalCode = a.BillingPostalCode;
+        }           
+    }
+}

@@ -1,0 +1,47 @@
+//The following example creates an sObject variable of type Account and assigns it to a new account with the name Acme.
+
+Account acct = new Account(Name='Acme');
+
+
+/*Creating sObjects and Adding Fields
+Before you can insert a Salesforce record, you must create it in memory first as an sObject. 
+Like with any other object, sObjects are created with the new operator:
+*/
+Account acct = new Account();
+/*The API object name becomes the data type of the sObject variable in Apex. In this example, 
+Account is the data type of the acct variable.
+
+The account referenced by the acct variable is empty because we haven’t populated any of its fields yet. 
+There are two ways to add fields: through the constructor or by using dot notation.
+
+The fastest way to add fields is to specify them as name-value pairs inside the constructor. 
+For example, this statement creates a new account sObject and populates its Name field with a string value.
+*/
+Account acct = new Account(Name='Acme');
+/*The Name field is the only required field for accounts, 
+which means that it has to be populated before being able to insert a new record. 
+However, you can populate other fields as well for the new record. 
+This example adds also a phone number and the number of employees.
+*/
+Account acct = new Account(Name='Acme', Phone='(415)555-1212', NumberOfEmployees=100);
+/*Alternatively, you can use the dot notation to add fields to an sObject. 
+The following is equivalent to the previous example, although it takes a few more lines of code.
+*/
+Account acct = new Account();
+acct.Name = 'Acme';
+acct.Phone = '(415)555-1212';
+acct.NumberOfEmployees = 100;
+
+/*This example shows how the generic sObject variable can be assigned to any Salesforce object: an account and a custom object called Book__c.
+*/
+sObject sobj1 = new Account(Name='Trailhead');
+sObject sobj2 = new Book__c(Name='Workbook 1');
+
+/*Casting Generic sObjects to Specific sObject Types
+When you’re dealing with generic sObjects, you sometimes need to cast your sObject variable to a specific sObject type. One of the benefits of doing so is to be able to access fields using dot notation, which is not available on the generic sObject. Since sObject is a parent type for all specific sObject types, you can cast a generic sObject to a specific sObject. This example shows how to cast a generic sObject to Account.
+*/
+// Cast a generic sObject to an Account
+Account acct = (Account)myGenericSObject;
+// Now, you can use the dot notation to access fields on Account
+String name = acct.Name;
+String phone = acct.Phone;

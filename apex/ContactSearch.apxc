@@ -1,0 +1,25 @@
+/*For this challenge, you will need to create a class that has a method accepting two strings. The method searches for contacts that have a last name matching the first string and a mailing postal code (API name: MailingPostalCode) matching the second. It gets the ID and Name of those contacts and returns them.
+
+The Apex class must be called 'ContactSearch' and be in the public scope.
+The Apex class must have a public static method called 'searchForContacts'.
+The 'searchForContacts' method must accept two incoming strings as parameters, find any contact that has a last name matching the first, and mailing postal code matching the second string. The method should return a list of Contact records with at least the ID and Name fields.
+The return type for 'searchForContacts' must be 'List<Contact>'.*/
+public class ContactSearch {
+
+    // Public method
+    public static List<Contact> searchForContacts(String pLastName, String pPostCode) {
+        // Create an email message object
+        
+        try {
+            //Sample 'Young', '66045'
+            List<Contact> contacts = [SELECT Name FROM contact WHERE lastName = :pLastName AND MailingPostalCode = :pPostCode ];
+            return contacts;
+        }
+        catch (DmlException e) {
+            System.debug('A DML exception has occurred: ' +
+                        e.getMessage());
+            return null;
+        }
+    }   
+
+}

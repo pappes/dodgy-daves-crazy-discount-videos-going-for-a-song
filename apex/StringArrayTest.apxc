@@ -1,0 +1,20 @@
+public class StringArrayTest {
+
+    // Public method
+    public static string[] generateStringArray(Integer stringCount) {
+        // Create an email message object
+        
+        List<string> result = new List<string>();
+        for(Integer i=0;i<stringCount;i++) {
+            // Write value to the debug log
+            result.add('Test ' + (i));
+        }
+        return result;
+    }
+    
+    // Helper method
+    public static void generateStringArray2(Messaging.SendEmailResult[] results) {
+        string[] out = StringArrayTest.generateStringArray(5);
+    }
+
+}
