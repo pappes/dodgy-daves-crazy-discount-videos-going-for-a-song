@@ -1,0 +1,237 @@
+/*Object-oriented Design
+We figure you already grasp the concept of object-oriented design, so we’re not going to waste your time describing cookie cutters. Just know that Apex supports many of the object-oriented principles that you’re probably used to, such as encapsulation, abstraction, inheritance, and even polymorphism. In fact, the Apex language includes many language constructs you’re already familiar with, including classes, interfaces, properties, and collections.
+
+For example, here is what an Apex class named HelloWorld would look like.
+*/
+public with sharing class HelloWorld {
+
+    public void printMessage() {
+        String msg = 'Hello World';
+        System.debug(msg);   
+    }
+}
+/*
+This simple HelloWorld class includes one method named printMessage that is used to simply output the message “Hello World” to the system debug log. Of course, this example is pretty simple, but we wanted you to see how very similar Apex is to C#.
+
+The basic syntax for defining classes is:
+*/
+private | public | global
+[virtual | abstract | with sharing | without sharing]
+class ClassName [implements InterfaceNameList] [extends ClassName]
+{
+    // The body of the class
+}
+/*
+When you have time, check out Understanding Classes to learn more about how classes, objects, and interfaces work.
+
+Data Types
+Apex supports the kind of data types you would expect. There are primitive types, such as Integer, Double, Long, Data, Datetime, String, and Boolean. There is also an ID data type that is used for any valid 18-character Force.com record identifier assigned by the system.
+
+Value and reference types work the same, but in Apex, all variables are initialized to null by default. One thing to be aware of is that .NET strings are actually references even though they behave like value types, because they’re immutable. But in Apex, strings are always treated as a primitive value type.
+
+Besides primitives, supported data types include sObjects, either as a generic sObject or a specific one, such as an Account or Contact. Remember, an sObject is just a Salesforce object. You can think of it as a table in a database. The sObject can be either a standard one that comes built in with Salesforce or a custom one that you define yourself.
+
+Additionally, a data type can be a typed list of values, also known as an enum. But watch out, because these aren’t the same enums you’re used to working with in .NET. In Apex, you can use enums with numbers, but you can’t define what these number values are. Also, the ordinal assignment starts at zero. For example, if you had an enum like the following.
+*/
+public enum myEnums {
+            Enum1,
+            Enum2,
+            Enum3
+ }
+/*
+If you tried to access the ordinal value of the third enum, the value of the enumOrd variable would be 2.
+*/
+Integer enumOrd = myEnums.Enum3.ordinal();
+/*
+Working with Collections
+.NET supports a large collection library with numerous types and extension methods. And here’s some good news. Apex has only the following three collections. Talk about simple, right?
+
+List
+A list in an ordered collection of elements that works much the same as a traditional array. In fact, arrays in Apex are synonymous with lists, and you can use them interchangeably. For example, the following is one way to declare a variable as a list of strings.
+*/
+List<String> myStrings =  new List<String>();
+/*
+Alternatively, you can declare the myStrings variable as an array but assign it to a list rather than an array.
+*/
+String[] myStrings = new List<String>();
+/*
+Another thing you can do is declare the list and initialize its values, all in one step, such as the following.
+*/
+List<String> myStrings =  new List<String> {'String1', 'String2', 'String3' };
+/*
+You can also add values to the list after it has been created, such as this:
+*/
+List<String> myStrings = new List<String>();
+myStrings.add('String1');
+myStrings.add('String2');
+myStrings.add('String3');
+/*
+You’ll probably create a lot of list variables in your Apex development, because the output of every SOQL query is a list. For example, you could create a list of Accounts using code such as the following:
+*/
+List<Account> myAccounts = [SELECT Id, Name FROM Account];
+/*
+Like arrays, lists have indexes that start at zero. So you could access the name of the first account in the list with code like this:
+*/
+List<Account> myAccounts = [SELECT Id, Name FROM Account];
+String firstAccount = myAccounts[0].Name;
+/*
+Set
+A set is an unordered collection of elements that does not contain duplicates. A set is commonly used to store ID values because the value are always unique. You could then use the set as part of a WHERE clause in a SOQL query. For example, here we’re creating a set that contains two unique IDs for Accounts. We then use the set in the SOQL query to return Accounts only for those IDs.
+*/
+Set<ID> accountIds = new
+  Set<ID>{'001d000000BOaHSAA1','001d000000BOaHTAA1'};  
+List<Account> accounts = [SELECT Name
+  FROM Account WHERE Id IN :accountIds];    
+/*
+Map
+A map is a collection of key-value pairs. Each key maps to a single value. A map is useful when you need to quickly find something by a key. The key values must be unique, so you could have a map that contained ID values for the key and then mapped to an sObject. For example, you could use the following code to declare a map variable named accountMap that contains all Accounts mapped to their IDs.
+*/
+Map<Id, Account> accountMap = new Map<Id, Account>([SELECT Id, Name FROM Account]);
+/*
+You could then access a specific Account record using the get method and code similar to the following.
+*/
+Id accId = '001d000000BOaHSAA1';
+Account account = accountMap.get(accId);
+/*
+Check out the official docs to learn more about the data types that Apex supports.
+
+ASP.NET to Visualforce
+If you’re an ASP.NET web forms developer, you’ll probably feel right at home with Visualforce. There are many similarities between the two., most notably, a clear separation of the markup from the code. You also use form fields to map code to properties defined in the controller.
+
+The bad news is that viewstate is just as much a pain with Visualforce as it is with ASP.NET due to the fact that HTTP is stateless. The good news is that there are ways around the viewstate limitations. Learn more by checking out the link in Resources.
+
+Visualforce is a framework for rendering HTML pages using an MVC paradigm. Now before you get all excited and start thinking, “Cool, Visualforce is like ASP.NET MVC. I love MVC.”, keep in mind that comparing the two is a bit like comparing apples and pumpkins. You can use either one to render web pages, and both separate the application logic from the markup and the database model, but they do so in different ways.
+
+To learn all about Visualforce, check out the Visualforce Basics module. For now, we just want to give you a basic idea of how it works by showing you an example. You can use the following markup code to render a simple page used to enter Contact data.
+*/
+<apex:page standardController="Contact">
+  <apex:form>
+    <apex:pageBlock title="Edit Contact" mode="Edit">
+
+       <apex:pageBlockButtons >
+         <apex:commandButton action="{!edit}" id="editButton" value="Edit"/>
+         <apex:commandButton action="{!save}" id="saveButton" value="Save"/>
+         <apex:commandButton action="{!cancel}" id="cancelButton" value="Cancel"/>
+       </apex:pageBlockButtons>
+
+       <apex:pageBlockSection >
+          <apex:inputField value="{!contact.lastname}" />
+          <apex:inputField value="{!contact.accountId}"/>
+          <apex:inputField value="{!contact.phone}"/>
+       </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
+/*
+The example uses what is known as a standard controller, which is part of the Force.com platform. It’s basically system-generated code that allows you to quickly incorporate basic CRUD functionality in your Visualforce pages. But before you start getting worried, just know that you can create your own custom controllers to add in more complex functioning. Learn all about how standard and custom controllers work in the Visualforce Basics module. The rendered version of this page looks like the following:
+
+
+
+Note
+Note
+You might have heard a little about our newest development framework, Lightning Component, and could be thinking, "Is Lightning like ASP.NET MVC?" The short answer is no. Lightning is a new and lighter weight way of delivering super fast and responsive web apps, but Lightning is a component-based framework. Learn all about it by visiting the Lightning Components module.
+
+What Is Different?
+Now that you know a little about how Apex is similar to .NET, let’s go over some differences. For starters, unlike C#, Apex is not case sensitive.
+
+Apex and Database are Tightly Coupled
+Apex code and the Force.com database are tightly coupled to the point where they are sometimes indistinguishable. Each standard or custom object in the database has a "mystical" representation via an Apex class that provides all sorts of functionality to make interacting with the database a snap. The class and its underlying object are essentially a mirror image of one another that is constantly in sync. For instance, whenever you create a new field in an object, a class member is automatically surfaced to reference the values in the database. It's also impossible to add a reference in your Apex code to a field that doesn't exist; the compiler will return an error and simply not save your code. The platform works hard to ensures these dependencies and won't let the database schema and your code become out of sync. Therefore, if you attempt to delete a custom object or a field that is referenced by Apex code, the platform will raise an error and disallow the action.
+
+Different Design Patterns
+As a .NET developer, you are probably already familiar with design patterns. However, most of those patterns don’t work on the Force.com platform. You learn more about this in the next units when we go over execution context and trigger design, but also consider checking out the links listed in Resources regarding Apex design patterns.
+
+What’s important to understand is that if you try to apply the same design strategies that you use in .NET to Force.com, you’ll likely encounter problems when you go to test and deploy your solutions. We suggest taking some time to learn about which design patterns work best in the Force.com world before you start cranking out the code.
+
+Unit Tests Are Required
+We know you’re used to writing unit tests for your .NET applications and probably understand the benefits to using them. What is different on the Force.com platform is that you must have 75% test coverage to deploy your Apex code to a production org.
+
+Not only does having unit tests promote the development of robust and error-free code, but they’re vital to the stability of the platform, because all tests are run before every major release. To learn more about unit testing, see An Introduction to Apex Code Test Methods.
+
+No Solution, Project, or Config Files
+The Force.com platform has no such thing as a solution or project file. You can create an application, but it’s not the same as creating a .NET application or assembly.
+
+An application on the Force.com platform is just a loose collection of components, such as tabs, reports, dashboards, and pages. Several come built in with your Salesforce org, and in a few seconds, you can create your own by walking through a point-and-click wizard. You can even purchase apps created by third-parties on what is known as the AppExchange.
+
+All your code resides and executes in the cloud. You can use the Force.com IDE, an Eclipse plug-in, to download a local version of your code to work with offline. But before it can be executed, you need to push it back up to your Salesforce org.
+
+There is also no such thing as a config file in the Force.com world. Because the database is baked right in, you don’t need connection strings. And unlike ASP.NET MVC, you don’t need to configure routes. You can create custom settings in Salesforce, but these are added and managed declaratively.
+
+A Much Smaller Class Library
+The Apex class library is considerably smaller than the .NET Framework class library, so it’s easier and faster for you to come up to speed with Apex. But honestly, you might find it a bit frustrating when you try to look for comparative functionality that just doesn’t exist in Apex.
+
+Keep in mind that the Force.com platform is built with the idea of providing rapid application development. It’s also different than the .NET platform, so you might find yourself looking for functionality that you’re used to working that simply doesn’t exist with Force.com. However, if you’re looking to build pixel-perfect, custom-coded applications, our Heroku Enterprise platform provides all the power and features you need.
+
+Development Tools
+More than likely you have already signed up for a free Developer Edition (DE) org. Perhaps you’ve also opened and used the online Developer Console application.
+
+You can use Developer Console to edit and navigate source code, and it’s also helpful for debugging and troubleshooting. We’ll go over this more in a later unit, so stay tuned. If you’ve already gone through the first module about database basics, you know that you can also use Developer Console to execute SOQL and SOSL queries and view query plans. If you haven’t used Developer Console yet, don’t worry because we’ll be going through it shortly when we create an Apex class.
+
+The Force.com IDE is a full-featured, Eclipse-based coding environment that offers additional developer productivity features, such as code completion, git integrations, deployments, and testing. And because we know .NET developers love to see how things work, we thought you would like the Schema Explorer to drill down into all sorts of good info about your Salesforce org.
+
+
+
+And finally, we thought you would be interested to know about an open-source command-line interface to Force.com. Internet Resources has a link to it. If you’re one of those developers that just loves the command line, the Force.com CLI is right up your alley.
+
+Note
+Note
+In this section, we focused on just a few of the free tools available from Salesforce. There are several community-contributed tools (some free, some not) that you’ll likely find compelling. Be sure to check out Force.com Tools and Toolkits for more info.
+
+Handling Security
+The good news here is that in Force.com you don’t have to worry about authentication or storing passwords and database connection strings. Identity is handled by the platform. You can control access to data at many different levels, including object level, record level, and field level. Security is also handled declaratively. In many cases, security is defined and set up by a Salesforce administrator. As a developer, it’s important to be aware of how it works. Learn more by checking out the Data Security module.
+
+What About Integration?
+You can integrate with the platform in a number of ways, but you’ll probably use SOAP and REST the most. You can use them in either direction.
+
+You can create and expose web services using the Apex programming language, as well as invoke external web services from Apex. You can also react to incoming email messages and have automated outbound messages sent when certain events occur.
+
+If you really want to get your hands dirty, Salesforce offers both SOAP and REST APIs that provide direct access to the data in your org. Toolkits that wrap around the APIs are available, so you can use whatever language you prefer: .NET, Java, PHP, Objective C, Ruby, and JavaScript.
+
+Numerous third-party integration applications are also available on the AppExchange. Really, just about anything is possible. You can learn more about all the integration points by completing the Apex Integration module.
+
+Create an Apex Class
+Now that you know more about how Force.com relates to the .NET platform, let’s jump right in and create an Apex class using Developer Console. The class we’ll create includes the public method sendMail. It includes a private helper method called inspectResults for inspecting the results of the email send call.
+
+From Setup in your Developer org, select Your Name > Developer Console to open Developer Console.
+In Developer Console, select File > New > Apex Class.
+Enter EmailManager as the class name and click OK.
+Delete the existing code, and insert the following snippet:
+*/
+public with sharing class EmailManager {
+
+    // Public method
+    public static void sendMail(String address, String subject, String body) {
+        // Create an email message object
+        Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+        String[] toAddresses = new String[] {address};
+        mail.setToAddresses(toAddresses);
+        mail.setSubject(subject);
+        mail.setPlainTextBody(body);
+        // Pass this email message to the built-in sendEmail method
+        // of the Messaging class
+        Messaging.SendEmailResult[] results = Messaging.sendEmail(
+            new Messaging.SingleEmailMessage[] { mail });
+
+        // Call a helper method to inspect the returned results.
+        inspectResults(results);
+    }
+
+    // Helper method
+    private static Boolean inspectResults(Messaging.SendEmailResult[] results) {
+        Boolean sendResult = true;
+
+        // sendEmail returns an array of result objects.
+        // Iterate through the list to inspect results.
+        // In this class, the methods send only one email,
+        // so we should have only one result.
+        for (Messaging.SendEmailResult res : results) {
+            if (res.isSuccess()) {
+                System.debug('Email sent successfully');
+            } else {
+                sendResult = false;
+                System.debug('The following errors occurred: ' + res.getErrors());                 
+            }
+        }
+        return sendResult;
+    }
+
+}   

@@ -1,0 +1,16 @@
+public class AccountUtils {
+//Create an Apex class named AccountUtils 
+    public static List<Account> accountsByState(String state) {
+    //include a static accountsByState method that accepts a string (a state abbreviation) 
+    //returns a List of Account objects.
+    	List<Account> result = [
+            SELECT Id, Name
+            FROM   Account
+            WHERE  BillingState = :state
+        ];
+        
+        return result;
+    //The method must return the ID and name
+    //all Account objects that match the BillingState for the state abbreviation passed to the method.
+    }
+}
