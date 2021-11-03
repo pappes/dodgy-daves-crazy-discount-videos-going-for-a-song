@@ -28,9 +28,10 @@
 #define SONG_1 "/NORMAL~1/01AIR-~1.MP3"
 #define SONG_2  "/DANCEM~1/02UTAH~1.MP3"
 
-#define LIGHT_THRESHOLD  10          // 10 is quite dark
-#define LIGHT_CHANGE_THRESHOLD  5000 // 5 seconds
+#define LIGHT_THRESHOLD  20          // 10 is quite dark
+#define LIGHT_CHANGE_THRESHOLD  5    //000 // 5 seconds
 
+bool musicModeIsParty = false;
 String musicMode = DIRECTORY_MELLOW;
 int currentMellowTrack = 1;
 int currentPartyTrack = 1;
@@ -48,6 +49,7 @@ Adafruit_VS1053_FilePlayer musicPlayer =
   
 void setup() {
   Serial.begin(9600);
+  
   Serial.println("Adafruit VS1053 Simple Test");
 
   if (musicMakerInit()) {
@@ -66,19 +68,20 @@ void setup() {
  // musicPlayer.playFullFile("/track001.mp3");
   // Play another file in the background, REQUIRES interrupts!
   Serial.println(F("Playing track 002"));
-  //musicPlayer.startPlayingFile(SONG_2);
+  //musicPlayer.startPlayingFile(SONG_2);  
 }
 
 void loop() {
+  printFreeMemory(__LINE__);
 
   
   checkLightSensor();
-
   
   // File is playing in the background
   if (moodChanged || musicPlayer.stopped()) {
     // Play another file in the background, REQUIRES interrupts
     String song = getNextSong();
+    if (!musicPlayer.stopped())  musicPlayer.stopPlaying();
     if (song.length() > 0) {
       musicPlayer.startPlayingFile(song.c_str());
     } else {   
@@ -92,6 +95,17 @@ void loop() {
     // if we get an 's' on the serial console, stop!
     if (c == 's') {
       musicPlayer.stopPlaying();
+    }
+    // if we get an 'm' on the serial console, swith mode
+    if (c == 'm') {
+      
+      String mode;
+      if (!musicModeIsParty)  mode = DIRECTORY_PARTY;
+      else mode = DIRECTORY_MELLOW;
+      musicModeIsParty = ! musicModeIsParty;
+      moodChanged = true;    
+      moodChangedTime = millis();
+      musicMode = mode;
     }
     
     // if we get an 'p' on the serial console, pause/unpause!
@@ -224,4 +238,30 @@ String getSong(String dir, int trackNumber) {
 void logString(String text){
     Serial.println(text);
     return;
+}
+
+void printFreeMemory(int line){
+  
+  Serial.print(F("free memory="));
+  Serial.print(freeMemory());
+  Serial.print(F(" at aline "));
+  Serial.println(line);
+}
+
+#ifdef __arm__
+// should use uinstd.h to define sbrk but Due causes a conflict
+extern "C" char* sbrk(int incr);
+#else  // __ARM__
+extern char *__brkval;
+#endif  // __arm__
+
+int freeMemory() {
+  char top;
+#ifdef __arm__
+  return &top - reinterpret_cast<char*>(sbrk(0));
+#elif defined(CORE_TEENSY) || (ARDUINO > 103 && ARDUINO != 151)
+  return &top - __brkval;
+#else  // __arm__
+  return __brkval ? &top - __brkval : &top - __malloc_heap_start;
+#endif  // __arm__
 }
