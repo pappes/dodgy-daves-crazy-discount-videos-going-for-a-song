@@ -49,32 +49,28 @@ int color_index = 0;
 int led_stop_time[NUM_BUTTONS+1] = {STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, 
         STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY};
 Adafruit_NeoPixel* led_strips[NUM_BUTTONS+1] = {nullptr ,nullptr ,nullptr ,nullptr ,nullptr ,nullptr ,nullptr};
-//uint16_t led_strip_length[NUM_BUTTONS+1] = {0, 78, 78, 78, 0, 234, 300};
-uint16_t led_strip_length[NUM_BUTTONS+1] = {0, 8, 8, 8, 0, 23, 30};
+uint16_t led_strip_length[NUM_BUTTONS+1] = {0, 78, 78, 78, 0, 234, 300};
   
 void setup() {
   Serial.begin(9600);
-  //initilaise_led_strip(1, LEDSTRIP1, BIGBUTTON1, strip1);
-  //initilaise_led_strip(2, LEDSTRIP2, BIGBUTTON2, strip2);
-  //initilaise_led_strip(3, LEDSTRIP3, BIGBUTTON3, strip3);
+  initilaise_led_strip(1, LEDSTRIP1, BIGBUTTON1, strip1);
+  initilaise_led_strip(2, LEDSTRIP2, BIGBUTTON2, strip2);
+  initilaise_led_strip(3, LEDSTRIP3, BIGBUTTON3, strip3);
   initilaise_led_strip(5, LEDSTRIP5, BIGBUTTON5, strip5);
-  //initilaise_led_strip(6, LEDSTRIP6, BIGBUTTON6, strip6);
+  initilaise_led_strip(6, LEDSTRIP6, BIGBUTTON6, strip6);
 }
 
 void loop() {
   printFreeMemory(__LINE__);
   check_buttons();
   
-  printFreeMemory(__LINE__);
   for(byte strip=1; strip<=NUM_BUTTONS; strip++) display_strip(strip);
 
-  printFreeMemory(__LINE__);
   
   color_index = color_index + 1;
   color_index = color_index % NUM_COLORS;
   
   delay(250);
-  printFreeMemory(__LINE__);
   
   //chase();
 }
@@ -83,21 +79,20 @@ void check_buttons() {
   int current_time = millis();
   
   //only allow small strips to work if the big strips are stopped
-  /*if (STOPPED_LEDSTRIP_ALREADY == led_stop_time[5] && STOPPED_LEDSTRIP_ALREADY == led_stop_time[6]) {
+  if (STOPPED_LEDSTRIP_ALREADY == led_stop_time[5] && STOPPED_LEDSTRIP_ALREADY == led_stop_time[6]) {
     if (is_button_pressed(BIGBUTTON1)) led_stop_time[1] = current_time + 1 * SECOND_TO_MILLISECOND;
     if (is_button_pressed(BIGBUTTON2)) led_stop_time[2] = current_time + 1 * SECOND_TO_MILLISECOND;
     if (is_button_pressed(BIGBUTTON3)) led_stop_time[3] = current_time + 1 * SECOND_TO_MILLISECOND;
-  }*/
+  }
   
   if (is_button_pressed(BIGBUTTON5)) {
-  printFreeMemory(__LINE__+1000);
     led_stop_time[5] = current_time + LED_EFFECT_DURATION;
     stop_small_strips();
   }
- /* if (is_button_pressed(BIGBUTTON6)) {
+  if (is_button_pressed(BIGBUTTON6)) {
     led_stop_time[6] = current_time + LED_EFFECT_DURATION;
     stop_small_strips();
-  }*/
+  }
 }
 
 void stop_small_strips(){
@@ -123,11 +118,9 @@ void display_strip(byte strip) {
     return;
   }
   if (STOPPED_LEDSTRIP_ALREADY == led_stop_time[strip] ) return;
-  printFreeMemory(__LINE__);
   printFreeMemory(led_stop_time[strip]);
   if (1 == led_strips[strip]->numPixels()) reinitilaise_led_strip(strip);
   activate_strip(*led_strips[strip]);
-  printFreeMemory(__LINE__);
 }
 
 void initilaise_led_strip(byte strip_num, byte strip_pin, byte strip_button, Adafruit_NeoPixel &strip_ref) {
@@ -144,8 +137,6 @@ void reinitilaise_led_strip(byte strip) {
 
 
 static int activate_strip(Adafruit_NeoPixel &strip) {
-  //strip.updateLength (300);
-  printFreeMemory(__LINE__);
   for(uint16_t i=0; i<N_MAX_LEDS; i++) {
     if (color_index == superwhite) {      
       if (i%10 == 0) {
@@ -159,7 +150,6 @@ static int activate_strip(Adafruit_NeoPixel &strip) {
     }
   }
   strip.show();
-  //strip.updateLength (3);
 }
 
 
@@ -182,8 +172,7 @@ static int choose_colors(uint32_t &highlight_color) {
 }
 static bool is_button_pressed(byte button){
     if (LOW == digitalRead(button)) {
-      
-    Serial.print(F("Button pressed =  ")); Serial.println(button);
+      Serial.print(F("Button pressed =  ")); Serial.println(button);
       return true;
     }
     return false;
