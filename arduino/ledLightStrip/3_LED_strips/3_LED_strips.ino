@@ -28,8 +28,9 @@ Adafruit_NeoPixel strip6 = Adafruit_NeoPixel(1, LEDSTRIP6, NEO_GRB + NEO_KHZ800)
 #define STOPPED_LEDSTRIP_ALREADY 0
 #define STOP_LEDSTRIP_NOW 1
 
-#define SECOND_TO_MILLISECOND 1000
-#define LED_EFFECT_DURATION (20 * SECOND_TO_MILLISECOND) //30
+#define SECOND_TO_MILLISECOND 1000L
+#define LED_EFFECT_DURATION 30L
+
 
 #define COLORS_BLOCK_LEN 10
 #define SAME_COLORS_LEN 2
@@ -58,13 +59,13 @@ uint32_t colors[NUM_COLORS] = {
 };
 int color_index = 0;
 
-int current_time = 0;
+long current_time = 0;
 
 int led_strip_color_index[NUM_BUTTONS+1] = {0, 0, 0, 0, 0, 0, 0};
 Adafruit_NeoPixel* led_strips[NUM_BUTTONS+1] = {nullptr ,nullptr ,nullptr ,nullptr ,nullptr ,nullptr ,nullptr};
-byte led_strip_length[NUM_BUTTONS+1] = {0, 78, 78, 78, 0, 234, 300}; //uint16_t led_strip_length[NUM_BUTTONS+1] = {0, 8, 8, 8, 0, 234, 3};
+short led_strip_length[NUM_BUTTONS+1] = {0, 78, 78, 78, 0, 300, 300}; //uint16_t led_strip_length[NUM_BUTTONS+1] = {0, 8, 8, 8, 0, 234, 3};
 byte led_strip_location[NUM_BUTTONS+1] = {0, LEDSTRIP1, LEDSTRIP2, LEDSTRIP3, LEDSTRIPNone, LEDSTRIP5, LEDSTRIP6};
-int led_stop_time[NUM_BUTTONS+1] = {STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, 
+long led_stop_time[NUM_BUTTONS+1] = {STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, 
         STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY, STOPPED_LEDSTRIP_ALREADY};
   
 void setup() {
@@ -78,6 +79,8 @@ void setup() {
 
 void loop() {
   current_time = millis();
+  Serial.print(F("time = "));
+  Serial.println(millis());
   printFreeMemory(__LINE__);
   check_buttons();  
   for(byte strip=1; strip<=NUM_BUTTONS; strip++) {
@@ -92,21 +95,31 @@ void loop() {
 void check_buttons() {  
   //only allow small strips to work if the big strips are stopped
   if (STOPPED_LEDSTRIP_ALREADY == led_stop_time[5] && STOPPED_LEDSTRIP_ALREADY == led_stop_time[6]) {
-    if (is_button_pressed(BIGBUTTON1)) led_stop_time[1] = current_time + 1 * SECOND_TO_MILLISECOND;
-    if (is_button_pressed(BIGBUTTON2)) led_stop_time[2] = current_time + 1 * SECOND_TO_MILLISECOND;
-    if (is_button_pressed(BIGBUTTON3)) led_stop_time[3] = current_time + 1 * SECOND_TO_MILLISECOND;
+    if (is_button_pressed(BIGBUTTON1)) led_stop_time[1] = get_stop_time(4);
+    if (is_button_pressed(BIGBUTTON2)) led_stop_time[2] = get_stop_time(4);
+    if (is_button_pressed(BIGBUTTON3)) led_stop_time[3] = get_stop_time(4);
   }
   
   if (is_button_pressed(BIGBUTTON5)) {
-    led_stop_time[5] = current_time + LED_EFFECT_DURATION;
+    led_stop_time[5] = get_stop_time(LED_EFFECT_DURATION);
     stop_small_strips();
   }
   if (is_button_pressed(BIGBUTTON6)) {
-    led_stop_time[6] = current_time + LED_EFFECT_DURATION;
+    led_stop_time[6] = get_stop_time(LED_EFFECT_DURATION);
     stop_small_strips();
   }
 }
 
+long get_stop_time(int seconds) {
+  Serial.print(F("Get stop time, current time = "));
+  Serial.print(current_time);
+  Serial.print(F(" Stop duration = "));
+  long stop_duration = seconds * SECOND_TO_MILLISECOND;
+  Serial.print(stop_duration);
+  Serial.print(F(" end time = "));
+  Serial.print(current_time + stop_duration);
+  return current_time + stop_duration;
+}
 void stop_small_strips(){
     stop_led_strip(1);
     stop_led_strip(2);
@@ -127,7 +140,16 @@ void stop_led_strip(byte strip_num){
 
 void display_strip(byte strip) {
   if (nullptr == led_strips[strip]) return;
-  if (current_time > led_stop_time[strip]){
+  if (strip ==5 ) {
+    
+    Serial.print(F("DISPLAY_STRIP"));
+    Serial.println(current_time);
+    Serial.println(led_stop_time[strip]);
+  }
+  if (current_time > led_stop_time[strip] && led_stop_time[strip] > 0){
+    Serial.println(current_time);
+    Serial.println(led_stop_time[strip]);
+    Serial.println(strip);
     stop_led_strip(strip);
   } else {
     if (STOPPED_LEDSTRIP_ALREADY == led_stop_time[strip] ) return;
@@ -164,7 +186,7 @@ void dectivate_strip(byte strip) {
 void show_effects(byte strip_num) {
   if (nullptr == led_strips[strip_num]) return;
   //show_effect_default(strip_num);
-  show_effect_1(strip_num);
+  show_effect_2(strip_num);
 }
 
 void show_effect_default(byte strip_num) {
@@ -187,31 +209,121 @@ void show_effect_1(byte strip_num) {
   Adafruit_NeoPixel *strip = led_strips[strip_num];
   uint16_t new_color = black;
   int time_reamining = led_stop_time[strip_num] - current_time;
-  if ( led_strip_color_index[strip_num] < 20) {
+  int fade_time = 2 * SECOND_TO_MILLISECOND;
+  byte max_intensity = 150;
+  byte main_intensity = 100;
+  byte secondary_intensity = max_intensity - main_intensity;
+  
+   if ( time_reamining < fade_time) {
+    // Fade down.
+    int intensity_factor = fade_time / max_intensity;
+    byte color_intensity = byte(time_reamining / intensity_factor);
+    new_color = strip->Color(color_intensity, color_intensity, color_intensity); 
+  } else if ( led_strip_color_index[strip_num] < 20) {
     // Fade up.
     byte color_index = led_strip_color_index[strip_num]++;
     byte color_intensity = color_index * 5;
     new_color = strip->Color(color_intensity, color_intensity, color_intensity); 
-  } 
-  else if ( time_reamining < 4 * SECOND_TO_MILLISECOND) {
-    // Fade down.
-    byte color_intensity = byte(float(time_reamining) / 500);
-    Serial.println(led_stop_time[strip_num]);
-    Serial.println(current_time);
-    Serial.println(time_reamining);
-    Serial.println(color_intensity);
-    new_color = strip->Color(color_intensity, color_intensity, color_intensity); 
   } else {
     // Random colors of a similar hue.
-    byte random_num = current_time % 50;
+    byte random_num = current_time % secondary_intensity;
     if (strip_num % 3 == 0)
-      new_color = strip->Color(100, random_num, 50-random_num);
+      new_color = strip->Color(main_intensity, random_num, secondary_intensity-random_num);
     else if (strip_num % 3 == 1)
-      new_color = strip->Color(random_num, 100, 50-random_num);
+      new_color = strip->Color(random_num, main_intensity, secondary_intensity-random_num);
     else 
-      new_color = strip->Color(random_num, 50-random_num, 100);
+      new_color = strip->Color(random_num, secondary_intensity-random_num, main_intensity);
   }
   strip->fill(new_color); 
+  strip->show();
+}
+
+#define PULSE_A 6
+#define PULSE_B 5
+#define PULSE_C 4
+#define PULSE_D 6
+#define PULSE_E 5
+#define PULSE_F 4
+void show_effect_2(byte strip_num) {\
+  // Light strip has 3 segments |0------1------2------3|
+  // Pulse A from 3 to 2 in 6 seconds
+  // Pulse B from 1 to 2 in 5 seconds
+  // Pulse C from 0 to 1 in 4 seconds
+  // Pulse D from 3 to 1 in 6 seconds
+  // Pulse E from 0 to 2 in 5 seconds
+  // Pulse F from 0 to 3 in 4 seconds
+  Adafruit_NeoPixel *strip = led_strips[strip_num];
+  int time_remaining = led_stop_time[strip_num] - current_time;
+  byte seconds_remaining = time_remaining/SECOND_TO_MILLISECOND;
+  byte max_rgb_intensity = 300/3;
+  byte main_rgb_intensity = 5;//100/3;
+  byte section1_len = strip->numPixels()/3;
+  byte section2_len = section1_len;
+  byte section3_len = section1_len;
+  uint32_t pulse_color = strip->Color(max_rgb_intensity, max_rgb_intensity/2, max_rgb_intensity/3);
+  printFreeMemory(__LINE__);
+  Serial.println(seconds_remaining);
+  Serial.println(time_remaining);
+
+  
+  strip->fill(strip->Color(main_rgb_intensity, main_rgb_intensity, main_rgb_intensity)); 
+  byte  section_pecent;
+  int   section_remaining_time;
+  short pulse_location;
+
+  if (seconds_remaining >= PULSE_B + PULSE_C + PULSE_D + PULSE_E + PULSE_F) {
+    //Pulse A from section 3 to section 2
+    section_remaining_time = time_remaining - (PULSE_B + PULSE_C + PULSE_D + PULSE_E + PULSE_F) * SECOND_TO_MILLISECOND;
+    section_pecent = section_remaining_time*100 / (PULSE_A*SECOND_TO_MILLISECOND);
+    pulse_location = (section3_len * section_pecent / 100);
+    pulse_color = strip->Color(max_rgb_intensity, max_rgb_intensity/2, max_rgb_intensity/30);
+    
+  } else if (seconds_remaining >= PULSE_C + PULSE_D + PULSE_E + PULSE_F) {
+    //Pulse B from section 1 to section 2
+    section_remaining_time = time_remaining - (PULSE_C + PULSE_D + PULSE_E + PULSE_F) * SECOND_TO_MILLISECOND;
+    section_pecent = section_remaining_time*100 / (PULSE_B*SECOND_TO_MILLISECOND);
+    pulse_location = section3_len + section2_len - (section2_len * section_pecent / 100);
+    pulse_color = strip->Color(max_rgb_intensity/2, max_rgb_intensity, max_rgb_intensity/30);
+    
+  } else if (seconds_remaining >= PULSE_D + PULSE_E + PULSE_F) {
+    //Pulse C from section 2 to section 1
+    section_remaining_time = time_remaining - (PULSE_D + PULSE_E + PULSE_F) * SECOND_TO_MILLISECOND;
+    section_pecent = section_remaining_time*100 / (PULSE_C*SECOND_TO_MILLISECOND);
+    pulse_location = section3_len + section2_len + (section1_len * section_pecent / 100);
+    pulse_color = strip->Color(max_rgb_intensity/2, max_rgb_intensity/30, max_rgb_intensity);
+    
+  } else if (seconds_remaining >= PULSE_E + PULSE_F) {
+    //Pulse D from section 3 to section 1
+    section_remaining_time = time_remaining - (PULSE_E + PULSE_F) * SECOND_TO_MILLISECOND;
+    byte section_pecent = section_remaining_time*100 / (PULSE_D*SECOND_TO_MILLISECOND);
+    pulse_location = (section3_len + section2_len) * section_pecent / 100;
+    pulse_color = strip->Color(max_rgb_intensity/30, max_rgb_intensity/2, max_rgb_intensity);
+    
+  } else if (seconds_remaining >= PULSE_F) {
+    //Pulse E from section 0 to section 2
+    section_remaining_time = time_remaining - PULSE_F * SECOND_TO_MILLISECOND;
+    section_pecent = section_remaining_time*100 / (PULSE_E*SECOND_TO_MILLISECOND);
+    pulse_location = section3_len + section2_len + section1_len - ((section2_len + section1_len) * section_pecent / 100);
+    pulse_color = strip->Color(max_rgb_intensity/30, max_rgb_intensity, max_rgb_intensity/2);
+    
+  } else {
+    //Pulse F from section 3 to section 0
+    section_remaining_time = time_remaining;
+    section_pecent = section_remaining_time*100 / (PULSE_F*SECOND_TO_MILLISECOND);
+    pulse_location = (section3_len + section2_len + section1_len) * section_pecent / 100;
+    if (section_pecent<30)
+      pulse_color = strip->Color(max_rgb_intensity*2, 0, 0);
+    else if (section_pecent<60)
+      pulse_color = strip->Color(0, max_rgb_intensity*2, max_rgb_intensity/3);
+    else 
+      pulse_color = strip->Color(0, 0, max_rgb_intensity*2);
+    
+  } 
+  for(short i=pulse_location; i<pulse_location+5; i++) {
+    strip->setPixelColor(i, pulse_color); 
+  }
+
+  printFreeMemory(__LINE__);
   strip->show();
 }
 
