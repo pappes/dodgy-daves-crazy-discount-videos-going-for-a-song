@@ -13,6 +13,7 @@
 #include <SPI.h>
 #include <Adafruit_VS1053.h>
 #include <SD.h>
+#include <Adafruit_NeoPixel.h>
 
 // define the pins used for the musicmaker shield
 #define SHIELD_RESET  8      // VS1053 reset pin (unused!)
@@ -22,6 +23,10 @@
 // DREQ should be an Int pin, see http://arduino.cc/en/Reference/attachInterrupt
 #define DREQ          2       // VS1053 Data request, ideally an Interrupt pin
 
+
+#define LEDSTRIPPIN 4
+#define LEDSHIELDPIN 5
+
 // music file locations
 #define DIRECTORY_MELLOW String("/NORMAL~1")
 #define DIRECTORY_PARTY  String("/DANCEM~1")
@@ -30,6 +35,8 @@
 
 #define LIGHT_THRESHOLD  20          // 10 is quite dark
 #define LIGHT_CHANGE_THRESHOLD  5    //000 // 5 seconds
+#define SECOND_TO_MILLISECOND 1000L
+#define SAME_COLORS_LEN 4
 
 bool musicModeIsParty = false;
 String musicMode = DIRECTORY_MELLOW;
@@ -40,6 +47,14 @@ int qtyPartyTracks = 0;
 bool moodChanged = true;
 unsigned long moodChangedTime = millis();
 
+long current_time = 0;
+short current_cycle_strip_1 = 0;
+short current_cycle_strip_2 = 0;
+
+Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(72, LEDSTRIPPIN,  NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(40, LEDSHIELDPIN, NEO_GRB + NEO_KHZ800);
+
+
 
 Adafruit_VS1053_FilePlayer musicPlayer = 
   // create breakout-example object!
@@ -49,30 +64,37 @@ Adafruit_VS1053_FilePlayer musicPlayer =
   
 void setup() {
   Serial.begin(9600);
+  pinMode(LEDSTRIPPIN, OUTPUT);
+  pinMode(LEDSHIELDPIN, OUTPUT);
+  strip1.begin();
+  strip2.begin();
   
-  Serial.println("Adafruit VS1053 Simple Test");
+  
+  Serial.println(F("Adafruit VS1053 Simple Test"));
 
   if (musicMakerInit()) {
   
     // list files
     printDirectory(SD.open(DIRECTORY_MELLOW), 0);
     printDirectory(SD.open(DIRECTORY_PARTY), 0);
-    logString("Music maker init success");
+    Serial.println(F("Music maker init success"));
   } else {
-    logString("Music maker init failed");
+    Serial.println(F("Music maker init failed"));
   }
   
 
   // Play one file, don't return until complete
-  Serial.println(F("Playing track 001"));
  // musicPlayer.playFullFile("/track001.mp3");
   // Play another file in the background, REQUIRES interrupts!
-  Serial.println(F("Playing track 002"));
   //musicPlayer.startPlayingFile(SONG_2);  
 }
 
 void loop() {
+  current_time = millis();
+  //if (current_time % 10 == 0) printFreeMemory(__LINE__);
   printFreeMemory(__LINE__);
+  dance_floor_effects();
+  dance_room_effects();
 
   
   checkLightSensor();
@@ -85,7 +107,7 @@ void loop() {
     if (song.length() > 0) {
       musicPlayer.startPlayingFile(song.c_str());
     } else {   
-      logString(String("Cant find any music for ") + musicMode);
+      Serial.print(F("Cant find any music for ")); Serial.println(musicMode);
     }
     moodChanged = false;
   }
@@ -111,25 +133,25 @@ void loop() {
     // if we get an 'p' on the serial console, pause/unpause!
     if (c == 'p') {
       if (! musicPlayer.paused()) {
-        logString("Paused");
+        Serial.println(F("Paused"));
         musicPlayer.pausePlaying(true);
       } else { 
-        logString("Resumed");
+        Serial.println(F("Resumed"));
         musicPlayer.pausePlaying(false);
       }
     }
   }
 
-  delay(1000);
+  delay(10);
 }
 
 String getNextSong() {
-  logString(String("getNextSong for mood ") + musicMode);
+  Serial.print(F("getNextSong for mood ")); Serial.println(musicMode);
   int trackNumber;
   if (DIRECTORY_MELLOW==musicMode) trackNumber = currentMellowTrack++;
   else trackNumber = currentPartyTrack++;        
   
-  logString(String("searching for track number ") + trackNumber);
+  Serial.print(F("searching for track number ")); Serial.println(trackNumber);
   String song = getSong(musicMode, trackNumber);  
   if (song.length()>0) return musicMode + "/" + song;
   
@@ -145,13 +167,13 @@ String getNextSong() {
 bool musicMakerInit() {
 
   if (! musicPlayer.begin()) { // initialise the music player
-     logString("Couldn't find VS1053, do you have the right pins defined?");
+     Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
      return false;
   }
-  logString("VS1053 found");
+  Serial.println(F("VS1053 found"));
   
   if (!SD.begin(CARDCS)) {
-    logString("SD failed, or not present");
+    Serial.println(F("SD failed, or not present"));
     return false;
   }
   
@@ -167,13 +189,13 @@ bool musicMakerInit() {
 void checkLightSensor() {
   if (millis() < moodChangedTime+LIGHT_CHANGE_THRESHOLD) return;
   int analogValue = analogRead(A0);  
-  logString(String("light intensity = ") + analogValue);
+  Serial.print(F("light intensity = ")); Serial.println(analogValue);
   
   String mode;
   if (analogValue<LIGHT_THRESHOLD)  mode = DIRECTORY_MELLOW;
   else mode = DIRECTORY_PARTY;
   if (mode != musicMode) {
-    logString(String("switching mood to  ") + mode);
+    Serial.print(F("switching mood to ")); Serial.println(mode);
     moodChanged = true;    
     moodChangedTime = millis();
     musicMode = mode;
@@ -184,12 +206,12 @@ void checkLightSensor() {
 
 /// File listing helper
 void printDirectory(File dir, int numTabs) {
-  logString(String("Scanning directory ") + dir.name());
+  Serial.print(F("Scanning directory ")); Serial.println(dir.name());
    while(true) {
      
      File entry =  dir.openNextFile();
      if (! entry) {
-       logString("Directory scan completed");
+       Serial.print(F("Directory scan completed"));
        break;
      }
      for (uint8_t i=0; i<numTabs; i++) {
@@ -211,14 +233,14 @@ void printDirectory(File dir, int numTabs) {
 
 /// File listing helper
 String getSong(String dir, int trackNumber) {
-  logString(String("querying") + dir);
+  Serial.print(F("querying ")); Serial.println(dir);
   String trackName = "";
   File directory(SD.open(dir));
-  logString(String("opened directory") + dir);
+  Serial.print(F("opened directory ")); Serial.println(dir);
   while(true) {   
     File entry =  directory.openNextFile();
     if (! entry) {
-      logString(String("no more files to play from directory") + dir);
+      Serial.print(F("no more files to play from directory")); Serial.println(dir);
       trackName = "";
       break;
     }
@@ -227,24 +249,75 @@ String getSong(String dir, int trackNumber) {
     trackNumber = trackNumber -1;
     if (0 == trackNumber) break;
     
-    logString(String("skipping track ") + trackName + " (" + trackNumber + ")");
+    Serial.print(F("skipping track ")); Serial.print(trackName);Serial.print(F("(")); Serial.print(trackNumber);Serial.println(F(")"));
   }   
   directory.close();
-  logString("returning track " + trackName);
+  Serial.print(F("returning track ")); Serial.println(trackName);
   return trackName;
 }
 
 
-void logString(String text){
-    Serial.println(text);
-    return;
+
+
+
+uint32_t white = strip2.Color(25, 25, 25);
+uint32_t superwhite = strip2.Color(250, 250, 250);
+uint32_t black = strip2.Color(0, 0, 0);
+uint32_t green = strip2.Color(0, 25, 0);
+uint32_t red = strip2.Color(25, 0, 0);
+uint32_t blue = strip2.Color(0, 0, 25);
+
+#define NUM_COLORS_STRIP_1 3
+uint32_t strip_1_colors[NUM_COLORS_STRIP_1] = {
+    red,
+    green,
+    blue,
+};
+
+static void dance_room_effects() {
+ 
+  short new_cycle = current_time/(SECOND_TO_MILLISECOND/5);
+  if (current_cycle_strip_1 != new_cycle){
+    current_cycle_strip_1 = new_cycle;
+    Serial.println(new_cycle);
+    for(short i=0; i<strip1.numPixels(); i++) {
+      byte color_index = (new_cycle+i)/SAME_COLORS_LEN%NUM_COLORS_STRIP_1;
+      strip1.setPixelColor(i , strip_1_colors[color_index]); // Draw new pixel
+    }
+    strip1.show();
+  }
 }
+
+#define NUM_COLORS_STRIP_2 7
+uint32_t strip_2_colors[NUM_COLORS_STRIP_2] = {
+    green,
+    red,
+    green,
+    red,
+    blue,
+    green,
+    red,
+};
+
+static void dance_floor_effects() {
+ short new_cycle = current_time/SECOND_TO_MILLISECOND;
+  if (current_cycle_strip_2 != new_cycle){
+    current_cycle_strip_2 = new_cycle;
+    Serial.println(new_cycle);
+    for(short i=0; i<strip2.numPixels(); i++) {
+      byte color_index = (new_cycle+i/* + i/8*/)%NUM_COLORS_STRIP_2 ;
+      strip2.setPixelColor(i , strip_2_colors[color_index]); // Draw new pixel
+    }
+    strip2.show();
+  }
+}
+
 
 void printFreeMemory(int line){
   
   Serial.print(F("free memory="));
   Serial.print(freeMemory());
-  Serial.print(F(" at aline "));
+  Serial.print(F(" at line "));
   Serial.println(line);
 }
 

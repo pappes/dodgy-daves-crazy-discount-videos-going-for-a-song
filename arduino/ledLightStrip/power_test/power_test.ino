@@ -33,6 +33,7 @@ Adafruit_NeoPixel strip6 = Adafruit_NeoPixel(270, 6, NEO_GRB + NEO_KHZ800);//300
   int color_index = 0;
   
 void setup() {
+  Serial.begin(9600);
   pinMode(BUTTONLEDPIN, OUTPUT);
   pinMode(BUTTONPIN, INPUT);
   //strip1.begin();
@@ -43,6 +44,7 @@ void setup() {
   strip6.begin();
 }
 void loop() {
+  printFreeMemory(__LINE__);
   chase();
 }
 static void chase() {
@@ -85,4 +87,31 @@ static int update_strip(Adafruit_NeoPixel &strip, uint32_t highlight_color) {
   }
   strip.show();
   //strip.updateLength (3);
+}
+
+
+void printFreeMemory(int line){
+  
+  Serial.print(F("free memory="));
+  Serial.print(freeMemory());
+  Serial.print(F(" at aline "));
+  Serial.println(line);
+}
+
+#ifdef __arm__
+// should use uinstd.h to define sbrk but Due causes a conflict
+extern "C" char* sbrk(int incr);
+#else  // __ARM__
+extern char *__brkval;
+#endif  // __arm__
+
+int freeMemory() {
+  char top;
+#ifdef __arm__
+  return &top - reinterpret_cast<char*>(sbrk(0));
+#elif defined(CORE_TEENSY) || (ARDUINO > 103 && ARDUINO != 151)
+  return &top - __brkval;
+#else  // __arm__
+  return __brkval ? &top - __brkval : &top - __malloc_heap_start;
+#endif  // __arm__
 }
