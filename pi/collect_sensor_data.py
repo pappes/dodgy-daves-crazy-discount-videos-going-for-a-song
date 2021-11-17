@@ -11,15 +11,18 @@ from dataclasses import dataclass
 class DataSample:
     light_lux: float = 0.0
     temp_c: float = 0.0
+    alt_temp_c: float = 0.0
     accel_x_meterpersec: float = 0.0
     accel_y_meterpersec: float = 0.0
     accel_z_meterpersec: float = 0.0
     gyro_x_degreepersec: float = 0.0
     gyro_y_degreepersec: float = 0.0
     gyro_z_degreepersec: float = 0.0
-    
+
+
 def get_temp_sample(sample):
     sample.temp_c = tempSensor.readTempC()
+    sample.alt_temp_c = motion.read_temperature()
 
 def get_light_sample(sample):
     sample.light_lux = light.read()
@@ -54,8 +57,9 @@ while True:
     get_gyro_sample(sample)
     print(str(sample.light_lux) + " lux", end =" ")
     print(str(sample.temp_c) + " °C", end =" ")
+    print(str(sample.alt_temp_c) + " _C", end = " ")
     print(str(sample.accel_x_meterpersec) + " xmps " + str(sample.accel_y_meterpersec) + " ymps " + str(sample.accel_z_meterpersec) + "zmps", end =" ")
     print(str(sample.gyro_x_degreepersec) + " xdps " + str(sample.gyro_y_degreepersec) + " ydps " + str(sample.gyro_z_degreepersec) + "zdps")
 
-    
-    sleep(1)
+
+    sleep(0.1)
