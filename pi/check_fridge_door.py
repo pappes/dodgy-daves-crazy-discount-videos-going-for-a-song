@@ -4,10 +4,11 @@ from PiicoDev_MPU6050 import PiicoDev_MPU6050
 from PiicoDev_Unified import sleep_ms # cross-platform compatible sleep function
 
 
-from time import sleep
+from time import sleep, time
 from dataclasses import dataclass
 
-import tflite as tf
+import tflite_runtime.interpreter as tflite
+from numpy import float32
 
 light_scale_multiplier = 103.34
 light_scale_addition = 0.0
@@ -48,17 +49,32 @@ def get_gyro_sample(sample):
     sample.gyro_y_degreepersec = gyro["y"]
     sample.gyro_z_degreepersec = gyro["z"]
 
-def scale_light(sample):
-    ml = sample.light_lux/1000
-    return ml/light_scale_multiplier + light_scale_addition
+def scale_light(light_lux):
+    ml = light_lux/1000
+    return ml*light_scale_multiplier + light_scale_addition
 
-def scale_temp(sample):
-    ml = sample.temp_c/40
-    return ml/temp_scale_multiplier + temp_scale_addition
+def scale_temp(temp_c):
+    ml = temp_c/40
+    return ml*temp_scale_multiplier + temp_scale_addition
 
 def classify_sample(sample):
     # Use Tensorflow to catgorise door as open or closed
-    slice = [[scale_light(sample.light_lux),scale_temp(sample.temp_c)]]
+    slice = [[float32(scale_light(sample.light_lux)),float32(scale_temp(sample.temp_c))]]
+    print(slice)
+
+    interpreter = tflite.Interpreter(model_path="tensorflow/model.tflite")  
+    interpreter.allocate_tensors()
+    input_details = interpreter.get_input_details()    
+    output_details = interpreter.get_output_details()
+
+    interpreter.set_tensor(input_details[0]['index'], slice)
+    start_time = time.time()
+    interpreter.invoke()
+    stop_time = time.time()
+
+    output_data = interpreter.get_tensor(output_details[0]['index'])
+    print(output_data)
+    print('time: {:.3f}ms'.format((stop_time - start_time) * 1000))
 
 
 
@@ -81,5 +97,6 @@ while True:
     print(str(sample.gyro_x_degreepersec) + " xdps " + str(sample.gyro_y_degreepersec) + " ydps " + str(sample.gyro_z_degreepersec) + "zdps")
 
     #Use Tensorflow to catgorise door as open or closed
+    classify_sample(sample)
 
-    sleep(0.1)
+    sleep(3)
