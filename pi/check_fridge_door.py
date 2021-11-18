@@ -68,9 +68,9 @@ def classify_sample(sample):
     output_details = interpreter.get_output_details()
 
     interpreter.set_tensor(input_details[0]['index'], slice)
-    start_time = time.time()
+    start_time = time()
     interpreter.invoke()
-    stop_time = time.time()
+    stop_time = time()
 
     output_data = interpreter.get_tensor(output_details[0]['index'])
     print(output_data)
