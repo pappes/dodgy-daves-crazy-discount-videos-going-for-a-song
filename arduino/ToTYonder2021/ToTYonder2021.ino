@@ -63,6 +63,10 @@ void setup() {
 void loop()
 {
     clock_ticks=millis();
+  Serial.print(F("cycle="));
+  Serial.print(cycle);
+  Serial.print(F(" clock_ticks "));
+  Serial.println(clock_ticks);
     printFreeMemory(__LINE__);
     //cyclePalettes();
     if (clock_ticks<CYCLE_1_TIME && cycle <= 0) {
@@ -74,7 +78,7 @@ void loop()
     } else if (clock_ticks<CYCLE_3_TIME && clock_ticks>=CYCLE_2_TIME && cycle <= 3) {
       showCycle3();
       cycle = 3;
-    } else if (clock_ticks<CYCLE_4_TIME && clock_ticks>=CYCLE_3_TIME && cycle <= 4) {
+    } else if (clock_ticks>=CYCLE_3_TIME && cycle <= 4) {
       showCycle4();
       cycle = 4;
     }
@@ -85,6 +89,7 @@ void loop()
 //only last led white
 void showCycle1()
 {
+    printFreeMemory(__LINE__);
     fill_solid( leds, NUM_LEDS, CRGB::Black );
     leds[NUM_LEDS-1] = CRGB::White;
     FastLED.show();
@@ -92,29 +97,49 @@ void showCycle1()
 //Last 10 leds white
 void showCycle2()
 {
+    printFreeMemory(__LINE__);
     fill_solid( &(leds[NUM_LEDS-LED_BLOCK_SIZE-1]), LED_BLOCK_SIZE /*number of leds*/, CRGB::White );
     FastLED.show();
 }
 //Spit out white
 void showCycle3()
 {
-    unsigned int pulse_delay = 0;
+    printFreeMemory(__LINE__);
+    unsigned long pulse_delay = 0L;
     unsigned long cycle_3_elaped_milliseconds = clock_ticks - CYCLE_2_TIME;
+    
     // Divide the strip up into 3 segments.  Pulse travel time through each segment is 1 second
     const short segment_sizes[4] = {10, 20, 50};
     const short segment_start[4] = {0, 10, 30};
-    short segment = cycle_3_elaped_milliseconds/ (pulse_delay+1) / SECONDS_PER_MILLI % 3 ;
-    short segment_progress_percent = (cycle_3_elaped_milliseconds/ (pulse_delay+1) % SECONDS_PER_MILLI) * 90 / SECONDS_PER_MILLI;
+    short segment = cycle_3_elaped_milliseconds/ (pulse_delay+1L) / SECONDS_PER_MILLI % 3 ;
+    short segment_progress_percent = (cycle_3_elaped_milliseconds/ (pulse_delay+1L) % SECONDS_PER_MILLI) * 100 / SECONDS_PER_MILLI;
     short pulse_start = segment_start[segment] + segment_sizes[segment] * segment_progress_percent / 100;
+
   
+  Serial.print(F("segment="));
+  Serial.print(segment);
+  Serial.print(F(" segment_progress_percent "));
+  Serial.println(segment_progress_percent);
+
+  
+  Serial.print(F("pulse_start="));
+  Serial.print(pulse_start);
+  Serial.print(F(" cycle_3_elaped_milliseconds "));
+  Serial.println(cycle_3_elaped_milliseconds);
     fill_solid( leds, NUM_LEDS /*number of leds*/, CRGB::Black );
+    if (pulse_start + LED_BLOCK_SIZE > NUM_LEDS){
+        pulse_start = NUM_LEDS-LED_BLOCK_SIZE-1; 
+    }
     fill_solid( &(leds[pulse_start]), LED_BLOCK_SIZE /*number of leds*/, CRGB::White );
-    if (segment<2 || segment_progress_percent > 90) fill_solid( &(leds[NUM_LEDS-LED_BLOCK_SIZE-1]), LED_BLOCK_SIZE /*number of leds*/, CRGB::White );
+    if (segment<2 || segment_progress_percent > 90) {
+      fill_solid( &(leds[NUM_LEDS-LED_BLOCK_SIZE-1]), LED_BLOCK_SIZE /*number of leds*/, CRGB::White );
+    }
     FastLED.show();
 }
 //Fade up/down white
 void showCycle4()
 {
+    printFreeMemory(__LINE__);
    static short brightness = 0;
    static short fadeAmount = 5;
    
