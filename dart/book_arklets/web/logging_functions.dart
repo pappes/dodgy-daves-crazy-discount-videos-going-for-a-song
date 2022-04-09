@@ -20,7 +20,7 @@ setLogLevel(logging.Level level) {
   var mapData = new Map();
   mapData["name"] = level.name;
   mapData["value"] = level.value;
-  logLevelElement.value=JSON.encode(mapData);
+  logLevelElement.value=jsonEncode(mapData);
 }
 
 turnOnLogging() {
@@ -33,7 +33,7 @@ turnOnLogging() {
 
     });
     //convert JSON to object [logging.Level]
-    List parsedList = JSON.decode(logLevelElement.value);
+    List parsedList = jsonDecode(logLevelElement.value);
     log.level = new logging.Level(parsedList[0], parsedList[1]);
   }
 }
