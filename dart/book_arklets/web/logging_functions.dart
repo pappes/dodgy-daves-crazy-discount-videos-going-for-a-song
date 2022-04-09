@@ -24,6 +24,7 @@ setLogLevel(logging.Level level) {
 }
 
 turnOnLogging() {
+    print('got here');
   HiddenInputElement logLevelElement = querySelector('#$elementId');
   if (logLevelElement!=null) {
     logging.hierarchicalLoggingEnabled = true;
@@ -33,7 +34,9 @@ turnOnLogging() {
 
     });
     //convert JSON to object [logging.Level]
-    List parsedList = jsonDecode(logLevelElement.value);
-    log.level = new logging.Level(parsedList[0], parsedList[1]);
+    print('got logLevelElement $logLevelElement with vlaue ${logLevelElement.value}' );
+    print('decoded ${jsonDecode(logLevelElement.value)}' );
+    Map parsedList = jsonDecode(logLevelElement.value);
+    log.level = new logging.Level(parsedList["name"], parsedList["value"]);
   }
 }

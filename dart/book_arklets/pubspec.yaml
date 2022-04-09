@@ -4,9 +4,16 @@ author: Pappes
 description: Public webpage for injecting DART into bookmarklets
 homepage: https://github.com/pappes/aarvark
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.0.0 <3.0.0'
 dependencies:
-  browser: any
+  #browser: any
   #pappes_web_utility: any
+  convert: ^3.0.1
   pappes_web_utility:
     path: ../../../aarvark/dart/pappes_web_utility
+
+
+  test: ^1.20.2
+dev_dependencies: 
+  build_runner: ^2.1.8
+  build_web_compilers: ^3.2.2
