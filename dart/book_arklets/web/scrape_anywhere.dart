@@ -7,7 +7,7 @@ void main() {
   //use common function to set up logging
   turnOnLogging();
   //change all href Elements in the body to target the current tab
-  final map = MyWebScraper.scrapeIMDB();  
+  final map = MyWebScraper.scrapeAnywhereList();  
 
     window.navigator.clipboard?.writeText(mapToCSV(map));
 }

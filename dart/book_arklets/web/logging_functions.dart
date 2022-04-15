@@ -24,7 +24,6 @@ setLogLevel(logging.Level level) {
 }
 
 turnOnLogging() {
-    print('got here');
   HiddenInputElement logLevelElement = querySelector('#$elementId');
   if (logLevelElement!=null) {
     logging.hierarchicalLoggingEnabled = true;
