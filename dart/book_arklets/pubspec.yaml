@@ -9,6 +9,7 @@ dependencies:
   #browser: any
   #pappes_web_utility: any
   convert: ^3.0.1
+  pappes_utility: ^1.0.3
   pappes_web_utility:
     path: ../../../aarvark/dart/pappes_web_utility
 
