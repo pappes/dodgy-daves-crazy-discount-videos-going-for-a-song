@@ -1,0 +1,8 @@
+{
+    "sketch": "ToTBASF2022.ino",
+    "board": "arduino:avr:nano",
+    "port": "COM3",
+    "programmer": "arduino:avrisp",
+    "output": "../ArduinoOutput",
+    "configuration": "cpu=atmega328"
+}

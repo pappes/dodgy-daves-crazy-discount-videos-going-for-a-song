@@ -1,6 +1,6 @@
 {
+    "port": "COM3",
     "board": "arduino:avr:uno",
-    "sketch": "ToTYonder2021\\ToTYonder2021.ino",
     "programmer": "arduino:avrisp",
-    "port": "COM3"
+    "sketch": "ToTBASF2022.ino"
 }
